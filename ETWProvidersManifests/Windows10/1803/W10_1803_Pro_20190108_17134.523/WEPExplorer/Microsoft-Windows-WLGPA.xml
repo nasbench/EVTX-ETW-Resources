@@ -1,0 +1,97 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-WLGPA</Name>
+        <Metadata>
+            <Guid>{46098845-8A94-442D-9095-366A6BCFEFA9}</Guid>
+            <ResourceFilePath>C:\Windows\system32\wlgpclnt.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\wlgpclnt.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1&amp;FileName=wlgpclnt.dll&amp;FileVer=10.0.17134.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-WLGPA</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-WLAN-AutoConfig/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>14001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-WLAN-AutoConfig/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A %1 Wireless Group Policy was applied to your computer.
+
+Wireless Group Policy Name: %2%3
+Applied settings:
+	AutoConfig Enabled: %4
+	Show Denied Networks: %5
+Wireless Group Policy Summary
+	Profiles applied:   %6%7
+	Profiles not applied:   %8%9]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PolicyType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PolicyNamePlaceholder" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AutoConfig Enabled" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Show Denied networks" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Profiles applied" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Profiles applied placeholder" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Profiles not applied" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Profiles not applied placeholder" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-WLAN-AutoConfig/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Wireless Group Policy has been removed from your computer.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-WLAN-AutoConfig/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A %1 Wireless Group Policy couldn't be applied to your computer.
+
+Wireless Group Policy Name: %2%3
+Reason Code: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PolicyType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PolicyNamePlaceholder" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ReasonCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,1316 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-WFP</Name>
+        <Metadata>
+            <Guid>{0C478C5B-0351-41B1-8C58-4A6737DA32E3}</Guid>
+            <ResourceFilePath>C:\Windows\system32\drivers\fwpkclnt.sys</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\drivers\fwpkclnt.sys</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.18362.628&amp;FileName=fwpkclnt.sys&amp;FileVer=10.0.18362.628</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-IKE/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-WFP/Operational</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-WFP/Analytic</Path>
+                    <Index>2</Index>
+                    <Id>18</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-IKEDBG/Debug</Path>
+                    <Index>3</Index>
+                    <Id>19</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-VPN/Operational</Path>
+                    <Index>4</Index>
+                    <Id>20</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:Transfer</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:AOAC</Name>
+                    <Value>16</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:SendPath</Name>
+                    <Value>4294967296</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:ReceivePath</Name>
+                    <Value>8589934592</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:L3ConnectPath</Name>
+                    <Value>17179869184</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:L2ConnectPath</Name>
+                    <Value>34359738368</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:ClosePath</Name>
+                    <Value>68719476736</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:Authentication</Name>
+                    <Value>137438953472</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:Configuration</Name>
+                    <Value>274877906944</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:Global</Name>
+                    <Value>549755813888</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:Dropped</Name>
+                    <Value>1099511627776</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:PiiPresent</Name>
+                    <Value>2199023255552</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:Packet</Name>
+                    <Value>4398046511104</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:Address</Name>
+                    <Value>8796093022208</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:StdTemplateHint</Name>
+                    <Value>17592186044416</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:StateTransition</Name>
+                    <Value>35184372088832</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-WFP/Analytic</Channel>
+                <Level>Information</Level>
+                <Keyword>ut:AOAC</Keyword>
+                <Message><![CDATA[
+WFP: Packet Dropped - Filter Run-Time ID: %14, Layer Run-Time ID: %15]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Timestamp" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+  <data name="ScopeId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AppId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UserSID" inType="win:SID" outType="xs:string"/>
+  <data name="ReauthReason" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="OriginalProfile" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CurrentProfile" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PacketDirection" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Loopback" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="FilterId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="LayerId" inType="win:UInt16" outType="win:HexInt16"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1001</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-WFP/Analytic</Channel>
+                <Level>Information</Level>
+                <Keyword>ut:AOAC</Keyword>
+                <Message><![CDATA[
+WFP: Packet Dropped - Filter Run-Time ID: %14, Layer Run-Time ID: %15]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Timestamp" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+  <data name="ScopeId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AppId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UserSID" inType="win:SID" outType="xs:string"/>
+  <data name="ReauthReason" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="OriginalProfile" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CurrentProfile" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PacketDirection" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Loopback" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="FilterId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="LayerId" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="vSwitchId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SourcevSwitchPort" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DestinationvSwitchPort" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1001</Id>
+                <Version>2</Version>
+                <Channel>Microsoft-Windows-WFP/Analytic</Channel>
+                <Level>Information</Level>
+                <Keyword>ut:AOAC</Keyword>
+                <Message><![CDATA[
+WFP: Packet Dropped - Filter Run-Time ID: %14, Layer Run-Time ID: %15]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Timestamp" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+  <data name="ScopeId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AppId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UserSID" inType="win:SID" outType="xs:string"/>
+  <data name="ReauthReason" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="OriginalProfile" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CurrentProfile" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PacketDirection" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Loopback" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="FilterId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="LayerId" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="vSwitchId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SourcevSwitchPort" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DestinationvSwitchPort" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EnterpriseId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PolicyFlags" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="EffectiveName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-WFP/Analytic</Channel>
+                <Level>Information</Level>
+                <Keyword>ut:AOAC</Keyword>
+                <Message><![CDATA[
+IPsec: Packet Dropped - Error Code: %9, Filter Run-Time ID: %12, Layer Run-Time ID: %13]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Timestamp" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+  <data name="ScopeId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AppId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UserSID" inType="win:SID" outType="xs:string"/>
+  <data name="FailureStatus" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="Direction" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SPI" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="FilterId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="LayerId" inType="win:UInt16" outType="win:HexInt16"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IKE/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+IPsec: Main Mode Failure]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Timestamp" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+  <data name="ScopeId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AppId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UserSID" inType="win:SID" outType="xs:string"/>
+  <data name="LocalSpn" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PeerSpn" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LocalGroupSidCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalGroupSidLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalGroupSids" inType="win:UnicodeString" outType="xs:string" count="LocalGroupSidLength"/>
+  <data name="RemoteGroupSidCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteGroupSidLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteGroupSids" inType="win:UnicodeString" outType="xs:string" count="RemoteGroupSidLength"/>
+  <data name="FailureErrorCode" inType="win:UInt32" outType="win:Win32Error"/>
+  <data name="FailurePoint" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Flags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="KeyingModuleType" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MmState" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="SaRole" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MMAuthMethod" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="EndCertHash" inType="win:Binary" outType="xs:hexBinary" length="20"/>
+  <data name="MMId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="MMFilterId" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-IKE/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+IPsec: Main Mode Failure]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Timestamp" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+  <data name="ScopeId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AppId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UserSID" inType="win:SID" outType="xs:string"/>
+  <data name="LocalSpn" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PeerSpn" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LocalGroupSidCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalGroupSidLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalGroupSids" inType="win:UnicodeString" outType="xs:string" count="LocalGroupSidLength"/>
+  <data name="RemoteGroupSidCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteGroupSidLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteGroupSids" inType="win:UnicodeString" outType="xs:string" count="RemoteGroupSidLength"/>
+  <data name="FailureErrorCode" inType="win:UInt32" outType="win:Win32Error"/>
+  <data name="FailurePoint" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Flags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="KeyingModuleType" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MmState" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="SaRole" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MMAuthMethod" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="EndCertHash" inType="win:Binary" outType="xs:hexBinary" length="20"/>
+  <data name="MMId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="MMFilterId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="ProviderContextKey" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1007</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IKE/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+IPsec: Quick Mode Failure]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Timestamp" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+  <data name="ScopeId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AppId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UserSID" inType="win:SID" outType="xs:string"/>
+  <data name="FailureErrorCode" inType="win:UInt32" outType="win:Win32Error"/>
+  <data name="FailurePoint" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="KeyingModuleType" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="QMState" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="SaRole" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="SaTrafficType" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="QMFilterId" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1007</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-IKE/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+IPsec: Quick Mode Failure]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Timestamp" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+  <data name="ScopeId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AppId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UserSID" inType="win:SID" outType="xs:string"/>
+  <data name="FailureErrorCode" inType="win:UInt32" outType="win:Win32Error"/>
+  <data name="FailurePoint" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="KeyingModuleType" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="QMState" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="SaRole" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="SaTrafficType" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="QMFilterId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="MMSaLuid" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="MMProviderContextKey" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1009</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IKE/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+IPsec: Extended Mode Failure]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Timestamp" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+  <data name="ScopeId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AppId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UserSID" inType="win:SID" outType="xs:string"/>
+  <data name="LocalSpn" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PeerSpn" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LocalGroupSidCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalGroupSidLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalGroupSids" inType="win:UnicodeString" outType="xs:string" count="LocalGroupSidLength"/>
+  <data name="RemoteGroupSidCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteGroupSidLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteGroupSids" inType="win:UnicodeString" outType="xs:string" count="RemoteGroupSidLength"/>
+  <data name="FailureErrorCode" inType="win:UInt32" outType="win:Win32Error"/>
+  <data name="FailurePoint" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Flags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="EMState" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="SaRole" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="EMAuthMethod" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="EndCertHash" inType="win:Binary" outType="xs:hexBinary" length="20"/>
+  <data name="MMId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="QMFilterId" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1011</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-WFP/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+IPsec DoS Protection: Packet Dropped]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Timestamp" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+  <data name="ScopeId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AppId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UserSID" inType="win:SID" outType="xs:string"/>
+  <data name="InternetHostAddress" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="CorpnetHostAddress" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="FailureStatus" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="Direction" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1013</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IKEDBG/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+IPsec: Main Mode SA Terminated]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MainModeLocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MainModeLocalAddress" inType="win:Binary" outType="win:SocketAddress" length="MainModeLocalAddressLength"/>
+  <data name="MainModePeerAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MainModePeerAddress" inType="win:Binary" outType="win:SocketAddress" length="MainModePeerAddressLength"/>
+  <data name="KeyingModule" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SaLuid" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1013</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-IKE/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+IPsec: Main Mode SA Terminated]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MainModeLocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MainModeLocalAddress" inType="win:Binary" outType="win:SocketAddress" length="MainModeLocalAddressLength"/>
+  <data name="MainModePeerAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MainModePeerAddress" inType="win:Binary" outType="win:SocketAddress" length="MainModePeerAddressLength"/>
+  <data name="KeyingModule" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SaLuid" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="ICookie" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="RCookie" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1014</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IKEDBG/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+IPsec: Main Mode SA Established]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LocalSpn" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PeerSpn" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MainModeLocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MainModeLocalAddress" inType="win:Binary" outType="win:SocketAddress" length="MainModeLocalAddressLength"/>
+  <data name="MainModePeerAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MainModePeerAddress" inType="win:Binary" outType="win:SocketAddress" length="MainModePeerAddressLength"/>
+  <data name="KeyingModule" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AuthenticationMethodType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EncryptionAlgorithm" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AuthenticationAlgorithm" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DiffieHellmanGroup" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LifetimeMinutes" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="QMLimit" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Role" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Impersonation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MMFilterId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="SaLuid" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1015</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IKEDBG/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+IPsec: Main Mode SA Established]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LocalCertDnSubject" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LocalCertShaThumbprintLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalCertShaThumbprint" inType="win:Binary" outType="xs:hexBinary" length="LocalCertShaThumbprintLength"/>
+  <data name="LocalCertDnIssuer" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LocalCertDnRoot" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PeerCertDnSubject" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PeerCertShaThumbprintLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PeerCertShaThumbprint" inType="win:Binary" outType="xs:hexBinary" length="PeerCertShaThumbprintLength"/>
+  <data name="PeerCertDnIssuer" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PeerCertDnRoot" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MainModeLocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MainModeLocalAddress" inType="win:Binary" outType="win:SocketAddress" length="MainModeLocalAddressLength"/>
+  <data name="MainModePeerAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MainModePeerAddress" inType="win:Binary" outType="win:SocketAddress" length="MainModePeerAddressLength"/>
+  <data name="KeyingModule" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AuthenticationMethodType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EncryptionAlgorithm" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AuthenticationAlgorithm" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DiffieHellmanGroup" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LifetimeMinutes" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="QMLimit" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Role" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Impersonation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MMFilterId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="SaLuid" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1016</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IKEDBG/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+IPsec: Extended Mode and Main Mode SAs Established]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LocalCertDnSubject" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LocalCertShaThumbprintLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalCertShaThumbprint" inType="win:Binary" outType="xs:hexBinary" length="LocalCertShaThumbprintLength"/>
+  <data name="LocalCertDnIssuer" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LocalCertDnRoot" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PeerCertDnSubject" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PeerCertShaThumbprintLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PeerCertShaThumbprint" inType="win:Binary" outType="xs:hexBinary" length="PeerCertShaThumbprintLength"/>
+  <data name="PeerCertDnIssuer" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PeerCertDnRoot" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MainModeLocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MainModeLocalAddress" inType="win:Binary" outType="win:SocketAddress" length="MainModeLocalAddressLength"/>
+  <data name="MainModePeerAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MainModePeerAddress" inType="win:Binary" outType="win:SocketAddress" length="MainModePeerAddressLength"/>
+  <data name="EncryptionAlgorithm" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AuthenticationAlgorithm" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DiffieHellmanGroup" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LifetimeMinutes" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="QMLimit" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Role" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Impersonation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MMFilterId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="SaLuid" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="LocalUmCertDnSubject" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LocalUmCertShaThumbprintLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalUmCertShaThumbprint" inType="win:Binary" outType="xs:hexBinary" length="LocalUmCertShaThumbprintLength"/>
+  <data name="LocalUmCertDnIssuer" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LocalUmCertDnRoot" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PeerUmCertDnSubject" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PeerUmCertShaThumbprintLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PeerUmCertShaThumbprint" inType="win:Binary" outType="xs:hexBinary" length="PeerUmCertShaThumbprintLength"/>
+  <data name="PeerUmCertDnIssuer" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PeerUmCertDnRoot" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UMImpersonation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="QMFilterId" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1017</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IKEDBG/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+IPsec: Extended Mode and Main Mode SAs Established]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LocalCertDnSubject" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LocalCertShaThumbprintLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalCertShaThumbprint" inType="win:Binary" outType="xs:hexBinary" length="LocalCertShaThumbprintLength"/>
+  <data name="LocalCertDnIssuer" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LocalCertDnRoot" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PeerCertDnSubject" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PeerCertShaThumbprintLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PeerCertShaThumbprint" inType="win:Binary" outType="xs:hexBinary" length="PeerCertShaThumbprintLength"/>
+  <data name="PeerCertDnIssuer" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PeerCertDnRoot" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MainModeLocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MainModeLocalAddress" inType="win:Binary" outType="win:SocketAddress" length="MainModeLocalAddressLength"/>
+  <data name="MainModePeerAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MainModePeerAddress" inType="win:Binary" outType="win:SocketAddress" length="MainModePeerAddressLength"/>
+  <data name="EncryptionAlgorithm" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AuthenticationAlgorithm" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DiffieHellmanGroup" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LifetimeMinutes" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="QMLimit" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Role" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Impersonation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MMFilterId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="SaLuid" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="UMLocalSPN" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UMPeerSPN" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UMAuthenticationMethodType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UMImpersonation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="QMFilterId" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1018</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IKEDBG/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+IPsec: Extended Mode and Main Mode SAs Established]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LocalSPN" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PeerSPN" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MainModeLocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MainModeLocalAddress" inType="win:Binary" outType="win:SocketAddress" length="MainModeLocalAddressLength"/>
+  <data name="MainModePeerAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MainModePeerAddress" inType="win:Binary" outType="win:SocketAddress" length="MainModePeerAddressLength"/>
+  <data name="AuthenticationMethodType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EncryptionAlgorithm" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AuthenticationAlgorithm" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DiffieHellmanGroup" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LifetimeMinutes" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="QMLimit" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Role" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Impersonation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MMFilterId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="SaLuid" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="LocalUmCertDnSubject" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LocalUmCertShaThumbprintLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalUmCertShaThumbprint" inType="win:Binary" outType="xs:hexBinary" length="LocalUmCertShaThumbprintLength"/>
+  <data name="LocalUmCertDnIssuer" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LocalUmCertDnRoot" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PeerUmCertDnSubject" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PeerUmCertShaThumbprintLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PeerUmCertShaThumbprint" inType="win:Binary" outType="xs:hexBinary" length="PeerUmCertShaThumbprintLength"/>
+  <data name="PeerUmCertDnIssuer" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PeerUmCertDnRoot" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UMImpersonation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="QMFilterId" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1019</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IKEDBG/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+IPsec: Extended Mode and Main Mode SAs Established]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LocalSpn" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PeerSpn" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MainModeLocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MainModeLocalAddress" inType="win:Binary" outType="win:SocketAddress" length="MainModeLocalAddressLength"/>
+  <data name="MainModePeerAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MainModePeerAddress" inType="win:Binary" outType="win:SocketAddress" length="MainModePeerAddressLength"/>
+  <data name="AuthenticationMethodType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EncryptionAlgorithm" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AuthenticationAlgorithm" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DiffieHellmanGroup" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LifetimeMinutes" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="QMLimit" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Role" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Impersonation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MMFilterId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="SaLuid" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="UMLocalSPN" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UMPeerSPN" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UMAuthenticationMethodType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UMImpersonation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="QMFilterId" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1020</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-WFP/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+IPsec DoS Protection Enabled]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1021</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-WFP/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+IPsec DoS Protection Disabled]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1022</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-WFP/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+IPsec DoS Protection failed to create state because the maximum number of entries allowed by policy has been reached]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1023</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IKEDBG/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+IPsec: Negotiation Request Initiated]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="KeyingModule" inType="win:AnsiString" outType="xs:string"/>
+  <data name="AcquireContext" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+  <data name="Mode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FilterId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="IPProtocol" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InterfaceLuid" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ProfileId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalUdpEncapPort" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="RemoteUdpEncapPort" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="MMTargetName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EMTargetName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NumTokens" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Token1Type" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Token1Principal" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Token1Mode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Token1" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Token2Type" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Token2Principal" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Token2Mode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Token2" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Token3Type" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Token3Principal" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Token3Mode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Token3" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Token4Type" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Token4Principal" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Token4Mode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Token4" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="VirtualIfTunnelId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="TrafficSelectorId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Flags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="RekeySPI" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OrigVirtualIfTunnelId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="PacketLocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PacketLocalAddress" inType="win:Binary" outType="win:SocketAddress" length="PacketLocalAddressLength"/>
+  <data name="PacketRemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PacketRemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="PacketRemoteAddressLength"/>
+  <data name="PacketIPProtocol" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PacketInterfaceLuid" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="PacketProfileId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1024</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IKEDBG/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+IPsec: Send ISAKMP Packet]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ICookie" inType="win:AnsiString" outType="xs:string"/>
+  <data name="RCookie" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ExchangeType" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NextPayload" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Flags" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="MessageID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LocalPort" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalProtocol" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RemotePort" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteProtocol" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InterfaceLuid" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1025</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IKEDBG/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+IPsec: Receive ISAKMP Packet]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ICookie" inType="win:AnsiString" outType="xs:string"/>
+  <data name="RCookie" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ExchangeType" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NextPayload" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Flags" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="MessageID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LocalPort" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalProtocol" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RemotePort" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteProtocol" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InterfaceLuid" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ProfileId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1026</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IKEDBG/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+WFP: User Mode Error]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1027</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IKEDBG/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+An IPsec quick mode security association ended.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="LocalAddressMask" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LocalTunnelEndpointLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalTunnelEndpoint" inType="win:Binary" outType="win:SocketAddress" length="LocalTunnelEndpointLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+  <data name="RemoteAddressMask" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RemoteTunnelEndpointLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteTunnelEndpoint" inType="win:Binary" outType="win:SocketAddress" length="RemoteTunnelEndpointLength"/>
+  <data name="IPProtocol" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="QMSaLuid" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="VirtualIFTunnelId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="VirtualIFTrafficSelectorId" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1027</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-IKE/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+An IPsec quick mode security association ended.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="LocalAddressMask" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LocalTunnelEndpointLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalTunnelEndpoint" inType="win:Binary" outType="win:SocketAddress" length="LocalTunnelEndpointLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+  <data name="RemoteAddressMask" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RemoteTunnelEndpointLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteTunnelEndpoint" inType="win:Binary" outType="win:SocketAddress" length="RemoteTunnelEndpointLength"/>
+  <data name="IPProtocol" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="QMSaLuid" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="VirtualIFTunnelId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="VirtualIFTrafficSelectorId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="InboundSPI" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OutboundSPI" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1028</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IKE/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+An IPsec quick mode security association was established.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="LocalAddressMask" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LocalTunnelEndpointLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalTunnelEndpoint" inType="win:Binary" outType="win:SocketAddress" length="LocalTunnelEndpointLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+  <data name="RemoteAddressMask" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RemoteTunnelEndpointLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteTunnelEndpoint" inType="win:Binary" outType="win:SocketAddress" length="RemoteTunnelEndpointLength"/>
+  <data name="IPProtocol" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="KeyingModuleName" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="AHAuthType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ESPAuthType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ESPCipherType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="LifetimeSeconds" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LifetimeKilobytes" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LifetimePackets" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Mode" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Role" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="TransportFilterId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="MMSaLuid" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="QMSaLuid" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="InboundSPI" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OutboundSPI" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VirtualIFTunnelId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="VirtualIFTrafficSelectorId" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1028</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-IKE/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+An IPsec quick mode security association was established.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="LocalAddressMask" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LocalTunnelEndpointLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalTunnelEndpoint" inType="win:Binary" outType="win:SocketAddress" length="LocalTunnelEndpointLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+  <data name="RemoteAddressMask" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RemoteTunnelEndpointLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteTunnelEndpoint" inType="win:Binary" outType="win:SocketAddress" length="RemoteTunnelEndpointLength"/>
+  <data name="IPProtocol" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="KeyingModuleName" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="AHAuthType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ESPAuthType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ESPCipherType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="LifetimeSeconds" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LifetimeKilobytes" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LifetimePackets" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Mode" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Role" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="TransportFilterId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="MMSaLuid" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="QMSaLuid" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="InboundSPI" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OutboundSPI" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VirtualIFTunnelId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="VirtualIFTrafficSelectorId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="RekeySPI" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1029</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-WFP/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+WFP: Packet Dropped - Filter Run-Time ID: %10, Layer Run-Time ID: %11]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Timestamp" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+  <data name="EtherType" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="MediaType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InterfaceType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VlanTag" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="FilterId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="LayerId" inType="win:UInt16" outType="win:HexInt16"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1029</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-WFP/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+WFP: Packet Dropped - Filter Run-Time ID: %10, Layer Run-Time ID: %11]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Timestamp" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+  <data name="EtherType" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="MediaType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InterfaceType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VlanTag" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="FilterId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="LayerId" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="vSwitchId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SourcevSwitchPort" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DestinationvSwitchPort" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1030</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-WFP/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Transaction Watchdog Timeout
+The filtering engine has exceeded the configured threshold to process a transaction. This could indicate a suboptimal policy configuration that may cause temporary network outages.
+    Owning Process ID: %1
+    Transaction Time (msec): %2
+    Transaction Commit Time (msec): %3
+    Configured Threshold (msec): %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TxnTimeInMSec" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CommitTimeInMSec" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="WatchdogTimeoutInMSec" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1031</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VPN/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+File path trigger increment due to match for %2, counter value %1 ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Counter" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FilePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1032</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VPN/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+File path trigger decrement due to match for %2, counter value %1 ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Counter" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FilePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1033</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VPN/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Modern app trigger increment due to match for %2, counter value %1 ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Counter" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AppSID" inType="win:SID" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1034</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VPN/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Modern app trigger decrement due to match for %2, counter value %1 ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Counter" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AppSID" inType="win:SID" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1035</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VPN/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Modern app trigger decrement due to match for %2, counter value %1 ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Counter" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SecurityDescriptor" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1036</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VPN/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Modern app trigger decrement due to match for %2, counter value %1 ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Counter" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SecurityDescriptor" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1037</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VPN/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Trigger increment due to NRPT lookup, counter value %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Counter" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1038</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VPN/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Trigger decrement due to NRPT idle, counter value %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Counter" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1039</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VPN/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Trigger increment due to flow creation, counter value: %1, local address: %3, remote address: %5, protocol %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Counter" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+  <data name="IPProtocol" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1040</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VPN/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Trigger decrement due to flow deletion, counter value: %1, local address: %3, remote address: %5, protocol %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Counter" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+  <data name="IPProtocol" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1041</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VPN/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Connect occurred due to unexpected disconnect, counter value %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Counter" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1042</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VPN/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Disconnecting after expiration of debounce interval]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1043</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IKE/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+IPsec: Main Mode SA Established]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MainModeLocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MainModeLocalAddress" inType="win:Binary" outType="win:SocketAddress" length="MainModeLocalAddressLength"/>
+  <data name="MainModePeerAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MainModePeerAddress" inType="win:Binary" outType="win:SocketAddress" length="MainModePeerAddressLength"/>
+  <data name="KeyingModule" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AuthenticationMethodType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EncryptionAlgorithm" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AuthenticationAlgorithm" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DiffieHellmanGroup" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LifetimeMinutes" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="QMLimit" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Role" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Impersonation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MMFilterId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="SaLuid" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="ProviderContextKey" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VirtualIfTunnelId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="ICookie" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="RCookie" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1044</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-WFP/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Received the first packet on low power enabled IKE tunnel with SPI: %9 ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Timestamp" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+  <data name="ScopeId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AppId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UserSID" inType="win:SID" outType="xs:string"/>
+  <data name="SPI" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

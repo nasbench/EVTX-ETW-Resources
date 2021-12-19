@@ -1,0 +1,264 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Crypto-RNG</Name>
+        <Metadata>
+            <Guid>{54D5AC20-E14F-4FDA-92DA-EBF7556FF176}</Guid>
+            <ResourceFilePath>C:\Windows\System32\drivers\cng.sys</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\System32\drivers\cng.sys</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.18362.175&amp;FileName=cng.sys&amp;FileVer=10.0.18362.175</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Crypto-RNG</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-Crypto-RNG/Analytic</Message>
+                    <Path>Microsoft-Windows-Crypto-RNG/Analytic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Gather entropy for the system random number generator</Message>
+                    <Name>GatherEntropy</Name>
+                    <Value>10</Value>
+                </Task>
+                <Task>
+                    <Message>Prng</Message>
+                    <Name>Prng</Name>
+                    <Value>20</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Source registration</Message>
+                    <Name>KEYWORD_SYSTEMRNG_ENTROPY_REGISTRATION</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Entropy data flow</Message>
+                    <Name>KEYWORD_SYSTEMRNG_ENTROPY_DATA</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>PRNG</Message>
+                    <Name>KEYWORD_SYSTEMRNG_PRNG</Name>
+                    <Value>4</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Crypto-RNG/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Gather entropy for the system random number generator</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Source registration</Keyword>
+                <Message><![CDATA[
+An entropy source was registered.
+	Source	%1
+	Name	%2
+	Type	%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SourceNumber" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="SourceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SourceType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Crypto-RNG/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Gather entropy for the system random number generator</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Source registration</Keyword>
+                <Message><![CDATA[
+Entropy source %1 (%2) was unregistered.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SourceNumber" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="SourceName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Crypto-RNG/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Gather entropy for the system random number generator</Task>
+                <Keyword>Entropy data flow</Keyword>
+                <Message><![CDATA[
+Entropy source %1 provided %2 bytes with %3 millibits of entropy
+Data	%5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SourceNumber" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="BytesProvided" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EntropyEstimate" inType="win:Int32" outType="xs:int"/>
+  <data name="nData" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Data" inType="win:Binary" outType="xs:hexBinary" length="nData"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Crypto-RNG/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Gather entropy for the system random number generator</Task>
+                <Keyword>Entropy data flow</Keyword>
+                <Message><![CDATA[
+Callback to source %1 returned status %2, taking time %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SourceNumber" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ResultStatus" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="TimeTaken" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Crypto-RNG/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Gather entropy for the system random number generator</Task>
+                <Keyword>Entropy data flow</Keyword>
+                <Message><![CDATA[
+Boot entropy result:
+	Source	%1
+	Policy	%2
+	Code	%3
+	Status	%4
+	Time	%5
+	BytesProvided	%6
+	Bytes	%8]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Source" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Policy" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ResultCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ResultStatus" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Time" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="BytesProvided" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="nData" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Data" inType="win:Binary" outType="xs:hexBinary" length="nData"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Crypto-RNG/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Gather entropy for the system random number generator</Task>
+                <Keyword>Entropy data flow</Keyword>
+                <Message><![CDATA[
+Pool reseed:
+	Count	%1
+	Type	%2
+	Data	%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PoolReseedCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ReseedType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="nData" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Data" inType="win:Binary" outType="xs:hexBinary" length="nData"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>33</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Crypto-RNG/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Gather entropy for the system random number generator</Task>
+                <Keyword>Entropy data flow</Keyword>
+                <Message><![CDATA[
+Pool add:
+	Pool	%1
+	Data	%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PoolNo" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="nData" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Data" inType="win:Binary" outType="xs:hexBinary" length="nData"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>48</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Crypto-RNG/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Prng</Task>
+                <Keyword>PRNG</Keyword>
+                <Message><![CDATA[
+Prng (re)seed:
+Addr	%1
+Data	%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PrngAddress" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="nData" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Data" inType="win:Binary" outType="xs:hexBinary" length="nData"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>49</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Crypto-RNG/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Prng</Task>
+                <Keyword>PRNG</Keyword>
+                <Message><![CDATA[
+Prng output:
+	Addr	%1
+	Bytes	%2
+	Data	%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PrngAddress" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="BytesProduced" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="nData" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Data" inType="win:Binary" outType="xs:hexBinary" length="nData"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,1139 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-DataIntegrityScan</Name>
+        <Metadata>
+            <Guid>{13BC4371-4E21-4E46-A84F-8C0FFB548CED}</Guid>
+            <ResourceFilePath>C:\Windows\System32\discan.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\System32\discan.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.18362.1&amp;FileName=discan.dll&amp;FileVer=10.0.18362.1</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-DataIntegrityScan/Admin</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-DataIntegrityScan/CrashRecovery</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DataIntegrityScan/Admin</Channel>
+                <Level>Information</Level>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Started checking data integrity.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DataIntegrityScan/Admin</Channel>
+                <Level>Information</Level>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Completed data integrity checks.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DataIntegrityScan/Admin</Channel>
+                <Level>Information</Level>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Disk scan started on \\?\PhysicalDrive%1 (\\?\Disk%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DiskNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DiskGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="PortPoolId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="PortDiskId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DataIntegrityScan/Admin</Channel>
+                <Level>Information</Level>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Disk scan completed on \\?\PhysicalDrive%1 (\\?\Disk%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DiskNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DiskGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="PortPoolId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="PortDiskId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DataIntegrityScan/Admin</Channel>
+                <Level>Information</Level>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Volume scan started on %4 (%2) in \\?\PhysicalDrive%5 (\\?\Disk%6)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+  <data name="FriendlyVolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FriendlyVolumeName" inType="win:UnicodeString" outType="xs:string" length="FriendlyVolumeNameLength"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="DiskNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DiskGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="PortPoolId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="PortDiskId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>22</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DataIntegrityScan/Admin</Channel>
+                <Level>Information</Level>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Volume scan completed on %4 (%2)
+Bytes repaired: %11
+Bytes not repaired: %12
+HResult: %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+  <data name="FriendlyVolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FriendlyVolumeName" inType="win:UnicodeString" outType="xs:string" length="FriendlyVolumeNameLength"/>
+  <data name="HResult" inType="win:Int32" outType="win:Hresult"/>
+  <data name="DirectoryCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="FileCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="StreamCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="DataCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="FsctlCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="TotalBytesRepaired" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TotalBytesFailed" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MetadataBytesProcessed" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="DataBytesProcessed" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TotalMetadataBytesInUse" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TotalDataBytesInUse" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TotalTimeTaken" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>23</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DataIntegrityScan/Admin</Channel>
+                <Level>Information</Level>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Volume scan was partially completed on %4 (%2)
+Bytes repaired: %11
+Bytes not repaired: %12
+HResult: %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+  <data name="FriendlyVolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FriendlyVolumeName" inType="win:UnicodeString" outType="xs:string" length="FriendlyVolumeNameLength"/>
+  <data name="HResult" inType="win:Int32" outType="win:Hresult"/>
+  <data name="DirectoryCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="FileCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="StreamCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="DataCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="FsctlCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="TotalBytesRepaired" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TotalBytesFailed" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MetadataBytesProcessed" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="DataBytesProcessed" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TotalMetadataBytesInUse" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TotalDataBytesInUse" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TotalTimeTaken" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>24</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DataIntegrityScan/Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Files were skipped during the volume scan.
+Files skipped: %6
+Volume name: %4 (%2)
+First skipped file name: %8
+HResult: %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+  <data name="FriendlyVolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FriendlyVolumeName" inType="win:UnicodeString" outType="xs:string" length="FriendlyVolumeNameLength"/>
+  <data name="HResult" inType="win:Int32" outType="win:Hresult"/>
+  <data name="Count" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DataIntegrityScan/Admin</Channel>
+                <Level>Error</Level>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Volume scan completed on %4 (%2)
+Bytes repaired: %11
+Bytes not repaired: %12
+HResult: %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+  <data name="FriendlyVolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FriendlyVolumeName" inType="win:UnicodeString" outType="xs:string" length="FriendlyVolumeNameLength"/>
+  <data name="HResult" inType="win:Int32" outType="win:Hresult"/>
+  <data name="DirectoryCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="FileCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="StreamCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="DataCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="FsctlCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="TotalBytesRepaired" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TotalBytesFailed" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MetadataBytesProcessed" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="DataBytesProcessed" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TotalMetadataBytesInUse" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TotalDataBytesInUse" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TotalTimeTaken" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>26</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DataIntegrityScan/Admin</Channel>
+                <Level>Error</Level>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Volume scan was partially completed on %4 (%2)
+Bytes repaired: %11
+Bytes not repaired: %12
+HResult: %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+  <data name="FriendlyVolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FriendlyVolumeName" inType="win:UnicodeString" outType="xs:string" length="FriendlyVolumeNameLength"/>
+  <data name="HResult" inType="win:Int32" outType="win:Hresult"/>
+  <data name="DirectoryCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="FileCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="StreamCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="DataCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="FsctlCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="TotalBytesRepaired" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TotalBytesFailed" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MetadataBytesProcessed" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="DataBytesProcessed" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TotalMetadataBytesInUse" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TotalDataBytesInUse" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TotalTimeTaken" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>27</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DataIntegrityScan/Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Volume scan completion at %17% on %4 (%2)
+Bytes repaired: %10
+Bytes not repaired: %11]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+  <data name="FriendlyVolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FriendlyVolumeName" inType="win:UnicodeString" outType="xs:string" length="FriendlyVolumeNameLength"/>
+  <data name="DirectoryCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="FileCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="StreamCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="DataCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="FsctlCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="TotalBytesRepaired" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TotalBytesFailed" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MetadataBytesProcessed" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="DataBytesProcessed" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TotalMetadataBytesInUse" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TotalDataBytesInUse" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TotalTimeTaken" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="PercentComplete" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>54</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DataIntegrityScan/Admin</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+File data inconsistency was detected and was repaired successfully.
+File name: %2
+Range offset: %4
+Range length (in bytes): %5
+Bytes repaired: %6
+Status: %8]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="InternalFileReference" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="FileOffset" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="BytesRepaired" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="BytesFailed" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Status" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>55</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DataIntegrityScan/Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+File data scrub operation failed.
+File name: %2
+Range offset: %4
+Range length (in bytes): %5
+Bytes repaired: %6
+Bytes not repaired: %7
+Status: %8]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="InternalFileReference" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="FileOffset" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="BytesRepaired" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="BytesFailed" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Status" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>56</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DataIntegrityScan/Admin</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Volume metadata inconsistency was detected and was repaired successfully.
+Volume name: %2
+Metadata reference: %3
+Range offset: %4
+Range length (in bytes): %5
+Bytes repaired: %6
+Status: %8]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="InternalFileReference" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="FileOffset" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="BytesRepaired" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="BytesFailed" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Status" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>57</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DataIntegrityScan/Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Volume metadata scrub operation failed.
+Volume name: %2
+Metadata reference: %3
+Range offset: %4
+Range length (in bytes): %5
+Bytes repaired: %6
+Bytes not repaired: %7
+Status: %8]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="InternalFileReference" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="FileOffset" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="BytesRepaired" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="BytesFailed" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Status" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>58</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DataIntegrityScan/Admin</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+File metadata inconsistency was detected and was repaired successfully.
+File name: %2
+Metadata reference: %3
+Range offset: %4
+Range length (in bytes): %5
+Bytes repaired: %6
+Status: %8]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="InternalFileReference" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="FileOffset" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="BytesRepaired" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="BytesFailed" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Status" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>59</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DataIntegrityScan/Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+File metadata scrub operation failed.
+File name: %2
+Metadata reference: %3
+Range offset: %4
+Range length (in bytes): %5
+Bytes repaired: %6
+Bytes not repaired: %7
+Status: %8]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="InternalFileReference" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="FileOffset" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="BytesRepaired" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="BytesFailed" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Status" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>60</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DataIntegrityScan/Admin</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+File data inconsistency was detected and the parity repair was scheduled at the end of the task. No user action is required.
+File name: %2
+Range offset: %4
+Range length (in bytes): %5
+Bytes repaired: %6
+Status: %8]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="InternalFileReference" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="FileOffset" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="BytesRepaired" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="BytesFailed" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Status" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>61</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DataIntegrityScan/Admin</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Volume metadata inconsistency was detected and the parity repair was scheduled at the end of the task. No user action is required.
+Volume name: %2
+Metadata reference: %3
+Range offset: %4
+Range length (in bytes): %5
+Bytes repaired: %6
+Status: %8]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="InternalFileReference" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="FileOffset" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="BytesRepaired" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="BytesFailed" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Status" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>62</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DataIntegrityScan/Admin</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+File metadata inconsistency was detected and the parity repair was scheduled at the end of the task. No user action is required.
+File name: %2
+Metadata reference: %3
+Range offset: %4
+Range length (in bytes): %5
+Bytes repaired: %6
+Status: %8]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="InternalFileReference" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="FileOffset" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="BytesRepaired" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="BytesFailed" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Status" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DataIntegrityScan/CrashRecovery</Channel>
+                <Level>Information</Level>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Started checking data integrity for crash recovery.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>104</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DataIntegrityScan/CrashRecovery</Channel>
+                <Level>Information</Level>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Completed data integrity checks for crash recovery.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>111</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DataIntegrityScan/CrashRecovery</Channel>
+                <Level>Information</Level>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Crash recovery disk scan started on \\?\PhysicalDrive%1 (\\?\Disk%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DiskNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DiskGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="PortPoolId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="PortDiskId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>112</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DataIntegrityScan/CrashRecovery</Channel>
+                <Level>Information</Level>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Crash recovery disk scan completed on \\?\PhysicalDrive%1 (\\?\Disk%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DiskNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DiskGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="PortPoolId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="PortDiskId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>121</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DataIntegrityScan/CrashRecovery</Channel>
+                <Level>Information</Level>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Crash recovery volume scan started on %4 (%2) in \\?\PhysicalDrive%5 (\\?\Disk%9)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+  <data name="FriendlyVolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FriendlyVolumeName" inType="win:UnicodeString" outType="xs:string" length="FriendlyVolumeNameLength"/>
+  <data name="DiskNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DiskOffset" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="DiskGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="PortPoolId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="PortDiskId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>122</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DataIntegrityScan/CrashRecovery</Channel>
+                <Level>Information</Level>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Crash recovery volume scan completed on %4 (%2)
+Bytes repaired: %11
+Bytes not repaired: %12
+HResult: %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+  <data name="FriendlyVolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FriendlyVolumeName" inType="win:UnicodeString" outType="xs:string" length="FriendlyVolumeNameLength"/>
+  <data name="HResult" inType="win:Int32" outType="win:Hresult"/>
+  <data name="DirectoryCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="FileCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="StreamCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="DataCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="FsctlCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="TotalBytesRepaired" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TotalBytesFailed" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MetadataBytesProcessed" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="DataBytesProcessed" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TotalMetadataBytesInUse" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TotalDataBytesInUse" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MaxThreadCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TotalTimeTaken" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="DiskNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DiskOffset" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>123</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DataIntegrityScan/CrashRecovery</Channel>
+                <Level>Information</Level>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Volume scan was partially completed on %4 (%2)
+Bytes repaired: %11
+Bytes not repaired: %12
+HResult: %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+  <data name="FriendlyVolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FriendlyVolumeName" inType="win:UnicodeString" outType="xs:string" length="FriendlyVolumeNameLength"/>
+  <data name="HResult" inType="win:Int32" outType="win:Hresult"/>
+  <data name="DirectoryCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="FileCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="StreamCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="DataCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="FsctlCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="TotalBytesRepaired" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TotalBytesFailed" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MetadataBytesProcessed" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="DataBytesProcessed" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TotalMetadataBytesInUse" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TotalDataBytesInUse" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MaxThreadCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TotalTimeTaken" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="DiskNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DiskOffset" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>124</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DataIntegrityScan/CrashRecovery</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Files were skipped during the volume scan.
+Files skipped: %6
+Volume name: %4 (%2)
+First skipped file name: %8
+HResult: %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+  <data name="FriendlyVolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FriendlyVolumeName" inType="win:UnicodeString" outType="xs:string" length="FriendlyVolumeNameLength"/>
+  <data name="HResult" inType="win:Int32" outType="win:Hresult"/>
+  <data name="Count" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>125</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DataIntegrityScan/CrashRecovery</Channel>
+                <Level>Error</Level>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Crash recovery volume scan completed on %4 (%2)
+Bytes repaired: %11
+Bytes not repaired: %12
+HResult: %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+  <data name="FriendlyVolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FriendlyVolumeName" inType="win:UnicodeString" outType="xs:string" length="FriendlyVolumeNameLength"/>
+  <data name="HResult" inType="win:Int32" outType="win:Hresult"/>
+  <data name="DirectoryCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="FileCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="StreamCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="DataCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="FsctlCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="TotalBytesRepaired" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TotalBytesFailed" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MetadataBytesProcessed" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="DataBytesProcessed" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TotalMetadataBytesInUse" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TotalDataBytesInUse" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MaxThreadCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TotalTimeTaken" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="DiskNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DiskOffset" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>126</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DataIntegrityScan/CrashRecovery</Channel>
+                <Level>Error</Level>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Volume scan was partially completed on %4 (%2)
+Bytes repaired: %11
+Bytes not repaired: %12
+HResult: %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+  <data name="FriendlyVolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FriendlyVolumeName" inType="win:UnicodeString" outType="xs:string" length="FriendlyVolumeNameLength"/>
+  <data name="HResult" inType="win:Int32" outType="win:Hresult"/>
+  <data name="DirectoryCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="FileCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="StreamCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="DataCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="FsctlCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="TotalBytesRepaired" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TotalBytesFailed" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MetadataBytesProcessed" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="DataBytesProcessed" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TotalMetadataBytesInUse" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TotalDataBytesInUse" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MaxThreadCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TotalTimeTaken" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="DiskNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DiskOffset" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>127</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DataIntegrityScan/CrashRecovery</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Drt clear completed on %4 (%2)
+HResult: %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+  <data name="FriendlyVolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FriendlyVolumeName" inType="win:UnicodeString" outType="xs:string" length="FriendlyVolumeNameLength"/>
+  <data name="HResult" inType="win:Int32" outType="win:Hresult"/>
+  <data name="DiskNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DiskOffset" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="DiskGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="PortPoolId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="PortDiskId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>128</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DataIntegrityScan/CrashRecovery</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Drt clear completed on %4 (%2)
+HResult: %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+  <data name="FriendlyVolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FriendlyVolumeName" inType="win:UnicodeString" outType="xs:string" length="FriendlyVolumeNameLength"/>
+  <data name="HResult" inType="win:Int32" outType="win:Hresult"/>
+  <data name="DiskNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DiskOffset" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="DiskGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="PortPoolId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="PortDiskId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>129</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DataIntegrityScan/CrashRecovery</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Crash recovery volume scan completion at %18% on %4 (%2)
+Bytes repaired: %10
+Bytes not repaired: %11]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+  <data name="FriendlyVolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FriendlyVolumeName" inType="win:UnicodeString" outType="xs:string" length="FriendlyVolumeNameLength"/>
+  <data name="DirectoryCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="FileCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="StreamCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="DataCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="FsctlCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="TotalBytesRepaired" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TotalBytesFailed" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MetadataBytesProcessed" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="DataBytesProcessed" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TotalMetadataBytesInUse" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TotalDataBytesInUse" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MaxThreadCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TotalTimeTaken" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="PercentComplete" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DiskNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DiskOffset" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>154</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DataIntegrityScan/CrashRecovery</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+File data inconsistency was detected and was repaired successfully.
+File name: %2
+Range offset: %4
+Range length (in bytes): %5
+Bytes repaired: %6
+Status: %8]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="InternalFileReference" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="FileOffset" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="BytesRepaired" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="BytesFailed" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Status" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>155</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DataIntegrityScan/CrashRecovery</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+File data scrub operation failed.
+File name: %2
+Range offset: %4
+Range length (in bytes): %5
+Bytes repaired: %6
+Bytes not repaired: %7
+Status: %8]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="InternalFileReference" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="FileOffset" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="BytesRepaired" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="BytesFailed" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Status" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>156</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DataIntegrityScan/CrashRecovery</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Volume metadata inconsistency was detected and was repaired successfully.
+Volume name: %2
+Metadata reference: %3
+Range offset: %4
+Range length (in bytes): %5
+Bytes repaired: %6
+Status: %8]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="InternalFileReference" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="FileOffset" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="BytesRepaired" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="BytesFailed" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Status" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>157</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DataIntegrityScan/CrashRecovery</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Volume metadata scrub operation failed.
+Volume name: %2
+Metadata reference: %3
+Range offset: %4
+Range length (in bytes): %5
+Bytes repaired: %6
+Bytes not repaired: %7
+Status: %8]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="InternalFileReference" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="FileOffset" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="BytesRepaired" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="BytesFailed" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Status" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>158</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DataIntegrityScan/CrashRecovery</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+File metadata inconsistency was detected and was repaired successfully.
+File name: %2
+Metadata reference: %3
+Range offset: %4
+Range length (in bytes): %5
+Bytes repaired: %6
+Status: %8]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="InternalFileReference" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="FileOffset" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="BytesRepaired" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="BytesFailed" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Status" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>159</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DataIntegrityScan/CrashRecovery</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+File metadata scrub operation failed.
+File name: %2
+Metadata reference: %3
+Range offset: %4
+Range length (in bytes): %5
+Bytes repaired: %6
+Bytes not repaired: %7
+Status: %8]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="InternalFileReference" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="FileOffset" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="BytesRepaired" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="BytesFailed" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Status" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>160</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DataIntegrityScan/Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Parity repair completed.
+Volume name: %4 (%2)
+Extent count: %5
+Length (in bytes): %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+  <data name="FriendlyVolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FriendlyVolumeName" inType="win:UnicodeString" outType="xs:string" length="FriendlyVolumeNameLength"/>
+  <data name="ExtentCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ExtentSize" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="HResult" inType="win:Int32" outType="win:Hresult"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>161</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DataIntegrityScan/Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Parity repair failed.
+Volume name: %4 (%2)
+Extent count: %5
+Length (in bytes): %6
+HResult: %7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+  <data name="FriendlyVolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FriendlyVolumeName" inType="win:UnicodeString" outType="xs:string" length="FriendlyVolumeNameLength"/>
+  <data name="ExtentCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ExtentSize" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="HResult" inType="win:Int32" outType="win:Hresult"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

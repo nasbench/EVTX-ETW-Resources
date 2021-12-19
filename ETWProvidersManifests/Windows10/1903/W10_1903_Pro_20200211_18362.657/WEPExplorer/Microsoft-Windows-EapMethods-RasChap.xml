@@ -1,0 +1,178 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-EapMethods-RasChap</Name>
+        <Metadata>
+            <Guid>{58980F4B-BD39-4A3E-B344-492ED2254A4E}</Guid>
+            <ResourceFilePath>C:\Windows\System32\RasChap.dll</ResourceFilePath>
+            <ParameterFilePath>C:\Windows\system32\RasChap.dll</ParameterFilePath>
+            <MessageFilePath>C:\Windows\System32\RasChap.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.18362.1&amp;FileName=RasChap.dll&amp;FileVer=10.0.18362.1</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Operational Channel</Message>
+                    <Path>Microsoft-Windows-EapMethods-RasChap/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Authentication failed.</Message>
+                    <Name>AuthFailed</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>Authentication succeeded.</Message>
+                    <Name>AuthSucceeded</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message>RasChap authentication in progress event</Message>
+                    <Name>AuthInProgress</Name>
+                    <Value>3</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Channel>Operational Channel</Channel>
+                <Level>Information</Level>
+                <Task>Authentication succeeded.</Task>
+                <Message><![CDATA[
+Authentication succeeded for user %1, in domain %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Domain" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Username" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Channel>Operational Channel</Channel>
+                <Level>Error</Level>
+                <Task>Authentication failed.</Task>
+                <Message><![CDATA[
+Authentication failed for user %1, in domain %2, with error %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Domain" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Username" inType="win:AnsiString" outType="xs:string"/>
+  <data name="int1" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>0</Version>
+                <Channel>Operational Channel</Channel>
+                <Level>Error</Level>
+                <Task>Authentication failed.</Task>
+                <Message><![CDATA[
+Authentication failed for user %1, in domain %2 because it was attempted outside permitted logon hours.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Domain" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Username" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>103</Id>
+                <Version>0</Version>
+                <Channel>Operational Channel</Channel>
+                <Level>Error</Level>
+                <Task>Authentication failed.</Task>
+                <Message><![CDATA[
+Authentication failed for user %1, in domain %2 because the user account is disabled.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Domain" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Username" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>104</Id>
+                <Version>0</Version>
+                <Channel>Operational Channel</Channel>
+                <Level>Error</Level>
+                <Task>Authentication failed.</Task>
+                <Message><![CDATA[
+Authentication failed for user %1, in domain %2 because the user's password has expired.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Domain" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Username" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>105</Id>
+                <Version>0</Version>
+                <Channel>Operational Channel</Channel>
+                <Level>Error</Level>
+                <Task>Authentication failed.</Task>
+                <Message><![CDATA[
+Authentication failed for user %1, in domain %2 because the user does not have dial-in permission.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Domain" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Username" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>106</Id>
+                <Version>0</Version>
+                <Channel>Operational Channel</Channel>
+                <Level>Error</Level>
+                <Task>Authentication failed.</Task>
+                <Message><![CDATA[
+The user's effort to change their password failed. Username: %1. Domain: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Domain" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Username" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>107</Id>
+                <Version>0</Version>
+                <Channel>Operational Channel</Channel>
+                <Level>Information</Level>
+                <Task>RasChap authentication in progress event</Task>
+                <Message><![CDATA[
+Sending creds to server for Username: %1. Domain: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Domain" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Username" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

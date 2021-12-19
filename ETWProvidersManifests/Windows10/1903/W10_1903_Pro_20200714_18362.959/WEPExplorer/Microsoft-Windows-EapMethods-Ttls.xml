@@ -1,0 +1,150 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-EapMethods-Ttls</Name>
+        <Metadata>
+            <Guid>{D710D46C-235D-4798-AC20-9F83E1DCD557}</Guid>
+            <ResourceFilePath>C:\Windows\System32\TtlsAuth.dll</ResourceFilePath>
+            <ParameterFilePath>C:\Windows\system32\TtlsAuth.dll</ParameterFilePath>
+            <MessageFilePath>C:\Windows\System32\TtlsAuth.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.18362.959&amp;FileName=TtlsAuth.dll&amp;FileVer=10.0.18362.959</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Operational</Message>
+                    <Path>Microsoft-Windows-EapMethods-Ttls/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>TTLS authentication failed event</Message>
+                    <Name>AuthFailed</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>Performance metric event</Message>
+                    <Name>PerfMetric</Name>
+                    <Value>2</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>TTLS authentication failed event</Task>
+                <Message><![CDATA[
+TTLS authentication failed because the client doesn't understand a mandatory step that the server wants to perform.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>TTLS authentication failed event</Task>
+                <Message><![CDATA[
+TTLS authentication failed because a bad authentication protocol packet was received, possibly due to an implementation error.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>200</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Performance metric event</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Server certificate received]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>201</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Performance metric event</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Validation completed]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>202</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Performance metric event</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Message receieved from server]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>203</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Performance metric event</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Client sends response]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>204</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Performance metric event</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Server Certificate Thumbprint: %1. Server Certificate Fully Qualified Domain Name: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CAThumbprint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServerName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

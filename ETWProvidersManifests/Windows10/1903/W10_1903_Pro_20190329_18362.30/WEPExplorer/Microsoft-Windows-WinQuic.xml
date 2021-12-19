@@ -1,0 +1,310 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-WinQuic</Name>
+        <Metadata>
+            <Guid>{2BCFEFE5-5026-536B-1686-B249CB49CAE3}</Guid>
+            <ResourceFilePath>C:\Windows\system32\drivers\winquic.sys</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\drivers\winquic.sys</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.18362.1&amp;FileName=winquic.sys&amp;FileVer=10.0.18362.1</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:Registration</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:Session</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:Listener</Name>
+                    <Value>4</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:Connection</Name>
+                    <Value>8</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:Stream</Name>
+                    <Value>16</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:DataFlow</Name>
+                    <Value>32</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:Scheduling</Name>
+                    <Value>64</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>ut:Connection</Keyword>
+                <Message><![CDATA[
+[conn][%1] Begin, IsServer=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="IsServer" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>ut:Connection</Keyword>
+                <Message><![CDATA[
+[conn][%1] End]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>ut:Connection</Keyword>
+                <Message><![CDATA[
+[conn][%1] Handshake complete]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>ut:Connection ut:Scheduling</Keyword>
+                <Message><![CDATA[
+[conn][%1] Scheduling: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="State" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>ut:Connection ut:Scheduling</Keyword>
+                <Message><![CDATA[
+[conn][%1] Execute: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>ut:Connection ut:Scheduling</Keyword>
+                <Message><![CDATA[
+[conn][%1] Execute: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>ut:Connection ut:Scheduling</Keyword>
+                <Message><![CDATA[
+[conn][%1] Execute: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>ut:Stream</Keyword>
+                <Message><![CDATA[
+[strm][%1] Begin, Conn=%2 ID=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Stream" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ID" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>ut:Stream</Keyword>
+                <Message><![CDATA[
+[strm][%1] End]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Stream" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1000</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>ut:Connection ut:DataFlow</Keyword>
+                <Message><![CDATA[
+[conn][%1] FS: BytesSent=%2 InFlight=%3 InFlightMax=%4 CWnd=%5 SSThresh=%6 InRecov=%7 ConnFC=%8 StreamFC=%9 ISB=%10 PostedBytes=%11 SRtt=%12]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="BytesSent" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="BytesInFlight" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BytesInFlightMax" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CongestionWindow" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SlowStartThreshold" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsInRecovery" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ConnectionFlowControl" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="StreamFlowControl" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="IdealBytes" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="PostedBytes" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="SmoothedRtt" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>ut:Connection ut:DataFlow</Keyword>
+                <Message><![CDATA[
+[conn][%1] BLOCKED: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Reason" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>ut:Connection ut:DataFlow</Keyword>
+                <Message><![CDATA[
+[conn][%1] UNBLOCKED: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Reason" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>ut:Stream ut:DataFlow</Keyword>
+                <Message><![CDATA[
+[strm][%1] BLOCKED: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Stream" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Reason" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>ut:Stream ut:DataFlow</Keyword>
+                <Message><![CDATA[
+[strm][%1] UNBLOCKED: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Stream" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Reason" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>ut:Connection ut:DataFlow</Keyword>
+                <Message><![CDATA[
+[conn][%1] CUBIC: SlowStartThreshold=%2 K=%3 WindowMax=%4 WindowLastMax=%5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SlowStartThreshold" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="K" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="WindowMax" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="WindowLastMax" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1006</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>ut:Connection ut:DataFlow</Keyword>
+                <Message><![CDATA[
+[conn][%1] Congestion Event]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

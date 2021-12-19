@@ -1,0 +1,712 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Security-Mitigations</Name>
+        <Metadata>
+            <Guid>{FAE10392-F0AF-4AC0-B8FF-9F4D920C3CDF}</Guid>
+            <ResourceFilePath>C:\Windows\system32\Microsoft-Windows-System-Events.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\Microsoft-Windows-System-Events.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1&amp;FileName=Microsoft-Windows-System-Events.dll&amp;FileVer=10.0.17134.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Security-Mitigations</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Kernel Mode</Message>
+                    <Path>Microsoft-Windows-Security-Mitigations/KernelMode</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>User Mode</Message>
+                    <Path>Microsoft-Windows-Security-Mitigations/UserMode</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>KERNEL_MITIGATION_TASK_PROHIBIT_DYNAMIC_CODE</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>KERNEL_MITIGATION_TASK_PROHIBIT_CHILD_PROCESS_CREATION</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>KERNEL_MITIGATION_TASK_PROHIBIT_REMOTE_IMAGE_MAP</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>KERNEL_MITIGATION_TASK_PROHIBIT_LOWIL_IMAGE_MAP</Name>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>KERNEL_MITIGATION_TASK_PROHIBIT_WIN32K_SYSTEM_CALLS</Name>
+                    <Value>5</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>KERNEL_MITIGATION_TASK_PROHIBIT_NON_MICROSOFT_BINARIES</Name>
+                    <Value>6</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>USER_MITIGATION_TASK_EXPORT_ADDRESS_FILTER</Name>
+                    <Value>7</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>USER_MITIGATION_TASK_EXPORT_ADDRESS_FILTER_PLUS</Name>
+                    <Value>8</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>USER_MITIGATION_TASK_IMPORT_ADDRESS_FILTER</Name>
+                    <Value>9</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>USER_MITIGATION_TASK_ROP_STACKPIVOT</Name>
+                    <Value>10</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>USER_MITIGATION_TASK_ROP_CALLERCHECK</Name>
+                    <Value>11</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>USER_MITIGATION_TASK_ROP_SIMEXEC</Name>
+                    <Value>12</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Kernel Mode</Channel>
+                <Task>KERNEL_MITIGATION_TASK_PROHIBIT_DYNAMIC_CODE</Task>
+                <Message><![CDATA[
+Process '%2' (PID %5) would have been blocked from generating dynamic code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessPathLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ProcessPath" inType="win:UnicodeString" outType="xs:string" length="ProcessPathLength"/>
+  <data name="ProcessCommandLineLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ProcessCommandLine" inType="win:UnicodeString" outType="xs:string" length="ProcessCommandLineLength"/>
+  <data name="CallingProcessId" inType="win:UInt32" outType="win:PID"/>
+  <data name="CallingProcessCreateTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="CallingProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="CallingProcessSignatureLevel" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="CallingProcessSectionSignatureLevel" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="CallingProcessProtection" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="CallingThreadId" inType="win:UInt32" outType="win:TID"/>
+  <data name="CallingThreadCreateTime" inType="win:FILETIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Kernel Mode</Channel>
+                <Level>Warning</Level>
+                <Task>KERNEL_MITIGATION_TASK_PROHIBIT_DYNAMIC_CODE</Task>
+                <Message><![CDATA[
+Process '%2' (PID %5) was blocked from generating dynamic code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessPathLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ProcessPath" inType="win:UnicodeString" outType="xs:string" length="ProcessPathLength"/>
+  <data name="ProcessCommandLineLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ProcessCommandLine" inType="win:UnicodeString" outType="xs:string" length="ProcessCommandLineLength"/>
+  <data name="CallingProcessId" inType="win:UInt32" outType="win:PID"/>
+  <data name="CallingProcessCreateTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="CallingProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="CallingProcessSignatureLevel" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="CallingProcessSectionSignatureLevel" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="CallingProcessProtection" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="CallingThreadId" inType="win:UInt32" outType="win:TID"/>
+  <data name="CallingThreadCreateTime" inType="win:FILETIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Kernel Mode</Channel>
+                <Task>KERNEL_MITIGATION_TASK_PROHIBIT_CHILD_PROCESS_CREATION</Task>
+                <Message><![CDATA[
+Process '%2' (PID %5) would have been blocked from creating a child process '%14' with command line '%16'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessPathLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ProcessPath" inType="win:UnicodeString" outType="xs:string" length="ProcessPathLength"/>
+  <data name="ProcessCommandLineLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ProcessCommandLine" inType="win:UnicodeString" outType="xs:string" length="ProcessCommandLineLength"/>
+  <data name="CallingProcessId" inType="win:UInt32" outType="win:PID"/>
+  <data name="CallingProcessCreateTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="CallingProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="CallingProcessSignatureLevel" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="CallingProcessSectionSignatureLevel" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="CallingProcessProtection" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="CallingThreadId" inType="win:UInt32" outType="win:TID"/>
+  <data name="CallingThreadCreateTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="ChildImagePathNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ChildImagePathName" inType="win:UnicodeString" outType="xs:string" length="ChildImagePathNameLength"/>
+  <data name="ChildCommandLineLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ChildCommandLine" inType="win:UnicodeString" outType="xs:string" length="ChildCommandLineLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Kernel Mode</Channel>
+                <Level>Warning</Level>
+                <Task>KERNEL_MITIGATION_TASK_PROHIBIT_CHILD_PROCESS_CREATION</Task>
+                <Message><![CDATA[
+Process '%2' (PID %5) was blocked from creating a child process '%14' with command line '%16'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessPathLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ProcessPath" inType="win:UnicodeString" outType="xs:string" length="ProcessPathLength"/>
+  <data name="ProcessCommandLineLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ProcessCommandLine" inType="win:UnicodeString" outType="xs:string" length="ProcessCommandLineLength"/>
+  <data name="CallingProcessId" inType="win:UInt32" outType="win:PID"/>
+  <data name="CallingProcessCreateTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="CallingProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="CallingProcessSignatureLevel" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="CallingProcessSectionSignatureLevel" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="CallingProcessProtection" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="CallingThreadId" inType="win:UInt32" outType="win:TID"/>
+  <data name="CallingThreadCreateTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="ChildImagePathNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ChildImagePathName" inType="win:UnicodeString" outType="xs:string" length="ChildImagePathNameLength"/>
+  <data name="ChildCommandLineLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ChildCommandLine" inType="win:UnicodeString" outType="xs:string" length="ChildCommandLineLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Kernel Mode</Channel>
+                <Task>KERNEL_MITIGATION_TASK_PROHIBIT_LOWIL_IMAGE_MAP</Task>
+                <Message><![CDATA[
+Process '%2' (PID %5) would have been blocked from loading the low-integrity binary '%14'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessPathLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ProcessPath" inType="win:UnicodeString" outType="xs:string" length="ProcessPathLength"/>
+  <data name="ProcessCommandLineLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ProcessCommandLine" inType="win:UnicodeString" outType="xs:string" length="ProcessCommandLineLength"/>
+  <data name="ProcessId" inType="win:UInt32" outType="win:PID"/>
+  <data name="ProcessCreateTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="ProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ProcessSignatureLevel" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ProcessSectionSignatureLevel" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ProcessProtection" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="TargetThreadId" inType="win:UInt32" outType="win:TID"/>
+  <data name="TargetThreadCreateTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="ImageNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ImageName" inType="win:UnicodeString" outType="xs:string" length="ImageNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Kernel Mode</Channel>
+                <Level>Warning</Level>
+                <Task>KERNEL_MITIGATION_TASK_PROHIBIT_LOWIL_IMAGE_MAP</Task>
+                <Message><![CDATA[
+Process '%2' (PID %5) was blocked from loading the low-integrity binary '%14'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessPathLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ProcessPath" inType="win:UnicodeString" outType="xs:string" length="ProcessPathLength"/>
+  <data name="ProcessCommandLineLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ProcessCommandLine" inType="win:UnicodeString" outType="xs:string" length="ProcessCommandLineLength"/>
+  <data name="ProcessId" inType="win:UInt32" outType="win:PID"/>
+  <data name="ProcessCreateTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="ProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ProcessSignatureLevel" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ProcessSectionSignatureLevel" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ProcessProtection" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="TargetThreadId" inType="win:UInt32" outType="win:TID"/>
+  <data name="TargetThreadCreateTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="ImageNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ImageName" inType="win:UnicodeString" outType="xs:string" length="ImageNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Kernel Mode</Channel>
+                <Task>KERNEL_MITIGATION_TASK_PROHIBIT_REMOTE_IMAGE_MAP</Task>
+                <Message><![CDATA[
+Process '%2' (PID %5) would have been blocking from loading a binary from a remote share.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessPathLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ProcessPath" inType="win:UnicodeString" outType="xs:string" length="ProcessPathLength"/>
+  <data name="ProcessCommandLineLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ProcessCommandLine" inType="win:UnicodeString" outType="xs:string" length="ProcessCommandLineLength"/>
+  <data name="CallingProcessId" inType="win:UInt32" outType="win:PID"/>
+  <data name="CallingProcessCreateTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="CallingProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="CallingProcessSignatureLevel" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="CallingProcessSectionSignatureLevel" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="CallingProcessProtection" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="CallingThreadId" inType="win:UInt32" outType="win:TID"/>
+  <data name="CallingThreadCreateTime" inType="win:FILETIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>Kernel Mode</Channel>
+                <Level>Warning</Level>
+                <Task>KERNEL_MITIGATION_TASK_PROHIBIT_REMOTE_IMAGE_MAP</Task>
+                <Message><![CDATA[
+Process '%2' (PID %5) was blocked from loading a binary from a remote share.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessPathLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ProcessPath" inType="win:UnicodeString" outType="xs:string" length="ProcessPathLength"/>
+  <data name="ProcessCommandLineLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ProcessCommandLine" inType="win:UnicodeString" outType="xs:string" length="ProcessCommandLineLength"/>
+  <data name="CallingProcessId" inType="win:UInt32" outType="win:PID"/>
+  <data name="CallingProcessCreateTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="CallingProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="CallingProcessSignatureLevel" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="CallingProcessSectionSignatureLevel" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="CallingProcessProtection" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="CallingThreadId" inType="win:UInt32" outType="win:TID"/>
+  <data name="CallingThreadCreateTime" inType="win:FILETIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>Kernel Mode</Channel>
+                <Task>KERNEL_MITIGATION_TASK_PROHIBIT_WIN32K_SYSTEM_CALLS</Task>
+                <Message><![CDATA[
+Process '%2' (PID %5) would have been blocked from making system calls to Win32k.sys.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessPathLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ProcessPath" inType="win:UnicodeString" outType="xs:string" length="ProcessPathLength"/>
+  <data name="ProcessCommandLineLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ProcessCommandLine" inType="win:UnicodeString" outType="xs:string" length="ProcessCommandLineLength"/>
+  <data name="CallingProcessId" inType="win:UInt32" outType="win:PID"/>
+  <data name="CallingProcessCreateTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="CallingProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="CallingProcessSignatureLevel" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="CallingProcessSectionSignatureLevel" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="CallingProcessProtection" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="CallingThreadId" inType="win:UInt32" outType="win:TID"/>
+  <data name="CallingThreadCreateTime" inType="win:FILETIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>Kernel Mode</Channel>
+                <Level>Warning</Level>
+                <Task>KERNEL_MITIGATION_TASK_PROHIBIT_WIN32K_SYSTEM_CALLS</Task>
+                <Message><![CDATA[
+Process '%2' (PID %5) was blocked from making system calls to Win32k.sys.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessPathLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ProcessPath" inType="win:UnicodeString" outType="xs:string" length="ProcessPathLength"/>
+  <data name="ProcessCommandLineLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ProcessCommandLine" inType="win:UnicodeString" outType="xs:string" length="ProcessCommandLineLength"/>
+  <data name="CallingProcessId" inType="win:UInt32" outType="win:PID"/>
+  <data name="CallingProcessCreateTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="CallingProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="CallingProcessSignatureLevel" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="CallingProcessSectionSignatureLevel" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="CallingProcessProtection" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="CallingThreadId" inType="win:UInt32" outType="win:TID"/>
+  <data name="CallingThreadCreateTime" inType="win:FILETIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>Kernel Mode</Channel>
+                <Task>KERNEL_MITIGATION_TASK_PROHIBIT_NON_MICROSOFT_BINARIES</Task>
+                <Message><![CDATA[
+Process '%2' (PID %5) would have been blocked from loading the non-Microsoft-signed binary '%16'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessPathLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ProcessPath" inType="win:UnicodeString" outType="xs:string" length="ProcessPathLength"/>
+  <data name="ProcessCommandLineLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ProcessCommandLine" inType="win:UnicodeString" outType="xs:string" length="ProcessCommandLineLength"/>
+  <data name="ProcessId" inType="win:UInt32" outType="win:PID"/>
+  <data name="ProcessCreateTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="ProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ProcessSignatureLevel" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ProcessSectionSignatureLevel" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ProcessProtection" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="TargetThreadId" inType="win:UInt32" outType="win:TID"/>
+  <data name="TargetThreadCreateTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="RequiredSignatureLevel" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="SignatureLevel" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ImageNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ImageName" inType="win:UnicodeString" outType="xs:string" length="ImageNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>Kernel Mode</Channel>
+                <Level>Warning</Level>
+                <Task>KERNEL_MITIGATION_TASK_PROHIBIT_NON_MICROSOFT_BINARIES</Task>
+                <Message><![CDATA[
+Process '%2' (PID %5) was blocked from loading the non-Microsoft-signed binary '%16'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessPathLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ProcessPath" inType="win:UnicodeString" outType="xs:string" length="ProcessPathLength"/>
+  <data name="ProcessCommandLineLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ProcessCommandLine" inType="win:UnicodeString" outType="xs:string" length="ProcessCommandLineLength"/>
+  <data name="ProcessId" inType="win:UInt32" outType="win:PID"/>
+  <data name="ProcessCreateTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="ProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ProcessSignatureLevel" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ProcessSectionSignatureLevel" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ProcessProtection" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="TargetThreadId" inType="win:UInt32" outType="win:TID"/>
+  <data name="TargetThreadCreateTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="RequiredSignatureLevel" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="SignatureLevel" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ImageNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ImageName" inType="win:UnicodeString" outType="xs:string" length="ImageNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Channel>User Mode</Channel>
+                <Task>USER_MITIGATION_TASK_EXPORT_ADDRESS_FILTER</Task>
+                <Message><![CDATA[
+Process '%2' (PID %3) would have been blocked from accessing the Export Address Table for module '%8'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Subcode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProcessPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ModuleFullPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ModuleBase" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ModuleAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="MemAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="MemModuleFullPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MemModuleBase" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="APIName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="ThreadId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Channel>User Mode</Channel>
+                <Level>Warning</Level>
+                <Task>USER_MITIGATION_TASK_EXPORT_ADDRESS_FILTER</Task>
+                <Message><![CDATA[
+Process '%2' (PID %3) was blocked from accessing the Export Address Table for module '%8'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Subcode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProcessPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ModuleFullPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ModuleBase" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ModuleAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="MemAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="MemModuleFullPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MemModuleBase" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="APIName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="ThreadId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Channel>User Mode</Channel>
+                <Task>USER_MITIGATION_TASK_EXPORT_ADDRESS_FILTER_PLUS</Task>
+                <Message><![CDATA[
+Process '%2' (PID %3) would have been blocked from accessing the Export Address Table for module '%8'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Subcode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProcessPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ModuleFullPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ModuleBase" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ModuleAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="MemAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="MemModuleFullPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MemModuleBase" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="APIName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="ThreadId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Channel>User Mode</Channel>
+                <Level>Warning</Level>
+                <Task>USER_MITIGATION_TASK_EXPORT_ADDRESS_FILTER_PLUS</Task>
+                <Message><![CDATA[
+Process '%2' (PID %3) was blocked from accessing the Export Address Table for module '%8'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Subcode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProcessPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ModuleFullPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ModuleBase" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ModuleAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="MemAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="MemModuleFullPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MemModuleBase" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="APIName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="ThreadId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Channel>User Mode</Channel>
+                <Task>USER_MITIGATION_TASK_IMPORT_ADDRESS_FILTER</Task>
+                <Message><![CDATA[
+Process '%2' (PID %3) would have been blocked from accessing the Import Address Table for API '%10'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Subcode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProcessPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ModuleFullPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ModuleBase" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ModuleAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="MemAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="MemModuleFullPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MemModuleBase" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="APIName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="ThreadId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Channel>User Mode</Channel>
+                <Level>Warning</Level>
+                <Task>USER_MITIGATION_TASK_IMPORT_ADDRESS_FILTER</Task>
+                <Message><![CDATA[
+Process '%2' (PID %3) was blocked from accessing the Import Address Table for API '%10'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Subcode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProcessPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ModuleFullPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ModuleBase" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ModuleAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="MemAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="MemModuleFullPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MemModuleBase" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="APIName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="ThreadId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Channel>User Mode</Channel>
+                <Task>USER_MITIGATION_TASK_ROP_STACKPIVOT</Task>
+                <Message><![CDATA[
+Process '%2' (PID %3) would have been blocked from calling the API '%4' due to return-oriented programming (ROP) exploit indications.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Subcode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProcessPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HookedAPI" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ReturnAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="CalledAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="TargetAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StackAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FrameAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ReturnAddressModuleFullPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="ThreadId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Channel>User Mode</Channel>
+                <Level>Warning</Level>
+                <Task>USER_MITIGATION_TASK_ROP_STACKPIVOT</Task>
+                <Message><![CDATA[
+Process '%2' (PID %3) was blocked from calling the API '%4' due to return-oriented programming (ROP) exploit indications.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Subcode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProcessPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HookedAPI" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ReturnAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="CalledAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="TargetAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StackAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FrameAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ReturnAddressModuleFullPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="ThreadId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>0</Version>
+                <Channel>User Mode</Channel>
+                <Task>USER_MITIGATION_TASK_ROP_CALLERCHECK</Task>
+                <Message><![CDATA[
+Process '%2' (PID %3) would have been blocked from calling the API '%4' due to return-oriented programming (ROP) exploit indications.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Subcode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProcessPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HookedAPI" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ReturnAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="CalledAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="TargetAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StackAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FrameAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ReturnAddressModuleFullPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="ThreadId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>22</Id>
+                <Version>0</Version>
+                <Channel>User Mode</Channel>
+                <Level>Warning</Level>
+                <Task>USER_MITIGATION_TASK_ROP_CALLERCHECK</Task>
+                <Message><![CDATA[
+Process '%2' (PID %3) was blocked from calling the API '%4' due to return-oriented programming (ROP) exploit indications.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Subcode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProcessPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HookedAPI" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ReturnAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="CalledAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="TargetAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StackAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FrameAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ReturnAddressModuleFullPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="ThreadId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>23</Id>
+                <Version>0</Version>
+                <Channel>User Mode</Channel>
+                <Task>USER_MITIGATION_TASK_ROP_SIMEXEC</Task>
+                <Message><![CDATA[
+Process '%2' (PID %3) would have been blocked from calling the API '%4' due to return-oriented programming (ROP) exploit indications.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Subcode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProcessPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HookedAPI" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ReturnAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="CalledAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="TargetAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StackAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FrameAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ReturnAddressModuleFullPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="ThreadId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>24</Id>
+                <Version>0</Version>
+                <Channel>User Mode</Channel>
+                <Level>Warning</Level>
+                <Task>USER_MITIGATION_TASK_ROP_SIMEXEC</Task>
+                <Message><![CDATA[
+Process '%2' (PID %3) was blocked from calling the API '%4' due to return-oriented programming (ROP) exploit indications.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Subcode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProcessPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HookedAPI" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ReturnAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="CalledAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="TargetAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StackAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FrameAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ReturnAddressModuleFullPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="ThreadId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

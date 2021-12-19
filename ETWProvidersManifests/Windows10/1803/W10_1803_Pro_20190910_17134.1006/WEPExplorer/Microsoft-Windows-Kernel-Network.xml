@@ -1,0 +1,655 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Kernel-Network</Name>
+        <Metadata>
+            <Guid>{7DD42A49-5329-4832-8DFD-43D979153A88}</Guid>
+            <ResourceFilePath>C:\Windows\system32\Microsoft-Windows-System-Events.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\Microsoft-Windows-System-Events.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1&amp;FileName=Microsoft-Windows-System-Events.dll&amp;FileVer=10.0.17134.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Kernel-Network</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Kernel-Network/Analytic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>KERNEL_NETWORK_TASK_TCPIP</Name>
+                    <Value>10</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>KERNEL_NETWORK_TASK_UDPIP</Name>
+                    <Value>11</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Data sent.</Message>
+                    <Name>KERNEL_NETWORK_OPCODE_SEND</Name>
+                    <Value>10</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Data received.</Message>
+                    <Name>KERNEL_NETWORK_OPCODE_RECV</Name>
+                    <Value>11</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Connection attempted.</Message>
+                    <Name>KERNEL_NETWORK_OPCODE_CONNECT</Name>
+                    <Value>12</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Disconnect issued.</Message>
+                    <Name>KERNEL_NETWORK_OPCODE_DISCONNECT</Name>
+                    <Value>13</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Data retransmitted.</Message>
+                    <Name>KERNEL_NETWORK_OPCODE_RETRANSMIT</Name>
+                    <Value>14</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Connection accepted.</Message>
+                    <Name>KERNEL_NETWORK_OPCODE_ACCEPT</Name>
+                    <Value>15</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Reconnect attempted.</Message>
+                    <Name>KERNEL_NETWORK_OPCODE_RECONNECT</Name>
+                    <Value>16</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>TCP connection attempt failed.</Message>
+                    <Name>KERNEL_NETWORK_OPCODE_FAIL</Name>
+                    <Value>17</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Protocol copied data on behalf of user.</Message>
+                    <Name>KERNEL_NETWORK_OPCODE_TCPCOPY</Name>
+                    <Value>18</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Data sent over UDP protocol.</Message>
+                    <Name>KERNEL_NETWORK_OPCODE_SENDUDP</Name>
+                    <Value>42</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Data received over UDP protocol.</Message>
+                    <Name>KERNEL_NETWORK_OPCODE_RECVUDP</Name>
+                    <Value>43</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>UDP connection attempt failed.</Message>
+                    <Name>KERNEL_NETWORK_OPCODE_FAILUDP</Name>
+                    <Value>49</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>KERNEL_NETWORK_KEYWORD_IPV4</Name>
+                    <Value>16</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>KERNEL_NETWORK_KEYWORD_IPV6</Name>
+                    <Value>32</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Network/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>KERNEL_NETWORK_TASK_TCPIP</Task>
+                <Opcode>Data sent.</Opcode>
+                <Keyword>KERNEL_NETWORK_KEYWORD_IPV4</Keyword>
+                <Message><![CDATA[
+TCPv4: %2 bytes transmitted from %4:%6 to %3:%5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="daddr" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="saddr" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="dport" inType="win:UInt16" outType="win:Port"/>
+  <data name="sport" inType="win:UInt16" outType="win:Port"/>
+  <data name="startime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="endtime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="seqnum" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="connid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Network/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>KERNEL_NETWORK_TASK_TCPIP</Task>
+                <Opcode>Data received.</Opcode>
+                <Keyword>KERNEL_NETWORK_KEYWORD_IPV4</Keyword>
+                <Message><![CDATA[
+TCPv4: %2 bytes received from %4:%6 to %3:%5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="daddr" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="saddr" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="dport" inType="win:UInt16" outType="win:Port"/>
+  <data name="sport" inType="win:UInt16" outType="win:Port"/>
+  <data name="seqnum" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="connid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Network/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>KERNEL_NETWORK_TASK_TCPIP</Task>
+                <Opcode>Connection attempted.</Opcode>
+                <Keyword>KERNEL_NETWORK_KEYWORD_IPV4</Keyword>
+                <Message><![CDATA[
+TCPv4: Connection attempted between %4:%6 and %3:%5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="daddr" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="saddr" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="dport" inType="win:UInt16" outType="win:Port"/>
+  <data name="sport" inType="win:UInt16" outType="win:Port"/>
+  <data name="mss" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="sackopt" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="tsopt" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="wsopt" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="rcvwin" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="rcvwinscale" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="sndwinscale" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="seqnum" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="connid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Network/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>KERNEL_NETWORK_TASK_TCPIP</Task>
+                <Opcode>Disconnect issued.</Opcode>
+                <Keyword>KERNEL_NETWORK_KEYWORD_IPV4</Keyword>
+                <Message><![CDATA[
+TCPv4: Connection closed between %4:%6 and %3:%5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="daddr" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="saddr" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="dport" inType="win:UInt16" outType="win:Port"/>
+  <data name="sport" inType="win:UInt16" outType="win:Port"/>
+  <data name="seqnum" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="connid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Network/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>KERNEL_NETWORK_TASK_TCPIP</Task>
+                <Opcode>Data retransmitted.</Opcode>
+                <Keyword>KERNEL_NETWORK_KEYWORD_IPV4</Keyword>
+                <Message><![CDATA[
+TCPv4: %2 bytes retransmitted from %4:%6 to %3:%5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="daddr" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="saddr" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="dport" inType="win:UInt16" outType="win:Port"/>
+  <data name="sport" inType="win:UInt16" outType="win:Port"/>
+  <data name="seqnum" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="connid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Network/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>KERNEL_NETWORK_TASK_TCPIP</Task>
+                <Opcode>Connection accepted.</Opcode>
+                <Keyword>KERNEL_NETWORK_KEYWORD_IPV4</Keyword>
+                <Message><![CDATA[
+TCPv4: Connection established between %4:%6 and %3:%5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="daddr" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="saddr" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="dport" inType="win:UInt16" outType="win:Port"/>
+  <data name="sport" inType="win:UInt16" outType="win:Port"/>
+  <data name="mss" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="sackopt" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="tsopt" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="wsopt" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="rcvwin" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="rcvwinscale" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="sndwinscale" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="seqnum" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="connid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Network/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>KERNEL_NETWORK_TASK_TCPIP</Task>
+                <Opcode>Reconnect attempted.</Opcode>
+                <Keyword>KERNEL_NETWORK_KEYWORD_IPV4</Keyword>
+                <Message><![CDATA[
+TCPv4: Reconnect attempt between %4:%6 and %3:%5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="daddr" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="saddr" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="dport" inType="win:UInt16" outType="win:Port"/>
+  <data name="sport" inType="win:UInt16" outType="win:Port"/>
+  <data name="seqnum" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="connid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Network/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>KERNEL_NETWORK_TASK_TCPIP</Task>
+                <Opcode>TCP connection attempt failed.</Opcode>
+                <Keyword>KERNEL_NETWORK_KEYWORD_IPV4 KERNEL_NETWORK_KEYWORD_IPV6</Keyword>
+                <Message><![CDATA[
+TCPv4: Connection attempt failed with error code %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Proto" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FailureCode" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Network/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>KERNEL_NETWORK_TASK_TCPIP</Task>
+                <Opcode>Protocol copied data on behalf of user.</Opcode>
+                <Keyword>KERNEL_NETWORK_KEYWORD_IPV4</Keyword>
+                <Message><![CDATA[
+TCPv4: %2 bytes copied in protocol on behalf of user for connection between %4:%6 and %3:%5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="daddr" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="saddr" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="dport" inType="win:UInt16" outType="win:Port"/>
+  <data name="sport" inType="win:UInt16" outType="win:Port"/>
+  <data name="seqnum" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="connid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>26</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Network/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>KERNEL_NETWORK_TASK_TCPIP</Task>
+                <Opcode>Data sent.</Opcode>
+                <Keyword>KERNEL_NETWORK_KEYWORD_IPV6</Keyword>
+                <Message><![CDATA[
+TCPv6: %2 bytes transmitted from %4:%6 to %3:%5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="daddr" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="saddr" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="dport" inType="win:UInt16" outType="win:Port"/>
+  <data name="sport" inType="win:UInt16" outType="win:Port"/>
+  <data name="startime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="endtime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="seqnum" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="connid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>27</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Network/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>KERNEL_NETWORK_TASK_TCPIP</Task>
+                <Opcode>Data received.</Opcode>
+                <Keyword>KERNEL_NETWORK_KEYWORD_IPV6</Keyword>
+                <Message><![CDATA[
+TCPv6: %2 bytes received from %4:%6 to %3:%5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="daddr" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="saddr" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="dport" inType="win:UInt16" outType="win:Port"/>
+  <data name="sport" inType="win:UInt16" outType="win:Port"/>
+  <data name="seqnum" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="connid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>28</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Network/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>KERNEL_NETWORK_TASK_TCPIP</Task>
+                <Opcode>Connection attempted.</Opcode>
+                <Keyword>KERNEL_NETWORK_KEYWORD_IPV6</Keyword>
+                <Message><![CDATA[
+TCPv6: Connection attempted between %4:%6 and %3:%5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="daddr" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="saddr" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="dport" inType="win:UInt16" outType="win:Port"/>
+  <data name="sport" inType="win:UInt16" outType="win:Port"/>
+  <data name="mss" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="sackopt" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="tsopt" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="wsopt" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="rcvwin" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="rcvwinscale" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="sndwinscale" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="seqnum" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="connid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>29</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Network/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>KERNEL_NETWORK_TASK_TCPIP</Task>
+                <Opcode>Disconnect issued.</Opcode>
+                <Keyword>KERNEL_NETWORK_KEYWORD_IPV6</Keyword>
+                <Message><![CDATA[
+TCPv6: Connection closed between %4:%6 and %3:%5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="daddr" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="saddr" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="dport" inType="win:UInt16" outType="win:Port"/>
+  <data name="sport" inType="win:UInt16" outType="win:Port"/>
+  <data name="seqnum" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="connid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Network/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>KERNEL_NETWORK_TASK_TCPIP</Task>
+                <Opcode>Data retransmitted.</Opcode>
+                <Keyword>KERNEL_NETWORK_KEYWORD_IPV6</Keyword>
+                <Message><![CDATA[
+TCPv6: %2 bytes retransmitted from %4:%6 to %3:%5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="daddr" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="saddr" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="dport" inType="win:UInt16" outType="win:Port"/>
+  <data name="sport" inType="win:UInt16" outType="win:Port"/>
+  <data name="seqnum" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="connid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>31</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Network/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>KERNEL_NETWORK_TASK_TCPIP</Task>
+                <Opcode>Connection accepted.</Opcode>
+                <Keyword>KERNEL_NETWORK_KEYWORD_IPV6</Keyword>
+                <Message><![CDATA[
+TCPv6: Connection established between %4:%6 and %3:%5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="daddr" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="saddr" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="dport" inType="win:UInt16" outType="win:Port"/>
+  <data name="sport" inType="win:UInt16" outType="win:Port"/>
+  <data name="mss" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="sackopt" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="tsopt" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="wsopt" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="rcvwin" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="rcvwinscale" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="sndwinscale" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="seqnum" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="connid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Network/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>KERNEL_NETWORK_TASK_TCPIP</Task>
+                <Opcode>Reconnect attempted.</Opcode>
+                <Keyword>KERNEL_NETWORK_KEYWORD_IPV6</Keyword>
+                <Message><![CDATA[
+TCPv6: Reconnect attempt between %4:%6 and %3:%5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="daddr" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="saddr" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="dport" inType="win:UInt16" outType="win:Port"/>
+  <data name="sport" inType="win:UInt16" outType="win:Port"/>
+  <data name="seqnum" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="connid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>34</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Network/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>KERNEL_NETWORK_TASK_TCPIP</Task>
+                <Opcode>Protocol copied data on behalf of user.</Opcode>
+                <Keyword>KERNEL_NETWORK_KEYWORD_IPV6</Keyword>
+                <Message><![CDATA[
+TCPv6: %2 bytes copied in protocol on behalf of user for connection between %4:%6 and %3:%5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="daddr" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="saddr" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="dport" inType="win:UInt16" outType="win:Port"/>
+  <data name="sport" inType="win:UInt16" outType="win:Port"/>
+  <data name="seqnum" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="connid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>42</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Network/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>KERNEL_NETWORK_TASK_UDPIP</Task>
+                <Opcode>Data sent over UDP protocol.</Opcode>
+                <Keyword>KERNEL_NETWORK_KEYWORD_IPV4</Keyword>
+                <Message><![CDATA[
+UDPv4: %2 bytes transmitted from %4:%6 to %3:%5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="daddr" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="saddr" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="dport" inType="win:UInt16" outType="win:Port"/>
+  <data name="sport" inType="win:UInt16" outType="win:Port"/>
+  <data name="seqnum" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="connid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>43</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Network/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>KERNEL_NETWORK_TASK_UDPIP</Task>
+                <Opcode>Data received over UDP protocol.</Opcode>
+                <Keyword>KERNEL_NETWORK_KEYWORD_IPV4</Keyword>
+                <Message><![CDATA[
+UDPv4: %2 bytes received from %4:%6 to %3:%5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="daddr" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="saddr" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="dport" inType="win:UInt16" outType="win:Port"/>
+  <data name="sport" inType="win:UInt16" outType="win:Port"/>
+  <data name="seqnum" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="connid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>49</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Network/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>KERNEL_NETWORK_TASK_UDPIP</Task>
+                <Opcode>UDP connection attempt failed.</Opcode>
+                <Keyword>KERNEL_NETWORK_KEYWORD_IPV4 KERNEL_NETWORK_KEYWORD_IPV6</Keyword>
+                <Message><![CDATA[
+UDPv4: Connection attempt failed with error code %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Proto" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FailureCode" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>58</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Network/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>KERNEL_NETWORK_TASK_UDPIP</Task>
+                <Opcode>Data sent over UDP protocol.</Opcode>
+                <Keyword>KERNEL_NETWORK_KEYWORD_IPV6</Keyword>
+                <Message><![CDATA[
+UDPv6: %2 bytes transmitted from %4:%6 to %3:%5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="daddr" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="saddr" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="dport" inType="win:UInt16" outType="win:Port"/>
+  <data name="sport" inType="win:UInt16" outType="win:Port"/>
+  <data name="seqnum" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="connid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>59</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Network/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>KERNEL_NETWORK_TASK_UDPIP</Task>
+                <Opcode>Data received over UDP protocol.</Opcode>
+                <Keyword>KERNEL_NETWORK_KEYWORD_IPV6</Keyword>
+                <Message><![CDATA[
+UDPv6: %2 bytes received from %4:%6 to %3:%5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="daddr" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="saddr" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="dport" inType="win:UInt16" outType="win:Port"/>
+  <data name="sport" inType="win:UInt16" outType="win:Port"/>
+  <data name="seqnum" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="connid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
