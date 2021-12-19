@@ -1,0 +1,192 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-FeatureConfiguration</Name>
+        <Metadata>
+            <Guid>{C2F36562-A1E4-4BC3-A6F6-01A7ADB643E8}</Guid>
+            <ResourceFilePath>C:\Windows\system32\fcon.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\fcon.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.18362.267&amp;FileName=fcon.dll&amp;FileVer=10.0.18362.267</HelpLink>
+            <PublisherMessage>Microsoft-Windows-FeatureConfiguration</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Analytic</Message>
+                    <Path>Microsoft-Windows-FeatureConfiguration/Analytic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Operational</Message>
+                    <Path>Microsoft-Windows-FeatureConfiguration/Operational</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>FeatureConfiguration Events</Message>
+                    <Name>FeatureConfigurationBySystemPolicy</Name>
+                    <Value>1001</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>OpCode for setting feature state</Message>
+                    <Name>OpSetState</Name>
+                    <Value>11</Value>
+                    <Task>1001</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>OpCode for re-setting feature state</Message>
+                    <Name>OpResetState</Name>
+                    <Value>12</Value>
+                    <Task>1001</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>FeatureConfiguration Events</Task>
+                <Message><![CDATA[
+Failed to synchronize with the Group Policy service. Aborting feature configuration processing.
+
+Error: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>FeatureConfiguration Events</Task>
+                <Message><![CDATA[
+Ignoring unsupported feature state policy override registry value. Expected REG_DWORD values with integer names.
+
+Key Name: %1
+Value Name: %2
+Value Type: %3
+Error: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RegKeyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ValueName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ValueType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>FeatureConfiguration Events</Task>
+                <Message><![CDATA[
+Failed to backup applied feature overrides.
+
+Feature configurations may not be reset to their default state if the policy is removed.
+
+Error: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>FeatureConfiguration Events</Task>
+                <Opcode>OpCode for setting feature state</Opcode>
+                <Message><![CDATA[
+Setting feature state by enterprise policies. 
+
+Feature id:%1 
+State:%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FeatureId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FeatureState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1006</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>FeatureConfiguration Events</Task>
+                <Opcode>OpCode for re-setting feature state</Opcode>
+                <Message><![CDATA[
+Resetting feature %1 to its default state.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FeatureId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5001</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Task>FeatureConfiguration Events</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Feature configuration started]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5002</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Task>FeatureConfiguration Events</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Feature configuration completed]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

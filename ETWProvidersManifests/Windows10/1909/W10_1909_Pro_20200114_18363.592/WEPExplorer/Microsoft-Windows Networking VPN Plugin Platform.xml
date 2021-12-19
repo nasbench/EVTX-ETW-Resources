@@ -1,0 +1,491 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows Networking VPN Plugin Platform</Name>
+        <Metadata>
+            <Guid>{E5FC4A0F-7198-492F-9B0F-88FDCBFDED48}</Guid>
+            <ResourceFilePath>C:\Windows\system32\windows.networking.vpn.dll</ResourceFilePath>
+            <ParameterFilePath>C:\Windows\system32\windows.networking.vpn.dll</ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\windows.networking.vpn.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.18362.267&amp;FileName=windows.networking.vpn.dll&amp;FileVer=10.0.18362.267</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Vpn Plugin Platform</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-Vpn Plugin Platform/Operational</Message>
+                    <Path>Windows Networking Vpn Plugin Platform/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-Vpn Plugin Platform/OperationalVerbose</Message>
+                    <Path>Windows Networking Vpn Plugin Platform/OperationalVerbose</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:PiiPresent</Name>
+                    <Value>2199023255552</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>2001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Vpn Plugin Platform/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Vpn Connection Error = %3, Profile name = %2, Plugin SID = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Plugin" inType="win:SID" outType="xs:string"/>
+  <data name="Profile" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Vpn Plugin Platform/OperationalVerbose</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Vpn Plugin Background Task Execution Started]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Plugin" inType="win:SID" outType="xs:string"/>
+  <data name="InitialProfile" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="InitialEventType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Vpn Plugin Platform/OperationalVerbose</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Vpn Plugin Background Task Execution Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Plugin" inType="win:SID" outType="xs:string"/>
+  <data name="InitialProfile" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="InitialEventType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NumPacketsSent" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NumPacketsReceived" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LastError" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Vpn Plugin Platform/OperationalVerbose</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Message from VPN App: [%1] %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Profile" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Vpn Plugin Platform/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Autotrigger [%1], device is inside the trusted network boundary [%2]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="profileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NetworkName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Vpn Plugin Platform/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Autotrigger [%1], device is outside the trusted network boundary]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="string" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2007</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Vpn Plugin Platform/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Autotrigger: [%1], device is attempting to connect to VPN. Please refer to Microsoft-Windows-VPN channel under WFP for cause of connect]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="string" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2008</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Vpn Plugin Platform/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Autotrigger: [%1], device failed to connect to VPN]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="string" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2009</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Vpn Plugin Platform/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Autotrigger: [%1], device is connected to VPN]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="string" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2010</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Vpn Plugin Platform/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Autotrigger: [%1], device got disconnected from VPN, Redial it]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="string" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2011</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Vpn Plugin Platform/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Autotrigger: [%1], profile got activated]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="string" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2012</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Vpn Plugin Platform/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Autotrigger: [%1], profile got deactivated]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="string" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2013</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Vpn Plugin Platform/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Autotrigger: [%1], profile got auto disconnected. Please refer to Microsoft-Windows-VPN channel under WFP for cause of disconnect]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="string" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2014</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Vpn Plugin Platform/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Autotrigger: [%1], profile got disconnected as device going to sleep state]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="string" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2015</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Vpn Plugin Platform/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Autotrigger: [%1], device is resumed, Redialling it]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="string" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2016</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Vpn Plugin Platform/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Autotrigger: [%1], profile added]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="string" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2017</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Vpn Plugin Platform/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Autotrigger: [%1], profile deleted]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="string" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2018</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Vpn Plugin Platform/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Autotrigger: [%1], profile modified]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="string" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2019</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Vpn Plugin Platform/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Vpn State Machine Status : Invalid, Profile name = %2, Plugin SID = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="plugin" inType="win:SID" outType="xs:string"/>
+  <data name="profile" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2020</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Vpn Plugin Platform/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Vpn State Machine Status : Connecting, Profile name = %2, Plugin SID = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="plugin" inType="win:SID" outType="xs:string"/>
+  <data name="profile" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2021</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Vpn Plugin Platform/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Vpn State Machine Status : Connected, Profile name = %2, Plugin SID = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="plugin" inType="win:SID" outType="xs:string"/>
+  <data name="profile" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2022</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Vpn Plugin Platform/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Vpn State Machine Status : Disconnecting, Profile name = %2, Plugin SID = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="plugin" inType="win:SID" outType="xs:string"/>
+  <data name="profile" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2023</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Vpn Plugin Platform/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Vpn State Machine Status : Disconnected, Profile name = %2, Plugin SID = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="plugin" inType="win:SID" outType="xs:string"/>
+  <data name="profile" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2024</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Vpn Plugin Platform/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Vpn State Machine Status : Abort, Profile name = %2, Plugin SID = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="plugin" inType="win:SID" outType="xs:string"/>
+  <data name="profile" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2025</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Vpn Plugin Platform/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Vpn State Machine Status : Negotiating Network, Profile name = %2, Plugin SID = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="plugin" inType="win:SID" outType="xs:string"/>
+  <data name="profile" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2026</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Vpn Plugin Platform/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Vpn State Machine Status : Requesting Credentials, Profile name = %2, Plugin SID = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="plugin" inType="win:SID" outType="xs:string"/>
+  <data name="profile" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2027</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Vpn Plugin Platform/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Vpn State Machine Status : Requesting Credentials using Custom UI, Profile name = %2, Plugin SID = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="plugin" inType="win:SID" outType="xs:string"/>
+  <data name="profile" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2028</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Vpn Plugin Platform/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Keep Alive event invoked, Profile name = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="string" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2029</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Vpn Plugin Platform/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Autotrigger: DNS query %1 is made, matching VPN trigger rules]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="string" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2030</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Vpn Plugin Platform/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Autotrigger: [%1] Unable to determine internet connectivity, vpn trigger failed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="string" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2031</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Vpn Plugin Platform/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Autotrigger: auto trigger module initialization completed with Error = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2032</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Vpn Plugin Platform/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Autotrigger: auto trigger Config registry content completed with Error = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
