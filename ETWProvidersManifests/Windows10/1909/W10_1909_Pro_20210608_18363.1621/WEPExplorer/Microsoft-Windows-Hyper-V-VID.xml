@@ -1,0 +1,1565 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Hyper-V-VID</Name>
+        <Metadata>
+            <Guid>{5931D877-4860-4EE7-A95C-610A5F0D1407}</Guid>
+            <ResourceFilePath>C:\Windows\system32\drivers\vid.sys</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\drivers\vid.sys</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.18362.1593&amp;FileName=vid.sys&amp;FileVer=10.0.18362.1593</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Hyper-V-VID</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Hyper-V-VID-Analytic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Hyper-V-VID-Admin</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Critical</Message>
+                    <Name>win:Critical</Name>
+                    <Value>1</Value>
+                </Level>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>VID - reserve pages</Message>
+                    <Name>VMT_VID_RESERVE_PAGES</Name>
+                    <Value>1536</Value>
+                </Task>
+                <Task>
+                    <Message>VID - release pages</Message>
+                    <Name>VMT_VID_RELEASE_PAGES</Name>
+                    <Value>1537</Value>
+                </Task>
+                <Task>
+                    <Message>VID - balloon pages</Message>
+                    <Name>VMT_VID_BALLOON_PAGES</Name>
+                    <Value>1538</Value>
+                </Task>
+                <Task>
+                    <Message>VID - un balloon pages</Message>
+                    <Name>VMT_VID_UNBALLOON_PAGES</Name>
+                    <Value>1539</Value>
+                </Task>
+                <Task>
+                    <Message>VID - hot add</Message>
+                    <Name>VMT_VID_HOTADD_PAGES</Name>
+                    <Value>1540</Value>
+                </Task>
+                <Task>
+                    <Message>VID - hot add undo</Message>
+                    <Name>VMT_VID_HOTADD_UNDO_PAGES</Name>
+                    <Value>1541</Value>
+                </Task>
+                <Task>
+                    <Message>VID - create memory block</Message>
+                    <Name>VMT_VID_CREATE_MEMBLOCK</Name>
+                    <Value>1542</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>VMT_VID_ALLOCATE_PARTITION_NODE_PAGES</Name>
+                    <Value>1543</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>VMT_VID_MEMORY_BLOCK_PERSIST</Name>
+                    <Value>1544</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>VMT_KSR_MEMORY_BLOCK_PERSIST</Name>
+                    <Value>1545</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>VMT_VID_MEMORY_BLOCK_RESTORE</Name>
+                    <Value>1546</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>VMT_VID_MEMORY_BLOCK_PHU_TEARDOWN</Name>
+                    <Value>1547</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>VMT_VID_PARTITION_PERSIST</Name>
+                    <Value>1548</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>VMT_VID_PARTITION_UNPERSIST</Name>
+                    <Value>1549</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>VMT_VID_PARTITION_WITHDRAW_MEMORY</Name>
+                    <Value>1550</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>VMT_VID_GPA_MAP</Name>
+                    <Value>1551</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>VMT_VID_GPA_UNMAP</Name>
+                    <Value>1552</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>VMT_VID_MDL_PAGE_FREE</Name>
+                    <Value>1553</Value>
+                </Task>
+                <Task>
+                    <Message>VID - create DAX file backed memory block</Message>
+                    <Name>VMT_VID_CREATE_DAX_MEMBLOCK</Name>
+                    <Value>1554</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>VMT_VID_EPF</Name>
+                    <Value>1555</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Hyper-V performance traces (outer operations)</Message>
+                    <Name>VMK_HYPERV_PERF_OUTER</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Hyper-V performance traces (inner operations)</Message>
+                    <Name>VMK_HYPERV_PERF_INNER</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Hyper-V performance traces (verbose)</Message>
+                    <Name>VMK_HYPERV_PERF_VERBOSE</Name>
+                    <Value>4</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>VMK_ALLOCATE_PAGES</Name>
+                    <Value>8</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>VMK_MEMORY_BLOCK</Name>
+                    <Value>16</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>VMK_PARTITION</Name>
+                    <Value>32</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>VMK_GPA</Name>
+                    <Value>64</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>VMK_MDL</Name>
+                    <Value>128</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>VMK_TRACELOGGING_HOST</Name>
+                    <Value>256</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Hyper-V performance traces</Message>
+                    <Name>VMK_HYPERV_PERF</Name>
+                    <Value>4096</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Response Time</Message>
+                    <Name>win:ResponseTime</Name>
+                    <Value>281474976710656</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1101</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Analytic</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to reserve %2 pages: %3. (Partition ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter0" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter1" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter2" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1102</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Analytic</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to reserve %2 pages: %3. (Partition ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter0" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter1" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter2" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1103</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Analytic</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to allocate %2 pages: %3. (Partition ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter0" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter1" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter2" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1104</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Analytic</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to release %2 pages: %3. (Partition ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter0" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter1" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter2" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1105</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Analytic</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to withdraw pages from bucket: %2. (Partition ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter0" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter1" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1106</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Analytic</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to balloon %2 page ranges: %3. (Partition ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter0" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter1" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter2" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1107</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Analytic</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to un-balloon %2 pages: %3. (Partition ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter0" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter1" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter2" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1108</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Analytic</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to hot add %2 pages: %3. (Partition ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter0" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter1" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter2" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1109</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Analytic</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to hot add undo %2 pages: %3. (Partition ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter0" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter1" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter2" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1110</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Analytic</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to create mem block with %2 pages: %3. (Partition ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter0" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter1" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter2" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1111</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Analytic</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to create DAX file backed mem block with %2 pages: %3. (Partition ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter0" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter1" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter2" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Created partition with ID %2 and name %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PartitionId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter0" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Analytic</Channel>
+                <Level>Information</Level>
+                <Task>VID - reserve pages</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Hyper-V performance traces (outer operations) Hyper-V performance traces</Keyword>
+                <Message><![CDATA[
+Started reserving %2 pages. (Partition ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter0" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter1" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Analytic</Channel>
+                <Level>Information</Level>
+                <Task>VID - reserve pages</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Hyper-V performance traces (outer operations) Hyper-V performance traces</Keyword>
+                <Message><![CDATA[
+Finished reserving pages with status = %3. %2 pages reserved. %4 LargeLocal, %5 SmallLocal, %6 LargeRemote, %7 SmallRemote. (Partition ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter0" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter1" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter2" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter3" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter4" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter5" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter6" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Analytic</Channel>
+                <Level>Information</Level>
+                <Task>VID - reserve pages</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Hyper-V performance traces (inner operations) Hyper-V performance traces</Keyword>
+                <Message><![CDATA[
+Started reserving bucket pages. Reserving %2 pages. (Partition ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter0" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter1" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Analytic</Channel>
+                <Level>Information</Level>
+                <Task>VID - reserve pages</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Hyper-V performance traces (inner operations) Hyper-V performance traces</Keyword>
+                <Message><![CDATA[
+Finished reserving bucket pages with status = %3. %2 pages reserved. (Partition ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter0" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter1" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter2" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Analytic</Channel>
+                <Level>Information</Level>
+                <Task>VID - reserve pages</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Hyper-V performance traces (inner operations) Hyper-V performance traces</Keyword>
+                <Message><![CDATA[
+Started allocating %2 pages. (Partition ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter0" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter1" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Analytic</Channel>
+                <Level>Information</Level>
+                <Task>VID - reserve pages</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Hyper-V performance traces (inner operations) Hyper-V performance traces</Keyword>
+                <Message><![CDATA[
+Finished allocating pages with status = %3. %2 pages allocated. (Partition ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter0" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter1" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter2" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5007</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Analytic</Channel>
+                <Level>Information</Level>
+                <Task>VID - reserve pages</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Hyper-V performance traces (inner operations) Hyper-V performance traces</Keyword>
+                <Message><![CDATA[
+Started depositing pages. (Partition ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter0" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5008</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Analytic</Channel>
+                <Level>Information</Level>
+                <Task>VID - reserve pages</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Hyper-V performance traces (inner operations) Hyper-V performance traces</Keyword>
+                <Message><![CDATA[
+Finished depositing pages. (Partition ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter0" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5009</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Analytic</Channel>
+                <Level>Information</Level>
+                <Task>VID - release pages</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Hyper-V performance traces (outer operations) Hyper-V performance traces</Keyword>
+                <Message><![CDATA[
+Started releasing %2 pages. (Partition ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter0" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter1" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5010</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Analytic</Channel>
+                <Level>Information</Level>
+                <Task>VID - release pages</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Hyper-V performance traces (outer operations) Hyper-V performance traces</Keyword>
+                <Message><![CDATA[
+Finished releasing %2 pages with status = %3. (Partition ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter0" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter1" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter2" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5011</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Analytic</Channel>
+                <Level>Information</Level>
+                <Task>VID - release pages</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Hyper-V performance traces (inner operations) Hyper-V performance traces</Keyword>
+                <Message><![CDATA[
+Started releasing bucket %2 pages. (Partition ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter0" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter1" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5012</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Analytic</Channel>
+                <Level>Information</Level>
+                <Task>VID - release pages</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Hyper-V performance traces (inner operations) Hyper-V performance traces</Keyword>
+                <Message><![CDATA[
+Finished releasing bucket %2 pages with status = %3. (Partition ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter0" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter1" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter2" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5013</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Analytic</Channel>
+                <Level>Information</Level>
+                <Opcode>Start</Opcode>
+                <Keyword>Hyper-V performance traces (inner operations) Hyper-V performance traces</Keyword>
+                <Message><![CDATA[
+Started withdrawing pages from bucket. (Partition ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter0" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5014</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Analytic</Channel>
+                <Level>Information</Level>
+                <Opcode>Stop</Opcode>
+                <Keyword>Hyper-V performance traces (inner operations) Hyper-V performance traces</Keyword>
+                <Message><![CDATA[
+Finished withdrawing pages from bucket with status = %2. (Partition ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter0" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter1" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5017</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Analytic</Channel>
+                <Level>Information</Level>
+                <Opcode>Start</Opcode>
+                <Keyword>Hyper-V performance traces (inner operations) Hyper-V performance traces</Keyword>
+                <Message><![CDATA[
+Started depositing pages to bucket from page list. (Partition ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter0" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5018</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Analytic</Channel>
+                <Level>Information</Level>
+                <Opcode>Stop</Opcode>
+                <Keyword>Hyper-V performance traces (inner operations) Hyper-V performance traces</Keyword>
+                <Message><![CDATA[
+Finished depositing pages to bucket from page list. (Partition ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter0" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5019</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Analytic</Channel>
+                <Level>Information</Level>
+                <Task>VID - balloon pages</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Hyper-V performance traces (inner operations) Hyper-V performance traces</Keyword>
+                <Message><![CDATA[
+Started ballooning %2 page ranges. (Partition ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter0" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter1" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5020</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Analytic</Channel>
+                <Level>Information</Level>
+                <Task>VID - balloon pages</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Hyper-V performance traces (inner operations) Hyper-V performance traces</Keyword>
+                <Message><![CDATA[
+Finished ballooning %2 page ranges with status %3. (Partition ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter0" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter1" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter2" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5021</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Analytic</Channel>
+                <Level>Information</Level>
+                <Task>VID - balloon pages</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Hyper-V performance traces (inner operations) Hyper-V performance traces</Keyword>
+                <Message><![CDATA[
+Started de-committing GPAs - %2 pages. (Partition ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter0" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter1" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5022</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Analytic</Channel>
+                <Level>Information</Level>
+                <Task>VID - balloon pages</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Hyper-V performance traces (inner operations) Hyper-V performance traces</Keyword>
+                <Message><![CDATA[
+Finished de-committing GPAs - %2 pages with status %3. (Partition ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter0" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter1" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter2" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5023</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Analytic</Channel>
+                <Level>Information</Level>
+                <Task>VID - un balloon pages</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Hyper-V performance traces (inner operations) Hyper-V performance traces</Keyword>
+                <Message><![CDATA[
+Started un-ballooning %2 pages. (Partition ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter0" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter1" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5024</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Analytic</Channel>
+                <Level>Information</Level>
+                <Task>VID - un balloon pages</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Hyper-V performance traces (inner operations) Hyper-V performance traces</Keyword>
+                <Message><![CDATA[
+Finished un-ballooning %2 pages with status %3. (Partition ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter0" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter1" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter2" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5025</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Analytic</Channel>
+                <Level>Information</Level>
+                <Opcode>Start</Opcode>
+                <Keyword>Hyper-V performance traces (inner operations) Hyper-V performance traces</Keyword>
+                <Message><![CDATA[
+Started committing %2 pages. (Partition ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter0" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter1" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5026</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Analytic</Channel>
+                <Level>Information</Level>
+                <Opcode>Stop</Opcode>
+                <Keyword>Hyper-V performance traces (inner operations) Hyper-V performance traces</Keyword>
+                <Message><![CDATA[
+Finished committing %2 pages with status %3. (Partition ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter0" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter1" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter2" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5029</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Analytic</Channel>
+                <Level>Information</Level>
+                <Task>VID - hot add</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Hyper-V performance traces (inner operations) Hyper-V performance traces</Keyword>
+                <Message><![CDATA[
+Started hot adding %2 pages. (Partition ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter0" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter1" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5030</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Analytic</Channel>
+                <Level>Information</Level>
+                <Task>VID - hot add</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Hyper-V performance traces (inner operations) Hyper-V performance traces</Keyword>
+                <Message><![CDATA[
+Finished hot adding %2 pages with status %3. (Partition ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter0" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter1" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter2" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5031</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Analytic</Channel>
+                <Level>Information</Level>
+                <Task>VID - hot add undo</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Hyper-V performance traces (inner operations) Hyper-V performance traces</Keyword>
+                <Message><![CDATA[
+Started hot add undoing %2 pages. (Partition ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter0" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter1" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5032</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Analytic</Channel>
+                <Level>Information</Level>
+                <Task>VID - hot add undo</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Hyper-V performance traces (inner operations) Hyper-V performance traces</Keyword>
+                <Message><![CDATA[
+Finished hot add undoing %2 pages with status %3. (Partition ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter0" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter1" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter2" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5033</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Analytic</Channel>
+                <Level>Information</Level>
+                <Task>VID - create memory block</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Hyper-V performance traces (inner operations) Hyper-V performance traces</Keyword>
+                <Message><![CDATA[
+Started creating memory block with %2 pages. (Partition ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter0" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter1" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5034</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Analytic</Channel>
+                <Level>Information</Level>
+                <Task>VID - create memory block</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Hyper-V performance traces (inner operations) Hyper-V performance traces</Keyword>
+                <Message><![CDATA[
+Finished creating memory block with %2 pages with status %3. (Partition ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter0" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter1" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter2" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5035</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Analytic</Channel>
+                <Level>Information</Level>
+                <Task>VID - un balloon pages</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Hyper-V performance traces (inner operations) Hyper-V performance traces</Keyword>
+                <Message><![CDATA[
+Started un-ballooning %2 pages. Contiguous = %3. (Partition ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter0" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter1" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter2" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5036</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Analytic</Channel>
+                <Level>Information</Level>
+                <Task>VID - un balloon pages</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Hyper-V performance traces (inner operations) Hyper-V performance traces</Keyword>
+                <Message><![CDATA[
+Finished un-ballooning %2 pages with status %3. Contiguous = %4. (Partition ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter0" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter1" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter2" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter3" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5037</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Admin</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+An uncorrected memory error occurred at physical address %1. This page was not found in a virtual machine. No action was taken. (Platform Directed: %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PhysicalAddress" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="PlatformDirected" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5038</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Admin</Channel>
+                <Level>Critical</Level>
+                <Message><![CDATA[
+'%3' was reset because an uncorrected memory error occured at physical address %1, which was used by this virtual machine. (Virtual Machine: %4, Platform Directed: %2, Consumed: %5)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PhysicalAddress" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="PlatformDirected" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="PartitionFriendlyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PartitionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Consumed" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5039</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Admin</Channel>
+                <Level>Critical</Level>
+                <Message><![CDATA[
+An uncorrected memory error occurred at physical address %1 which is used by virtual machine '%3'. The affected page has been released. A machine check event correpsonding to this memory error was injected into the virtual machine for handling by the virtual machine's operating system. (Virtual Machine: %4, Platform Directed: %2, Consumed: %5)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PhysicalAddress" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="PlatformDirected" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="PartitionFriendlyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PartitionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Consumed" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5040</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Admin</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+An uncorrected memory error occurred at physical address %1. The virtual machine that was using the page is no longer valid. No action was taken. (Platform Directed: %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PhysicalAddress" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="PlatformDirected" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5041</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+One or more corrected memory error occurred at physical address %1. This page was not found in a virtual machine. No action was taken. (Platform Directed: %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PhysicalAddress" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="PlatformDirected" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5042</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Admin</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+One or more corrected memory error occurred at physical address %1, which is used by virtual machine '%3'. The page could not be replaced. No action was taken. The virtual machine will continue operating normally. (Virtual Machine: %4, Platform Directed: %2, Consumed: %5)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PhysicalAddress" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="PlatformDirected" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="PartitionFriendlyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PartitionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Consumed" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5043</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Admin</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+One or more corrected memory error occurred at physical address %1, which is used by virtual machine '%3'. The page has been replaced. The virtual machine will continue operating normally. (Virtual Machine: %4, Platform Directed: %2, Consumed: %5)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PhysicalAddress" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="PlatformDirected" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="PartitionFriendlyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PartitionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Consumed" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5044</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to retrieve memory from the kernel with error %2 during a fast restore operation. (Virtual Machine %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PartitionId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter0" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5045</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to persist memory with the kernel with error %2 during a fast save operation. (Virtual Machine %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PartitionId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter0" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5046</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>VMT_VID_ALLOCATE_PARTITION_NODE_PAGES</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>VMK_ALLOCATE_PAGES</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LowAddress" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="HighAddress" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="SkipBytes" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="TotalBytes" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="CacheType" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="NodeIndex" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="Flags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MemoryPartition" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="PartitionGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5047</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>VMT_VID_ALLOCATE_PARTITION_NODE_PAGES</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>VMK_ALLOCATE_PAGES</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Mdl" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="TotalBytes" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5048</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>VMT_VID_MEMORY_BLOCK_PERSIST</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>VMK_MEMORY_BLOCK</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MbpArraySize" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="PartitionGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5049</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>VMT_VID_MEMORY_BLOCK_PERSIST</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>VMK_MEMORY_BLOCK</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5050</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>VMT_VID_MEMORY_BLOCK_RESTORE</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>VMK_MEMORY_BLOCK</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PageCountToBack" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="KsrBlockId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="PartitionGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5051</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>VMT_VID_MEMORY_BLOCK_RESTORE</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>VMK_MEMORY_BLOCK</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MbpArraySize" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="KsrRunCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5052</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>VMT_KSR_MEMORY_BLOCK_PERSIST</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>VMK_MEMORY_BLOCK</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="KsrMemoryRunCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PartitionGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5053</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>VMT_KSR_MEMORY_BLOCK_PERSIST</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>VMK_MEMORY_BLOCK</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5054</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>VMT_VID_MEMORY_BLOCK_PHU_TEARDOWN</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>VMK_MEMORY_BLOCK</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MbpArraySize" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="KsrRunCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PartitionGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5055</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>VMT_VID_MEMORY_BLOCK_PHU_TEARDOWN</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>VMK_MEMORY_BLOCK</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5056</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>VMT_VID_PARTITION_PERSIST</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>VMK_PARTITION</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PartitionGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5057</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>VMT_VID_PARTITION_PERSIST</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>VMK_PARTITION</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5058</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>VMT_VID_PARTITION_UNPERSIST</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>VMK_PARTITION</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="KsrPersisted" inType="win:Int8" outType="xs:byte"/>
+  <data name="PartitionGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5059</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>VMT_VID_PARTITION_UNPERSIST</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>VMK_PARTITION</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5060</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>VMT_VID_PARTITION_WITHDRAW_MEMORY</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>VMK_PARTITION</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="KsrPersisted" inType="win:Int8" outType="xs:byte"/>
+  <data name="PartitionGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5061</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>VMT_VID_PARTITION_WITHDRAW_MEMORY</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>VMK_PARTITION</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5062</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>VMT_VID_GPA_MAP</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>VMK_GPA</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StartGpaPage" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="StartMbp" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="MbpCount" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="InterceptOverrideFlags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="PartitionGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5063</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>VMT_VID_GPA_MAP</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>VMK_GPA</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5064</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>VMT_VID_GPA_UNMAP</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>VMK_GPA</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FirstPage" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="LastPage" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="PartitionGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5065</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>VMT_VID_GPA_UNMAP</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>VMK_GPA</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5066</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>VMT_VID_MDL_PAGE_FREE</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>VMK_MDL</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PartitionGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5067</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>VMT_VID_MDL_PAGE_FREE</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>VMK_MDL</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5068</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Analytic</Channel>
+                <Level>Information</Level>
+                <Task>VID - create DAX file backed memory block</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Hyper-V performance traces (inner operations) Hyper-V performance traces</Keyword>
+                <Message><![CDATA[
+Started creating DAX file backed memory block with %2 pages. (Partition ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter0" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter1" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5069</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Analytic</Channel>
+                <Level>Information</Level>
+                <Task>VID - create DAX file backed memory block</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Hyper-V performance traces (inner operations) Hyper-V performance traces</Keyword>
+                <Message><![CDATA[
+Finished creating DAX file backed memory block with %2 pages with status %3. (Partition ID %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter0" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter1" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter2" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5070</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Analytic</Channel>
+                <Level>Information</Level>
+                <Task>VMT_VID_EPF</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Hyper-V performance traces (inner operations) Hyper-V performance traces</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter0" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter1" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5071</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Analytic</Channel>
+                <Level>Information</Level>
+                <Task>VMT_VID_EPF</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Hyper-V performance traces (inner operations) Hyper-V performance traces</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter0" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter1" inType="win:Int64" outType="xs:long"/>
+  <data name="Parameter2" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5072</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Admin</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+One or more uncorrected persistent memory errors (%1 pages) occurred. These pages were not found in a virtual machine. No action was taken. (Platform Directed: %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TotalPages" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="PlatformDirected" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5073</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Admin</Channel>
+                <Level>Critical</Level>
+                <Message><![CDATA[
+'%3' was reset because an uncorrected persistent memory error occured at physical address %1, which was used by this virtual machine. (Virtual Machine: %4, Platform Directed: %2, Consumed: %5)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PhysicalAddress" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="PlatformDirected" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="PartitionFriendlyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PartitionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Consumed" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5074</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Admin</Channel>
+                <Level>Critical</Level>
+                <Message><![CDATA[
+'%3' was reset because one or more uncorrected persistent memory errors (%1 pages) occured, which were used by this virtual machine. (Virtual Machine: %4, Platform Directed: %2, Consumed: %5)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PhysicalAddress" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="PlatformDirected" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="PartitionFriendlyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PartitionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Consumed" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5075</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Admin</Channel>
+                <Level>Critical</Level>
+                <Message><![CDATA[
+An uncorrected persistent memory error occurred at physical address %1 which is used by virtual machine '%3'. The affected page has been released. A machine check event correpsonding to this persistent memory error was injected into the virtual machine for handling by the virtual machine's operating system. (Virtual Machine: %4, Platform Directed: %2, Consumed: %5)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PhysicalAddress" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="PlatformDirected" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="PartitionFriendlyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PartitionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Consumed" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5076</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Admin</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+An uncorrected persistent memory error occurred at physical address %1. The virtual machine that was using the page is no longer valid. No action was taken. (Platform Directed: %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PhysicalAddress" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="PlatformDirected" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5077</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-VID-Admin</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+One or more uncorrected persistent memory errors (%1 pages) occurred, which were used by virtual machine '%3'. ARS notification generated. (Virtual Machine: %4, Platform Directed: %2, Consumed: %5)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TotalPages" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="PlatformDirected" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="PartitionFriendlyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PartitionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Consumed" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
