@@ -1,0 +1,285 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Shell-Search-UriHandler</Name>
+        <Metadata>
+            <Guid>{606C6FE0-A9DC-4A9D-BDEA-830AFF6716E7}</Guid>
+            <ResourceFilePath>C:\Windows\system32\Windows.UI.Search.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\Windows.UI.Search.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.18362.1&amp;FileName=Windows.UI.Search.dll&amp;FileVer=10.0.18362.1</HelpLink>
+            <PublisherMessage>Microsoft-Shell-Search-UriHandler</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Shell-Search-UriHandler</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>Invocation</Name>
+                    <Value>100</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>Parse</Name>
+                    <Value>200</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>ParseParameter</Name>
+                    <Value>300</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>SearchInvocation</Name>
+                    <Value>400</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Shell-Search-UriHandler</Channel>
+                <Level>Information</Level>
+                <Task>Invocation</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Search Uri handler has been invoked for Uri %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Uri" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Shell-Search-UriHandler</Channel>
+                <Level>Information</Level>
+                <Task>Invocation</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Search Uri handler has finished invocation for Uri %1 with a result of %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Uri" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Result" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>201</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Shell-Search-UriHandler</Channel>
+                <Level>Information</Level>
+                <Task>Parse</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Search Uri handler has started parsing Uri %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Uri" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>202</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Shell-Search-UriHandler</Channel>
+                <Level>Information</Level>
+                <Task>Parse</Task>
+                <Message><![CDATA[
+Search Uri handler has found Uri scheme %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Scheme" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>203</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Shell-Search-UriHandler</Channel>
+                <Level>Information</Level>
+                <Task>Parse</Task>
+                <Message><![CDATA[
+Search Uri handler has found Uri search view %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SearchView" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>204</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Shell-Search-UriHandler</Channel>
+                <Level>Information</Level>
+                <Task>Parse</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Search Uri handler has finished parsing Uri %1 with a result of %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Uri" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Result" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>301</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Shell-Search-UriHandler</Channel>
+                <Level>Information</Level>
+                <Task>ParseParameter</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Search Uri handler has started parsing parameter %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>302</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Shell-Search-UriHandler</Channel>
+                <Level>Information</Level>
+                <Task>ParseParameter</Task>
+                <Message><![CDATA[
+Search Uri handler has located the parameter %1 in the Uri with a vale of %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ParameterValue" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>303</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Shell-Search-UriHandler</Channel>
+                <Level>Information</Level>
+                <Task>ParseParameter</Task>
+                <Message><![CDATA[
+Search Uri handler is using a default value of %2 for the parameter %1 in the Uri.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ParameterValue" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>304</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Shell-Search-UriHandler</Channel>
+                <Level>Information</Level>
+                <Task>ParseParameter</Task>
+                <Message><![CDATA[
+Search Uri handler failed validation for property %1 with original value of %2 with a result of %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Result" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>305</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Shell-Search-UriHandler</Channel>
+                <Level>Information</Level>
+                <Task>ParseParameter</Task>
+                <Message><![CDATA[
+Search Uri handler has morphed the value of property %1 with original value of %2 to %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="OldValue" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NewValue" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>306</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Shell-Search-UriHandler</Channel>
+                <Level>Information</Level>
+                <Task>ParseParameter</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Search Uri handler has finished parsing Uri %1 with a result of %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Result" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>401</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Shell-Search-UriHandler</Channel>
+                <Level>Information</Level>
+                <Task>SearchInvocation</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Search Uri handler is beginning search invocation.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>402</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Shell-Search-UriHandler</Channel>
+                <Level>Information</Level>
+                <Task>SearchInvocation</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Search Uri handler is finsiehd invocation of search with a result of %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Result" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,464 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-PerfOS</Name>
+        <Metadata>
+            <Guid>{F82FB576-E941-4956-A2C7-A0CF83F6450A}</Guid>
+            <ResourceFilePath>C:\Windows\system32\perfos.dll</ResourceFilePath>
+            <ParameterFilePath>C:\Windows\system32\perfos.dll</ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\perfos.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.18362.1&amp;FileName=perfos.dll&amp;FileVer=10.0.18362.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-PerfOS</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Application</Message>
+                    <Path>Application</Path>
+                    <Index>0</Index>
+                    <Id>9</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Classic</Message>
+                    <Name>win:EventlogClassic</Name>
+                    <Value>36028797018963968</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>3221226472</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unable to open one of the Windows operating system performance counter objects. The first four bytes (DWORD) of the Data section contains the status code.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1000</Id>
+                <Version>1</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Unable to open one of the Windows operating system performance counter objects. The first four bytes (DWORD) of the Data section contains the status code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Win32 Error" inType="win:UInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226473</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unable to collect operating system performance data because one of the system performance counter objects failed to open.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1001</Id>
+                <Version>1</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Unable to collect operating system performance data because one of the system performance counter objects failed to open.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485648</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unable to collect Processor performance data. The first four bytes (DWORD) of the Data section contains the status code.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2000</Id>
+                <Version>1</Version>
+                <Channel>Application</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Unable to collect Processor performance data. The first four bytes (DWORD) of the Data section contains the status code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NTSTATUS" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485649</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unable to collect Interrupt performance data. The first four bytes (DWORD) of the Data section contains the status code.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2001</Id>
+                <Version>1</Version>
+                <Channel>Application</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Unable to collect Interrupt performance data. The first four bytes (DWORD) of the Data section contains the status code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NTSTATUS" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2002</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Unable to collect File Cache performance data. The first four bytes (DWORD) of the Data section contains the status code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NTSTATUS" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485650</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unable to collect File Cache performance data. The first four bytes (DWORD) of the Data section contains the status code.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485651</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unable to collect Process performance data. The first four bytes (DWORD) of the Data section contains the status code.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2003</Id>
+                <Version>2</Version>
+                <Channel>Application</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Unable to collect Process performance data. The first four bytes (DWORD) of the Data section contains the status code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NTSTATUS" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485652</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unable to collect Thread performance data. The first four bytes (DWORD) of the Data section contains the status code.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2004</Id>
+                <Version>1</Version>
+                <Channel>Application</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Unable to collect Thread performance data. The first four bytes (DWORD) of the Data section contains the status code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NTSTATUS" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485653</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unable to collect Event performance data. The first four bytes (DWORD) of the Data section contains the status code.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2005</Id>
+                <Version>1</Version>
+                <Channel>Application</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Unable to collect Event performance data. The first four bytes (DWORD) of the Data section contains the status code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NTSTATUS" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485654</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unable to collect Semaphore performance data. The first four bytes (DWORD) of the Data section contains the status code.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2006</Id>
+                <Version>1</Version>
+                <Channel>Application</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Unable to collect Semaphore performance data. The first four bytes (DWORD) of the Data section contains the status code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NTSTATUS" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485655</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%%2007]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485656</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unable to collect Section performance data. The first four bytes (DWORD) of the Data section contains the status code.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2008</Id>
+                <Version>1</Version>
+                <Channel>Application</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Unable to collect Section performance data. The first four bytes (DWORD) of the Data section contains the status code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NTSTATUS" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227481</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unable to get system configuration information. The first four bytes (DWORD) of the Data section contains the status code.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2009</Id>
+                <Version>1</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Unable to get system configuration information. The first four bytes (DWORD) of the Data section contains the status code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NTSTATUS" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485658</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unable to collect System performance data. The first four bytes (DWORD) of the Data section contains the status code.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2010</Id>
+                <Version>1</Version>
+                <Channel>Application</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Unable to collect System performance data. The first four bytes (DWORD) of the Data section contains the status code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NTSTATUS" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485659</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unable to collect System Pagefile performance data. The first four bytes (DWORD) of the Data section contains the status code.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2011</Id>
+                <Version>1</Version>
+                <Channel>Application</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Unable to collect System Pagefile performance data. The first four bytes (DWORD) of the Data section contains the status code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NTSTATUS" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485660</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unable to collect System Process performance data. The first four bytes (DWORD) of the Data section contains the status code.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2012</Id>
+                <Version>1</Version>
+                <Channel>Application</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Unable to collect System Process performance data. The first four bytes (DWORD) of the Data section contains the status code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NTSTATUS" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485661</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unable to collect System Exception performance data. The first four bytes (DWORD) of the Data section contains the status code.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2013</Id>
+                <Version>1</Version>
+                <Channel>Application</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Unable to collect System Exception performance data. The first four bytes (DWORD) of the Data section contains the status code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NTSTATUS" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485662</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unable to collect Registry Quota performance data. The first four bytes (DWORD) of the Data section contains the status code.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2014</Id>
+                <Version>1</Version>
+                <Channel>Application</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Unable to collect Registry Quota performance data. The first four bytes (DWORD) of the Data section contains the status code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NTSTATUS" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485663</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unable to collect System time information. The first four bytes (DWORD) of the Data section contains the status code.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2015</Id>
+                <Version>1</Version>
+                <Channel>Application</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Unable to collect System time information. The first four bytes (DWORD) of the Data section contains the status code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NTSTATUS" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485664</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unable to collect System Processor Idle performance data. The first four bytes (DWORD) of the Data section contains the status code.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2016</Id>
+                <Version>1</Version>
+                <Channel>Application</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Unable to collect System Processor Idle performance data. The first four bytes (DWORD) of the Data section contains the status code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NTSTATUS" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485665</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unable to collect NUMA physical memory utilization data. The first four bytes (DWORD) of the Data section contains the status code.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2017</Id>
+                <Version>1</Version>
+                <Channel>Application</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Unable to collect NUMA physical memory utilization data. The first four bytes (DWORD) of the Data section contains the status code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NTSTATUS" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8199</Id>
+                <Version>1</Version>
+                <Channel>Application</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Unable to collect Mutex performance data. The first four bytes (DWORD) of the Data section contains the status code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NTSTATUS" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

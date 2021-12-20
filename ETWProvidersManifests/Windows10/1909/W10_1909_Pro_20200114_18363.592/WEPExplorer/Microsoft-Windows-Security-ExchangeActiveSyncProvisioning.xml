@@ -1,0 +1,134 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Security-ExchangeActiveSyncProvisioning</Name>
+        <Metadata>
+            <Guid>{9249D0D0-F034-402F-A29B-92FA8853D9F3}</Guid>
+            <ResourceFilePath>C:\Windows\System32\easwrt.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\System32\easwrt.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.18362.1&amp;FileName=easwrt.dll&amp;FileVer=10.0.18362.1</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Security-ExchangeActiveSyncProvisioning/Performance</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Operational</Message>
+                    <Path>Microsoft-Windows-Security-ExchangeActiveSyncProvisioning/Operational</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Critical</Message>
+                    <Name>win:Critical</Name>
+                    <Value>1</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>ExchangeActiveSyncProvisioning Performance</Message>
+                    <Name>CATEGORY_PERF</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>EAS_REGPROV</Name>
+                    <Value>2</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Critical</Level>
+                <Task>EAS_REGPROV</Task>
+                <Message><![CDATA[
+Registered EAS supporting Windows Encryption Provider - (%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DllPath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Critical</Level>
+                <Task>EAS_REGPROV</Task>
+                <Message><![CDATA[
+UnRegistered EAS supporting Windows Encryption Provider - (%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DllPath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Security-ExchangeActiveSyncProvisioning/Performance</Channel>
+                <Level>Information</Level>
+                <Task>ExchangeActiveSyncProvisioning Performance</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+CheckCompliance begin]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Security-ExchangeActiveSyncProvisioning/Performance</Channel>
+                <Level>Information</Level>
+                <Task>ExchangeActiveSyncProvisioning Performance</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+CheckCompliance end:
+
+    elapse: %1 milliseconds]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TimeSpent" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

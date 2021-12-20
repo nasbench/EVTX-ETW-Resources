@@ -1,0 +1,97 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Containers-Wcnfs</Name>
+        <Metadata>
+            <Guid>{B99317E5-89B7-4C0D-ABD1-6E705F7912DC}</Guid>
+            <ResourceFilePath>C:\Windows\system32\drivers\wcnfs.sys</ResourceFilePath>
+            <ParameterFilePath>C:\Windows\system32\drivers\wcnfs.sys</ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\drivers\wcnfs.sys</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.471&amp;FileName=wcnfs.sys&amp;FileVer=10.0.17134.471</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Containers-Wcnfs</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Containers-Wcnfs/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Containers-Wcnfs/Debug</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Containers-Wcnfs/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+WCNFS filter registratiion failed with error message: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NTStatus" inType="win:HexInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Containers-Wcnfs/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+WCNFS filter registration succeeded]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Containers-Wcnfs/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+WCNFS filter failed to attach to volume '%3' with error message: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NTStatus" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Containers-Wcnfs/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+WCNFS filter unload succeeded]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

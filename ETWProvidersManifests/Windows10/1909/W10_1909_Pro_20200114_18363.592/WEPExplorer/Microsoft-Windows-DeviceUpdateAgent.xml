@@ -1,0 +1,410 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-DeviceUpdateAgent</Name>
+        <Metadata>
+            <Guid>{E8F9AF91-AFBE-5A03-DFEC-5D591686326C}</Guid>
+            <ResourceFilePath>C:\Windows\System32\DeviceUpdateAgent.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\System32\DeviceUpdateAgent.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.18362.1&amp;FileName=DeviceUpdateAgent.dll&amp;FileVer=10.0.18362.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-DeviceUpdateAgent</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Device Update Agent operational channel</Message>
+                    <Path>Microsoft-Windows-DeviceUpdateAgent/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Channel>Device Update Agent operational channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A new deployment session was created with session ID %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_SessionId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>100</Id>
+                <Version>1</Version>
+                <Channel>Device Update Agent operational channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A new deployment session was created with session ID %1 for update '%2' that is part of flight '%3']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_SessionId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Prop_UpdateId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Prop_FlightId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Channel>Device Update Agent operational channel</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to create a new deployment session with error %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>1</Version>
+                <Channel>Device Update Agent operational channel</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to create a new deployment session for update '%1' that is part of flight '%2'.  The error was %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_UpdateId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Prop_FlightId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>200</Id>
+                <Version>0</Version>
+                <Channel>Device Update Agent operational channel</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to generate a list of files to download with error %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>200</Id>
+                <Version>1</Version>
+                <Channel>Device Update Agent operational channel</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Update of product '%1' to version '%2' failed to generate a list of files to download with error %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_ProductId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Prop_ProductVersion" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>201</Id>
+                <Version>0</Version>
+                <Channel>Device Update Agent operational channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Requesting %1 files with total size %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_NumFiles" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Prop_RequestSize" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>300</Id>
+                <Version>0</Version>
+                <Channel>Device Update Agent operational channel</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to install updates with error %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>300</Id>
+                <Version>1</Version>
+                <Channel>Device Update Agent operational channel</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Update of product '%1' to version '%2' failed to install updates with error %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_ProductId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Prop_ProductVersion" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>301</Id>
+                <Version>0</Version>
+                <Channel>Device Update Agent operational channel</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Update '%2' encountered install error %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Win32Error" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Prop_UnicodeString" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>302</Id>
+                <Version>0</Version>
+                <Channel>Device Update Agent operational channel</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Update '%2' encountered import error %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Win32Error" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Prop_UnicodeString" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>303</Id>
+                <Version>0</Version>
+                <Channel>Device Update Agent operational channel</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Update '%2' should have already existed on the machine, but was missing.  Error = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Win32Error" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Prop_UnicodeString" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>304</Id>
+                <Version>0</Version>
+                <Channel>Device Update Agent operational channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Installation of update set '%1' requires the system to be rebooted]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Id" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>305</Id>
+                <Version>0</Version>
+                <Channel>Device Update Agent operational channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Installation of update '%1' requires the system to be rebooted]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_Id" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>306</Id>
+                <Version>0</Version>
+                <Channel>Device Update Agent operational channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Installation of update set '%1' is complete.  %2 updates out of %3 updates were successfully installed in %4 milliseconds]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_SetId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Prop_SuccessfulUpdates" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Prop_TotalUpdates" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Prop_ElapsedMilliseconds" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>307</Id>
+                <Version>0</Version>
+                <Channel>Device Update Agent operational channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Updated product '%1' to version '%2']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_ProductId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Prop_ProductVersion" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>400</Id>
+                <Version>0</Version>
+                <Channel>Device Update Agent operational channel</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to commit updates with error %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>500</Id>
+                <Version>0</Version>
+                <Channel>Device Update Agent operational channel</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to clean up updates with error %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>600</Id>
+                <Version>0</Version>
+                <Channel>Device Update Agent operational channel</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to cancel updates with error %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>601</Id>
+                <Version>0</Version>
+                <Channel>Device Update Agent operational channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Updates were cancelled with reason %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>700</Id>
+                <Version>0</Version>
+                <Channel>Device Update Agent operational channel</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to merge updates with error %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>800</Id>
+                <Version>0</Version>
+                <Channel>Device Update Agent operational channel</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to get update result post reboot with error %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>801</Id>
+                <Version>0</Version>
+                <Channel>Device Update Agent operational channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Updated product '%1' to last activated version '%2']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_ProductId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Prop_ProductVersion" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>802</Id>
+                <Version>0</Version>
+                <Channel>Device Update Agent operational channel</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Product '%1' was not updated to last activated version '%2'.
+Missing updates: %3
+Missing drivers: %4
+Unpublished drivers: %5
+Published drivers: %6
+Analysis errors: %7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_ProductId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Prop_ProductVersion" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Prop_MissingUpdates" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Prop_MissingDrivers" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Prop_UnpublishedDrivers" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Prop_PublishedDrivers" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Prop_AnalysisErrorDrivers" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>900</Id>
+                <Version>0</Version>
+                <Channel>Device Update Agent operational channel</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to perform post download operation with error %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1000</Id>
+                <Version>0</Version>
+                <Channel>Device Update Agent operational channel</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Parsed manifest for product '%1' at version '%2' is not greater than currently installed version '%3']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Prop_ProductId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Prop_Version1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Prop_Version2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

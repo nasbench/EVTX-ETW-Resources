@@ -1,0 +1,177 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Storage-Tiering-IoHeat</Name>
+        <Metadata>
+            <Guid>{990C55FC-2662-47F6-B7D7-EB3C027CB13F}</Guid>
+            <ResourceFilePath>C:\Windows\system32\microsoft-windows-storage-tiering-events.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\microsoft-windows-storage-tiering-events.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1&amp;FileName=microsoft-windows-storage-tiering-events.dll&amp;FileVer=10.0.17134.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Storage-Tiering-IoHeat</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Tiering Heat Measurement Channel</Message>
+                    <Path>Microsoft-Windows-Storage-Tiering-IoHeat/Heat</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>HeatInit</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>MeasureHeat</Name>
+                    <Value>2</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>STORAGE_TIERING_KEYWORD_INIT</Name>
+                    <Value>16</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>STORAGE_TIERING_KEYWORD_DATA</Name>
+                    <Value>32</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>STORAGE_TIERING_KEYWORD_READ</Name>
+                    <Value>64</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>STORAGE_TIERING_KEYWORD_WRITE</Name>
+                    <Value>128</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>STORAGE_TIERING_KEYWORD_DELETE</Name>
+                    <Value>256</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>STORAGE_TIERING_KEYWORD_TIERMOVE</Name>
+                    <Value>512</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Tiering Heat Measurement Channel</Channel>
+                <Level>Information</Level>
+                <Task>HeatInit</Task>
+                <Keyword>STORAGE_TIERING_KEYWORD_INIT</Keyword>
+                <Message><![CDATA[
+Volume %1 (ID %2) is measuring I/O heat.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeIdHash" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Tiering Heat Measurement Channel</Channel>
+                <Level>Information</Level>
+                <Task>MeasureHeat</Task>
+                <Keyword>STORAGE_TIERING_KEYWORD_DATA STORAGE_TIERING_KEYWORD_READ</Keyword>
+                <Message><![CDATA[
+READ - Volume: %5 File: %1%2 Offset: %3 Length %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileIDLower" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="FileIDUpper" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Offset" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VolumeIdHash" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Tiering Heat Measurement Channel</Channel>
+                <Level>Information</Level>
+                <Task>MeasureHeat</Task>
+                <Keyword>STORAGE_TIERING_KEYWORD_DATA STORAGE_TIERING_KEYWORD_WRITE</Keyword>
+                <Message><![CDATA[
+WRITE - Volume: %5 File: %1%2 Offset: %3 Length %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileIDLower" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="FileIDUpper" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Offset" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VolumeIdHash" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Tiering Heat Measurement Channel</Channel>
+                <Level>Information</Level>
+                <Task>MeasureHeat</Task>
+                <Keyword>STORAGE_TIERING_KEYWORD_DATA STORAGE_TIERING_KEYWORD_DELETE</Keyword>
+                <Message><![CDATA[
+DELETE - Volume: %5 File: %1%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileIDLower" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="FileIDUpper" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Offset" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VolumeIdHash" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Tiering Heat Measurement Channel</Channel>
+                <Level>Information</Level>
+                <Task>MeasureHeat</Task>
+                <Keyword>STORAGE_TIERING_KEYWORD_DATA STORAGE_TIERING_KEYWORD_TIERMOVE</Keyword>
+                <Message><![CDATA[
+TIERMOVE - Volume: %7 File: %1%2 Offset: %3 Length %4 Source: %5 Destination: %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileIDLower" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="FileIDUpper" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Offset" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Source" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Destination" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VolumeIdHash" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

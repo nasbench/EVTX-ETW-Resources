@@ -1,0 +1,440 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-WindowsPhone-Ufx</Name>
+        <Metadata>
+            <Guid>{E98EBDBF-3058-4784-8521-47860B1D2B8E}</Guid>
+            <ResourceFilePath>C:\Windows\System32\drivers\ufx01000.sys</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\System32\drivers\ufx01000.sys</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1&amp;FileName=ufx01000.sys&amp;FileVer=10.0.17134.1</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>Error</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>Debug</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>FailedCall</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>FunctionEntry</Name>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>FunctionExit</Name>
+                    <Value>5</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>IoctlRequest</Name>
+                    <Value>6</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>Setup</Name>
+                    <Value>7</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>StateMachine</Name>
+                    <Value>8</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>Notification</Name>
+                    <Value>9</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Error</Message>
+                    <Name>Error</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Performance</Message>
+                    <Name>Performance</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Debug</Message>
+                    <Name>Debug</Name>
+                    <Value>4</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Function</Message>
+                    <Name>Function</Name>
+                    <Value>8</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>UfxBus</Message>
+                    <Name>UfxBus</Name>
+                    <Value>16</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Setup</Message>
+                    <Name>Setup</Name>
+                    <Value>32</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>StateMachine</Message>
+                    <Name>StateMachine</Name>
+                    <Value>64</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Notification</Message>
+                    <Name>Notification</Name>
+                    <Value>128</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ms:Measures</Name>
+                    <Value>70368744177664</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Task>Error</Task>
+                <Keyword>Error</Keyword>
+                <Message><![CDATA[
+Error in file %1 on line %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Str" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Int" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Task>FailedCall</Task>
+                <Keyword>Error</Keyword>
+                <Message><![CDATA[
+Failed with status 0x%3 in file %1 on line %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="File" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Line" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Task>FunctionEntry</Task>
+                <Keyword>Function</Keyword>
+                <Message><![CDATA[
+%1 ++++]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>103</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Task>FunctionExit</Task>
+                <Keyword>Function</Keyword>
+                <Message><![CDATA[
+%1 ----]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>104</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Task>FailedCall</Task>
+                <Keyword>Error</Keyword>
+                <Message><![CDATA[
+%1: %2 (%3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Message" inType="win:AnsiString" outType="xs:string"/>
+  <data name="IntParam" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>105</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Task>IoctlRequest</Task>
+                <Keyword>UfxBus</Keyword>
+                <Message><![CDATA[
+%1: Handling IOCTL %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Index" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="IOCTL" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>106</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>Debug</Task>
+                <Keyword>Debug</Keyword>
+                <Message><![CDATA[
+%1: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Message" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>107</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>Setup</Task>
+                <Keyword>Setup</Keyword>
+                <Message><![CDATA[
+Description: %1, Direction: %2, Type: %3, Recipient: %4, Request: %5, wValue: %6, wIndex: %7, wLength: %8]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Description" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Direction" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Type" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Recipient" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Request" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="wValue" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="wIndex" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="wLength" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>108</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>StateMachine</Task>
+                <Keyword>StateMachine</Keyword>
+                <Message><![CDATA[
+Created Machine %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Machine" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>109</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>StateMachine</Task>
+                <Keyword>StateMachine</Keyword>
+                <Message><![CDATA[
+%2 %3 on Machine %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Machine" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Type" inType="win:AnsiString" outType="xs:string"/>
+  <data name="State" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>110</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>StateMachine</Task>
+                <Keyword>StateMachine</Keyword>
+                <Message><![CDATA[
+Enqueue (%2, %3, %4) to Machine %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Machine" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Type" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Event" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Payload" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>111</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>StateMachine</Task>
+                <Keyword>StateMachine</Keyword>
+                <Message><![CDATA[
+Dequeue (%2, %3) on Machine %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Machine" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Event" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Payload" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>112</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>StateMachine</Task>
+                <Keyword>StateMachine</Keyword>
+                <Message><![CDATA[
+Action %2 on Machine %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Machine" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ActionName" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>113</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>StateMachine</Task>
+                <Keyword>StateMachine</Keyword>
+                <Message><![CDATA[
+Unhandled (%2) on Machine %1. Pop to %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Machine" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Event" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ToState" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>114</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>StateMachine</Task>
+                <Keyword>StateMachine</Keyword>
+                <Message><![CDATA[
+Exception Machine %1: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Machine" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Exception" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>115</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>StateMachine</Task>
+                <Keyword>StateMachine</Keyword>
+                <Message><![CDATA[
+Queue Resize to %2 on MAchine %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Machine" inType="win:AnsiString" outType="xs:string"/>
+  <data name="NewQueueSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>116</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>StateMachine</Task>
+                <Keyword>StateMachine</Keyword>
+                <Message><![CDATA[
+Exit %2 on Machine %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Machine" inType="win:AnsiString" outType="xs:string"/>
+  <data name="FromState" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>117</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>Debug</Task>
+                <Keyword>Debug</Keyword>
+                <Message><![CDATA[
+%1: %2 %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Message" inType="win:AnsiString" outType="xs:string"/>
+  <data name="IntParam" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>118</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>Notification</Task>
+                <Keyword>Notification</Keyword>
+                <Message><![CDATA[
+Notification: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Str" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>119</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>Notification</Task>
+                <Keyword>Notification</Keyword>
+                <Message><![CDATA[
+Notification: %1 (%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Str" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Int" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

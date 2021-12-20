@@ -1,0 +1,176 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-NetworkSecurity</Name>
+        <Metadata>
+            <Guid>{7B702970-90BC-4584-8B20-C0799086EE5A}</Guid>
+            <ResourceFilePath>C:\Windows\System32\fwpuclnt.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\System32\fwpuclnt.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.18362.1&amp;FileName=fwpuclnt.dll&amp;FileVer=10.0.18362.1</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-NetworkSecurity/Debug</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>SaContextOperation</Name>
+                    <Guid>{E0554D8D-818E-4491-9C8C-FCEB9CB8B621}</Guid>
+                    <Value>901</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>801</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkSecurity/Debug</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+SA Context %1 was created]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SaContextID" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>802</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkSecurity/Debug</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+SA Context %1: Result=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SaContextID" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Result" inType="win:UInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>803</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkSecurity/Debug</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+SA Context %1:\nLocal Address: %2:%4\nRemote Address: %3:%5\nProtocol: %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SaContextID" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="LocalAddr" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LocalMask" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LocalPort" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="RemoteAddress" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RemoteMask" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RemotePort" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="IPProtocol" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="LocalTunnelEndpt" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RemoteTunnelEndpt" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>804</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkSecurity/Debug</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+SA Context %1 was deleted]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SaContextID" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>805</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkSecurity/Debug</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+SA Context %1: SPI=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SaContextID" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="SPI" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>806</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkSecurity/Debug</Channel>
+                <Level>Verbose</Level>
+                <Task>SaContextOperation</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+----- BEGIN BFE_SA_CONTEXT processing -----]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>807</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkSecurity/Debug</Channel>
+                <Level>Verbose</Level>
+                <Task>SaContextOperation</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+----- END BFE_SA_CONTEXT processing -----]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>808</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkSecurity/Debug</Channel>
+                <Level>Verbose</Level>
+                <Task>SaContextOperation</Task>
+                <Message><![CDATA[
+----- BFE SA CONTEXT ID: (%1) -----]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SaContextID" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,888 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-MediaFoundation-Platform</Name>
+        <Metadata>
+            <Guid>{BC97B970-D001-482F-8745-B8D7D5759F99}</Guid>
+            <ResourceFilePath>C:\Windows\system32\mfplat.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\mfplat.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.18362.1&amp;FileName=mfplat.dll&amp;FileVer=10.0.18362.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-MediaFoundation-Platform</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>MediaFoundationDeviceProxy</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Media Foundation Platform</Message>
+                    <Path>MediaFoundationPlatform</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Plugin Manager</Message>
+                    <Name>PluginTask</Name>
+                    <Value>42</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>MF_MFT_Hardware_Enumeration</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Platform</Message>
+                    <Name>PlatformTask</Name>
+                    <Value>100</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation SourceResolver</Message>
+                    <Name>SourceResolverTask</Name>
+                    <Value>101</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation MFTEnum</Message>
+                    <Name>MFTEnumTask</Name>
+                    <Value>102</Value>
+                </Task>
+                <Task>
+                    <Message>Optimization Flags</Message>
+                    <Name>OptimizationFlags_PlatformTask</Name>
+                    <Value>103</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation TraceFailure</Message>
+                    <Name>TraceFailureTask</Name>
+                    <Value>104</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation ByteStreamOnInputStream_Read</Message>
+                    <Name>ByteStreamOnInputStream_ReadTask</Name>
+                    <Value>105</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Platform Shutdown</Message>
+                    <Name>MFShutdownTask</Name>
+                    <Value>106</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation GetConfigurationKey</Message>
+                    <Name>MFGetConfigurationKeyTask</Name>
+                    <Value>107</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation GetConfigurationValueDWORD</Message>
+                    <Name>MFGetConfigurationValueDWORDTask</Name>
+                    <Value>108</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation GetConfigurationValueString</Message>
+                    <Name>MFGetConfigurationValueStringTask</Name>
+                    <Value>109</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Media Foundation Platform</Channel>
+                <Level>Warning</Level>
+                <Task>Plugin Manager</Task>
+                <Message><![CDATA[
+Attempt to use MFT clsid %1 marked as do not use.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="clsid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Media Foundation Platform</Channel>
+                <Level>Warning</Level>
+                <Task>Plugin Manager</Task>
+                <Message><![CDATA[
+Attempt to use Media Source clsid %1 marked as do not use.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="clsid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Media Foundation Platform</Channel>
+                <Level>Information</Level>
+                <Task>Plugin Manager</Task>
+                <Message><![CDATA[
+Mark MFT clsid %1 do not use = %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="clsid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Disabled" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Media Foundation Platform</Channel>
+                <Level>Information</Level>
+                <Task>Plugin Manager</Task>
+                <Message><![CDATA[
+Mark Media Source clsid %1 do not use = %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="clsid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Disabled" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Media Foundation Platform</Channel>
+                <Level>Information</Level>
+                <Task>Plugin Manager</Task>
+                <Message><![CDATA[
+Choosing preferred MFT clsid %1 for subtype %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="clsid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Selector" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Media Foundation Platform</Channel>
+                <Level>Information</Level>
+                <Task>Plugin Manager</Task>
+                <Message><![CDATA[
+Registering preferred MFT clsid %1 for subtype %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="clsid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Selector" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Media Foundation Platform</Channel>
+                <Level>Information</Level>
+                <Task>Plugin Manager</Task>
+                <Message><![CDATA[
+Choosing preferred Media Source clsid %1 for %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="clsid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Selector" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>Media Foundation Platform</Channel>
+                <Level>Information</Level>
+                <Task>Plugin Manager</Task>
+                <Message><![CDATA[
+Registering preferred Media Soure clsid %1 for %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="clsid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Selector" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>Media Foundation Platform</Channel>
+                <Level>Information</Level>
+                <Task>Plugin Manager</Task>
+                <Message><![CDATA[
+Found preferred MFT clsid %1 for media subtype %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="clsid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Selector" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>Media Foundation Platform</Channel>
+                <Level>Information</Level>
+                <Task>Plugin Manager</Task>
+                <Message><![CDATA[
+Did not find preferred MFT for media subtype %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Selector" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>Media Foundation Platform</Channel>
+                <Level>Information</Level>
+                <Task>Plugin Manager</Task>
+                <Message><![CDATA[
+Query MFT clsid %1 do not use: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="clsid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Disabled" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>Media Foundation Platform</Channel>
+                <Level>Information</Level>
+                <Task>Plugin Manager</Task>
+                <Message><![CDATA[
+Found preferred Media Source clsid %1 for %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="clsid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Selector" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Channel>Media Foundation Platform</Channel>
+                <Level>Information</Level>
+                <Task>Plugin Manager</Task>
+                <Message><![CDATA[
+Did not find preferred Media Source for %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Selector" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Channel>Media Foundation Platform</Channel>
+                <Level>Information</Level>
+                <Task>Plugin Manager</Task>
+                <Message><![CDATA[
+Query Media Source clsid %1 do not use: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="clsid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Disabled" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Channel>Media Foundation Platform</Channel>
+                <Level>Information</Level>
+                <Task>Plugin Manager</Task>
+                <Message><![CDATA[
+Registering local MFT(%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MFTName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Channel>Media Foundation Platform</Channel>
+                <Level>Information</Level>
+                <Task>Plugin Manager</Task>
+                <Message><![CDATA[
+Unregistering local MFT(%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MFTName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Channel>Media Foundation Platform</Channel>
+                <Level>Information</Level>
+                <Task>Plugin Manager</Task>
+                <Message><![CDATA[
+Enumerating local MFT(%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MFTName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Channel>MediaFoundationDeviceProxy</Channel>
+                <Level>Information</Level>
+                <Task>MF_MFT_Hardware_Enumeration</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Category" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Channel>MediaFoundationDeviceProxy</Channel>
+                <Level>Information</Level>
+                <Task>MF_MFT_Hardware_Enumeration</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LinkName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FriendlyName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Channel>MediaFoundationDeviceProxy</Channel>
+                <Level>Information</Level>
+                <Task>MF_MFT_Hardware_Enumeration</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Category" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>0</Version>
+                <Channel>Media Foundation Platform</Channel>
+                <Level>Information</Level>
+                <Task>Optimization Flags</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Configuration: dwType = %1 dwConfig=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwConfig" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Channel>Media Foundation Platform</Channel>
+                <Level>Information</Level>
+                <Task>Media Foundation Platform</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+MFStartup returned %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hr" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Channel>Media Foundation Platform</Channel>
+                <Level>Information</Level>
+                <Task>Media Foundation Platform Shutdown</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+MFShutdown Start]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>0</Version>
+                <Channel>Media Foundation Platform</Channel>
+                <Level>Information</Level>
+                <Task>Media Foundation Platform Shutdown</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+MFShutdown Stop - return code %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hr" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>103</Id>
+                <Version>0</Version>
+                <Channel>Media Foundation Platform</Channel>
+                <Level>Information</Level>
+                <Task>Media Foundation GetConfigurationKey</Task>
+                <Message><![CDATA[
+MFGetConfigurationKey Type %1 Key %2 Result %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Type" inType="win:Int32" outType="xs:int"/>
+  <data name="KeyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="lResult" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>104</Id>
+                <Version>0</Version>
+                <Channel>Media Foundation Platform</Channel>
+                <Level>Information</Level>
+                <Task>Media Foundation GetConfigurationValueDWORD</Task>
+                <Message><![CDATA[
+MFGetConfigurationValueDWORD Type %1 Key %2 ValueName %3 Result %4 QuerySize %5 ValueResult %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Type" inType="win:Int32" outType="xs:int"/>
+  <data name="KeyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ValueName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="lResult" inType="win:Int32" outType="xs:int"/>
+  <data name="QuerySize" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ValueDWORD" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>105</Id>
+                <Version>0</Version>
+                <Channel>Media Foundation Platform</Channel>
+                <Level>Information</Level>
+                <Task>Media Foundation GetConfigurationValueString</Task>
+                <Message><![CDATA[
+MFGetConfigurationValueString Type %1 Key %2 ValueName %3 Result %4 QuerySize %5 ValueResult %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Type" inType="win:Int32" outType="xs:int"/>
+  <data name="KeyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ValueName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="lResult" inType="win:Int32" outType="xs:int"/>
+  <data name="QuerySize" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ValueString" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>200</Id>
+                <Version>0</Version>
+                <Channel>Media Foundation Platform</Channel>
+                <Level>Information</Level>
+                <Task>Media Foundation SourceResolver</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Source Resolver Context(%1) Resolve %2 flags %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="url" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hr" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>201</Id>
+                <Version>0</Version>
+                <Channel>Media Foundation Platform</Channel>
+                <Level>Information</Level>
+                <Task>Media Foundation SourceResolver</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Source Resolver Context(%1) Trying Scheme Handler %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="clsid" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>202</Id>
+                <Version>0</Version>
+                <Channel>Media Foundation Platform</Channel>
+                <Level>Information</Level>
+                <Task>Media Foundation SourceResolver</Task>
+                <Message><![CDATA[
+Source Resolver Context(%1) Trying Byte Scheme Handler CLSID(%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="clsid" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>203</Id>
+                <Version>0</Version>
+                <Channel>Media Foundation Platform</Channel>
+                <Level>Information</Level>
+                <Task>Media Foundation SourceResolver</Task>
+                <Message><![CDATA[
+Source Resolver Context(%1) SchemeHandler Result %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hr" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>204</Id>
+                <Version>0</Version>
+                <Channel>Media Foundation Platform</Channel>
+                <Level>Information</Level>
+                <Task>Media Foundation SourceResolver</Task>
+                <Message><![CDATA[
+Source Resolver Context(%1) Byte stream Handler Result %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hr" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>205</Id>
+                <Version>0</Version>
+                <Channel>Media Foundation Platform</Channel>
+                <Level>Information</Level>
+                <Task>Media Foundation SourceResolver</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Source Resolver Context(%1) Resolving %2 returned %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="url" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hr" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>206</Id>
+                <Version>0</Version>
+                <Channel>Media Foundation Platform</Channel>
+                <Level>Information</Level>
+                <Task>Media Foundation TraceFailure</Task>
+                <Message><![CDATA[
+TraceFailure logger (%1) line %2 result %3 function %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Line" inType="win:Int32" outType="xs:int"/>
+  <data name="hr" inType="win:HexInt32" outType="win:ErrorCode"/>
+  <data name="function" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>207</Id>
+                <Version>0</Version>
+                <Channel>Media Foundation Platform</Channel>
+                <Level>Verbose</Level>
+                <Task>Media Foundation ByteStreamOnInputStream_Read</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+ByteStreamOnInputStream_Read_Start stream (%1) ptr %2 length %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stream" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="offset" inType="win:Int64" outType="xs:long"/>
+  <data name="length" inType="win:Int32" outType="xs:int"/>
+  <data name="buffer" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>208</Id>
+                <Version>0</Version>
+                <Channel>Media Foundation Platform</Channel>
+                <Level>Verbose</Level>
+                <Task>Media Foundation ByteStreamOnInputStream_Read</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+ByteStreamOnInputStream_Read_Stop stream (%1) ptr %2 length %3 hr %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stream" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="length" inType="win:Int32" outType="xs:int"/>
+  <data name="buffer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hr" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>300</Id>
+                <Version>0</Version>
+                <Channel>Media Foundation Platform</Channel>
+                <Level>Information</Level>
+                <Task>Media Foundation MFTEnum</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+MFTEnumEx flags %1, category %2 for input type (%3,%4), output type (%5,%6) ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="flags" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Category" inType="win:GUID" outType="xs:GUID"/>
+  <data name="inputType" inType="win:GUID" outType="xs:GUID"/>
+  <data name="inputSubtype" inType="win:GUID" outType="xs:GUID"/>
+  <data name="outputType" inType="win:GUID" outType="xs:GUID"/>
+  <data name="outputSubtype" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>301</Id>
+                <Version>0</Version>
+                <Channel>Media Foundation Platform</Channel>
+                <Level>Information</Level>
+                <Task>Media Foundation MFTEnum</Task>
+                <Message><![CDATA[
+Found matching software MFT %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="clsid" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>302</Id>
+                <Version>0</Version>
+                <Channel>Media Foundation Platform</Channel>
+                <Level>Information</Level>
+                <Task>Media Foundation MFTEnum</Task>
+                <Message><![CDATA[
+Found Local MFT %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="string" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>303</Id>
+                <Version>0</Version>
+                <Channel>Media Foundation Platform</Channel>
+                <Level>Information</Level>
+                <Task>Media Foundation MFTEnum</Task>
+                <Message><![CDATA[
+Found Hardware MFT %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="string" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>304</Id>
+                <Version>0</Version>
+                <Channel>Media Foundation Platform</Channel>
+                <Level>Information</Level>
+                <Task>Media Foundation MFTEnum</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+MFTEnumEx returned code %1, found %2 local MFTs, %3 hardware MFTs and %4 MFT CLSIDs]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hr" inType="win:HexInt32" outType="win:ErrorCode"/>
+  <data name="localMFTs" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="hardwareMFTs" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MFTs" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>305</Id>
+                <Version>0</Version>
+                <Channel>Media Foundation Platform</Channel>
+                <Level>Information</Level>
+                <Task>Media Foundation MFTEnum</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+MFTEnum2 flags %1, category %2 for input type (%3,%4), output type (%5,%6), LUID set: %7 ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="flags" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Category" inType="win:GUID" outType="xs:GUID"/>
+  <data name="inputType" inType="win:GUID" outType="xs:GUID"/>
+  <data name="inputSubtype" inType="win:GUID" outType="xs:GUID"/>
+  <data name="outputType" inType="win:GUID" outType="xs:GUID"/>
+  <data name="outputSubtype" inType="win:GUID" outType="xs:GUID"/>
+  <data name="luidSet" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>306</Id>
+                <Version>0</Version>
+                <Channel>Media Foundation Platform</Channel>
+                <Level>Information</Level>
+                <Task>Media Foundation MFTEnum</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+MFTEnum2 returned code %1, found %2 MFTs matching adapter with vendor ID %3, device ID %4, SubSys ID %5, Revision %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hr" inType="win:HexInt32" outType="win:ErrorCode"/>
+  <data name="numMFTs" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="adapterVendorId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="adapterDeviceId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="adapterSubSysId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="adapterRevision" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2500</Id>
+                <Version>0</Version>
+                <Channel>Media Foundation Platform</Channel>
+                <Level>Information</Level>
+                <Task>Media Foundation MFTEnum</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+MFGetMFTMerit Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2501</Id>
+                <Version>0</Version>
+                <Channel>Media Foundation Platform</Channel>
+                <Level>Information</Level>
+                <Task>Media Foundation MFTEnum</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+MFGetMFTMerit Leave Merit(%1) Return Code(%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Merit" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="hr" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2502</Id>
+                <Version>0</Version>
+                <Channel>Media Foundation Platform</Channel>
+                <Level>Information</Level>
+                <Task>Media Foundation MFTEnum</Task>
+                <Message><![CDATA[
+MFGetMFTMerit:  StartInitialization returned %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hr" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2503</Id>
+                <Version>0</Version>
+                <Channel>Media Foundation Platform</Channel>
+                <Level>Information</Level>
+                <Task>Media Foundation MFTEnum</Task>
+                <Message><![CDATA[
+MFGetMFTMerit:  Validate Certificate returned %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hr" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2504</Id>
+                <Version>0</Version>
+                <Channel>Media Foundation Platform</Channel>
+                <Level>Information</Level>
+                <Task>Media Foundation MFTEnum</Task>
+                <Message><![CDATA[
+MFGetMFTMerit:  EndInitialization returned %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hr" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2505</Id>
+                <Version>0</Version>
+                <Channel>Media Foundation Platform</Channel>
+                <Level>Information</Level>
+                <Task>Media Foundation MFTEnum</Task>
+                <Message><![CDATA[
+MFGetMFTMerit:  GetInformation returned %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hr" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
