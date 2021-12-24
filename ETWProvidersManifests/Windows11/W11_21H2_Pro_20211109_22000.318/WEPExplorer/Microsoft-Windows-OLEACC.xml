@@ -1,0 +1,125 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-OLEACC</Name>
+        <Metadata>
+            <Guid>{19D2C934-EE9B-49E5-AAEB-9CCE721D2C65}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\OLEACCRC.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\system32\OLEACCRC.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-OLEACC/Diagnostic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-OLEACC/Debug</Path>
+                    <Index>1</Index>
+                    <Id>18</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>OLEACC_IAccessibleErrors</Name>
+                    <Guid>{BAB2FC85-5301-48EB-B0F4-C09C9360F878}</Guid>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>OLEACC_ClientApiCall</Name>
+                    <Guid>{841D69F2-FC98-4E6E-B204-CAC9BDE2C38F}</Guid>
+                    <Value>2</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-OLEACC/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>OLEACC_IAccessibleErrors</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Method" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Hresult" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Details" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SourceHwnd" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Provider" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-OLEACC/Debug</Channel>
+                <Level>Verbose</Level>
+                <Task>OLEACC_ClientApiCall</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MethodIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Parameter" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-OLEACC/Debug</Channel>
+                <Level>Verbose</Level>
+                <Task>OLEACC_ClientApiCall</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MethodIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Parameter" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

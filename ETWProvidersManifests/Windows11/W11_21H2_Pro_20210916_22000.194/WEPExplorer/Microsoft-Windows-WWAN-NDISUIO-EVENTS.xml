@@ -1,0 +1,135 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-WWAN-NDISUIO-EVENTS</Name>
+        <Metadata>
+            <Guid>{B3EEE223-D0A9-40CD-ADFC-50F1888138AB}</Guid>
+            <ResourceFilePath>%systemroot%\system32\drivers\ndisuio.sys</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%systemroot%\system32\drivers\ndisuio.sys</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.22000.1&amp;FileName=ndisuio.sys&amp;FileVer=10.0.22000.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-WWAN-NDISUIO-EVENTS</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>WWAN NDISUIO Channel</Message>
+                    <Path>Microsoft-Windows-WWAN-NDISUIO-EVENTS/Diagnostic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>WWAN NDISUIO Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+WWAN NDISUIO Event: Loading of WWAN Component]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Channel>WWAN NDISUIO Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+WWAN NDISUIO Event: Unloading of WWAN Component]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Channel>WWAN NDISUIO Channel</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+WWAN NDISUIO Event: Error]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>0</Version>
+                <Channel>WWAN NDISUIO Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+WWAN NDISUIO Event: OID request sent to the driver]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OIDorStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>0</Version>
+                <Channel>WWAN NDISUIO Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+WWAN NDISUIO Event: OID request completed by the driver]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OIDorStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1006</Id>
+                <Version>0</Version>
+                <Channel>WWAN NDISUIO Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+WWAN NDISUIO Event: Unsolicited notification indicated by the driver]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OIDorStatus" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="BufferSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
