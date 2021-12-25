@@ -1,0 +1,109 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Bluetooth-Bthmini</Name>
+        <Metadata>
+            <Guid>{DB25B328-A6F6-444F-9D97-A50E20217D16}</Guid>
+            <ResourceFilePath>C:\Windows\system32\drivers\bthmini.sys</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\drivers\bthmini.sys</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.19041.488&amp;FileName=bthmini.sys&amp;FileVer=10.0.19041.488</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Bluetooth-BthMini</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-Bluetooth-BthMini/Operational</Message>
+                    <Path>Microsoft-Windows-Bluetooth-Bthmini/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>BthMini_DriverPnP</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>BthMini_ReadPump</Name>
+                    <Value>2</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>_BTHMINI_KEYWORD</Message>
+                    <Name>_BTHMINI_KEYWORD</Name>
+                    <Value>1</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>200</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bluetooth-BthMini/Operational</Channel>
+                <Level>Error</Level>
+                <Task>BthMini_DriverPnP</Task>
+                <Keyword>_BTHMINI_KEYWORD</Keyword>
+                <Message><![CDATA[
+Bluetooth Transport Extensibility Miniport driver does not support Lower Filter Driver BthXDDI version Major(%1) Minor(%2) Service(%3).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Major" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Minor" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Service" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>201</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bluetooth-BthMini/Operational</Channel>
+                <Level>Error</Level>
+                <Task>BthMini_ReadPump</Task>
+                <Keyword>_BTHMINI_KEYWORD</Keyword>
+                <Message><![CDATA[
+Bluetooth Transport Extensibility Miniport driver received a HCI Event Packet with invalid length- Expected Length (Min=%1 to Max=%2) but Actual Length(%3).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ExpectedLengthMin" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ExpectedLengthMax" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ActualLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>202</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bluetooth-BthMini/Operational</Channel>
+                <Level>Error</Level>
+                <Task>BthMini_ReadPump</Task>
+                <Keyword>_BTHMINI_KEYWORD</Keyword>
+                <Message><![CDATA[
+Bluetooth Transport Extensibility Miniport driver received a Data Packet with invalid length- Expected Length (Min=%1 to Max=%2) but Actual Length(%3).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ExpectedLengthMin" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ExpectedLengthMax" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ActualLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

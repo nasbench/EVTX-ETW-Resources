@@ -1,0 +1,181 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-All-User-Install-Agent</Name>
+        <Metadata>
+            <Guid>{D2E990DA-8504-4702-A5E5-367FC2F823BF}</Guid>
+            <ResourceFilePath>C:\Windows\system32\RDSAppXHelper.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\RDSAppXHelper.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.19041.1&amp;FileName=RDSAppXHelper.dll&amp;FileVer=10.0.19041.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-All-User-Install-Agent</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Admin</Message>
+                    <Path>Microsoft-Windows-All-User-Install-Agent/Admin</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1287</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A profile deletion triggered the Windows All-User Install Agent to uninstall all packages for the user profile %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1288</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The Windows All-User Install Agent could not remove %1 packages during the profile deletion of the user profile %2. The error code is %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PackageMoniker" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UserSid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1300</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The Windows All-User Install Agent could not delete the registered packages after the profile was deleted for user SID %1. Error code: %2.  Additional information: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UserSid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:HexInt32" outType="win:ErrorCode"/>
+  <data name="location" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1301</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The Windows All-User Install Agent detected an attempt to delete a temporary or mandatory profile for user SID %1. Package information for the user will be reset.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1302</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The Windows All-User Install Agent will delete %1 packages for user SID %2 because the profile was deleted.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NumberOfPackages" inType="win:Int32" outType="xs:int"/>
+  <data name="UserSid" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1303</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The Windows All-User Install Agent could not retrieve a list of packages for user SID %1. The error code is %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UserSid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1304</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The Windows All-User Install Agent will delete package %1 for user SID %2 because the profile was deleted.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Package" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UserSid" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1305</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+GetApplicability API failed to determine status of package %1. The error code is %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Package" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1306</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+GetApplicability API has determined that package %1 is either NotInstallable or RequiresReinstall. The detail code is %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Package" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1307</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Dependent Package %1 is already installed, registration will be skipped.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Package" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

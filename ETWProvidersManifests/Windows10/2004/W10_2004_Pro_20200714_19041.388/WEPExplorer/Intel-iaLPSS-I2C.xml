@@ -1,0 +1,545 @@
+<Providers>
+    <Provider>
+        <Name>Intel-iaLPSS-I2C</Name>
+        <Metadata>
+            <Guid>{D4AEAC44-AD44-456E-9C90-33F8CDCED6AF}</Guid>
+            <ResourceFilePath>C:\Windows\system32\drivers\iaLPSSi_I2C.sys</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\drivers\iaLPSSi_I2C.sys</MessageFilePath>
+            <HelpLink></HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Analytic Channel</Message>
+                    <Path>Intel-iaLPSS-I2C/Analytic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>1</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Enumeration of SPBCx driver</Message>
+                    <Name>I2C_Enumeration</Name>
+                    <Guid>{D4AEAC44-AD44-456E-9C90-33F8CDCED6AF}</Guid>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>Device Power Flow </Message>
+                    <Name>I2C_Power</Name>
+                    <Guid>{D1CEAED4-0C69-4504-BA7F-CC591A9FE4F5}</Guid>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message>IO Flows Through SPBCx driver</Message>
+                    <Name>I2C_Io</Name>
+                    <Guid>{163DFF34-9C89-44B9-B59A-76D5455648D9}</Guid>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message>Task to Track Interrupt Routine</Message>
+                    <Name>I2C_Interrupt</Name>
+                    <Guid>{26BAA3D5-E806-41B7-A2F9-B0790C75275F}</Guid>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message>Task to track DPC</Message>
+                    <Name>I2C_Dpc</Name>
+                    <Guid>{6AAFF888-7007-451D-884B-7538C5E97B6B}</Guid>
+                    <Value>5</Value>
+                </Task>
+                <Task>
+                    <Message>Task to track DMA Transactions</Message>
+                    <Name>I2C_Dma</Name>
+                    <Guid>{9E427CE3-E670-4A6C-B2C6-4E72902B4025}</Guid>
+                    <Value>6</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1001</Id>
+                <Version>1</Version>
+                <Channel>Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Enumeration of SPBCx driver</Task>
+                <Message><![CDATA[
+Created WDFDEVICE %1 ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FxDevice" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>1</Version>
+                <Channel>Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Enumeration of SPBCx driver</Task>
+                <Message><![CDATA[
+WDFDEVICE %1 mapped to vAddr %2 (MMIO Addr %3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FxDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="VAddr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="PAddr" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>1</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>Enumeration of SPBCx driver</Task>
+                <Message><![CDATA[
+%1. WDFDEVICE %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FailReason" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="WDFDEVICE" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>1</Version>
+                <Channel>Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Enumeration of SPBCx driver</Task>
+                <Message><![CDATA[
+Resource for %1 Released]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FxDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="VAddr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="PAddr" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>1</Version>
+                <Channel>Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Device Power Flow </Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+D0 Entrty Start for WDFDEVICE %1 (MMIO %3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FxDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="VAddr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="PAddr" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1006</Id>
+                <Version>1</Version>
+                <Channel>Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Device Power Flow </Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+D0 Entry End for WDFDEVICE %1 (MMIO %3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FxDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="VAddr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="PAddr" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1007</Id>
+                <Version>1</Version>
+                <Channel>Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Device Power Flow </Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+D0 Exit Start for WDFDEVICE %1 (MMIO %3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FxDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="VAddr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="PAddr" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1008</Id>
+                <Version>1</Version>
+                <Channel>Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Device Power Flow </Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+D0 Exit End for WDFDEVICE %1 (MMIO %3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FxDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="VAddr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="PAddr" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1009</Id>
+                <Version>1</Version>
+                <Channel>Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>IO Flows Through SPBCx driver</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+SpbRequest %1 (Type %4) received. WDFDEVICE %2 (MMIO %6). Target %3 (Address %5)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="pRequest" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="pDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="pTarget" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="IOCTL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Target I2C Address" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MMIO" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1010</Id>
+                <Version>1</Version>
+                <Channel>Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>IO Flows Through SPBCx driver</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+SpbRequest %1 Completed Status %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Request" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status " inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1011</Id>
+                <Version>0</Version>
+                <Channel>Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Task to Track Interrupt Routine</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+ISR For WDFDEVICE %1 (MMIO %2) Begin]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WDFDEVICE" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="MMIO" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1012</Id>
+                <Version>1</Version>
+                <Channel>Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Task to Track Interrupt Routine</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+ISR For WDFDEVICE %1 (MMIO %2) End Interrupt Status %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WDFDEVICE" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="MMIO" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Stat" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1013</Id>
+                <Version>1</Version>
+                <Channel>Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Task to track DPC</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+DPC for WDFDEVICE %1 (MMIO %2) Start]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WDFDEVICE" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="MMIO" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1014</Id>
+                <Version>1</Version>
+                <Channel>Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Task to track DPC</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+DPC for WDFDEVICE %1 (MMIO %2) End]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WDFDEVICE" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="MMIO" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1015</Id>
+                <Version>1</Version>
+                <Channel>Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+DriverEntry Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1016</Id>
+                <Version>1</Version>
+                <Channel>Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+DriverEntry End]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1017</Id>
+                <Version>1</Version>
+                <Channel>Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Enumeration of SPBCx driver</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+DeviceAdd Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1018</Id>
+                <Version>1</Version>
+                <Channel>Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Enumeration of SPBCx driver</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+DeviceAdd End]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1019</Id>
+                <Version>1</Version>
+                <Channel>Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Enumeration of SPBCx driver</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+OnPrepareHardware Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1020</Id>
+                <Version>1</Version>
+                <Channel>Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Enumeration of SPBCx driver</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+OnPrepareHardware End]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1021</Id>
+                <Version>1</Version>
+                <Channel>Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Enumeration of SPBCx driver</Task>
+                <Message><![CDATA[
+DMA Configurations %5 for WDFDEVICE %3 (MMIO %4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TxDmaEnabler" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="RxDmaEnabler" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WDFDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="MMIO" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1022</Id>
+                <Version>1</Version>
+                <Channel>Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Device Power Flow </Task>
+                <Message><![CDATA[
+Monitor State %1. Idle Timeout %2. WDFDEVICE %3 (MMIO %4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MonitorState" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IdleTimeout" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="WDFDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="MMIO" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1023</Id>
+                <Version>1</Version>
+                <Channel>Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>IO Flows Through SPBCx driver</Task>
+                <Message><![CDATA[
+Cancel SpbRequest %1 received. WDFDEVICE %2 (MMIO %6). Target %3 %3 (Address %5)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="pRequest" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="pDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="pTarget" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="IOCTL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Target I2C Address" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MMIO" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1024</Id>
+                <Version>1</Version>
+                <Channel>Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>IO Flows Through SPBCx driver</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Cancel Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1025</Id>
+                <Version>0</Version>
+                <Channel>Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>IO Flows Through SPBCx driver</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Cancel End]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1026</Id>
+                <Version>1</Version>
+                <Channel>Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Task to track DMA Transactions</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+DMA Txn Start. Direction %1 # of MDL %2 #bytes %3 WDFDEVICE %4 (MMIO %5)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Direction" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NumMdls" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="NumBytes" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="WDFDEVICE" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="MMIO" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1027</Id>
+                <Version>1</Version>
+                <Channel>Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>Task to track DMA Transactions</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+DMA Txn End. Direction %1 DmaStatus %4 #bytes %5 WDFDEVICE %2 (MMIO %3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Direction" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="WDFDEVICE" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="MMIO" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="DMA Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NumBytes" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1029</Id>
+                <Version>1</Version>
+                <Channel>Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Task>IO Flows Through SPBCx driver</Task>
+                <Message><![CDATA[
+Cancel Timer Expired WDFDEVICE %1 (MMIO %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WDFDEVICE" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="MMIO" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1030</Id>
+                <Version>1</Version>
+                <Channel>Analytic Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+DriverUnloaded]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
