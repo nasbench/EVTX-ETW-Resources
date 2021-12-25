@@ -1,0 +1,332 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Diagnostics-LoggingChannel</Name>
+        <Metadata>
+            <Guid>{4BD2826E-54A1-4BA9-BF63-92B73EA1AC4A}</Guid>
+            <ResourceFilePath>C:\Windows\system32\WinRtTracing.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\WinRtTracing.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.18362.1316&amp;FileName=WinRtTracing.dll&amp;FileVer=10.0.18362.1316</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Critical</Message>
+                    <Name>win:Critical</Name>
+                    <Value>1</Value>
+                </Level>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>K_LogMsg</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>K_LogPair</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>K_ActivityLogging</Name>
+                    <Value>4</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Level>Critical</Level>
+                <Keyword>K_LogMsg</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LoggingChannelName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StringMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>K_LogMsg</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LoggingChannelName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StringMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Keyword>K_LogMsg</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LoggingChannelName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StringMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>K_LogMsg</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LoggingChannelName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StringMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>K_LogMsg</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LoggingChannelName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StringMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Level>Critical</Level>
+                <Keyword>K_LogPair</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LoggingChannelName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StringValue" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IntegerValue" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>K_LogPair</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LoggingChannelName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StringValue" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IntegerValue" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Keyword>K_LogPair</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LoggingChannelName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StringValue" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IntegerValue" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>K_LogPair</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LoggingChannelName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StringValue" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IntegerValue" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>K_LogPair</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LoggingChannelName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StringValue" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IntegerValue" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Level>Critical</Level>
+                <Opcode>Start</Opcode>
+                <Keyword>K_ActivityLogging</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LoggingChannelName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ActivityName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Opcode>Start</Opcode>
+                <Keyword>K_ActivityLogging</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LoggingChannelName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ActivityName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Opcode>Start</Opcode>
+                <Keyword>K_ActivityLogging</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LoggingChannelName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ActivityName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Start</Opcode>
+                <Keyword>K_ActivityLogging</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LoggingChannelName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ActivityName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Opcode>Start</Opcode>
+                <Keyword>K_ActivityLogging</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LoggingChannelName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ActivityName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Level>Critical</Level>
+                <Opcode>Stop</Opcode>
+                <Keyword>K_ActivityLogging</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LoggingChannelName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ActivityName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Opcode>Stop</Opcode>
+                <Keyword>K_ActivityLogging</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LoggingChannelName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ActivityName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Opcode>Stop</Opcode>
+                <Keyword>K_ActivityLogging</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LoggingChannelName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ActivityName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Opcode>Stop</Opcode>
+                <Keyword>K_ActivityLogging</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LoggingChannelName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ActivityName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Opcode>Stop</Opcode>
+                <Keyword>K_ActivityLogging</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LoggingChannelName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ActivityName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

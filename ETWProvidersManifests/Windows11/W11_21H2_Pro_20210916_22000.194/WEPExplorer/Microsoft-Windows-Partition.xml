@@ -1,0 +1,233 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Partition</Name>
+        <Metadata>
+            <Guid>{412BDFF2-A8C4-470D-8F33-63FE0D8C20E2}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\drivers\partmgr.sys</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\system32\drivers\partmgr.sys</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Partition/Diagnostic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Partition/Analytic</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>power</Name>
+                    <Value>1</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Partition/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Operation started.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DiskNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ControlCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Partition/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Operation completed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DiskNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ControlCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Partition/Analytic</Channel>
+                <Level>Information</Level>
+                <Keyword>power</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="IncrementEnergy" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="SrvTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="EndByteOffset" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="IoSize" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="LastIdleState" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="IsRandom" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Partition/Analytic</Channel>
+                <Level>Information</Level>
+                <Keyword>power</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="IncrementEnergy" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="IdleTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="LastIdleState" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Partition/Analytic</Channel>
+                <Level>Information</Level>
+                <Keyword>power</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LocalLastCompTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="SharedLastCompTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="CompTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1006</Id>
+                <Version>4</Version>
+                <Channel>Microsoft-Windows-Partition/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+For internal use only.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DiskNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Characteristics" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="IsSystemCritical" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="PagingCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HibernationCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DumpCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BytesPerSector" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Capacity" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="BusType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Manufacturer" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Model" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Revision" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SerialNumber" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Location" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ParentId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Socket" inType="win:Int32" outType="xs:int"/>
+  <data name="Slot" inType="win:Int32" outType="xs:int"/>
+  <data name="Bus" inType="win:Int32" outType="xs:int"/>
+  <data name="Device" inType="win:Int32" outType="xs:int"/>
+  <data name="Function" inType="win:Int32" outType="xs:int"/>
+  <data name="Adapter" inType="win:Int32" outType="xs:int"/>
+  <data name="Port" inType="win:Int32" outType="xs:int"/>
+  <data name="Target" inType="win:Int32" outType="xs:int"/>
+  <data name="Lun" inType="win:Int32" outType="xs:int"/>
+  <data name="IoctlSupport" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="IdFlags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="DiskId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="AdapterId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="RegistryId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="PoolId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FirmwareSupportsUpgrade" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="FirmwareSlotCount" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="StorageIdCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StorageIdCodeSet" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StorageIdType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StorageIdAssociation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StorageIdBytes" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StorageId" inType="win:Binary" outType="xs:hexBinary" length="StorageIdBytes"/>
+  <data name="WriteCacheType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="WriteCacheEnabled" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="WriteCacheChangeable" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="WriteThroughSupported" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FlushCacheSupported" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="IsPowerProtected" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="NVCacheEnabled" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="BytesPerLogicalSector" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BytesPerPhysicalSector" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BytesOffsetForSectorAlignment" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IncursSeekPenalty" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="IsTrimSupported" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="IsThinProvisioned" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="OptimalUnmapGranularity" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="UnmapAlignment" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="NumberOfLogicalCopies" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NumberOfPhysicalCopies" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FaultTolerance" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NumberOfColumns" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InterleaveBytes" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HybridSupported" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="HybridCacheBytes" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="AdapterMaximumTransferBytes" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AdapterMaximumTransferPages" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AdapterAlignmentMask" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AdapterSerialNumber" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PortDriver" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UserRemovalPolicy" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="PartitionStyle" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PartitionCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PartitionTableBytes" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PartitionTable" inType="win:Binary" outType="xs:hexBinary" length="PartitionTableBytes"/>
+  <data name="MbrBytes" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Mbr" inType="win:Binary" outType="xs:hexBinary" length="MbrBytes"/>
+  <data name="Vbr0Bytes" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Vbr0" inType="win:Binary" outType="xs:hexBinary" length="Vbr0Bytes"/>
+  <data name="Vbr1Bytes" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Vbr1" inType="win:Binary" outType="xs:hexBinary" length="Vbr1Bytes"/>
+  <data name="Vbr2Bytes" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Vbr2" inType="win:Binary" outType="xs:hexBinary" length="Vbr2Bytes"/>
+  <data name="Vbr3Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Vbr3" inType="win:Binary" outType="xs:hexBinary" length="Vbr3Size"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1007</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Partition/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Spaceport status: %1, output operation status: %2 and Wnf status: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SpStatus" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="OperationStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="WnfStatus" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

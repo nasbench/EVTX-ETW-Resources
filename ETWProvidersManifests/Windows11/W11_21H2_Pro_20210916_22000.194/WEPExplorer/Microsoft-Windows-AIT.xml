@@ -1,0 +1,161 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-AIT</Name>
+        <Metadata>
+            <Guid>{6ADDABF4-8C54-4EAB-BF4F-FBEF61B62EB0}</Guid>
+            <ResourceFilePath>%systemroot%\system32\Microsoft-Windows-System-Events.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%systemroot%\system32\Microsoft-Windows-System-Events.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.22000.184&amp;FileName=Microsoft-Windows-System-Events.dll&amp;FileVer=10.0.22000.184</HelpLink>
+            <PublisherMessage>Microsoft-Windows-AIT</PublisherMessage>
+            <Channels>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>AitFeature</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>AitParentAitFeature</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>AitAppInfo</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>AitSystemUsageByDll</Name>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>AitSystemUsageByExe</Name>
+                    <Value>5</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>AitProcessEnd</Name>
+                    <Value>6</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>KitFeature</Name>
+                    <Value>7</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>AitFeature</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FeatureGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ApplicationImageHeaderHash" inType="win:Binary" outType="xs:hexBinary" length="21"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>AitParentAitFeature</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="cchParentImagePathIncludingNull" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FeatureGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ParentProcessImageHeaderHash" inType="win:Binary" outType="xs:hexBinary" length="21"/>
+  <data name="ParentImagePath" inType="win:UnicodeString" outType="xs:string" length="cchParentImagePathIncludingNull"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>AitAppInfo</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="cchAppPathIncludingNull" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ApplicationImageHeaderHash" inType="win:Binary" outType="xs:hexBinary" length="21"/>
+  <data name="AppPath" inType="win:UnicodeString" outType="xs:string" length="cchAppPathIncludingNull"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>AitSystemUsageByDll</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Flags" inType="win:Binary" outType="xs:hexBinary" length="1"/>
+  <data name="cchIdStringIncludingNull" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="cchDllPathIncludingNull" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Category" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ManifestVersion" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DllHeaderHash" inType="win:Binary" outType="xs:hexBinary" length="21"/>
+  <data name="ApplicationImageHeaderHash" inType="win:Binary" outType="xs:hexBinary" length="21"/>
+  <data name="IdString" inType="win:AnsiString" outType="xs:string" length="cchIdStringIncludingNull"/>
+  <data name="DllPath" inType="win:UnicodeString" outType="xs:string" length="cchDllPathIncludingNull"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>AitSystemUsageByExe</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Flags" inType="win:Binary" outType="xs:hexBinary" length="1"/>
+  <data name="cchIdStringIncludingNull" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Category" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ManifestVersion" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ApplicationImageHeaderHash" inType="win:Binary" outType="xs:hexBinary" length="21"/>
+  <data name="IdString" inType="win:AnsiString" outType="xs:string" length="cchIdStringIncludingNull"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>AitProcessEnd</Task>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>KitFeature</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FeatureGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="CallerIdType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="cchImagePath" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ImagePath" inType="win:UnicodeString" outType="xs:string" length="cchImagePath"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,2672 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-AAD</Name>
+        <Metadata>
+            <Guid>{4DE9BC9C-B27A-43C9-8994-0915F1A5E24F}</Guid>
+            <ResourceFilePath>C:\Windows\system32\aadcloudAP.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\aadcloudAP.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.18362.1&amp;FileName=aadcloudAP.dll&amp;FileVer=10.0.18362.1</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-AAD/Analytic</Message>
+                    <Path>Microsoft-Windows-AAD/Analytic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-AAD/Operational</Message>
+                    <Path>Microsoft-Windows-AAD/Operational</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>AadCloudAPPlugin Operation</Message>
+                    <Name>AadCloudAPPlugin</Name>
+                    <Value>101</Value>
+                </Task>
+                <Task>
+                    <Message>CredentialProvider Operation</Message>
+                    <Name>CredentialProvider</Name>
+                    <Value>102</Value>
+                </Task>
+                <Task>
+                    <Message>AadTokenBrokerPlugin Operation</Message>
+                    <Name>AadTokenBrokerPlugin</Name>
+                    <Value>103</Value>
+                </Task>
+                <Task>
+                    <Message>AadAdalrt Operation</Message>
+                    <Name>AadAdalrt</Name>
+                    <Value>104</Value>
+                </Task>
+                <Task>
+                    <Message>AadAadtb Operation</Message>
+                    <Name>AadAadtb</Name>
+                    <Value>105</Value>
+                </Task>
+                <Task>
+                    <Message>BrowserCore Operation</Message>
+                    <Name>BrowserCore</Name>
+                    <Value>106</Value>
+                </Task>
+                <Task>
+                    <Message>WamExtension Operation</Message>
+                    <Name>WamExtension</Name>
+                    <Value>107</Value>
+                </Task>
+                <Task>
+                    <Message>AuthHelper</Message>
+                    <Name>AuthHelper</Name>
+                    <Value>108</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Telemetry trigger events</Message>
+                    <Name>Telemetry</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Error</Message>
+                    <Name>Error</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Analytic</Message>
+                    <Name>Analytic</Name>
+                    <Value>4</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Function</Message>
+                    <Name>Function</Name>
+                    <Value>8</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Operational</Message>
+                    <Name>Operational</Name>
+                    <Value>16</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Warning</Message>
+                    <Name>Warning</Name>
+                    <Value>32</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Critical</Message>
+                    <Name>Critical</Name>
+                    <Value>64</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>AadCloudAPPlugin</Message>
+                    <Name>AadCloudAPPlugin</Name>
+                    <Value>256</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>aadcredprov</Message>
+                    <Name>AadCredProv</Name>
+                    <Value>512</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin Initialize Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin Initialize Stop.
+Status: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin Uninitialize Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin ValidateUserInfo Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin ValidateUserInfo Stop.
+Status: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin GetToken Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1007</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin GetToken Stop.
+Status: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1008</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin GetKeys Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1009</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin GetKeys Stop.
+Status: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1010</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin GetUnlockKey Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1011</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin GetUnlockKey Stop.
+Status: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1012</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin PersistSSOTokens Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1013</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin PersistSSOTokens Stop.
+Status: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1015</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin Realm discovery response: %1.
+Request status: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Response" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1016</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin device is cloud domain joined]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1017</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin device is domain joined]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1018</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin GetToken Correlation ID: %1.
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="value" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1019</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin GetKeys Correlation ID: %1.
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="value" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1020</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin loaded as surrogate]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1021</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin MEX request status: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1022</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+Endpoint Uri: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="value" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1023</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+NGC UserID Key: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="value" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1024</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Operational</Channel>
+                <Level>Error</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Error Operational</Keyword>
+                <Message><![CDATA[
+Http request status: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="value" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1025</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Operational</Channel>
+                <Level>Error</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Error Operational</Keyword>
+                <Message><![CDATA[
+Http request status: %1. Method: %2 Endpoint Uri: %3 Correlation ID: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="value" inType="win:Int32" outType="xs:int"/>
+  <data name="Method" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EndpointUri" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CorrelationID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1026</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+Credential type: %1 Correlation ID: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="value" inType="win:Int32" outType="xs:int"/>
+  <data name="CorrelationID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1027</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin managed logon flow for federated NGC user.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1028</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin RefreshToken Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1029</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin RefreshToken Stop.
+Status: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1030</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin RefreshToken Correlation ID: %1.
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="value" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1031</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin encrypted OAuth response received]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1032</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+Number of groups received: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="value" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1033</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+Validation needed: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="value" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1034</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin GenericCallPkg Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1035</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin GenericCallPkg Stop.
+Status: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1081</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Operational</Channel>
+                <Level>Error</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Error Operational</Keyword>
+                <Message><![CDATA[
+OAuth response error: %1
+Error description: %2
+CorrelationID: %3
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorDescription" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CorrelationID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1082</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Operational</Channel>
+                <Level>Error</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Error Operational</Keyword>
+                <Message><![CDATA[
+Key error: %1
+Error description: %2
+CorrelationID: %3
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorDescription" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CorrelationID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1083</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Operational</Channel>
+                <Level>Error</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Error Operational</Keyword>
+                <Message><![CDATA[
+Protected key error: %1
+Error description: %2
+CorrelationID: %3
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorDescription" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CorrelationID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1084</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Operational</Channel>
+                <Level>Error</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Error Operational</Keyword>
+                <Message><![CDATA[
+Http transport error. Status: %1 Correlation ID: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Result" inType="win:Int32" outType="win:Hresult"/>
+  <data name="Target" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1085</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Operational</Channel>
+                <Level>Error</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Error Operational</Keyword>
+                <Message><![CDATA[
+Logon failure. Status: %1 Correlation ID: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"/>
+  <data name="CorrelationID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1086</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Operational</Channel>
+                <Level>Error</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Error Operational</Keyword>
+                <Message><![CDATA[
+Get user realm failure. Status: %1 Correlation ID: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"/>
+  <data name="CorrelationID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1087</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Operational</Channel>
+                <Level>Error</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Error Operational</Keyword>
+                <Message><![CDATA[
+Get credential keys failure. Status: %1 Correlation ID: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"/>
+  <data name="CorrelationID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1088</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Operational</Channel>
+                <Level>Error</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Error Operational</Keyword>
+                <Message><![CDATA[
+WSTrust response error: %1
+Error description: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorDescription" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1089</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Operational</Channel>
+                <Level>Error</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Error Operational</Keyword>
+                <Message><![CDATA[
+Device is not cloud domain joined: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1090</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Operational</Channel>
+                <Level>Error</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Error Operational</Keyword>
+                <Message><![CDATA[
+NGC nonce response error: %1
+Error description: %2
+CorrelationID: %3
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorDescription" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CorrelationID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1091</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Operational</Channel>
+                <Level>Error</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Error Operational</Keyword>
+                <Message><![CDATA[
+NGC auth ticket is not defined. Error: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Result" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1092</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Operational Warning</Keyword>
+                <Message><![CDATA[
+OAuth request retry. Correlation ID: %1 Retry: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CorrelationID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RetryNumber" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1093</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Operational Warning</Keyword>
+                <Message><![CDATA[
+NGC call %1 returned error: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="API" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Result" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1094</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Operational</Channel>
+                <Level>Error</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Error Operational</Keyword>
+                <Message><![CDATA[
+Refresh token failure. Status: %1 Correlation ID: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"/>
+  <data name="CorrelationID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1095</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Operational</Channel>
+                <Level>Error</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Error Operational</Keyword>
+                <Message><![CDATA[
+Refresh token user SIDs don't match. Correlation ID: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="value" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1096</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Operational</Channel>
+                <Level>Error</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Error Operational</Keyword>
+                <Message><![CDATA[
+Refresh token is expired. Correlation ID: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="value" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1097</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>AadTokenBrokerPlugin Operation</Task>
+                <Keyword>Operational Warning</Keyword>
+                <Message><![CDATA[
+Error: %1 %2
+%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AdditionalInformation" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1098</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Operational</Channel>
+                <Level>Error</Level>
+                <Task>AadTokenBrokerPlugin Operation</Task>
+                <Keyword>Error Operational</Keyword>
+                <Message><![CDATA[
+Error: %1 %2
+%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AdditionalInformation" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1099</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadTokenBrokerPlugin Operation</Task>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+Code: %1 %2
+%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="OperationCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="OperationMessage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AdditionalInformation" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1100</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>AadAdalrt Operation</Task>
+                <Keyword>Operational Warning</Keyword>
+                <Message><![CDATA[
+Error: %1 %2
+%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AdditionalInformation" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1101</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Operational</Channel>
+                <Level>Error</Level>
+                <Task>AadAdalrt Operation</Task>
+                <Keyword>Error Operational</Keyword>
+                <Message><![CDATA[
+Error: %1 %2
+%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AdditionalInformation" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1102</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadAdalrt Operation</Task>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+Code: %1 %2
+%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="OperationCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="OperationMessage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AdditionalInformation" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1103</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Operational</Channel>
+                <Level>Error</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Error Operational</Keyword>
+                <Message><![CDATA[
+Can't decrypt OAuth response. Error: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Result" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1104</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Operational</Channel>
+                <Level>Error</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Error Operational</Keyword>
+                <Message><![CDATA[
+AAD Cloud AP plugin call %1 returned error: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="API" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Result" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1105</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Operational</Channel>
+                <Level>Error</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Error Operational</Keyword>
+                <Message><![CDATA[
+Device registration API call %1 returned error: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="API" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Result" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1106</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Operational Warning</Keyword>
+                <Message><![CDATA[
+Number of security groups received %1. CorrelationID: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="value" inType="win:Int32" outType="xs:int"/>
+  <data name="CorrelationID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1107</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Warning</Level>
+                <Task>AadTokenBrokerPlugin Operation</Task>
+                <Keyword>Analytic Warning</Keyword>
+                <Message><![CDATA[
+Error: %1 %2
+%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AdditionalInformation" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1108</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Error</Level>
+                <Task>AadTokenBrokerPlugin Operation</Task>
+                <Keyword>Error Analytic</Keyword>
+                <Message><![CDATA[
+Error: %1 %2
+%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AdditionalInformation" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1109</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Warning</Level>
+                <Task>AadAdalrt Operation</Task>
+                <Keyword>Analytic Warning</Keyword>
+                <Message><![CDATA[
+Error: %1 %2
+%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AdditionalInformation" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1110</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Error</Level>
+                <Task>AadAdalrt Operation</Task>
+                <Keyword>Error Analytic</Keyword>
+                <Message><![CDATA[
+Error: %1 %2
+%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AdditionalInformation" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1111</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>AadAadtb Operation</Task>
+                <Keyword>Operational Warning</Keyword>
+                <Message><![CDATA[
+Error: %1 %2
+%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AdditionalInformation" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1112</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Operational</Channel>
+                <Level>Error</Level>
+                <Task>AadAadtb Operation</Task>
+                <Keyword>Error Operational</Keyword>
+                <Message><![CDATA[
+Error: %1 %2
+%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AdditionalInformation" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1113</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadAadtb Operation</Task>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+Code: %1 %2
+%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="OperationCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="OperationMessage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AdditionalInformation" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1114</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Warning</Level>
+                <Task>AadAadtb Operation</Task>
+                <Keyword>Analytic Warning</Keyword>
+                <Message><![CDATA[
+Error: %1 %2
+%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AdditionalInformation" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1115</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Error</Level>
+                <Task>AadAadtb Operation</Task>
+                <Keyword>Error Analytic</Keyword>
+                <Message><![CDATA[
+Error: %1 %2
+%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AdditionalInformation" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1116</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Operational Warning</Keyword>
+                <Message><![CDATA[
+Get Enterprise STS OAuth Info failure. Status: %1 Correlation ID: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"/>
+  <data name="CorrelationID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1117</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Operational</Channel>
+                <Level>Error</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Error Operational</Keyword>
+                <Message><![CDATA[
+Enterprise STS Refresh token failure. Status: %1 Correlation ID: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"/>
+  <data name="CorrelationID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1118</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Operational</Channel>
+                <Level>Error</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Error Operational</Keyword>
+                <Message><![CDATA[
+Enterprise STS Logon failure. Status: %1 Correlation ID: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"/>
+  <data name="CorrelationID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1119</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+Enterprise STS OAuth Info response: %1.
+Request status: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Response" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1120</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Operational</Channel>
+                <Level>Error</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Error Operational</Keyword>
+                <Message><![CDATA[
+Enterprise STS Refresh token is expired. Correlation ID: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="value" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1121</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+Enterprise STS RefreshToken Correlation ID: %1.
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="value" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1122</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Operational</Channel>
+                <Level>Error</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Error Operational</Keyword>
+                <Message><![CDATA[
+Refresh token subject don't match. Correlation ID: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="value" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1123</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Operational</Channel>
+                <Level>Error</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Error Operational</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin smart card logon for non-federated user.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1124</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Operational</Channel>
+                <Level>Error</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Error Operational</Keyword>
+                <Message><![CDATA[
+Device is DRS joined but Enterprise STS is disabled: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1125</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin loaded as surrogate, no key recovery]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1126</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin device is Enterprise joined]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1127</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin device P2P certificate update thread started]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1128</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin device P2P certificate update thread stopped]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1129</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin Uninitialize Stop]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1130</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin DeviceP2PCertificateUpdate Correlation ID: %1.
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="value" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1131</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Operational Warning</Keyword>
+                <Message><![CDATA[
+Update P2P device certificate failure. Status: %1 Correlation ID: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"/>
+  <data name="CorrelationID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1132</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin GetCertificateFromCred Correlation ID: %1.
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="value" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1133</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Operational Warning</Keyword>
+                <Message><![CDATA[
+Update P2P user certificate failure. Status: %1 Correlation ID: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"/>
+  <data name="CorrelationID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1134</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Warning</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+AAD Cloud AP plugin call %1 returned error: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="API" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Result" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1135</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin RenewCertificate Correlation ID: %1.
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="value" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1136</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin AcceptPeerCertificate Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1137</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin AcceptPeerCertificate Stop.
+Status: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1138</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin RenewCertificate Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1139</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin RenewCertificate Stop.
+Status: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1140</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin GetCertificateFromCred Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1141</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin GetCertificateFromCred Stop.
+Status: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1142</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Operational</Channel>
+                <Level>Error</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Error Operational</Keyword>
+                <Message><![CDATA[
+Get token user names don't match. Correlation ID: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="value" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1143</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+Generic Call Packate call type: %1. Correlation ID: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="value" inType="win:Int32" outType="xs:int"/>
+  <data name="CorrelationID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1144</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+Realm discovery for: %2 authority: %3 fallback domain hint: %4 useUpn: %1 ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="value" inType="win:Int32" outType="xs:int"/>
+  <data name="Method" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EndpointUri" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CorrelationID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1145</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+AAD Cloud AP plugin token needs refresh reason: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="value" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1146</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+Token is not refreshed. token time: %1 update time: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NoOfTargets" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="RequestType" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1147</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin AssembleOpaqueData Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1148</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin AssembleOpaqueData Stop.
+Status: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1149</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin DisassembleOpaqueData Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1150</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin DisassembleOpaqueData Stop.
+Status: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1151</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Operational</Channel>
+                <Level>Error</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Error Operational</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin P2P device certificate update error: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1152</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Operational</Channel>
+                <Level>Error</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Error Operational</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin device certificate key error: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Result" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1153</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Operational</Channel>
+                <Level>Error</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Error Operational</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin device certificate not available for logon: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="value" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1154</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+Password expiration claims. Seconds: %1 URI: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="seconds" inType="win:Int32" outType="xs:int"/>
+  <data name="URI" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1155</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Operational Warning</Keyword>
+                <Message><![CDATA[
+Logon with session key failure. Retrying with device auth. Status: %1 Correlation ID: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"/>
+  <data name="CorrelationID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1156</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+Password expiration fields. Status: %1 Date: %2 URI: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"/>
+  <data name="ExpiryTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="PasswordChangeURI" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1157</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin PostLogonProcessing Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1158</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin PostLogonProcessing Stop.
+Status: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1159</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Operational Warning</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin S2U logon failed. Status: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1160</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Operational</Channel>
+                <Level>Error</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Error Operational</Keyword>
+                <Message><![CDATA[
+Logon failure. Status: %1 Correlation ID: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"/>
+  <data name="CorrelationID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1161</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Operational</Channel>
+                <Level>Error</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Error Operational</Keyword>
+                <Message><![CDATA[
+Logon failure. Status: %1 Correlation ID: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"/>
+  <data name="CorrelationID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1162</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Operational</Channel>
+                <Level>Error</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Error Operational</Keyword>
+                <Message><![CDATA[
+Logon failure. Status: %1 Correlation ID: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"/>
+  <data name="CorrelationID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1163</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Operational</Channel>
+                <Level>Error</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Error Operational</Keyword>
+                <Message><![CDATA[
+Logon failure. Status: %1 Correlation ID: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"/>
+  <data name="CorrelationID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1164</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Operational</Channel>
+                <Level>Error</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Error Operational</Keyword>
+                <Message><![CDATA[
+Logon failure. Status: %1 Correlation ID: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"/>
+  <data name="CorrelationID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1165</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Operational</Channel>
+                <Level>Error</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Error Operational</Keyword>
+                <Message><![CDATA[
+Logon failure. Status: %1 Correlation ID: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"/>
+  <data name="CorrelationID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1200</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>BrowserCore Operation</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+BrowserCore operation started]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1201</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>BrowserCore Operation</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+BrowserCore operation completed successfully]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1202</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Operational</Channel>
+                <Level>Error</Level>
+                <Task>BrowserCore Operation</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Error Operational</Keyword>
+                <Message><![CDATA[
+BrowserCore operation completed with error: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Result" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1203</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Operational</Channel>
+                <Level>Error</Level>
+                <Task>BrowserCore Operation</Task>
+                <Keyword>Error Operational</Keyword>
+                <Message><![CDATA[
+BrowserCore inner operation %2 completed with error: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Result" inType="win:Int32" outType="win:Hresult"/>
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1204</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin LookupSIDFromIdentityName Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1205</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin LookupSIDFromIdentityName Stop.
+Status: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1206</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin LookupIdentityFromSIDName Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1207</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin LookupIdentityFromSIDName Stop.
+Status: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1208</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin LookupSIDFromIdentity Identity: %1 Correlation ID: %2.
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="value1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="value2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1209</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin LookupIdentityFromSID SID: %1 Correlation ID: %2.
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="value1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="value2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1210</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Operational Warning</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin password expired, password change URI: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="value" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1211</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Operational Warning</Keyword>
+                <Message><![CDATA[
+Writing RunRecovery registry value failed.
+Status: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1212</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Operational Warning</Keyword>
+                <Message><![CDATA[
+Enterprise logon. Password is expired.
+Status: %1 Correlation ID: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"/>
+  <data name="CorrelationID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1213</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>WamExtension Operation</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+WamExtension process token operation started]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1214</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>WamExtension Operation</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+WamExtension process token operation completed successfully]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1215</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Operational</Channel>
+                <Level>Error</Level>
+                <Task>WamExtension Operation</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Error Operational</Keyword>
+                <Message><![CDATA[
+WamExtension process token operation completed with error: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Result" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1216</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>WamExtension Operation</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+WamExtension device authentication call status: %1 Correlation ID: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Result" inType="win:Int32" outType="win:Hresult"/>
+  <data name="Target" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1217</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+Get device token. Resource: %1 ClientID: %2 Scope: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="value1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="value2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="value3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1218</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AuthHelper</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+StartFidoAuthenticationSession start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1219</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AuthHelper</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+StartFidoAuthenticationSession stop.
+Status: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1220</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AuthHelper</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+CloseFidoAuthenticationSession start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1221</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AuthHelper</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+CloseFidoAuthenticationSession stop.
+Status: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1222</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AuthHelper</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+GetClientData start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1223</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AuthHelper</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+GetClientData stop.
+Status: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1224</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AuthHelper</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+SignClientDataFido start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1225</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AuthHelper</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+SignClientDataFido stop.
+Status: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1226</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AuthHelper</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+ChangePin start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1227</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AuthHelper</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+ChangePin stop.
+Status: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1228</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AuthHelper</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+GetSerializedAuthBuffer start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1229</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AuthHelper</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+GetSerializedAuthBuffer stop.
+Status: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1230</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Operational</Channel>
+                <Level>Error</Level>
+                <Task>AuthHelper</Task>
+                <Keyword>Error Operational</Keyword>
+                <Message><![CDATA[
+AuthHelper call %1 returned error: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="API" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Result" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1231</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin Resource infomation: %1.
+Request status: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Response" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1232</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin RBAC authorization code response: %1.
+Request status: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Response" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1233</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin User access control role: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="value" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1234</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+AadCloudAPPlugin using resource id from the Idtoken: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="value" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1235</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+RBAC Status: %1 Correlation ID: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"/>
+  <data name="CorrelationID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1236</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+Failed to create the resource id]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1237</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Operational</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Operational</Keyword>
+                <Message><![CDATA[
+Device is configured for RBAC authorization]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1238</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+Not sending the client certificate as it is optional on the server]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1239</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+Doing RBAC logon]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1240</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+Skipping Rbac Logon because AadCloudAPPlugin is loaded as surrogate]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1241</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AAD/Analytic</Channel>
+                <Level>Warning</Level>
+                <Task>AadCloudAPPlugin Operation</Task>
+                <Keyword>Analytic Warning</Keyword>
+                <Message><![CDATA[
+Tgt error: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="value" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

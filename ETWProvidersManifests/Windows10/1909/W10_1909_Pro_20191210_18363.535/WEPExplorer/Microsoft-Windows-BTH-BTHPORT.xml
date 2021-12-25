@@ -1,0 +1,1155 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-BTH-BTHPORT</Name>
+        <Metadata>
+            <Guid>{8A1F9517-3A8C-4A9E-A018-4F17A200F277}</Guid>
+            <ResourceFilePath>C:\Windows\system32\drivers\bthport.sys</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\drivers\bthport.sys</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.18362.295&amp;FileName=bthport.sys&amp;FileVer=10.0.18362.295</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-BTH-BTHPORT/HCI</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-BTH-BTHPORT/L2CAP</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Performance</Name>
+                    <Value>1</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>227</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+L2CAP_SIGNAL_REJECT]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SentStatus" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Code" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="Identifier" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="Length" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Reason" inType="win:UInt16" outType="win:HexInt16"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>228</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+L2CAP_SIGNAL_CONNECT_REQUEST]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SentStatus" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Code" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="Identifier" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="Length" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Psm" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="SCID" inType="win:UInt16" outType="win:HexInt16"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>229</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+L2CAP_SIGNAL_CONNECT_RESPONSE]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SentStatus" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Code" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="Identifier" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="Length" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DCID" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="SCID" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="Result" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="Status" inType="win:UInt16" outType="win:HexInt16"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>230</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+L2CAP_SIGNAL_CONFIG_REQUEST]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SentStatus" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Code" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="Identifier" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="Length" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DCID" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="Flags" inType="win:UInt16" outType="win:HexInt16"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>231</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+L2CAP_SIGNAL_CONFIG_RESPONSE]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SentStatus" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Code" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="Identifier" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="Length" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SCID" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="Flags" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="Result" inType="win:UInt16" outType="win:HexInt16"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>232</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+L2CAP_SIGNAL_DISCONNECT_REQUEST]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SentStatus" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Code" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="Identifier" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="Length" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DCID" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="SCID" inType="win:UInt16" outType="win:HexInt16"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>233</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+L2CAP_SIGNAL_DISCONNECT_RESPONSE]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SentStatus" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Code" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="Identifier" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="Length" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DCID" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="SCID" inType="win:UInt16" outType="win:HexInt16"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>234</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+L2CAP_SIGNAL_ECHO_REQUEST]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SentStatus" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Code" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="Identifier" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="Length" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>235</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+L2CAP_SIGNAL_ECHO_RESPONSE]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SentStatus" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Code" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="Identifier" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="Length" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>236</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+L2CAP_SIGNAL_INFO_REQUEST]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SentStatus" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Code" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="Identifier" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="Length" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="InfoType" inType="win:UInt16" outType="win:HexInt16"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>237</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+L2CAP_SIGNAL_INFO_RESPONSE]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SentStatus" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Code" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="Identifier" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="Length" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="InfoType" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="Result" inType="win:UInt16" outType="win:HexInt16"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>238</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+BRB_GET_LOCAL_BD_ADDR]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SentStatus" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="LE_Flink" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="LE_Blink" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Version" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="Type" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="BthportFlags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="BtStatus" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="BTHPORT_CONTEXT_SIZE" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Context" inType="win:UInt64" outType="win:HexInt64" count="BTHPORT_CONTEXT_SIZE"/>
+  <data name="ClientContext" inType="win:UInt64" outType="win:HexInt64" count="BTHPORT_CONTEXT_SIZE"/>
+  <data name="BTHPORT_RESERVED_FIELD_SIZE" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Reserved" inType="win:UInt32" outType="win:HexInt32" count="BTHPORT_RESERVED_FIELD_SIZE"/>
+  <data name="BtAddress" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>239</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+BRB_GET_LOCAL_SIGNAL_PARAMETERS]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SentStatus" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="LE_Flink" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="LE_Blink" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Version" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="Type" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="BthportFlags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="BtStatus" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="BTHPORT_CONTEXT_SIZE" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Context" inType="win:UInt64" outType="win:HexInt64" count="BTHPORT_CONTEXT_SIZE"/>
+  <data name="ClientContext" inType="win:UInt64" outType="win:HexInt64" count="BTHPORT_CONTEXT_SIZE"/>
+  <data name="BTHPORT_RESERVED_FIELD_SIZE" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Reserved" inType="win:UInt32" outType="win:HexInt32" count="BTHPORT_RESERVED_FIELD_SIZE"/>
+  <data name="RSSI" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="MaxPowerLevel" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="CurrentPowerLevel" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>240</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+BRB_GET_DEVICE_INTERFACE_STRING]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SentStatus" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="LE_Flink" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="LE_Blink" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Version" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="Type" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="BthportFlags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="BtStatus" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="BTHPORT_CONTEXT_SIZE" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Context" inType="win:UInt64" outType="win:HexInt64" count="BTHPORT_CONTEXT_SIZE"/>
+  <data name="ClientContext" inType="win:UInt64" outType="win:HexInt64" count="BTHPORT_CONTEXT_SIZE"/>
+  <data name="BTHPORT_RESERVED_FIELD_SIZE" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Reserved" inType="win:UInt32" outType="win:HexInt32" count="BTHPORT_RESERVED_FIELD_SIZE"/>
+  <data name="StringLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DeviceInterfaceString" inType="win:UnicodeString" outType="xs:string" length="StringLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>241</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+BRB_STORED_LINK_KEY]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SentStatus" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="LE_Flink" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="LE_Blink" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Version" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="Type" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="BthportFlags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="BtStatus" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="BTHPORT_CONTEXT_SIZE" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Context" inType="win:UInt64" outType="win:HexInt64" count="BTHPORT_CONTEXT_SIZE"/>
+  <data name="ClientContext" inType="win:UInt64" outType="win:HexInt64" count="BTHPORT_CONTEXT_SIZE"/>
+  <data name="BTHPORT_RESERVED_FIELD_SIZE" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Reserved" inType="win:UInt32" outType="win:HexInt32" count="BTHPORT_RESERVED_FIELD_SIZE"/>
+  <data name="Flags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="NumAddresses" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BtAddresses" inType="win:UInt64" outType="win:HexInt64" count="NumAddresses"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>242</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+BRB_L2CA_REGISTER_SERVER]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SentStatus" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="LE_Flink" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="LE_Blink" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Version" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="Type" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="BthportFlags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="BtStatus" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="BTHPORT_CONTEXT_SIZE" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Context" inType="win:UInt64" outType="win:HexInt64" count="BTHPORT_CONTEXT_SIZE"/>
+  <data name="ClientContext" inType="win:UInt64" outType="win:HexInt64" count="BTHPORT_CONTEXT_SIZE"/>
+  <data name="BTHPORT_RESERVED_FIELD_SIZE" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Reserved" inType="win:UInt32" outType="win:HexInt32" count="BTHPORT_RESERVED_FIELD_SIZE"/>
+  <data name="BtAddress" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="PSM" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="IndicationFlags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="IndicationCallbackContext" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="ReferenceObject" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="ServerHandle" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>243</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+BRB_L2CA_UNREGISTER_SERVER]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SentStatus" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="LE_Flink" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="LE_Blink" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Version" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="Type" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="BthportFlags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="BtStatus" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="BTHPORT_CONTEXT_SIZE" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Context" inType="win:UInt64" outType="win:HexInt64" count="BTHPORT_CONTEXT_SIZE"/>
+  <data name="ClientContext" inType="win:UInt64" outType="win:HexInt64" count="BTHPORT_CONTEXT_SIZE"/>
+  <data name="BTHPORT_RESERVED_FIELD_SIZE" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Reserved" inType="win:UInt32" outType="win:HexInt32" count="BTHPORT_RESERVED_FIELD_SIZE"/>
+  <data name="BtAddress" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="ServerHandle" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Psm" inType="win:UInt16" outType="win:HexInt16"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>244</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+BRB_L2CA_OPEN_CHANNEL]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SentStatus" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="LE_Flink" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="LE_Blink" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Version" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="Type" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="BthportFlags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="BtStatus" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="BTHPORT_CONTEXT_SIZE" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Context" inType="win:UInt64" outType="win:HexInt64" count="BTHPORT_CONTEXT_SIZE"/>
+  <data name="ClientContext" inType="win:UInt64" outType="win:HexInt64" count="BTHPORT_CONTEXT_SIZE"/>
+  <data name="BTHPORT_RESERVED_FIELD_SIZE" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Reserved" inType="win:UInt32" outType="win:HexInt32" count="BTHPORT_RESERVED_FIELD_SIZE"/>
+  <data name="ChannelHandle" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Psm_Valid" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="Response" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="ResponseStatus" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="Psm" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="ChannelFlags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="BtAddress" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="ConfigOut_Flags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ConfigOut_Mtu_Min" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ConfigOut_Mtu_Preferred" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ConfigOut_Mtu_Max" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ConfigOut_FlushTO_Min" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ConfigOut_FlushTO_Preferred" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ConfigOut_FlushTO_Max" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ConfigOut_Flow_Flags" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="ConfigOut_Flow_ServiceType" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="ConfigOut_Flow_TokenRate" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ConfigOut_Flow_TokenBucketSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ConfigOut_Flow_PeakBandwidth" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ConfigOut_Flow_Latency" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ConfigOut_Flow_DelayVariation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ConfigOut_LinkTO" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ConfigOut_NumExtraOptions" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="ConfigOut_ExtraOptions_Open_Channel" count="ConfigOut_NumExtraOptions">
+    <data name="Type" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="Length" inType="win:UInt8" outType="xs:unsignedByte"/>
+    <data name="DynamicBuffer" inType="win:UInt64" outType="win:HexInt64"/>
+    <data name="FixedBuffer" inType="win:UInt8" outType="win:HexInt8" count="4"/>
+    <data name="Flags" inType="win:UInt16" outType="win:HexInt16"/>
+  </struct>
+  <data name="ConfigOut_ServiceType" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="ConfigOut_Latency" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ConfigOut_ModeConfig_Valid" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="ConfigOut_ModeConfig_Flags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ConfigOut_MC_RAF_Mode" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="ConfigOut_MC_RAF_TxWindowSize" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="ConfigOut_MC_RAF_MaxTransmit" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="ConfigOut_MC_RAF_RetransmissionTO" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ConfigOut_MC_RAF_MonitorTO" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ConfigOut_MC_RAF_MaxPDUSize" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ConfigOut_Fcs_Valid" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="ConfigOut_Fcs" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ConfigOut_ExtendedFlowSpec_Valid" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="ConfigOut_EFS_Identifier" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="ConfigOut_EFS_ServiceType" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="ConfigOut_EFS_MaxSDUSize" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ConfigOut_EFS_SDUInterArrivalTime" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ConfigOut_EFS_AccessLatency" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ConfigOut_EFS_FlushTimeout" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ConfigOut_ExtendedWindowSize_Valid" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="ConfigOut_ExtendedWindowSize" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ConfigIn_Flags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ConfigIn_Mtu_Min" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ConfigIn_Mtu_Preferred" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ConfigIn_Mtu_Max" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ConfigIn_FlushTO_Min" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ConfigIn_FlushTO_Max" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="CallbackFlags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="CallbackContext" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="ReferenceObject" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="IncomingQueueDepth" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>245</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+BRB_L2CA_CLOSE_CHANNEL]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SentStatus" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="LE_Flink" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="LE_Blink" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Version" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="Type" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="BthportFlags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="BtStatus" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="BTHPORT_CONTEXT_SIZE" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Context" inType="win:UInt64" outType="win:HexInt64" count="BTHPORT_CONTEXT_SIZE"/>
+  <data name="ClientContext" inType="win:UInt64" outType="win:HexInt64" count="BTHPORT_CONTEXT_SIZE"/>
+  <data name="BTHPORT_RESERVED_FIELD_SIZE" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Reserved" inType="win:UInt32" outType="win:HexInt32" count="BTHPORT_RESERVED_FIELD_SIZE"/>
+  <data name="BtAddress" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="ChannelHandle" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>246</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+BRB_L2CA_UPDATE_CHANNEL]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SentStatus" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="LE_Flink" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="LE_Blink" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Version" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="Type" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="BthportFlags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="BtStatus" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="BTHPORT_CONTEXT_SIZE" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Context" inType="win:UInt64" outType="win:HexInt64" count="BTHPORT_CONTEXT_SIZE"/>
+  <data name="ClientContext" inType="win:UInt64" outType="win:HexInt64" count="BTHPORT_CONTEXT_SIZE"/>
+  <data name="BTHPORT_RESERVED_FIELD_SIZE" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Reserved" inType="win:UInt32" outType="win:HexInt32" count="BTHPORT_RESERVED_FIELD_SIZE"/>
+  <data name="BtAddress" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="ChannelHandle" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="NewChannelFlags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="FailedChannelFlags" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>247</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+BRB_L2CA_ACL_TRANSFER]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SentStatus" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="LE_Flink" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="LE_Blink" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Version" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="Type" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="BthportFlags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="BtStatus" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="BTHPORT_CONTEXT_SIZE" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Context" inType="win:UInt64" outType="win:HexInt64" count="BTHPORT_CONTEXT_SIZE"/>
+  <data name="ClientContext" inType="win:UInt64" outType="win:HexInt64" count="BTHPORT_CONTEXT_SIZE"/>
+  <data name="BTHPORT_RESERVED_FIELD_SIZE" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Reserved" inType="win:UInt32" outType="win:HexInt32" count="BTHPORT_RESERVED_FIELD_SIZE"/>
+  <data name="BtAddress" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="ChannelHandle" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="TransferFlags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="BufferSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BufferStartSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BufferStart" inType="win:Binary" outType="xs:hexBinary" length="BufferStartSize"/>
+  <data name="BufferEndSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BufferEnd" inType="win:Binary" outType="xs:hexBinary" length="BufferEndSize"/>
+  <data name="Timeout" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="RemainingBufferSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>248</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+BRB_L2CA_CHANNEL_PROPERTY]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SentStatus" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="LE_Flink" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="LE_Blink" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Version" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="Type" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="BthportFlags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="BtStatus" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="BTHPORT_CONTEXT_SIZE" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Context" inType="win:UInt64" outType="win:HexInt64" count="BTHPORT_CONTEXT_SIZE"/>
+  <data name="ClientContext" inType="win:UInt64" outType="win:HexInt64" count="BTHPORT_CONTEXT_SIZE"/>
+  <data name="BTHPORT_RESERVED_FIELD_SIZE" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Reserved" inType="win:UInt32" outType="win:HexInt32" count="BTHPORT_RESERVED_FIELD_SIZE"/>
+  <data name="BtAddress" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="ChannelHandle" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Property_Type" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="Property_Size" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Property" inType="win:UInt64" outType="win:HexInt64" count="Property_Size"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>249</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+BRB_L2CA_PING]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SentStatus" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="LE_Flink" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="LE_Blink" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Version" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="Type" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="BthportFlags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="BtStatus" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="BTHPORT_CONTEXT_SIZE" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Context" inType="win:UInt64" outType="win:HexInt64" count="BTHPORT_CONTEXT_SIZE"/>
+  <data name="ClientContext" inType="win:UInt64" outType="win:HexInt64" count="BTHPORT_CONTEXT_SIZE"/>
+  <data name="BTHPORT_RESERVED_FIELD_SIZE" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Reserved" inType="win:UInt32" outType="win:HexInt32" count="BTHPORT_RESERVED_FIELD_SIZE"/>
+  <data name="BtAddress" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="PingRequestLength" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="PingRequestData" inType="win:Binary" outType="xs:hexBinary" length="PingRequestLength"/>
+  <data name="PingResponseLength" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="PingResponseData" inType="win:Binary" outType="xs:hexBinary" length="PingResponseLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>250</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+BRB_L2CA_INFO_REQUEST]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SentStatus" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="LE_Flink" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="LE_Blink" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Version" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="Type" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="BthportFlags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="BtStatus" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="BTHPORT_CONTEXT_SIZE" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Context" inType="win:UInt64" outType="win:HexInt64" count="BTHPORT_CONTEXT_SIZE"/>
+  <data name="ClientContext" inType="win:UInt64" outType="win:HexInt64" count="BTHPORT_CONTEXT_SIZE"/>
+  <data name="BTHPORT_RESERVED_FIELD_SIZE" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Reserved" inType="win:UInt32" outType="win:HexInt32" count="BTHPORT_RESERVED_FIELD_SIZE"/>
+  <data name="BtAddress" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="InfoType" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="Result" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="DataLength" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Data" inType="win:UInt8" outType="win:HexInt8" count="DataLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>251</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+BRB_PSM]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SentStatus" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="LE_Flink" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="LE_Blink" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Version" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="Type" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="BthportFlags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="BtStatus" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="BTHPORT_CONTEXT_SIZE" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Context" inType="win:UInt64" outType="win:HexInt64" count="BTHPORT_CONTEXT_SIZE"/>
+  <data name="ClientContext" inType="win:UInt64" outType="win:HexInt64" count="BTHPORT_CONTEXT_SIZE"/>
+  <data name="BTHPORT_RESERVED_FIELD_SIZE" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Reserved" inType="win:UInt32" outType="win:HexInt32" count="BTHPORT_RESERVED_FIELD_SIZE"/>
+  <data name="Psm" inType="win:UInt16" outType="win:HexInt16"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>252</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+BRB_ACL_GET_MODE]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SentStatus" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="LE_Flink" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="LE_Blink" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Version" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="Type" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="BthportFlags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="BtStatus" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="BTHPORT_CONTEXT_SIZE" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Context" inType="win:UInt64" outType="win:HexInt64" count="BTHPORT_CONTEXT_SIZE"/>
+  <data name="ClientContext" inType="win:UInt64" outType="win:HexInt64" count="BTHPORT_CONTEXT_SIZE"/>
+  <data name="BTHPORT_RESERVED_FIELD_SIZE" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Reserved" inType="win:UInt32" outType="win:HexInt32" count="BTHPORT_RESERVED_FIELD_SIZE"/>
+  <data name="BtAddress" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="AclMode" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>253</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+BRB_ACL_ENTER_ACTIVE_MODE]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SentStatus" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="LE_Flink" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="LE_Blink" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Version" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="Type" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="BthportFlags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="BtStatus" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="BTHPORT_CONTEXT_SIZE" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Context" inType="win:UInt64" outType="win:HexInt64" count="BTHPORT_CONTEXT_SIZE"/>
+  <data name="ClientContext" inType="win:UInt64" outType="win:HexInt64" count="BTHPORT_CONTEXT_SIZE"/>
+  <data name="BTHPORT_RESERVED_FIELD_SIZE" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Reserved" inType="win:UInt32" outType="win:HexInt32" count="BTHPORT_RESERVED_FIELD_SIZE"/>
+  <data name="BtAddress" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>254</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+BRB_ACL_ENTER_SNIFF_MODE]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SentStatus" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="LE_Flink" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="LE_Blink" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Version" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="Type" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="BthportFlags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="BtStatus" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="BTHPORT_CONTEXT_SIZE" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Context" inType="win:UInt64" outType="win:HexInt64" count="BTHPORT_CONTEXT_SIZE"/>
+  <data name="ClientContext" inType="win:UInt64" outType="win:HexInt64" count="BTHPORT_CONTEXT_SIZE"/>
+  <data name="BTHPORT_RESERVED_FIELD_SIZE" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Reserved" inType="win:UInt32" outType="win:HexInt32" count="BTHPORT_RESERVED_FIELD_SIZE"/>
+  <data name="BtAddress" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="ChannelHandle" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Sniff_Max_Interval" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Sniff_Min_Interval" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Sniff_Attempt" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Sniff_Timeout" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>255</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+BRB_ACL_ENTER_PARK_MODE]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SentStatus" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="LE_Flink" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="LE_Blink" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Version" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="Type" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="BthportFlags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="BtStatus" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="BTHPORT_CONTEXT_SIZE" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Context" inType="win:UInt64" outType="win:HexInt64" count="BTHPORT_CONTEXT_SIZE"/>
+  <data name="ClientContext" inType="win:UInt64" outType="win:HexInt64" count="BTHPORT_CONTEXT_SIZE"/>
+  <data name="BTHPORT_RESERVED_FIELD_SIZE" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Reserved" inType="win:UInt32" outType="win:HexInt32" count="BTHPORT_RESERVED_FIELD_SIZE"/>
+  <data name="BtAddress" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="ChannelHandle" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Beacon_Max_Interval" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Beacon_Min_Interval" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>256</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+BRB_ACL_ENTER_HOLD_MODE]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SentStatus" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="LE_Flink" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="LE_Blink" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Version" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="Type" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="BthportFlags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="BtStatus" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="BTHPORT_CONTEXT_SIZE" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Context" inType="win:UInt64" outType="win:HexInt64" count="BTHPORT_CONTEXT_SIZE"/>
+  <data name="ClientContext" inType="win:UInt64" outType="win:HexInt64" count="BTHPORT_CONTEXT_SIZE"/>
+  <data name="BTHPORT_RESERVED_FIELD_SIZE" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Reserved" inType="win:UInt32" outType="win:HexInt32" count="BTHPORT_RESERVED_FIELD_SIZE"/>
+  <data name="BtAddress" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="ChannelHandle" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Hold_Mode_Max_Interval" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Hold_Mode_Min_Interval" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>257</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+BRB_ACL_ENHANCED_FLUSH]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SentStatus" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="LE_Flink" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="LE_Blink" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Version" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="Type" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="BthportFlags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="BtStatus" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="BTHPORT_CONTEXT_SIZE" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Context" inType="win:UInt64" outType="win:HexInt64" count="BTHPORT_CONTEXT_SIZE"/>
+  <data name="ClientContext" inType="win:UInt64" outType="win:HexInt64" count="BTHPORT_CONTEXT_SIZE"/>
+  <data name="BTHPORT_RESERVED_FIELD_SIZE" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Reserved" inType="win:UInt32" outType="win:HexInt32" count="BTHPORT_RESERVED_FIELD_SIZE"/>
+  <data name="BtAddress" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="PacketType" inType="win:UInt8" outType="win:HexInt8"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>258</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Complete a non-read IRP]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SentStatus" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>261</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+EVENT_TIE_ACTIVITY_ID]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Child_Activity_ID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Related_Activity_ID" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>262</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BTH-BTHPORT/L2CAP</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Segmenting L2CAP packet into HCI Packets]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Num_HCI_Packets" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>263</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BTH-BTHPORT/L2CAP</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Write HCI Packet]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SentStatus" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Connection_Handle" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="Packet_Boundary_Flag" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="Broadcast_Flag" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="Buffer_Length" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PDU_Length" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Channel_ID" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="Code" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="Identifier" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="Signal_Length" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Data_Length" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Data" inType="win:Binary" outType="xs:hexBinary" length="Data_Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>264</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BTH-BTHPORT/L2CAP</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Read HCI Packet]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SentStatus" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Connection_Handle" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="Packet_Boundary_Flag" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="Broadcast_Flag" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="Buffer_Length" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PDU_Length" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Channel_ID" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="Code" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="Identifier" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="Signal_Length" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Data_Length" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Data" inType="win:Binary" outType="xs:hexBinary" length="Data_Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>265</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+BRB_L2CA_REGISTER_FIXED_CHANNEL_SERVER]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SentStatus" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="LE_Flink" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="LE_Blink" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Version" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="Type" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="BthportFlags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="BtStatus" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="BTHPORT_CONTEXT_SIZE" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Context" inType="win:UInt64" outType="win:HexInt64" count="BTHPORT_CONTEXT_SIZE"/>
+  <data name="ClientContext" inType="win:UInt64" outType="win:HexInt64" count="BTHPORT_CONTEXT_SIZE"/>
+  <data name="BTHPORT_RESERVED_FIELD_SIZE" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Reserved" inType="win:UInt32" outType="win:HexInt32" count="BTHPORT_RESERVED_FIELD_SIZE"/>
+  <data name="FixedChannel" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="Flags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="IndicationCallback" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="IndicationCallbackContext" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="ReferenceObject" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="FixedChannelServerHandle" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>266</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+BRB_L2CA_UNREGISTER_FIXED_CHANNEL_SERVER]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SentStatus" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="LE_Flink" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="LE_Blink" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Version" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="Type" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="BthportFlags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="BtStatus" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="BTHPORT_CONTEXT_SIZE" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Context" inType="win:UInt64" outType="win:HexInt64" count="BTHPORT_CONTEXT_SIZE"/>
+  <data name="ClientContext" inType="win:UInt64" outType="win:HexInt64" count="BTHPORT_CONTEXT_SIZE"/>
+  <data name="BTHPORT_RESERVED_FIELD_SIZE" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Reserved" inType="win:UInt32" outType="win:HexInt32" count="BTHPORT_RESERVED_FIELD_SIZE"/>
+  <data name="FixedChannelServerHandle" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>267</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+BRB_L2CA_SEND_FIXED_CHANNEL_DATA]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SentStatus" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="LE_Flink" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="LE_Blink" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Version" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="Type" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="BthportFlags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="BtStatus" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="BTHPORT_CONTEXT_SIZE" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Context" inType="win:UInt64" outType="win:HexInt64" count="BTHPORT_CONTEXT_SIZE"/>
+  <data name="ClientContext" inType="win:UInt64" outType="win:HexInt64" count="BTHPORT_CONTEXT_SIZE"/>
+  <data name="BTHPORT_RESERVED_FIELD_SIZE" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Reserved" inType="win:UInt32" outType="win:HexInt32" count="BTHPORT_RESERVED_FIELD_SIZE"/>
+  <data name="bthAddr" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="DataTransferFlags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="DataLength" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="DataStartSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DataStart" inType="win:Binary" outType="xs:hexBinary" length="DataStartSize"/>
+  <data name="DataEndSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DataEnd" inType="win:Binary" outType="xs:hexBinary" length="DataEndSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>302</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+BRB_L2CA_CONNECT_FIXED_CHANNEL]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SentStatus" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="LE_Flink" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="LE_Blink" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Version" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="Type" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="BthportFlags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="BtStatus" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="BTHPORT_CONTEXT_SIZE" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Context" inType="win:UInt64" outType="win:HexInt64" count="BTHPORT_CONTEXT_SIZE"/>
+  <data name="ClientContext" inType="win:UInt64" outType="win:HexInt64" count="BTHPORT_CONTEXT_SIZE"/>
+  <data name="BTHPORT_RESERVED_FIELD_SIZE" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Reserved" inType="win:UInt32" outType="win:HexInt32" count="BTHPORT_RESERVED_FIELD_SIZE"/>
+  <data name="bthAddr" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="DataTransferFlags" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>310</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BTH-BTHPORT/L2CAP</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+RM_QUERY_RADIO_STATE]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RadioState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>311</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BTH-BTHPORT/L2CAP</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+RM_SET_RADIO_START]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RadioState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>312</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BTH-BTHPORT/L2CAP</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+RM_SET_RADIO_STOP]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RadioState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CompleteStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>313</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BTH-BTHPORT/L2CAP</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+RM_SET_DEVICE_POWER_START]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SystemPowerState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DevicePowerState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>314</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BTH-BTHPORT/L2CAP</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+RM_SET_DEVICE_POWER_STOP]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SystemPowerState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DevicePowerState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CompleteStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>402</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BTH-BTHPORT/HCI</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CommandPacketsAllowed" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="AclWriteCredits" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="BIP_Type" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="BIP_DataLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BIP_Data" inType="win:Binary" outType="xs:hexBinary" length="BIP_DataLen"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

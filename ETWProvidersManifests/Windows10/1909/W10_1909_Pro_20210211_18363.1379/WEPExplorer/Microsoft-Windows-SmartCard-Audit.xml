@@ -1,0 +1,115 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-SmartCard-Audit</Name>
+        <Metadata>
+            <Guid>{09AC07B9-6AC9-43BC-A50F-58419A797C69}</Guid>
+            <ResourceFilePath>C:\Windows\System32\WinSCard.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\System32\WinSCard.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.18362.1&amp;FileName=WinSCard.dll&amp;FileVer=10.0.18362.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-SmartCard-Audit</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-SmartCard-Audit/Authentication</Message>
+                    <Path>Microsoft-Windows-SmartCard-Audit/Authentication</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Success</Message>
+                    <Name>Success</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>Failure</Message>
+                    <Name>Failure</Name>
+                    <Value>2</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Audit Failure</Message>
+                    <Name>AuditFailure</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Audit Success</Message>
+                    <Name>AuditSuccess</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Smart Card</Message>
+                    <Name>SmartCard</Name>
+                    <Value>4</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>CHV</Message>
+                    <Name>CHV</Name>
+                    <Value>8</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>PIN</Message>
+                    <Name>PIN</Name>
+                    <Value>16</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SmartCard-Audit/Authentication</Channel>
+                <Level>Error</Level>
+                <Task>Failure</Task>
+                <Keyword>Audit Failure Smart Card CHV PIN</Keyword>
+                <Message><![CDATA[
+A smart card holder verification (CHV) attempt failed.
+
+Process image: %1
+PID: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Process" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SmartCard-Audit/Authentication</Channel>
+                <Level>Information</Level>
+                <Task>Success</Task>
+                <Keyword>Audit Success Smart Card CHV PIN</Keyword>
+                <Message><![CDATA[
+A smart card holder verification (CHV) attempt succeeded.
+
+Process image: %1
+PID: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Process" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,2484 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-EapHost</Name>
+        <Metadata>
+            <Guid>{6EB8DB94-FE96-443F-A366-5FE0CEE7FB1C}</Guid>
+            <ResourceFilePath>C:\Windows\system32\eapsvc.dll</ResourceFilePath>
+            <ParameterFilePath>C:\Windows\system32\eapsvc.dll</ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\eapsvc.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.18362.1556&amp;FileName=eapsvc.dll&amp;FileVer=10.0.18362.1556</HelpLink>
+            <PublisherMessage>Microsoft-Windows-EapHost</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Application</Message>
+                    <Path>Application</Path>
+                    <Index>0</Index>
+                    <Id>9</Id>
+                    <Imported>true</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-EapHost/Operational</Message>
+                    <Path>Microsoft-Windows-EapHost/Operational</Path>
+                    <Index>1</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-EapHost/Analytic</Message>
+                    <Path>Microsoft-Windows-EapHost/Analytic</Path>
+                    <Index>2</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-EapHost/Debug</Message>
+                    <Path>Microsoft-Windows-EapHost/Debug</Path>
+                    <Index>3</Index>
+                    <Id>18</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Authenticator</Message>
+                    <Name>Authenticator</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>Peer</Message>
+                    <Name>Peer</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message>Common</Message>
+                    <Name>Common</Name>
+                    <Value>3</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Registry</Message>
+                    <Name>Reg</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>COM</Message>
+                    <Name>COM</Name>
+                    <Value>2</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Task>Authenticator</Task>
+                <Keyword>Registry</Keyword>
+                <Message><![CDATA[
+Method not registered or method's registry data could not be accessed. LoadConfig: FriendlyName, ConfigCLSID both are empty]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Task>Authenticator</Task>
+                <Message><![CDATA[
+Unable to parse malformed EAP packet]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Task>Authenticator</Task>
+                <Keyword>Registry</Keyword>
+                <Message><![CDATA[
+Method not registered or registry value error: Function Name=LoadConfig, ArgumentName=%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MethodString" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Information</Level>
+                <Task>Authenticator</Task>
+                <Message><![CDATA[
+Negotiation failed. No available EAP methods]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Information</Level>
+                <Task>Authenticator</Task>
+                <Message><![CDATA[
+Negotiation failed. Proposed methods list from peer is invalid]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1006</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Information</Level>
+                <Task>Authenticator</Task>
+                <Message><![CDATA[
+Negotiation failed. Requested EAP methods not available]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1007</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Task>Authenticator</Task>
+                <Message><![CDATA[
+Exceeded the maximum number(32) of Third Party EapHost processes. Discarding the current eap session.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1021</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Authenticator</Task>
+                <Keyword>Registry</Keyword>
+                <Message><![CDATA[
+Method not registered or method's registry data could not be accessed. Unable to open registry key %1, error code %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Registry Key" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int8" outType="xs:byte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1022</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Authenticator</Task>
+                <Keyword>Registry</Keyword>
+                <Message><![CDATA[
+Method not registered or method's registry data could not be accessed. Query registry (%1) failed for method: TypeId=%2, AuthorId=%3, VendorId=%4, VendorType=%5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RegKeyValue" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TypeId" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="AuthorId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VendorId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VendorType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1023</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Authenticator</Task>
+                <Keyword>Registry</Keyword>
+                <Message><![CDATA[
+Method not registered or method's registry data could not be accessed. Validation failed for key (%1), Method Info: Type Id=%2, AuthorId=%3, vendorId=%4, vendorType=%5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RegKeyValue" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TypeId" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="AuthorId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VendorId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VendorType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1041</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Analytic</Channel>
+                <Level>Error</Level>
+                <Task>Authenticator</Task>
+                <Keyword>COM</Keyword>
+                <Message><![CDATA[
+Unable to Initialize COM library. An instance of EapHostAuthenticatorInvokeConfigUI() is already running. CoInitializeEx returned S_FALSE.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1042</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Analytic</Channel>
+                <Level>Error</Level>
+                <Task>Authenticator</Task>
+                <Keyword>COM</Keyword>
+                <Message><![CDATA[
+Unable to Initialize COM library. The wrong concurrency model was specified for EapHostAuthenticatorInvokeConfigUI(). COM Error: RPC_E_CHANGED_MODE.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1043</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Analytic</Channel>
+                <Level>Error</Level>
+                <Task>Authenticator</Task>
+                <Keyword>COM</Keyword>
+                <Message><![CDATA[
+Unable to Initialize COM library for EapHostAuthenticatorInitialize(). 
+ Error Description: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorString" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1044</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Analytic</Channel>
+                <Level>Error</Level>
+                <Task>Authenticator</Task>
+                <Message><![CDATA[
+Invalid eatInnerEapMethodType returned by the EAP method. Attribute has incorrect format (%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Length" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1045</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Analytic</Channel>
+                <Level>Error</Level>
+                <Task>Authenticator</Task>
+                <Message><![CDATA[
+Method does not support EapMethodAuthenticatorUpdateInnerMethodParams() API, but UpdateInnerMethodParams() called]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1046</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Authenticator</Task>
+                <Message><![CDATA[
+Client's response: NAK=%1, Accept=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NAK" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Accept" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1047</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Authenticator</Task>
+                <Message><![CDATA[
+No preferred methods list provided by Peer]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1048</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Authenticator</Task>
+                <Message><![CDATA[
+Session(%1), state(%2), receive packet id(%3), length(%4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SessionId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="state" inType="win:Int8" outType="xs:byte"/>
+  <data name="Packet ID" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Packet Length" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1049</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Authenticator</Task>
+                <Message><![CDATA[
+send packet id(%1), length(%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PacketId" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Packet Length" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1050</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Authenticator</Task>
+                <Message><![CDATA[
+SoH response found]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1051</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Authenticator</Task>
+                <Message><![CDATA[
+NAP exchange required, get SoH response from network policy server]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1052</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Method does not support stand-alone mode. Skipping EapMethod TypeId=%1, AuthorId=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TypeId" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="AuthorId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VendorId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VendorType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1053</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Authenticator</Task>
+                <Message><![CDATA[
+Unable to parse malformed EAP packet. ERROR_PPP_INVALID_PACKET returned]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1054</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Authenticator</Task>
+                <Message><![CDATA[
+NAK Response: Method (VenId(%2), VenType(%3), Type(%1))  present]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TypeId" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="VendorId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VendorType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1055</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Authenticator</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1056</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Authenticator</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1057</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Authenticator</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1058</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Authenticator</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1059</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Authenticator</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1060</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Authenticator</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1061</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Authenticator</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1062</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Authenticator</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1063</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Authenticator</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1064</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Authenticator</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1065</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Authenticator</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1066</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Authenticator</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1067</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Authenticator</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1068</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Authenticator</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1069</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Authenticator</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1070</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Authenticator</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1071</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Authenticator</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1072</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Authenticator</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Authenticator</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1074</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Authenticator</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1075</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Authenticator</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1076</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Authenticator</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1077</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Authenticator</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1078</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Authenticator</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1079</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Authenticator</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1080</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Authenticator</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1081</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Authenticator</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1082</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Authenticator</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1083</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Authenticator</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1084</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Authenticator</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1085</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Authenticator</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1086</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Authenticator</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1087</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Authenticator</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1088</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Authenticator</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1089</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Authenticator</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1090</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Authenticator</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1091</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Authenticator</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1092</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Authenticator</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2001</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Task>Peer</Task>
+                <Keyword>Registry</Keyword>
+                <Message><![CDATA[
+Eap method friendly name can not be verified or %1 path could not be accessed; Error: type(%2), authId(%3), vendorId(%4), vendorType(%5)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Key Name" inType="win:AnsiString" outType="xs:string"/>
+  <data name="TypeId" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="AuthorId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VendorId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VendorType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2002</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Task>Peer</Task>
+                <Keyword>Registry</Keyword>
+                <Message><![CDATA[
+Skipping: %1 validation failed. Error: typeId=%2, authorId=%3, vendorId=%4, vendorType=%5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Key Name" inType="win:AnsiString" outType="xs:string"/>
+  <data name="TypeId" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="AuthorId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VendorId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VendorType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Analytic</Channel>
+                <Level>Error</Level>
+                <Task>Peer</Task>
+                <Keyword>COM</Keyword>
+                <Message><![CDATA[
+CoTaskMemAlloc() failed for SoH. SoH not saved.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Analytic</Channel>
+                <Level>Error</Level>
+                <Task>Peer</Task>
+                <Keyword>COM</Keyword>
+                <Message><![CDATA[
+Could not initialize COM library in service control manager notification thread]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Analytic</Channel>
+                <Level>Error</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+SoH change failed. EapQec::NotifySoHChange caught exception for %1: 0x%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Analytic</Channel>
+                <Level>Error</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+ConfigSchema validation failed. Error  %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2007</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Analytic</Channel>
+                <Level>Error</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+EapQec Listening thread handle is NULL]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2008</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Analytic</Channel>
+                <Level>Error</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Session(%1, %2) in use]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Session ID" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2009</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Analytic</Channel>
+                <Level>Error</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+EAP method does not support %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function Name" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2010</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+XML configuration problem;  Failed to find root element.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2011</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+XML configuration problem;  Invalid parameter passed.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2012</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Keyword>Registry</Keyword>
+                <Message><![CDATA[
+Registry key validation successful.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2013</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Client not NAP enabled. SoH change failed.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2014</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+No SoH response received for %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection Name" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2015</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Notify SoH change succeeded.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2016</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Notify SoH change failed with interface: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection Name" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2017</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Session(%1): Received EAP-Failure after Identity exchange:  There is likely a problem with the authenticating user's account.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Session ID" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2018</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Session(%1): Received EAP-Failure after EAP-Nak negotiation:  The client & server are not configured to support the same EAP methods. (Server offered EAP type %2; Client sent a Nak, and requested EAP type %3.)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Session ID" inType="win:Int32" outType="xs:int"/>
+  <data name="Server Offered Method" inType="win:Int32" outType="xs:int"/>
+  <data name="Client Requested Method" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2019</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Method does not implement %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function Name" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2020</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Analytic</Channel>
+                <Level>Error</Level>
+                <Task>Peer</Task>
+                <Keyword>COM</Keyword>
+                <Message><![CDATA[
+COM API %1 Failed.
+ Error Description : %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function Name" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Error Description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2022</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Analytic</Channel>
+                <Level>Error</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+_beginthreadex failed.
+ Error Description : %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2023</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Invalid XML document. Failed to selectSingleNode.
+ Error Description : %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2024</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Unable to open %1 handle.
+ Error Description : %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function Name" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Error Description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2025</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Exceeded the maximum number(32) of Third Party EapHost processes. Running the current eap session in short lived Eap3Host process.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2026</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2027</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2028</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2029</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2030</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2031</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2032</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2033</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2034</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2035</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2036</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2037</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2038</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2039</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2040</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2041</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2042</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2043</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2044</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2045</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2046</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2047</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2048</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2049</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2050</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2051</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2052</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2053</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2054</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2055</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2056</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2057</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2058</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2059</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2060</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2061</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2062</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2063</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2064</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2065</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2066</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2067</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2068</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2069</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2070</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2071</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2072</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2073</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2074</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2075</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2076</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2077</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2078</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2079</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2080</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2081</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2082</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2083</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2084</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2085</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+Performance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PerfId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2086</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+EapHostPeerGetResult returned a failure.
+Eap Method Friendly Name: %2
+Reason code: %1
+Root Cause String: %3
+Repair String: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Reason Code" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EAP Method Friendly Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EAP Error Root Cause" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EAP Error Repair" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2087</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+User Entered Credentials.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2088</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+User Uses Saved Credentials.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2089</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Peer</Task>
+                <Message><![CDATA[
+EAP session is completing during the authentication phase.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3001</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Task>Common</Task>
+                <Keyword>Registry</Keyword>
+                <Message><![CDATA[
+EAPHost failed to load. LoadLibraryW(%1) failed %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ModuleName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3002</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Task>Common</Task>
+                <Message><![CDATA[
+Could not find the requested EapMethod: TypeId(%1), AuthorId(%2), VendorId(%3), VendorType(%4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TypeId" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="AuthorId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VendorId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VendorType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3021</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Common</Task>
+                <Keyword>Registry</Keyword>
+                <Message><![CDATA[
+EAP methods not registered or registry data could not be accessed; Failed to open registry %1, Error Code: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Registry Key" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int8" outType="xs:byte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3022</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Common</Task>
+                <Keyword>Registry</Keyword>
+                <Message><![CDATA[
+EAP methods not registered or registry data could not be accessed; Failed to open method registry %2\\%1. Skip this type ID]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TypeId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AuthorId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3023</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Common</Task>
+                <Keyword>Registry</Keyword>
+                <Message><![CDATA[
+EAP methods not registered or registry data could not be accessed; Failed to open method registry %1. Skip this author ID]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AuthorId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3024</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Common</Task>
+                <Keyword>Registry</Keyword>
+                <Message><![CDATA[
+EAP methods not registered or registry data could not be accessed; Failed to open method registry %1\\254\\%2\\%3. Skip this vendor type]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AuthorId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VendorId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VendorType" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3025</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Common</Task>
+                <Keyword>Registry</Keyword>
+                <Message><![CDATA[
+EAP methods not registered or registry data could not be accessed; Failed to open method registry %1\\254\\%2. Skip this vendor ID]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AuthorId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VendorId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3026</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Common</Task>
+                <Message><![CDATA[
+Skipping: Unable to add EAP method. Friendly name not present. TypeId(%1), AuthorId(%2), VendorId(%3), VendorType(%4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TypeId" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="AuthorId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VendorId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VendorType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3027</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Common</Task>
+                <Message><![CDATA[
+XML configuration problem; Failed to get EapMethodType node 
+. Error Description: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorString" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3028</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Common</Task>
+                <Message><![CDATA[
+XML configuration problem; Data Type mismatch for %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="debugString" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3029</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Common</Task>
+                <Message><![CDATA[
+XML configuration problem; Bad method: TypeId(%1), AuthorId(%2), VendorId(%3), VendorType(%4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TypeId" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="AuthorId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VendorId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VendorType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3041</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Analytic</Channel>
+                <Level>Error</Level>
+                <Task>Common</Task>
+                <Message><![CDATA[
+Could not load method. Out of memory]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3042</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Analytic</Channel>
+                <Level>Error</Level>
+                <Task>Common</Task>
+                <Message><![CDATA[
+Unable to add new method after re-initialization]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3043</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Analytic</Channel>
+                <Level>Error</Level>
+                <Task>Common</Task>
+                <Message><![CDATA[
+EAP Exception caught: authorId(%1), type(%2), vendorId(%3), vendorType(%4), error(%5)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AuthorId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TypeId" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="VendorId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VendorType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorString" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3044</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Analytic</Channel>
+                <Level>Error</Level>
+                <Task>Common</Task>
+                <Message><![CDATA[
+Exception caught: authorId(%1), type(%2), vendorId(%3), vendorType(%4), error(%5)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AuthorId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TypeId" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="VendorId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VendorType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorString" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3045</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Common</Task>
+                <Message><![CDATA[
+Error %1, reading EAP method friendly name(muiRead). Friendly name retrieved from registry]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3046</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Common</Task>
+                <Message><![CDATA[
+EAP method not found, re-initializing the library manager's EapMethodList data]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3047</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Common</Task>
+                <Message><![CDATA[
+New method found after re-initializing EapMethodList data]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3048</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Common</Task>
+                <Message><![CDATA[
+New EAP method added to EapMethodList: TypeId=%1, AuthorId=%2, VendorId=%3, VendorType=%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TypeId" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="AuthorId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VendorId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VendorType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="debugString" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EapHost/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="debugString" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

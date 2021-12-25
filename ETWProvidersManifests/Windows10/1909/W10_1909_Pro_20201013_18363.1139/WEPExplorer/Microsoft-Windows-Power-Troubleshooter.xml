@@ -1,0 +1,180 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Power-Troubleshooter</Name>
+        <Metadata>
+            <Guid>{CDC05E28-C449-49C6-B9D2-88CF761644DF}</Guid>
+            <ResourceFilePath>C:\Windows\system32\pots.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\pots.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.18362.1&amp;FileName=pots.dll&amp;FileVer=10.0.18362.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Power-Troubleshooter</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>0</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The system has returned from a low power state.
+
+Sleep Time: %1
+Wake Time: %2
+
+Wake Source: %13%15]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SleepTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="WakeTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="SleepDuration" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="WakeDuration" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DriverInitDuration" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BiosInitDuration" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HiberWriteDuration" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HiberReadDuration" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HiberPagesWritten" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Attributes" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="TargetState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EffectiveState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="WakeSourceType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="WakeSourceTextLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="WakeSourceText" inType="win:UnicodeString" outType="xs:string" length="WakeSourceTextLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1</Id>
+                <Version>1</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The system has returned from a low power state.
+
+Sleep Time: %1
+Wake Time: %2
+
+Wake Source: %13%15]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SleepTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="WakeTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="SleepDuration" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="WakeDuration" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DriverInitDuration" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BiosInitDuration" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HiberWriteDuration" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HiberReadDuration" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HiberPagesWritten" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Attributes" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="TargetState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EffectiveState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="WakeSourceType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="WakeSourceTextLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="WakeSourceText" inType="win:UnicodeString" outType="xs:string" length="WakeSourceTextLength"/>
+  <data name="WakeTimerOwnerLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="WakeTimerContextLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="WakeTimerOwner" inType="win:UnicodeString" outType="xs:string" length="WakeTimerOwnerLength"/>
+  <data name="WakeTimerContext" inType="win:UnicodeString" outType="xs:string" length="WakeTimerContextLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1</Id>
+                <Version>2</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The system has returned from a low power state.
+
+Sleep Time: %1
+Wake Time: %2
+
+Wake Source: %13%15]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SleepTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="WakeTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="SleepDuration" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="WakeDuration" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DriverInitDuration" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BiosInitDuration" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HiberWriteDuration" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HiberReadDuration" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HiberPagesWritten" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Attributes" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="TargetState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EffectiveState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="WakeSourceType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="WakeSourceTextLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="WakeSourceText" inType="win:UnicodeString" outType="xs:string" length="WakeSourceTextLength"/>
+  <data name="WakeTimerOwnerLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="WakeTimerContextLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="NoMultiStageResumeReason" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="WakeTimerOwner" inType="win:UnicodeString" outType="xs:string" length="WakeTimerOwnerLength"/>
+  <data name="WakeTimerContext" inType="win:UnicodeString" outType="xs:string" length="WakeTimerContextLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1</Id>
+                <Version>3</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The system has returned from a low power state.
+
+Sleep Time: %1
+Wake Time: %2
+
+Wake Source: %13%15]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SleepTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="WakeTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="SleepDuration" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="WakeDuration" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DriverInitDuration" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BiosInitDuration" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HiberWriteDuration" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HiberReadDuration" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HiberPagesWritten" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Attributes" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="TargetState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EffectiveState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="WakeSourceType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="WakeSourceTextLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="WakeSourceText" inType="win:UnicodeString" outType="xs:string" length="WakeSourceTextLength"/>
+  <data name="WakeTimerOwnerLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="WakeTimerContextLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="NoMultiStageResumeReason" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="WakeTimerOwner" inType="win:UnicodeString" outType="xs:string" length="WakeTimerOwnerLength"/>
+  <data name="WakeTimerContext" inType="win:UnicodeString" outType="xs:string" length="WakeTimerContextLength"/>
+  <data name="CheckpointDuration" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

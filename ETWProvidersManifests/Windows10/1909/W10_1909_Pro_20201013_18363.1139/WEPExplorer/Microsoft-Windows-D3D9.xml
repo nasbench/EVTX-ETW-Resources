@@ -1,0 +1,226 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-D3D9</Name>
+        <Metadata>
+            <Guid>{783ACA0A-790E-4D7F-8451-AA850511C6B9}</Guid>
+            <ResourceFilePath>C:\Windows\system32\d3d9.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\d3d9.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.18362.1110&amp;FileName=d3d9.dll&amp;FileVer=10.0.18362.1110</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Direct3D9/Analytic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Log Always</Message>
+                    <Name>win:LogAlways</Name>
+                    <Value>0</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>Present</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>Reset</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>BindToDWM</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>DWMRedirection</Name>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>FlipExSurfaceTimeout</Name>
+                    <Value>5</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>FlipExSemaphoreTimeout</Name>
+                    <Value>6</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>GetPresentStats</Name>
+                    <Value>7</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Events</Name>
+                    <Value>2</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Direct3D9/Analytic</Channel>
+                <Task>Present</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Events</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="pSwapchain" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Direct3D9/Analytic</Channel>
+                <Task>Present</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Events</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Result" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Direct3D9/Analytic</Channel>
+                <Task>Reset</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Events</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="pSwapchain" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Width" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Height" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BackbufferFormat" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BackbufferCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SwapEffect" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Windowed" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="PresentationInterval" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AdditionalSwapchain" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Direct3D9/Analytic</Channel>
+                <Task>Reset</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Events</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Result" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Direct3D9/Analytic</Channel>
+                <Task>BindToDWM</Task>
+                <Keyword>Events</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LogicalSurfaceHandle" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="BackBufferCount" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SharedHandles" inType="win:UInt32" outType="win:HexInt32" count="BackBufferCount"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Direct3D9/Analytic</Channel>
+                <Task>DWMRedirection</Task>
+                <Keyword>Events</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IsOn" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Direct3D9/Analytic</Channel>
+                <Task>FlipExSurfaceTimeout</Task>
+                <Keyword>Events</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LogicalSurfaceHandle" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="BackBufferNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BackBufferHandle" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Direct3D9/Analytic</Channel>
+                <Task>FlipExSemaphoreTimeout</Task>
+                <Keyword>Events</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LogicalSurfaceHandle" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="AdjustValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FenceValue" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Direct3D9/Analytic</Channel>
+                <Task>GetPresentStats</Task>
+                <Keyword>Events</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ReturnValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PresentCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PresentRefreshCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SyncRefreshCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SyncQPCTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
