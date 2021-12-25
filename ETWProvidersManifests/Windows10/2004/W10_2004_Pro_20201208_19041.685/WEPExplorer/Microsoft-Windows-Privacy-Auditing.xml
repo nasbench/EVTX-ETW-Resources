@@ -1,0 +1,452 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Privacy-Auditing</Name>
+        <Metadata>
+            <Guid>{D67FBB76-D18A-5AE3-24A3-8C1DB52D6C62}</Guid>
+            <ResourceFilePath>C:\Windows\System32\CapabilityAccessManager.dll</ResourceFilePath>
+            <ParameterFilePath>C:\Windows\System32\CapabilityAccessManager.dll</ParameterFilePath>
+            <MessageFilePath>C:\Windows\System32\CapabilityAccessManager.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.19041.1&amp;FileName=CapabilityAccessManager.dll&amp;FileVer=10.0.19041.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Privacy-Auditing</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Operational</Message>
+                    <Path>Microsoft-Windows-Privacy-Auditing/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Value Changed</Message>
+                    <Name>ValueChanged</Name>
+                    <Value>10</Value>
+                </Task>
+                <Task>
+                    <Message>Default Consent Created</Message>
+                    <Name>DefaultCreated</Name>
+                    <Value>20</Value>
+                </Task>
+                <Task>
+                    <Message>Capability Consent Provisioned</Message>
+                    <Name>CapabilityProvisioned</Name>
+                    <Value>30</Value>
+                </Task>
+                <Task>
+                    <Message>Prompt Answered</Message>
+                    <Name>PromptAnswered</Name>
+                    <Value>40</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>System Global Consent</Message>
+                    <Name>SystemGlobal</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>User Global Consent</Message>
+                    <Name>UserGlobal</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>User-App Consent</Message>
+                    <Name>UserApp</Name>
+                    <Value>4</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Failure</Message>
+                    <Name>Failure</Name>
+                    <Value>64</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1000</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Value Changed</Task>
+                <Keyword>System Global Consent</Keyword>
+                <Message><![CDATA[
+Allow access to %12 on this device setting has successfully changed from %4 to %5 by %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CallerUserSid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CallerProcessName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CallerAppPackageFamilyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="OldConsentValue" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NewConsentValue" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SetByHigherAuthority" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="EffectiveConsentValue" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TargetUserSid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ConsentID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AppPackageFamilyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HResult" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SettingName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Value Changed</Task>
+                <Keyword>System Global Consent Failure</Keyword>
+                <Message><![CDATA[
+Allow access to %12 on this device setting has failed to change by %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CallerUserSid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CallerProcessName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CallerAppPackageFamilyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="OldConsentValue" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NewConsentValue" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SetByHigherAuthority" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="EffectiveConsentValue" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TargetUserSid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ConsentID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AppPackageFamilyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HResult" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SettingName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Value Changed</Task>
+                <Keyword>User Global Consent</Keyword>
+                <Message><![CDATA[
+Allow apps to access your %12 setting for user %8 successfully changed from %4 to %5 by %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CallerUserSid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CallerProcessName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CallerAppPackageFamilyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="OldConsentValue" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NewConsentValue" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SetByHigherAuthority" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="EffectiveConsentValue" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TargetUserSid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ConsentID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AppPackageFamilyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HResult" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SettingName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Value Changed</Task>
+                <Keyword>User Global Consent Failure</Keyword>
+                <Message><![CDATA[
+Allow apps to access your %12 setting for user %8 failed to change by %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CallerUserSid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CallerProcessName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CallerAppPackageFamilyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="OldConsentValue" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NewConsentValue" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SetByHigherAuthority" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="EffectiveConsentValue" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TargetUserSid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ConsentID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AppPackageFamilyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HResult" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SettingName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Value Changed</Task>
+                <Keyword>User-App Consent</Keyword>
+                <Message><![CDATA[
+User %8 setting for allow app %10 access to %12 successfully changed from %4 to %5 by %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CallerUserSid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CallerProcessName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CallerAppPackageFamilyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="OldConsentValue" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NewConsentValue" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SetByHigherAuthority" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="EffectiveConsentValue" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TargetUserSid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ConsentID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AppPackageFamilyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HResult" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SettingName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Value Changed</Task>
+                <Keyword>User-App Consent Failure</Keyword>
+                <Message><![CDATA[
+User %8 setting for allow app %10 access to %12 failed to change by %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CallerUserSid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CallerProcessName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CallerAppPackageFamilyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="OldConsentValue" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NewConsentValue" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SetByHigherAuthority" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="EffectiveConsentValue" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TargetUserSid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ConsentID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AppPackageFamilyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HResult" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SettingName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1006</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Default Consent Created</Task>
+                <Keyword>System Global Consent</Keyword>
+                <Message><![CDATA[
+Allow access to %6 on this device default setting successfully created as %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NewConsentValue" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TargetUserSid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ConsentID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AppPackageFamilyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HResult" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SettingName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Migrated" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="Suppressed" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1007</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Default Consent Created</Task>
+                <Keyword>System Global Consent Failure</Keyword>
+                <Message><![CDATA[
+Allow access to %6 on this device default setting failed creation.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NewConsentValue" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TargetUserSid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ConsentID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AppPackageFamilyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HResult" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SettingName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Migrated" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="Suppressed" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1008</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Default Consent Created</Task>
+                <Keyword>User Global Consent</Keyword>
+                <Message><![CDATA[
+Allow apps to access your %6 setting default for user %2 successfully created as %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NewConsentValue" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TargetUserSid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ConsentID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AppPackageFamilyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HResult" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SettingName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Migrated" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="Suppressed" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1009</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Default Consent Created</Task>
+                <Keyword>User Global Consent Failure</Keyword>
+                <Message><![CDATA[
+Allow apps to access your %6 setting default for user %2 failed creation.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NewConsentValue" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TargetUserSid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ConsentID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AppPackageFamilyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HResult" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SettingName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Migrated" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="Suppressed" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1010</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Default Consent Created</Task>
+                <Keyword>User-App Consent</Keyword>
+                <Message><![CDATA[
+User %2 setting for allow app %4 access to %6 default successfully created as %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NewConsentValue" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TargetUserSid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ConsentID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AppPackageFamilyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HResult" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SettingName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Migrated" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="Suppressed" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1011</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Default Consent Created</Task>
+                <Keyword>User-App Consent Failure</Keyword>
+                <Message><![CDATA[
+User %2 setting for allow app %4 access to %6 default failed creation.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NewConsentValue" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TargetUserSid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ConsentID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AppPackageFamilyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HResult" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SettingName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Migrated" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="Suppressed" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1012</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Capability Consent Provisioned</Task>
+                <Keyword>User-App Consent</Keyword>
+                <Message><![CDATA[
+During app %3 installation setting %5 default set for user %2 as %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NewConsentValue" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TargetUserSid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AppPackageFamilyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HResult" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SettingName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Migrated" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1013</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Capability Consent Provisioned</Task>
+                <Keyword>User-App Consent Failure</Keyword>
+                <Message><![CDATA[
+During app %3 installation setting %5 default failed to be set.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NewConsentValue" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TargetUserSid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AppPackageFamilyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HResult" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SettingName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Migrated" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1014</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Prompt Answered</Task>
+                <Keyword>User-App Consent</Keyword>
+                <Message><![CDATA[
+User %2 answered prompt successfully for capability %6 and app %4. Response was %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NewConsentValue" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TargetUserSid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ConsentID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AppPackageFamilyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HResult" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SettingName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AutoAccepted" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1015</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Prompt Answered</Task>
+                <Keyword>User-App Consent Failure</Keyword>
+                <Message><![CDATA[
+User %2 could not be prompted for capability %6 and app %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NewConsentValue" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TargetUserSid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ConsentID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AppPackageFamilyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HResult" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SettingName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AutoAccepted" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
