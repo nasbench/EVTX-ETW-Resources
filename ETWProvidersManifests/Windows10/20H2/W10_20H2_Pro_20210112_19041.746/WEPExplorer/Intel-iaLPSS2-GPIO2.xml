@@ -1,0 +1,1219 @@
+<Providers>
+    <Provider>
+        <Name>Intel-iaLPSS2-GPIO2</Name>
+        <Metadata>
+            <Guid>{63848CFF-3EC7-4DDF-8072-5F95E8C8EB98}</Guid>
+            <ResourceFilePath>C:\Windows\system32\drivers\iaLPSS2i_GPIO2.sys</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\drivers\iaLPSS2i_GPIO2.sys</MessageFilePath>
+            <HelpLink></HelpLink>
+            <PublisherMessage>Intel-iaLPSS2-GPIO2</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>iaLPSS_GPIO2 Debug channel</Message>
+                    <Path>Intel-iaLPSS2-GPIO2/Debug</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>iaLPSS_GPIO2 Performance channel</Message>
+                    <Path>Intel-iaLPSS2-GPIO2/Performance</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>iaLPSS_GPIO2 Driver routines</Message>
+                    <Name>iaLPSS2_GPIO2_Driver</Name>
+                    <Guid>{33CFE465-3945-4FDF-90EB-ED95B7135E06}</Guid>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>iaLPSS_GPIO2 GpioCx DDI calls</Message>
+                    <Name>iaLPSS2_GPIO2_GpioCxDDI</Name>
+                    <Guid>{6FEE0BF2-062E-48FE-B821-1227100740C3}</Guid>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message>iaLPSS_GPIO2 Controller routines</Message>
+                    <Name>iaLPSS2_GPIO2_GpioCtrl</Name>
+                    <Guid>{69B29770-6279-4A94-B42D-E275B3FD30AB}</Guid>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message>iaLPSS_GPIO2 GpioInt routines</Message>
+                    <Name>iaLPSS2_GPIO2_GpioInt</Name>
+                    <Guid>{A6546BD3-6D62-4607-ADA2-DF53F27C0B1C}</Guid>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message>iaLPSS_GPIO2 GpioIo routines</Message>
+                    <Name>iaLPSS2_GPIO2_GpioIo</Name>
+                    <Guid>{6EE92CDF-2C9D-49F0-9340-5F3C38F93F0A}</Guid>
+                    <Value>5</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+ERROR: %1 - STATUS: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+INFO: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+[%1] -->]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+[%1] -&lt;--]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+[%1] -&lt;-- Status = %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1011</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Performance channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS_GPIO2 Driver routines</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+DriverEntry Start]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1012</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Performance channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS_GPIO2 Driver routines</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+DriverEntry End]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1013</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS_GPIO2 Driver routines</Task>
+                <Message><![CDATA[
+Driver ERROR: WdfDriverCreate() returned status:%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1014</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS_GPIO2 Driver routines</Task>
+                <Message><![CDATA[
+Driver ERROR: GPIO_CLX_RegisterClient() returned status:%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1015</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Performance channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS_GPIO2 Driver routines</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+DriverUnload Start]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1016</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Performance channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS_GPIO2 Driver routines</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+DriverUnload End]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1017</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS_GPIO2 Driver routines</Task>
+                <Message><![CDATA[
+Driver ERROR: GPIO_CLX_UnregisterClient() returned status:%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1018</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS_GPIO2 Driver routines</Task>
+                <Message><![CDATA[
+Driver ERROR: CheckSupportedOs() returned status:%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1021</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Performance channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS_GPIO2 Driver routines</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+DeviceAdd Start]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1022</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Performance channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS_GPIO2 Driver routines</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+DeviceAdd End]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1023</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS_GPIO2 Driver routines</Task>
+                <Message><![CDATA[
+Device ERROR: GPIO_CLX_ProcessAddDevicePreDeviceCreate() returned status:%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1024</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS_GPIO2 Driver routines</Task>
+                <Message><![CDATA[
+Device ERROR: GPIO_CLX_ProcessAddDevicePostDeviceCreate() returned status:%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1025</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS_GPIO2 Driver routines</Task>
+                <Message><![CDATA[
+Device ERROR: WdfDeviceCreate() returned status:%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1026</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS_GPIO2 Driver routines</Task>
+                <Message><![CDATA[
+Device HW profile FOUND: Instance:%1 Version:%2 Revision:%3 Mode:%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Instance" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Version" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Revision" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Mode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1027</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS_GPIO2 Driver routines</Task>
+                <Message><![CDATA[
+Device HW profile ERROR: Instance:%1 Version:%2 Revision:%3 Mode:%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Instance" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Version" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Revision" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Mode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1031</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS_GPIO2 GpioCx DDI calls</Task>
+                <Message><![CDATA[
+GpioCx DDI: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1032</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS_GPIO2 GpioCx DDI calls</Task>
+                <Message><![CDATA[
+GpioCx DDI ERROR: Controller Context invalid]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1033</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS_GPIO2 GpioCx DDI calls</Task>
+                <Message><![CDATA[
+GpioCx DDI ERROR: Controller Object invalid]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1034</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS_GPIO2 GpioCx DDI calls</Task>
+                <Message><![CDATA[
+GpioCx DDI ERROR: Controller Object allocate error]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1101</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS_GPIO2 Controller routines</Task>
+                <Message><![CDATA[
+ERROR: Invalid bank number: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BankNo" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1102</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS_GPIO2 Controller routines</Task>
+                <Message><![CDATA[
+%1: ERROR: Invalid pin number: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BankName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="PinNo" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1103</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS_GPIO2 Controller routines</Task>
+                <Message><![CDATA[
+%1_%2: ERROR: Invalid pin ownership: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BankName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="PinNo" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PinOwnership" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1104</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS_GPIO2 Controller routines</Task>
+                <Message><![CDATA[
+%1_%2: ERROR: Invalid pin mode: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BankName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="PinNo" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PinMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1107</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Performance channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS_GPIO2 Controller routines</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+PrepareController Start]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1108</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Performance channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS_GPIO2 Controller routines</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+PrepareController End]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1109</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS_GPIO2 Controller routines</Task>
+                <Message><![CDATA[
+PrepareController ERROR: Can't allocate pin table]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1110</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS_GPIO2 Controller routines</Task>
+                <Message><![CDATA[
+PrepareController ERROR: Can't initialize GPIO layout - STATUS:%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1111</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS_GPIO2 Controller routines</Task>
+                <Message><![CDATA[
+PrepareController MBAR%1 mapped: PA:%2 LEN:%3 VA:%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MBAR" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PA" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="LEN" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VA" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1112</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS_GPIO2 Controller routines</Task>
+                <Message><![CDATA[
+PrepareController ERROR: Too many MBAR resources IDX:%1 PA:%2 LEN:%3 - STATUS:%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MBAR" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PA" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="LEN" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1113</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS_GPIO2 Controller routines</Task>
+                <Message><![CDATA[
+PrepareController ERROR: Can't map MMIO for MBAR%1 PA:%2 LEN:%3 - STATUS:%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MBAR" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PA" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="LEN" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1114</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS_GPIO2 Controller routines</Task>
+                <Message><![CDATA[
+PrepareController INTERRUPT VEC:%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Vector" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1115</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS_GPIO2 Controller routines</Task>
+                <Message><![CDATA[
+PrepareController ERROR: Incorrect resource count. MMIO:%1 (exp. %2) INT:%3 (exp. %4) - STATUS:%5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MBAR_current" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MBAR_expected" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="INT_current" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="INT_expected" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1116</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Performance channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS_GPIO2 Controller routines</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+ReleaseController Start]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1117</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Performance channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS_GPIO2 Controller routines</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+ReleaseController End]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1118</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS_GPIO2 Controller routines</Task>
+                <Message><![CDATA[
+Controller queried for properties]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1119</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS_GPIO2 Controller routines</Task>
+                <Message><![CDATA[
+Controller started]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1120</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS_GPIO2 Controller routines</Task>
+                <Message><![CDATA[
+Controller stopped]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1121</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS_GPIO2 GpioInt routines</Task>
+                <Message><![CDATA[
+%1_%2: ERROR: Interrupt configuration not supported: %3 %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BankName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="PinNo" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IntMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IntPolartity" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1122</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS_GPIO2 GpioInt routines</Task>
+                <Message><![CDATA[
+%1_%2: Interrupt configured to: %3 %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BankName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="PinNo" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IntMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IntPolartity" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1123</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Warning</Level>
+                <Task>iaLPSS_GPIO2 GpioInt routines</Task>
+                <Message><![CDATA[
+%1_%2: WARNING: Pull configuration not supported: %3 - using default]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BankName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="PinNo" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PullMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1124</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS_GPIO2 GpioInt routines</Task>
+                <Message><![CDATA[
+%1_%2: Pull configured to: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BankName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="PinNo" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PullMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1125</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS_GPIO2 GpioInt routines</Task>
+                <Message><![CDATA[
+%1_%2: Interrupt enabled]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BankName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="PinNo" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1126</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS_GPIO2 GpioInt routines</Task>
+                <Message><![CDATA[
+%1_%2: Interrupt disabled]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BankName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="PinNo" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1127</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS_GPIO2 GpioInt routines</Task>
+                <Message><![CDATA[
+%1: Interrupts mask set to:%2 (requested:%3, failed:%4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BankName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="MaskSet" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MaskRequested" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MaskFailed" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1128</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS_GPIO2 GpioInt routines</Task>
+                <Message><![CDATA[
+%1_%2: Interrupt unmasked]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BankName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="PinNo" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1129</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS_GPIO2 GpioInt routines</Task>
+                <Message><![CDATA[
+%1: Interrupts queried active:%2 (raw:%3, mask:%4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BankName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Active" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ActiveRaw" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ActiveMask" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1130</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS_GPIO2 GpioInt routines</Task>
+                <Message><![CDATA[
+%1: Interrupts queried enabled:%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BankName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Enabled" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1131</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS_GPIO2 GpioInt routines</Task>
+                <Message><![CDATA[
+%1: Interrupts status cleared with mask:%2 (requested:%3, failed:%4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BankName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="MaskSet" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MaskRequested" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MaskFailed" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1132</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS_GPIO2 GpioIo routines</Task>
+                <Message><![CDATA[
+%1_%2: ERROR: Pin already connected in mode %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BankName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="PinNo" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PinIoMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1133</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS_GPIO2 GpioIo routines</Task>
+                <Message><![CDATA[
+%1_%2: ERROR: Pin not connected]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BankName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="PinNo" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1134</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS_GPIO2 GpioIo routines</Task>
+                <Message><![CDATA[
+%1_%2: Pin output set %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BankName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="PinNo" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PinState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1135</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS_GPIO2 GpioIo routines</Task>
+                <Message><![CDATA[
+%1_%2: Pin output pre-set %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BankName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="PinNo" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PinState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1136</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS_GPIO2 GpioIo routines</Task>
+                <Message><![CDATA[
+%1_%2: Pin input get %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BankName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="PinNo" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PinState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1137</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Warning</Level>
+                <Task>iaLPSS_GPIO2 GpioIo routines</Task>
+                <Message><![CDATA[
+%1_%2: WARNING: Pin mode '%3' not supported. Buffer enable state not changed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BankName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="PinNo" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PinIoMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1138</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS_GPIO2 GpioIo routines</Task>
+                <Message><![CDATA[
+%1_%2: Pin connected in mode %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BankName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="PinNo" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PinIoMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1139</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS_GPIO2 GpioIo routines</Task>
+                <Message><![CDATA[
+%1_%2: ERROR: Pin connected in mode %3 while disconnect request for mode %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BankName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="PinNo" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PinIoModeCurrent" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PinIoModeRequested" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1140</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS_GPIO2 GpioIo routines</Task>
+                <Message><![CDATA[
+%1_%2: Pin disconnected - output buffer disabled]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BankName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="PinNo" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1141</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS_GPIO2 GpioIo routines</Task>
+                <Message><![CDATA[
+%1_%2: Pin disconnected - output buffer left enabled]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BankName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="PinNo" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1142</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS_GPIO2 GpioIo routines</Task>
+                <Message><![CDATA[
+%1_%2: Pin disconnected - input buffer disabled]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BankName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="PinNo" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1143</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1_%2: Pin disconnected - input buffer left enabled]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BankName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="PinNo" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1144</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+%1_%2: WARNING: Pin mode '%3' not supported. Disconnecting input and output.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BankName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="PinNo" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PinIoMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1150</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Verbose</Level>
+                <Task>iaLPSS_GPIO2 Controller routines</Task>
+                <Message><![CDATA[
+%1_%2: Pin context restored]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BankName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="PinNo" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1151</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS_GPIO2 Controller routines</Task>
+                <Message><![CDATA[
+%1: Bank context restored]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BankName" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1152</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Verbose</Level>
+                <Task>iaLPSS_GPIO2 Controller routines</Task>
+                <Message><![CDATA[
+%1_%2: Pin context saved]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BankName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="PinNo" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1153</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS_GPIO2 Controller routines</Task>
+                <Message><![CDATA[
+%1: Bank context saved]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BankName" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1200</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS_GPIO2 GpioInt routines</Task>
+                <Message><![CDATA[
+ERROR: Invalid special function number]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1201</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS_GPIO2 GpioInt routines</Task>
+                <Message><![CDATA[
+%1_%2: Mask APIC interrupt]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BankName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="PinNo" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1202</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS_GPIO2 GpioInt routines</Task>
+                <Message><![CDATA[
+%1_%2: Unmask APIC interrupt]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BankName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="PinNo" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1203</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS_GPIO2 GpioIo routines</Task>
+                <Message><![CDATA[
+%1_%2: WriteGpioIo]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BankName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="PinNo" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1204</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS_GPIO2 Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS_GPIO2 GpioIo routines</Task>
+                <Message><![CDATA[
+%1_%2: ReadGpioIo]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BankName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="PinNo" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

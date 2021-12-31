@@ -1,0 +1,162 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Diagnosis-PerfHost</Name>
+        <Metadata>
+            <Guid>{F27B948B-0A7C-4EB6-92EC-8A2C1B353ECD}</Guid>
+            <ResourceFilePath>C:\Windows\Syswow64\perfhost.exe</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\Syswow64\perfhost.exe</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.19041.1&amp;FileName=perfhost.exe&amp;FileVer=10.0.19041.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Diagnosis-PerfHost</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-Diagnosis-Perfhost/Analytic</Message>
+                    <Path>Microsoft-Windows-Diagnosis-Perfhost/Analytic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Errors</Message>
+                    <Name>errors</Name>
+                    <Value>2048</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Provider DLL callouts</Message>
+                    <Name>callouts</Name>
+                    <Value>4096</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-Perfhost/Analytic</Channel>
+                <Keyword>Errors</Keyword>
+                <Message><![CDATA[
+Function %2 of the PerfHost service failed with error code %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-Perfhost/Analytic</Channel>
+                <Keyword>Errors</Keyword>
+                <Message><![CDATA[
+The PerfHost service failed to create provider %2 because of error %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProviderName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-Perfhost/Analytic</Channel>
+                <Keyword>Errors</Keyword>
+                <Message><![CDATA[
+Function %2 of the PerfHost service failed to revert impersonation error code %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-Perfhost/Analytic</Channel>
+                <Keyword>Errors</Keyword>
+                <Message><![CDATA[
+The PerfHost service rejected an RPC request with error code %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-Perfhost/Analytic</Channel>
+                <Keyword>Provider DLL callouts</Keyword>
+                <Message><![CDATA[
+The call to function %4 of provider %2 (%3) returned with error code %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ReturnValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Provider" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProviderDll" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-Perfhost/Analytic</Channel>
+                <Keyword>Provider DLL callouts</Keyword>
+                <Message><![CDATA[
+The PerfHost service is about to call the open procedure (%4) of provider %2 (%3) with argument "%1".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FirstArgument" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Provider" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProviderDll" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-Perfhost/Analytic</Channel>
+                <Keyword>Provider DLL callouts</Keyword>
+                <Message><![CDATA[
+The PerfHost service is about to call the collect procedure (%5) of provider %3 (%4) with query "%1" and buffer size %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Query" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Provider" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProviderDll" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-Perfhost/Analytic</Channel>
+                <Keyword>Provider DLL callouts</Keyword>
+                <Message><![CDATA[
+The PerfHost service is about to call the close procedure (%3) of provider %1 (%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Provider" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProviderDll" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

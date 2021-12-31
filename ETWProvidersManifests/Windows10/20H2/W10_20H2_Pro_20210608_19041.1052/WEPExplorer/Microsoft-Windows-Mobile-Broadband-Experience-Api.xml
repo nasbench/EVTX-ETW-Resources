@@ -1,0 +1,184 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Mobile-Broadband-Experience-Api</Name>
+        <Metadata>
+            <Guid>{2E2BBB16-0C36-4B9B-A567-40924A199FD5}</Guid>
+            <ResourceFilePath>C:\Windows\system32\MbaeApiPublic.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\MbaeApiPublic.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.19041.1023&amp;FileName=MbaeApiPublic.dll&amp;FileVer=10.0.19041.1023</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Mobile-Broadband-Experience-Api</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Mobile-Broadband-Experience-Api/Analytic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Mobile-Broadband-Experience-Api/Analytic</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+%1: The given network account ID is invalid.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="funcName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Mobile-Broadband-Experience-Api/Analytic</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+%1: There are no account IDs that this app can use. %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="funcName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="errorDetails" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Mobile-Broadband-Experience-Api/Analytic</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+%1: This app is not permitted to use the network account with the given ID. %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="funcName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="errorDetails" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Mobile-Broadband-Experience-Api/Analytic</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+%1: Error initializing the MobileBroadbandAccount object.
+Error is %2: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="funcName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="error" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="hresult" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Mobile-Broadband-Experience-Api/Analytic</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+%1: Could not find this app's package family name.
+Error is %2: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="funcName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="error" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="hresult" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Mobile-Broadband-Experience-Api/Analytic</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+%1: Error reading stored data for this MobileBroadbandAccount object.
+Error is %2: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="funcName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="error" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="hresult" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Mobile-Broadband-Experience-Api/Analytic</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+%1: Error reading configuration or status data from network device.
+Error is %2: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="funcName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="error" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="hresult" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1007</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Mobile-Broadband-Experience-Api/Analytic</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+%1: The network that this account is bound to has changed, possibly because of a hot swap.  The current object is no longer valid.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="funcName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1008</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Mobile-Broadband-Experience-Api/Analytic</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+%1: The metadata package associated with this account is not completely parsed yet.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="funcName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1009</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Mobile-Broadband-Experience-Api/Analytic</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+%1: Cannot open Connection Manager UI.
+Error is %2: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="funcName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="error" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="hresult" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

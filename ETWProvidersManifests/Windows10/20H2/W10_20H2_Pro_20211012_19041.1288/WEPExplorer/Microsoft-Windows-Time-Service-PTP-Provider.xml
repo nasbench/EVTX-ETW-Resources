@@ -1,0 +1,339 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Time-Service-PTP-Provider</Name>
+        <Metadata>
+            <Guid>{CFFB980E-327C-5B87-19C6-62C4C3BE2290}</Guid>
+            <ResourceFilePath>C:\Windows\system32\ptpprov.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\ptpprov.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.19041.1&amp;FileName=ptpprov.dll&amp;FileVer=10.0.19041.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Time-Service-PTP-Provider</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Time-Service-PTP-Provider/PTP-Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>512</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Time-Service-PTP-Provider/PTP-Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+PTP provider started receiving announcements from the PTP Master %1 with IP Address %2 on local IfIndex:%15 and the following PTP parameters:
+Clock Identity:%3
+Port Number:%4
+Domain Number:%5
+Utc Offset Valid:%6
+Current UTC Offset:%7
+Flags:%8
+Grandmaster Clock Id:%9
+Steps Removed From GM:%10
+Time Source Code:%11
+Announce Interval (Log2):%12
+
+Number of active Masters:%13
+Current Tick Count:%14
+For more information, see https://go.microsoft.com/fwlink/?linkid=873491.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Address" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MasterClockId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MasterPortNum" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DomainNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UTCValid" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CurrentUTCOffset" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="GrandMasterClockId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StepsRemovedFromGrandMaster" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TimeSourceCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LogAnnounceInterval" inType="win:Int32" outType="xs:int"/>
+  <data name="ActiveMasterCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TickCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="LocalIfIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>513</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Time-Service-PTP-Provider/PTP-Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+PTP provider has chosen the PTP Master %1 with IP Address %2 on local IfIndex:%14 as the best master and the source of time. This master is announcing the following PTP parameters:
+Clock Identity:%3
+Port Number:%4
+Domain Number:%5
+Utc Offset Valid:%6
+Current UTC Offset:%7
+Flags:%8
+Grandmaster Clock Id:%9
+Steps Removed From GM:%10
+Time Source Code:%11
+Announce Interval (Log2):%12
+
+Current Tick Count:%13
+If the best master keeps changing frequently, verify that the masters and this client have the same announce interval configured. For more information, see https://go.microsoft.com/fwlink/?linkid=873491.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BestMasterName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MasterAddress" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MasterClockId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MasterPortNum" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DomainNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UTCValid" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CurrentUTCOffset" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="GrandMasterClockId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StepsRemovedFromGrandMaster" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TimeSourceCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LogAnnounceInterval" inType="win:Int32" outType="xs:int"/>
+  <data name="TickCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="LocalIfIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>514</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Time-Service-PTP-Provider/PTP-Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+PTP Master %1 with IP Address %2 has made no announcements in the last announce timeout window (%3 milliseconds). It is excluded from being considered as a (potential) time source. PTP Master parameters:
+Clock Identity:%4
+Port Number:%5
+Announce Interval (Log2):%6
+
+Number of active Masters:%7
+Current Tick Count:%8
+For more information, see https://go.microsoft.com/fwlink/?linkid=873491.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Address" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AnnounceTimeoutMsec" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MasterClockId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MasterPortNum" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LogAnnounceInterval" inType="win:Int32" outType="xs:int"/>
+  <data name="ActiveMasterCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TickCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>515</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Time-Service-PTP-Provider/PTP-Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Ptp Provider Configuration:
+
+Allowed Masters:%1
+Allow Any Master:%17
+Announce Interval:%2(msec)
+Delay Poll Interval:%3(msec)
+Timestamping Allowed:%4
+Multicast Rx Enabled:%11
+PTP E2E Correction Enabled:%13
+HW TSTMP IfIndex:%14
+Multicast-Only Tx Enabled:%15
+Multicast IfIndex:%16
+(IfIndex: 0 = none chosen, (1, ULONG_MAX) = specific interface, ULONG_MAX = all available)
+PTP provider status:
+
+PTP Best Master Details:
+Name:%5
+IP Address:%6
+Clock Identity:%7
+Port Number:%8
+Tick Count At Last Time Sample:%9
+
+ActiveMasterCount:%10
+Current Tick Count:%12
+For more information, see https://go.microsoft.com/fwlink/?linkid=873491.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AllowedMastersList" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AnnounceIntervalMsec" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DelayPollIntervalMsec" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IfTstmp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BestMasterName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BMAddress" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BMClockId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BMPortNum" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BMLastTimeSampleTickCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ActiveMasterCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MulticastRxEnabled" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TickCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="E2ECorrectionEnabled" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HWTstmpingIfIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MulticastOnlyTxEnabled" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MulticastIfIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AllowAnyMaster" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>516</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Time-Service-PTP-Provider/PTP-Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Messages from PTP Master will be ignored because the master is not allowed.
+PTP Master parameters:
+IP Address:%1
+Clock Identity:%2
+Port Number:%3
+Domain Number:%4
+Utc Offset Valid:%5
+Current UTC Offset:%6
+Flags:%7
+Grandmaster Clock Id:%8
+Steps Removed From GM:%9
+Time Source Code:%10
+Announce Interval (Log2):%11
+
+Number of active Masters:%12
+Current Tick Count:%13
+For more information, see https://go.microsoft.com/fwlink/?linkid=873491.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Address" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MasterClockId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MasterPortNum" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DomainNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UTCValid" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CurrentUTCOffset" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="GrandMasterClockId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StepsRemovedFromGrandMaster" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TimeSourceCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LogAnnounceInterval" inType="win:Int32" outType="xs:int"/>
+  <data name="ActiveMasterCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TickCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>517</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Time-Service-PTP-Provider/PTP-Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+PTP provider is configured to receive hardware timestamps from these network interfaces:
+InterfaceList:%1
+ Current Tick Count:%2
+For more information, see https://go.microsoft.com/fwlink/?linkid=873491.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IfIndexList" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TickCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>518</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Time-Service-PTP-Provider/PTP-Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+PTP provider can translate hardware timestamps from the NIC with IfIndex %1
+Current Tick Count:%2
+For more information, see https://go.microsoft.com/fwlink/?linkid=873491.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IfIndex" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="TickCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>519</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Time-Service-PTP-Provider/PTP-Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+PTP provider is unable to translate hardware timestamps from the NIC with IfIndex %1
+Current Tick Count:%2
+For more information, see https://go.microsoft.com/fwlink/?linkid=873491.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IfIndex" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="TickCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>520</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Time-Service-PTP-Provider/PTP-Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+PTP provider is configured to accept announcements from any master on the network. Ensure that this setting is intentional. This message will repeat periodically.
+Number of active Masters:%1
+Current Tick Count:%2
+For more information, see https://go.microsoft.com/fwlink/?linkid=873491.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ActiveMasterCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TickCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>521</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Time-Service-PTP-Provider/PTP-Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+PTP provider is receiving timestamps from the network stack. These typically help reduce the jitter in time error calculations and improve time sync accuracy.
+Current Tick Count:%1
+For more information, see https://go.microsoft.com/fwlink/?linkid=873491.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TickCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>522</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Time-Service-PTP-Provider/PTP-Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+PTP provider is not receiving any timestamps from the network stack, which may result in lowered time sync accuracy. This is the default configuration and the behavior on service startup. This can also occur if there are conflicting settings for a NIC or due to actual runtime issues.
+Current Tick Count:%1
+For more information, see https://go.microsoft.com/fwlink/?linkid=873491.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TickCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

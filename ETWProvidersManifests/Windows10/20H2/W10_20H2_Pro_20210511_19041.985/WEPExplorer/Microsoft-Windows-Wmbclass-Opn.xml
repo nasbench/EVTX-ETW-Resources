@@ -1,0 +1,98 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Wmbclass-Opn</Name>
+        <Metadata>
+            <Guid>{A42FE227-A7BF-4483-A502-6BCDA428CD96}</Guid>
+            <ResourceFilePath>C:\Windows\system32\drivers\mbbcx.sys</ResourceFilePath>
+            <ParameterFilePath>C:\Windows\system32\drivers\mbbcx.sys</ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\drivers\mbbcx.sys</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.19041.423&amp;FileName=mbbcx.sys&amp;FileVer=10.0.19041.423</HelpLink>
+            <PublisherMessage>Windows Mobile Broadband Class Driver Event Provider for OPN</PublisherMessage>
+            <Channels>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Sending command MessageType: %1, MessageLength: %2, MessageTransactionId: %3, TotalFragments: %4, CurrentFragment: %5, ServiceId: %6, CommandId: %7, CommandType: %8, InformationBufferLength: %9, InformationBuffer: %10]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MessageType" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MessageLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MessageTransactionId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TotalFragments" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CurrentFragment" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ServiceId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="CommandId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CommandType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InformationBufferLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InformationBuffer" inType="win:Binary" outType="xs:hexBinary" length="InformationBufferLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Receiving command done MessageType: %1, MessageLength: %2, MessageTransactionId: %3, TotalFragments: %4, CurrentFragment: %5, ServiceId: %6, CommandId: %7, Status: %8, InformationBufferLength: %9, InformationBuffer: %10]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MessageType" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MessageLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MessageTransactionId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TotalFragments" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CurrentFragment" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ServiceId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="CommandId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InformationBufferLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InformationBuffer" inType="win:Binary" outType="xs:hexBinary" length="InformationBufferLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Receiving indication MessageType: %1, MessageLength: %2, MessageTransactionId: %3, TotalFragments: %4, CurrentFragment: %5, ServiceId: %6, CommandId: %7, InformationBufferLength: %8, InformationBuffer: %9]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MessageType" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MessageLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MessageTransactionId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TotalFragments" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CurrentFragment" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ServiceId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="CommandId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InformationBufferLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InformationBuffer" inType="win:Binary" outType="xs:hexBinary" length="InformationBufferLength"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

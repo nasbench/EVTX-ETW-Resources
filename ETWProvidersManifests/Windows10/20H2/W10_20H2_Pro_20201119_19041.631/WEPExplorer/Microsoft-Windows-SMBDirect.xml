@@ -1,0 +1,1234 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-SMBDirect</Name>
+        <Metadata>
+            <Guid>{DB66EA65-B7BB-4CA9-8748-334CB5C32400}</Guid>
+            <ResourceFilePath>C:\Windows\system32\drivers\smbdirect.sys</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\drivers\smbdirect.sys</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.19041.1&amp;FileName=smbdirect.sys&amp;FileVer=10.0.19041.1</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-SMBDirect/Admin</Message>
+                    <Path>Microsoft-Windows-SMBDirect/Admin</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-SMBDirect/Debug</Message>
+                    <Path>Microsoft-Windows-SMBDirect/Debug</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-SMBDirect/Netmon</Message>
+                    <Path>Microsoft-Windows-SMBDirect/Netmon</Path>
+                    <Index>2</Index>
+                    <Id>18</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Critical</Message>
+                    <Name>win:Critical</Name>
+                    <Value>1</Value>
+                </Level>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Disconnect</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Connect</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Accept</Name>
+                    <Value>4</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Credits</Name>
+                    <Value>8</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>NDK</Name>
+                    <Value>16</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:SendPath</Name>
+                    <Value>4294967296</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:ReceivePath</Name>
+                    <Value>8589934592</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:Packet</Name>
+                    <Value>4398046511104</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The network adapter '%1' is incompatible with SMB Direct. Compatible network adapters are required to support at least %2 SGE(s) per receive queue work request. This adapter supports a maximum of %3 SGE(s) per receive queue work request.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AdapterAlias" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequiredSges" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AdapterSupportedSges" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The network adapter '%1' is incompatible with SMB Direct. Compatible network adapters are required to support at least %2 SGE(s) per send queue work request. This adapter supports a maximum of %3 SGE(s) per send queue work request.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AdapterAlias" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequiredSges" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AdapterSupportedSges" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The network adapter '%1' is incompatible with SMB Direct. Compatible network adapters are required to support at least %2 SGE(s) per RDMA read request. This adapter supports a maximum of %3 SGE(s) per RDMA read request.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AdapterAlias" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequiredSges" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AdapterSupportedSges" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Admin</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Setting %1\%2 is invalid. Verify that %2 is a DWORD (32-bit) value in the range %3 to %4 (inclusive). The default value of %5 will be used for this setting until the error is corrected.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RegistryKeyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SettingName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MinValidValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxValidValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DefaultValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Admin</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The network adapter '%1' does not support a value of %4 for setting %2\%3. The closest adapter supported value of %5 will be used.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AdapterAlias" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RegistryKeyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SettingName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ClosestAdapterSupportedValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+A connection has been terminated because no pending requests to network adapter '%6' have completed in the last %7 milliseconds. Verify that the network is operational and that the peer is responsive. This event may also indicate that there are insufficient send credits to support the workload. Socket = %1 Local = %3 Remote = %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SocketID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+  <data name="AdapterAlias" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TimeoutInMs" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Settings BaseAffinityNode and MaxAffinityNode (\Registry\Machine\System\CurrentControlSet\Services\SmbDirect\Parameters) must specify a set of NUMA nodes that contain active processors. All of the system's processors will be eligible to perform SMB Direct processing until the error is corrected.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BaseAffinityNode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxAffinityNode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>300</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Debug</Channel>
+                <Level>Information</Level>
+                <Keyword>Connect</Keyword>
+                <Message><![CDATA[
+Starting connect. Socket = %1 Local = %3 Remote = %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SocketID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>301</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Debug</Channel>
+                <Level>Information</Level>
+                <Keyword>Connect</Keyword>
+                <Message><![CDATA[
+Connect succeeded. Socket = %1 Local = %3 Remote = %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SocketID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>302</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Debug</Channel>
+                <Level>Error</Level>
+                <Keyword>Connect</Keyword>
+                <Message><![CDATA[
+Connect failed. Socket = %1 Local = %3 Remote = %5 Status = %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SocketID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+  <data name="Status" inType="win:HexInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>303</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Debug</Channel>
+                <Level>Error</Level>
+                <Keyword>Connect</Keyword>
+                <Message><![CDATA[
+Timed out while waiting for connection establishment to complete - cancelling connect. Socket = %1 Local = %3 Remote = %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SocketID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>304</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Debug</Channel>
+                <Level>Error</Level>
+                <Keyword>Connect NDK</Keyword>
+                <Message><![CDATA[
+NdkConnect failed. Socket = %1 Local = %3 Remote = %5 Status = %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SocketID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+  <data name="Status" inType="win:HexInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>305</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Debug</Channel>
+                <Level>Error</Level>
+                <Keyword>Connect NDK</Keyword>
+                <Message><![CDATA[
+NdkCompleteConnect failed. Socket = %1 Local = %3 Remote = %5 Status = %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SocketID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+  <data name="Status" inType="win:HexInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>306</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Debug</Channel>
+                <Level>Error</Level>
+                <Keyword>Connect Accept</Keyword>
+                <Message><![CDATA[
+Failed to negotiate a common SMB Direct version with the peer. Socket = %1 Local = %3 Remote = %5 MinVersion = %6 MaxVersion = %7 PeerMinVersion = %8 PeerMaxVersion = %9]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SocketID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+  <data name="MinVersion" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="MaxVersion" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="PeerMinVersion" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="PeerMaxVersion" inType="win:UInt16" outType="win:HexInt16"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>350</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Debug</Channel>
+                <Level>Information</Level>
+                <Keyword>Accept NDK</Keyword>
+                <Message><![CDATA[
+Received connect request. ListenSocket = %1 Local = %3 Remote = %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ListenSocketID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>351</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Debug</Channel>
+                <Level>Warning</Level>
+                <Keyword>Accept</Keyword>
+                <Message><![CDATA[
+Rejected connect request - connect backlog limit exceeded. ListenSocket = %1 Local = %3 Remote = %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ListenSocketID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>352</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Debug</Channel>
+                <Level>Warning</Level>
+                <Keyword>Accept</Keyword>
+                <Message><![CDATA[
+Rejected connect request - not enough memory. ListenSocket = %1 Local = %3 Remote = %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ListenSocketID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>353</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Debug</Channel>
+                <Level>Error</Level>
+                <Keyword>Accept</Keyword>
+                <Message><![CDATA[
+Timed-out while waiting to receive a negotiate request - cancelling accept. Socket = %1 Local = %3 Remote = %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SocketID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>354</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Debug</Channel>
+                <Level>Error</Level>
+                <Keyword>Accept NDK</Keyword>
+                <Message><![CDATA[
+NdkAccept failed. Socket = %1 Local = %3 Remote = %5 Status = %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SocketID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+  <data name="Status" inType="win:HexInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>355</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Debug</Channel>
+                <Level>Information</Level>
+                <Keyword>Accept</Keyword>
+                <Message><![CDATA[
+Accept started. Socket = %1 Local = %3 Remote = %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SocketID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>356</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Debug</Channel>
+                <Level>Information</Level>
+                <Keyword>Accept</Keyword>
+                <Message><![CDATA[
+Accept succeeded. Socket = %1 Local = %3 Remote = %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SocketID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>357</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Debug</Channel>
+                <Level>Error</Level>
+                <Keyword>Accept</Keyword>
+                <Message><![CDATA[
+Accept failed. Socket = %1 Local = %3 Remote = %5 Status = %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SocketID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+  <data name="Status" inType="win:HexInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>358</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Debug</Channel>
+                <Level>Error</Level>
+                <Keyword>Accept</Keyword>
+                <Message><![CDATA[
+Upper-level driver rejected the connection. Socket = %1 Status = %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SocketID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+  <data name="Status" inType="win:HexInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>400</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Debug</Channel>
+                <Level>Information</Level>
+                <Keyword>Disconnect NDK</Keyword>
+                <Message><![CDATA[
+NDK disconnect event. Socket = %1 Local = %3 Remote = %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SocketID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>401</Id>
+                <Version>2</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Debug</Channel>
+                <Level>Information</Level>
+                <Keyword>Disconnect</Keyword>
+                <Message><![CDATA[
+Disconnect started. Socket = %1 Local = %3 Remote = %5 State = %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SocketID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+  <data name="SocketState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>402</Id>
+                <Version>2</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Debug</Channel>
+                <Level>Information</Level>
+                <Keyword>Disconnect</Keyword>
+                <Message><![CDATA[
+Disconnect completed. Socket = %1 Local = %3 Remote = %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SocketID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>403</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Debug</Channel>
+                <Level>Information</Level>
+                <Keyword>Disconnect</Keyword>
+                <Message><![CDATA[
+Close started. Socket = %1 Local = %3 Remote = %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SocketID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>404</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Debug</Channel>
+                <Level>Information</Level>
+                <Keyword>Disconnect</Keyword>
+                <Message><![CDATA[
+Close completed. Socket = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SocketID" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>450</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Debug</Channel>
+                <Level>Verbose</Level>
+                <Keyword>Credits</Keyword>
+                <Message><![CDATA[
+Out of send credits - starting credit grant timer. Socket = %1 Local = %3 Remote = %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SocketID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>451</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Debug</Channel>
+                <Level>Verbose</Level>
+                <Keyword>Credits</Keyword>
+                <Message><![CDATA[
+Peer used their last send credit. Socket = %1 Local = %3 Remote = %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SocketID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>452</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Debug</Channel>
+                <Level>Verbose</Level>
+                <Keyword>Credits</Keyword>
+                <Message><![CDATA[
+Using last send credit. Socket = %1 Local = %3 Remote = %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SocketID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>453</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Debug</Channel>
+                <Level>Error</Level>
+                <Keyword>Credits</Keyword>
+                <Message><![CDATA[
+Timed-out while waiting to receive send credits. Socket = %1 Local = %3 Remote = %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SocketID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>454</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Debug</Channel>
+                <Level>Error</Level>
+                <Keyword>Credits</Keyword>
+                <Message><![CDATA[
+Protocol violation - the peer sent a packet but does not have a send credit. Socket = %1 Local = %3 Remote = %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SocketID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>455</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Debug</Channel>
+                <Level>Error</Level>
+                <Keyword>Credits</Keyword>
+                <Message><![CDATA[
+Protocol violation - the peer used their last send credit but did not grant a send credit. Socket = %1 Local = %3 Remote = %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SocketID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>456</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Debug</Channel>
+                <Level>Verbose</Level>
+                <Keyword>Credits</Keyword>
+                <Message><![CDATA[
+Granted the peer %6 additional send credits. Socket %1 Local = %3 Remote = %5 PeerSendCredits = %7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SocketID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+  <data name="PeerSendCreditsGranted" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PeerSendCredits" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>457</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Debug</Channel>
+                <Level>Verbose</Level>
+                <Keyword>Credits</Keyword>
+                <Message><![CDATA[
+Received a grant of %6 credits. Socket = %1 Local = %3 Remote = %5 SendCreditsAccepted = %7 SendCredits = %8]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SocketID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+  <data name="SendCreditsReceived" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SendCreditsAccepted" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SendCredits" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>500</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Debug</Channel>
+                <Level>Error</Level>
+                <Keyword>NDK</Keyword>
+                <Message><![CDATA[
+Failed to post a %6 SQ work request. Socket = %1 Local = %3 Remote = %5 Status = %7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SocketID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:HexInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>501</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Debug</Channel>
+                <Level>Error</Level>
+                <Keyword>NDK</Keyword>
+                <Message><![CDATA[
+%6 SQ work request failed. Socket = %1 Local = %3 Remote = %5 Status = %7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SocketID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:HexInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>502</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Debug</Channel>
+                <Level>Error</Level>
+                <Keyword>NDK</Keyword>
+                <Message><![CDATA[
+Failed to post a Receive work request. Socket = %1 Local = %3 Remote = %5 Status = %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SocketID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+  <data name="Status" inType="win:HexInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>503</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Debug</Channel>
+                <Level>Error</Level>
+                <Keyword>NDK</Keyword>
+                <Message><![CDATA[
+Receive work request failed. Socket = %1 Local = %3 Remote = %5 Status = %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SocketID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+  <data name="Status" inType="win:HexInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1000</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Timed-out out while waiting to receive a keepalive response. Socket = %1 Local = %3 Remote = %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SocketID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1001</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Protocol violation - received packet is too small or contains at least one invalid value. Socket = %1 Local = %3 Remote = %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SocketID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Protocol violation - total fragmented payload is larger than indicated by first fragment. Socket = %1 Local = %3 Remote = %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SocketID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Protocol violation - total fragmented payload is smaller than indicated by first fragment. Socket = %1 Local = %3 Remote = %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SocketID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to allocate a fragment reassembly buffer. Socket = %1 Local = %3 Remote = %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SocketID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+%6 operation failed. Socket = %1 Local = %3 Remote = %5 Status = %7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SocketID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:HexInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1006</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Created socket. Socket = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SocketID" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1007</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to create socket. Socket = %1 Status = %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SocketID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Status" inType="win:HexInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1008</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Debug</Channel>
+                <Level>Information</Level>
+                <Keyword>Connect Accept</Keyword>
+                <Message><![CDATA[
+Finished negotiating connection properties. Socket = %1 Local = %3 Remote = %5 ProtocolVersion = %6 MaxReadWriteSize = %7 MaxReceiveSize = %8 MaxFragmentedReceiveSize = %9 MaxSendSize = %10 MaxFragmentedSendSize = %11 IRD = %12 ORD = %13]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SocketID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+  <data name="ProtocolVersion" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="MaxReadWriteSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxReceiveSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxFragmentedReceiveSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxSendSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxFragmentedSendSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InboundReadDepth" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OutboundReadDepth" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1009</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Debug</Channel>
+                <Level>Critical</Level>
+                <Keyword>Disconnect</Keyword>
+                <Message><![CDATA[
+A completion queue has failed and is no longer indicating completions. Socket = %1 Local = %3 Remote = %5 Status = %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SocketID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+  <data name="Status" inType="win:HexInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1010</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Debug</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+Updated SCQ interrupt moderation parameters. Socket = %1 Count = %2 IntervalInMicroSeconds = %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SocketID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Count" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IntervalInMicroSeconds" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1011</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Debug</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+Updated RCQ interrupt moderation parameters. Socket = %1 Count = %2 IntervalInMicroSeconds = %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SocketID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Count" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IntervalInMicroSeconds" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9500</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Opened network adapter '%1'. NdkMajorVer = %2 NdkMinorVer = %3 VendorId = %4 DeviceId = %5 MaxRegistrationSize = %6 MaxWindowSize = %7 FrmrPageCount = %8 MaxInitiatorRequestSge = %9 MaxReceiveRequestSge = %10 MaxReadRequestSge = %11 MaxTransferLength = %12 MaxInlineDataSize = %13 MaxInboundReadLimit = %14 MaxOutboundReadLimit = %15 MaxReceiveQueueDepth = %16 MaxInitiatorQueueDepth = %17 MaxSrqDepth = %18 MaxCqDepth = %19 LargeRequestThreshold = %20 MaxCallerData = %21 MaxCalleeData = %22 AdapterFlags = %23]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AdapterAlias" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NdkMajorVer" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="NdkMinorVer" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VendorId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="DeviceId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="MaxRegistrationSize" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="MaxWindowSize" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="FrmrPageCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxInitiatorRequestSge" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxReceiveRequestSge" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxReadRequestSge" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxTransferLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxInlineDataSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxInboundReadLimit" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxOutboundReadLimit" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxReceiveQueueDepth" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxInitiatorQueueDepth" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxSrqDepth" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxCqDepth" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LargeRequestThreshold" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxCallerData" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxCalleeData" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AdapterFlags" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10000</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Netmon</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Received negotiate request. Socket = %1 Local = %3 Remote = %5 MinVersion = %6 MaxVersion = %7 Reserved = %8 CreditsRequested = %9 PreferredSendSize = %10 MaxReceiveSize = %11 MaxFragmentReassemblyBufferSize = %12]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SocketID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+  <data name="MinVersion" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="MaxVersion" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="Reserved" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="CreditsRequested" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PreferredSendSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxReceiveSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxFragmentReassemblyBufferSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10001</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Netmon</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Sending negotiate request. Socket = %1 Local = %3 Remote = %5 MinVersion = %6 MaxVersion = %7 Reserved = %8 CreditsRequested = %9 PreferredSendSize = %10 MaxReceiveSize = %11 MaxFragmentReassemblyBufferSize = %12]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SocketID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+  <data name="MinVersion" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="MaxVersion" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="Reserved" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="CreditsRequested" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PreferredSendSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxReceiveSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxFragmentReassemblyBufferSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10002</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Netmon</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Received negotiate response. Socket = %1 Local = %3 Remote = %5 MinVersion = %6 MaxVersion = %7 NegotiatedVersion = %8 Reserved = %9 CreditsRequested = %10 CreditsGranted = %11 Status = %12 MaxReadWriteSize = %13 PreferredSendSize = %14 MaxReceiveSize = %15 MaxFragmentReassemblyBufferSize = %16]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SocketID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+  <data name="MinVersion" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="MaxVersion" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="NegotiatedVersion" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="Reserved" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="CreditsRequested" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="CreditsGranted" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="MaxReadWriteSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PreferredSendSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxReceiveSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxFragmentReassemblyBufferSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10003</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Netmon</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Sending negotiate response. Socket = %1 Local = %3 Remote = %5 MinVersion = %6 MaxVersion = %7 NegotiatedVersion = %8 Reserved = %9 CreditsRequested = %10 CreditsGranted = %11 Status = %12 MaxReadWriteSize = %13 PreferredSendSize = %14 MaxReceiveSize = %15 MaxFragmentReassemblyBufferSize = %16]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SocketID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+  <data name="MinVersion" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="MaxVersion" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="NegotiatedVersion" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="Reserved" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="CreditsRequested" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="CreditsGranted" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="MaxReadWriteSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PreferredSendSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxReceiveSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxFragmentReassemblyBufferSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10004</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Netmon</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Received data. Socket = %1 Local = %3 Remote = %5 CreditsRequested = %6 CreditsGranted = %7 Flags = %8 Reserved = %9 RemainingDataLength = %10 DataOffset = %11 DataLength = %12]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SocketID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+  <data name="CreditsRequested" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="CreditsGranted" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Flags" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="Reserved" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="RemainingDataLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DataOffset" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DataLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10005</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Netmon</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Sending data. Socket = %1 Local = %3 Remote = %5 CreditsRequested = %6 CreditsGranted = %7 Flags = %8 Reserved = %9 RemainingDataLength = %10 DataOffset = %11 DataLength = %12]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SocketID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+  <data name="CreditsRequested" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="CreditsGranted" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Flags" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="Reserved" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="RemainingDataLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DataOffset" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DataLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
