@@ -1,0 +1,278 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-User-Loader</Name>
+        <Metadata>
+            <Guid>{B059B83F-D946-4B13-87CA-4292839DC2F2}</Guid>
+            <ResourceFilePath>C:\Windows\system32\Microsoft-Windows-System-Events.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\Microsoft-Windows-System-Events.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.19041.662&amp;FileName=Microsoft-Windows-System-Events.dll&amp;FileVer=10.0.19041.662</HelpLink>
+            <PublisherMessage>Microsoft-Windows-User-Loader</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Application</Message>
+                    <Path>Application</Path>
+                    <Index>0</Index>
+                    <Id>9</Id>
+                    <Imported>true</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-User-Loader/Operational</Path>
+                    <Index>1</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-User-Loader/Analytic</Path>
+                    <Index>2</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Critical</Message>
+                    <Name>win:Critical</Name>
+                    <Value>1</Value>
+                </Level>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Deprecated dlls</Message>
+                    <Name>USER_LOADER_KEYWORD_DEPRECATED_DLL</Name>
+                    <Value>16</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Fatal user callback exception</Message>
+                    <Name>USER_LOADER_FATAL_CALLBACK_EXCEPTION</Name>
+                    <Value>32</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>A dll failed to load.</Message>
+                    <Name>USER_LOADER_KEYWORD_LOAD_FAILURE</Name>
+                    <Value>64</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Launch 16bit application</Message>
+                    <Name>USER_LOADER_LAUNCH_16BIT_APP</Name>
+                    <Value>128</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Windows component on demand.</Message>
+                    <Name>USER_LOADER_KEYWORD_COMPONENT_ON_DEMAND</Name>
+                    <Value>256</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>The Loader encountered a fatal error.</Message>
+                    <Name>USER_LOADER_KEYWORD_LOAD_FATAL_ERROR</Name>
+                    <Value>512</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User-Loader/Analytic</Channel>
+                <Level>Information</Level>
+                <Keyword>Deprecated dlls</Keyword>
+                <Message><![CDATA[
+Deprecated module %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User-Loader/Analytic</Channel>
+                <Level>Information</Level>
+                <Keyword>Fatal user callback exception</Keyword>
+                <Message><![CDATA[
+Process %2 encountered a fatal user callback exception.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessFileNamePathLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ProcessFileNamePath" inType="win:UnicodeString" outType="xs:string" length="ProcessFileNamePathLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User-Loader/Analytic</Channel>
+                <Level>Information</Level>
+                <Keyword>A dll failed to load.</Keyword>
+                <Message><![CDATA[
+Error status code %1 returned when %3 attempted to load dependency %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FailureReason" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ImportDllName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessImagePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User-Loader/Analytic</Channel>
+                <Level>Information</Level>
+                <Keyword>Launch 16bit application</Keyword>
+                <Message><![CDATA[
+The process launches a 16 bit process.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User-Loader/Analytic</Channel>
+                <Level>Information</Level>
+                <Keyword>Windows component on demand.</Keyword>
+                <Message><![CDATA[
+Windows component on demand %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SuspendProcessRequest" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DLLName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User-Loader/Analytic</Channel>
+                <Level>Warning</Level>
+                <Keyword>The Loader encountered a fatal error.</Keyword>
+                <Message><![CDATA[
+The Loader encountered a fatal error while loading a thread from process image name %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User-Loader/Analytic</Channel>
+                <Level>Warning</Level>
+                <Keyword>The Loader encountered a fatal error.</Keyword>
+                <Message><![CDATA[
+A fatal error occured during initalization of %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User-Loader/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Error status code %1 returned when %3 attempted to load dependency %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FailureReason" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ImportDllName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ExportModule" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-User-Loader/Analytic</Channel>
+                <Level>Critical</Level>
+                <Keyword>The Loader encountered a fatal error.</Keyword>
+                <Message><![CDATA[
+The Loader encountered a fatal error running process image name %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Error status code %1 returned when %3 attempted to load dependency %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FailureReason" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ImportDllName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessImagePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Loading dependency %2 from the current directory was not allowed when attempted by %1. Another DLL was found: %3. For more information, see http://go.microsoft.com/fwlink/?LinkId=718136.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessImagePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CurDirDllPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FoundDllPath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Loading dependency %2 from the current directory was not allowed when attempted by %1. No other DLL was found and the dependency resolution failed. For more information, see http://go.microsoft.com/fwlink/?LinkId=718136.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessImagePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CurDirDllPath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
