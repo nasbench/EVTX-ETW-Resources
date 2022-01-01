@@ -1,5 +1,0 @@
-Provider                            |  Level              |  Event ID  |  Version  |  Channel                                         |  Task  |  Opcode  |  Keyword  |  Message
-------------------------------------|---------------------|------------|-----------|--------------------------------------------------|--------|----------|-----------|---------
-Microsoft-Windows-Compat-Appraiser  |  win:Informational  |  1         |  0        |  Microsoft-Windows-Compat-Appraiser/Analytic     |        |          |  Info     |
-Microsoft-Windows-Compat-Appraiser  |  win:Error          |  2         |  0        |  Microsoft-Windows-Compat-Appraiser/Analytic     |        |          |  Error    |
-Microsoft-Windows-Compat-Appraiser  |  win:Informational  |  3         |  0        |  Microsoft-Windows-Compat-Appraiser/Operational  |        |          |           |

@@ -1,3 +1,0 @@
-Provider                              |  Level        |  Event ID  |  Version  |  Channel                                          |  Task                        |  Opcode  |  Keyword  |  Message
---------------------------------------|---------------|------------|-----------|---------------------------------------------------|------------------------------|----------|-----------|---------
-Microsoft-Windows-UserAccountControl  |  Information  |  16        |  0        |  Microsoft-Windows-UserAccountControl/Diagnostic  |  UserAccountControl_UIReady  |  Stop    |           |

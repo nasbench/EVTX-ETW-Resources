@@ -1,4 +1,0 @@
-Provider                                    |  Level        |  Event ID  |  Version  |  Channel                                  |  Task              |  Opcode  |  Keyword  |  Message
---------------------------------------------|---------------|------------|-----------|-------------------------------------------|--------------------|----------|-----------|---------
-Microsoft-Windows-Globalization-FontGroups  |  Information  |  1         |  0        |  Microsoft-Windows-FontGroups/Diagnostic  |  GetPreferredFont  |  Start   |           |
-Microsoft-Windows-Globalization-FontGroups  |  Information  |  2         |  0        |  Microsoft-Windows-FontGroups/Diagnostic  |  GetPreferredFont  |  Stop    |           |

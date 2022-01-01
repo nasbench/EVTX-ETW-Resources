@@ -1,3 +1,0 @@
-Provider                       |  Level        |  Event ID  |  Version  |  Channel                        |  Task  |  Opcode  |  Keyword  |  Message
--------------------------------|---------------|------------|-----------|---------------------------------|--------|----------|-----------|--------------------------------------------------------------
-Microsoft-Windows-WinINet-Pca  |  Information  |  63200     |  0        |  Microsoft-Windows-WinINet/Pca  |        |          |  WDI      |  The WinINet TLS handshake failed with version mismatch error

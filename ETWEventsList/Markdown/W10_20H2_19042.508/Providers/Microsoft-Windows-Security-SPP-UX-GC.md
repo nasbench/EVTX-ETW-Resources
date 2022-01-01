@@ -1,4 +1,0 @@
-Provider                              |  Level        |  Event ID  |  Version  |  Channel                                        |  Task                            |  Opcode  |  Keyword  |  Message
---------------------------------------|---------------|------------|-----------|-------------------------------------------------|----------------------------------|----------|-----------|---------
-Microsoft-Windows-Security-SPP-UX-GC  |  Information  |  100       |  0        |  Microsoft-Windows-Security-SPP-UX-GC/Analytic  |  Security_SPP_UX_GC_MainDisplay  |  Start   |           |
-Microsoft-Windows-Security-SPP-UX-GC  |  Information  |  101       |  0        |  Microsoft-Windows-Security-SPP-UX-GC/Analytic  |  Security_SPP_UX_GC_MainDisplay  |  Stop    |           |

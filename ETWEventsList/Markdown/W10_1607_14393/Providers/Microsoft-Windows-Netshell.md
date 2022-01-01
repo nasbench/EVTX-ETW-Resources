@@ -1,3 +1,0 @@
-Provider                    |  Level        |  Event ID  |  Version  |  Channel                                 |  Task          |  Opcode  |  Keyword  |  Message
-----------------------------|---------------|------------|-----------|------------------------------------------|----------------|----------|-----------|---------
-Microsoft-Windows-Netshell  |  Information  |  8001      |  0        |  Microsoft-Windows-NetShell/Performance  |  ShowNetShell  |  Stop    |           |

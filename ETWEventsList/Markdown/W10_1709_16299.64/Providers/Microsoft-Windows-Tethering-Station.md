@@ -1,5 +1,0 @@
-Provider                             |  Level        |  Event ID  |  Version  |  Channel                                       |  Task  |  Opcode  |  Keyword  |  Message
--------------------------------------|---------------|------------|-----------|------------------------------------------------|--------|----------|-----------|---------
-Microsoft-Windows-Tethering-Station  |  Information  |  1001      |  0        |  Microsoft-Windows-Tethering-Station/Analytic  |        |  Start   |           |
-Microsoft-Windows-Tethering-Station  |  Information  |  1002      |  0        |  Microsoft-Windows-Tethering-Station/Analytic  |        |  Stop    |           |
-Microsoft-Windows-Tethering-Station  |  Information  |  1003      |  0        |  Microsoft-Windows-Tethering-Station/Analytic  |        |  Stop    |           |

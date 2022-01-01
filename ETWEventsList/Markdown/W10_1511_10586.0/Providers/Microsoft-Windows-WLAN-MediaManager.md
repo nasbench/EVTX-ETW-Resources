@@ -1,7 +1,0 @@
-Provider                             |  Level        |  Event ID  |  Version  |  Channel                                         |  Task                 |  Opcode  |  Keyword  |  Message
--------------------------------------|---------------|------------|-----------|--------------------------------------------------|-----------------------|----------|-----------|---------
-Microsoft-Windows-WLAN-MediaManager  |  Information  |  1         |  0        |  Microsoft-Windows-WLAN-MediaManager/Diagnostic  |  Create_Context_Menu  |  Start   |           |
-Microsoft-Windows-WLAN-MediaManager  |  Information  |  2         |  0        |  Microsoft-Windows-WLAN-MediaManager/Diagnostic  |  Create_Context_Menu  |  Stop    |           |
-Microsoft-Windows-WLAN-MediaManager  |  Information  |  3         |  0        |  Microsoft-Windows-WLAN-MediaManager/Diagnostic  |  Show_Data_Usage      |          |           |
-Microsoft-Windows-WLAN-MediaManager  |  Information  |  4         |  0        |  Microsoft-Windows-WLAN-MediaManager/Diagnostic  |  Hide_Data_Usage      |          |           |
-Microsoft-Windows-WLAN-MediaManager  |  Information  |  5         |  0        |  Microsoft-Windows-WLAN-MediaManager/Diagnostic  |  Change_Network_Cost  |          |           |

@@ -1,4 +1,0 @@
-Provider                 |  Level        |  Event ID  |  Version  |  Channel  |  Task  |  Opcode  |  Keyword  |  Message
--------------------------|---------------|------------|-----------|-----------|--------|----------|-----------|---------------------------------------------------------------------------------------------------------------
-Microsoft-Windows-SCPNP  |  Error        |  1000      |  0        |  System   |        |          |           |  Could not get device ID for smart card in reader {ReaderName}. The return code is {ErrorCode}.
-Microsoft-Windows-SCPNP  |  Information  |  1001      |  0        |  System   |        |          |           |  Software successfully installed for smart card in reader {ReaderName}. The smart card name is {FriendlyName}.

@@ -1,6 +1,0 @@
-Provider                              |  Level        |  Event ID  |  Version  |  Channel                                          |  Task                             |  Opcode  |  Keyword              |  Message
---------------------------------------|---------------|------------|-----------|---------------------------------------------------|-----------------------------------|----------|-----------------------|---------
-Microsoft-Windows-ClearTypeTextTuner  |  Information  |  1         |  0        |  Microsoft-Windows-ClearTypeTextTuner/Diagnostic  |  ClearTypeTextTuner_LaunchApp     |  Start   |  PerfInstrumentation  |
-Microsoft-Windows-ClearTypeTextTuner  |  Information  |  2         |  0        |  Microsoft-Windows-ClearTypeTextTuner/Diagnostic  |  ClearTypeTextTuner_LaunchApp     |  Stop    |  PerfInstrumentation  |
-Microsoft-Windows-ClearTypeTextTuner  |  Information  |  3         |  0        |  Microsoft-Windows-ClearTypeTextTuner/Diagnostic  |  ClearTypeTextTuner_ApplyChanges  |  Start   |  PerfInstrumentation  |
-Microsoft-Windows-ClearTypeTextTuner  |  Information  |  4         |  0        |  Microsoft-Windows-ClearTypeTextTuner/Diagnostic  |  ClearTypeTextTuner_ApplyChanges  |  Stop    |  PerfInstrumentation  |

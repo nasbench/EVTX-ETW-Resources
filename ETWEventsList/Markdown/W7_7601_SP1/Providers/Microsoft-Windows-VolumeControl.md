@@ -1,4 +1,0 @@
-Provider                         |  Level        |  Event ID  |  Version  |  Channel      |  Task                         |  Opcode  |  Keyword  |  Message
----------------------------------|---------------|------------|-----------|---------------|-------------------------------|----------|-----------|---------
-Microsoft-Windows-VolumeControl  |  Information  |  102       |  0        |  Performance  |  AudioPerf_Task_LaunchFlyout  |  Start   |           |
-Microsoft-Windows-VolumeControl  |  Information  |  103       |  0        |  Performance  |  AudioPerf_Task_LaunchFlyout  |  Stop    |           |

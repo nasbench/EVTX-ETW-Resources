@@ -1,9 +1,0 @@
-Provider                         |  Level        |  Event ID  |  Version  |  Channel                                   |  Task                  |  Opcode  |  Keyword      |  Message
----------------------------------|---------------|------------|-----------|--------------------------------------------|------------------------|----------|---------------|----------------------------------------------------------
-Microsoft-Windows-SetupPlatform  |  Information  |  1001      |  0        |  Microsoft-Windows-SetupPlatform/Analytic  |  Run operation         |  Start   |  Performance  |  Start operation: {Operation}; {ErrorCode}
-Microsoft-Windows-SetupPlatform  |  Information  |  1002      |  0        |  Microsoft-Windows-SetupPlatform/Analytic  |  Run operation         |  Stop    |  Performance  |  Stop operation: {Operation}; {ErrorCode}
-Microsoft-Windows-SetupPlatform  |  Information  |  1003      |  0        |  Microsoft-Windows-SetupPlatform/Analytic  |  Online gather         |  Start   |  Performance  |  Online gather starts: {OfflineWinDir}; {MachineSpecific}
-Microsoft-Windows-SetupPlatform  |  Information  |  1004      |  0        |  Microsoft-Windows-SetupPlatform/Analytic  |  Online gather         |  Stop    |  Performance  |  Online gather stops: {OfflineWinDir}; {MachineSpecific}
-Microsoft-Windows-SetupPlatform  |  Information  |  1005      |  0        |  Microsoft-Windows-SetupPlatform/Analytic  |  Offline gather        |  Start   |  Performance  |
-Microsoft-Windows-SetupPlatform  |  Information  |  1006      |  0        |  Microsoft-Windows-SetupPlatform/Analytic  |  Offline gather        |  Stop    |  Performance  |
-Microsoft-Windows-SetupPlatform  |  Information  |  2005      |  0        |  System                                    |  Install Windows Task  |          |               |  New Setup information

@@ -1,3 +1,0 @@
-Provider               |  Level        |  Event ID  |  Version  |  Channel                           |  Task               |  Opcode  |  Keyword  |  Message
------------------------|---------------|------------|-----------|------------------------------------|---------------------|----------|-----------|---------
-Microsoft-Windows-PCI  |  Information  |  10        |  0        |  Microsoft-Windows-PCI/Diagnostic  |  AspmErrataRundown  |          |  Diag     |

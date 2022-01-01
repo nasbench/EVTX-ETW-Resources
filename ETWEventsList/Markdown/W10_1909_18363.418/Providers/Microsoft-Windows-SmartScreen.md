@@ -1,6 +1,0 @@
-Provider                       |  Level        |  Event ID  |  Version  |  Channel                              |  Task  |  Opcode  |  Keyword  |  Message
--------------------------------|---------------|------------|-----------|---------------------------------------|--------|----------|-----------|---------------------------------
-Microsoft-Windows-SmartScreen  |  Information  |  1000      |  0        |  Microsoft-Windows-SmartScreen/Debug  |        |          |           |  Application SmartScreen Event
-Microsoft-Windows-SmartScreen  |  Information  |  1001      |  0        |  Microsoft-Windows-SmartScreen/Debug  |        |          |           |  Uri SmartScreen Event
-Microsoft-Windows-SmartScreen  |  Information  |  1002      |  0        |  Microsoft-Windows-SmartScreen/Debug  |        |          |           |  User Decision SmartScreen Event
-Microsoft-Windows-SmartScreen  |  Verbose      |  1003      |  0        |  Microsoft-Windows-SmartScreen/Debug  |        |          |           |  Telemetry SmartScreen Event

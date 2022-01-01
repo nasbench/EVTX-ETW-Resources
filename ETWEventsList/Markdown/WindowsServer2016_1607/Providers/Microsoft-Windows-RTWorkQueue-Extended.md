@@ -1,4 +1,0 @@
-Provider                                |  Level        |  Event ID  |  Version  |  Channel               |  Task                             |  Opcode  |  Keyword  |  Message
-----------------------------------------|---------------|------------|-----------|------------------------|-----------------------------------|----------|-----------|-------------------------------------------------------------------------------------------
-Microsoft-Windows-RTWorkQueue-Extended  |  Information  |  1         |  0        |  RTWorkQueue Extended  |  WorkQueue: Queue Extended        |          |           |  WorkQueue Queue extended: AsyncResult={AsyncResult} AsyncResultVTable={AsyncResultVTable}
-Microsoft-Windows-RTWorkQueue-Extended  |  Verbose      |  2         |  0        |  RTWorkQueue Extended  |  WorkQueue: Extended LongRunning  |          |           |  WorkQueue Extended LongRunning: RefCount workQueueID={WorkQueueID} refcount={RefCount}

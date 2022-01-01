@@ -1,6 +1,0 @@
-Provider                                 |  Level        |  Event ID  |  Version  |  Channel  |  Task                   |  Opcode  |  Keyword  |  Message
------------------------------------------|---------------|------------|-----------|-----------|-------------------------|----------|-----------|---------
-Microsoft-Windows-ErrorReportingConsole  |  Information  |  105       |  0        |           |  PrsCplPageLayout       |  Start   |           |
-Microsoft-Windows-ErrorReportingConsole  |  Information  |  106       |  0        |           |  PrsCplPageLayout       |  Stop    |           |
-Microsoft-Windows-ErrorReportingConsole  |  Information  |  111       |  0        |           |  PrsReportDbPopulation  |  Start   |           |
-Microsoft-Windows-ErrorReportingConsole  |  Information  |  112       |  0        |           |  PrsReportDbPopulation  |  Stop    |           |

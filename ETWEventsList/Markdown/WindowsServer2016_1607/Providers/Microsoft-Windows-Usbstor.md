@@ -1,3 +1,0 @@
-Provider                   |  Level        |  Event ID  |  Version  |  Channel                             |  Task  |  Opcode  |  Keyword                       |  Message
----------------------------|---------------|------------|-----------|--------------------------------------|--------|----------|--------------------------------|-------------------------------------------------------
-Microsoft-Windows-Usbstor  |  Information  |  100       |  0        |  Microsoft-Windows-Usbstor/Analytic  |  Io    |          |  Logo Performance measurement  |  Request servicing time taken by USBSTOR driver stack.

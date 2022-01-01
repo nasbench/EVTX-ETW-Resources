@@ -1,5 +1,0 @@
-Provider                                        |  Level              |  Event ID  |  Version  |  Channel                                                     |  Task  |  Opcode  |  Keyword  |  Message
-------------------------------------------------|---------------------|------------|-----------|--------------------------------------------------------------|--------|----------|-----------|---------
-Microsoft-System-Diagnostics-DiagnosticInvoker  |  win:Informational  |  101       |  0        |  Microsoft-System-Diagnostics-DiagnosticInvoker/Operational  |        |          |           |
-Microsoft-System-Diagnostics-DiagnosticInvoker  |  win:Warning        |  102       |  0        |  Microsoft-System-Diagnostics-DiagnosticInvoker/Operational  |        |          |           |
-Microsoft-System-Diagnostics-DiagnosticInvoker  |  win:Error          |  103       |  0        |  Microsoft-System-Diagnostics-DiagnosticInvoker/Operational  |        |          |           |

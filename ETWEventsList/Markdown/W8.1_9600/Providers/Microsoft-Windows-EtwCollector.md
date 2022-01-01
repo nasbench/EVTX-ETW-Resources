@@ -1,7 +1,0 @@
-Provider                        |  Level        |  Event ID  |  Version  |  Channel  |  Task  |  Opcode  |  Keyword  |  Message
---------------------------------|---------------|------------|-----------|-----------|--------|----------|-----------|-----------------------------------------------------------------------------------------
-Microsoft-Windows-EtwCollector  |  Information  |  1         |  1        |           |        |          |           |  Profiling for target ({ProcessID}) has started.
-Microsoft-Windows-EtwCollector  |  Information  |  2         |  0        |           |        |          |           |  Profiling for target ({ProcessID}) has stopped.
-Microsoft-Windows-EtwCollector  |  Information  |  3         |  0        |           |        |          |           |
-Microsoft-Windows-EtwCollector  |  Information  |  4         |  0        |           |        |          |           |
-Microsoft-Windows-EtwCollector  |  Information  |  5         |  0        |           |        |          |           |  Machine [Name: {Name}] [OS Description: {OSDescription}] [Architecture: {Architecture}]

@@ -1,4 +1,0 @@
-Provider                         |  Level        |  Event ID  |  Version  |  Channel                                       |  Task  |  Opcode  |  Keyword  |  Message
----------------------------------|---------------|------------|-----------|------------------------------------------------|--------|----------|-----------|-----------------------
-Microsoft-Windows-WindowsBackup  |  Information  |  100       |  0        |  Microsoft-Windows-WindowsBackup/ActionCenter  |        |          |           |  Windows Backup status
-Microsoft-Windows-WindowsBackup  |  Information  |  101       |  0        |  Microsoft-Windows-WindowsBackup/ActionCenter  |        |          |           |  Windows Backup status

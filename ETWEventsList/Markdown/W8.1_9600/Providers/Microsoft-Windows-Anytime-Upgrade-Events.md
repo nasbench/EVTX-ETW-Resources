@@ -1,6 +1,0 @@
-Provider                                  |  Level    |  Event ID  |  Version  |  Channel                                               |  Task  |  Opcode  |  Keyword  |  Message
-------------------------------------------|-----------|------------|-----------|--------------------------------------------------------|--------|----------|-----------|----------------------------------------------
-Microsoft-Windows-Anytime-Upgrade-Events  |  Warning  |  100       |  0        |  Microsoft-Windows-Anytime-Upgrade-Events/Operational  |        |          |           |  WAU isn't supported for Windows [{str_Sku}].
-Microsoft-Windows-Anytime-Upgrade-Events  |  Error    |  101       |  0        |  Microsoft-Windows-Anytime-Upgrade-Events/Operational  |        |          |           |
-Microsoft-Windows-Anytime-Upgrade-Events  |  Error    |  102       |  0        |  Microsoft-Windows-Anytime-Upgrade-Events/Operational  |        |          |           |
-Microsoft-Windows-Anytime-Upgrade-Events  |  Error    |  103       |  0        |  Microsoft-Windows-Anytime-Upgrade-Events/Operational  |        |          |           |

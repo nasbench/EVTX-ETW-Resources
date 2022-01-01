@@ -1,4 +1,0 @@
-Provider                                |  Level        |  Event ID  |  Version  |  Channel  |  Task                       |  Opcode  |  Keyword  |  Message
-----------------------------------------|---------------|------------|-----------|-----------|-----------------------------|----------|-----------|---------
-Microsoft-Windows-Processor-Aggregator  |  Information  |  1         |  0        |           |  LogicalProcessorIdlingPUR  |          |           |
-Microsoft-Windows-Processor-Aggregator  |  Information  |  2         |  0        |           |  LogicalProcessorIdlingOST  |          |           |

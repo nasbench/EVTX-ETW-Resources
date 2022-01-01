@@ -1,4 +1,0 @@
-Provider  |  Level        |  Event ID  |  Version  |  Channel  |  Task  |  Opcode  |  Keyword  |  Message
-----------|---------------|------------|-----------|-----------|--------|----------|-----------|----------------------------------------------------------------------------------------------------------------------
-NetJoin   |  Information  |  4096      |  0        |  System   |        |          |           |  The machine {ComputerName} successfully joined the domain {DomainName}.
-NetJoin   |  Error        |  4097      |  0        |  System   |        |          |           |  The machine {ComputerName} attempted to join the domain {DomainName} but failed. The error code was {NetStatusCode}.

@@ -1,3 +1,0 @@
-Provider                                         |  Level        |  Event ID  |  Version  |  Channel                                              |  Task  |  Opcode  |  Keyword  |  Message
--------------------------------------------------|---------------|------------|-----------|-------------------------------------------------------|--------|----------|-----------|-----------------------------------
-Microsoft-Windows-StorageSpaces-ManagementAgent  |  Information  |  100       |  0        |  Microsoft-Windows-StorageSpaces-ManagementAgent/WHC  |        |          |           |  Storage Spaces status has changed

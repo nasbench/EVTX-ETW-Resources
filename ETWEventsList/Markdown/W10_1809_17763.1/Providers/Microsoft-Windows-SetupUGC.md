@@ -1,8 +1,0 @@
-Provider                    |  Level        |  Event ID  |  Version  |  Channel                              |  Task                         |  Opcode  |  Keyword      |  Message
-----------------------------|---------------|------------|-----------|---------------------------------------|-------------------------------|----------|---------------|---------------------------------------------------------------
-Microsoft-Windows-SetupUGC  |  Information  |  1001      |  0        |  Microsoft-Windows-SetupUGC/Analytic  |  Run SetupUGC                 |  Start   |  Performance  |  SetupUGC.exe running with command line '{CommandLine}'.
-Microsoft-Windows-SetupUGC  |  Information  |  1002      |  0        |  Microsoft-Windows-SetupUGC/Analytic  |  Run SetupUGC                 |  Stop    |  Performance  |  SetupUGC.exe exiting with status {ErrorCode}.
-Microsoft-Windows-SetupUGC  |  Information  |  2001      |  0        |  Microsoft-Windows-SetupUGC/Analytic  |  Running Processors for Pass  |  Start   |  Performance  |  Running Processors for pass '{Pass}'.
-Microsoft-Windows-SetupUGC  |  Information  |  2002      |  0        |  Microsoft-Windows-SetupUGC/Analytic  |  Running Processors for Pass  |  Stop    |  Performance  |  Finished running processors for pass with status {ErrorCode}.
-Microsoft-Windows-SetupUGC  |  Information  |  3001      |  0        |  Microsoft-Windows-SetupUGC/Analytic  |  Running Processor            |  Start   |  Performance  |  Running Processor '{Processor}'.
-Microsoft-Windows-SetupUGC  |  Information  |  3002      |  0        |  Microsoft-Windows-SetupUGC/Analytic  |  Running Processor            |  Stop    |  Performance  |  Finished running processor with status {ErrorCode}.

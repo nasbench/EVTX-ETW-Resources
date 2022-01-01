@@ -1,4 +1,0 @@
-Provider                    |  Level        |  Event ID  |  Version  |  Channel                                 |  Task  |  Opcode  |  Keyword  |  Message
-----------------------------|---------------|------------|-----------|------------------------------------------|--------|----------|-----------|---------
-Microsoft-Windows-VDRVROOT  |  Information  |  1         |  0        |  Microsoft-Windows-VDRVROOT/Operational  |        |          |           |
-Microsoft-Windows-VDRVROOT  |  Information  |  2         |  0        |  Microsoft-Windows-VDRVROOT/Operational  |        |          |           |

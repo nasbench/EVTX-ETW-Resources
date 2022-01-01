@@ -1,5 +1,0 @@
-Provider                                       |  Level        |  Event ID  |  Version  |  Channel                                            |  Task  |  Opcode  |  Keyword  |  Message
------------------------------------------------|---------------|------------|-----------|-----------------------------------------------------|--------|----------|-----------|----------------------
-Microsoft-Windows-ApplicationExperience-Cache  |  Information  |  3         |  0        |  Microsoft-Windows-Kernel-ApphelpCache/Operational  |        |          |           |  {OperationalMessage}
-Microsoft-Windows-ApplicationExperience-Cache  |  Information  |  4         |  0        |  Microsoft-Windows-Kernel-ApphelpCache/Analytic     |        |          |           |  {InfoMessage}
-Microsoft-Windows-ApplicationExperience-Cache  |  Error        |  5         |  0        |  Microsoft-Windows-Kernel-ApphelpCache/Debug        |        |          |           |  {DebugMessage}

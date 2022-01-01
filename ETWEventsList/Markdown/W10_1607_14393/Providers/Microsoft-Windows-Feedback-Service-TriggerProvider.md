@@ -1,3 +1,0 @@
-Provider                                            |  Level        |  Event ID  |  Version  |  Channel  |  Task          |  Opcode  |  Keyword  |  Message
-----------------------------------------------------|---------------|------------|-----------|-----------|----------------|----------|-----------|-----------------------------------------------------
-Microsoft-Windows-Feedback-Service-TriggerProvider  |  Information  |  0         |  0        |           |  StartTrigger  |          |  WerSvc   |  Windows Error Reporting service has been triggered.

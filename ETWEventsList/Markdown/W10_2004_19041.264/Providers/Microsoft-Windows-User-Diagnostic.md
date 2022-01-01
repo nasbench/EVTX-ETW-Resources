@@ -1,3 +1,0 @@
-Provider                           |  Level    |  Event ID  |  Version  |  Channel  |  Task  |  Opcode  |  Keyword  |  Message
------------------------------------|-----------|------------|-----------|-----------|--------|----------|-----------|---------
-Microsoft-Windows-User-Diagnostic  |  Warning  |  1         |  0        |           |        |          |           |

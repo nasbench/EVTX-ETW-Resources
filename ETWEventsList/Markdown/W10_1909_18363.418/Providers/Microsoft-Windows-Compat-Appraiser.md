@@ -1,5 +1,0 @@
-Provider                            |  Level        |  Event ID  |  Version  |  Channel                                         |  Task  |  Opcode  |  Keyword  |  Message
-------------------------------------|---------------|------------|-----------|--------------------------------------------------|--------|----------|-----------|-----------------------------------------------------------------------
-Microsoft-Windows-Compat-Appraiser  |  Information  |  1         |  0        |  Microsoft-Windows-Compat-Appraiser/Analytic     |        |          |  Info     |  Information from:{SourceFile}:{SourceLine}{FunctionName}{Message}
-Microsoft-Windows-Compat-Appraiser  |  Error        |  2         |  0        |  Microsoft-Windows-Compat-Appraiser/Analytic     |        |          |  Error    |  Error {HResult} from:{SourceFile}:{SourceLine}{FunctionName}{Message}
-Microsoft-Windows-Compat-Appraiser  |  Information  |  3         |  0        |  Microsoft-Windows-Compat-Appraiser/Operational  |        |          |           |  {Message}

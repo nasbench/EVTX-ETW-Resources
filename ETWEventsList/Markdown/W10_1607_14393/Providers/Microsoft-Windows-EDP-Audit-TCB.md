@@ -1,3 +1,0 @@
-Provider                         |  Level        |  Event ID  |  Version  |  Channel                                  |  Task  |  Opcode  |  Keyword                               |  Message
----------------------------------|---------------|------------|-----------|-------------------------------------------|--------|----------|----------------------------------------|---------------------------------------------------------------------------------------------
-Microsoft-Windows-EDP-Audit-TCB  |  Information  |  101       |  0        |  Microsoft Windows EDP Audit TCB Channel  |        |          |  EDP Audit Protection Removed Keyword  |  Enterprise {PreviousEnterpriseId} tag has been removed ({Policy}) from the file: {FilePath}
