@@ -1,0 +1,77 @@
+Provider,Level,Event ID,Version,Channel,Task,Opcode,Keyword,Message
+Microsoft-Windows-Deduplication-Change,Information,16384,0,,,,,Create chunk container ({ChunkStoreType} - {ContainerId}.{Generation}.ccc)
+Microsoft-Windows-Deduplication-Change,Information,16385,0,,,,,Create chunk container completed {CompletionStatus}
+Microsoft-Windows-Deduplication-Change,Information,16386,0,,,,,Copy chunk container ({ChunkStoreType} - {ContainerId}.{Generation}.ccc)
+Microsoft-Windows-Deduplication-Change,Information,16387,0,,,,,Copy chunk container completed {CompletionStatus}
+Microsoft-Windows-Deduplication-Change,Information,16388,0,,,,,Delete chunk container ({ChunkStoreType} - {ContainerId}.{Generation}.ccc)
+Microsoft-Windows-Deduplication-Change,Information,16389,0,,,,,Delete chunk container completed {CompletionStatus}
+Microsoft-Windows-Deduplication-Change,Information,16390,0,,,,,Rename chunk container ({ChunkStoreType} - {ContainerId}.{Generation}.ccc{InvalidFileName})
+Microsoft-Windows-Deduplication-Change,Information,16391,0,,,,,Rename chunk container completed {CompletionStatus}
+Microsoft-Windows-Deduplication-Change,Information,16392,0,,,,,Flush chunk container ({ChunkStoreType} - {ContainerId}.{Generation}.ccc)
+Microsoft-Windows-Deduplication-Change,Information,16393,0,,,,,Flush chunk container completed {CompletionStatus}
+Microsoft-Windows-Deduplication-Change,Information,16394,0,,,,,Rollback chunk container ({ChunkStoreType} - {ContainerId}.{Generation}.ccc)
+Microsoft-Windows-Deduplication-Change,Information,16395,0,,,,,Rollback chunk container completed {CompletionStatus}
+Microsoft-Windows-Deduplication-Change,Information,16396,0,,,,,Mark chunk container ({ChunkStoreType} - {ContainerId}.{Generation}.ccc) read-only
+Microsoft-Windows-Deduplication-Change,Information,16397,0,,,,,Mark chunk container read-only completed {CompletionStatus}
+Microsoft-Windows-Deduplication-Change,Information,16398,0,,,,,Write chunk container ({ChunkStoreType} - {ContainerId}.{Generation}.ccc) redirection table at offset {ContainerOffset} (Entries: StartIndex {StartIndex}; Count {EntryCount})
+Microsoft-Windows-Deduplication-Change,Information,16399,0,,,,,Write chunk container redirection table completed {CompletionStatus}
+Microsoft-Windows-Deduplication-Change,Information,16400,1,,,,,Write chunk container ({ChunkStoreType} - {ContainerId}.{Generation}.ccc) header at offset {ContainerOffset} (Header: USN {UpdateSequenceNumber}; VDL {Signature}0; #Chunk {Signature}1; NextLocalId {Signature}2; Flags {Signature}3; LastAppendTime {Signature}4; BackupRedirectionTableOfset {Signature}5; LastReconciliationLocalId {Signature}6)
+Microsoft-Windows-Deduplication-Change,Information,16401,0,,,,,Write chunk container header completed {CompletionStatus}
+Microsoft-Windows-Deduplication-Change,Information,16402,1,,,,,Insert data chunk header to chunk container ({ChunkStoreType} - {ContainerId}.{Generation}.ccc) at offset {WriteOffset} (Chunk: IsBatched {IsBatched} IsCorupted {IsCorrupted}; DataSize {DataSize})
+Microsoft-Windows-Deduplication-Change,Information,16403,0,,,,,Insert data chunk header completed {CompletionStatus}
+Microsoft-Windows-Deduplication-Change,Information,16404,1,,,,,Insert data chunk body to chunk container ({ChunkStoreType} - {ContainerId}.{Generation}.ccc) at offset {WriteOffset} (Chunk: IsBatched {IsBatched} IsCorrupted {IsCorrupted}; DataSize {DataSize})
+Microsoft-Windows-Deduplication-Change,Information,16405,0,,,,,Insert data chunk body completed {CompletionStatus} with ChunkId {ChunkId}
+Microsoft-Windows-Deduplication-Change,Information,16408,1,,,,,Write delete log ({ChunkStoreType} - {ContainerId}.{LogNumber}.delete.log) header
+Microsoft-Windows-Deduplication-Change,Information,16409,0,,,,,Write delete log header completed {CompletionStatus}
+Microsoft-Windows-Deduplication-Change,Information,16410,1,,,,,Append delete log ({ChunkStoreType} - {ContainerId}.{LogNumber}.delete.log) entries at offset {FileExtension} (Entries: StartIndex {DeleteLogOffset}; Count {StartIndex})
+Microsoft-Windows-Deduplication-Change,Information,16411,0,,,,,Append delete log entries completed {CompletionStatus}
+Microsoft-Windows-Deduplication-Change,Information,16412,1,,,,,Delete delete log ({ChunkStoreType} - {ContainerId}.{LogNumber}.delete.log)
+Microsoft-Windows-Deduplication-Change,Information,16413,0,,,,,Delete delete log completed {CompletionStatus}
+Microsoft-Windows-Deduplication-Change,Information,16414,1,,,,,Rename delete log ({ChunkStoreType} - {ContainerId}.{LogNumber}.delete.log)
+Microsoft-Windows-Deduplication-Change,Information,16415,0,,,,,Rename delete log completed {CompletionStatus}
+Microsoft-Windows-Deduplication-Change,Information,16416,1,,,,,Write chunk container bitmap ({ChunkStoreType} - {FileName}) for chunk container ({ChunkStoreType} - {ContainerId}.{Generation}) (Bitmap: BitLength {BitLength}; StartIndex {StartIndex}; Count {EntryCount})
+Microsoft-Windows-Deduplication-Change,Information,16417,0,,,,,Write chunk container bitmap completed {CompletionStatus}
+Microsoft-Windows-Deduplication-Change,Information,16418,1,,,,,Delete chunk container bitmap ({ChunkStoreType} - {FileName}) for chunk container ({ChunkStoreType} - {ContainerId}.{Generation})
+Microsoft-Windows-Deduplication-Change,Information,16419,0,,,,,Delete chunk container bitmap completed {CompletionStatus}
+Microsoft-Windows-Deduplication-Change,Information,16420,0,,,,,Write merge log ({ChunkStoreType} - {ContainerId}.{LogNumber}.merge.log) header
+Microsoft-Windows-Deduplication-Change,Information,16421,0,,,,,Write merge log header completed {CompletionStatus}
+Microsoft-Windows-Deduplication-Change,Information,16422,1,,,,,Insert hotspot chunk header to chunk container ({ChunkStoreType} - {ContainerId}.{Generation}.ccc) at offset {WriteOffset} (Chunk: IsBatched {IsBatched} IsCorrupted {IsCorrupted}; DataSize {DataSize})
+Microsoft-Windows-Deduplication-Change,Information,16423,0,,,,,Insert hotspot chunk header completed {CompletionStatus}
+Microsoft-Windows-Deduplication-Change,Information,16424,1,,,,,Insert hotspot chunk body to chunk container ({ChunkStoreType} - {ContainerId}.{Generation}.ccc) at offset {WriteOffset} (Chunk: IsBatched {IsBatched} IsCorrupted {IsCorrupted}; DataSize {DataSize})
+Microsoft-Windows-Deduplication-Change,Information,16425,0,,,,,Insert hotspot chunk body completed {CompletionStatus} with ChunkId {ChunkId}
+Microsoft-Windows-Deduplication-Change,Information,16426,1,,,,,Insert stream map chunk header to chunk container ({ChunkStoreType} - {ContainerId}.{Generation}.ccc) at offset {WriteOffset} (Chunk: IsBatched {IsBatched} IsCorrupted {IsCorrupted}; DataSize {DataSize})
+Microsoft-Windows-Deduplication-Change,Information,16427,0,,,,,Insert stream map chunk header completed {CompletionStatus}
+Microsoft-Windows-Deduplication-Change,Information,16428,3,,,,,Insert stream map chunk body to chunk container ({ChunkStoreType} - {ContainerId}.{Generation}.ccc) at offset {WriteOffset} (Chunk: IsBatched {IsBatched} IsCorrupted {IsCorrupted}; DataSize {DataSize}) (Entries: StartIndex {StartIndex}; Count {EntryCount})
+Microsoft-Windows-Deduplication-Change,Information,16429,0,,,,,Insert stream map chunk body completed {CompletionStatus} with ChunkId {ChunkId}
+Microsoft-Windows-Deduplication-Change,Information,16430,2,,,,,Append merge log ({ChunkStoreType} - {ContainerId}.{LogNumber}.merge.log) entries at offset {MergeLogOffset} (Entries: StartIndex {StartIndex}; Count {EntryCount})
+Microsoft-Windows-Deduplication-Change,Information,16431,0,,,,,Append merge log entries completed {CompletionStatus}
+Microsoft-Windows-Deduplication-Change,Information,16432,0,,,,,Delete merge log ({ChunkStoreType} - {ContainerId}.{LogNumber}.merge.log)
+Microsoft-Windows-Deduplication-Change,Information,16433,0,,,,,Delete merge log completed {CompletionStatus}
+Microsoft-Windows-Deduplication-Change,Information,16434,0,,,,,Flush merge log ({ChunkStoreType} - {ContainerId}.{LogNumber}.merge.log)
+Microsoft-Windows-Deduplication-Change,Information,16435,0,,,,,Flush merge log completed {CompletionStatus}
+Microsoft-Windows-Deduplication-Change,Information,16436,0,,,,,Update file list entries (Remove: {EntryToRemove}; Add: {EntryToAdd})
+Microsoft-Windows-Deduplication-Change,Information,16437,0,,,,,Update file list entries completed {CompletionStatus}
+Microsoft-Windows-Deduplication-Change,Information,16438,0,,,,,Set dedup reparse point on {FilePath} (FileId {FileId}) (ReparsePoint: SizeBackedByChunkStore {SizeBackedByChunkStore}; StreamMapInfoSize {StreamMapInfoSize}; StreamMapInfo {StreamMapInfo})
+Microsoft-Windows-Deduplication-Change,Information,16439,0,,,,,Set dedup reparse point completed {CompletionStatus} ({ReparsePointSet})
+Microsoft-Windows-Deduplication-Change,Information,16440,0,,,,,Set dedup zero data on {FilePath} (FileId {FileId})
+Microsoft-Windows-Deduplication-Change,Information,16441,0,,,,,Set dedup zero data completed {CompletionStatus}
+Microsoft-Windows-Deduplication-Change,Information,16442,0,,,,,Flush reparse point files
+Microsoft-Windows-Deduplication-Change,Information,16443,0,,,,,Flush reparse point files completed {CompletionStatus}
+Microsoft-Windows-Deduplication-Change,Information,16444,0,,,,,Set sparse on file id {FileId}
+Microsoft-Windows-Deduplication-Change,Information,16445,0,,,,,Set sparse completed {CompletionStatus}
+Microsoft-Windows-Deduplication-Change,Information,16446,0,,,,,FSCTL_SET_ZERO_DATA on file id {FileId} at offset {Offset} and BeyondFinalZero {BeyondFinalZero}
+Microsoft-Windows-Deduplication-Change,Information,16447,0,,,,,FSCTL_SET_ZERO_DATA completed {CompletionStatus}
+Microsoft-Windows-Deduplication-Change,Information,16448,0,,,,,Rename chunk container bitmap ({ChunkStoreType} - {FileName}) for chunk container ({ChunkStoreType} - {ContainerId}.{Generation})
+Microsoft-Windows-Deduplication-Change,Information,16449,0,,,,,Rename chunk container bitmap completed {CompletionStatus}
+Microsoft-Windows-Deduplication-Change,Information,16450,0,,,,,Insert padding chunk header to chunk container ({ChunkStoreType} - {ContainerId}.{Generation}.ccc) at offset {WriteOffset} (Chunk: IsBatched {IsBatched} IsCorupted {IsCorrupted}; DataSize {DataSize})
+Microsoft-Windows-Deduplication-Change,Information,16451,0,,,,,Insert padding chunk header completed {CompletionStatus}
+Microsoft-Windows-Deduplication-Change,Information,16452,0,,,,,Insert padding chunk body to chunk container ({ChunkStoreType} - {ContainerId}.{Generation}.ccc) at offset {WriteOffset} (Chunk: IsBatched {IsBatched} IsCorrupted {IsCorrupted}; DataSize {DataSize})
+Microsoft-Windows-Deduplication-Change,Information,16453,0,,,,,Insert padding chunk body completed {CompletionStatus} with ChunkId {ChunkId}
+Microsoft-Windows-Deduplication-Change,Information,16454,0,,,,,Insert batch of chunks to chunk container ({ChunkStoreType} - {ContainerId}.{Generation}.ccc) at offset {WriteOffset} (BatchChunkCount {BatchChunkCount}; BatchDataSize {BatchDataSize})
+Microsoft-Windows-Deduplication-Change,Information,16455,0,,,,,Insert batch of chunks completed {CompletionStatus}
+Microsoft-Windows-Deduplication-Change,Information,16456,1,,,,,Write chunk container directory ({ChunkStoreType} - {FileName}) for chunk container ({ChunkStoreType} - {ContainerId}.{Generation}) (Directory: EntryCount {FileCopyLevel})
+Microsoft-Windows-Deduplication-Change,Information,16457,0,,,,,Write chunk container directory completed {CompletionStatus}
+Microsoft-Windows-Deduplication-Change,Information,16458,1,,,,,Delete chunk container directory ({ChunkStoreType} - {FileName}) for chunk container ({ChunkStoreType} - {ContainerId}.{Generation})
+Microsoft-Windows-Deduplication-Change,Information,16459,0,,,,,Delete chunk container directory completed {CompletionStatus}
+Microsoft-Windows-Deduplication-Change,Information,16460,0,,,,,Rename chunk container directory ({ChunkStoreType} - {FileName}) for chunk container ({ChunkStoreType} - {ContainerId}.{Generation})
+Microsoft-Windows-Deduplication-Change,Information,16461,0,,,,,Rename chunk container directory completed {CompletionStatus}

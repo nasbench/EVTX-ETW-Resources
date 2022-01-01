@@ -1,0 +1,23 @@
+Provider,Level,Event ID,Version,Channel,Task,Opcode,Keyword,Message
+Microsoft-Windows-Audio,Warning,0,0,Microsoft-Windows-Audio/Operational,AudioServer_Fail_Service_Device,,,Windows Audio encountered an error while processing a device event.                    Event ID     : 0x{Event} ({EventName})                     Failure Code : 0x{hr}
+Microsoft-Windows-Audio,Warning,1,0,Microsoft-Windows-Audio/Operational,AudioServer_Fail_Device_Event_Worker,,,Windows Audio encountered an error while processing a device event.                    DeviceEventType : 0x{DeviceEventType} ({DeviceEventTypeName})                     Failure Code    : 0x{hr}
+Microsoft-Windows-Audio,Error,2,0,Application,AudioServer_Fail_Set_Service_Status,,,Windows Audio failed during a call to SetServiceStatus.                    Service Type               : 0x{dwServiceType}                     Current State              : 0x{dwCurrentState}                     Controls Accepted          : 0x{dwControlsAccepted}                     Win32 Exit Code            : 0x{dwWin32ExitCode}                     Service Specific Exit Code : 0x{dwServiceSpecificExitCode}                     Check Point                : 0x{dwCheckPoint}                     Wait Hint                  : 0x{dwWaitHint}
+Microsoft-Windows-Audio,Error,3,0,Microsoft-Windows-Audio/Operational,AudioServer_Fail_Subsystem_Startup,,,Windows Audio failed to start the {szSubsystemName} subsystem.                    Subsystem Failure Code     : 0x{dwSubsystemFailureCode} 
+Microsoft-Windows-Audio,Error,4,0,Microsoft-Windows-Audio/Operational,AudioServer_Fail_AudioDG_Crashed,,,The Windows Audio Device Graph Isolation process (audiodg.exe) has terminated unexpectedly.                    Process Exit Code     : 0x{dwAudioDgTerminationCode} 
+Microsoft-Windows-Audio,Error,5,0,Microsoft-Windows-Audio/Operational,AudioServer_Fail_AudioDG_Failed_Startup,,,The Windows Audio Device Graph Isolation process (audiodg.exe) could not be started.                    Error Code     : 0x{dwAudioDgStartupFailureCode} 
+Microsoft-Windows-Audio,Error,10,0,Microsoft-Windows-Audio/CaptureMonitor,CaptureMonitor_Monitor_Restart_Limit_Hit,,,The Capture Monitor has failed to restart the capture monitor between {szInputEndpointName} and {szOutputEndpointName}  {dwRestartCount} times.                  The capture monitor will no longer attempt to start this monitor.
+Microsoft-Windows-Audio,Information,11,0,Microsoft-Windows-Audio/Operational,AudioServer_Stream_Flags,,,StreamFlags {dwAudioSrvStreamFlags}
+Microsoft-Windows-Audio,Information,12,0,Performance,AudioPerf_Task_LaunchAudioDG,Start,,
+Microsoft-Windows-Audio,Information,13,0,Performance,AudioPerf_Task_LaunchAudioDG,Stop,,
+Microsoft-Windows-Audio,Information,14,0,Performance,AudioPerf_Task_EndpointVolume,Start,,
+Microsoft-Windows-Audio,Information,15,0,Performance,AudioPerf_Task_EndpointVolume,Stop,,
+Microsoft-Windows-Audio,Information,16,0,Performance,AudioPerf_Task_SessionAPI,Start,,
+Microsoft-Windows-Audio,Information,17,0,Performance,AudioPerf_Task_SessionAPI,Stop,,
+Microsoft-Windows-Audio,Warning,18,0,Microsoft-Windows-Audio/Operational,AudioDG_Glitch_Threshold_Exceeded,,,Windows Audio Device Graph glitch threshold count exceeded                               Count   : 0x{dwAudioDgTerminationCode}
+Microsoft-Windows-Audio,Information,19,0,Performance,AudioPerf_Task_GlitchCounter,,,Windows Audio Device Graph glitch threshold count exceeded                               Count   : 0x{dwGlitchCount}
+Microsoft-Windows-Audio,Information,20,0,Microsoft-Windows-Audio/PlaybackManager,AudioSession_Stream_Resource_Type,,,Format: {Format}Sampling rate: {SamplingRate}HzOffloaded: {bAudioSrvStreamResourceType}
+Microsoft-Windows-Audio,Information,21,0,Microsoft-Windows-Audio/PlaybackManager,AudioServer_Sound_Level_Changed,,,Sound level for application [{AppId}] changed to [{SoundLevel}]
+Microsoft-Windows-Audio,Information,22,0,Microsoft-Windows-Audio/PlaybackManager,AudioSession_Client_Suspended,,,Suspended: {bIsSuspended}
+Microsoft-Windows-Audio,Information,23,0,Microsoft-Windows-Audio/PlaybackManager,AudioSession_Release_Client_Resource,,,Released exclusive mode resource {bExclusiveModeStream}Released offload mode resource {bOffloadStream}
+Microsoft-Windows-Audio,Information,24,0,Microsoft-Windows-Audio/PlaybackManager,PBM_StreamStarted,,,Stream started.App Id: {AppId}PID: {PID}Audio Stream Category: {Category}
+Microsoft-Windows-Audio,Information,25,0,Microsoft-Windows-Audio/PlaybackManager,PBM_StreamStopped,,,Stream stopped.App Id: {AppId}PID: {PID}Audio Stream Category: {Category}

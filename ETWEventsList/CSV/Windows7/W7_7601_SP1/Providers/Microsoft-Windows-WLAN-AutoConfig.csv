@@ -1,0 +1,215 @@
+Provider,Level,Event ID,Version,Channel,Task,Opcode,Keyword,Message
+Microsoft-Windows-WLAN-AutoConfig,Information,4000,0,System,,Start,,WLAN AutoConfig service has successfully started.
+Microsoft-Windows-WLAN-AutoConfig,Warning,4001,0,System,,Stop,,WLAN AutoConfig service has successfully stopped.
+Microsoft-Windows-WLAN-AutoConfig,Error,4002,0,System,,,,WLAN AutoConfig service has failed to start.Error Code: {ErrorCode}
+Microsoft-Windows-WLAN-AutoConfig,Information,8000,0,Microsoft-Windows-WLAN-AutoConfig/Operational,AcmConnection,Start,WlanConnect,WLAN AutoConfig service started a connection to a wireless network.Network Adapter: {InterfaceDescription}Interface GUID: {InterfaceGuid}Connection Mode: {ConnectionMode}Profile Name: {ProfileName}SSID: {SSID}BSS Type: {BSSType}
+Microsoft-Windows-WLAN-AutoConfig,Information,8001,0,Microsoft-Windows-WLAN-AutoConfig/Operational,AcmConnection,Success,WlanConnect,WLAN AutoConfig service has successfully connected to a wireless network.Network Adapter: {InterfaceDescription}Interface GUID: {InterfaceGuid}Connection Mode: {ConnectionMode}Profile Name: {ProfileName}SSID: {SSID}BSS Type: {BSSType}BSSID: {BSSID}PHY Type: {PHYType}Authentication: {AuthenticationAlgorithm}Encryption: {InterfaceGuid}0802.1x Enabled: {InterfaceGuid}1
+Microsoft-Windows-WLAN-AutoConfig,Error,8002,0,Microsoft-Windows-WLAN-AutoConfig/Operational,AcmConnection,Failure,WlanConnect,WLAN AutoConfig service failed to connect to a wireless network.Network Adapter: {InterfaceDescription}Interface GUID: {InterfaceGuid}Connection Mode: {ConnectionMode}Profile Name: {ProfileName}SSID: {SSID}BSS Type: {BSSType}Failure Reason:{FailureReason}
+Microsoft-Windows-WLAN-AutoConfig,Information,8003,0,Microsoft-Windows-WLAN-AutoConfig/Operational,AcmConnection,Disconnect,WlanConnect,WLAN AutoConfig service has successfully disconnected from a wireless network.Network Adapter: {InterfaceDescription}Interface GUID: {InterfaceGuid}Connection Mode: {ConnectionMode}Profile Name: {ProfileName}SSID: {SSID}BSS Type: {BSSType}Reason: {Reason}
+Microsoft-Windows-WLAN-AutoConfig,Error,8004,0,Microsoft-Windows-WLAN-AutoConfig/Operational,,,,Wireless network is blocked due to connection failure.Network Adapter: {InterfaceDescription}Interface GUID: {InterfaceGuid}Connection Mode: {ConnectionMode}Profile Name: {ProfileName}SSID(s): {SSID(s)}BSS Type: {BSSType}Failure Reason:{FailureReason}Length of block timer (minutes): {BlockTime}
+Microsoft-Windows-WLAN-AutoConfig,Information,8005,0,Microsoft-Windows-WLAN-AutoConfig/Operational,Start the device network,Start,SOFTAP,WLAN AutoConfig service has begun starting the hosted network.Interface GUID: {InterfaceGuid}SSID: {SSID}
+Microsoft-Windows-WLAN-AutoConfig,Information,8006,0,Microsoft-Windows-WLAN-AutoConfig/Operational,Start the device network,Stop,SOFTAP,WLAN AutoConfig service has finished starting the hosted network.Interface GUID: {InterfaceGuid}SSID: {SSID}
+Microsoft-Windows-WLAN-AutoConfig,Error,8007,0,Microsoft-Windows-WLAN-AutoConfig/Operational,Start the device network,Stop,SOFTAP,WLAN AutoConfig service has failed to start the hosted network.Error Code: {ErrorCode}Error Message: {ErrorMsg}Interface GUID: {InterfaceGuid}SSID: {SSID}
+Microsoft-Windows-WLAN-AutoConfig,Information,8008,0,Microsoft-Windows-WLAN-AutoConfig/Operational,Stop the device network,Start,SOFTAP,AutoConfig service has begun to stop the hosted network.Interface GUID: {InterfaceGuid}SSID: {SSID}
+Microsoft-Windows-WLAN-AutoConfig,Information,8009,0,Microsoft-Windows-WLAN-AutoConfig/Operational,Stop the device network,Stop,SOFTAP,WLAN AutoConfig service has finished stopping the hosted network.Interface GUID: {InterfaceGuid}SSID: {SSID}
+Microsoft-Windows-WLAN-AutoConfig,Error,8010,0,Microsoft-Windows-WLAN-AutoConfig/Operational,Stop the device network,Stop,SOFTAP,WLAN AutoConfig service has failed to stop the hosted network.Error Code: {ErrorCode}Error Message: {ErrorMsg}Interface GUID: {InterfaceGuid}SSID: {SSID}
+Microsoft-Windows-WLAN-AutoConfig,Error,10000,0,System,,,,WLAN Extensibility Module has failed to start.Module Path: {ExtensibleModulePath}Error Code: {ErrorCode}
+Microsoft-Windows-WLAN-AutoConfig,Information,10001,0,System,,,,WLAN Extensibility Module has successfully started.Module Path: {ExtensibleModulePath}
+Microsoft-Windows-WLAN-AutoConfig,Warning,10002,0,System,,,,WLAN Extensibility Module has stopped.Module Path: {ExtensibleModulePath}
+Microsoft-Windows-WLAN-AutoConfig,Error,10003,0,System,,,,WLAN Extensibility Module has stopped unexpectedly.Module Path: {ExtensibleModulePath}
+Microsoft-Windows-WLAN-AutoConfig,Warning,10004,0,System,,,,WLAN Extensibility Module has timed out.Module Path: {ExtensibleModulePath}
+Microsoft-Windows-WLAN-AutoConfig,Information,11000,0,Microsoft-Windows-WLAN-AutoConfig/Operational,MsmAssociation,Start,WlanConnect,Wireless network association started.Network Adapter: {Adapter}Interface GUID: {DeviceGuid}Local MAC Address: {LocalMac}Network SSID: {SSID}BSS Type: {BSSType}Authentication: {Auth}Encryption: {Cipher}802.1X Enabled: {OnexEnabled}
+Microsoft-Windows-WLAN-AutoConfig,Information,11001,0,Microsoft-Windows-WLAN-AutoConfig/Operational,MsmAssociation,Success,WlanConnect,Wireless network association succeeded.Network Adapter: {Adapter}Interface GUID: {DeviceGuid}Local MAC Address: {LocalMac}Network SSID: {SSID}BSS Type: {BSSType}Peer MAC Address: {PeerMac}
+Microsoft-Windows-WLAN-AutoConfig,Error,11002,0,Microsoft-Windows-WLAN-AutoConfig/Operational,MsmAssociation,Failure,WlanConnect,Wireless network association failed.Network Adapter: {Adapter}Interface GUID: {DeviceGuid}Local MAC Address: {LocalMac}Network SSID: {SSID}BSS Type: {BSSType}Failure Reason: {FailureReason}Dot11 Status Code: {Dot11StatusCode}
+Microsoft-Windows-WLAN-AutoConfig,Information,11003,0,Microsoft-Windows-WLAN-AutoConfig/Operational,MsmSecurity,Start,WlanConnect,Wireless security started.Network Adapter: {Adapter}Interface GUID: {DeviceGuid}Local MAC Address: {LocalMac}Network SSID: {SSID}BSS Type: {BSSType}Peer MAC Address: {PeerMac}Authentication: {Auth}Encryption: {Cipher}802.1x Enabled: {Adapter}1
+Microsoft-Windows-WLAN-AutoConfig,Information,11004,0,Microsoft-Windows-WLAN-AutoConfig/Operational,MsmSecurity,Stop,WlanConnect,Wireless security stopped.Network Adapter: {Adapter}Interface GUID: {DeviceGuid}Local MAC Address: {LocalMac}Network SSID: {SSID}BSS Type: {BSSType}Peer MAC Address: {PeerMac}Security Hint: {SecurityHint}
+Microsoft-Windows-WLAN-AutoConfig,Information,11005,0,Microsoft-Windows-WLAN-AutoConfig/Operational,MsmSecurity,Success,WlanConnect,Wireless security succeeded.Network Adapter: {Adapter}Interface GUID: {DeviceGuid}Local MAC Address: {LocalMac}Network SSID: {SSID}BSS Type: {BSSType}Peer MAC Address: {PeerMac}
+Microsoft-Windows-WLAN-AutoConfig,Error,11006,0,Microsoft-Windows-WLAN-AutoConfig/Operational,MsmSecurity,Failure,WlanConnect,Wireless security failed.Network Adapter: {Adapter}Interface GUID: {DeviceGuid}Local MAC Address: {LocalMac}Network SSID: {SSID}BSS Type: {BSSType}Peer MAC Address: {PeerMac}Reason: {ReasonText}Error: {ErrorCode}
+Microsoft-Windows-WLAN-AutoConfig,Information,11007,0,Microsoft-Windows-WLAN-AutoConfig/Operational,,,,Wireless IHV security started.Network Adapter: {Adapter}Interface GUID: {DeviceGuid}Local MAC Address: {LocalMac}Network SSID: {SSID}BSS Type: {BSSType}Peer MAC Address: {PeerMac}
+Microsoft-Windows-WLAN-AutoConfig,Information,11008,0,Microsoft-Windows-WLAN-AutoConfig/Operational,IhvSecurity,Success,WlanConnect,Wireless IHV security succeeded.Network Adapter: {Adapter}Interface GUID: {DeviceGuid}Local MAC Address: {LocalMac}Network SSID: {SSID}BSS Type: {BSSType}Peer MAC Address: {PeerMac}
+Microsoft-Windows-WLAN-AutoConfig,Error,11009,0,Microsoft-Windows-WLAN-AutoConfig/Operational,IhvSecurity,Failure,WlanConnect,Wireless IHV security failed.Network Adapter: {Adapter}Interface GUID: {DeviceGuid}Local MAC Address: {LocalMac}Network SSID: {SSID}BSS Type: {BSSType}Peer MAC Address: {PeerMac}Reason: {IhvReasonCode}Additional Data Length: {IhvDataLength}
+Microsoft-Windows-WLAN-AutoConfig,Information,11010,0,Microsoft-Windows-WLAN-AutoConfig/Operational,MsmSecurity,Start,WlanConnect,Wireless security started.Network Adapter: {Adapter}Interface GUID: {DeviceGuid}Local MAC Address: {LocalMac}Network SSID: {SSID}BSS Type: {BSSType}Peer MAC Address: {PeerMac}Authentication: {Auth}Encryption: {Cipher}FIPS Mode: {Adapter}1802.1x Enabled: {Adapter}2
+Microsoft-Windows-WLAN-AutoConfig,Information,12011,0,Microsoft-Windows-WLAN-AutoConfig/Operational,OneXAuthentication,Start,WlanConnect,Wireless 802.1x authentication started.Network Adapter: {Adapter}Interface GUID: {DeviceGuid}Local MAC Address: {LocalMac}Network SSID: {SSID}BSS Type: {BSSType}Peer MAC Address: {PeerMac}Eap Information: Type {EapType}; Vendor ID {VendorID}; Vendor Type {VendorType}; Author ID {Adapter}0
+Microsoft-Windows-WLAN-AutoConfig,Information,12012,0,Microsoft-Windows-WLAN-AutoConfig/Operational,OneXAuthentication,Success,WlanConnect,Wireless 802.1x authentication succeeded.Network Adapter: {Adapter}Interface GUID: {DeviceGuid}Local MAC Address: {LocalMac}Network SSID: {SSID}BSS Type: {BSSType}Peer MAC Address: {PeerMac}Identity: {Identity}User: {User}Domain: {Domain}
+Microsoft-Windows-WLAN-AutoConfig,Error,12013,0,Microsoft-Windows-WLAN-AutoConfig/Operational,OneXAuthentication,Failure,WlanConnect,Wireless 802.1x authentication failed.Network Adapter: {Adapter}Interface GUID: {DeviceGuid}Local MAC Address: {LocalMac}Network SSID: {SSID}BSS Type: {BSSType}Peer MAC Address: {PeerMac}Identity: {Identity}User: {User}Domain: {Domain}Reason: {Adapter}0Error: {Adapter}2EAP Reason: {Adapter}3EAP Root cause String: {Adapter}4EAP Error: {Adapter}5
+Microsoft-Windows-WLAN-AutoConfig,Information,12014,0,Microsoft-Windows-WLAN-AutoConfig/Operational,OneXAuthentication,Restart,WlanConnect,Wireless 802.1x authentication was restarted.Network Adapter: {Adapter}Interface GUID: {DeviceGuid}Local MAC Address: {LocalMac}Network SSID: {SSID}BSS Type: {BSSType}Peer MAC Address: {PeerMac}Eap Information: Type {EapType}; Vendor ID {VendorID}; Vendor Type {VendorType}; Author ID {Adapter}0Restart Reason: {Adapter}1
+Microsoft-Windows-WLAN-AutoConfig,Information,13001,0,Microsoft-Windows-WLAN-AutoConfig/Operational,,,,A pre-logon connection was not attempted.Result: {Result}Reason: {Reason}
+Microsoft-Windows-WLAN-AutoConfig,Information,13002,0,Microsoft-Windows-WLAN-AutoConfig/Operational,,,,A pre-logon connection was attempted.Result: {Result}Interface GUID: {InterfaceGuid}Profile Name: {ProfileName}Requested Fields: {RequestedFields}
+Microsoft-Windows-WLAN-AutoConfig,Information,13011,0,Microsoft-Windows-WLAN-AutoConfig/Operational,,,,A post-logon connection was not attempted.Result: {Result}Reason: {Reason}
+Microsoft-Windows-WLAN-AutoConfig,Information,13012,0,Microsoft-Windows-WLAN-AutoConfig/Operational,,,,A post-logon connection was attempted.Result: {Result}Interface GUID: {InterfaceGuid}Profile Name: {ProfileName}
+Microsoft-Windows-WLAN-AutoConfig,Information,13013,0,Microsoft-Windows-WLAN-AutoConfig/Operational,,,,The post-logon connection attempt is complete.Network connection attempt result: {Result}Reason: {Reason}Interface GUID: {InterfaceGuid}Profile Name: {ProfileName}
+Microsoft-Windows-WLAN-AutoConfig,Information,13014,0,Microsoft-Windows-WLAN-AutoConfig/Operational,,,,A post-logon connection was attempted.Result: {Result}Interface GUID: {InterfaceGuid}Profile Name: {ProfileName}
+Microsoft-Windows-WLAN-AutoConfig,Information,14000,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,IntfContext,Media notification received. Interface = {InterfaceDescription}; Connected = {Connected}.
+Microsoft-Windows-WLAN-AutoConfig,Information,14001,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,IntfContext,Peer notification received. Interface = {InterfaceDescription}; Joined = {Joined}.
+Microsoft-Windows-WLAN-AutoConfig,Information,14002,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,IntfContext,Enable AutoConfig. Interface = {InterfaceDescription}; Enabled = {Enabled}.
+Microsoft-Windows-WLAN-AutoConfig,Information,14003,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,IntfContext,Set media streaming mode. Interface = {InterfaceDescription}; Enable = {Enabled}; Result = {Result}.
+Microsoft-Windows-WLAN-AutoConfig,Information,14004,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,IntfContext,Set BSS type. Interface = {InterfaceDescription}; BSS type = {BSSType}.
+Microsoft-Windows-WLAN-AutoConfig,Information,14005,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,IntfContext,Set radio state. Interface = {InterfaceDescription}; PHY = {PHY}; State = {RadioState}; Result = {Result}.
+Microsoft-Windows-WLAN-AutoConfig,Information,14006,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,IntfContext,Start auto config. Interface = {InterfaceDescription}.
+Microsoft-Windows-WLAN-AutoConfig,Information,14007,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,IntfContext,Stop auto config. Interface = {InterfaceDescription}.
+Microsoft-Windows-WLAN-AutoConfig,Information,14008,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,IntfContext,Power setting = {PowerSetting}. Interface = {InterfaceDescription}.
+Microsoft-Windows-WLAN-AutoConfig,Information,14009,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,IntfContext,Change session to {ConnectionId}. Interface = {InterfaceDescription}.
+Microsoft-Windows-WLAN-AutoConfig,Information,14010,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,IntfContext,Radio is off. Interface = {InterfaceDescription}.
+Microsoft-Windows-WLAN-AutoConfig,Information,14011,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,IntfContext,Change radio state for interface = {InterfaceDescription} :  PHY = {PHY}; software state = {OldState}; hardware state = {NewState})
+Microsoft-Windows-WLAN-AutoConfig,Information,14012,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,IntfContext,The connection is not healthy. Pending profile update is ignored. Interface = {InterfaceDescription}
+Microsoft-Windows-WLAN-AutoConfig,Information,14013,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,IntfContext,Profile {Profile} is updated. Interface = {InterfaceDescription}
+Microsoft-Windows-WLAN-AutoConfig,Information,14014,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,IntfContext,{ConnectionResetReason}; need to disconnect. Interface = {InterfaceDescription}
+Microsoft-Windows-WLAN-AutoConfig,Information,14015,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,IntfContext,Set current operation mode. Interface = {InterfaceDescription}; OpMode = {OpMode}; Result = {Result}.
+Microsoft-Windows-WLAN-AutoConfig,Information,14016,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,IntfContext,Got connection request; mode = {ConnectionMode}; flags = {Flags}; profile name = {Profile}; session = {ConnectionId}. Interface = {InterfaceDescription}
+Microsoft-Windows-WLAN-AutoConfig,Information,14017,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,IntfContext,Connection cancelled by user. Interface = {InterfaceDescription}.
+Microsoft-Windows-WLAN-AutoConfig,Error,14018,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,IntfContext,Connection failed. Interface = {InterfaceDescription}; Reason code = {ErrorCode}.
+Microsoft-Windows-WLAN-AutoConfig,Information,14019,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,IntfContext,Stop all connection attempts for interface {InterfaceDescription}.
+Microsoft-Windows-WLAN-AutoConfig,Information,14020,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,IntfContext,Connection succeeded on interface {InterfaceDescription}.
+Microsoft-Windows-WLAN-AutoConfig,Information,14021,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,IntfContext,Connection complete on interface {InterfaceDescription}; session = {ConnectionId}; status = {Status}; ad hoc network formed = {Adhoc}
+Microsoft-Windows-WLAN-AutoConfig,Information,14022,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,IntfContext,Got disconnect request. Interface = {InterfaceDescription}.
+Microsoft-Windows-WLAN-AutoConfig,Information,14023,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,IntfContext,Set profile {Profile} to manual temporarily.
+Microsoft-Windows-WLAN-AutoConfig,Information,14024,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,IntfContext,Disconnecting. Interface = {InterfaceDescription}.
+Microsoft-Windows-WLAN-AutoConfig,Information,14025,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,IntfContext,Interface {InterfaceDescription} state is set to {State}.
+Microsoft-Windows-WLAN-AutoConfig,Information,14026,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,IntfContext,UI request for interface {InterfaceDescription} result = {Result}.
+Microsoft-Windows-WLAN-AutoConfig,Information,14027,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,IntfContext,Profile {Profile} {HealthCheckResult}.
+Microsoft-Windows-WLAN-AutoConfig,Information,14028,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,IntfContext,Profile name change. Interface = {InterfaceDescription}; old profile name = {OldProfileName}; new profile name = {NewProfileName}
+Microsoft-Windows-WLAN-AutoConfig,Information,14029,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,IntfContext,Interface {InterfaceGuid} ({InterfaceDescription}) is successfully initialized.
+Microsoft-Windows-WLAN-AutoConfig,Information,14030,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,IntfContext,The current operation mode for interface {InterfaceDescription} is {OpMode}.
+Microsoft-Windows-WLAN-AutoConfig,Information,14031,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,IntfMgr,Interface {InterfaceGuid} type = {Type}.
+Microsoft-Windows-WLAN-AutoConfig,Error,14032,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,IntfMgr,Interface {InterfaceGuid} cannot be queried; error {ErrorCode}.
+Microsoft-Windows-WLAN-AutoConfig,Warning,14033,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,IntfMgr,Failed to query physical medium for interface {InterfaceGuid}; because the device is not ready. Need to retry.
+Microsoft-Windows-WLAN-AutoConfig,Information,14034,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,IntfMgr,Found name {FriendlyName} for interface {DeviceGuid}
+Microsoft-Windows-WLAN-AutoConfig,Information,14035,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,IntfMgr,Network {SSID} is not permitted.
+Microsoft-Windows-WLAN-AutoConfig,Information,14036,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,IntfMgr,Power setting = {Setting}.
+Microsoft-Windows-WLAN-AutoConfig,Information,14037,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,State,Disconnect the temporary connection {Profile} for interface {InterfaceDescription}; Reason = {Reason}.
+Microsoft-Windows-WLAN-AutoConfig,Information,14038,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,State,Clear runtime state because the user who initiated the manual connection logged off.
+Microsoft-Windows-WLAN-AutoConfig,Information,14039,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,State,WTS session change. Type = {Type}; session id = {ConnectionId}.
+Microsoft-Windows-WLAN-AutoConfig,Information,14040,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,State,Scan for networks. Interface = {InterfaceDescription}; scan type = {ScanType}; flush BSS list = {FlushBSSList}
+Microsoft-Windows-WLAN-AutoConfig,Information,14041,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,State,Scan request is ignored because radio is off. Interface = {InterfaceDescription}.
+Microsoft-Windows-WLAN-AutoConfig,Information,14042,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,State,Scan results are not queried because raido is off. Interface = {InterfaceDescription}.
+Microsoft-Windows-WLAN-AutoConfig,Information,14043,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,State,The scan state machine is stopped.
+Microsoft-Windows-WLAN-AutoConfig,Information,14044,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,State,No auto switch for the current connection ({Profile}).
+Microsoft-Windows-WLAN-AutoConfig,Information,14045,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,State,Connection (auto = {Auto}) to {SSID} (multiple={Multiple}) using profile {ProfileName}.
+Microsoft-Windows-WLAN-AutoConfig,Information,14046,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,Session,The session id={ConnectionId}; active={Active}; console={Console} is added.
+Microsoft-Windows-WLAN-AutoConfig,Information,14047,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,Session,The the state of session id={ConnectionId} is refreshed to active={Active}; console={Console}.
+Microsoft-Windows-WLAN-AutoConfig,Information,14048,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,Session,Active Console User state = {ActiveConsole}
+Microsoft-Windows-WLAN-AutoConfig,Information,14049,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,Session,The session id={ConnectionId} is removed.
+Microsoft-Windows-WLAN-AutoConfig,Information,14050,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,API,Discovery module has taken care of the UI request.
+Microsoft-Windows-WLAN-AutoConfig,Information,14051,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,API,UI request not sent because the network is suppressed and the UI request is notification type.
+Microsoft-Windows-WLAN-AutoConfig,Error,14052,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,API,IntfCompleteTimely failed; error {ErrorCode}
+Microsoft-Windows-WLAN-AutoConfig,Information,14053,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,API,Session {ConnectionId}; Network suppressed status for {Network} is {Suppressed}.
+Microsoft-Windows-WLAN-AutoConfig,Information,14054,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,IntfContext,Enable AutoConfig background scan. Interface = {InterfaceDescription}; Enabled = {Enabled}.
+Microsoft-Windows-WLAN-AutoConfig,Information,14055,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,State,Discard this round of background scan because a connection process is in progress. Interface = {InterfaceDescription}
+Microsoft-Windows-WLAN-AutoConfig,Information,14056,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,State,Discard this round of background scan because the current connection does not allow auto switch. Interface = {InterfaceDescription}
+Microsoft-Windows-WLAN-AutoConfig,Information,14057,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,State,Discard this round of background scan because the current connection is the most preferred auto connection. Interface = {InterfaceDescription}
+Microsoft-Windows-WLAN-AutoConfig,Information,14058,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,AcmConnection,ut:ActivityContext,State,Connect to {SSID} with profile {ProfileName}
+Microsoft-Windows-WLAN-AutoConfig,Information,20000,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSM,Begin Connect API
+Microsoft-Windows-WLAN-AutoConfig,Information,20001,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSM,Begin Disconnect API
+Microsoft-Windows-WLAN-AutoConfig,Information,20002,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSM,Calling MSMSecPerformPreAssociateSecurity
+Microsoft-Windows-WLAN-AutoConfig,Information,20003,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSM,Calling MSMSecStopSecurity
+Microsoft-Windows-WLAN-AutoConfig,Information,20004,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSM,Connect completion reason {Reason}; session {Session}; adhoc formed {AdHocFormed}
+Microsoft-Windows-WLAN-AutoConfig,Information,20005,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSM,Received CONNECT COMPLETION; status {Status}; assocStatus {AssocStatus}
+Microsoft-Windows-WLAN-AutoConfig,Information,20006,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSM,FSM Current state {CurrState}; event {EventId}
+Microsoft-Windows-WLAN-AutoConfig,Information,20007,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSM,FSM Transition from State: {CurrState} to State: {NewState}
+Microsoft-Windows-WLAN-AutoConfig,Error,20008,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSM,Phy Type not compatible
+Microsoft-Windows-WLAN-AutoConfig,Information,20009,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSM,Link Quality: {Quality}
+Microsoft-Windows-WLAN-AutoConfig,Information,20010,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSM,Received IHV PORT DOWN; peer {BSSID}
+Microsoft-Windows-WLAN-AutoConfig,Information,20011,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSM,Received IHV PORT UP; peer {BSSID}
+Microsoft-Windows-WLAN-AutoConfig,Information,20012,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSM,Post Connect Security has Completed Successfully
+Microsoft-Windows-WLAN-AutoConfig,Error,20013,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSM,Post Connect Security has FAILED with reason code: {ErrorCode}
+Microsoft-Windows-WLAN-AutoConfig,Information,20014,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSM,Received Security Packet: {PacketType}
+Microsoft-Windows-WLAN-AutoConfig,Information,20015,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSM,Security PreConnect Completion; security reason: {Reason}; error {Error}
+Microsoft-Windows-WLAN-AutoConfig,Information,20016,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSM,Send Security Packet Length = {Length} and Completion Handle = {Handle}
+Microsoft-Windows-WLAN-AutoConfig,Information,20017,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSM,Send Security Packet Length = {Length} and Completion Handle = {Handle}
+Microsoft-Windows-WLAN-AutoConfig,Information,20018,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSM,SSID = {SSID} BSSIDCount = {BSSIDCount}
+Microsoft-Windows-WLAN-AutoConfig,Information,20019,0,Microsoft-Windows-WLAN-AutoConfig/Operational,Authenticate the peers associated to the hosted network,Start,SOFTAP MSAM,A client has associated with the hosted network. Interface GUID: {InterfaceGuid}Interface description:{InterfaceDescription}Network SSID: {SSID}Local MAC address: {LocalMAC}Peer MAC address: {PeerMAC}
+Microsoft-Windows-WLAN-AutoConfig,Information,20020,0,Microsoft-Windows-WLAN-AutoConfig/Operational,Authenticate the peers associated to the hosted network,Stop,SOFTAP MSAM,A client has successfully authenticated with the hosted network. Interface GUID: {InterfaceGuid}Interface description:{InterfaceDescription}Network SSID: {SSID}Local MAC address: {LocalMAC}Peer MAC address: {PeerMAC}
+Microsoft-Windows-WLAN-AutoConfig,Error,20021,0,Microsoft-Windows-WLAN-AutoConfig/Operational,Authenticate the peers associated to the hosted network,Stop,SOFTAP MSAM,A client has failed to authenticate with the hosted network. Error code: {ErrorCode}Error Message: {ErrorMsg}Interface GUID: {InterfaceGuid}Interface description:{InterfaceDescription}Network SSID: {SSID}Local MAC address: {LocalMAC}
+Microsoft-Windows-WLAN-AutoConfig,Information,21001,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,Adapter({InterfaceGuid}) New Adapter {FriendlyName} ({PKMIDs})
+Microsoft-Windows-WLAN-AutoConfig,Information,21002,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,Adapter({InterfaceGuid}) IntfSecState Transition {OldState} --> {NewState}
+Microsoft-Windows-WLAN-AutoConfig,Information,21003,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,Adapter({InterfaceGuid}) Received StopSecurity
+Microsoft-Windows-WLAN-AutoConfig,Error,21004,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,Pre-Associate Failure Auth {AuthAlgoId}; Cipher {CipherAlgoId}; OneX Enabled({OneXEnabled}); UICancelled({UICancelled})
+Microsoft-Windows-WLAN-AutoConfig,Error,21005,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,Received MSMSec UI Response; but already have key material!
+Microsoft-Windows-WLAN-AutoConfig,Information,21006,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,Received UI response {ResponseType}
+Microsoft-Windows-WLAN-AutoConfig,Information,21007,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,TIMING OUT 802.1x Authentication
+Microsoft-Windows-WLAN-AutoConfig,Information,21008,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,NOT TIMING OUT 802.1x authentication; next timer in {Context} msec
+Microsoft-Windows-WLAN-AutoConfig,Warning,21009,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,802.1x veto-ed FAST ROAMING (Error {ErrorCode}); performing full authentication
+Microsoft-Windows-WLAN-AutoConfig,Information,21010,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,Port ({PortId}) Peer {PeerAddr} AuthMgr Transition {OldState} --> {NewState}
+Microsoft-Windows-WLAN-AutoConfig,Information,21011,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,Sending UI response to 802.1x
+Microsoft-Windows-WLAN-AutoConfig,Information,21012,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,KeyExt Transition {OldState} --> {NewState}
+Microsoft-Windows-WLAN-AutoConfig,Error,21013,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,Explicit failure from 802.1x; (Reason {Reason}; Error {Error})
+Microsoft-Windows-WLAN-AutoConfig,Information,21014,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,802.1x success
+Microsoft-Windows-WLAN-AutoConfig,Information,21015,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,Port({PortId}) Peer {PeerAddr} KeyMgr transition {OldState} --> {NewState}
+Microsoft-Windows-WLAN-AutoConfig,Information,21016,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,Auth sent M1({PortId}); self {LocalAddr}; peer {PeerAddr}
+Microsoft-Windows-WLAN-AutoConfig,Information,21017,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,Auth sent M3({PortId}); self {LocalAddr}; peer {PeerAddr}
+Microsoft-Windows-WLAN-AutoConfig,Information,21018,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,Auth sent G1({PortId}); self {LocalAddr}; peer {PeerAddr}
+Microsoft-Windows-WLAN-AutoConfig,Information,21019,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,Port({PortId}) Peer {PeerAddr} KeyMgrAuth Transition {OldState} --> {NewState}
+Microsoft-Windows-WLAN-AutoConfig,Information,21020,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,CONNECTION SECURED by OFFLOADED key exchange
+Microsoft-Windows-WLAN-AutoConfig,Information,21021,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,Port({PortId}) Notify Key Exchange Status: Authenticator({Authenticator}) reason {Reason} ; self {LocalAddr}; peer {PeerAddr}
+Microsoft-Windows-WLAN-AutoConfig,Information,21022,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,Default Key: Idx {Index}; Algo {CipherAlgoId}; Direction= {Direction}; Len {Len}
+Microsoft-Windows-WLAN-AutoConfig,Information,21023,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,Pairwise Key ({Addr}): Algo {CipherAlgoId}; Direction= {Direction}; Len {Len}
+Microsoft-Windows-WLAN-AutoConfig,Information,21024,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,Adapter({AdapterId}) Connect Completion; Reason {Reason}; Error {Error}
+Microsoft-Windows-WLAN-AutoConfig,Information,21025,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,Port({PortId}) Indicate Security Result; Peer {PeerAddr}; Reason {Reason} Error {Error}
+Microsoft-Windows-WLAN-AutoConfig,Information,21026,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,Adapter({Context}) Tx to {PeerAddr}; Ethertype {EtherType}; size {Size}
+Microsoft-Windows-WLAN-AutoConfig,Information,21027,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,Sending UI request to MSM ({SessionId})
+Microsoft-Windows-WLAN-AutoConfig,Information,21028,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,Adapter({InterfaceGuid}) MSM Connect notification; Network '{SSID}'
+Microsoft-Windows-WLAN-AutoConfig,Information,21029,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,Adapter({InterfaceGuid}) MSM Disconnect notification
+Microsoft-Windows-WLAN-AutoConfig,Information,21030,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,Adapter({InterfaceGuid}) Port up for peer {PeerAddr}
+Microsoft-Windows-WLAN-AutoConfig,Information,21031,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,Adapter({InterfaceGuid}) Port down for peer {PeerAddr}
+Microsoft-Windows-WLAN-AutoConfig,Information,21032,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,Adapter({InterfaceGuid}) Rx from {PeerAddr}; Ethertype {EtherType}; size {Size}
+Microsoft-Windows-WLAN-AutoConfig,Information,21033,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,Adapter({InterfaceGuid}) UI Response; request type {RequestType}; response type {ResponseType}; cancelled = {Cancelled}
+Microsoft-Windows-WLAN-AutoConfig,Information,21034,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,Adapter({InterfaceGuid}) Create discovery profiles
+Microsoft-Windows-WLAN-AutoConfig,Information,21035,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,Tx pkt completion; pkt {Context}
+Microsoft-Windows-WLAN-AutoConfig,Information,21036,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,Adapter({InterfaceGuid}) MSM Redo security request
+Microsoft-Windows-WLAN-AutoConfig,Information,21037,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,Connection health status is {AdapterId} ({InterfaceGuid}); HealthyHint {Healthy}
+Microsoft-Windows-WLAN-AutoConfig,Information,21038,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,Transition network suspected
+Microsoft-Windows-WLAN-AutoConfig,Information,21039,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,UI Response - Valid = {Valid}; Cancelled = {Cancelled}
+Microsoft-Windows-WLAN-AutoConfig,Error,21040,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,Port({Context}) MSMSendPacket failed; Error {ErrorCode}
+Microsoft-Windows-WLAN-AutoConfig,Error,21041,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,
+Microsoft-Windows-WLAN-AutoConfig,Information,21042,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,PreAuthMgr Transition {OldState} --> {NewState}
+Microsoft-Windows-WLAN-AutoConfig,Information,21043,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,PreAuth: 802.1X Success; Received keys by Pre-Authentication for {PeerAddr}
+Microsoft-Windows-WLAN-AutoConfig,Error,21044,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,PreAuth: Explicit failure from 802.1x; (Reason {Reason}; Error {Error})
+Microsoft-Windows-WLAN-AutoConfig,Information,21045,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,PreAuth: 802.1x success
+Microsoft-Windows-WLAN-AutoConfig,Information,21046,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,Received unicast key material in EAPOL-Key (Rapid rekey {RapidRekey})
+Microsoft-Windows-WLAN-AutoConfig,Information,21047,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,CONNECTION SECURED by RC4 key exchange
+Microsoft-Windows-WLAN-AutoConfig,Information,21048,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,CONNECTION SECURED by RSN key exchange
+Microsoft-Windows-WLAN-AutoConfig,Information,21049,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,RSN Key Receive: Key Message M1
+Microsoft-Windows-WLAN-AutoConfig,Information,21050,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,RSN Key Receive: Key Message M3
+Microsoft-Windows-WLAN-AutoConfig,Information,21051,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,RSN Key Receive: Key Message M2
+Microsoft-Windows-WLAN-AutoConfig,Information,21052,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,RSN Key Receive: Key Message M4
+Microsoft-Windows-WLAN-AutoConfig,Information,21053,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,RSN Key Receive: Key Message G1
+Microsoft-Windows-WLAN-AutoConfig,Information,21054,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,RSN Key Receive: Key Message G2
+Microsoft-Windows-WLAN-AutoConfig,Information,21055,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,FAST ROAMING is {AdapterId}
+Microsoft-Windows-WLAN-AutoConfig,Error,21056,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,Unknown transition into Failure; EventType {Context}
+Microsoft-Windows-WLAN-AutoConfig,Information,21057,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,Port({PortId}) Peer {PeerAddr} SecMgr Transition {OldState} --> {NewState}
+Microsoft-Windows-WLAN-AutoConfig,Information,21058,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,CONNECTION SECURED by WPA key exchange
+Microsoft-Windows-WLAN-AutoConfig,Information,21059,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,WPA Key Receive: Key Message M1
+Microsoft-Windows-WLAN-AutoConfig,Information,21060,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,WPA Key Receive: Key Message M3
+Microsoft-Windows-WLAN-AutoConfig,Information,21061,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,WPA Key Receive: Key Message G1
+Microsoft-Windows-WLAN-AutoConfig,Error,21062,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,Eapol Key packet cache OVERFLOW
+Microsoft-Windows-WLAN-AutoConfig,Error,21063,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,PMK Cache overflowed; current {Current}; limit {Max}
+Microsoft-Windows-WLAN-AutoConfig,Information,21064,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,WLAN Security Settings: BSS Type {BSSType}; Authentication {AuthAlgoId}; Encryption {CipherAlgoId}; OneX Enabled {OnexEnabled}; Eap Information - Type {EapType}; Vendor ID {VendorID}; Vendor Type {VendorType}; Author ID {AuthorID}
+Microsoft-Windows-WLAN-AutoConfig,Information,21065,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,Received multicast key material in EAPOL-Key (Rapid rekey {RapidRekey})
+Microsoft-Windows-WLAN-AutoConfig,Information,21066,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,,,MSMSEC,Default Key ID set to Index {Index}
+Microsoft-Windows-WLAN-AutoConfig,Information,30000,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,Connect to same network on resume,Stop,,Connection started 1
+Microsoft-Windows-WLAN-AutoConfig,Information,30001,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,Connect to network on resume after intervening disconnect,Stop,,Connection timeout threshold reached 1
+Microsoft-Windows-WLAN-AutoConfig,Information,30002,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,Connect to network on resume after intervening disconnect,Stop,,Connection succeeded
+Microsoft-Windows-WLAN-AutoConfig,Information,30003,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,Connect to same network on resume,Stop,,Connection started 2
+Microsoft-Windows-WLAN-AutoConfig,Information,30004,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,Connect to network on resume after intervening disconnect,Stop,,Connection timeout threshold reached 2
+Microsoft-Windows-WLAN-AutoConfig,Information,30005,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,Connect to same network on resume,Stop,,Connection started 3
+Microsoft-Windows-WLAN-AutoConfig,Information,30006,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,Connect to network on resume after intervening disconnect,Stop,,Connection timeout threshold reached 3
+Microsoft-Windows-WLAN-AutoConfig,Information,30007,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,Connect to network on resume after intervening disconnect,Stop,,Manual connect initiated; end running reconnect scenarios
+Microsoft-Windows-WLAN-AutoConfig,Information,30008,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,Connect to network on resume after intervening disconnect,Stop,,Manual connect initiated; end running reconnect scenarios
+Microsoft-Windows-WLAN-AutoConfig,Information,30009,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,Connect to network on resume after intervening disconnect,Stop,,Manual connect initiated; end running reconnect scenarios
+Microsoft-Windows-WLAN-AutoConfig,Information,30010,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,Connect to network on resume after intervening disconnect,Stop,,UI interaction requested 1
+Microsoft-Windows-WLAN-AutoConfig,Information,30011,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,Connect to network on resume after intervening disconnect,Stop,,UI interaction requested 2
+Microsoft-Windows-WLAN-AutoConfig,Information,30012,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,Connect to network on resume after intervening disconnect,Stop,,UI interaction requested 3
+Microsoft-Windows-WLAN-AutoConfig,Information,30013,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,Connect to network on resume after intervening disconnect,Stop,,Connection succeeded - Hidden network 1
+Microsoft-Windows-WLAN-AutoConfig,Information,30014,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,Connect to network on resume after intervening disconnect,Stop,,Connection succeeded - Hidden network 2
+Microsoft-Windows-WLAN-AutoConfig,Information,30015,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,Connect to network on resume after intervening disconnect,Stop,,Connection succeeded - Hidden network 3
+Microsoft-Windows-WLAN-AutoConfig,Information,30016,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,Connect to network on resume after intervening disconnect,Stop,,Selection list exhausted 1
+Microsoft-Windows-WLAN-AutoConfig,Information,30017,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,Connect to network on resume after intervening disconnect,Stop,,Selection list exhausted 2
+Microsoft-Windows-WLAN-AutoConfig,Information,30018,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,Connect to network on resume after intervening disconnect,Stop,,Selection list exhausted 3
+Microsoft-Windows-WLAN-AutoConfig,Information,30019,0,Microsoft-Windows-WLAN-AutoConfig/Diagnostic,Connect to network on resume after intervening disconnect,Stop,,Connection succeeded to previous network - expected roaming
+Microsoft-Windows-WLAN-AutoConfig,Error,60001,0,Microsoft-Windows-WLAN-AutoConfig/Operational,,,,Error: {ErrorCode} Location: {Location} Context: {Context}
+Microsoft-Windows-WLAN-AutoConfig,Warning,60002,0,Microsoft-Windows-WLAN-AutoConfig/Operational,,,,Warning: {WarningCode} Location: {Location} Context: {Context}
+Microsoft-Windows-WLAN-AutoConfig,Information,60003,0,Microsoft-Windows-WLAN-AutoConfig/Operational,,,,Transitioned to State: {NextState} Context: {Context}
+Microsoft-Windows-WLAN-AutoConfig,Information,60004,0,Microsoft-Windows-WLAN-AutoConfig/Operational,,,,Updated Context: {Context} Update Reason: {UpdateReasonCode}
+Microsoft-Windows-WLAN-AutoConfig,Information,60101,0,Microsoft-Windows-WLAN-AutoConfig/Operational,,,,SourceAddress: {SourceAddress} SourcePort: {SourcePort} DestinationAddress: {DestinationAddress} DestinationPort: {DestinationPort} Protocol: {Protocol} ReferenceContext: {ReferenceContext}
+Microsoft-Windows-WLAN-AutoConfig,Information,60102,0,Microsoft-Windows-WLAN-AutoConfig/Operational,,,,SourceAddress: {SourceAddress} SourcePort: {SourcePort} DestinationAddress: {DestinationAddress} DestinationPort: {DestinationPort} Protocol: {Protocol} ReferenceContext: {ReferenceContext}
+Microsoft-Windows-WLAN-AutoConfig,Information,60103,0,Microsoft-Windows-WLAN-AutoConfig/Operational,,,,Interface Guid: {IfGuid} IfIndex: {IfIndex} Interface Luid: {IfLuid} ReferenceContext: {ReferenceContext}

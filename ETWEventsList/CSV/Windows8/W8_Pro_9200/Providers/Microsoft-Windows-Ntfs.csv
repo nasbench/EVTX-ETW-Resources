@@ -1,0 +1,20 @@
+Provider,Level,Event ID,Version,Channel,Task,Opcode,Keyword,Message
+Microsoft-Windows-Ntfs,Information,1,0,Microsoft-Windows-Ntfs/Performance,Rundown,Start,Rundown,
+Microsoft-Windows-Ntfs,Information,2,0,Microsoft-Windows-Ntfs/Performance,Rundown,Stop,Rundown,
+Microsoft-Windows-Ntfs,Information,3,0,Microsoft-Windows-Ntfs/Performance,Rundown,,Rundown,RundownVolumeInformation VolumeId: {Vcb}; DeviceName: {DeviceName}
+Microsoft-Windows-Ntfs,Information,4,0,Microsoft-Windows-Ntfs/Performance,VolumeMount,,VolumeMount,VolumeMount VolumeId: {Vcb}; DeviceName: {DeviceName}
+Microsoft-Windows-Ntfs,Information,98,0,System,,,VolumeCorruptionActionStateChange,Volume {DriveName} ({DeviceName}) {CorruptionActionState}
+Microsoft-Windows-Ntfs,Information,100,0,Microsoft-Windows-Ntfs/WHC,,,GlobalCorruptionActionStateChange,NTFS global corruption action state is now {hc_stateid}.
+Microsoft-Windows-Ntfs,Warning,139,0,Microsoft-Windows-Ntfs/Operational,,,SdsCompaction,The file system structure that maintains security information on volume {DriveName} ({DeviceName}) has grown excessively large and fragmented.  The structure has reached {FragmentationLevel}%% of its maximum fragmentation limit.  If the structure continues to grow and reaches this limit; it may not be possible to create new files on this volume.  It is strongly recommended that the volume be taken offline for preventative maintenance.
+Microsoft-Windows-Ntfs,Information,140,0,System,,,LogFlushFailed,The system failed to flush data to the transaction log. Corruption may occur in VolumeId: {VolumeId}; DeviceName: {DeviceName}.({Error})
+Microsoft-Windows-Ntfs,Information,201,0,Microsoft-Windows-Ntfs/Performance,LogFileFull,,LogFileFull,NtfsLogFileFull VolumeId: {Vcb}; Reason: {LogFileFullReason}
+Microsoft-Windows-Ntfs,Information,202,0,Microsoft-Windows-Ntfs/Performance,Checkpoint,Start,Checkpoint PeriodicCheckpoint,PeriodicCheckpointStart VolumeId: {Vcb}; Reason: {LogFileFullReason}; Usage: {LogFileUsePercentage}%
+Microsoft-Windows-Ntfs,Information,203,0,Microsoft-Windows-Ntfs/Performance,Checkpoint,Stop,Checkpoint PeriodicCheckpoint,PeriodicCheckpointComplete VolumeId: {Vcb}; DirtyMetaDataPages: {DirtyMetaDataPages}
+Microsoft-Windows-Ntfs,Information,204,0,Microsoft-Windows-Ntfs/Performance,Checkpoint,Start,Checkpoint CleanCheckpoint,CleanCheckpointStart VolumeId: {Vcb}; Reason: {LogFileFullReason}; Usage: {LogFileUsePercentage}%
+Microsoft-Windows-Ntfs,Information,205,0,Microsoft-Windows-Ntfs/Performance,Checkpoint,Stop,Checkpoint CleanCheckpoint,CleanCheckpointComplete VolumeId: {Vcb}; DirtyMetaDataPages: {DirtyMetaDataPages}
+Microsoft-Windows-Ntfs,Information,206,0,Microsoft-Windows-Ntfs/Performance,MftRecordRead,,MftRecordRead,MftRecordRead VolumeId: {Vcb}; BaseFileId: {BaseFileId}; FileId: {FileId}; CacheHit: {CacheHit}
+Microsoft-Windows-Ntfs,Information,208,0,Microsoft-Windows-Ntfs/Performance,MftRecordWrite,,MftRecordWrite,MftRecordRead VolumeId: {Vcb}; BaseFileId: {BaseFileId}; FileId: {FileId}
+Microsoft-Windows-Ntfs,Information,230,0,Microsoft-Windows-Ntfs/Performance,WorkItem,,WorkItem,WorkItem queued; WorkItem: {WorkItem}; Reason: {Reason}
+Microsoft-Windows-Ntfs,Error,231,0,Microsoft-Windows-Ntfs/Performance,WorkItem,,WorkItem,WorkItem queue failed; WorkItem: {WorkItem}; Reason: {Reason}; Error: {Error}
+Microsoft-Windows-Ntfs,Information,232,0,Microsoft-Windows-Ntfs/Performance,WorkItem,Start,WorkItem,WorkItem started; WorkItem: {WorkItem}; Reason: {Reason}
+Microsoft-Windows-Ntfs,Information,233,0,Microsoft-Windows-Ntfs/Performance,WorkItem,Stop,WorkItem,WorkItem completed; WorkItem: {WorkItem}; Reason: {Reason}
