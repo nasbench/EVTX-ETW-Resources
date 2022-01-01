@@ -22,8 +22,10 @@ def convertCsvToMDStats(folderName, windowsName, version, edition, build):
 # If we look at an ETW manifest the message section of an event looks like this : "Process %1 started at time %2 by parent %3 running in session %4 with name %5"
 # This function replaces the "%" with their corresponding values
 def fixMessage(message, template):
-
-    parsedTemplate = ET.fromstring(template)
+    try:
+        parsedTemplate = ET.fromstring(template)
+    except:
+        parsedTemplate = []
     listOfTemplateAttributes = [""]
     for e in parsedTemplate:
         listOfTemplateAttributes.append(e.attrib['name'])
