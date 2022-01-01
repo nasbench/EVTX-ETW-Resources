@@ -1,0 +1,47 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Heap-Snapshot</Name>
+        <Metadata>
+            <Guid>{901D2AFA-4FF6-46D7-8D0E-53645E1A47F5}</Guid>
+            <ResourceFilePath>C:\Windows\system32\Microsoft-Windows-System-Events.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\Microsoft-Windows-System-Events.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.18362.997&amp;FileName=Microsoft-Windows-System-Events.dll&amp;FileVer=10.0.18362.997</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Heap-Snapshot</PublisherMessage>
+            <Channels>
+            </Channels>
+            <Levels>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>100</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HeapSnapshotInstance" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HeapSnapshotSequence" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HeapSnapshotBufferLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HeapSnapshotBuffer" inType="win:Binary" outType="xs:hexBinary" length="HeapSnapshotBufferLen"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>200</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HeapSnapshotInstance" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TotalData" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
