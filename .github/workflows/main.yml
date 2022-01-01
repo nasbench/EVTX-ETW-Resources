@@ -39,7 +39,7 @@ jobs:
         run: |
           git config --global user.name 'Github Actions';
           git config --global user.email 'robot@noreply.github.com';
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/nasbench/Private-Tests;
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/nasbench/EVTX-ETW-Resources;
           git add --all;
           if [ "`git diff --cached --numstat | wc -l`" != "0" ];
             then
