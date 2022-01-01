@@ -1,0 +1,317 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-LimitsManagement</Name>
+        <Metadata>
+            <Guid>{73AA0094-FACB-4AEB-BD1D-A7B98DD5C799}</Guid>
+            <ResourceFilePath>C:\Windows\system32\powrprof.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\powrprof.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.15063.0&amp;FileName=powrprof.dll&amp;FileVer=10.0.15063.0</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-LimitsManagement/Diagnostic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>MonitorEnumerated</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>MonitorRundown</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>MonitorValueChange</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>MonitorMitigatingChange</Name>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>MonitorThresholdChange</Name>
+                    <Value>5</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>MonitorRemoved</Name>
+                    <Value>6</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>MitigationEvent</Name>
+                    <Value>7</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>PolicyEnumerated</Name>
+                    <Value>8</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>PolicyRundown</Name>
+                    <Value>9</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>PolicyRemoved</Name>
+                    <Value>10</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>MitigationEnumerated</Name>
+                    <Value>11</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>MitigationRundown</Name>
+                    <Value>12</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>MitigationValueChange</Name>
+                    <Value>13</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>MitigationRemoved</Name>
+                    <Value>14</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LimitsManagement/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>MonitorEnumerated</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Token" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LowerThreshold" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UpperThreshold" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Value" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Mitigating" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LimitsManagement/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>MonitorRundown</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Token" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LowerThreshold" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UpperThreshold" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Value" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Mitigating" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LimitsManagement/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>MonitorValueChange</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Token" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Value" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LimitsManagement/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>MonitorMitigatingChange</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Token" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Mitigating" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LimitsManagement/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>MonitorThresholdChange</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Token" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="LowerThreshold" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UpperThreshold" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LimitsManagement/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>MonitorRemoved</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Token" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LimitsManagement/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>MitigationEvent</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Event" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LowerThreshold" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UpperThreshold" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Value" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Initiator" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LimitsManagement/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>PolicyEnumerated</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Token" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameters" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LimitsManagement/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>PolicyRundown</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Token" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameters" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LimitsManagement/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>PolicyRemoved</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Token" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LimitsManagement/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>MitigationEnumerated</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Token" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DisengagedValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FullyEngagedValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Value" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LimitsManagement/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>MitigationRundown</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Token" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DisengagedValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FullyEngagedValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Value" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LimitsManagement/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>MitigationValueChange</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Token" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Value" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LimitsManagement/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>MitigationRemoved</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Token" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
