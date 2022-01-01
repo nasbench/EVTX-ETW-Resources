@@ -1,0 +1,475 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-MSDTC 2</Name>
+        <Metadata>
+            <Guid>{5D9E0020-3761-4F36-90C8-38CE6511BD12}</Guid>
+            <ResourceFilePath>C:\Windows\system32\msdtcVSp1res.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\msdtcVSp1res.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.15063.0&amp;FileName=msdtcVSp1res.dll&amp;FileVer=2001.12.10941.16384</HelpLink>
+            <PublisherMessage>Microsoft-Windows-MSDTC 2</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Application</Path>
+                    <Index>4294967295</Index>
+                    <Id>9</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>DTC Shared Utility</Message>
+                    <Name>ID_CAT_DTC_UTIL</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>TM</Message>
+                    <Name>ID_CAT_TM</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message>CM</Message>
+                    <Name>ID_CAT_CM</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message>Cluster</Message>
+                    <Name>ID_CAT_DTC_CLUSTER</Name>
+                    <Value>14</Value>
+                </Task>
+                <Task>
+                    <Message>XATM</Message>
+                    <Name>ID_CAT_XATM</Name>
+                    <Value>5</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Classic</Message>
+                    <Name>win:EventlogClassic</Name>
+                    <Value>36028797018963968</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1073745921</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to clean up the default DTC cluster resource setting. The default DTC cluster resource setting might be invalid. The error code returned: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073745922</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Contact = %1 was deleted successfully. Attempt to copy the new contact = %2 over it failed. The DTC configuration may be corrupted. The operation that failed must be retried. The error code returned: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073745923</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to create DTC cluster resource. DTC cluster resource GUID specified = %1. The error code returned: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073745924</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Attempt to find the drive letter or Volume Guid corresponding to the cluster DTC's dependent disk resource has failed. If the dependent disk resource does not support Volume Guid information, please configure at least one dependent disk partition with a drive letter. The error code returned: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073745925</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Attempting to change the DTC cluster resource's log file path to %1 has failed. Please verify if log path is configured to a valid dependent disk partition. The error code returned: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073745926</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Application specified a cluster resource ID: %1, but no DTC cluster resource could be returned. Instead, the local DTC instance was returned]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073745927</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Service: %1 is still running. Attempt to cleanup the service has failed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073745928</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed trying to get the state of the cluster node: %1.The error code returned: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073746026</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MSDTC started with the following settings: Security Configuration (OFF = 0 and ON = 1): Allow Remote Administrator = %1, Network Clients = %2, Transaction Manager Communication:  Allow Inbound Transactions = %3, Allow Outbound Transactions = %4, Transaction Internet Protocol (TIP) = %5,  Enable XA Transactions = %6,  Enable SNA LU 6.2 Transactions = %12,  MSDTC Communications Security = %8, Account = %9,  Firewall Exclusion Detected = %10 Transaction Bridge Installed = %11 Filtering Duplicate Events = %7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param6" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param7" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param8" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param9" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param10" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param11" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param12" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073746174</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Cluster API call failed with error code: %1. Cluster API function: %2 Arguments: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147488520</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A caller has attempted to register an XA resource while XA transactions are disabled. Please review the MSDTC configuration settings.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147488523</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A caller has attempted to import a transaction from a remote system, but MSDTC is currently configured to disallow inbound transaction manager communication on machine '%1'. Please review the MS DTC configuration settings.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147488524</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A caller has attempted to export a transaction to a remote system, but MSDTC is currently configured to disallow outbound transaction manager communication on machine '%1'. Please review the MS DTC configuration settings.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147488526</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MSDTC encountered an error (HR=0x%1) while attempting to authenticate an incoming connection from system '%2'. The principal name is %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147488527</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MSDTC encountered an error (HR=0x%1) while attempting to establish a secure connection with system %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147488528</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MS DTC encountered an error while attempting to process a message from a connection with system '%1'. The incoming message should be from another MSDTC, but has not been authenticated as such. The principal name is '%2'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147536971</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The MSDTC XA Transaction Manager called the xa_rollback function for XA resource manager '%1'. This call failed with an unexpected return code (%2): File=%3 Line=%4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147536972</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The MSDTC XA Transaction Manager called the xa_commit function for XA resource manager '%1'. This call failed with an unexpected return code (%2): File=%3 Line=%4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147536973</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The MSDTC XA Transaction Manager called the xa_open function for XA resource manager '%1'. This call failed with an unexpected return code (%2): File=%3 Line=%4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147536975</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The MSDTC XA Transaction Manager called the 'GetXaSwitch' function in the XA resource manager DLL '%1'. The call to the 'GetXaSwitch' function failed with error %2: File=%3 Line=%4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147536976</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The MSDTC XA Transaction Manager attempted to perform recovery with the XA resource manager DLL '%1'. The XA resource manager reported that recovery was unsuccessful (XA return code=%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147536977</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The MSDTC XA Transaction Manager called the xa_open function in the XA resource manager DLL '%1'. This call failed with a user exception: File=%2 Line=%3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147536978</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The MSDTC XA Transaction Manager called the xa_close function in the XA resource manager DLL '%1'. This call failed with a user exception: File=%2 Line=%3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147536979</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The MSDTC XA Transaction Manager called the xa_recover function in the XA resource manager DLL '%1'. This call failed with a user exception: File=%2 Line=%3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147536980</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The MSDTC XA Transaction Manager called the xa_commit function in the XA resource manager DLL '%1'. This call failed with a user exception: File=%2 Line=%3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147536981</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The MSDTC XA Transaction Manager called the xa_rollback function in the XA resource manager DLL '%1'. This call failed with a user exception: File=%2 Line=%3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147536982</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The MSDTC XA Transaction Manager called the xa_prepare function in the XA resource manager DLL '%1'. This call failed with a user exception: File=%2 Line=%3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147536983</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The MSDTC XA Transaction Manager called the GetXaSwitch function in the XA resource manager DLL '%1'. This call failed with a user exception: File=%2 Line=%3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147536984</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The MSDTC XA Transaction Manager called the xa_prepare function for XA resource manager '%1'. This call failed with an unexpected return code (%2): File=%3 Line=%4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147536985</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The MSDTC XA Transaction Manager called the xa_commit function with the TMONEPHASE flag set for the XA resource manager '%1'. The call to the xa_commit function failed with an unexpected return code (%2): File=%3 Line=%4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147536986</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The MSDTC XA Transaction Manager attempted to locate the 'GetXaSwitch' function in the XA resource manager DLL. The 'GetXaSwitch' function is missing from the XA resource manager DLL %1 : Error=%2 File=%3 Line=%4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147536987</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The MS DTC XA Transaction Manager called the xa_close function for XA resource manager '%1'. This call failed with an unexpected return code (%2): File=%3 Line=%4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
