@@ -1,4 +1,0 @@
-Provider                          |  Level        |  Event ID  |  Version  |  Channel                                       |  Task                   |  Opcode  |  Keyword  |  Message
-----------------------------------|---------------|------------|-----------|------------------------------------------------|-------------------------|----------|-----------|---------
-Microsoft-Windows-MobilityCenter  |  Information  |  100       |  0        |  Microsoft-Windows-MobilityCenter/Performance  |  MobilityCenter_Launch  |  Start   |           |
-Microsoft-Windows-MobilityCenter  |  Information  |  101       |  0        |  Microsoft-Windows-MobilityCenter/Performance  |  MobilityCenter_Launch  |  Stop    |           |

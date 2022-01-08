@@ -1,4 +1,0 @@
-Provider                             |  Level  |  Event ID  |  Version  |  Channel  |  Task  |  Opcode  |  Keyword  |  Message
--------------------------------------|---------|------------|-----------|-----------|--------|----------|-----------|---------
-Microsoft-Windows-UserAccessLogging  |         |  0         |  0        |           |        |          |           |
-Microsoft-Windows-UserAccessLogging  |         |  1         |  0        |           |        |          |           |

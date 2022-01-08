@@ -1,3 +1,0 @@
-Provider                                       |  Level  |  Event ID  |  Version  |  Channel                                        |  Task  |  Opcode  |  Keyword  |  Message
------------------------------------------------|---------|------------|-----------|-------------------------------------------------|--------|----------|-----------|---------------------------------------------------------------------------------------------------------
-Microsoft-Windows-Hyper-V-Guest-Drivers-Vmbus  |  Error  |  1         |  0        |  Microsoft-Windows-Hyper-V-Guest-Drivers/Admin  |        |          |           |  Hyper-V is running a different version of VMBus. Update the guest operating system to fix this problem.

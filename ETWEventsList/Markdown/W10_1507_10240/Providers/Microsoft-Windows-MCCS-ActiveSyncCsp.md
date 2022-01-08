@@ -1,4 +1,0 @@
-Provider                              |  Level    |  Event ID  |  Version  |  Channel  |  Task  |  Opcode  |  Keyword  |  Message
---------------------------------------|-----------|------------|-----------|-----------|--------|----------|-----------|-------------------------------------------------------------------------------
-Microsoft-Windows-MCCS-ActiveSyncCsp  |  Error    |  1         |  0        |           |        |          |  Error    |  Error: {P1_HResult} Location: {P2_String} Line Number: {P3_UInt32}
-Microsoft-Windows-MCCS-ActiveSyncCsp  |  Warning  |  2         |  0        |           |        |          |           |  Error Propagated: {P1_HResult} Location: {P2_String} Line Number: {P3_UInt32}

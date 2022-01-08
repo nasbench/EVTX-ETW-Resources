@@ -1,6 +1,0 @@
-Provider                                                |  Level        |  Event ID  |  Version  |  Channel  |  Task  |  Opcode  |  Keyword  |  Message
---------------------------------------------------------|---------------|------------|-----------|-----------|--------|----------|-----------|----------------------
-Microsoft-Windows-Base-Filtering-Engine-Resource-Flows  |  Information  |  2002      |  0        |           |        |          |           |  New Resource Flow
-Microsoft-Windows-Base-Filtering-Engine-Resource-Flows  |  Information  |  2003      |  0        |           |        |          |           |  Resource Flow Closed
-Microsoft-Windows-Base-Filtering-Engine-Resource-Flows  |  Information  |  2004      |  0        |           |        |          |           |  New Resource Flow
-Microsoft-Windows-Base-Filtering-Engine-Resource-Flows  |  Information  |  2005      |  0        |           |        |          |           |  Resource Flow Closed

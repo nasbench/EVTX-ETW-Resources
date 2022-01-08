@@ -1,5 +1,0 @@
-Provider                              |  Level        |  Event ID  |  Version  |  Channel                                           |  Task                |  Opcode  |  Keyword             |  Message
---------------------------------------|---------------|------------|-----------|----------------------------------------------------|----------------------|----------|----------------------|---------
-Microsoft-Windows-FileInfoMinifilter  |  Information  |  1         |  0        |  Microsoft-Windows-FileInfoMinifilter/Operational  |  fi:FileNameCreate   |          |  fi:FileNameCreate   |
-Microsoft-Windows-FileInfoMinifilter  |  Information  |  2         |  0        |  Microsoft-Windows-FileInfoMinifilter/Operational  |  fi:FileNameRundown  |          |  fi:FileNameRundown  |
-Microsoft-Windows-FileInfoMinifilter  |  Information  |  3         |  0        |  Microsoft-Windows-FileInfoMinifilter/Operational  |  fi:FileNameDelete   |          |  fi:FileNameDelete   |

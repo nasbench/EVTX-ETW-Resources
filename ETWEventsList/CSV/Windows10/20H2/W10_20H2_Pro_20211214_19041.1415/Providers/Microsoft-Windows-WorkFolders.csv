@@ -1,0 +1,111 @@
+Provider,Level,Event ID,Version,Channel,Task,Opcode,Keyword,Message
+Microsoft-Windows-WorkFolders,Information,0,0,Operational,,,,
+Microsoft-Windows-WorkFolders,Information,1,0,Operational,,,,
+Microsoft-Windows-WorkFolders,Information,2,0,Operational,,,,A sync partnership was created between {LocalFolder} and {ServerURI} ({ServerPartnershipId}).
+Microsoft-Windows-WorkFolders,Information,3,0,Operational,,,,A sync partnership between {LocalFolder} and {ServerURI} ({ServerPartnershipId}) was deleted.
+Microsoft-Windows-WorkFolders,Information,4,0,Operational,,,,Resuming sync between {LocalFolder} and {ServerURI} ({ServerPartnershipId}).
+Microsoft-Windows-WorkFolders,Information,5,0,Operational,,,,Attempting to apply the following Work Folders Group Policy configuration:Work Folders URL: {SyncUrl}Force automatic setup: {AutoProvision}Ghosting policy: {GhostingPolicy}
+Microsoft-Windows-WorkFolders,Information,6,0,Operational,,,,Attempting to remove the following Work Folders Group Policy configuration:Discovery URL: {DiscoveryUrl} Server URL: {ServerUrl}Ghosting policy: {GhostingPolicy}
+Microsoft-Windows-WorkFolders,Information,7,0,Operational,,,,Configuring Work Folders through Group Policy with the following options:Partnership ID: {PartnershipId}Partnership type: {PartnershipType}Discovery URL: {DiscoveryUrl}Server URL: {ServerUrl}Ghosting policy: {GhostingPolicy}
+Microsoft-Windows-WorkFolders,Information,8,0,Operational,,,,
+Microsoft-Windows-WorkFolders,Information,9,0,Operational,,,,While applying Work Folders configuration through Group Policy; an existing Work Folders configuration was found. Discovery URL: {DiscoveryUrl} Server URL: {ServerUrl}Configured by policy: {ConfiguredByPolicy}Ghosting policy: {GhostingPolicy}
+Microsoft-Windows-WorkFolders,Error,10,0,Operational,,,,Configuration of Work Folders through Group Policy failed. Error: {HResultStr}.
+Microsoft-Windows-WorkFolders,Error,11,0,Operational,,,,There was a problem removing the Work Folders configuration when applying Group Policy. Error: {HResultStr}
+Microsoft-Windows-WorkFolders,Error,12,0,Operational,,,,There was a problem communicating with the Windows Work Folders service. Confirm that this service is running. Error: {HResultStr}
+Microsoft-Windows-WorkFolders,Error,13,0,Operational,,,,There was a problem retrieving your Work Folders Group Policy configuration. Error: {HResultStr}
+Microsoft-Windows-WorkFolders,Error,14,0,Operational,,,,There was a problem retrieving your current Work Folders configuration. Error: {HResultStr}.
+Microsoft-Windows-WorkFolders,Error,15,0,Operational,,,,There was a problem comparing the existing Work Folders configuration to the configuration being applied by Group Policy. Error: {HResultStr}.
+Microsoft-Windows-WorkFolders,Information,16,0,Operational,,,,Server discovery on {DiscoveryURL} found server {ServerURL}.
+Microsoft-Windows-WorkFolders,Information,17,0,Operational,,,,Sync Share discovery succeeded. Server URL: {ServerURL}; Partnership type: {SyncTargetType}; Server partnership id: {ServerPartnershipId}
+Microsoft-Windows-WorkFolders,Information,18,0,Operational,,,,The discovery URL was found from the user's email address. User's email address: {UserEmail}; Discovery URL {DiscoveryURL}
+Microsoft-Windows-WorkFolders,Error,19,0,Operational,,,,This PC is incompatible with the Work Folders server and must be upgraded. Please contact your administrator for instructions on upgrading your PC.
+Microsoft-Windows-WorkFolders,Error,502,0,Operational,,,,A sync partnership between {LocalFolder} and {ServerURI} ({ServerPartnershipId}) failed to create with {HResultStr}.
+Microsoft-Windows-WorkFolders,Error,503,0,Operational,,,,A sync partnership between {LocalFolder} and {ServerURI} ({ServerPartnershipId}) failed to delete with {HResultStr}.
+Microsoft-Windows-WorkFolders,Error,516,0,Operational,,,,Server discovery on {DiscoveryURL} failed with {HResultStr}.
+Microsoft-Windows-WorkFolders,Error,517,0,Operational,,,,Sync Share discovery failed. Server URL: {ServerURL}; Partnership type: {SyncTargetType}; Error: {HResultStr}
+Microsoft-Windows-WorkFolders,Error,518,0,Operational,,,,Searching for a discovery URL from the user's email address failed. User's email address: {UserEmail}; Error: {HResultStr}
+Microsoft-Windows-WorkFolders,Warning,1000,0,Operational,,,,Some files cannot be downloaded. Make sure the drive for {Path} has at least {SizeMB} MB free.
+Microsoft-Windows-WorkFolders,Error,1001,0,Operational,,,,Failed to get an ADFS access token from the server. User: {User}. ADFS URI: {StsUri}. Error: {HResultStr}
+Microsoft-Windows-WorkFolders,Warning,1002,0,Operational,,,,Failed to get an ADFS refresh token from the server. User: {User}. ADFS URI: {StsUri}. Error: {HResultStr}
+Microsoft-Windows-WorkFolders,Information,1100,0,Debug,,,,Work Folders sucessfully uploaded a file. File name:{FileName}; Sync ID: {SyncId}
+Microsoft-Windows-WorkFolders,Warning,1101,0,Debug,,,,Work Folders failed to upload a file. File name:{FileName}; Sync ID: {SyncId}; Error: {HResultStr}
+Microsoft-Windows-WorkFolders,Information,1102,0,Debug,,,,Work Folders sucessfully downloaded a file. File name:{FileName}; Sync ID: {SyncId}
+Microsoft-Windows-WorkFolders,Warning,1103,0,Debug,,,,Work Folders failed to download a file. File name:{FileName}; Sync ID: {SyncId}; Error: {HResultStr}
+Microsoft-Windows-WorkFolders,Information,1104,0,Debug,,,,Work Folders sucessfully uploaded a change batch. Partnership ID:{SyncPartnershipId}
+Microsoft-Windows-WorkFolders,Warning,1105,0,Debug,,,,Work Folders failed to upload a change batch. Partnership ID:{SyncPartnershipId}; Error: {HResultStr}
+Microsoft-Windows-WorkFolders,Information,1106,0,Debug,,,,Work Folders sucessfully downloaded a change batch. Partnership ID:{SyncPartnershipId}
+Microsoft-Windows-WorkFolders,Warning,1107,0,Debug,,,,Work Folders failed to download a change batch. Partnership ID:{SyncPartnershipId}; Error: {HResultStr}
+Microsoft-Windows-WorkFolders,Information,2000,0,Debug,,,,Work Folders couldn't detect changed files using the USN change journal; so it's scanning all files for changes. No action is required. Path: {LocalReplicaRoot}
+Microsoft-Windows-WorkFolders,Information,2001,0,Debug,,,,Sync started. URI: {SessionUri}
+Microsoft-Windows-WorkFolders,Information,2002,0,Debug,,,,Sync completed.  URI: {SessionUri}
+Microsoft-Windows-WorkFolders,Information,2003,0,Debug,,,,Sync batch upload completed.Uploaded {SuccessFileCount} file(s) ({SuccessDataSize} bytes).Failed {FailedFileCount} file(s) ({FailedDataSize} bytes).Elapsed time: {TotalBatchTime} seconds.Rate: {Rate} KBps.
+Microsoft-Windows-WorkFolders,Information,2004,0,Debug,,,,Sync batch download completed.Downloaded {SuccessFileCount} file(s) ({SuccessDataSize} bytes).Failed {FailedFileCount} file(s).Elapsed time: {TotalBatchTime} seconds.Rate: {Rate} KBps.
+Microsoft-Windows-WorkFolders,Error,2005,0,Debug,,,,HTTP request failure.URI: {Uri} Verb: {Verb} Headers: {Headers} Body Length: {BodyLength} HTTP Response: {HttpResponse} Server HRESULT: {ServerCodeStr}
+Microsoft-Windows-WorkFolders,Information,2006,0,Debug,,,,Work Folders skipped uploading a file because of an error. Sync ID: {SyncId}; Error: {HResultStr}
+Microsoft-Windows-WorkFolders,Warning,2007,0,Debug,,,,Work Folders will skip downloading files because the user doesn't have enough free space on the drive where Work Folders is located. User: {Username}
+Microsoft-Windows-WorkFolders,Error,2008,0,Debug,,,,Couldn't authenticate the user. User: {Username}
+Microsoft-Windows-WorkFolders,Information,2009,0,Debug,,,,Work Folders successfully synchronized an item. Item: {ItemName}; Sync ID: {SyncGID}; Sync action: {Action}
+Microsoft-Windows-WorkFolders,Warning,2010,0,Debug,,,,Work Folders failed to synchronize an item. Item: {ItemName}; Sync ID: {SyncGID}; Sync action: {Action}; Error code: {HResultStr}
+Microsoft-Windows-WorkFolders,Information,2011,0,Debug,,,,Work Folders successfully updated the current state of an item. Item: {ItemName}; Sync ID: {SyncGID}; Update action: {Action}
+Microsoft-Windows-WorkFolders,Warning,2012,0,Debug,,,,Work Folders failed to update the current state of an item. Item: {ItemName}; Sync ID: {SyncGID}; Update action: {Action}; Error code: {HResultStr}
+Microsoft-Windows-WorkFolders,Information,2013,0,Debug,,,,Work Folders detected a conflict on an item and decided a conflict resolution. Concurrency conflict: {ConcurrencyConflict}; Source item name: {SourceItemName}; Source sync ID: {SourceSyncGID}; Destination item name: {DestinationItemName}; Destination sync ID: {DestinationSyncGID}; Data winner: {DataWinner}; Namespace winner: {NamespaceWinner}; Attributes winner: {AttributesWinner}; Tie breaker winner: {TieBreakerWinner}
+Microsoft-Windows-WorkFolders,Information,2014,0,Debug,,,,
+Microsoft-Windows-WorkFolders,Warning,2015,0,Debug,,,,
+Microsoft-Windows-WorkFolders,Information,2016,0,Debug,,,,Work Folders successfully fetched file content for a file. File name: {FileName}
+Microsoft-Windows-WorkFolders,Error,2017,0,Debug,,,,Work Folders failed to fetch file content for a file. File name: {FileName}. Error: {HResultStr}
+Microsoft-Windows-WorkFolders,Information,2018,0,Debug,,,,Work Folders cancelled fetching file content for a file. File name: {FileName}
+Microsoft-Windows-WorkFolders,Information,2019,0,Debug,,,,Work Folders successfully removed file content from disk a file. File name: {FileName}
+Microsoft-Windows-WorkFolders,Error,2020,0,Debug,,,,Work Folders failed to remove file content from disk a file. File name: {FileName}. Error: {HResultStr}
+Microsoft-Windows-WorkFolders,Information,2021,0,Debug,,,,Work Folders successfully repaired a broken file. File name: {FileName}
+Microsoft-Windows-WorkFolders,Error,2022,0,Debug,,,,Work Folders failed to repair a broken file. File name: {FileName}. Error: {HResultStr}
+Microsoft-Windows-WorkFolders,Information,2023,0,Debug,,,,Work Folders could not find a broken file on the server. The broken file will be deleted. File name: {FileName}
+Microsoft-Windows-WorkFolders,Information,2024,0,Debug,,,,
+Microsoft-Windows-WorkFolders,Information,2025,0,Debug,,,,
+Microsoft-Windows-WorkFolders,Information,2026,0,Debug,,,,Work Folders successfully converted a file to enable on-demand functionality. File name: {FileName}
+Microsoft-Windows-WorkFolders,Error,2027,0,Debug,,,,Work Folders failed to convert a file to enable on-demand functionality. File name: {FileName}. Error: {HResultStr}
+Microsoft-Windows-WorkFolders,Error,2100,0,Operational,,,,Sync failed. Work Folders path: {LocalReplicaRoot}; Error: {HResultStr}
+Microsoft-Windows-WorkFolders,Information,2101,0,Operational,,,,Work Folders suspended sync. Partnership: {SyncPartnershipId}
+Microsoft-Windows-WorkFolders,Information,2102,0,Operational,,,,Work Folders resumed syncing. Partnership: {SyncPartnershipId}
+Microsoft-Windows-WorkFolders,Warning,2103,0,Operational,,,,Work Folders sync stopped because the Enterprise ID for this PC was remotely revoked by the issuing authority. Access to files in Work Folders is blocked on this PC. To resume syncing; in the Work Folders Control Panel; click Stop using Work Folders and then recreate the Work Folders synchronization partnership. Partnership: {SyncPartnershipId}
+Microsoft-Windows-WorkFolders,Error,2104,0,Operational,,,,Work Folders detected a database corruption and recovered. Database path: {DatabasePath}
+Microsoft-Windows-WorkFolders,Error,2105,0,Operational,,,,Work Folders detected a database corruption and recovery failed. Database path: {DatabasePath}; Error: {HResultStr}
+Microsoft-Windows-WorkFolders,Information,2106,0,Operational,,,,Work Folders detected that the server database has been recreated. Local epoch: {LocalEpoch}; Server epoch: {ServerEpoch}
+Microsoft-Windows-WorkFolders,Information,2107,0,Operational,,,,Work Folders detected that an error occured that requires the database to be recreated. Database path: {DatabasePath}; Error code: {HResultStr}
+Microsoft-Windows-WorkFolders,Information,2108,0,Operational,,,,Work Folders synchronization metadata is stale. It will be automatically rebuild. Work Folders path: {LocalReplicaRoot}
+Microsoft-Windows-WorkFolders,Information,2109,0,Operational,,,,The Work Folders synchronization metadata was created. Work Folders path: {LocalReplicaRoot}
+Microsoft-Windows-WorkFolders,Warning,2110,0,Operational,,,,The Work Folders synchronization metadata could not be created. Work Folders path: {LocalReplicaRoot}; Error: {HResultStr}
+Microsoft-Windows-WorkFolders,Information,2111,0,Operational,,,,The Work Folders synchronization metadata was deleted. Work Folders path: {LocalReplicaRoot}
+Microsoft-Windows-WorkFolders,Warning,2112,0,Operational,,,,The Work Folders synchronization metadata could not be deleted. Work Folders path: {LocalReplicaRoot}; Error: {HResultStr}
+Microsoft-Windows-WorkFolders,Warning,2113,0,Operational,,,,Work Folders failed to update the current state of an item. Item: {ItemName}; Sync ID: {SyncGID}; Update action: {Action}; Error code: {HResultStr}
+Microsoft-Windows-WorkFolders,Warning,2114,0,Operational,,,,Work Folders failed to synchronize an item. Item: {ItemName}; Sync ID: {SyncGID}; Sync action: {Action}; Error code: {HResultStr}
+Microsoft-Windows-WorkFolders,Error,2115,0,Operational,,,,Work Folders detected a database version that is incompatible and recovered it. Database path: {DatabasePath}
+Microsoft-Windows-WorkFolders,Error,2116,0,Operational,,,,Work Folders detected a database version that is incompatible and recovery failed. Database path: {DatabasePath}; Error: {HResultStr}
+Microsoft-Windows-WorkFolders,Error,2117,0,Operational,,,,Work Folders failed to connect with Cloud Files. Sync Path: {DatabasePath}. Error: {HResultStr}
+Microsoft-Windows-WorkFolders,Error,2118,0,Operational,,,,Work Folders failed to disconnect with Cloud Files. Error: {HResultStr}
+Microsoft-Windows-WorkFolders,Error,2119,0,Operational,,,,Work Folders failed to register with Cloud Files. Sync Path: {DatabasePath}. Error: {HResultStr}
+Microsoft-Windows-WorkFolders,Error,2120,0,Operational,,,,Work Folders failed to unregister with Cloud Files. Sync Path: {DatabasePath}. Error: {HResultStr}
+Microsoft-Windows-WorkFolders,Information,8000,0,Analytic,SyncPartnership,Start,SyncPartnership,Starting sync. Work Folders path: {LocalReplicaRoot}
+Microsoft-Windows-WorkFolders,Information,8001,0,Analytic,SyncPartnership,ChangeUpdateStart,SyncPartnership,Work Folders is looking for changed files. Work Folders path: {LocalReplicaRoot}
+Microsoft-Windows-WorkFolders,Information,8002,0,Analytic,SyncPartnership,DownloadStart,SyncPartnership,Starting to download files. Work Folders path: {LocalReplicaRoot}
+Microsoft-Windows-WorkFolders,Information,8003,0,Analytic,SyncPartnership,UploadStart,SyncPartnership,Starting to upload files. Work Folders path: {LocalReplicaRoot}
+Microsoft-Windows-WorkFolders,Information,8004,0,Analytic,SyncPartnership,Stop,SyncPartnership,Finished syncing. Work Folders path: {LocalReplicaRoot}
+Microsoft-Windows-WorkFolders,Information,8005,0,Analytic,SyncPartnership,ReconciliationStart,SyncPartnership,Starting reconciliation sync. Work Folders path: {LocalReplicaRoot}
+Microsoft-Windows-WorkFolders,Information,8006,0,Analytic,SyncPartnership,ReconciliationStop,SyncPartnership,Finished reconciliation sync. Work Folders path: {LocalReplicaRoot}
+Microsoft-Windows-WorkFolders,Information,8007,0,Analytic,SyncPartnership,KnowledgeUploadStart,SyncPartnership,Starting sync knowledge upload. Server partnership id: {ServerPartnershipId}
+Microsoft-Windows-WorkFolders,Information,8008,0,Analytic,SyncPartnership,DownloadTransferStart,SyncPartnership,Starting data transfer for file download. Server partnership id: {ServerPartnershipId}
+Microsoft-Windows-WorkFolders,Information,8009,0,Analytic,SyncPartnership,ChangeBatchApplyStart,SyncPartnership,Applying downloaded files. Work Folders path: {LocalReplicaRoot}
+Microsoft-Windows-WorkFolders,Information,8010,0,Analytic,SyncPartnership,KnowledgeDownloadStart,SyncPartnership,Starting sync knowledge download. Server partnership id: {ServerPartnershipId}
+Microsoft-Windows-WorkFolders,Information,8011,0,Analytic,SyncPartnership,ChangeBatchGenStart,SyncPartnership,Creating a change batch for upload. Work Folders path: {LocalReplicaRoot}
+Microsoft-Windows-WorkFolders,Information,8012,0,Analytic,SyncPartnership,UploadTransferStart,SyncPartnership,Starting data transfer for file upload. Server partnership id: {ServerPartnershipId}
+Microsoft-Windows-WorkFolders,Information,8013,0,Analytic,SyncPartnership,,SyncPartnership,
+Microsoft-Windows-WorkFolders,Information,8014,0,Analytic,SyncPartnership,,SyncPartnership,
+Microsoft-Windows-WorkFolders,Information,8015,0,Analytic,SyncPartnership,,SyncPartnership,Work Folders successfully registered with Cloud Files. Sync Path: {LocalReplicaRoot}
+Microsoft-Windows-WorkFolders,Information,8016,0,Analytic,SyncPartnership,,SyncPartnership,Work Folders successfully unregistered with Cloud Files. Sync Path: {LocalReplicaRoot}.
+Microsoft-Windows-WorkFolders,Information,8017,0,Analytic,SyncPartnership,,SyncPartnership,
+Microsoft-Windows-WorkFolders,Information,8018,0,Analytic,SyncPartnership,,SyncPartnership,
+Microsoft-Windows-WorkFolders,Information,8019,0,Analytic,SyncPartnership,,SyncPartnership,Starting cleanup before reconciliation. Work Folders path: {LocalReplicaRoot}
+Microsoft-Windows-WorkFolders,Information,8020,0,Analytic,SyncPartnership,,SyncPartnership,Finished cleanup before reconciliation. Work Folders path: {LocalReplicaRoot}
+Microsoft-Windows-WorkFolders,Information,9001,0,ManagementAgent,,,,Credentials required for the user.
+Microsoft-Windows-WorkFolders,Information,9002,0,ManagementAgent,,,,Work Folders detected a sync error. Check partnership status; network connectivity; and disk space.
+Microsoft-Windows-WorkFolders,Information,9003,0,ManagementAgent,,,,Work Folders detected a file error. Check file sizes and types are supported.
+Microsoft-Windows-WorkFolders,Information,9004,0,ManagementAgent,,,,Your PC doesn't comply with your organization's security policies.

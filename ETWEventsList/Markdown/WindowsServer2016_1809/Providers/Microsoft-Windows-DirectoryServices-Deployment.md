@@ -1,8 +1,0 @@
-Provider                                        |  Level        |  Event ID  |  Version  |  Channel                                                     |  Task  |  Opcode  |  Keyword  |  Message
-------------------------------------------------|---------------|------------|-----------|--------------------------------------------------------------|--------|----------|-----------|----------------------
-Microsoft-Windows-DirectoryServices-Deployment  |  Information  |  100       |  0        |  Microsoft-Windows-DirectoryServices-Deployment/Operational  |  UI    |          |           |  {Prop_UnicodeString}
-Microsoft-Windows-DirectoryServices-Deployment  |  Warning      |  101       |  0        |  Microsoft-Windows-DirectoryServices-Deployment/Operational  |  UI    |          |           |  {Prop_UnicodeString}
-Microsoft-Windows-DirectoryServices-Deployment  |  Error        |  102       |  0        |  Microsoft-Windows-DirectoryServices-Deployment/Operational  |  UI    |          |           |  {Prop_UnicodeString}
-Microsoft-Windows-DirectoryServices-Deployment  |  Information  |  103       |  0        |  Microsoft-Windows-DirectoryServices-Deployment/Operational  |  Core  |          |           |  {Prop_UnicodeString}
-Microsoft-Windows-DirectoryServices-Deployment  |  Warning      |  104       |  0        |  Microsoft-Windows-DirectoryServices-Deployment/Operational  |  Core  |          |           |  {Prop_UnicodeString}
-Microsoft-Windows-DirectoryServices-Deployment  |  Error        |  105       |  0        |  Microsoft-Windows-DirectoryServices-Deployment/Operational  |  Core  |          |           |  {Prop_UnicodeString}

@@ -1,0 +1,658 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Hyper-V-Netvsc</Name>
+        <Metadata>
+            <Guid>{152FBE4B-C7AD-4F68-BADA-A4FCC1464F6C}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\drivers\netvsc.sys</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\system32\drivers\netvsc.sys</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.21996.1&amp;FileName=netvsc.sys&amp;FileVer=10.0.21996.1</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>0</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Hyper-V-NETVSC/Diagnostic</Path>
+                    <Index>1</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>ProtocolNegotiate</Name>
+                    <Value>1001</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>RndisMPInit</Name>
+                    <Value>1002</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>RndisStatusChange</Name>
+                    <Value>1003</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>MicroportInit</Name>
+                    <Value>1004</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>PdApi</Name>
+                    <Value>1006</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>NdkOpenAdapter</Name>
+                    <Value>1007</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>NdkPnPEvent</Name>
+                    <Value>1008</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>VfBindAdapter</Name>
+                    <Value>1009</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Task>ProtocolNegotiate</Task>
+                <Message><![CDATA[
+The VM and host networking components successfully negotiated protocol version '%2']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VersionLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Version" inType="win:UnicodeString" outType="xs:string" length="VersionLen"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>ProtocolNegotiate</Task>
+                <Message><![CDATA[
+The VM and host networking components failed to negotiate protocol version '%2']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VersionLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Version" inType="win:UnicodeString" outType="xs:string" length="VersionLen"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Task>RndisMPInit</Task>
+                <Message><![CDATA[
+The miniport '%2' was successfully initialized]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MiniportNameLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MiniportName" inType="win:UnicodeString" outType="xs:string" length="MiniportNameLen"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>RndisMPInit</Task>
+                <Message><![CDATA[
+Failed to initialize miniport '%2', Status = '%3']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MiniportNameLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MiniportName" inType="win:UnicodeString" outType="xs:string" length="MiniportNameLen"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="UniqueEventValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>RndisMPInit</Task>
+                <Message><![CDATA[
+Failed to set config parameters on miniport NIC '%2', Status = '%5']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MiniportNameLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MiniportName" inType="win:UnicodeString" outType="xs:string" length="MiniportNameLen"/>
+  <data name="SubkeyNameLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SubkeyName" inType="win:UnicodeString" outType="xs:string" length="SubkeyNameLen"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Task>RndisStatusChange</Task>
+                <Message><![CDATA[
+Miniport NIC '%2' is halting]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MiniportNameLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MiniportName" inType="win:UnicodeString" outType="xs:string" length="MiniportNameLen"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Task>RndisStatusChange</Task>
+                <Message><![CDATA[
+Miniport NIC '%2' reset]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MiniportNameLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MiniportName" inType="win:UnicodeString" outType="xs:string" length="MiniportNameLen"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Task>RndisStatusChange</Task>
+                <Message><![CDATA[
+Miniport NIC '%2' hung]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MiniportNameLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MiniportName" inType="win:UnicodeString" outType="xs:string" length="MiniportNameLen"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Task>RndisStatusChange</Task>
+                <Message><![CDATA[
+Miniport NIC '%2' halted]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MiniportNameLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MiniportName" inType="win:UnicodeString" outType="xs:string" length="MiniportNameLen"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Task>RndisStatusChange</Task>
+                <Message><![CDATA[
+Miniport NIC '%2' paused]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MiniportNameLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MiniportName" inType="win:UnicodeString" outType="xs:string" length="MiniportNameLen"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Task>RndisStatusChange</Task>
+                <Message><![CDATA[
+Miniport NIC '%2' restarted]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MiniportNameLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MiniportName" inType="win:UnicodeString" outType="xs:string" length="MiniportNameLen"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Task>RndisStatusChange</Task>
+                <Message><![CDATA[
+Miniport NIC '%2' connected]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MiniportNameLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MiniportName" inType="win:UnicodeString" outType="xs:string" length="MiniportNameLen"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Task>RndisStatusChange</Task>
+                <Message><![CDATA[
+Miniport NIC '%2' disconnected]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MiniportNameLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MiniportName" inType="win:UnicodeString" outType="xs:string" length="MiniportNameLen"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Task>RndisStatusChange</Task>
+                <Message><![CDATA[
+Miniport NIC '%2' network has changed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MiniportNameLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MiniportName" inType="win:UnicodeString" outType="xs:string" length="MiniportNameLen"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>MicroportInit</Task>
+                <Message><![CDATA[
+Failed to initialize microport for miniport '%2', Status = '%3']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MiniportNameLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MiniportName" inType="win:UnicodeString" outType="xs:string" length="MiniportNameLen"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="UniqueEventValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-NETVSC/Diagnostic</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+NBL %2 miniport NIC '%5' is dropped. Reason: %3. Status - %1. ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="Operation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DropReason" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MiniportNameLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MiniportName" inType="win:UnicodeString" outType="xs:string" length="MiniportNameLen"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-NETVSC/Diagnostic</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to send packet at the microport. Reason: %2. Status - %1. ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="DropReason" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-NETVSC/Diagnostic</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+NBL %4 CorrelationID %5 on IfIndex %6 direction %2 dropped reason %3 status %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="Direction" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DropReason" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Pointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="CorrelationId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="IfIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-NETVSC/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NBL %2 CorrelationID %3 on IfIndex %4 direction %1 Synthetic]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Direction" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Pointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="CorrelationId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="IfIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Hyper-V-NETVSC/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NBL %2 CorrelationID %3 on IfIndex %4 direction %1 VF]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Direction" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Pointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="CorrelationId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="IfIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>34</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Task>PdApi</Task>
+                <Message><![CDATA[
+PD initialization succeeded. ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ClientContext" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>35</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>PdApi</Task>
+                <Message><![CDATA[
+PD initialization failed. ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="ClientContext" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>36</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Task>PdApi</Task>
+                <Message><![CDATA[
+PD cleanup succeeded. ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ClientContext" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>37</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>NdkOpenAdapter</Task>
+                <Message><![CDATA[
+Open NDK adapter failed on Miniport '%4'. FailureReason: %2 Status: %1. ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="failureReason" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MiniportNameLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MiniportName" inType="win:UnicodeString" outType="xs:string" length="MiniportNameLen"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>38</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>NdkPnPEvent</Task>
+                <Message><![CDATA[
+NDK PnP event failed. PnPEvent: %2 Miniport: '%5' FailureReason: %3 Status: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="NetEvent" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="failureReason" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MiniportNameLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MiniportName" inType="win:UnicodeString" outType="xs:string" length="MiniportNameLen"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>39</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>VfBindAdapter</Task>
+                <Message><![CDATA[
+VF adapter bind failed. FailureReason: %2 MsgStatus: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="failureReason" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>40</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Task, %1, failed because of low memory. %2 bytes of memory was required]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Task" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MemoryRequired" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>41</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Sending Interface Index (IfIndex %3)of RNDIS miniport '%5' to VF adapter '%7' succeeded.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="RequestHandled" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="IfIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MiniportNameLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MiniportName" inType="win:UnicodeString" outType="xs:string" length="MiniportNameLen"/>
+  <data name="VfAdapterNameLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VfAdapterName" inType="win:UnicodeString" outType="xs:string" length="VfAdapterNameLen"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>42</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Sending Interface Index (IfIndex %3)of RNDIS miniport '%5' to VF adapter '%7' failed. Status = %1. RequestHandled = %2. RDMA cannot be enabled on the adapter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="RequestHandled" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="IfIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MiniportNameLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MiniportName" inType="win:UnicodeString" outType="xs:string" length="MiniportNameLen"/>
+  <data name="VfAdapterNameLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VfAdapterName" inType="win:UnicodeString" outType="xs:string" length="VfAdapterNameLen"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>43</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NDK PnP event succeeded. PnPEvent: %2 Miniport: '%5' ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="NetEvent" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="failureReason" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MiniportNameLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MiniportName" inType="win:UnicodeString" outType="xs:string" length="MiniportNameLen"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>44</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Miniport '%4' reported NDK capabilities. Operation NDK enabled - %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="NdkEnabled" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="MiniportNameLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MiniportName" inType="win:UnicodeString" outType="xs:string" length="MiniportNameLen"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>45</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Miniport '%4' failed to report NDK capabilities. Operation NDK enabled - %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="NdkEnabled" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="MiniportNameLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MiniportName" inType="win:UnicodeString" outType="xs:string" length="MiniportNameLen"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>46</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+VF adapter '%2' did not report NDK capabilities.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VfAdapterNameLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VfAdapterName" inType="win:UnicodeString" outType="xs:string" length="VfAdapterNameLen"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>47</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+VF adapter '%2' reported NDK capabilities in enabled operational state.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VfAdapterNameLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VfAdapterName" inType="win:UnicodeString" outType="xs:string" length="VfAdapterNameLen"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>48</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+VF adapter '%2' reported NDK capabilities in disabled operational state.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VfAdapterNameLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VfAdapterName" inType="win:UnicodeString" outType="xs:string" length="VfAdapterNameLen"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>49</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+A VF connection failed due to isolated VM restriction. Status: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

@@ -1,7 +1,0 @@
-Provider                    |  Level        |  Event ID  |  Version  |  Channel      |  Task  |  Opcode  |  Keyword  |  Message
-----------------------------|---------------|------------|-----------|---------------|--------|----------|-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Microsoft-Windows-WER-Diag  |  Information  |  1         |  0        |  Operational  |        |          |           |  Possible disk corruption detected for executable image {CorruptedFilePath}; causing application {CrashedAppName} to stop working with exception {ExceptionCode}; status code {ExceptionStatusCode}. Initiating further diagnostics.
-Microsoft-Windows-WER-Diag  |  Information  |  2         |  0        |  Operational  |        |          |           |  Possible heap corruption detected (exception code {ExceptionCode}). Initiating further diagnostics.
-Microsoft-Windows-WER-Diag  |  Information  |  3         |  0        |  Operational  |        |          |           |  Possible crash in an unloaded dll detected. Initiating further diagnostics.
-Microsoft-Windows-WER-Diag  |  Information  |  4         |  0        |  Operational  |        |          |           |  Crash on launch is detected. Initiating further diagnostics.
-Microsoft-Windows-WER-Diag  |  Information  |  5         |  0        |  Operational  |        |          |           |  CFG violation is detected.

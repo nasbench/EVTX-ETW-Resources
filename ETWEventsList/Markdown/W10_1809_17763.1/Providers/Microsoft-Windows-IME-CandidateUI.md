@@ -1,6 +1,0 @@
-Provider                           |  Level        |  Event ID  |  Version  |  Channel                                     |  Task                              |  Opcode  |  Keyword  |  Message
------------------------------------|---------------|------------|-----------|----------------------------------------------|------------------------------------|----------|-----------|---------
-Microsoft-Windows-IME-CandidateUI  |  Information  |  1         |  0        |  Microsoft-Windows-IME-CandidateUI/Analytic  |  Task ID: Processing incoming key  |  Start   |           |
-Microsoft-Windows-IME-CandidateUI  |  Information  |  2         |  0        |  Microsoft-Windows-IME-CandidateUI/Analytic  |  Task ID: Processing incoming key  |  Stop    |           |
-Microsoft-Windows-IME-CandidateUI  |  Information  |  120       |  0        |  Microsoft-Windows-IME-CandidateUI/Analytic  |  Task ID: Processing incoming key  |  Start   |           |
-Microsoft-Windows-IME-CandidateUI  |  Information  |  121       |  0        |  Microsoft-Windows-IME-CandidateUI/Analytic  |  Task ID: Processing incoming key  |  Stop    |           |

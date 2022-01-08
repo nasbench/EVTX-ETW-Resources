@@ -1,4 +1,0 @@
-Provider                                |  Level        |  Event ID  |  Version  |  Channel  |  Task  |  Opcode  |  Keyword  |  Message
-----------------------------------------|---------------|------------|-----------|-----------|--------|----------|-----------|---------------------------------------------------------------------------------------------------------------------
-Microsoft-Windows-Power-Troubleshooter  |  Information  |  1         |  0        |  System   |        |          |           |  The system has resumed from sleep.Sleep Time: {SleepTime}Wake Time: {WakeTime}Wake Source: {SleepTime}3{SleepTime}5
-Microsoft-Windows-Power-Troubleshooter  |  Information  |  1         |  1        |  System   |        |          |           |  The system has resumed from sleep.Sleep Time: {SleepTime}Wake Time: {WakeTime}Wake Source: {SleepTime}3{SleepTime}5

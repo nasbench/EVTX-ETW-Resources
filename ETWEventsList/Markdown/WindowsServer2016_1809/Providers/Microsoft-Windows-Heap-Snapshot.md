@@ -1,4 +1,0 @@
-Provider                         |  Level  |  Event ID  |  Version  |  Channel  |  Task  |  Opcode  |  Keyword  |  Message
----------------------------------|---------|------------|-----------|-----------|--------|----------|-----------|---------
-Microsoft-Windows-Heap-Snapshot  |         |  100       |  1        |           |        |          |           |
-Microsoft-Windows-Heap-Snapshot  |         |  200       |  1        |           |        |          |           |

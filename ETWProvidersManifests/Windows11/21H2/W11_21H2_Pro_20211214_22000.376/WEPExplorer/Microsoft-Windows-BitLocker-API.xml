@@ -1,0 +1,2516 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-BitLocker-API</Name>
+        <Metadata>
+            <Guid>{5D674230-CA9F-11DA-A94D-0800200C9A66}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\fveapi.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\system32\fveapi.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.22000.1&amp;FileName=fveapi.dll&amp;FileVer=10.0.22000.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-BitLocker-API</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>0</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Management</Message>
+                    <Path>Microsoft-Windows-BitLocker/BitLocker Management</Path>
+                    <Index>1</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-BitLocker/Tracing</Path>
+                    <Index>2</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Operational</Message>
+                    <Path>Microsoft-Windows-BitLocker/BitLocker Operational</Path>
+                    <Index>3</Index>
+                    <Id>18</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>BitLocker PIN Modification Task</Message>
+                    <Name>task:task_FVEAPI_OP_PIN_MODIFICATION</Name>
+                    <Value>100</Value>
+                </Task>
+                <Task>
+                    <Message>BitLocker Password Modification Task</Message>
+                    <Name>task:task_FVEAPI_OP_PASSPHRASE_MODIFICATION</Name>
+                    <Value>101</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>513</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+BitLocker Drive Encryption recovery information was backed up successfully to Active Directory Domain Services.
+Protector GUID: %1
+Volume GUID: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProtectorGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeGUID" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>514</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Failed to backup BitLocker Drive Encryption recovery information to Active Directory Domain Services.
+Errorcode: %2
+Protector GUID: %1
+Volume GUID: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProtectorGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="VolumeGUID" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>515</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+BitLocker Drive Encryption recovery information for the specified protector is already present in Active Directory Domain Services.
+Protector GUID: %1
+Volume GUID: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProtectorGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeGUID" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>516</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A BitLocker certificate data recovery agent was created, because it was missing on the volume or added to the list of data recovery agents.
+Certificate thumbprint: %2
+Protector GUID: %1
+Volume GUID: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProtectorGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Thumbprint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeGUID" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>517</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A BitLocker certificate data recovery agent was removed, because is no longer in the list of data recovery agents.
+Certificate thumbprint: %2
+Protector GUID: %1
+Volume GUID: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProtectorGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Thumbprint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeGUID" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>518</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The attempt to create a data recovery agent protector on the BitLocker volume failed.
+Errorcode: %1
+Certificate thumbprint: %2
+Volume GUID: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Thumbprint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeGUID" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>519</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The servicing of the data recovery agents on the volume failed.
+Errorcode: %1
+Volume GUID: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="VolumeGUID" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>520</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The management of the data recovery agents failed on this drive because this feature of BitLocker Drive Encryption is not supported in this edition of the Windows operating system. 
+Errorcode: %1
+Volume GUID: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="VolumeGUID" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>521</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Bootmgr failed to obtain the BitLocker volume master key from the TPM because the PCRs did not match.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeGUID" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>522</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Bootmgr determined that the following boot application has changed: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BootApplication" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeGUID" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>523</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Bootmgr determined that the boot configuration data setting %1 has changed for the following boot application: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BCDSetting" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="BootApplication" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeGUID" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>524</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Bootmgr determined that the authorization data for the SRK of the TPM is incompatible with BitLocker.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeGUID" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>525</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Bootmgr determined that the TPM is disabled.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeGUID" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>526</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Bootmgr determined that the TPM is not accessible.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeGUID" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>527</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The partition size specified in the partition table is smaller than the size of the file system contained by that partition.  BitLocker TPM based keys cannot be used until the size of the partition calculated from the partition table is consistent with the size of the file system calculated from the bytes per sector and number of sectors fields in the boot sector.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeGUID" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>528</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Boot debugging is enabled on Bootmgr so TPM based keys cannot be obtained.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeGUID" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>529</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Bootmgr determined that driver signature enforcement has been disabled.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeGUID" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>530</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Bootmgr determined that the device was locked out due to too many failed password attempts.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeGUID" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>531</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Bootmgr determined that the device was locked out due to Device Lockout state validation failure.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeGUID" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>768</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+BitLocker encryption was started for volume %3 using %4 algorithm.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IdentificationGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AlgorithmType" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>769</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+BitLocker encryption will occur for volume %3 when the computer is restarted using %4 algorithm.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IdentificationGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AlgorithmType" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>770</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+BitLocker decryption was started for volume %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IdentificationGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>771</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+BitLocker encryption was stopped for volume %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IdentificationGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>772</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+BitLocker encryption was restarted for volume %3 using %4 algorithm.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IdentificationGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AlgorithmType" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>773</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+BitLocker was suspended for volume %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IdentificationGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>774</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+BitLocker was resumed for volume %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IdentificationGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>775</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A BitLocker key protector was created.
+Protector GUID: %4
+Identification GUID: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IdentificationGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProtectorGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ProtectorType" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>776</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A BitLocker key protector was removed.
+Protector GUID: %4
+Identification GUID: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IdentificationGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProtectorGUID" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>777</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Information</Level>
+                <Task>BitLocker PIN Modification Task</Task>
+                <Message><![CDATA[
+The PIN was updated for the operating system volume.
+Protector GUID: %4
+Identification GUID: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IdentificationGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProtectorGUID" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>778</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The BitLocker volume %3 was reverted to an unprotected state.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IdentificationGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>779</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The BitLocker volume %3 was erased.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IdentificationGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>780</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The identification field was changed. 
+Identification GUID: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IdentificationGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>781</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The BitLocker protected volume %3 was locked. 
+Identification GUID: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IdentificationGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>782</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The BitLocker protected volume %3 was unlocked.
+Protector GUID: %4
+Identification GUID: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IdentificationGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProtectorGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ProtectorType" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>783</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+BitLocker Drive Encryption recovery information for the specified protector is already present in Active Directory Domain Services.
+Protector GUID: %4
+Identification GUID: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IdentificationGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProtectorGUID" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>784</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+BitLocker Drive Encryption recovery information was backed up successfully to Active Directory Domain Services.
+Protector GUID: %4
+Identification GUID: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IdentificationGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProtectorGUID" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>785</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to backup BitLocker Drive Encryption recovery information to Active Directory Domain Services.
+Protector GUID: %4
+Identification GUID: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IdentificationGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProtectorGUID" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>786</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+BitLocker free space wiping was started for volume %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IdentificationGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>787</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+BitLocker free space wiping was stopped for volume %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IdentificationGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>788</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+BitLocker free space wiping was restarted for volume %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IdentificationGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>789</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Information</Level>
+                <Task>BitLocker PIN Modification Task</Task>
+                <Message><![CDATA[
+The PIN was changed.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>790</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Error</Level>
+                <Task>BitLocker PIN Modification Task</Task>
+                <Message><![CDATA[
+A PIN change attempt failed.
+Error message: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>791</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Error</Level>
+                <Task>BitLocker PIN Modification Task</Task>
+                <Message><![CDATA[
+The BitLocker Service (BdeSvc) PIN and password change facility is locked out due to too many failed PIN or password change attempts.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>792</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+BitLocker encountered a failure to commit metadata changes for volume %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IdentificationGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>793</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+BitLocker resealed boot settings to the TPM for volume %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IdentificationGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>794</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+BitLocker failed to reseal boot settings to the TPM.
+Error message: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>795</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+BitLocker failed to initialize hardware encryption for volume %3 due to group policy.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IdentificationGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>796</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+BitLocker Drive Encryption is using software-based encryption to protect volume %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IdentificationGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>797</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Group Policy settings prevented BitLocker Drive Encryption from reverting to BitLocker software-based encryption. Volume %3 is not protected by BitLocker.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IdentificationGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>798</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+BitLocker failed to initialize hardware encryption for volume %3.
+Drive is not provisioned for use with BitLocker hardware encryption:
+Hardware-based encryption is not activated on this drive.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IdentificationGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>799</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+BitLocker failed to initialize hardware encryption for volume %3.
+Drive is not provisioned for use with BitLocker hardware encryption:
+The hardware-based encryption of this drive does not allow BitLocker to cryptographically protect the drive's media encryption key.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IdentificationGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>800</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+BitLocker failed to initialize hardware encryption for volume %3.
+Drive is not provisioned for use with BitLocker hardware encryption:
+Hardware-based encryption is either not configured or has been configured improperly on this volume.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IdentificationGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>801</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+BitLocker failed to initialize hardware encryption for volume %3.
+Drive is not provisioned for use with BitLocker hardware encryption:
+Hardware-based encryption cannot be used with this drive because the hardware encryption method used by this drive does not comply with the Group Policy requirement for drive encryption.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IdentificationGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>802</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+BitLocker failed to initialize hardware encryption for volume %3.
+Drive is not provisioned for use with BitLocker hardware encryption:
+The key length, %5 bits, required to enable hardware-based encryption is below the minimum key length supported by the drive: %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IdentificationGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ExpectedKeyLength" inType="win:Int32" outType="xs:int"/>
+  <data name="ActualKeyLength" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>803</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+BitLocker failed to initialize hardware encryption for volume %3.
+Drive is not provisioned for use with BitLocker hardware encryption:
+The key length, %5 bits, required to enable hardware-based encryption is above the maximum key length supported by the drive: %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IdentificationGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ExpectedKeyLength" inType="win:Int32" outType="xs:int"/>
+  <data name="ActualKeyLength" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>804</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The target drive (%3) cannot be managed by BitLocker because the drive's hardware encryption feature is already in use.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IdentificationGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>805</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The BitLocker protected volume was unlocked in the Windows Recovery Environment.
+Protector GUID: %2
+Identification GUID: %1
+Unlock time: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IdentificationGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ProtectorGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ProtectorType" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="UnlockTime" inType="win:SYSTEMTIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>806</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+BitLocker resealed boot settings to the TPM in the Windows Recovery Environment.
+Reseal time: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IdentificationGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ResealTime" inType="win:SYSTEMTIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>807</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+BitLocker free space wiping was canceled for volume %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IdentificationGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>808</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+BitLocker failed to initialize hardware encryption for volume %3.
+Drive is not provisioned for use with BitLocker hardware encryption:
+SID authority is not disabled on this drive.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IdentificationGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>809</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+BitLocker cannot use Secure Boot for integrity because it is disabled in Group Policy.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>810</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+BitLocker cannot use Secure Boot for integrity because it is disabled.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>811</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+BitLocker cannot use Secure Boot for integrity because the required UEFI variable '%1' is not present.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VariableName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>812</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+BitLocker cannot use Secure Boot for integrity because the UEFI variable '%1' could not be read.
+
+Error Message: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VariableName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>813</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+BitLocker cannot use Secure Boot for integrity because the expected TCG Log entry for variable '%1' is missing or invalid.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VariableName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>814</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+BitLocker cannot use Secure Boot for integrity because the expected TCG Log entry for the OS Loader Authority is missing or invalid.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>815</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+BitLocker cannot use Secure Boot for integrity because the expected TCG Log separator entry is missing or invalid.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>816</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+BitLocker cannot use Secure Boot for integrity because the TCG Log for PCR [7] contains invalid entries.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>817</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+BitLocker successfully sealed a key to the TPM.
+
+PCRs measured include [%1].
+
+The source for these PCRs was: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PCRBitmap" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PCRBitmapSource" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PCRValuesSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PCRValues" inType="win:Binary" outType="xs:hexBinary" length="PCRValuesSize"/>
+  <data name="FilteredTcgLogSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FilteredTcgLog" inType="win:Binary" outType="xs:hexBinary" length="FilteredTcgLogSize"/>
+  <data name="TpmSrkAesStrengthInBits" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>818</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+BitLocker encountered a failure attempting to configure network unlock for volume %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IdentificationGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>819</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The BitLocker service could not resume protection on the OS volume %3, due to the following error: Bootable media in the drive.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IdentificationGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>820</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The BitLocker service could not resume protection on the OS volume %3, due to the following error: TPM is locked out.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IdentificationGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>821</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The BitLocker service could not resume protection on the OS volume %3, due to the following error: Group policy conflict.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IdentificationGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>822</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The BitLocker service could not resume protection on the OS volume %3, due to the following error code: %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IdentificationGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>823</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Bootmgr failed to obtain the BitLocker volume master key from the TPM because Secure Boot was disabled.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeGUID" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>824</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Bootmgr failed to obtain the BitLocker volume master key from the TPM because Secure Boot configuration changed unexpectedly.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeGUID" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>825</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+BitLocker failed to initialize hardware encryption for volume %3.
+This PC's firmware is not capable of supporting hardware encryption.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IdentificationGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>826</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Information</Level>
+                <Task>BitLocker Password Modification Task</Task>
+                <Message><![CDATA[
+The password was changed.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>827</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Error</Level>
+                <Task>BitLocker Password Modification Task</Task>
+                <Message><![CDATA[
+A password change attempt failed.
+Error message: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>828</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+BitLocker Drive Encryption recovery information for volume %3 was backed up successfully to your Microsoft account.
+Protector GUID: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IdentificationGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProtectorGUID" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>829</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to backup BitLocker Drive Encryption recovery information for volume %3 to your Microsoft account.
+
+Error: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IdentificationGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>830</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The BitLocker Drive Encryption recovery information already exists in your Microsoft account.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>831</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to save BitLocker Drive Encryption recovery information to your Microsoft account due to an error.
+
+Error Code: %1
+Localized Error Message: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JsonErrorCode" inType="win:Int32" outType="win:Hresult"/>
+  <data name="LocalizedJsonError" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>832</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+TCG Log parsing failure.
+
+Error: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>833</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+BitLocker detected that custom Secure Boot policy is installed, and will seal to this configuration. Sealing to a custom policy may reduce the integrity provided by Secure Boot.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>834</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+BitLocker determined that the TCG log is invalid for use of Secure Boot. The filtered TCG log for PCR[7] is included in this event.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PCRBitmap" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PCRBitmapSource" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PCRValuesSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PCRValues" inType="win:Binary" outType="xs:hexBinary" length="PCRValuesSize"/>
+  <data name="FilteredTcgLogSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FilteredTcgLog" inType="win:Binary" outType="xs:hexBinary" length="FilteredTcgLogSize"/>
+  <data name="TpmSrkAesStrengthInBits" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>835</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+BitLocker cannot use Secure Boot for integrity because the expected TCG Log entry for the OS Loader Authority has invalid structure.
+
+The event is expected to be an EV_EFI_VARIABLE_AUTHORITY event. The event data must be formatted as an EFI_VARIABLE_DATA structure with VariableName set to EFI_IMAGE_SECURITY_DATABASEGUID and UnicodeName set to 'db'.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>836</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+BitLocker cannot use Secure Boot for integrity because the expected TCG Log entry for the OS Loader Authority is invalid.
+
+The contents of the EFI_VARIABLE_DATA.VariableData field should be an EFI_SIGNATURE_DATA structure with SignatureOwner set to the GUID {77fa9abd-0359-4d32-bd60-28f4e78f784b} (Microsoft).]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>837</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+BitLocker cannot use Secure Boot for integrity because the expected TCG Log entry for the OS Loader Authority is invalid.
+
+The EFI_SIGNATURE_DATA structure contained in the OS authority event could not be found in the Secure Boot 'db' signature database.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>838</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+BitLocker cannot use Secure Boot for integrity because the signature of the boot loader could not be validated as a Windows signature chained to a trusted Microsoft root certificate.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>839</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+BitLocker cannot use Secure Boot for integrity because the TCG Log entry for the OS Loader Authority is invalid.
+
+The signature contained in the EFI_SIGNATURE_DATA structure from the OS authority event could not be found in the verified certificate chain for the boot loader.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>840</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A trusted WIM file has been added for volume %3.
+The SHA-256 hash of the WIM file is: %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IdentificationGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BinaryDataSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BinaryData" inType="win:Binary" outType="xs:hexBinary" length="BinaryDataSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>841</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+BitLocker was unable to update a key for volume %3 due to the following error: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IdentificationGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>842</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+BitLocker was unable to reseal boot settings to the TPM in the Windows Recovery Environment.
+
+Error: %1
+
+Protection has been temporarily suspended.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>843</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+BitLocker was suspended from within the Windows Recovery Environment.
+Suspend time: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IdentificationGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ResealTime" inType="win:SYSTEMTIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>844</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+BitLocker was unable to recover from device lock in the Windows Recovery Environment.
+
+Error: %1
+
+Protection has been temporarily suspended.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>845</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+BitLocker Drive Encryption recovery information for volume %1 was backed up successfully to your Azure AD.
+Protector GUID: %2.
+TraceId: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProtectorGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="TraceGUID" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>846</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to backup BitLocker Drive Encryption recovery information for volume %1 to your Azure AD.
+TraceId: %2
+
+Error: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TraceGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>847</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to save BitLocker Drive Encryption recovery information to your Azure AD due to an error.
+
+ Request Id: %1
+ Response Time: %2
+Error Code: %3
+Error Subcode: %4
+Error message: %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="JsonRequestId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="JsonTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="JsonErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="JsonSubCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="JsonMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>848</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to update BCD store with the Recovery URL for OS volume.
+
+Error: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>849</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to set the TPM dictionary attack parameters to the legacy behavior.
+
+Error: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>850</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Successfully set the TPM dictionary attack parameters to the legacy behavior.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>851</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to enable Silent Encryption. 
+
+Error: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>852</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to enable Silent Encryption. Device is not AAD joined. 
+
+Error: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>853</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to enable Silent Encryption. TPM is not available. 
+
+Error: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>854</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to enable Silent Encryption. WinRe is not configured. 
+
+Error: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>855</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Recovery Password Rotation initiated.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>856</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to initiate the Recovery Password Rotation 
+
+Error:%1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>857</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Recovery Passwords Rotation done successfully]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>858</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Recovery Password Rotation failed. 
+
+Error: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>859</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Recovery Password Rotation failed.
+Volume: %1
+Mount: %2
+ReqID: %3
+Error:%4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProtectorGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>860</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to delete recovery password from AAD.
+Error:%1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>861</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to create clinet recovery password rotation request. 
+volume: %1
+Mount: %2
+ReqId: %3
+Error: %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProtectorGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>862</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to Create AAD recovery Password Delete request.
+Volume: %1
+Mount: %2
+ReqID: %3
+Error:%4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProtectorGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>863</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to initiate the Recovery Password Rotation and AAD Deletion requests processing 
+
+Error:%1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>864</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Recovery Passwords Rotation and AAD Deletion requests processing initiated successfully]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4096</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Device Encryption could not be initialized.
+
+Error: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4097</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BitLocker/Tracing</Channel>
+                <Level>Information</Level>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Device Encryption initialization start.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4098</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BitLocker/Tracing</Channel>
+                <Level>Information</Level>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Device Encryption initialization stop.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4099</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Device Encryption failed to process user logon event.
+
+Error: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4100</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BitLocker/Tracing</Channel>
+                <Level>Information</Level>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Beginning Device Encryption user logon processing.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4101</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BitLocker/Tracing</Channel>
+                <Level>Information</Level>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Ending Device Encryption user logon processing.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4102</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+BitLocker failed to recover after Device Lock.
+Error message: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4103</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to automatically enable Device Encryption.
+
+Error Message: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4104</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BitLocker/Tracing</Channel>
+                <Level>Information</Level>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Begin Enable Protection.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4105</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BitLocker/Tracing</Channel>
+                <Level>Information</Level>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+End Enable Protection.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4106</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to automatically back up recovery password to your Microsoft account.
+
+Error Message: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4107</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BitLocker/Tracing</Channel>
+                <Level>Information</Level>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Begin Recovery Password Backup.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4108</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BitLocker/Tracing</Channel>
+                <Level>Information</Level>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+End Recovery Password Backup.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4109</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BitLocker/Tracing</Channel>
+                <Level>Information</Level>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Begin Query Protection Status.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4110</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BitLocker/Tracing</Channel>
+                <Level>Information</Level>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+End Query Protection Status.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4111</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Device Lock recovery event initiated for volume %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IdentificationGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4112</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+MaxPasswordRetry policy enforced with TPM-based hardening for volume %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IdentificationGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4113</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+MaxPasswordRetry policy enforced without hardware based hardening for volume %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IdentificationGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4114</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Device Lock recovery event initiated due to protected state mismatch for volume %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IdentificationGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4116</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BitLocker/Tracing</Channel>
+                <Level>Information</Level>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Device Encryption initialization for volume %3 start.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IdentificationGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4117</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BitLocker/Tracing</Channel>
+                <Level>Information</Level>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Device Encryption initialization for volume %3 stop.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IdentificationGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4118</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Volume %3 could not be initialized for Device Encryption.
+
+Error: %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IdentificationGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4119</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Windows RE is not correctly configured for device encryption. Make sure that Windows RE is enabled and is not installed on the OS drive.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4120</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The TPM is not provisioned for device encryption. To set up the TPM use the TPM management console (Start->tpm.msc) and use the action to make the TPM ready.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4121</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Sign in with a Microsoft account to finish provisioning device encryption.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4122</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The following DMA (Direct Memory Access) capable devices are not declared as protected from external access, which can block security features such as BitLocker automatic device encryption:
+
+%1
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LocalizedText" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4123</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+BitLocker Drive Encryption recovery information for volume %1 was deleted successfully from your Azure AD.
+Protector GUID: %2.
+TraceId: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProtectorGUIDs" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TraceGUID" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4124</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BitLocker/Tracing</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+HSTI is not supported on this device]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4125</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BitLocker/Tracing</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Failed to query HSTI data size. Error: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4126</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BitLocker/Tracing</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Actual HSTI data size: %1.
+Expected HSTI data size to be at least: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Data2" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4127</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BitLocker/Tracing</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+HSTI provider count: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4128</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BitLocker/Tracing</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+HSTI data version: %1.
+Expected HSTI data version: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Data2" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4129</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BitLocker/Tracing</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+HSTI security features size mismatch for HSTI provider %1: expected %2, actual %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HSTIImplID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Data1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Data2" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4130</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BitLocker/Tracing</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+HSTI provider %1 found with unknown version %2. This provider will not be processed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HSTIImplID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Data" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4131</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BitLocker/Tracing</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+HSTI provider %1 found. Has PLATFORM_SECURITY_ROLE_PLATFORM_REFERENCE: %2.
+(Note: there should only be one provider with this role.)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HSTIImplID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BoolData" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4132</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BitLocker/Tracing</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+HSTI provider %1 found. Has PLATFORM_SECURITY_ROLE_PLATFORM_REFERENCE: %2.
+Since the platform was reported to have at least one other provider with PLATFORM_SECURITY_ROLE_PLATFORM_REFERENCE, HSTI is deemed unsafe]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HSTIImplID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BoolData" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4133</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BitLocker/Tracing</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+No HSTI provider with PLATFORM_SECURITY_ROLE_PLATFORM_REFERENCE found]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4134</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BitLocker/Tracing</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+HSTI provider %1 (which is not PLATFORM_SECURITY_ROLE_PLATFORM_REFERENCE) set SecurityFeaturesRequired]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HSTIImplID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4135</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BitLocker/Tracing</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+HSTI combined results report secure Intel Thunderbolt configuration bit: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BoolData" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4136</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BitLocker/Tracing</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Required HSTI features were not verified by any provider. For byte %1, the mask of missing features is: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SecFeatureIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Data" inType="win:UInt8" outType="win:HexInt8"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4137</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BitLocker/Tracing</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+HSTI tests failed. Error messages from HSTI Provider %1: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HSTIImplID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProviderErrorMsg" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4138</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Successfully setup TPM API callback.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4139</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to setup TPM API callback. Error Code: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4140</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Successfully added predicted TPM protector.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IdentificationGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4141</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to add predicted TPM protector. Error Code: %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IdentificationGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4142</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Predicted PCR4 value for TPM info based protector. Predicted Value: %5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IdentificationGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BinaryDataSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BinaryData" inType="win:Binary" outType="xs:hexBinary" length="BinaryDataSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4143</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to evaluate PCR4 predicted value from TPM info. Error Code: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4144</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Predicted PCR7 value for TPM info based protector. Predicted Value: %5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IdentificationGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BinaryDataSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BinaryData" inType="win:Binary" outType="xs:hexBinary" length="BinaryDataSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4145</Id>
+                <Version>0</Version>
+                <Channel>Management</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to evaluate PCR7 predicted value from TPM info. Error Code: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

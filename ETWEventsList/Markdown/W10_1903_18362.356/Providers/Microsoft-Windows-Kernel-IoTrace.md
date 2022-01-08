@@ -1,6 +1,0 @@
-Provider                          |  Level        |  Event ID  |  Version  |  Channel                                      |  Task                |  Opcode  |  Keyword  |  Message
-----------------------------------|---------------|------------|-----------|-----------------------------------------------|----------------------|----------|-----------|---------
-Microsoft-Windows-Kernel-IoTrace  |  Information  |  1         |  0        |  Microsoft-Windows-Kernel-IoTrace/Diagnostic  |  UserInitiatedIo     |          |           |
-Microsoft-Windows-Kernel-IoTrace  |  Verbose      |  2         |  0        |  Microsoft-Windows-Kernel-IoTrace/Diagnostic  |  KernelIo            |          |           |
-Microsoft-Windows-Kernel-IoTrace  |  Verbose      |  3         |  0        |  Microsoft-Windows-Kernel-IoTrace/Diagnostic  |  KernelIo            |          |           |
-Microsoft-Windows-Kernel-IoTrace  |  Information  |  4         |  0        |  Microsoft-Windows-Kernel-IoTrace/Diagnostic  |  ActivityIdTransfer  |          |           |

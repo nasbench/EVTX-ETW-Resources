@@ -1,0 +1,1256 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider</Name>
+        <Metadata>
+            <Guid>{9363CCD9-D429-4452-9ADB-2501E704B810}</Guid>
+            <ResourceFilePath>%SystemRoot%\System32\sdiagprv.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\System32\sdiagprv.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.21996.1&amp;FileName=sdiagprv.dll&amp;FileVer=10.0.21996.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Operational</Message>
+                    <Path>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Debug</Message>
+                    <Path>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Debug</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Search</Message>
+                    <Name>search</Name>
+                    <Value>256</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Cancel</Message>
+                    <Name>cancel</Name>
+                    <Value>512</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Errors</Message>
+                    <Name>errors</Name>
+                    <Value>1024</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Object</Message>
+                    <Name>object</Name>
+                    <Value>2048</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The Windows Scripted Diagnostic Provider API IDiagnosticProvider FindDiagnosticsBySearchMetadata method succeeded.  The input Culture/Locale was %1.  The size of the result set was %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UILanguage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ResultSize" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The Windows Scripted Diagnostic Provider API IDiagnosticProvider FindDiagnosticsBySearchMetadata method failed because the system ran out of memory.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The Windows Scripted Diagnostic Provider API IDiagnosticProvider FindDiagnosticsBySearchMetadata method was canceled by the caller.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The Windows Scripted Diagnostic Provider API IDiagnosticProvider FindDiagnosticsBySearchMetadata method failed with error (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The Windows Scripted Diagnostic Provider API IDiagnosticProvider FindDiagnosticsBySearchMetadata method failed.  The input Culture/Locale, %1, is not a valid Language identifier.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UILanguage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1010</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The Windows Scripted Diagnostic Provider API IDiagnosticProvider Cancel method succeeded.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1011</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The Windows Scripted Diagnostic Provider API IDiagnosticProvider Cancel method failed with error (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1012</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The Windows Scripted Diagnostic Provider API IDiagnosticProvider failed to cancel the connected diagnostic provider with error (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1013</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The Windows Scripted Diagnostic Provider API IDiagnosticProvider failed to cancel the local diagnostic provider with error (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1015</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The Windows Scripted Diagnostic Provider API IDiagnosticProvider object property QueryRemoteServer is being overridden by Group Policy.  The property will be interpreted as being set to VARIANT_FALSE.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1016</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The Windows Scripted Diagnostic Provider API IDiagnosticProvider object property QueryRemoteServer is being overridden by the Administrator through a System Wide Preference.  The property will be interpreted as being set to VARIANT_FALSE.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1017</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The Windows Scripted Diagnostic Provider API IDiagnosticProvider object property QueryRemoteServer is set to %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="QueryRemoteServer" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1018</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The Windows Scripted Diagnostic Provider API IDiagnosticProvider FindDiagnosticsBySearchMetadata method failed because the input IDiagnosticMetadataCollection object was empty.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The diagnostic package index information was successfully loaded from %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IndexPath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Failed to scan diagnostic package index information from %2, with error (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="IndexPath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Failed to load the resource (%2;%3) with error code (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Resource" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ResourceId" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Sending request to the remote server %1 at the URL path %2.  Contents of the request are: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Hostname" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Url" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestBody" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to connect to the remote server %1 at the URL path %2 due to lack of network access.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Hostname" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Url" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to connect to the remote server %1 at the URL path %2 with error %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Hostname" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Url" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Timed out while communicating with the remote server %1 at the URL path %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Hostname" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Url" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Timed out waiting for a response from the remote server %1 at the URL path %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Hostname" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Url" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Response from the remote server %1 at the URL path %2 returned the following error response code: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Hostname" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Url" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ResponseCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Received response from the remote server %1 at the URL path %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Hostname" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Url" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3007</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Parsed valid response from the remote server %1 at the URL path %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Hostname" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Url" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3008</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Response received from the remote server %1 at the URL path %2 is invalid for the following reason: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Hostname" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Url" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Reason" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3009</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Response received from the remote server %1 at the URL path %2 is malformed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Hostname" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Url" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3010</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Attempting to send data to remote server using the following proxy configuration: Access Type (%1); Proxy Server (%2); Proxy Bypass Server (%3).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AccessType" inType="win:Int32" outType="xs:int"/>
+  <data name="Proxy" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProxyBypass" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3011</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Debug</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Failed to send data to remote server using the following proxy configuration: Access Type (%2); Proxy Server (%3); Proxy Bypass Server (%4) because of proxy failure (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="AccessType" inType="win:Int32" outType="xs:int"/>
+  <data name="Proxy" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProxyBypass" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3012</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to send data to remote server because list of proxy servers was exhausted without receiving a response. The error code returned to caller is %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3013</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Connection to remote server has been reset or terminated while waiting for a response.  The error code returned to the caller is %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3014</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The following system configuration will be used when querying content providers: OS Major Version (%1); OS Minor Version (%2); Service Pack Major (%3); Service Pack Minor (%4); Build Number (%5); Product Type (%6); Processor Architecture (%7); Culture (%8); System Type (%9); OEM (%10); Model (%11); IsMobilePc (%12); IsInternal (%13); GeoId (%14); Family (%15); OEM SKU (%16); Version (%17); Base Board OEM (%18); Base Board Model (%19); Base Board Version (%20); BIOS Vendor (%21); BIOS Version (%22); BIOS Release Date (%23); BIOS Major Release (%24); BIOS Minor Release (%25); Embedded Controller Firmware Major Release (%26); Embedded Controller Firmware Minor Release (%27).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="OSMajorVersion" inType="win:Int32" outType="xs:int"/>
+  <data name="OSMinorVersion" inType="win:Int32" outType="xs:int"/>
+  <data name="ServicePackMajor" inType="win:Int16" outType="xs:short"/>
+  <data name="ServicePackMinor" inType="win:Int16" outType="xs:short"/>
+  <data name="BuildNumber" inType="win:Int32" outType="xs:int"/>
+  <data name="ProductType" inType="win:Int32" outType="xs:int"/>
+  <data name="ProcessorArchitecture" inType="win:Int16" outType="xs:short"/>
+  <data name="Culture" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SystemType" inType="win:Int8" outType="xs:byte"/>
+  <data name="OEM" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Model" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsMobilePc" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="IsInternal" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="GeoId" inType="win:Int32" outType="xs:int"/>
+  <data name="Family" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="OEMSKU" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BaseBoardOEM" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BaseBoardModel" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BaseBoardVersion" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BIOSVendor" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BIOSVersion" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BIOSReleaseDate" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BIOSMajorRelease" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="BIOSMinorRelease" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ECFirmwareMajorRelease" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ECFirmwareMinorRelease" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Debug</Channel>
+                <Level>Information</Level>
+                <Opcode>Start</Opcode>
+                <Keyword>Search</Keyword>
+                <Message><![CDATA[
+Starting to scan diagnostic package index information from %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IndexPath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Debug</Channel>
+                <Level>Information</Level>
+                <Opcode>Stop</Opcode>
+                <Keyword>Search</Keyword>
+                <Message><![CDATA[
+Finished scanning diagnostic package index information from %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IndexPath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Debug</Channel>
+                <Level>Information</Level>
+                <Opcode>Start</Opcode>
+                <Keyword>Search</Keyword>
+                <Message><![CDATA[
+Starting to query content providers for scripted diagnostic content packages.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4007</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Debug</Channel>
+                <Level>Information</Level>
+                <Opcode>Stop</Opcode>
+                <Keyword>Search</Keyword>
+                <Message><![CDATA[
+Finished querying content providers for scripted diagnostic content packages with error code (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4008</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Debug</Channel>
+                <Level>Information</Level>
+                <Opcode>Start</Opcode>
+                <Keyword>Cancel</Keyword>
+                <Message><![CDATA[
+Starting to cancel content providers.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4009</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Debug</Channel>
+                <Level>Information</Level>
+                <Opcode>Stop</Opcode>
+                <Keyword>Cancel</Keyword>
+                <Message><![CDATA[
+Finished cancelling content providers with error code (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4010</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Debug</Channel>
+                <Level>Information</Level>
+                <Opcode>Start</Opcode>
+                <Keyword>Cancel</Keyword>
+                <Message><![CDATA[
+Starting to cancel local content provider.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4011</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Debug</Channel>
+                <Level>Information</Level>
+                <Opcode>Stop</Opcode>
+                <Keyword>Cancel</Keyword>
+                <Message><![CDATA[
+Finished cancelling local content provider with error code (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4012</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Debug</Channel>
+                <Level>Information</Level>
+                <Opcode>Start</Opcode>
+                <Keyword>Cancel</Keyword>
+                <Message><![CDATA[
+Starting to cancel remote content provider.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4013</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Debug</Channel>
+                <Level>Information</Level>
+                <Opcode>Stop</Opcode>
+                <Keyword>Cancel</Keyword>
+                <Message><![CDATA[
+Finished cancelling remove content provider with error code (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4014</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Debug</Channel>
+                <Level>Information</Level>
+                <Opcode>Start</Opcode>
+                <Keyword>Search</Keyword>
+                <Message><![CDATA[
+Starting to gather system configuration necessary for scripted diagnostic content package query.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4015</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Debug</Channel>
+                <Level>Information</Level>
+                <Opcode>Stop</Opcode>
+                <Keyword>Search</Keyword>
+                <Message><![CDATA[
+Finished gathering system configuration necessary for scripted diagnostic content package query with error code (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4016</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Debug</Channel>
+                <Level>Information</Level>
+                <Opcode>Start</Opcode>
+                <Keyword>Search</Keyword>
+                <Message><![CDATA[
+Started to connect to remote server %1 using URL path %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Hostname" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Url" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4017</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Debug</Channel>
+                <Level>Information</Level>
+                <Opcode>Stop</Opcode>
+                <Keyword>Search</Keyword>
+                <Message><![CDATA[
+Finished connecting to remote server %1 using URL path %2.  The operation completed with error %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Hostname" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Url" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4018</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Debug</Channel>
+                <Level>Information</Level>
+                <Opcode>Start</Opcode>
+                <Keyword>Search</Keyword>
+                <Message><![CDATA[
+Sending POST request to the remote server %1 using the URL path: %2 with request body: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Hostname" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Url" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestBody" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4019</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Debug</Channel>
+                <Level>Information</Level>
+                <Opcode>Stop</Opcode>
+                <Keyword>Search</Keyword>
+                <Message><![CDATA[
+Response received from remote server.  The HTTP response was %1.  The operation completed with error %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HttpError" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Error" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4020</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Debug</Channel>
+                <Level>Information</Level>
+                <Opcode>Start</Opcode>
+                <Keyword>Search</Keyword>
+                <Message><![CDATA[
+Starting to parse response from the remote server %1 POST request to the URL path: %2 with request body: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Hostname" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Url" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestBody" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4021</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Debug</Channel>
+                <Level>Information</Level>
+                <Opcode>Stop</Opcode>
+                <Keyword>Search</Keyword>
+                <Message><![CDATA[
+Finished parsing response from the remote server %1 POST request to the URL path: %2 with request body: %3 with error %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Hostname" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Url" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestBody" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4022</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Debug</Channel>
+                <Level>Verbose</Level>
+                <Opcode>Start</Opcode>
+                <Keyword>Search</Keyword>
+                <Message><![CDATA[
+Starting to acquire lock in function %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Method" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4023</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Debug</Channel>
+                <Level>Verbose</Level>
+                <Opcode>Stop</Opcode>
+                <Keyword>Search</Keyword>
+                <Message><![CDATA[
+Finished acquiring lock in function %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Method" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4024</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Debug</Channel>
+                <Level>Verbose</Level>
+                <Opcode>Start</Opcode>
+                <Keyword>Search</Keyword>
+                <Message><![CDATA[
+Starting to add result to Diagnostic Collection.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4025</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Debug</Channel>
+                <Level>Verbose</Level>
+                <Opcode>Stop</Opcode>
+                <Keyword>Search</Keyword>
+                <Message><![CDATA[
+Finished adding result to Diagnostic Collection with error code (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4026</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Debug</Channel>
+                <Level>Verbose</Level>
+                <Opcode>Start</Opcode>
+                <Keyword>Search</Keyword>
+                <Message><![CDATA[
+Starting to load resource from %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Resource" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4027</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Debug</Channel>
+                <Level>Verbose</Level>
+                <Opcode>Stop</Opcode>
+                <Keyword>Search</Keyword>
+                <Message><![CDATA[
+Finished loading resource from %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Resource" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Debug</Channel>
+                <Level>Information</Level>
+                <Keyword>Errors</Keyword>
+                <Message><![CDATA[
+%1 succeeded.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Method" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Debug</Channel>
+                <Level>Information</Level>
+                <Keyword>Errors</Keyword>
+                <Message><![CDATA[
+%1 succeeded.  The corresponding object property was set to %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Method" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Value" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Debug</Channel>
+                <Level>Information</Level>
+                <Keyword>Errors</Keyword>
+                <Message><![CDATA[
+%1 succeeded.  The corresponding object property was set to %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Method" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Value" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Debug</Channel>
+                <Level>Information</Level>
+                <Keyword>Errors</Keyword>
+                <Message><![CDATA[
+%1 succeeded.  The corresponding object property was set to %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Method" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Value" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Debug</Channel>
+                <Level>Information</Level>
+                <Keyword>Errors</Keyword>
+                <Message><![CDATA[
+%1 succeeded.  The output parameter was set to %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Method" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Value" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Debug</Channel>
+                <Level>Information</Level>
+                <Keyword>Errors</Keyword>
+                <Message><![CDATA[
+%1 succeeded.  The output parameter was set to %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Method" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Value" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5008</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Debug</Channel>
+                <Level>Information</Level>
+                <Keyword>Errors</Keyword>
+                <Message><![CDATA[
+%1 succeeded.  The output parameter was set to %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Method" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Value" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5009</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Debug</Channel>
+                <Level>Information</Level>
+                <Keyword>Errors</Keyword>
+                <Message><![CDATA[
+%1 succeeded.  The output parameter was set to %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Method" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Value" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5010</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Debug</Channel>
+                <Level>Warning</Level>
+                <Keyword>Errors</Keyword>
+                <Message><![CDATA[
+%1 failed because the system ran out of memory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Method" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5011</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Debug</Channel>
+                <Level>Warning</Level>
+                <Keyword>Errors</Keyword>
+                <Message><![CDATA[
+%1 failed with error (%2) because the input parameter, %3, was NULL.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Method" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Parameter" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5012</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Debug</Channel>
+                <Level>Warning</Level>
+                <Keyword>Errors</Keyword>
+                <Message><![CDATA[
+%1 failed with error (%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Method" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5013</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Debug</Channel>
+                <Level>Information</Level>
+                <Keyword>Errors</Keyword>
+                <Message><![CDATA[
+%1 succeeded.  The output parameter was set to the item in the collection at index %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Method" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Value" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5014</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Debug</Channel>
+                <Level>Warning</Level>
+                <Keyword>Errors</Keyword>
+                <Message><![CDATA[
+%1 failed with error (%2) because the index, %3, is out of bounds of the enumeration or the enumeration is empty.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Method" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Index" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5015</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Debug</Channel>
+                <Level>Information</Level>
+                <Keyword>Errors</Keyword>
+                <Message><![CDATA[
+%1 succeeded.  The object was added to the collection at index %2.  The new size of the collection is %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Method" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Index" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Count" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5016</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Debug</Channel>
+                <Level>Warning</Level>
+                <Keyword>Errors</Keyword>
+                <Message><![CDATA[
+%1 failed with error (%2) because the collection already contains an object of type, %3, with value, %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Method" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Type" inType="win:Int32" outType="xs:int"/>
+  <data name="Value" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5017</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Debug</Channel>
+                <Level>Information</Level>
+                <Keyword>Errors</Keyword>
+                <Message><![CDATA[
+%1 succeeded.  The size of the collection increased by %2 object(s).  The new size of the collection is %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Method" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ItemsAdded" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Count" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5018</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>Errors</Keyword>
+                <Message><![CDATA[
+%1 failed with error (%2) because the collection already contains an object of with identifier, %3, and publisher, %4, with a greater version (%5).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Method" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Id" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Publisher" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Version" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5019</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Debug</Channel>
+                <Level>Information</Level>
+                <Keyword>Search</Keyword>
+                <Message><![CDATA[
+Local Content Diagnostic Provider search parameter: %1 has value: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Value" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5020</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Debug</Channel>
+                <Level>Verbose</Level>
+                <Keyword>Search</Keyword>
+                <Message><![CDATA[
+Search Result includes a diagnostic with the following identifier %1.  The publisher of the Diagnostic is %2. The version of the Diagnostic is %3.  The URL for the diagnostic is: %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Publisher" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Url" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5021</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Operational</Channel>
+                <Level>Warning</Level>
+                <Keyword>Search</Keyword>
+                <Message><![CDATA[
+Deserializing diagnostic from index file %2 failed with error code (%1) because the XML does not represent a valid Diagnostic.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="IndexPath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5022</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Debug</Channel>
+                <Level>Verbose</Level>
+                <Keyword>Object</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Address" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5023</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Debug</Channel>
+                <Level>Verbose</Level>
+                <Keyword>Object</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Address" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5024</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Debug</Channel>
+                <Level>Verbose</Level>
+                <Keyword>Object</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Address" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="RefCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5025</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Debug</Channel>
+                <Level>Verbose</Level>
+                <Keyword>Object</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Address" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="RefCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5026</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Operational</Channel>
+                <Level>Warning</Level>
+                <Keyword>Search</Keyword>
+                <Message><![CDATA[
+Deserializing diagnostic failed index file %2 with error code (%1) because the XML does not contain valid XML.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="IndexPath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,362 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-MPEG2_DLNA-Encoder</Name>
+        <Metadata>
+            <Guid>{86EFFF39-2BDD-4EFD-BD0B-853D71B2A9DC}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\msmpeg2enc.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\system32\msmpeg2enc.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.21996.1&amp;FileName=msmpeg2enc.dll&amp;FileVer=10.0.21996.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-MPEG-2 Encode/Mux for DLNA</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>muxencode</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>MPEG-2 Encode/Mux for DLNA</Message>
+                    <Name>MuxTask</Name>
+                    <Value>42</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>AudioEncodeSessionConfig</Name>
+                    <Value>43</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>AudioEncodeSession</Name>
+                    <Value>44</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>AudioEncodeTask</Name>
+                    <Value>45</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>VideoEncodeSessionConfig</Name>
+                    <Value>46</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>VideoEncodeSession</Name>
+                    <Value>47</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>VideoEncodeTask</Name>
+                    <Value>48</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>MuxSessionConfig</Name>
+                    <Value>49</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>MuxSession</Name>
+                    <Value>50</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>0</Id>
+                <Version>0</Version>
+                <Channel>muxencode</Channel>
+                <Level>Information</Level>
+                <Task>MPEG-2 Encode/Mux for DLNA</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Starting. Video: %1 (%2,%3). Audio Channels: %4, Video Bit Rate: %5, Audio Bit Rate %6, Seek Offset %7ms]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Region" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VideoX" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VideoY" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AudioChannels" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VideoBitRate" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AudioBitRate" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SeekOffsetMs" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>muxencode</Channel>
+                <Level>Information</Level>
+                <Task>MPEG-2 Encode/Mux for DLNA</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Stopping. Bytes Muxed: %1, Video Frames Received: %2, Video Frames Encoded: %3, Audio Bytes Received: %4, Audio Frames Encoded: %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TotalBytesEncoded" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="VideoFramesReceived" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="VideoFramesEncoded" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="AudioBytesReceived" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="AudioFramesEncoded" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>muxencode</Channel>
+                <Level>Error</Level>
+                <Task>MPEG-2 Encode/Mux for DLNA</Task>
+                <Message><![CDATA[
+Error: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hr" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>muxencode</Channel>
+                <Level>Verbose</Level>
+                <Task>MPEG-2 Encode/Mux for DLNA</Task>
+                <Message><![CDATA[
+Video Frame Received.  Timestamp=%1, ID=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Timestamp" inType="win:Int64" outType="xs:long"/>
+  <data name="ID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>muxencode</Channel>
+                <Level>Verbose</Level>
+                <Task>MPEG-2 Encode/Mux for DLNA</Task>
+                <Message><![CDATA[
+Video Frame Encoded.  Input Frame ID=%1, Input Timestamp=%2, Output Timestamp=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InputID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InputTimestamp" inType="win:Int64" outType="xs:long"/>
+  <data name="TargetTimestamp" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>muxencode</Channel>
+                <Level>Verbose</Level>
+                <Task>MPEG-2 Encode/Mux for DLNA</Task>
+                <Message><![CDATA[
+Audio Sample Received.  Timestamp=%1, Bytes in buffer=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Timestamp" inType="win:Int64" outType="xs:long"/>
+  <data name="Bytes" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>muxencode</Channel>
+                <Level>Verbose</Level>
+                <Task>MPEG-2 Encode/Mux for DLNA</Task>
+                <Message><![CDATA[
+Audio Frame Encoded]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>muxencode</Channel>
+                <Level>Information</Level>
+                <Task>AudioEncodeSessionConfig</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MaxBitRate" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SampleRate" inType="win:Int32" outType="xs:int"/>
+  <data name="InputFormat" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>muxencode</Channel>
+                <Level>Information</Level>
+                <Task>AudioEncodeSession</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>muxencode</Channel>
+                <Level>Information</Level>
+                <Task>AudioEncodeSession</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>muxencode</Channel>
+                <Level>Verbose</Level>
+                <Task>AudioEncodeTask</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>muxencode</Channel>
+                <Level>Verbose</Level>
+                <Task>AudioEncodeTask</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>muxencode</Channel>
+                <Level>Information</Level>
+                <Task>VideoEncodeSessionConfig</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Width" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Height" inType="win:Int32" outType="xs:int"/>
+  <data name="Progressive" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="MaxBitRate" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Channel>muxencode</Channel>
+                <Level>Information</Level>
+                <Task>VideoEncodeSession</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Channel>muxencode</Channel>
+                <Level>Information</Level>
+                <Task>VideoEncodeSession</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Channel>muxencode</Channel>
+                <Level>Verbose</Level>
+                <Task>VideoEncodeTask</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Channel>muxencode</Channel>
+                <Level>Verbose</Level>
+                <Task>VideoEncodeTask</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Channel>muxencode</Channel>
+                <Level>Information</Level>
+                <Task>MuxSessionConfig</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MuxFormat" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Channel>muxencode</Channel>
+                <Level>Information</Level>
+                <Task>MuxSession</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Channel>muxencode</Channel>
+                <Level>Information</Level>
+                <Task>MuxSession</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

@@ -1,8 +1,0 @@
-Provider                                |  Level  |  Event ID    |  Version  |  Channel  |  Task  |  Opcode  |  Keyword  |  Message
-----------------------------------------|---------|--------------|-----------|-----------|--------|----------|-----------|------------------------------------------------------------------------------------------------------------------------
-Microsoft-Windows-MsLbfoSysEvtProvider  |         |  2147500593  |  0        |           |        |          |           |  MAC conflict: A port on the virtual switch has the same MAC as one of the underlying team members on Team Nic {Member}
-Microsoft-Windows-MsLbfoSysEvtProvider  |         |  2147500594  |  0        |           |        |          |           |  Use of Vlan detected on non-default Team Nic {Member}
-Microsoft-Windows-MsLbfoSysEvtProvider  |         |  2147500595  |  0        |           |        |          |           |  LACP Churn detected on Member Nic {Member}.
-Microsoft-Windows-MsLbfoSysEvtProvider  |         |  1073758772  |  0        |           |        |          |           |  Connection Timer Started for Member Nic {Member}. It will be in use shortly.
-Microsoft-Windows-MsLbfoSysEvtProvider  |         |  2147500597  |  0        |           |        |          |           |  Member Nic {Member} Disconnected.
-Microsoft-Windows-MsLbfoSysEvtProvider  |         |  1073758774  |  0        |           |        |          |           |  Member Nic {Member} Connected.

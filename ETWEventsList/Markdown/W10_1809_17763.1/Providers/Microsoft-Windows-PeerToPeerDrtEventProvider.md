@@ -1,4 +1,0 @@
-Provider                                      |  Level        |  Event ID  |  Version  |  Channel                                                         |  Task  |  Opcode  |  Keyword  |  Message
-----------------------------------------------|---------------|------------|-----------|------------------------------------------------------------------|--------|----------|-----------|---------------------------
-Microsoft-Windows-PeerToPeerDrtEventProvider  |  Information  |  10000     |  0        |  Microsoft-Windows-PeerToPeerDrtEventProvider/DiagnosticChannel  |        |          |           |  Create a DRT CMT instance
-Microsoft-Windows-PeerToPeerDrtEventProvider  |  Information  |  10001     |  0        |  Microsoft-Windows-PeerToPeerDrtEventProvider/DiagnosticChannel  |        |          |           |  Delete a DRT CMT instance

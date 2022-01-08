@@ -1,0 +1,423 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-DateTimeControlPanel</Name>
+        <Metadata>
+            <Guid>{741FC222-44ED-4BA7-98E3-F405B2D2C4B4}</Guid>
+            <ResourceFilePath>%systemroot%\system32\timedate.cpl</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%systemroot%\system32\timedate.cpl</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.21996.1&amp;FileName=timedate.cpl&amp;FileVer=10.0.21996.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-DateTimeControlPanel</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Operational</Message>
+                    <Path>Microsoft-Windows-DateTimeControlPanel/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Analytical</Message>
+                    <Path>Microsoft-Windows-DateTimeControlPanel/Analytic</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Debug</Message>
+                    <Path>Microsoft-Windows-DateTimeControlPanel/Debug</Path>
+                    <Index>2</Index>
+                    <Id>18</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Date/Time Control Panel Applet date/time functionality</Message>
+                    <Name>DateTime</Name>
+                    <Value>30</Value>
+                </Task>
+                <Task>
+                    <Message>Date/Time Control Panel Applet time zone functionality</Message>
+                    <Name>TimeZone</Name>
+                    <Value>31</Value>
+                </Task>
+                <Task>
+                    <Message>Date/Time Control Panel Applet extra clocks functionality</Message>
+                    <Name>AdditionalClocks</Name>
+                    <Value>32</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>PerfTrack_DisplayClockFlyout</Name>
+                    <Value>33</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>PerfTrack_DisplayClockTooltip</Name>
+                    <Value>34</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Date/Time Control Panel Applet data table operations</Message>
+                    <Name>DataTable</Name>
+                    <Value>30</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Date/Time Control Panel Applet initialization</Message>
+                    <Name>Initialize</Name>
+                    <Value>31</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Date/Time Control Panel Applet configuration changes</Message>
+                    <Name>ConfigurationChange</Name>
+                    <Value>32</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Date/Time Control Panel Applet operations</Message>
+                    <Name>Operation</Name>
+                    <Value>33</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Date/Time Control Panel Applet cleanup operations</Message>
+                    <Name>Cleanup</Name>
+                    <Value>34</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Response Time</Message>
+                    <Name>win:ResponseTime</Name>
+                    <Value>281474976710656</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Date/Time Control Panel Applet time zone functionality</Task>
+                <Opcode>Date/Time Control Panel Applet operations</Opcode>
+                <Message><![CDATA[
+Time zone operation failed because the required time zone names are missing or corrupt. To correct this error, you will need to update the "%1" to have correct values in one of the following subkeys: "%2" or "%3".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TimeZoneKey" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TimeZoneDisplay" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TimeZoneMUIDisplay" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Date/Time Control Panel Applet time zone functionality</Task>
+                <Opcode>Date/Time Control Panel Applet operations</Opcode>
+                <Message><![CDATA[
+Time zone operation failed because the required time zone data is missing or corrupt. To correct this error, you will need to update the values of the "%1" to have a correct value in the "%2" subkey.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TimeZoneKey" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SubKey" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Date/Time Control Panel Applet time zone functionality</Task>
+                <Opcode>Date/Time Control Panel Applet operations</Opcode>
+                <Message><![CDATA[
+The attempt to set the system time failed with the following parameters: wYear: %1, wMonth: %2, wDayOfWeek: %3, wDay: %4, wHour: %5, wMinute: %6, wSecond: %7, wMilliseconds: %8. SetLocalTime () returned error. Error code is %9.  Error message is: "%10".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="wYear" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="wMonth" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="wDayOfWeek" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="wDay" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="wHour" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="wMinute" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="wSecond" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="wMilliseconds" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Date/Time Control Panel Applet time zone functionality</Task>
+                <Opcode>Date/Time Control Panel Applet operations</Opcode>
+                <Message><![CDATA[
+The attempt to set the time zone with the following parameters failed. Bias: %1 minute(s), Standard name: "%2", StandardDate.wYear: %3, StandardDate.wMonth: %4, StandardDate.wDayOfWeek: %5, StandardDate.wDay: %6, StandardDate.wHour: %7, StandardDate.wMinute: %8, StandardDate.wSecond: %9, StandardDate.wMilliseconds: %10, Standard bias: %11 minute(s), Daylight saving name: "%12", DaylightDate.wYear: %13, DaylightDate.wMonth: %14, DaylightDate.wDayOfWeek: %15, DaylightDate.wDay: %16, DaylightDate.wHour: %17, DaylightDate.wMinute: %18, DaylightDate.wSecond: %19, DaylightDate.wMilliseconds: %20, Daylight saving bias: %21 minute(s). SetTimeZoneInformation() returned error.  Error code is %22. Error message is: "%23".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Bias" inType="win:Int32" outType="xs:int"/>
+  <data name="StandardName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SystemDate.wYear" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SystemDate.wMonth" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SystemDate.wDayOfWeek" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SystemDate.wDay" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SystemDate.wHour" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SystemDate.wMinute" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SystemDate.wSecond" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SystemDate.wMilliseconds" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="StandardBias" inType="win:Int32" outType="xs:int"/>
+  <data name="DaylightName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DaylightDate.wYear" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DaylightDate.wMonth" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DaylightDate.wDayOfWeek" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DaylightDate.wDay" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DaylightDate.wHour" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DaylightDate.wMinute" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DaylightDate.wSecond" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DaylightDate.wMilliseconds" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DaylightBias" inType="win:Int32" outType="xs:int"/>
+  <data name="TimeZoneKeyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>1</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Date/Time Control Panel Applet time zone functionality</Task>
+                <Opcode>Date/Time Control Panel Applet operations</Opcode>
+                <Message><![CDATA[
+The attempt to set the system time zone to "%1" returned error. Error code is %2. Error message is: "%3".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Time Zone" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Date/Time Control Panel Applet time zone functionality</Task>
+                <Opcode>Date/Time Control Panel Applet operations</Opcode>
+                <Message><![CDATA[
+The attempt to set the system time zone to "%1" returned error. Error code is %2. The time zone has been made obsolete.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Time Zone" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1006</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Date/Time Control Panel Applet time zone functionality</Task>
+                <Opcode>Date/Time Control Panel Applet operations</Opcode>
+                <Message><![CDATA[
+The attempt to set the system time zone to "%1" returned error. Error code is %2. The time zone is unrecognized.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Time Zone" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1007</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Date/Time Control Panel Applet time zone functionality</Task>
+                <Opcode>Date/Time Control Panel Applet operations</Opcode>
+                <Message><![CDATA[
+The attempt to set the system time zone to "%1" returned error. Error code is %2. The time zone data is unreadable.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Time Zone" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20000</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Date/Time Control Panel Applet time zone functionality</Task>
+                <Opcode>Date/Time Control Panel Applet operations</Opcode>
+                <Message><![CDATA[
+The system time was set successfully with the following parameters: wYear: %1, wMonth: %2, wDayOfWeek: %3, wDay: %4, wHour: %5, wMinute: %6, wSecond: %7, wMilliseconds: %8.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="wYear" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="wMonth" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="wDayOfWeek" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="wDay" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="wHour" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="wMinute" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="wSecond" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="wMilliseconds" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20001</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Date/Time Control Panel Applet time zone functionality</Task>
+                <Opcode>Date/Time Control Panel Applet operations</Opcode>
+                <Message><![CDATA[
+The system time zone was set successfully to "%1".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Time Zone" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30001</Id>
+                <Version>0</Version>
+                <Channel>Analytical</Channel>
+                <Level>Information</Level>
+                <Task>Date/Time Control Panel Applet time zone functionality</Task>
+                <Opcode>Date/Time Control Panel Applet operations</Opcode>
+                <Message><![CDATA[
+The system time was set successfully with the following parameters: wYear: %1, wMonth: %2, wDayOfWeek: %3, wDay: %4, wHour: %5, wMinute: %6, wSecond: %7, wMilliseconds: %8.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="wYear" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="wMonth" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="wDayOfWeek" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="wDay" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="wHour" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="wMinute" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="wSecond" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="wMilliseconds" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30002</Id>
+                <Version>0</Version>
+                <Channel>Analytical</Channel>
+                <Level>Information</Level>
+                <Task>Date/Time Control Panel Applet time zone functionality</Task>
+                <Opcode>Date/Time Control Panel Applet operations</Opcode>
+                <Message><![CDATA[
+The time zone was set successfully with the following parameters. Bias: %1 minute(s), Standard name: "%2", StandardDate.wYear: %3, StandardDate.wMonth: %4, StandardDate.wDayOfWeek: %5, StandardDate.wDay: %6, StandardDate.wHour: %7, StandardDate.wMinute: %8, StandardDate.wSecond: %9, StandardDate.wMilliseconds: %10, Standard bias: %11 minute(s), Daylight saving name: "%12", DaylightDate.wYear: %13, DaylightDate.wMonth: %14, DaylightDate.wDayOfWeek: %15, DaylightDate.wDay: %16, DaylightDate.wHour: %17, DaylightDate.wMinute: %18, DaylightDate.wSecond: %19, DaylightDate.wMilliseconds: %20, Daylight saving bias: %21 minute(s).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Bias" inType="win:Int32" outType="xs:int"/>
+  <data name="StandardName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SystemDate.wYear" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SystemDate.wMonth" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SystemDate.wDayOfWeek" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SystemDate.wDay" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SystemDate.wHour" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SystemDate.wMinute" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SystemDate.wSecond" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SystemDate.wMilliseconds" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="StandardBias" inType="win:Int32" outType="xs:int"/>
+  <data name="DaylightName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DaylightDate.wYear" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DaylightDate.wMonth" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DaylightDate.wDayOfWeek" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DaylightDate.wDay" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DaylightDate.wHour" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DaylightDate.wMinute" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DaylightDate.wSecond" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DaylightDate.wMilliseconds" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DaylightBias" inType="win:Int32" outType="xs:int"/>
+  <data name="TimeZoneKeyName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30010</Id>
+                <Version>0</Version>
+                <Channel>Analytical</Channel>
+                <Level>Information</Level>
+                <Task>PerfTrack_DisplayClockFlyout</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30011</Id>
+                <Version>0</Version>
+                <Channel>Analytical</Channel>
+                <Level>Information</Level>
+                <Task>PerfTrack_DisplayClockFlyout</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30012</Id>
+                <Version>0</Version>
+                <Channel>Analytical</Channel>
+                <Level>Information</Level>
+                <Task>PerfTrack_DisplayClockTooltip</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30013</Id>
+                <Version>0</Version>
+                <Channel>Analytical</Channel>
+                <Level>Information</Level>
+                <Task>PerfTrack_DisplayClockTooltip</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

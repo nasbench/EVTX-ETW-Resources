@@ -1,8 +1,0 @@
-Provider                   |  Level        |  Event ID  |  Version  |  Channel  |  Task                        |  Opcode  |  Keyword  |  Message
----------------------------|---------------|------------|-----------|-----------|------------------------------|----------|-----------|---------
-Microsoft-Windows-Dwm-Dwm  |  Information  |  1         |  0        |           |  RedirectionStateAndInput    |          |  DwmExe   |
-Microsoft-Windows-Dwm-Dwm  |  Information  |  2         |  0        |           |  RedirectionStateOutput      |          |  DwmExe   |
-Microsoft-Windows-Dwm-Dwm  |  Information  |  3         |  0        |           |  TraceGraphicsCapabilities   |          |  DwmExe   |
-Microsoft-Windows-Dwm-Dwm  |  Information  |  4         |  0        |           |  CompositionOverriden        |          |  DwmExe   |
-Microsoft-Windows-Dwm-Dwm  |  Information  |  5         |  0        |           |  CompositionEnabledByPolicy  |          |  DwmExe   |
-Microsoft-Windows-Dwm-Dwm  |  Information  |  6         |  0        |           |  RemotingCaps                |          |  DwmExe   |

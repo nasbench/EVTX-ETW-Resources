@@ -1,6 +1,0 @@
-Provider                          |  Level        |  Event ID  |  Version  |  Channel                                 |  Task                                   |  Opcode  |  Keyword  |  Message
-----------------------------------|---------------|------------|-----------|------------------------------------------|-----------------------------------------|----------|-----------|---------
-Microsoft-Windows-Diagnosis-MSDE  |  Information  |  1000      |  0        |  Microsoft-Windows-Diagnosis-MSDE/Debug  |  PerfTrack_MSDT_Initialize_Application  |  Start   |           |
-Microsoft-Windows-Diagnosis-MSDE  |  Information  |  1001      |  0        |  Microsoft-Windows-Diagnosis-MSDE/Debug  |  PerfTrack_MSDT_Initialize_Application  |  Stop    |           |
-Microsoft-Windows-Diagnosis-MSDE  |  Information  |  1002      |  0        |  Microsoft-Windows-Diagnosis-MSDE/Debug  |  PerfTrack_MSDT_Escalation              |  Start   |           |
-Microsoft-Windows-Diagnosis-MSDE  |  Information  |  1003      |  0        |  Microsoft-Windows-Diagnosis-MSDE/Debug  |  PerfTrack_MSDT_Escalation              |  Stop    |           |

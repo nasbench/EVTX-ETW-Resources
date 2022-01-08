@@ -1,0 +1,1683 @@
+<Providers>
+    <Provider>
+        <Name>Intel-iaLPSS2-I2C</Name>
+        <Metadata>
+            <Guid>{C2F86198-03CA-4771-8D4C-CE6E15CBCA56}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\drivers\iaLPSS2i_I2C.sys</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\system32\drivers\iaLPSS2i_I2C.sys</MessageFilePath>
+            <HelpLink></HelpLink>
+            <PublisherMessage>Intel-iaLPSS2-I2C</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>iaLPSS2_I2C Debug channel</Message>
+                    <Path>Intel-iaLPSS2-I2C/Debug</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>iaLPSS2_I2C Performance channel</Message>
+                    <Path>Intel-iaLPSS2-I2C/Performance</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>iaLPSS2_I2C Driver routines</Message>
+                    <Name>iaLPSS2_I2C_Driver</Name>
+                    <Guid>{4D72A115-AB3F-428B-8150-7586D6C37E3F}</Guid>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>iaLPSS2_I2C Init routines</Message>
+                    <Name>iaLPSS2_I2C_Device</Name>
+                    <Guid>{3A5C68BF-0854-41A0-A1A8-59590104EC4E}</Guid>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message>iaLPSS2_I2C Power routines</Message>
+                    <Name>iaLPSS2_I2C_Power</Name>
+                    <Guid>{BC67A0F8-84CE-4989-A0E9-A4C40D8D8EE6}</Guid>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message>iaLPSS2_I2C SPB DDI calls</Message>
+                    <Name>iaLPSS2_I2C_DDI</Name>
+                    <Guid>{EC0C00F3-8B97-4F2A-BC5D-D73A3CB78000}</Guid>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message>iaLPSS2_I2C Dma routines</Message>
+                    <Name>iaLPSS2_I2C_Dma</Name>
+                    <Guid>{D3799A9F-0F57-41A2-8F04-42D77666FB70}</Guid>
+                    <Value>5</Value>
+                </Task>
+                <Task>
+                    <Message>iaLPSS2_I2C Controller routines</Message>
+                    <Name>iaLPSS2_I2C_Ctrl</Name>
+                    <Guid>{6FBBCB1C-7C8D-4F39-B432-A569806BC642}</Guid>
+                    <Value>6</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+ERROR: %1 - Status:%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+INFO: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+[%1] -->]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+[%1] -&lt;--]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+[%1] -&lt;-- Status:%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1011</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Performance channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS2_I2C Driver routines</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+DriverEntry Start]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1012</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Performance channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS2_I2C Driver routines</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+DriverEntry End]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1013</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS2_I2C Driver routines</Task>
+                <Message><![CDATA[
+Driver ERROR: WdfDriverCreate() returned status:%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1014</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS2_I2C Driver routines</Task>
+                <Message><![CDATA[
+Driver ERROR: CheckSupportedOs() returned status:%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1015</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Performance channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS2_I2C Driver routines</Task>
+                <Message><![CDATA[
+DriverCleanup Info]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1021</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Performance channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS2_I2C Init routines</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+DeviceAdd Start]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1022</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Performance channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS2_I2C Init routines</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+DeviceAdd End]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1023</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS2_I2C Init routines</Task>
+                <Message><![CDATA[
+Device ERROR: SpbDeviceInitConfig() returned status:%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1024</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS2_I2C Init routines</Task>
+                <Message><![CDATA[
+Device ERROR: WdfDeviceInitAssignSDDLString() returned status:%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1025</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS2_I2C Init routines</Task>
+                <Message><![CDATA[
+Device ERROR: WdfDeviceCreate() returned status:%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1026</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS2_I2C Init routines</Task>
+                <Message><![CDATA[
+Device HW profile FOUND: Instance:%1 Version:%2 Revision:%3 Mode:%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Instance" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Version" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Revision" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Mode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1027</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS2_I2C Init routines</Task>
+                <Message><![CDATA[
+Device HW profile ERROR: Instance:%1 Version:%2 Revision:%3 Mode:%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Instance" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Version" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Revision" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Mode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1028</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS2_I2C Init routines</Task>
+                <Message><![CDATA[
+Device ERROR: SpbDeviceInitialize() returned status:%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1029</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS2_I2C Init routines</Task>
+                <Message><![CDATA[
+Device ERROR: WdfSpinLockCreate() returned status:%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1030</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS2_I2C Init routines</Task>
+                <Message><![CDATA[
+Device ERROR: WdfInterruptCreate() returned status:%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1031</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS2_I2C Init routines</Task>
+                <Message><![CDATA[
+Device ERROR: WdfTimerCreate() returned status:%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1032</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS2_I2C Init routines</Task>
+                <Message><![CDATA[
+Device ERROR: WdfDeviceAssignS0IdleSettings() returned status:%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1041</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Performance channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS2_I2C Init routines</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+PrepareHardware Start]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1042</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Performance channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS2_I2C Init routines</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+PrepareHardware End]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1043</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS2_I2C Init routines</Task>
+                <Message><![CDATA[
+PrepareHardware MBAR%1 mapped: PA:%2 LEN:%3 VA:%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MBAR" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PA" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="LEN" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VA" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1044</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Warning</Level>
+                <Task>iaLPSS2_I2C Init routines</Task>
+                <Message><![CDATA[
+PrepareHardware WARNING: Too many MBAR resources IDX:%1 PA:%2 LEN:%3 - MBAR disabled]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MBAR" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PA" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="LEN" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1045</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS2_I2C Init routines</Task>
+                <Message><![CDATA[
+PrepareHardware ERROR: Can't map MMIO for MBAR%1 PA:%2 LEN:%3 - STATUS:%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MBAR" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PA" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="LEN" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1046</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS2_I2C Init routines</Task>
+                <Message><![CDATA[
+PrepareHardware INTERRUPT VEC:%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Vector" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1047</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS2_I2C Init routines</Task>
+                <Message><![CDATA[
+PrepareHardware ERROR: Incorrect resource count. MMIO:%1 (exp. 1 or 2) INT:%2 (exp. 1) - STATUS:%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MBAR_count" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="INT_count" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1048</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS2_I2C Init routines</Task>
+                <Message><![CDATA[
+PrepareHardware ERROR: DMA SW initialization failed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1049</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS2_I2C Init routines</Task>
+                <Message><![CDATA[
+PrepareHardware DMA SW initialized]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1050</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS2_I2C Init routines</Task>
+                <Message><![CDATA[
+PrepareHardware DMA disabled or not needed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1051</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Performance channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS2_I2C Init routines</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+ReleaseHardware Start]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1052</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Performance channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS2_I2C Init routines</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+ReleaseHardware End]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1061</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Performance channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS2_I2C Power routines</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+D0Entry Start]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WdfPowerState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1062</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Performance channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS2_I2C Power routines</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+D0Entry End]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1063</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Performance channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS2_I2C Power routines</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+D0Exit Start]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WdfPowerState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1064</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Performance channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS2_I2C Power routines</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+D0Exit End]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1065</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS2_I2C Power routines</Task>
+                <Message><![CDATA[
+Power ERROR: PoRegisterPowerSettingCallback() returned status:%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1066</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS2_I2C Power routines</Task>
+                <Message><![CDATA[
+Power ERROR: Invalid power callback context]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1067</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS2_I2C Power routines</Task>
+                <Message><![CDATA[
+Power INFO: Monitor is %1. Setting idle timeout to %2 ms]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MonitorState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Timeout" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1068</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS2_I2C Power routines</Task>
+                <Message><![CDATA[
+Power ERROR: WdfDeviceAssignS0IdleSettings() returned status:%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1070</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS2_I2C SPB DDI calls</Task>
+                <Message><![CDATA[
+SpbCx DDI: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1071</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS2_I2C SPB DDI calls</Task>
+                <Message><![CDATA[
+SpbCx DDI: EvtSpbTargetConnect: SpbController:%1 SpbTarget:%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SpbController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SpbTarget" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1072</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS2_I2C SPB DDI calls</Task>
+                <Message><![CDATA[
+SpbCx DDI: EvtSpbTargetDisconnect: SpbController:%1 SpbTarget:%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SpbController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SpbTarget" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS2_I2C SPB DDI calls</Task>
+                <Message><![CDATA[
+SpbCx DDI: EvtSpbControllerLock: SpbController:%1 SpbTarget:%2 SpbRequest:%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SpbController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SpbTarget" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SpbRequest" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1074</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS2_I2C SPB DDI calls</Task>
+                <Message><![CDATA[
+SpbCx DDI: EvtSpbControllerUnlock: SpbController:%1 SpbTarget:%2 SpbRequest:%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SpbController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SpbTarget" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SpbRequest" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1075</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS2_I2C SPB DDI calls</Task>
+                <Message><![CDATA[
+SpbCx DDI: EvtSpbIoRead: SpbController:%1 SpbTarget:%2 SpbRequest:%3 Length:%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SpbController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SpbTarget" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SpbRequest" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Length" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1076</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS2_I2C SPB DDI calls</Task>
+                <Message><![CDATA[
+SpbCx DDI: EvtSpbIoWrite: SpbController:%1 SpbTarget:%2 SpbRequest:%3 Length:%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SpbController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SpbTarget" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SpbRequest" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Length" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1077</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS2_I2C SPB DDI calls</Task>
+                <Message><![CDATA[
+SpbCx DDI: EvtSpbIoSequence: SpbController:%1 SpbTarget:%2 SpbRequest:%3 TransferCount:%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SpbController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SpbTarget" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SpbRequest" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="TransferCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1078</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS2_I2C SPB DDI calls</Task>
+                <Message><![CDATA[
+SpbCx DDI: EvtSpbOtherInCallerContext: SpbController:%1 FxRequest:%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SpbController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FxTarget" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1079</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS2_I2C SPB DDI calls</Task>
+                <Message><![CDATA[
+SpbCx DDI: EvtSpbOther: SpbController:%1 SpbTarget:%2 SpbRequest:%3 InLength:%4 OutLength:%5 IoCtrlCode:%6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SpbController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SpbTarget" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SpbRequest" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="InputLength" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="OutputLength" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="IoControlCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1081</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS2_I2C Controller routines</Task>
+                <Message><![CDATA[
+Controller INFO: Connected to target: Addr:%1 Mode:%2 ClkFreq:%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SlaveAddress" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="AddressMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ClkFreq" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1082</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS2_I2C Controller routines</Task>
+                <Message><![CDATA[
+Controller ERROR: Incorrect target settings - STATUS:%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1083</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS2_I2C Controller routines</Task>
+                <Message><![CDATA[
+Controller INFO: Disconnected from target: Addr:%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SlaveAddress" inType="win:UInt16" outType="win:HexInt16"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1084</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS2_I2C Controller routines</Task>
+                <Message><![CDATA[
+Controller INFO: Controller locked to target: Addr:%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SlaveAddress" inType="win:UInt16" outType="win:HexInt16"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1085</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS2_I2C Controller routines</Task>
+                <Message><![CDATA[
+Controller ERROR: Controller lock failed - STATUS:%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1086</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS2_I2C Controller routines</Task>
+                <Message><![CDATA[
+Controller INFO: Connected unlocked from target: Addr:%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SlaveAddress" inType="win:UInt16" outType="win:HexInt16"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1091</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS2_I2C Controller routines</Task>
+                <Message><![CDATA[
+Request INFO: Addr:%1 Idx:%2 Cnt:%3 - context configured for %4 (type:%5) with length %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SlaveAddress" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="Idx" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Count" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Direction" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Length" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1092</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS2_I2C Controller routines</Task>
+                <Message><![CDATA[
+Request ERROR: Addr:%1 Idx:%2 Cnt:%3 - invalid request direction %4 (type:%5) with length %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SlaveAddress" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="Idx" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Count" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Direction" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Length" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1093</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS2_I2C Controller routines</Task>
+                <Message><![CDATA[
+Request ERROR: Addr:%1 Idx:%2 Cnt:%3 - invalid transfer length %4 (size), supported max is 64KB]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SlaveAddress" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="Idx" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Count" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Length" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1094</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS2_I2C Controller routines</Task>
+                <Message><![CDATA[
+Request ERROR: Addr:%1 Idx:%2 Cnt:%3 - invalid transfer length %4 (alignment), supported is 8, 16, 32]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SlaveAddress" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="Idx" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Count" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Length" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1095</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS2_I2C Controller routines</Task>
+                <Message><![CDATA[
+Request INFO: Addr:%1 Idx:%2 Cnt:%3 - transfer delayed for %4 us]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SlaveAddress" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="Idx" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Count" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Delay_us" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1096</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS2_I2C Controller routines</Task>
+                <Message><![CDATA[
+Request INFO: Addr:%1 Idx:%2 Cnt:%3 - delay timer expired - start transfer]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SlaveAddress" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="Idx" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Count" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1100</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS2_I2C Controller routines</Task>
+                <Message><![CDATA[
+Interrupt ISR: Status:%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HwStatus" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1101</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS2_I2C Controller routines</Task>
+                <Message><![CDATA[
+Interrupt DPC: HW_Status:%1 SW_Status:%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HwStatus" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="SwStatus" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1102</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS2_I2C Controller routines</Task>
+                <Message><![CDATA[
+Interrupt DPC: Reenable HW interrupts with mask:%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HwMask" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1171</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS2_I2C Controller routines</Task>
+                <Message><![CDATA[
+Target ERROR: Invalid connection properties length (current:%1, supported:%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Current" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Expected" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1172</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS2_I2C Controller routines</Task>
+                <Message><![CDATA[
+Target ERROR: Invalid bus type (current:%1, supported:I2C)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Current" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1176</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS2_I2C Controller routines</Task>
+                <Message><![CDATA[
+Target ERROR: Invalid clock frequency (requested:%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Frequency" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1177</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Warning</Level>
+                <Task>iaLPSS2_I2C Controller routines</Task>
+                <Message><![CDATA[
+Request WARNING: Cancel Timer Callback without valid Target - this happen when request was already cancelled]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1178</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Warning</Level>
+                <Task>iaLPSS2_I2C Controller routines</Task>
+                <Message><![CDATA[
+Request WARNING: Cancel Timer Callback without valid Request - this happen when request was already cancelled]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1179</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS2_I2C Controller routines</Task>
+                <Message><![CDATA[
+Request INFO: Cancel Timer Callback with outstanding Request: SpbController:%1 SpbTarget:%2 SpbRequest:%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SpbController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SpbTarget" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SpbRequest" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1181</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Warning</Level>
+                <Task>iaLPSS2_I2C Controller routines</Task>
+                <Message><![CDATA[
+Request WARNING: Timer Callback without valid Target - this happen when request was already cancelled]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1182</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Warning</Level>
+                <Task>iaLPSS2_I2C Controller routines</Task>
+                <Message><![CDATA[
+Request WARNING: Timer Callback without valid Request - this happen when request was already cancelled]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1183</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Warning</Level>
+                <Task>iaLPSS2_I2C Controller routines</Task>
+                <Message><![CDATA[
+Request WARNING: DPC Callback without valid Target - this happen when request was already cancelled]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1184</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Warning</Level>
+                <Task>iaLPSS2_I2C Controller routines</Task>
+                <Message><![CDATA[
+Request WARNING: DPC Callback without valid Request - this happen when request was already cancelled]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1185</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Warning</Level>
+                <Task>iaLPSS2_I2C Controller routines</Task>
+                <Message><![CDATA[
+Request WARNING: Cancel Callback without valid Target - this happen when request was already cancelled]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1186</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Warning</Level>
+                <Task>iaLPSS2_I2C Controller routines</Task>
+                <Message><![CDATA[
+Request WARNING: Cancel Callback without valid Request - this happen when request was already cancelled]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1187</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS2_I2C Controller routines</Task>
+                <Message><![CDATA[
+Request INFO: Cancel Callback with outstanding Request: SpbController:%1 SpbTarget:%2 SpbRequest:%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SpbController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SpbTarget" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SpbRequest" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1188</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS2_I2C Controller routines</Task>
+                <Message><![CDATA[
+Request ERROR: Failed to configure controller for transfer - Status:%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1189</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS2_I2C Controller routines</Task>
+                <Message><![CDATA[
+Request ERROR: Other transfer requires 0us delays - Status:%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1190</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS2_I2C Controller routines</Task>
+                <Message><![CDATA[
+Request ERROR: Other transfer requires write then read sequence items - Status:%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1191</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS2_I2C Controller routines</Task>
+                <Message><![CDATA[
+Request ERROR: Other transfer requires 2 sequence items - Status:%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1192</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS2_I2C Controller routines</Task>
+                <Message><![CDATA[
+Request ERROR: Failed to enqueue Other request - Status:%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1193</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS2_I2C Controller routines</Task>
+                <Message><![CDATA[
+Request ERROR: Unsupported Other RequestType - Status:%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1194</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS2_I2C Controller routines</Task>
+                <Message><![CDATA[
+Request ERROR: Unsupported Other IoControlCode - Status:%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1195</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS2_I2C Controller routines</Task>
+                <Message><![CDATA[
+Request ERROR: Failed to capture Other TransferList - Status:%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1196</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS2_I2C Controller routines</Task>
+                <Message><![CDATA[
+Request ERROR: Request failed to mark cancelable - Status:%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1197</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS2_I2C Controller routines</Task>
+                <Message><![CDATA[
+Request ERROR: Request for SpbController:%1 SpbRequest:%2 Type:%3 failed and is finished synchronously - Status:%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SpbController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SpbRequest" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1198</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS2_I2C Controller routines</Task>
+                <Message><![CDATA[
+Request INFO: Request for SpbController:%2 SpbRequest:%3 complete with Length:%4 - Status:%5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="SpbController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SpbRequest" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="TotalInformation" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1199</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS2_I2C Controller routines</Task>
+                <Message><![CDATA[
+Request ERROR: Request for SpbController:%2 SpbRequest:%3 complete with Length:%4 - Status:%5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="SpbController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SpbRequest" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="TotalInformation" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1200</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS2_I2C Controller routines</Task>
+                <Message><![CDATA[
+Controller ERROR: Failing device !!!]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1201</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS2_I2C Controller routines</Task>
+                <Message><![CDATA[
+Controller ERROR: Invalid capability (Type:%1, Capability:%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Capability" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1202</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS2_I2C Controller routines</Task>
+                <Message><![CDATA[
+Controller INFO: Configured for LOCKed operation]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SlaveAddress" inType="win:UInt16" outType="win:HexInt16"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1203</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS2_I2C Controller routines</Task>
+                <Message><![CDATA[
+Controller INFO: Addr:%1 Idx:%2 Cnt:%3 - Configured for WRITE %4 bytes]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SlaveAddress" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="Idx" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Count" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Length" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1204</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS2_I2C Controller routines</Task>
+                <Message><![CDATA[
+Controller INFO: Addr:%1 Idx:%2 Cnt:%3 - Configured for READ %4 bytes]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SlaveAddress" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="Idx" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Count" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Length" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1205</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS2_I2C Controller routines</Task>
+                <Message><![CDATA[
+Controller ERROR: Addr:%1 Idx:%2 Cnt:%3 - Other transfer is not supported]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SlaveAddress" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="Idx" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Count" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1206</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS2_I2C Controller routines</Task>
+                <Message><![CDATA[
+Controller INFO: Addr:%1 Idx:%2 Cnt:%3 - DMA Processing]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SlaveAddress" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="Idx" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Count" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1207</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS2_I2C Controller routines</Task>
+                <Message><![CDATA[
+Controller INFO: Addr:%1 Idx:%2 Cnt:%3 - PIO Processing]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SlaveAddress" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="Idx" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Count" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1208</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS2_I2C Controller routines</Task>
+                <Message><![CDATA[
+Controller ERROR: Addr:%1 Idx:%2 Cnt:%3 - I2C Bus busy on controler init start]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SlaveAddress" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="Idx" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Count" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1209</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS2_I2C Controller routines</Task>
+                <Message><![CDATA[
+Controller ERROR: Addr:%1 Idx:%2 Cnt:%3 - Timeout disabling controller]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SlaveAddress" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="Idx" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Count" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1210</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS2_I2C Controller routines</Task>
+                <Message><![CDATA[
+Controller ERROR: Addr:%1 Idx:%2 Cnt:%3 - Timeout enabling controller]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SlaveAddress" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="Idx" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Count" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1215</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Error</Level>
+                <Task>iaLPSS2_I2C Controller routines</Task>
+                <Message><![CDATA[
+Controller ERROR: Addr:%1 Idx:%2 Cnt:%3 - Controller initialization failed - STATUS:%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SlaveAddress" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="Idx" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Count" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1220</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS2_I2C Controller routines</Task>
+                <Message><![CDATA[
+Controller INFO: Addr:%1 Idx:%2 Cnt:%3 - Transfer ended with %4 bytes processed - STATUS:%5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SlaveAddress" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="Idx" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Count" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Length" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1225</Id>
+                <Version>0</Version>
+                <Channel>iaLPSS2_I2C Debug channel</Channel>
+                <Level>Information</Level>
+                <Task>iaLPSS2_I2C Controller routines</Task>
+                <Message><![CDATA[
+Controller INFO: Interrupt processing started: HW_Status:%1 SW_Status:%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HwStatus" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="SwStatus" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

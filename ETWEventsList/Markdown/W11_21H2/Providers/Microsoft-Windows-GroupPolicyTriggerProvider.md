@@ -1,4 +1,0 @@
-Provider                                      |  Level        |  Event ID  |  Version  |  Channel  |  Task  |  Opcode  |  Keyword                            |  Message
-----------------------------------------------|---------------|------------|-----------|-----------|--------|----------|-------------------------------------|---------
-Microsoft-Windows-GroupPolicyTriggerProvider  |  Information  |  1         |  0        |           |        |          |  Keyword_MachinePolicyPresentEvent  |
-Microsoft-Windows-GroupPolicyTriggerProvider  |  Information  |  2         |  0        |           |        |          |  Keyword_UserPolicyPresentEvent     |

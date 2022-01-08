@@ -1,4 +1,0 @@
-Provider                       |  Level        |  Event ID  |  Version  |  Channel  |  Task              |  Opcode  |  Keyword  |  Message
--------------------------------|---------------|------------|-----------|-----------|--------------------|----------|-----------|---------
-Microsoft-Windows-GPIOButtons  |  Information  |  1         |  0        |           |  ConvertibleState  |          |           |
-Microsoft-Windows-GPIOButtons  |  Information  |  2         |  0        |           |  DockState         |          |           |

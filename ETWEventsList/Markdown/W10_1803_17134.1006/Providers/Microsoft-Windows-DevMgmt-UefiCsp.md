@@ -1,4 +1,0 @@
-Provider                           |  Level        |  Event ID  |  Version  |  Channel  |  Task  |  Opcode  |  Keyword  |  Message
------------------------------------|---------------|------------|-----------|-----------|--------|----------|-----------|--------------------------------------------------------
-Microsoft-Windows-DevMgmt-UefiCsp  |  Information  |  10        |  0        |           |        |          |  API      |  {FunctionName}: enter...
-Microsoft-Windows-DevMgmt-UefiCsp  |  Error        |  11        |  0        |           |        |          |  Error    |  Function {ErrorString} failed with status {ErrorCode}.

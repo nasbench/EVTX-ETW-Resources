@@ -1,7 +1,0 @@
-Provider                      |  Level        |  Event ID  |  Version  |  Channel                                   |  Task                   |  Opcode  |  Keyword          |  Message
-------------------------------|---------------|------------|-----------|--------------------------------------------|-------------------------|----------|-------------------|---------
-Microsoft-Windows-Subsys-Csr  |  Information  |  1         |  0        |  Microsoft-Windows-Subsys-Csr/Operational  |  csr:ShutdownProcesses  |  Start   |  csr:Diagnostics  |
-Microsoft-Windows-Subsys-Csr  |  Information  |  2         |  0        |  Microsoft-Windows-Subsys-Csr/Operational  |  csr:ShutdownProcesses  |  Stop    |  csr:Diagnostics  |
-Microsoft-Windows-Subsys-Csr  |  Information  |  3         |  0        |  Microsoft-Windows-Subsys-Csr/Operational  |  csr:ShutdownProcess    |  Start   |  csr:Diagnostics  |
-Microsoft-Windows-Subsys-Csr  |  Information  |  4         |  0        |  Microsoft-Windows-Subsys-Csr/Operational  |  csr:ShutdownProcess    |  Stop    |  csr:Diagnostics  |
-Microsoft-Windows-Subsys-Csr  |  Information  |  4         |  1        |  Microsoft-Windows-Subsys-Csr/Operational  |  csr:ShutdownProcess    |  Stop    |  csr:Diagnostics  |

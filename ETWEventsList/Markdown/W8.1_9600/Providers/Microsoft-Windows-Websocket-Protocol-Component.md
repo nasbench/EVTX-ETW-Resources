@@ -1,6 +1,0 @@
-Provider                                        |  Level        |  Event ID  |  Version  |  Channel                                                 |  Task          |  Opcode  |  Keyword  |  Message
-------------------------------------------------|---------------|------------|-----------|----------------------------------------------------------|----------------|----------|-----------|------------------------------------------------------------
-Microsoft-Windows-Websocket-Protocol-Component  |  Error        |  1         |  0        |  Microsoft-Windows-Websocket-Protocol-Component/Tracing  |  Parser        |          |  KW_ALL   |  {TraceMessage}
-Microsoft-Windows-Websocket-Protocol-Component  |  Information  |  2         |  0        |  Microsoft-Windows-Websocket-Protocol-Component/Tracing  |  Action queue  |  Start   |  KW_ALL   |  Operation of '{OperationType}' type queued with ID '{Id}'.
-Microsoft-Windows-Websocket-Protocol-Component  |  Information  |  3         |  0        |  Microsoft-Windows-Websocket-Protocol-Component/Tracing  |  Action queue  |          |  KW_ALL   |  Operation '{Id}' is executing action '{ActionType}'.
-Microsoft-Windows-Websocket-Protocol-Component  |  Information  |  4         |  0        |  Microsoft-Windows-Websocket-Protocol-Component/Tracing  |  Action queue  |  Stop    |  KW_ALL   |  Operation '{Id}' finished.

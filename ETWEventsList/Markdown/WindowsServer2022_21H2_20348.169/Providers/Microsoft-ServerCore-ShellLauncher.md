@@ -1,6 +1,0 @@
-Provider                            |  Level        |  Event ID  |  Version  |  Channel                                   |  Task  |  Opcode  |  Keyword  |  Message
-------------------------------------|---------------|------------|-----------|--------------------------------------------|--------|----------|-----------|-----------
-Microsoft-ServerCore-ShellLauncher  |  Error        |  301       |  0        |  Microsoft-ServerCore-ShellLauncher/Debug  |        |          |           |  {Message}
-Microsoft-ServerCore-ShellLauncher  |  Warning      |  302       |  0        |  Microsoft-ServerCore-ShellLauncher/Debug  |        |          |           |  {Message}
-Microsoft-ServerCore-ShellLauncher  |  Information  |  303       |  0        |  Microsoft-ServerCore-ShellLauncher/Debug  |        |          |           |  {Message}
-Microsoft-ServerCore-ShellLauncher  |  Verbose      |  304       |  0        |  Microsoft-ServerCore-ShellLauncher/Debug  |        |          |           |  {Message}

@@ -1,0 +1,501 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-CloudStore</Name>
+        <Metadata>
+            <Guid>{741BB90C-A7A3-49D6-BD82-1E6B858403F7}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\Windows.CloudStore.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\system32\Windows.CloudStore.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.21996.1&amp;FileName=Windows.CloudStore.dll&amp;FileVer=10.0.21996.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-CloudStore</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-CloudStore/Operational</Message>
+                    <Path>Microsoft-Windows-CloudStore/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-CloudStore/Debug</Message>
+                    <Path>Microsoft-Windows-CloudStore/Debug</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudStore/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Error %3 occurred. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+  <data name="File" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudStore/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Discovered schema provider %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SchemaProvider" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudStore/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Successfully loaded %1 schemas.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProviderCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudStore/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Ignoring ommitted field %1 with unknown type %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FieldId" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="BondDataType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudStore/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Conflict resolution of type %2 complete. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CorrelationVector" inType="win:AnsiString" outType="xs:string"/>
+  <data name="QualifiedTypeName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="SchemaSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Schema" inType="win:Binary" outType="xs:hexBinary" length="SchemaSize"/>
+  <data name="ForceLastWriterWins" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="OriginalVersion" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="OriginalTombstoned" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="OriginalSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OriginalData" inType="win:Binary" outType="xs:hexBinary" length="OriginalSize"/>
+  <data name="TheirsVersion" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="TheirsTombstoned" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="TheirsSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TheirsData" inType="win:Binary" outType="xs:hexBinary" length="TheirsSize"/>
+  <data name="YoursVersion" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="YoursTombstoned" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="YoursSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="YoursData" inType="win:Binary" outType="xs:hexBinary" length="YoursSize"/>
+  <data name="ResolvedVersion" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ResolvedTombstoned" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ResolvedSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ResolvedData" inType="win:Binary" outType="xs:hexBinary" length="ResolvedSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2007</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudStore/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Resolved a set containing duplicated values. The duplicate values were ignored. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Index" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2008</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudStore/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The 'original' version (%2) of type %1 is more recent than the 'theirs' version (%3) or the 'yours' version (%4). Healing the store by using the most recent version (%5). See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="QualifiedTypeName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="OriginalVersion" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="TheirsVersion" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="YoursVersion" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ResolvedVersion" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2009</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudStore/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The data of type %1 was corrupted and ignored. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="QualifiedTypeName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Base64String" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2010</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudStore/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The data of type %1 was corrupted and ignored. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="QualifiedTypeName" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2011</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudStore/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The data of type %1 was corrupted and ignored. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="QualifiedTypeName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Data" inType="win:Binary" outType="xs:hexBinary" length="Size"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2012</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudStore/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The data of type %1 was corrupted and ignored. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="QualifiedTypeName" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2013</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudStore/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The data of type %1 was corrupted and ignored. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="QualifiedTypeName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Base64String" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2014</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudStore/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The data of type %1 was corrupted and ignored. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="QualifiedTypeName" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2015</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudStore/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The AppExtension of name %1 having type %2 failed with error code %3 found.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AppExtensionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TypeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2016</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudStore/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The AppExtension of name %1 having type %2 failed with error code %3 found.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AppExtensionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TypeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudStore/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Sucessfully deleted %2. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Version" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudStore/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Saving %1 and merging with 'theirs' data. 'Theirs' data has size %3 and is version %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Version" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Size" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudStore/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Saving %1 without 'theirs' data.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudStore/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Overwriting %1 with 'yours' data to repair inaccessible store (access failed with error code %2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudStore/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Uploading %1 failed with error code %2. The data was sucessfully stored locally and will be uploaded later.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3007</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudStore/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Successfully loaded %2. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CorrelationVector" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Id" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Version" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Data" inType="win:Binary" outType="xs:hexBinary" length="Size"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3008</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudStore/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Successfully saved %2. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CorrelationVector" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Id" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Version" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Data" inType="win:Binary" outType="xs:hexBinary" length="Size"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3013</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudStore/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Downloading %1 failed with error code %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3014</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudStore/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Delete of %1 was ignored because the data changed after it was deleted. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:AnsiString" outType="xs:string"/>
+  <data name="TheirsVersion" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="YoursVersion" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3015</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudStore/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The attempt to load %1 failed because the data was corrupt. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CorrelationVector" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Id" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Version" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Data" inType="win:Binary" outType="xs:hexBinary" length="Size"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3017</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudStore/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The object %1 has an unexpected security descriptor. Recovering by resetting the security descriptor. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ObjectName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CurrentAcl" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ExpectedAcl" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3018</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudStore/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The cache invalidator has started.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3019</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudStore/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The cache invalidator has stopped.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3020</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudStore/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The cache invalidator is processing %2 activities.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CorrelationVector" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ActivitiesCount" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudStore/Operational</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudStore/Debug</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

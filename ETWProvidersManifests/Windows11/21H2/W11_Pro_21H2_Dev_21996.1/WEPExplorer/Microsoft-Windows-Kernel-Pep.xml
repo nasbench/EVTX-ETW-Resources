@@ -1,0 +1,205 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Kernel-Pep</Name>
+        <Metadata>
+            <Guid>{5412704E-B2E1-4624-8FFD-55777B8F7373}</Guid>
+            <ResourceFilePath>%systemroot%\system32\microsoft-windows-kernel-power-events.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%systemroot%\system32\microsoft-windows-kernel-power-events.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.21996.1&amp;FileName=microsoft-windows-kernel-power-events.dll&amp;FileVer=10.0.21996.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Kernel-Pep</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Kernel-Pep/Diagnostic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>PepRailRundown</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>PepDeviceRundown</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>PepComponentRundown</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>PepRailVoltageChange</Name>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>PepComponentFrequencyChange</Name>
+                    <Value>5</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>PepPlatformIdleResidency</Name>
+                    <Value>6</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>PepPlatformIdleTransition</Name>
+                    <Value>7</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>popep:Power</Name>
+                    <Value>1</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Pep/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>PepRailRundown</Task>
+                <Keyword>popep:Power</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VoltageRailId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VoltageRailName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CurrentVoltageMv" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxVoltageMv" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Pep/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>PepDeviceRundown</Task>
+                <Keyword>popep:Power</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceId" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="DeviceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PlatformStateDependencyCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="PlatformStateDependency" count="PlatformStateDependencyCount">
+    <data name="PlatformState" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="PowerState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Pep/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>PepComponentRundown</Task>
+                <Keyword>popep:Power</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VoltageRailId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DeviceId" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ComponentIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CurrentFrequencyKHz" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxFrequencyKHz" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PlatformStateDependencyCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="PlatformStateDependency" count="PlatformStateDependencyCount">
+    <data name="PlatformState" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="PowerState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+  <data name="ComponentDescriptionLength" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ComponentDescription" inType="win:UnicodeString" outType="xs:string" length="ComponentDescriptionLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Pep/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>PepRailVoltageChange</Task>
+                <Keyword>popep:Power</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VoltageRailId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OldRailVoltageMv" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewRailVoltageMv" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Pep/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>PepComponentFrequencyChange</Task>
+                <Keyword>popep:Power</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceId" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ComponentIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OldComponentFrequencyKHz" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewComponentFrequencyKHz" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Pep/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>PepPlatformIdleResidency</Task>
+                <Keyword>popep:Power</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformStateCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="PlatformIdleStateResidency" count="PlatformStateCount">
+    <data name="PlatformState" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="Count" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="Duration" inType="win:UInt64" outType="win:HexInt64"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Pep/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>PepPlatformIdleTransition</Task>
+                <Keyword>popep:Power</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="OldPlatformState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewPlatformState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

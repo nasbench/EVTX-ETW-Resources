@@ -1,3 +1,0 @@
-Provider                                         |  Level        |  Event ID  |  Version  |  Channel  |  Task  |  Opcode                |  Keyword                |  Message
--------------------------------------------------|---------------|------------|-----------|-----------|--------|------------------------|-------------------------|---------
-Microsoft-Windows-NetworkProfileTriggerProvider  |  Information  |  1         |  0        |           |        |  Opcode_ProfileChange  |  Keyword_ProfileChange  |

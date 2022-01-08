@@ -1,8 +1,0 @@
-Provider                               |  Level        |  Event ID  |  Version  |  Channel                                         |  Task                     |  Opcode  |  Keyword  |  Message
----------------------------------------|---------------|------------|-----------|--------------------------------------------------|---------------------------|----------|-----------|---------
-Microsoft-Windows-ApplicabilityEngine  |  Information  |  100       |  0        |  Microsoft-Windows-ApplicabilityEngine/Analytic  |  GetApplicabilityContext  |  Start   |           |
-Microsoft-Windows-ApplicabilityEngine  |  Information  |  101       |  0        |  Microsoft-Windows-ApplicabilityEngine/Analytic  |  GetApplicabilityContext  |  Stop    |           |
-Microsoft-Windows-ApplicabilityEngine  |  Information  |  104       |  0        |  Microsoft-Windows-ApplicabilityEngine/Analytic  |  UpdateScaleContext       |  Start   |           |
-Microsoft-Windows-ApplicabilityEngine  |  Information  |  105       |  0        |  Microsoft-Windows-ApplicabilityEngine/Analytic  |  UpdateScaleContext       |  Stop    |           |
-Microsoft-Windows-ApplicabilityEngine  |  Information  |  106       |  0        |  Microsoft-Windows-ApplicabilityEngine/Analytic  |  GetApplicablePackages    |  Start   |           |
-Microsoft-Windows-ApplicabilityEngine  |  Information  |  107       |  0        |  Microsoft-Windows-ApplicabilityEngine/Analytic  |  GetApplicablePackages    |  Stop    |           |
