@@ -1,0 +1,2385 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-ServerManager-DeploymentProvider</Name>
+        <Metadata>
+            <Guid>{66AF9A38-2D94-11E0-A076-8534E0D72085}</Guid>
+            <ResourceFilePath>C:\Windows\system32\wbem\ServerManager.DeploymentProvider.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\wbem\ServerManager.DeploymentProvider.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=ServerManager.DeploymentProvider.dll&amp;FileVer=10.0.14393.0</HelpLink>
+            <PublisherMessage>Microsoft-Windows-ServerManager-DeploymentProvider</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Operational</Message>
+                    <Path>Microsoft-Windows-ServerManager-DeploymentProvider/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Debug</Message>
+                    <Path>Microsoft-Windows-ServerManager-DeploymentProvider/Debug</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>GetServerComponentAsync method call.</Message>
+                    <Name>GetServerComponentAsync</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>GetServerComponent request on a separate thread.</Message>
+                    <Name>GetServerComponentRequest</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message>GetEnumerationState method call.</Message>
+                    <Name>GetEnumerationState</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message>AddServerComponentAsync method call.</Message>
+                    <Name>AddServerComponent</Name>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message>RemoveServerComponentAsync method call.</Message>
+                    <Name>RemoveServerComponent</Name>
+                    <Value>5</Value>
+                </Task>
+                <Task>
+                    <Message>Deployment provider shutdown.</Message>
+                    <Name>Shutdown</Name>
+                    <Value>6</Value>
+                </Task>
+                <Task>
+                    <Message>Deployment provider initialization.</Message>
+                    <Name>Initialization</Name>
+                    <Value>7</Value>
+                </Task>
+                <Task>
+                    <Message>GetAlterationState method call.</Message>
+                    <Name>GetAlterationState</Name>
+                    <Value>8</Value>
+                </Task>
+                <Task>
+                    <Message>KeepAlive Mechanism actions.</Message>
+                    <Name>KeepAliveMechanism</Name>
+                    <Value>9</Value>
+                </Task>
+                <Task>
+                    <Message>Provider Lifecycle actions.</Message>
+                    <Name>ProviderLifecycle</Name>
+                    <Value>10</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>GetServerComponentAsync method call.</Task>
+                <Message><![CDATA[
+GetServerComponentAsync method started.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="requestGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>GetServerComponentAsync method call.</Task>
+                <Message><![CDATA[
+GetServerComponentAsync method returned Completed.  Restart required: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="restartRequired" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="requestGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>GetServerComponentAsync method call.</Task>
+                <Message><![CDATA[
+GetServerComponentAsync method returned InProgress. %1 of %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ticks" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="totalTicks" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="requestGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>103</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>GetServerComponentAsync method call.</Task>
+                <Message><![CDATA[
+GetServerComponentAsync method returned Failed. Error: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="requestGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>104</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>GetEnumerationState method call.</Task>
+                <Message><![CDATA[
+GetEnumerationState method started.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="requestGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>105</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>GetEnumerationState method call.</Task>
+                <Message><![CDATA[
+GetEnumerationState method returned Completed. Restart required: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="restartRequired" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="requestGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>106</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>GetEnumerationState method call.</Task>
+                <Message><![CDATA[
+GetEnumerationState method returned InProgress. %1 of %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ticks" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="totalTicks" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="requestGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>107</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>GetEnumerationState method call.</Task>
+                <Message><![CDATA[
+GetEnumerationState method returned Failed. Error: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="requestGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>108</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>GetServerComponent request on a separate thread.</Task>
+                <Message><![CDATA[
+GetServerComponent request started on a separate thread.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="requestGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>109</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>GetServerComponent request on a separate thread.</Task>
+                <Message><![CDATA[
+GetServerComponent request ended on a separate thread.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="requestGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>110</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Error</Level>
+                <Task>GetEnumerationState method call.</Task>
+                <Message><![CDATA[
+Generic Deployment Error: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>111</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>GetServerComponent request on a separate thread.</Task>
+                <Message><![CDATA[
+Starting a GetServerComponent request.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="requestGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>112</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>GetServerComponent request on a separate thread.</Task>
+                <Message><![CDATA[
+Completed processing the GetServerComponent request.  Restart required: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="restartRequired" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="requestGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>113</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>GetServerComponent request on a separate thread.</Task>
+                <Message><![CDATA[
+An error occured while processing the GetServerComponent. Error: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="requestGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>114</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>GetServerComponent request on a separate thread.</Task>
+                <Message><![CDATA[
+An error occured while creating Wbem CIM entry: %1 ClassName: %2 Error: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="message2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>115</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>GetServerComponent request on a separate thread.</Task>
+                <Message><![CDATA[
+Component %1 has invalid DISM state %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ptzMessage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="value" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>200</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>AddServerComponentAsync method call.</Task>
+                <Message><![CDATA[
+AddServerComponentAsync method started. Adding ClassNames: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="serverComponentNames" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="requestGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>201</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>AddServerComponentAsync method call.</Task>
+                <Message><![CDATA[
+AddServerComponentAsync method returned InProgress. %1 of %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ticks" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="totalTicks" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="requestGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>202</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>AddServerComponentAsync method call.</Task>
+                <Message><![CDATA[
+AddServerComponentAsync method returned Failed. %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="requestGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>203</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>AddServerComponentAsync method call.</Task>
+                <Message><![CDATA[
+Processing request to add Server Components: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="serverComponentNames" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="requestGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>204</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>AddServerComponentAsync method call.</Task>
+                <Message><![CDATA[
+Add request complete. Server Components added: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="serverComponentNames" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="requestGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>300</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>RemoveServerComponentAsync method call.</Task>
+                <Message><![CDATA[
+RemoveServerComponentAsync method started. Removing ClassNames: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="serverComponentNames" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="requestGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>301</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>RemoveServerComponentAsync method call.</Task>
+                <Message><![CDATA[
+RemoveServerComponentAsync method returned InProgress. %1 of %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ticks" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="totalTicks" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="requestGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>302</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>RemoveServerComponentAsync method call.</Task>
+                <Message><![CDATA[
+RemoveServerComponentAsync method returned Failed. Error: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="requestGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>303</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>RemoveServerComponentAsync method call.</Task>
+                <Message><![CDATA[
+Processing request to remove Server Components: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="serverComponentNames" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="requestGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>304</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>RemoveServerComponentAsync method call.</Task>
+                <Message><![CDATA[
+Remove request complete. Server Components removed: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="serverComponentNames" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="requestGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>400</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>GetAlterationState method call.</Task>
+                <Message><![CDATA[
+GetAlterationState method started.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="requestGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>401</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>GetAlterationState method call.</Task>
+                <Message><![CDATA[
+GetAlterationState method ended. Reboot required: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="restartRequired" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="requestGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>402</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>GetAlterationState method call.</Task>
+                <Message><![CDATA[
+GetAlterationState method returned InProgress. %1 of %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ticks" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="totalTicks" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="requestGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>403</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>GetAlterationState method call.</Task>
+                <Message><![CDATA[
+GetAlterationState method returned Failed. Error: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="requestGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>450</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>KeepAlive Mechanism actions.</Task>
+                <Message><![CDATA[
+Calling MI_RefuseUnload method.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MI_ResultCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>451</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>KeepAlive Mechanism actions.</Task>
+                <Message><![CDATA[
+Calling MI_RequestUnload method.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MI_ResultCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>452</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+CreateEvent method call failed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="win32ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="errorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>453</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+CreateMutex method call failed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="win32ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="errorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>454</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+MI_PostResult method call failed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MI_ResultCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="errorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>455</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+MI_Application_Initialize method call failed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MI_ResultCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="errorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>456</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+MI_Application_Close method call failed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MI_ResultCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="errorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>457</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+MI_RefuseUnload method call failed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MI_ResultCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="errorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>458</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+MI_RequestUnload method call failed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MI_ResultCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="errorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>459</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Error</Level>
+                <Task>KeepAlive Mechanism actions.</Task>
+                <Message><![CDATA[
+The KeepAlive Callback method threw an exception.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>460</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>KeepAlive Mechanism actions.</Task>
+                <Message><![CDATA[
+Starting the KeepAlive Mechanism.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="requestGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>461</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>KeepAlive Mechanism actions.</Task>
+                <Message><![CDATA[
+The KeepAlive Mechanism started on another thread.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="requestGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>462</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Error</Level>
+                <Task>KeepAlive Mechanism actions.</Task>
+                <Message><![CDATA[
+The KeepAlive Mutex is in Abandoned state.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>463</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>Provider Lifecycle actions.</Task>
+                <Message><![CDATA[
+Loading Deployment provider.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>464</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>Provider Lifecycle actions.</Task>
+                <Message><![CDATA[
+Unloading Deployment provider.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>465</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>GetServerComponentAsync method call.</Task>
+                <Message><![CDATA[
+Invalid Request GUID: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ptzMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>466</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>GetServerComponentAsync method call.</Task>
+                <Message><![CDATA[
+A WMI operation failed. Op: %1 ErrorCode: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="value" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>467</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Provider Lifecycle actions.</Task>
+                <Message><![CDATA[
+Exception detected while reporting a failure. Unable to recover. %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ptzMessage" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>500</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>GetEnumerationState method call.</Task>
+                <Message><![CDATA[
+ExecuteEnumerationCommand %1 Guid %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="serverComponentNames" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="requestGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>501</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>GetEnumerationState method call.</Task>
+                <Message><![CDATA[
+ExecuteEnumerationCommand ReadFromCache %1 Guid %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="serverComponentNames" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="requestGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>502</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>GetEnumerationState method call.</Task>
+                <Message><![CDATA[
+ExecuteEnumerationCommand SpawnThread %1 Guid %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="serverComponentNames" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="requestGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>503</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>GetEnumerationState method call.</Task>
+                <Message><![CDATA[
+Enumerate Function Call %1 Guid %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="serverComponentNames" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="requestGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>504</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>GetEnumerationState method call.</Task>
+                <Message><![CDATA[
+Component Repository LoadFromCache %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="serverComponentNames" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>505</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>GetEnumerationState method call.</Task>
+                <Message><![CDATA[
+Component Repository BuildRelationshipModel %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="serverComponentNames" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>506</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>GetEnumerationState method call.</Task>
+                <Message><![CDATA[
+Component Repository ScanSystem %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="serverComponentNames" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>507</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>GetEnumerationState method call.</Task>
+                <Message><![CDATA[
+Create DismSessionManager %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="serverComponentNames" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>508</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>GetEnumerationState method call.</Task>
+                <Message><![CDATA[
+LoadRepository delete existing components %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="serverComponentNames" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>509</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>GetEnumerationState method call.</Task>
+                <Message><![CDATA[
+LoadRepository DismGetFeaturesEx API %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="serverComponentNames" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>510</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>GetEnumerationState method call.</Task>
+                <Message><![CDATA[
+LoadRepository add updates %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="serverComponentNames" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>511</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>GetEnumerationState method call.</Task>
+                <Message><![CDATA[
+LoadRepository add components %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="serverComponentNames" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>512</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>GetEnumerationState method call.</Task>
+                <Message><![CDATA[
+LoadRepository validate components %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="serverComponentNames" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>513</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>GetEnumerationState method call.</Task>
+                <Message><![CDATA[
+Original Server components, Update WMI CLass definitions %1 Guid %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="serverComponentNames" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="requestGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>514</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>GetEnumerationState method call.</Task>
+                <Message><![CDATA[
+Write component results to registry %1 Guid %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="serverComponentNames" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="requestGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>515</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>GetEnumerationState method call.</Task>
+                <Message><![CDATA[
+Write ServiceReport to registry %1 Guid %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="serverComponentNames" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="requestGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>516</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>GetEnumerationState method call.</Task>
+                <Message><![CDATA[
+Consequtive Get Status requests %1 Guid %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="serverComponentNames" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="requestGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>517</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>GetEnumerationState method call.</Task>
+                <Message><![CDATA[
+Consequtive Get requests read from registry %1 Guid %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StartStop" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="requestGUID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>518</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>GetEnumerationState method call.</Task>
+                <Message><![CDATA[
+Consequtive Get requests build sorted component tree %1 Guid %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StartStop" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="requestGUID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>519</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>GetEnumerationState method call.</Task>
+                <Message><![CDATA[
+Consequtive Get request select based on component names %1 Guid %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StartStop" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="requestGUID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>520</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>GetEnumerationState method call.</Task>
+                <Message><![CDATA[
+Consequtive Get request returning InProgress %1 Guid %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StartStop" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="requestGUID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>521</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>AddServerComponentAsync method call.</Task>
+                <Message><![CDATA[
+Add server component %1 Guid %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="serverComponentNames" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="requestGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>522</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>AddServerComponentAsync method call.</Task>
+                <Message><![CDATA[
+Add server component on vhd %1 Guid %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="serverComponentNames" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="requestGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>523</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>AddServerComponentAsync method call.</Task>
+                <Message><![CDATA[
+Reset component repository before Add %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="serverComponentNames" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>524</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>AddServerComponentAsync method call.</Task>
+                <Message><![CDATA[
+Prepare components for Add %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="serverComponentNames" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>525</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>AddServerComponentAsync method call.</Task>
+                <Message><![CDATA[
+Validate Mutual exclusion groups before add %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="serverComponentNames" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>526</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>AddServerComponentAsync method call.</Task>
+                <Message><![CDATA[
+Open Dism session for adding components %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="serverComponentNames" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>527</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>AddServerComponentAsync method call.</Task>
+                <Message><![CDATA[
+Get updates to deploy %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="serverComponentNames" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>528</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>AddServerComponentAsync method call.</Task>
+                <Message><![CDATA[
+DismEnableFeatures API %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="serverComponentNames" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>529</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>AddServerComponentAsync method call.</Task>
+                <Message><![CDATA[
+DismCommitImage API called after EnableFeatures %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="serverComponentNames" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>530</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>AddServerComponentAsync method call.</Task>
+                <Message><![CDATA[
+Refresh state fo modified components %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="serverComponentNames" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>531</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>RemoveServerComponentAsync method call.</Task>
+                <Message><![CDATA[
+Remove server component %1 Guid %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="serverComponentNames" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="requestGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>532</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>RemoveServerComponentAsync method call.</Task>
+                <Message><![CDATA[
+Remove server component on vhd %1 Guid %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="serverComponentNames" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="requestGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>533</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>RemoveServerComponentAsync method call.</Task>
+                <Message><![CDATA[
+Reset repository before removing components %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="serverComponentNames" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>534</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>RemoveServerComponentAsync method call.</Task>
+                <Message><![CDATA[
+Prepare components for remove %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="serverComponentNames" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>535</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>RemoveServerComponentAsync method call.</Task>
+                <Message><![CDATA[
+Create a list of components that are left installed after remove %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="serverComponentNames" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>536</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>RemoveServerComponentAsync method call.</Task>
+                <Message><![CDATA[
+Refresh the state of the modified components after refresh %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="serverComponentNames" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>537</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>RemoveServerComponentAsync method call.</Task>
+                <Message><![CDATA[
+Get the list of updates to remove %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="serverComponentNames" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>538</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>RemoveServerComponentAsync method call.</Task>
+                <Message><![CDATA[
+Update the children of Dism updates for removal %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="serverComponentNames" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>539</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>RemoveServerComponentAsync method call.</Task>
+                <Message><![CDATA[
+Add unused dism updates to the list for removal %1..]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="serverComponentNames" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>540</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>RemoveServerComponentAsync method call.</Task>
+                <Message><![CDATA[
+DismDisableFeatures API %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="serverComponentNames" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>541</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>RemoveServerComponentAsync method call.</Task>
+                <Message><![CDATA[
+DismCommitImage API for remove %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="serverComponentNames" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>542</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>RemoveServerComponentAsync method call.</Task>
+                <Message><![CDATA[
+Refresh the state of the modified components after refresh %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="serverComponentNames" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>543</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>GetAlterationState method call.</Task>
+                <Message><![CDATA[
+Submit Alteration request %1 Guid %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="serverComponentNames" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="requestGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>544</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>GetAlterationState method call.</Task>
+                <Message><![CDATA[
+Convert Ids to unique names and save config data %1 Guid %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="serverComponentNames" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="requestGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>545</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>GetAlterationState method call.</Task>
+                <Message><![CDATA[
+Validate component identities %1 Guid %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="serverComponentNames" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="requestGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>546</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>GetAlterationState method call.</Task>
+                <Message><![CDATA[
+Mount Image %1 Image %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ptzMessage1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ptzMessage2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>547</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>GetAlterationState method call.</Task>
+                <Message><![CDATA[
+Renmount Image %1 Image %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ptzMessage1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ptzMessage2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>548</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>GetAlterationState method call.</Task>
+                <Message><![CDATA[
+Unmount Image %1 Image %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ptzMessage1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ptzMessage2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>549</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>GetAlterationState method call.</Task>
+                <Message><![CDATA[
+UpdateImageInfo %1 Image %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ptzMessage1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ptzMessage2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>550</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>GetAlterationState method call.</Task>
+                <Message><![CDATA[
+CBS Restart Check %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ptzMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1281</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>GetServerComponent request on a separate thread.</Task>
+                <Message><![CDATA[
+Unknown MUM2 element detected. FeatureName: %1 UnknownElement: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ptzMessage1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ptzMessage2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1282</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>GetServerComponent request on a separate thread.</Task>
+                <Message><![CDATA[
+Unknown MUM2 attribute detected. FeatureName: %1 Element: %2 UnknownAttribute: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ptzMessage1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ptzMessage2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ptzMessage3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1283</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>GetServerComponent request on a separate thread.</Task>
+                <Message><![CDATA[
+Server components require the Id property. Container Update: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ptzMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1284</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>GetServerComponent request on a separate thread.</Task>
+                <Message><![CDATA[
+Server components require the UniqueName property. Feature: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ptzMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1285</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>GetServerComponent request on a separate thread.</Task>
+                <Message><![CDATA[
+Server components require the DisplayName property. Container Update: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ptzMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1286</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>GetServerComponent request on a separate thread.</Task>
+                <Message><![CDATA[
+Server components require the Description property. Feature: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ptzMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1287</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>GetServerComponent request on a separate thread.</Task>
+                <Message><![CDATA[
+Server component's parent not found. Container Update: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ptzMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1288</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>GetServerComponent request on a separate thread.</Task>
+                <Message><![CDATA[
+Server components require the Version property. Container Update: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ptzMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1289</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>GetServerComponent request on a separate thread.</Task>
+                <Message><![CDATA[
+Server component's deploys section contains an update that was not found. Container Update: %1. Deploys Update: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ptzMessage1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ptzMessage2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1290</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>GetServerComponent request on a separate thread.</Task>
+                <Message><![CDATA[
+Mutual Exclusion conflict detected. Components "%1" are all members of group "%2"]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ptzMessage1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ptzMessage2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1291</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>GetServerComponent request on a separate thread.</Task>
+                <Message><![CDATA[
+Failed to parse MUM2 Xml blob for update %1 hResult: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1292</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>GetServerComponent request on a separate thread.</Task>
+                <Message><![CDATA[
+Invalid MUM2 configuration status detected. Missing registry value. FeatureName: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ptzMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1293</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Error</Level>
+                <Task>GetServerComponent request on a separate thread.</Task>
+                <Message><![CDATA[
+Internal fatal error while parsing MUM2 data. hResult: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1294</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Error</Level>
+                <Task>GetServerComponent request on a separate thread.</Task>
+                <Message><![CDATA[
+Internal fatal error. Op: %1 hResult: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1295</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>GetAlterationState method call.</Task>
+                <Message><![CDATA[
+CBS Session %1 status. IsComplete: %2 hResult: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="message2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1296</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>GetAlterationState method call.</Task>
+                <Message><![CDATA[
+Task Start:  %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ptzMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1297</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>GetAlterationState method call.</Task>
+                <Message><![CDATA[
+Task Stop:   %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ptzMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1298</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>GetServerComponent request on a separate thread.</Task>
+                <Message><![CDATA[
+Failed to read ConfigurationStatus from registry. Update %1 Key: %2 Value: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ptzMessage1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ptzMessage2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ptzMessage3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1299</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>GetServerComponent request on a separate thread.</Task>
+                <Message><![CDATA[
+Using existing component cache from memory. Count: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="value" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1300</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>GetServerComponent request on a separate thread.</Task>
+                <Message><![CDATA[
+Component cache read from registry. Count: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="value" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1301</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>GetServerComponent request on a separate thread.</Task>
+                <Message><![CDATA[
+Component cache loaded from Dism. Count: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="value" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1302</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>GetServerComponent request on a separate thread.</Task>
+                <Message><![CDATA[
+Unknown MUM2 value detected. FeatureName: %1 Attribute: %2 UnknownValue: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ptzMessage1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ptzMessage2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ptzMessage3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1303</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>GetServerComponent request on a separate thread.</Task>
+                <Message><![CDATA[
+Failed to parse MUM2 for feature %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ptzMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1304</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>GetServerComponent request on a separate thread.</Task>
+                <Message><![CDATA[
+Found unknown update. FeatureName %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ptzMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1305</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>GetServerComponent request on a separate thread.</Task>
+                <Message><![CDATA[
+Unable to find component %1 referenced by component %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ptzMessage1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ptzMessage2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1306</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>GetServerComponent request on a separate thread.</Task>
+                <Message><![CDATA[
+Component %1 has invalid ServerComponentType %2. This type is only valid if the component has a parent.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="value" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1307</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>GetServerComponent request on a separate thread.</Task>
+                <Message><![CDATA[
+Failed to unmount image - %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ptzMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1308</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>GetServerComponent request on a separate thread.</Task>
+                <Message><![CDATA[
+Internal fatal error. Op: %1 hResult: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1309</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>GetServerComponent request on a separate thread.</Task>
+                <Message><![CDATA[
+Partial install detected. Component %1 depends on uninstalled component %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ptzMessage1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ptzMessage2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1310</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>GetServerComponent request on a separate thread.</Task>
+                <Message><![CDATA[
+Invalid Mum2 detected for component %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ptzMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1311</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>GetServerComponent request on a separate thread.</Task>
+                <Message><![CDATA[
+Invalid OptionalCompanionFor detected in registry.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1312</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>GetServerComponent request on a separate thread.</Task>
+                <Message><![CDATA[
+Failure loading OptionalCompanionFor from registry. Error: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1313</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>GetServerComponent request on a separate thread.</Task>
+                <Message><![CDATA[
+Failed to load cache from registry. Error: %1 Attempting to load components from system.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1314</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>GetServerComponent request on a separate thread.</Task>
+                <Message><![CDATA[
+Update %1 is not present. ServerComponent %2 will be removed from the Role and Feature list.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ptzMessage1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ptzMessage2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1315</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>GetServerComponent request on a separate thread.</Task>
+                <Message><![CDATA[
+Exception Detected: %1 ErrorID: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ptzMessage1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ptzMessage2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1316</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Warning</Level>
+                <Task>GetServerComponent request on a separate thread.</Task>
+                <Message><![CDATA[
+Unknown Parent %1 required by %2. Removing %2 from feature list.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ptzMessage1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ptzMessage2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1317</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>GetServerComponent request on a separate thread.</Task>
+                <Message><![CDATA[
+Unknown dependency %1 required by %2. Removing %2 from feature list.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ptzMessage1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ptzMessage2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1318</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>GetServerComponent request on a separate thread.</Task>
+                <Message><![CDATA[
+Unknown optional tool %1 for feature %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ptzMessage1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ptzMessage2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1537</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Deployment provider initialization.</Task>
+                <Message><![CDATA[
+Unable to open installer session. Error Code: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1538</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Deployment provider initialization.</Task>
+                <Message><![CDATA[
+Unable to initialize installer. Error Code: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1539</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Deployment provider initialization.</Task>
+                <Message><![CDATA[
+Failed to obtain status information from mounted images. hResult: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1540</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Deployment provider initialization.</Task>
+                <Message><![CDATA[
+Failed to mount image. ImageFile: %1 MountPath: %2 hResult: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="message2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1541</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>GetServerComponent request on a separate thread.</Task>
+                <Message><![CDATA[
+Failed read features from system. hResult: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1542</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>GetServerComponent request on a separate thread.</Task>
+                <Message><![CDATA[
+Failed read feature info. Feature: %1 hResult: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1543</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>GetAlterationState method call.</Task>
+                <Message><![CDATA[
+Failed get the last CBS session ID. hResult: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1544</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>GetAlterationState method call.</Task>
+                <Message><![CDATA[
+Failed get the state from CBS session ID %1. hResult: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1545</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Deployment provider shutdown.</Task>
+                <Message><![CDATA[
+Failed to unmount image. ImageFile: %1 MountPath: %2 hResult: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="message2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1546</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Deployment provider initialization.</Task>
+                <Message><![CDATA[
+Failed to remount image. ImageFile: %1 MountPath: %2 hResult: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="message2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1547</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>AddServerComponentAsync method call.</Task>
+                <Message><![CDATA[
+Unable to install updates %1. hResult: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1548</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>RemoveServerComponentAsync method call.</Task>
+                <Message><![CDATA[
+Unable to uninstall updates %1. hResult: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1549</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>Deployment provider initialization.</Task>
+                <Message><![CDATA[
+Dism session busy. Retry: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="value" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1550</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>AddServerComponentAsync method call.</Task>
+                <Message><![CDATA[
+Attempting to enable updates via Dism: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ptzMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1551</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>RemoveServerComponentAsync method call.</Task>
+                <Message><![CDATA[
+Attempting to disable updates via Dism: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ptzMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1552</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>Deployment provider initialization.</Task>
+                <Message><![CDATA[
+CBS session busy. Retry: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="value" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1553</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>GetServerComponent request on a separate thread.</Task>
+                <Message><![CDATA[
+Internal fatal error. Op: %1 Message: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ptzMessage1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ptzMessage2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1554</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>GetServerComponent request on a separate thread.</Task>
+                <Message><![CDATA[
+Error reading configuration status for %1. Error: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1555</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>GetServerComponent request on a separate thread.</Task>
+                <Message><![CDATA[
+Failed to load module %1. Error: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1556</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>GetServerComponent request on a separate thread.</Task>
+                <Message><![CDATA[
+Failed to resource ID %2 from module %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="value" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

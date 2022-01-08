@@ -1,0 +1,450 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-WPDClassInstaller</Name>
+        <Metadata>
+            <Guid>{AD5162D8-DAF0-4A25-88A7-01CBEB33902E}</Guid>
+            <ResourceFilePath>C:\Windows\System32\wpd_ci.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\System32\wpd_ci.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17763.1&amp;FileName=wpd_ci.dll&amp;FileVer=10.0.17763.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-WPD-ClassInstaller</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Operational</Message>
+                    <Path>Microsoft-Windows-WPD-ClassInstaller/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Analytic</Message>
+                    <Path>Microsoft-Windows-WPD-ClassInstaller/Analytic</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Driver Performance</Message>
+                    <Name>DriverPerformance</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>Driver Installation</Message>
+                    <Name>DriverInitialization</Name>
+                    <Value>16</Value>
+                </Task>
+                <Task>
+                    <Message>Driver Post-Install Configuration</Message>
+                    <Name>DriverSpecialOperation</Name>
+                    <Value>32</Value>
+                </Task>
+                <Task>
+                    <Message>Driver Migration</Message>
+                    <Name>DriverFailure</Name>
+                    <Value>48</Value>
+                </Task>
+                <Task>
+                    <Message>Device Metadata Retrieval</Message>
+                    <Name>DriverMetadataRetrieval</Name>
+                    <Value>64</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Response Time</Message>
+                    <Name>win:ResponseTime</Name>
+                    <Value>281474976710656</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Classic</Message>
+                    <Name>win:EventlogClassic</Name>
+                    <Value>36028797018963968</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Driver Performance</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+WPD device installation function (%1, %2) begin.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InstallFunctionCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InstallFunctionName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Driver Performance</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+WPD device installation function (%1, %2) end with this return code (%3).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InstallFunctionCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InstallFunctionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ReturnCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Driver Performance</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+WPD device metadata retrieval for device %1 begin]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DevicePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>103</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Driver Performance</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+WPD device metadata retrieval for device %1 end with this return code (%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DevicePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ReturnCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>104</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Driver Performance</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+WPD device metadata retrieval for device %1 begin]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DevicePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>105</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Driver Performance</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+WPD device metadata retrieval for device %1 end with this return code (%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DevicePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ReturnCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>200</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Driver Performance</Task>
+                <Message><![CDATA[
+Device marked for reinstallation on subsequent connect.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>201</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Device Metadata Retrieval</Task>
+                <Message><![CDATA[
+%1: Transfer of metadata (%2, %3) succeeded.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DevicePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MetadataLocaleName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MetadataContentId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>202</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Device Metadata Retrieval</Task>
+                <Message><![CDATA[
+%1: Transfer of metadata (%2, %3) skipped. Error code %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DevicePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MetadataLocaleName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MetadataContentId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ReturnCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>203</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Device Metadata Retrieval</Task>
+                <Message><![CDATA[
+%1: Transfer of metadata (%2, %3) failed. Error code %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DevicePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MetadataLocaleName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MetadataContentId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ReturnCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>204</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Device Metadata Retrieval</Task>
+                <Message><![CDATA[
+%1: Transfer of metadata failed as the Device Metadata Service could not be accessed. Error code %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DevicePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ReturnCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>205</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Device Metadata Retrieval</Task>
+                <Message><![CDATA[
+%1: Successfully opened the Device Metadata Service to retrieve metadata: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DevicePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServicePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>206</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Device Metadata Retrieval</Task>
+                <Message><![CDATA[
+Transfer of metadata (%1, %2) is skipped because the metadata already exists on the system.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MetadataLocaleName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MetadataContentId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073831936</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Drivers were successfully installed for device %1.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073831937</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Media player and imaging program compatibility layers were successfully registered for device %1. Layer bits %2 were requested, layer bits %3 were registered.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073831938</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Autoplay was successfully registered for device %1.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073831939</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Autoplay registration was skipped for device %1.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073831940</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1: Drivers for %2 device(s) were successfully uninstalled while migrating a dual-mode mass storage class device to Media Transfer Protocol (MTP).]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073831941</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1: Drivers for %2 device(s) were successfully uninstalled while migrating a Media Transfer Protocol (MTP) device.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073831942</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1: Drivers for %2 device(s) were successfully uninstalled while migrating a Media Transfer Protocol (MTP) device, including any devices that were connected and active.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073831943</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1: Drivers for %2 device(s) were successfully uninstalled while migrating a Picture Transfer Protocol (PTP) device.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073831944</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1: Drivers for %2 device(s) were successfully uninstalled while migrating a Picture Transfer Protocol (PTP) device, including any devices that were connected and active.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073831945</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1: Drivers were successfully migrated after Plug and Play was enumerated again.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147574016</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1: This version of Windows does not support Windows Portable Device drivers, so the drivers were not installed.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221316096</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+It was not possible to install drivers for the device %1. Error code %2.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221316097</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+It was not possible to access the device (%1) after installing drivers. Error code %2.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221316098</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+It was not possible to register media player and imaging program layers for the device %1. Error code %2.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221316099</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+It was not possible to register autoplay for device %1. Error code %2.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221316100</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 failed to uninstall drivers when migrating dual-mode devices from mass storage class to Media Transfer Protocol (MTP). Error code %2.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221316101</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 failed to uninstall drivers for single-protocol Media Transfer Protocol (MTP) devices. Error %2.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221316102</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 failed to uninstall drivers for single-protocol Picture Transfer Protocol (PTP) devices. Error %2.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221316103</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1: It was not possible to enumerate Plug and Play again after drivers were migrated. Error code %2.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

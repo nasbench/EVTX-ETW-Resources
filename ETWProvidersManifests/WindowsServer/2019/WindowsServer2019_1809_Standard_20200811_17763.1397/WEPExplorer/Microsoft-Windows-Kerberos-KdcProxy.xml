@@ -1,0 +1,450 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Kerberos-KdcProxy</Name>
+        <Metadata>
+            <Guid>{D3F8787E-656F-4876-9EBD-6F5E3CB0A45B}</Guid>
+            <ResourceFilePath>C:\Windows\System32\kpssvc.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\System32\kpssvc.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17763.1&amp;FileName=kpssvc.dll&amp;FileVer=10.0.17763.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Kerberos-KDCProxy</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Operational</Message>
+                    <Path>Microsoft-Windows-Kerberos-KdcProxy/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Critical</Message>
+                    <Name>win:Critical</Name>
+                    <Value>1</Value>
+                </Level>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>TASK_SERVICE</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>TASK_HTTP</Name>
+                    <Value>2</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Critical</Level>
+                <Task>TASK_SERVICE</Task>
+                <Message><![CDATA[
+Service stopped with a failure: error code %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Critical</Level>
+                <Task>TASK_SERVICE</Task>
+                <Message><![CDATA[
+Failed to initialize Group Policy: error code %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Critical</Level>
+                <Task>TASK_SERVICE</Task>
+                <Message><![CDATA[
+Failed to read Group Policy: error code %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Critical</Level>
+                <Task>TASK_SERVICE</Task>
+                <Message><![CDATA[
+Failed to start the HTTP service: error code %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Critical</Level>
+                <Task>TASK_SERVICE</Task>
+                <Message><![CDATA[
+Service failed to register UrlPrefix %1: error code %2. Contact your administrator to make sure %1 is properly reserved.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UrlPrefix" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Critical</Level>
+                <Task>TASK_SERVICE</Task>
+                <Message><![CDATA[
+Service failed to start because system is not domain-joined: error code %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>TASK_HTTP</Task>
+                <Message><![CDATA[
+HttpReceiveHttpRequest API failed to receive an HTTP request from the network: error code %1. This may indicate a failure where no future HTTP requests can be received by the service.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>TASK_HTTP</Task>
+                <Message><![CDATA[
+Service failed to create a new IO object to service an HTTP request from the network: error code %1. This may indicate a failure where no future HTTP requests can be received by the service.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>TASK_HTTP</Task>
+                <Message><![CDATA[
+Failed to unpack %1: error code %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PduType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>103</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>TASK_HTTP</Task>
+                <Message><![CDATA[
+Failed to locate a domain controller in domain %1 with locator flags %2: error code %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TargetDomain" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Flags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>200</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>TASK_SERVICE</Task>
+                <Message><![CDATA[
+Retry (%1) connection to KDC in %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RetryNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TargetDomain" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>300</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>TASK_SERVICE</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Service started]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>301</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>TASK_SERVICE</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Service stopped]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>302</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>TASK_SERVICE</Task>
+                <Message><![CDATA[
+Initialized Group Policy successfully]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>303</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>TASK_SERVICE</Task>
+                <Message><![CDATA[
+Read Group Policy successfully]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>304</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>TASK_SERVICE</Task>
+                <Message><![CDATA[
+HTTP service started successfully]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>305</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>TASK_SERVICE</Task>
+                <Message><![CDATA[
+HTTP service stopped]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>306</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>TASK_SERVICE</Task>
+                <Message><![CDATA[
+Rediscover KDC for domain %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TargetDomain" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>307</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>TASK_SERVICE</Task>
+                <Message><![CDATA[
+Hash table was expanded from (%1/%2 buckets, %3 entries) to (%4/%5 buckets, %6 entries) in %7 milliseconds]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BeginNonEmptyBuckets" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BeginTotalBuckets" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BeginTotalEntries" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NonEmptyBuckets" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TotalBuckets" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TotalEntries" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TimeSpent" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>308</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>TASK_SERVICE</Task>
+                <Message><![CDATA[
+Hash table was contracted from (%1/%2 buckets, %3 entries) to (%4/%5 buckets, %6 entries) in %7 milliseconds]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BeginNonEmptyBuckets" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BeginTotalBuckets" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BeginTotalEntries" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NonEmptyBuckets" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TotalBuckets" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TotalEntries" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TimeSpent" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>309</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>TASK_SERVICE</Task>
+                <Message><![CDATA[
+Rediscovered KDC %3(%2) for domain %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TargetDomain" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="KDCName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="KDCAddress" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>400</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>TASK_HTTP</Task>
+                <Message><![CDATA[
+An HTTP request was received]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>401</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>TASK_HTTP</Task>
+                <Message><![CDATA[
+Client certificate is required to establish an HTTP connection]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>402</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>TASK_HTTP</Task>
+                <Message><![CDATA[
+Client certificate is not valid to establish an HTTP connection: trust status %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TrustStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>403</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>TASK_HTTP</Task>
+                <Message><![CDATA[
+The account (Domain: %1, User: %2) has %3 password failures. It is locked out for the next %4 seconds]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DomainName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UserName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NumerOfFailures" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LockedOutPeriod" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>404</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>TASK_HTTP</Task>
+                <Message><![CDATA[
+The account (Domain: %1, User: %2) is rejected due to the usage of an unarmored Kerberos message]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DomainName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UserName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

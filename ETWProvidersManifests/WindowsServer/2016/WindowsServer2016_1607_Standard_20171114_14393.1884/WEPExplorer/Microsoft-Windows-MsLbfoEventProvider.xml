@@ -1,0 +1,569 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-MsLbfoEventProvider</Name>
+        <Metadata>
+            <Guid>{B72C6994-9FE0-45AD-83B3-8F5885F20E0E}</Guid>
+            <ResourceFilePath>C:\Windows\system32\drivers\MsLbfoProvider.sys</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\drivers\MsLbfoProvider.sys</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp</HelpLink>
+            <PublisherMessage>Microsoft-Windows-MsLbfoProvider</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-MsLbfoProvider/Operational</Message>
+                    <Path>Microsoft-Windows-MsLbfoProvider/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:SendPath</Name>
+                    <Value>4294967296</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:ReceivePath</Name>
+                    <Value>8589934592</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:L3ConnectPath</Name>
+                    <Value>17179869184</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:L2ConnectPath</Name>
+                    <Value>34359738368</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:ClosePath</Name>
+                    <Value>68719476736</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:Authentication</Name>
+                    <Value>137438953472</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:Configuration</Name>
+                    <Value>274877906944</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:Global</Name>
+                    <Value>549755813888</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:Dropped</Name>
+                    <Value>1099511627776</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:PiiPresent</Name>
+                    <Value>2199023255552</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:Packet</Name>
+                    <Value>4398046511104</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:Address</Name>
+                    <Value>8796093022208</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:StdTemplateHint</Name>
+                    <Value>17592186044416</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:StateTransition</Name>
+                    <Value>35184372088832</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MsLbfoProvider/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Replacing Member %1 with new Member %2 for load balancing]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="OldMember" inType="win:GUID" outType="xs:GUID"/>
+  <data name="NewMember" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MsLbfoProvider/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Excluding Member %1 from load balancing]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Member" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Status" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MsLbfoProvider/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Using Member %1 for load balancing]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Member" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Status" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MsLbfoProvider/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Starting ConnectTimer for Member %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Member" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Status" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MsLbfoProvider/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Stopping to use Member %1 for load balancing]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Member" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Status" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MsLbfoProvider/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Priming Switch for TeamNic %1 using Member %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TeamNic" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Member" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MsLbfoProvider/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Failing NBL send on Member %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Member" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Status" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MsLbfoProvider/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Failing NBL send on TeamNic %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TeamNic" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MsLbfoProvider/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Dropping NBLs on Member %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Member" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Status" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MsLbfoProvider/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+DriverEntry exiting, Status = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MsLbfoProvider/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Member %1 created.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Member" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Status" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MsLbfoProvider/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Aggregator %1 created.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Aggregator" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MsLbfoProvider/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Member %2 placed in Team %1, Status = %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TeamNic" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Member" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Status" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MsLbfoProvider/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Indicating new link state for TeamNic %1. StatusBuffer = %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TeamNic" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StatusBufferLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StatusBuffer" inType="win:Binary" outType="xs:hexBinary" length="StatusBufferLen"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MsLbfoProvider/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Default Aggregator for TeamNic %1 changed to %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TeamNic" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Receiver" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MsLbfoProvider/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+BroadcastReceiver for TeamNic %1 changed to %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TeamNic" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Receiver" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MsLbfoProvider/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Initializing TeamNic %1, Status = %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TeamNic" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MsLbfoProvider/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Removing Aggregator %2 from TeamNic %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TeamNic" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Aggregator" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MsLbfoProvider/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Removed Member %2 from TeamNic %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TeamNic" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Member" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Status" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MsLbfoProvider/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Removing TeamNic %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TeamNic" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MsLbfoProvider/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+MsLbfoProvider driver is unloading.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>22</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MsLbfoProvider/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Changing Aggregator for Member %1 from %2 to %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Member" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OldAggregator" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="NewAggregator" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>23</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MsLbfoProvider/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+LACP Initializing for Member %1, Status = %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Member" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Status" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>24</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MsLbfoProvider/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+LACP de-initialized for Member %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Member" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Status" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MsLbfoProvider/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Received LACPDU on Member %1. Buffer= %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Member" inType="win:GUID" outType="xs:GUID"/>
+  <data name="BufferLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Buffer" inType="win:Binary" outType="xs:hexBinary" length="BufferLen"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>26</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MsLbfoProvider/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+LBFO LACP Member %1; ReceiveMachine: %2->%3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Member" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OldState" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="NewState" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>27</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MsLbfoProvider/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+LBFO LACP Member %1; Periodic Transmission Machine: %2->%3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Member" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OldState" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="NewState" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>28</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MsLbfoProvider/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+LBFO LACP Member %1; Mux Machine: %2->%3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Member" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OldState" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="NewState" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>29</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MsLbfoProvider/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Sending LACPDU on Member %1. Buffer= %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Member" inType="win:GUID" outType="xs:GUID"/>
+  <data name="BufferLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Buffer" inType="win:Binary" outType="xs:hexBinary" length="BufferLen"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MsLbfoProvider/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+LBFO LACP Member %1; Selected NewAgg: %3, Ready:%4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Member" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OldAggregator" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="NewAggregator" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Ready" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>31</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MsLbfoProvider/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+LBFO LACP Member %1; UnSelected, OldAgg: %2 NewAgg: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Member" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OldAggregator" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="NewAggregator" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Ready" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MsLbfoProvider/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+LBFO LACP Member %1; Churn Type (%2): %3->%4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Member" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ChurnType" inType="win:Int32" outType="xs:int"/>
+  <data name="OldState" inType="win:Int32" outType="xs:int"/>
+  <data name="NewState" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

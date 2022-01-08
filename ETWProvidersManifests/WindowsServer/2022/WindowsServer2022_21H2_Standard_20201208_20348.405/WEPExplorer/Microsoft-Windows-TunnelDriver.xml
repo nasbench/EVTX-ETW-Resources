@@ -1,0 +1,438 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-TunnelDriver</Name>
+        <Metadata>
+            <Guid>{4EDBE902-9ED3-4CF0-93E8-B8B5FA920299}</Guid>
+            <ResourceFilePath>C:\Windows\system32\drivers\tunnel.sys</ResourceFilePath>
+            <ParameterFilePath>C:\Windows\system32\drivers\tunnel.sys</ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\drivers\tunnel.sys</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.20348.1&amp;FileName=tunnel.sys&amp;FileVer=10.0.20348.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Tunnel</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Tunnel Driver Etw Channel</Message>
+                    <Path>Microsoft-Windows-TunnelDriver</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1000</Id>
+                <Version>0</Version>
+                <Channel>Tunnel Driver Etw Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Tunnel Driver of type %1 successfully initialized with index %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TunnelType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Index" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>Tunnel Driver Etw Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Tunnel Driver of type %1 could not initialize.
+ Windows Status Code %2, Tunnel Status Code %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TunnelType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TunnelReasonCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Channel>Tunnel Driver Etw Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Tunnel Driver Load: %1. Status %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TunnelType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Channel>Tunnel Driver Etw Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Tunnel Updated flag for Interface with index %1, interface forwarding is%2set, weakhostreceive is%3set.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Interface Index" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Forwarding" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="WeakHostReceive" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>0</Version>
+                <Channel>Tunnel Driver Etw Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Tunnel received packet with incomplete inner IP header]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>0</Version>
+                <Channel>Tunnel Driver Etw Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Could not find tunnel interface for packet.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1006</Id>
+                <Version>0</Version>
+                <Channel>Tunnel Driver Etw Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Packet filter on tunnel interface %1 is off. Dropping Packet.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Interface Index" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1007</Id>
+                <Version>0</Version>
+                <Channel>Tunnel Driver Etw Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Packet failed integrity check on interface type %1 with index %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TunnelType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Interface Index" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1008</Id>
+                <Version>0</Version>
+                <Channel>Tunnel Driver Etw Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Non IPv6 Packet received on interface %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Interface Index" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1009</Id>
+                <Version>0</Version>
+                <Channel>Tunnel Driver Etw Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Could not find tunnel interface for truncated ICMP message.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1010</Id>
+                <Version>0</Version>
+                <Channel>Tunnel Driver Etw Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Could not find the source of the ICMP message on tunnel interface %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Interface Index" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1011</Id>
+                <Version>0</Version>
+                <Channel>Tunnel Driver Etw Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Failed to copy Buffer into MDL while generating ICMPv6 message on tunnel interface %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Interface Index" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1012</Id>
+                <Version>0</Version>
+                <Channel>Tunnel Driver Etw Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Completing the pause for tunnel interface %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Interface Index" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1013</Id>
+                <Version>0</Version>
+                <Channel>Tunnel Driver Etw Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Completing power notification for tunnel interface %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Interface Index" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1014</Id>
+                <Version>0</Version>
+                <Channel>Tunnel Driver Etw Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Tunnel interface %1 has media status set to %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Interface Index" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Media Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1015</Id>
+                <Version>0</Version>
+                <Channel>Tunnel Driver Etw Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Tunnel interface %1 %3 could not be read.
+NDIS returned status %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Interface Index" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ReadError" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1016</Id>
+                <Version>0</Version>
+                <Channel>Tunnel Driver Etw Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Tunnel interface %1 has unknown type %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Index" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TunnelType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1017</Id>
+                <Version>0</Version>
+                <Channel>Tunnel Driver Etw Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Tunnel interface of type %1 with index %2 has been %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TunnelType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Index" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Interface Operation" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1018</Id>
+                <Version>0</Version>
+                <Channel>Tunnel Driver Etw Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Teredo Tunnel offload %1 flow entry freed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Teredo Flow Tuple" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1019</Id>
+                <Version>0</Version>
+                <Channel>Tunnel Driver Etw Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Teredo WFP receive path worker has NULL clone list.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1020</Id>
+                <Version>0</Version>
+                <Channel>Tunnel Driver Etw Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Skipped offload flow creation for non-Teredo address pair.
+Local %2 Remote %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IpAddrV6Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Local Ipv6 Address" inType="win:Binary" outType="win:IPv6" length="IpAddrV6Length"/>
+  <data name="Remote IPv6 Address" inType="win:Binary" outType="win:IPv6" length="IpAddrV6Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1021</Id>
+                <Version>0</Version>
+                <Channel>Tunnel Driver Etw Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Teredo Wfp created IPv4 flow with following parameters.
+LocalV4:%1 RemoteV4:%2 
+LocalPort:%3 RemotePort:%4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Source IPv4 Address" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="Destination IPv4 Address" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="Source Port" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Destination Port" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1022</Id>
+                <Version>0</Version>
+                <Channel>Tunnel Driver Etw Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Teredo Wfp registration occured with status %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NT Status" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1023</Id>
+                <Version>0</Version>
+                <Channel>Tunnel Driver Etw Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Teredo Wfp created V6 flow with status %6 following parameters.
+LocalV4:%2 RemoteV4:%3 
+LocalV6:%4 RemoteV6:%5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IpAddrV6Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Local IPv4 Address" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="Remote IPv4 Address" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="Local IPv6" inType="win:Binary" outType="win:IPv6" length="IpAddrV6Length"/>
+  <data name="Remote IPv6" inType="win:Binary" outType="win:IPv6" length="IpAddrV6Length"/>
+  <data name="NT Status" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1024</Id>
+                <Version>0</Version>
+                <Channel>Tunnel Driver Etw Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Tunnel type %1 with index %2 has IPv4 address %3 now %4 associated with physical interface with index %5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TunnelType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Tunnel Interface Index" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IPv4 Address" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="Yes or No" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Interface Index" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1025</Id>
+                <Version>0</Version>
+                <Channel>Tunnel Driver Etw Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Tunnel type %1 offloaded %2 NBLs, Could not offload %3 NBLs]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TunnelType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Offloaded Nbl Count" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Returned Nbl Count" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1026</Id>
+                <Version>0</Version>
+                <Channel>Tunnel Driver Etw Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Tunnel Type %1 with index %2 is in an invalid device state such as not opened or being closed.
+%3 NBLs could not be sent.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TunnelType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Interface Index" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Dropped Nbl Count" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1027</Id>
+                <Version>0</Version>
+                <Channel>Tunnel Driver Etw Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Teredo tunnel callout wasn't allowed to modify a packet. PID: %1. FilterID: %2. Flow handle %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Process ID" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Filter ID" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Flow Handle" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

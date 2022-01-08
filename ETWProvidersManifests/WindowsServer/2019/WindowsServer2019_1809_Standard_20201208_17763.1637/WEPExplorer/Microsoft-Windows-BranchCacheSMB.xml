@@ -1,0 +1,208 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-BranchCacheSMB</Name>
+        <Metadata>
+            <Guid>{4A933674-FB3D-4E8D-B01D-17EE14E91A3E}</Guid>
+            <ResourceFilePath>C:\Windows\system32\cscsvc.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\cscsvc.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17763.1&amp;FileName=cscsvc.dll&amp;FileVer=10.0.17763.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-BranchCacheSMB</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-BranchCacheSMB/Operational</Message>
+                    <Path>Microsoft-Windows-BranchCacheSMB/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-BranchCacheSMB/Analytic</Message>
+                    <Path>Microsoft-Windows-BranchCacheSMB/Analytic</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>SMB BranchCache</Message>
+                    <Name>CscEvtKeywd_SMBBranchCache</Name>
+                    <Value>2048</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>3000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCacheSMB/Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>SMB BranchCache</Keyword>
+                <Message><![CDATA[
+SMB BranchCache was enabled with min hash version %1 and max hash version %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MinHashVersion" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxHashVersion" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCacheSMB/Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>SMB BranchCache</Keyword>
+                <Message><![CDATA[
+SMB BranchCache was disabled.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCacheSMB/Analytic</Channel>
+                <Level>Information</Level>
+                <Keyword>SMB BranchCache</Keyword>
+                <Message><![CDATA[
+SMB BranchCache prefetch began for file 
+%1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCacheSMB/Analytic</Channel>
+                <Level>Information</Level>
+                <Keyword>SMB BranchCache</Keyword>
+                <Message><![CDATA[
+SMB BranchCache prefetch ended for file 
+%1 (content handle %2) with an expected result of %3. 
+%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ContentHandle" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ResultCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Result" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCacheSMB/Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>SMB BranchCache</Keyword>
+                <Message><![CDATA[
+SMB BranchCache prefetch ended for file 
+%1 (content handle %2) with an unexpected result of %3. 
+%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ContentHandle" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ResultCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Result" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCacheSMB/Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>SMB BranchCache</Keyword>
+                <Message><![CDATA[
+A summary of the Client Side Caching counters has been generated. The counter list can be found in the event details.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ServiceActiveTimeInSeconds" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SMBBranchCacheBytesRequested" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="SMBBranchCacheBytesReceived" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="SMBBranchCacheBytesPublished" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="SMBBranchCacheBytesRequestedFromServer" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="SMBBranchCacheHashesRequested" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SMBBranchCacheHashesReceived" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SMBBranchCacheHashBytesReceived" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="PrefetchOperationsQueued" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PrefetchBytesReadFromCache" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="PrefetchBytesReadFromServer" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ApplicationBytesReadFromCache" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ApplicationBytesReadFromServer" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ApplicationBytesReadFromServerNotCached" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3011</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCacheSMB/Analytic</Channel>
+                <Level>Information</Level>
+                <Keyword>SMB BranchCache</Keyword>
+                <Message><![CDATA[
+SMB BranchCache prefetch close handle began.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3012</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCacheSMB/Analytic</Channel>
+                <Level>Information</Level>
+                <Keyword>SMB BranchCache</Keyword>
+                <Message><![CDATA[
+SMB BranchCache prefetch closed %1 handle(s) with remaining %2 open handle(s) with an expected result of %3. 
+%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CloseHandleCount" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="OpenHandleCount" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ResultCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Result" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3013</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-BranchCacheSMB/Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>SMB BranchCache</Keyword>
+                <Message><![CDATA[
+SMB BranchCache prefetch closed %1 handle(s) with remaining %2 open handle(s) with  an unexpected result of %3. 
+%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CloseHandleCount" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="OpenHandleCount" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ResultCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Result" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

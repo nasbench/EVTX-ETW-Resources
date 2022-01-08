@@ -1,0 +1,125 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Partition</Name>
+        <Metadata>
+            <Guid>{412BDFF2-A8C4-470D-8F33-63FE0D8C20E2}</Guid>
+            <ResourceFilePath>C:\Windows\system32\drivers\partmgr.sys</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\drivers\partmgr.sys</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Partition/Diagnostic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Partition/Analytic</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>power</Name>
+                    <Value>1</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Partition/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Operation started.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DiskNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ControlCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Partition/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Operation completed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DiskNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ControlCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Partition/Analytic</Channel>
+                <Level>Information</Level>
+                <Keyword>power</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="IncrementEnergy" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="SrvTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="EndByteOffset" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="IoSize" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="LastIdleState" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="IsRandom" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Partition/Analytic</Channel>
+                <Level>Information</Level>
+                <Keyword>power</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="IncrementEnergy" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="IdleTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="LastIdleState" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Partition/Analytic</Channel>
+                <Level>Information</Level>
+                <Keyword>power</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LocalLastCompTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="SharedLastCompTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="CompTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

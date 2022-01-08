@@ -6,7 +6,7 @@
             <ResourceFilePath>C:\Windows\system32\drivers\tcpip.sys</ResourceFilePath>
             <ParameterFilePath></ParameterFilePath>
             <MessageFilePath>C:\Windows\system32\drivers\tcpip.sys</MessageFilePath>
-            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.4467&amp;FileName=tcpip.sys&amp;FileVer=10.0.14393.4467</HelpLink>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=tcpip.sys&amp;FileVer=10.0.14393.0</HelpLink>
             <PublisherMessage></PublisherMessage>
             <Channels>
                 <Channel>
@@ -1952,31 +1952,6 @@
                     <Name>TcpipTimerStateChange</Name>
                     <Value>1416</Value>
                 </Task>
-                <Task>
-                    <Message></Message>
-                    <Name>TcpCubicDataTransferCumAck</Name>
-                    <Value>1417</Value>
-                </Task>
-                <Task>
-                    <Message></Message>
-                    <Name>TcpCubicDataTransferDupAck</Name>
-                    <Value>1418</Value>
-                </Task>
-                <Task>
-                    <Message></Message>
-                    <Name>TcpCubicDataTransferEcn</Name>
-                    <Value>1419</Value>
-                </Task>
-                <Task>
-                    <Message></Message>
-                    <Name>TcpCreateEndpointAccessFailure</Name>
-                    <Value>1517</Value>
-                </Task>
-                <Task>
-                    <Message></Message>
-                    <Name>UdpCreateEndpointAccessFailure</Name>
-                    <Value>1518</Value>
-                </Task>
             </Tasks>
             <Opcodes>
                 <Opcode>
@@ -2335,27 +2310,6 @@ TCP: endpoint (Family=%6 PID=%4) create failed: address family not attached.]]><
 ]]></Template>
             </Event>
             <Event>
-                <Id>1010</Id>
-                <Version>1</Version>
-                <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
-                <Level>Information</Level>
-                <Task>TcpCreateEndpointAfFailure</Task>
-                <Keyword>ut:TcpipEndpoint ut:Endpoint</Keyword>
-                <Message><![CDATA[
-TCP: endpoint (Family=%6 PID=%4) create failed: address family not attached.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
-  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
-  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="CompartmentId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="AddressFamily" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="PsGetProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
                 <Id>1011</Id>
                 <Version>0</Version>
                 <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
@@ -2372,27 +2326,6 @@ TCP: endpoint (Family=%6 PID=%4) create failed: compartment %5 not found.]]></Me
   <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
   <data name="CompartmentId" inType="win:UInt32" outType="xs:unsignedInt"/>
   <data name="AddressFamily" inType="win:UInt32" outType="xs:unsignedInt"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
-                <Id>1011</Id>
-                <Version>1</Version>
-                <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
-                <Level>Information</Level>
-                <Task>TcpCreateEndpointCompartmentFailure</Task>
-                <Keyword>ut:TcpipEndpoint ut:Endpoint</Keyword>
-                <Message><![CDATA[
-TCP: endpoint (Family=%6 PID=%4) create failed: compartment %5 not found.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
-  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
-  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="CompartmentId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="AddressFamily" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="PsGetProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
 </template>
 ]]></Template>
             </Event>
@@ -2417,27 +2350,6 @@ TCP: endpoint (Family=%6 PID=%4) create failed: inspection status %3.]]></Messag
 ]]></Template>
             </Event>
             <Event>
-                <Id>1012</Id>
-                <Version>1</Version>
-                <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
-                <Level>Information</Level>
-                <Task>TcpCreateEndpointInspectionFailure</Task>
-                <Keyword>ut:TcpipEndpoint ut:Endpoint</Keyword>
-                <Message><![CDATA[
-TCP: endpoint (Family=%6 PID=%4) create failed: inspection status %3.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
-  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
-  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="CompartmentId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="AddressFamily" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="PsGetProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
                 <Id>1013</Id>
                 <Version>0</Version>
                 <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
@@ -2454,27 +2366,6 @@ TCP: endpoint (Family=%6 PID=%4) created.]]></Message>
   <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
   <data name="CompartmentId" inType="win:UInt32" outType="xs:unsignedInt"/>
   <data name="AddressFamily" inType="win:UInt32" outType="xs:unsignedInt"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
-                <Id>1013</Id>
-                <Version>1</Version>
-                <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
-                <Level>Information</Level>
-                <Task>TcpCreateEndpointComplete</Task>
-                <Keyword>ut:TcpipEndpoint ut:Endpoint</Keyword>
-                <Message><![CDATA[
-TCP: endpoint (Family=%6 PID=%4) created.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
-  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
-  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="CompartmentId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="AddressFamily" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="PsGetProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
 </template>
 ]]></Template>
             </Event>
@@ -2497,29 +2388,6 @@ TCP: listener (local=%2 remote=%4) accept failed: Route lookup status = %5, TCB 
   <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
   <data name="Compartment" inType="win:UInt32" outType="xs:unsignedInt"/>
   <data name="Tcb" inType="win:Pointer" outType="win:HexInt64"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
-                <Id>1014</Id>
-                <Version>1</Version>
-                <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
-                <Level>Information</Level>
-                <Task>TcpAccpetListenerRouteLookupFailure</Task>
-                <Keyword>ut:TcpipListener ut:TcpipTcb ut:TcpipDiagnosis ut:Endpoint</Keyword>
-                <Message><![CDATA[
-TCP: listener (local=%2 remote=%4) accept failed: Route lookup status = %5, TCB = %8.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
-  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
-  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
-  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Compartment" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Tcb" inType="win:Pointer" outType="win:HexInt64"/>
-  <data name="PsGetProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
 </template>
 ]]></Template>
             </Event>
@@ -2567,29 +2435,6 @@ TCP: listener (local=%2 remote=%4) accept failed: client rejection status = %5.]
 ]]></Template>
             </Event>
             <Event>
-                <Id>1016</Id>
-                <Version>1</Version>
-                <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
-                <Level>Information</Level>
-                <Task>TcpAcceptListenerRejected</Task>
-                <Keyword>ut:TcpipListener ut:TcpipTcb ut:TcpipDiagnosis ut:Endpoint</Keyword>
-                <Message><![CDATA[
-TCP: listener (local=%2 remote=%4) accept failed: client rejection status = %5.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
-  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
-  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
-  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Compartment" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Tcb" inType="win:Pointer" outType="win:HexInt64"/>
-  <data name="PsGetProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
                 <Id>1017</Id>
                 <Version>0</Version>
                 <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
@@ -2608,29 +2453,6 @@ TCP: listener (local=%2 remote=%4) accept completed. TCB = %8. PID = %6.]]></Mes
   <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
   <data name="Compartment" inType="win:UInt32" outType="xs:unsignedInt"/>
   <data name="Tcb" inType="win:Pointer" outType="win:HexInt64"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
-                <Id>1017</Id>
-                <Version>1</Version>
-                <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
-                <Level>Information</Level>
-                <Task>TcpAcceptListenerComplete</Task>
-                <Keyword>ut:TcpipListener ut:TcpipTcb ut:TcpipDiagnosis ut:Endpoint</Keyword>
-                <Message><![CDATA[
-TCP: listener (local=%2 remote=%4) accept completed. TCB = %8. PID = %6.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
-  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
-  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
-  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Compartment" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Tcb" inType="win:Pointer" outType="win:HexInt64"/>
-  <data name="PsGetProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
 </template>
 ]]></Template>
             </Event>
@@ -2657,29 +2479,6 @@ TCP: connection %8 (local=%2 remote=%4 PID=%6) connect failed: address family no
 ]]></Template>
             </Event>
             <Event>
-                <Id>1018</Id>
-                <Version>1</Version>
-                <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
-                <Level>Information</Level>
-                <Task>TcpConnectTcbFailedAf</Task>
-                <Keyword>ut:TcpipTcb ut:TcpipDiagnosis ut:Endpoint</Keyword>
-                <Message><![CDATA[
-TCP: connection %8 (local=%2 remote=%4 PID=%6) connect failed: address family not attached.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
-  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
-  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
-  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Compartment" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Tcb" inType="win:Pointer" outType="win:HexInt64"/>
-  <data name="PsGetProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
                 <Id>1019</Id>
                 <Version>0</Version>
                 <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
@@ -2698,29 +2497,6 @@ TCP: connection %8 (local=%2 remote=%4 PID=%6) connect failed: compartment %7 no
   <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
   <data name="Compartment" inType="win:UInt32" outType="xs:unsignedInt"/>
   <data name="Tcb" inType="win:Pointer" outType="win:HexInt64"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
-                <Id>1019</Id>
-                <Version>1</Version>
-                <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
-                <Level>Information</Level>
-                <Task>TcpConnectTcbFailedCompartment</Task>
-                <Keyword>ut:TcpipTcb ut:TcpipDiagnosis ut:Endpoint</Keyword>
-                <Message><![CDATA[
-TCP: connection %8 (local=%2 remote=%4 PID=%6) connect failed: compartment %7 not found.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
-  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
-  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
-  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Compartment" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Tcb" inType="win:Pointer" outType="win:HexInt64"/>
-  <data name="PsGetProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
 </template>
 ]]></Template>
             </Event>
@@ -2747,29 +2523,6 @@ TCP: connection %8 (local=%2 remote=%4 PID=%6) connect failed: inspection status
 ]]></Template>
             </Event>
             <Event>
-                <Id>1020</Id>
-                <Version>1</Version>
-                <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
-                <Level>Information</Level>
-                <Task>TcpConnectTcbFailedInspect</Task>
-                <Keyword>ut:TcpipTcb ut:TcpipDiagnosis ut:Endpoint</Keyword>
-                <Message><![CDATA[
-TCP: connection %8 (local=%2 remote=%4 PID=%6) connect failed: inspection status = %5.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
-  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
-  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
-  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Compartment" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Tcb" inType="win:Pointer" outType="win:HexInt64"/>
-  <data name="PsGetProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
                 <Id>1021</Id>
                 <Version>0</Version>
                 <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
@@ -2788,29 +2541,6 @@ TCP: connection %8 (local=%2 remote=%4) connect failed: route lookup status = %5
   <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
   <data name="Compartment" inType="win:UInt32" outType="xs:unsignedInt"/>
   <data name="Tcb" inType="win:Pointer" outType="win:HexInt64"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
-                <Id>1021</Id>
-                <Version>1</Version>
-                <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
-                <Level>Information</Level>
-                <Task>TcpConnectTcbFailedRoute</Task>
-                <Keyword>ut:TcpipTcb ut:TcpipDiagnosis ut:Endpoint</Keyword>
-                <Message><![CDATA[
-TCP: connection %8 (local=%2 remote=%4) connect failed: route lookup status = %5.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
-  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
-  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
-  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Compartment" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Tcb" inType="win:Pointer" outType="win:HexInt64"/>
-  <data name="PsGetProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
 </template>
 ]]></Template>
             </Event>
@@ -2871,29 +2601,6 @@ TCP: connection %8 (local=%2 remote=%4) deferred.]]></Message>
   <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
   <data name="Compartment" inType="win:UInt32" outType="xs:unsignedInt"/>
   <data name="Tcb" inType="win:Pointer" outType="win:HexInt64"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
-                <Id>1024</Id>
-                <Version>1</Version>
-                <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
-                <Level>Information</Level>
-                <Task>TcpConnectTcbCheckRateLimit</Task>
-                <Keyword>ut:TcpipTcb ut:TcpipDiagnosis ut:Endpoint</Keyword>
-                <Message><![CDATA[
-TCP: connection %8 (local=%2 remote=%4) deferred.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
-  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
-  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
-  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Compartment" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Tcb" inType="win:Pointer" outType="win:HexInt64"/>
-  <data name="PsGetProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
 </template>
 ]]></Template>
             </Event>
@@ -2959,29 +2666,6 @@ TCP: connection %8 (local=%2 remote=%4) released.]]></Message>
 ]]></Template>
             </Event>
             <Event>
-                <Id>1027</Id>
-                <Version>1</Version>
-                <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
-                <Level>Information</Level>
-                <Task>TcpConnectTcbRateLimitRelease</Task>
-                <Keyword>ut:TcpipTcb ut:TcpipDiagnosis ut:Endpoint</Keyword>
-                <Message><![CDATA[
-TCP: connection %8 (local=%2 remote=%4) released.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
-  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
-  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
-  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Compartment" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Tcb" inType="win:Pointer" outType="win:HexInt64"/>
-  <data name="PsGetProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
                 <Id>1028</Id>
                 <Version>0</Version>
                 <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
@@ -3019,29 +2703,6 @@ TCP: connection %8 (local=%2 remote=%4) connect failed: connection cancelled.]]>
   <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
   <data name="Compartment" inType="win:UInt32" outType="xs:unsignedInt"/>
   <data name="Tcb" inType="win:Pointer" outType="win:HexInt64"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
-                <Id>1029</Id>
-                <Version>1</Version>
-                <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
-                <Level>Information</Level>
-                <Task>TcpConnectTcbCancel</Task>
-                <Keyword>ut:TcpipTcb ut:TcpipDiagnosis ut:Endpoint</Keyword>
-                <Message><![CDATA[
-TCP: connection %8 (local=%2 remote=%4) connect failed: connection cancelled.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
-  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
-  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
-  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Compartment" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Tcb" inType="win:Pointer" outType="win:HexInt64"/>
-  <data name="PsGetProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
 </template>
 ]]></Template>
             </Event>
@@ -3089,29 +2750,6 @@ TCP: connection %8 (local=%2 remote=%4) connect proceeding.]]></Message>
 ]]></Template>
             </Event>
             <Event>
-                <Id>1031</Id>
-                <Version>1</Version>
-                <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
-                <Level>Information</Level>
-                <Task>TcpConnectTcbProceeding</Task>
-                <Keyword>ut:TcpipTcb ut:TcpipDiagnosis ut:Endpoint</Keyword>
-                <Message><![CDATA[
-TCP: connection %8 (local=%2 remote=%4) connect proceeding.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
-  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
-  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
-  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Compartment" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Tcb" inType="win:Pointer" outType="win:HexInt64"/>
-  <data name="PsGetProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
                 <Id>1032</Id>
                 <Version>0</Version>
                 <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
@@ -3130,29 +2768,6 @@ TCP: connection %8 (local=%2 remote=%4) released due to cancel.]]></Message>
   <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
   <data name="Compartment" inType="win:UInt32" outType="xs:unsignedInt"/>
   <data name="Tcb" inType="win:Pointer" outType="win:HexInt64"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
-                <Id>1032</Id>
-                <Version>1</Version>
-                <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
-                <Level>Information</Level>
-                <Task>TcpConnectTcbRateLimitCancel</Task>
-                <Keyword>ut:TcpipTcb ut:TcpipDiagnosis ut:Endpoint</Keyword>
-                <Message><![CDATA[
-TCP: connection %8 (local=%2 remote=%4) released due to cancel.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
-  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
-  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
-  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Compartment" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Tcb" inType="win:Pointer" outType="win:HexInt64"/>
-  <data name="PsGetProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
 </template>
 ]]></Template>
             </Event>
@@ -3179,29 +2794,6 @@ TCP: connection %8 (local=%2 remote=%4) connect completed. PID = %6.]]></Message
 ]]></Template>
             </Event>
             <Event>
-                <Id>1033</Id>
-                <Version>1</Version>
-                <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
-                <Level>Information</Level>
-                <Task>TcpConnectTcbComplete</Task>
-                <Keyword>ut:TcpipTcb ut:TcpipDiagnosis ut:Endpoint</Keyword>
-                <Message><![CDATA[
-TCP: connection %8 (local=%2 remote=%4) connect completed. PID = %6.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
-  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
-  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
-  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Compartment" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Tcb" inType="win:Pointer" outType="win:HexInt64"/>
-  <data name="PsGetProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
                 <Id>1034</Id>
                 <Version>0</Version>
                 <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
@@ -3220,29 +2812,6 @@ TCP: connection %8 (local=%2 remote=%4) connect attempt failed with status = %5.
   <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
   <data name="Compartment" inType="win:UInt32" outType="xs:unsignedInt"/>
   <data name="Tcb" inType="win:Pointer" outType="win:HexInt64"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
-                <Id>1034</Id>
-                <Version>1</Version>
-                <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
-                <Level>Information</Level>
-                <Task>TcpConnectTcbFailure</Task>
-                <Keyword>ut:TcpipTcb ut:TcpipDiagnosis ut:Endpoint</Keyword>
-                <Message><![CDATA[
-TCP: connection %8 (local=%2 remote=%4) connect attempt failed with status = %5.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
-  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
-  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
-  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Compartment" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Tcb" inType="win:Pointer" outType="win:HexInt64"/>
-  <data name="PsGetProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
 </template>
 ]]></Template>
             </Event>
@@ -3269,29 +2838,6 @@ TCP: connection %8 (local=%2 remote=%4) connect failed: connect-complete inspect
 ]]></Template>
             </Event>
             <Event>
-                <Id>1035</Id>
-                <Version>1</Version>
-                <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
-                <Level>Information</Level>
-                <Task>TcpConnectTcbFailInspectConnectComplete</Task>
-                <Keyword>ut:TcpipTcb ut:TcpipDiagnosis ut:Endpoint</Keyword>
-                <Message><![CDATA[
-TCP: connection %8 (local=%2 remote=%4) connect failed: connect-complete inspect status = %5.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
-  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
-  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
-  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Compartment" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Tcb" inType="win:Pointer" outType="win:HexInt64"/>
-  <data name="PsGetProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
                 <Id>1036</Id>
                 <Version>0</Version>
                 <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
@@ -3310,29 +2856,6 @@ TCP: ApplySynOptions, failed to create session state with status = %5, TCB = %8.
   <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
   <data name="Compartment" inType="win:UInt32" outType="xs:unsignedInt"/>
   <data name="Tcb" inType="win:Pointer" outType="win:HexInt64"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
-                <Id>1036</Id>
-                <Version>1</Version>
-                <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
-                <Level>Information</Level>
-                <Task>TcpConnectTcbFailSessionState</Task>
-                <Keyword>ut:TcpipTcb ut:TcpipDiagnosis ut:Endpoint</Keyword>
-                <Message><![CDATA[
-TCP: ApplySynOptions, failed to create session state with status = %5, TCB = %8.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
-  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
-  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
-  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Compartment" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Tcb" inType="win:Pointer" outType="win:HexInt64"/>
-  <data name="PsGetProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
 </template>
 ]]></Template>
             </Event>
@@ -3359,29 +2882,6 @@ TCP: ApplySynOptions, failed to update DF with status = %5, TCB = %8.]]></Messag
 ]]></Template>
             </Event>
             <Event>
-                <Id>1037</Id>
-                <Version>1</Version>
-                <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
-                <Level>Information</Level>
-                <Task>TcpConnectTcbFailDontFragment</Task>
-                <Keyword>ut:TcpipTcb ut:TcpipDiagnosis ut:Endpoint</Keyword>
-                <Message><![CDATA[
-TCP: ApplySynOptions, failed to update DF with status = %5, TCB = %8.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
-  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
-  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
-  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Compartment" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Tcb" inType="win:Pointer" outType="win:HexInt64"/>
-  <data name="PsGetProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
                 <Id>1038</Id>
                 <Version>0</Version>
                 <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
@@ -3400,29 +2900,6 @@ TCP: connection %8 (local=%2 remote=%4) close issued.]]></Message>
   <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
   <data name="Compartment" inType="win:UInt32" outType="xs:unsignedInt"/>
   <data name="Tcb" inType="win:Pointer" outType="win:HexInt64"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
-                <Id>1038</Id>
-                <Version>1</Version>
-                <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
-                <Level>Information</Level>
-                <Task>TcpCloseTcbRequest</Task>
-                <Keyword>ut:TcpipTcb ut:Endpoint</Keyword>
-                <Message><![CDATA[
-TCP: connection %8 (local=%2 remote=%4) close issued.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
-  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
-  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
-  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Compartment" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Tcb" inType="win:Pointer" outType="win:HexInt64"/>
-  <data name="PsGetProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
 </template>
 ]]></Template>
             </Event>
@@ -3449,29 +2926,6 @@ TCP: connection %8 (local=%2 remote=%4) abort issued.]]></Message>
 ]]></Template>
             </Event>
             <Event>
-                <Id>1039</Id>
-                <Version>1</Version>
-                <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
-                <Level>Information</Level>
-                <Task>TcpAbortTcbRequest</Task>
-                <Keyword>ut:TcpipTcb ut:TcpipDiagnosis ut:Endpoint</Keyword>
-                <Message><![CDATA[
-TCP: connection %8 (local=%2 remote=%4) abort issued.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
-  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
-  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
-  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Compartment" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Tcb" inType="win:Pointer" outType="win:HexInt64"/>
-  <data name="PsGetProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
                 <Id>1040</Id>
                 <Version>0</Version>
                 <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
@@ -3490,29 +2944,6 @@ TCP: connection %8 (local=%2 remote=%4) abort completed.]]></Message>
   <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
   <data name="Compartment" inType="win:UInt32" outType="xs:unsignedInt"/>
   <data name="Tcb" inType="win:Pointer" outType="win:HexInt64"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
-                <Id>1040</Id>
-                <Version>1</Version>
-                <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
-                <Level>Information</Level>
-                <Task>TcpAbortTcbComplete</Task>
-                <Keyword>ut:TcpipTcb ut:TcpipDiagnosis ut:Endpoint</Keyword>
-                <Message><![CDATA[
-TCP: connection %8 (local=%2 remote=%4) abort completed.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
-  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
-  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
-  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Compartment" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Tcb" inType="win:Pointer" outType="win:HexInt64"/>
-  <data name="PsGetProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
 </template>
 ]]></Template>
             </Event>
@@ -3580,29 +3011,6 @@ TCP: connection %8 (local=%2 remote=%4) disconnect completed.]]></Message>
 ]]></Template>
             </Event>
             <Event>
-                <Id>1043</Id>
-                <Version>1</Version>
-                <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
-                <Level>Information</Level>
-                <Task>TcpDisconnectTcbComplete</Task>
-                <Keyword>ut:TcpipTcb ut:TcpipDiagnosis ut:Endpoint</Keyword>
-                <Message><![CDATA[
-TCP: connection %8 (local=%2 remote=%4) disconnect completed.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
-  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
-  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
-  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Compartment" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Tcb" inType="win:Pointer" outType="win:HexInt64"/>
-  <data name="PsGetProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
                 <Id>1044</Id>
                 <Version>0</Version>
                 <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
@@ -3621,29 +3029,6 @@ TCP: connection %8 (local=%2 remote=%4) shutdown initiated (%5). PID = %6.]]></M
   <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
   <data name="Compartment" inType="win:UInt32" outType="xs:unsignedInt"/>
   <data name="Tcb" inType="win:Pointer" outType="win:HexInt64"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
-                <Id>1044</Id>
-                <Version>1</Version>
-                <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
-                <Level>Information</Level>
-                <Task>TcpShutdownTcb</Task>
-                <Keyword>ut:TcpipTcb ut:TcpipDiagnosis ut:Endpoint</Keyword>
-                <Message><![CDATA[
-TCP: connection %8 (local=%2 remote=%4) shutdown initiated (%5). PID = %6.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
-  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
-  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
-  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Compartment" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Tcb" inType="win:Pointer" outType="win:HexInt64"/>
-  <data name="PsGetProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
 </template>
 ]]></Template>
             </Event>
@@ -3670,29 +3055,6 @@ TCP: connection %8 (local=%2 remote=%4) connect failed: connect-request timeout 
 ]]></Template>
             </Event>
             <Event>
-                <Id>1045</Id>
-                <Version>1</Version>
-                <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
-                <Level>Information</Level>
-                <Task>TcpConnectTcbTimeout</Task>
-                <Keyword>ut:TcpipTcb ut:TcpipDiagnosis ut:Endpoint</Keyword>
-                <Message><![CDATA[
-TCP: connection %8 (local=%2 remote=%4) connect failed: connect-request timeout expired.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
-  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
-  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
-  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Compartment" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Tcb" inType="win:Pointer" outType="win:HexInt64"/>
-  <data name="PsGetProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
                 <Id>1046</Id>
                 <Version>0</Version>
                 <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
@@ -3711,29 +3073,6 @@ TCP: connection %8 (local=%2 remote=%4) terminating: retransmission timeout expi
   <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
   <data name="Compartment" inType="win:UInt32" outType="xs:unsignedInt"/>
   <data name="Tcb" inType="win:Pointer" outType="win:HexInt64"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
-                <Id>1046</Id>
-                <Version>1</Version>
-                <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
-                <Level>Information</Level>
-                <Task>TcpDisconnectTcbRtoTimeout</Task>
-                <Keyword>ut:TcpipTcb ut:TcpipDiagnosis ut:Endpoint</Keyword>
-                <Message><![CDATA[
-TCP: connection %8 (local=%2 remote=%4) terminating: retransmission timeout expired.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
-  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
-  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
-  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Compartment" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Tcb" inType="win:Pointer" outType="win:HexInt64"/>
-  <data name="PsGetProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
 </template>
 ]]></Template>
             </Event>
@@ -3760,29 +3099,6 @@ TCP: connection %8 (local=%2 remote=%4) terminating: keep-alive timeout expired.
 ]]></Template>
             </Event>
             <Event>
-                <Id>1047</Id>
-                <Version>1</Version>
-                <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
-                <Level>Information</Level>
-                <Task>TcpDisconnectTcbKeepaliveTimeout</Task>
-                <Keyword>ut:TcpipTcb ut:TcpipDiagnosis ut:Endpoint</Keyword>
-                <Message><![CDATA[
-TCP: connection %8 (local=%2 remote=%4) terminating: keep-alive timeout expired.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
-  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
-  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
-  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Compartment" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Tcb" inType="win:Pointer" outType="win:HexInt64"/>
-  <data name="PsGetProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
                 <Id>1048</Id>
                 <Version>0</Version>
                 <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
@@ -3801,29 +3117,6 @@ TCP: connection %8 (local=%2 remote=%4) terminating: disconnect timeout expired.
   <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
   <data name="Compartment" inType="win:UInt32" outType="xs:unsignedInt"/>
   <data name="Tcb" inType="win:Pointer" outType="win:HexInt64"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
-                <Id>1048</Id>
-                <Version>1</Version>
-                <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
-                <Level>Information</Level>
-                <Task>TcpDisconnectTcbTimeout</Task>
-                <Keyword>ut:TcpipTcb ut:TcpipDiagnosis ut:Endpoint</Keyword>
-                <Message><![CDATA[
-TCP: connection %8 (local=%2 remote=%4) terminating: disconnect timeout expired.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
-  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
-  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
-  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Compartment" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Tcb" inType="win:Pointer" outType="win:HexInt64"/>
-  <data name="PsGetProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
 </template>
 ]]></Template>
             </Event>
@@ -3850,29 +3143,6 @@ TCP: connection %8 (local=%2 remote=%4) connect failed: extended statistics stat
 ]]></Template>
             </Event>
             <Event>
-                <Id>1049</Id>
-                <Version>1</Version>
-                <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
-                <Level>Information</Level>
-                <Task>TcpConnectTcbEstatsFailed</Task>
-                <Keyword>ut:TcpipTcb ut:TcpipDiagnosis ut:Endpoint</Keyword>
-                <Message><![CDATA[
-TCP: connection %8 (local=%2 remote=%4) connect failed: extended statistics status = %5.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
-  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
-  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
-  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Compartment" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Tcb" inType="win:Pointer" outType="win:HexInt64"/>
-  <data name="PsGetProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
                 <Id>1050</Id>
                 <Version>0</Version>
                 <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
@@ -3891,29 +3161,6 @@ TCP: connection %8 (local=%2 remote=%4) connect failed: port-acquisition status 
   <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
   <data name="Compartment" inType="win:UInt32" outType="xs:unsignedInt"/>
   <data name="Tcb" inType="win:Pointer" outType="win:HexInt64"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
-                <Id>1050</Id>
-                <Version>1</Version>
-                <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
-                <Level>Information</Level>
-                <Task>TcpConnectFailedPortAcquire</Task>
-                <Keyword>ut:TcpipTcb ut:TcpipDiagnosis ut:Endpoint</Keyword>
-                <Message><![CDATA[
-TCP: connection %8 (local=%2 remote=%4) connect failed: port-acquisition status = %5.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
-  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
-  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
-  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Compartment" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Tcb" inType="win:Pointer" outType="win:HexInt64"/>
-  <data name="PsGetProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
 </template>
 ]]></Template>
             </Event>
@@ -3954,25 +3201,6 @@ TCP: Process with PID = %1 reserved %4 ports starting at %3.]]></Message>
 ]]></Template>
             </Event>
             <Event>
-                <Id>1052</Id>
-                <Version>1</Version>
-                <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
-                <Level>Information</Level>
-                <Task>TcpEndpointAcquirePortReservation</Task>
-                <Keyword>ut:TcpipEndpoint ut:TcpipBind ut:Endpoint</Keyword>
-                <Message><![CDATA[
-TCP: Process with PID = %1 reserved %4 ports starting at %3.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
-  <data name="StartPort" inType="win:UInt16" outType="xs:unsignedShort"/>
-  <data name="NumberOfPorts" inType="win:UInt16" outType="xs:unsignedShort"/>
-  <data name="PsGetProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
                 <Id>1053</Id>
                 <Version>0</Version>
                 <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
@@ -3991,25 +3219,6 @@ TCP: Process with PID = %1 failed to reserve %4 ports starting at %3 with status
 ]]></Template>
             </Event>
             <Event>
-                <Id>1053</Id>
-                <Version>1</Version>
-                <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
-                <Level>Information</Level>
-                <Task>TcpEndpointFailedPortReservation</Task>
-                <Keyword>ut:TcpipEndpoint ut:TcpipBind ut:Endpoint</Keyword>
-                <Message><![CDATA[
-TCP: Process with PID = %1 failed to reserve %4 ports starting at %3 with status = %2.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
-  <data name="StartPort" inType="win:UInt16" outType="xs:unsignedShort"/>
-  <data name="NumberOfPorts" inType="win:UInt16" outType="xs:unsignedShort"/>
-  <data name="PsGetProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
                 <Id>1054</Id>
                 <Version>0</Version>
                 <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
@@ -4024,25 +3233,6 @@ TCP: Process with PID = %1 completed global port reservation of %4 ports startin
   <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
   <data name="StartPort" inType="win:UInt16" outType="xs:unsignedShort"/>
   <data name="NumberOfPorts" inType="win:UInt16" outType="xs:unsignedShort"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
-                <Id>1054</Id>
-                <Version>1</Version>
-                <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
-                <Level>Information</Level>
-                <Task>TcpGlobalPortReservation</Task>
-                <Keyword>ut:TcpipDiagnosis</Keyword>
-                <Message><![CDATA[
-TCP: Process with PID = %1 completed global port reservation of %4 ports starting at %3 with status = %2.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
-  <data name="StartPort" inType="win:UInt16" outType="xs:unsignedShort"/>
-  <data name="NumberOfPorts" inType="win:UInt16" outType="xs:unsignedShort"/>
-  <data name="PsGetProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
 </template>
 ]]></Template>
             </Event>
@@ -5310,28 +4500,6 @@ TCP: listener (sockaddr=%3 PID=%5) activation failed: address family not attache
 ]]></Template>
             </Event>
             <Event>
-                <Id>1117</Id>
-                <Version>1</Version>
-                <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
-                <Level>Information</Level>
-                <Task>TcpListenerActivationFailedAf</Task>
-                <Keyword>ut:TcpipListener</Keyword>
-                <Message><![CDATA[
-TCP: listener (sockaddr=%3 PID=%5) activation failed: address family not attached.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="Listener" inType="win:Pointer" outType="win:HexInt64"/>
-  <data name="AddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="SocketAddress" inType="win:Binary" outType="win:SocketAddress" length="AddressLength"/>
-  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
-  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="CompartmentId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="AddressFamily" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="PsGetProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
                 <Id>1118</Id>
                 <Version>0</Version>
                 <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
@@ -5349,28 +4517,6 @@ TCP: listener %1 (family=%7 PID=%5) activation failed: compartment %6 not found.
   <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
   <data name="CompartmentId" inType="win:UInt32" outType="xs:unsignedInt"/>
   <data name="AddressFamily" inType="win:UInt32" outType="xs:unsignedInt"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
-                <Id>1118</Id>
-                <Version>1</Version>
-                <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
-                <Level>Information</Level>
-                <Task>TcpListenerActivationFailedCompartment</Task>
-                <Keyword>ut:TcpipListener</Keyword>
-                <Message><![CDATA[
-TCP: listener %1 (family=%7 PID=%5) activation failed: compartment %6 not found. Status=%4.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="Listener" inType="win:Pointer" outType="win:HexInt64"/>
-  <data name="AddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="SocketAddress" inType="win:Binary" outType="win:SocketAddress" length="AddressLength"/>
-  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
-  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="CompartmentId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="AddressFamily" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="PsGetProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
 </template>
 ]]></Template>
             </Event>
@@ -5396,28 +4542,6 @@ TCP: listener %1 (family=%7 PID=%5) activation failed: inspection status=%4.]]><
 ]]></Template>
             </Event>
             <Event>
-                <Id>1119</Id>
-                <Version>1</Version>
-                <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
-                <Level>Information</Level>
-                <Task>TcpListenerActivationFailedInspection1</Task>
-                <Keyword>ut:TcpipListener</Keyword>
-                <Message><![CDATA[
-TCP: listener %1 (family=%7 PID=%5) activation failed: inspection status=%4.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="Listener" inType="win:Pointer" outType="win:HexInt64"/>
-  <data name="AddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="SocketAddress" inType="win:Binary" outType="win:SocketAddress" length="AddressLength"/>
-  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
-  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="CompartmentId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="AddressFamily" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="PsGetProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
                 <Id>1120</Id>
                 <Version>0</Version>
                 <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
@@ -5435,28 +4559,6 @@ TCP: listener %1 (sockaddr=%3) activation failed: inspection status=%4.]]></Mess
   <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
   <data name="CompartmentId" inType="win:UInt32" outType="xs:unsignedInt"/>
   <data name="AddressFamily" inType="win:UInt32" outType="xs:unsignedInt"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
-                <Id>1120</Id>
-                <Version>1</Version>
-                <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
-                <Level>Information</Level>
-                <Task>TcpListenerActivationFailedInspection2</Task>
-                <Keyword>ut:TcpipListener</Keyword>
-                <Message><![CDATA[
-TCP: listener %1 (sockaddr=%3) activation failed: inspection status=%4.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="Listener" inType="win:Pointer" outType="win:HexInt64"/>
-  <data name="AddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="SocketAddress" inType="win:Binary" outType="win:SocketAddress" length="AddressLength"/>
-  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
-  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="CompartmentId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="AddressFamily" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="PsGetProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
 </template>
 ]]></Template>
             </Event>
@@ -5482,28 +4584,6 @@ TCP: listener %1 (sockaddr=%3) bind failed: port-acquisition status=%4.]]></Mess
 ]]></Template>
             </Event>
             <Event>
-                <Id>1121</Id>
-                <Version>1</Version>
-                <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
-                <Level>Information</Level>
-                <Task>TcpListenerBindFailedResolution</Task>
-                <Keyword>ut:TcpipListener</Keyword>
-                <Message><![CDATA[
-TCP: listener %1 (sockaddr=%3) bind failed: port-acquisition status=%4.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="Listener" inType="win:Pointer" outType="win:HexInt64"/>
-  <data name="AddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="SocketAddress" inType="win:Binary" outType="win:SocketAddress" length="AddressLength"/>
-  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
-  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="CompartmentId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="AddressFamily" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="PsGetProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
                 <Id>1122</Id>
                 <Version>0</Version>
                 <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
@@ -5521,28 +4601,6 @@ TCP: listener %1 (family=%7 PID=%5) bind failed: address %3 cannot be resolved (
   <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
   <data name="CompartmentId" inType="win:UInt32" outType="xs:unsignedInt"/>
   <data name="AddressFamily" inType="win:UInt32" outType="xs:unsignedInt"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
-                <Id>1122</Id>
-                <Version>1</Version>
-                <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
-                <Level>Information</Level>
-                <Task>TcpListenerBindFailedPort</Task>
-                <Keyword>ut:TcpipListener</Keyword>
-                <Message><![CDATA[
-TCP: listener %1 (family=%7 PID=%5) bind failed: address %3 cannot be resolved (Status=%4).]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="Listener" inType="win:Pointer" outType="win:HexInt64"/>
-  <data name="AddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="SocketAddress" inType="win:Binary" outType="win:SocketAddress" length="AddressLength"/>
-  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
-  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="CompartmentId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="AddressFamily" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="PsGetProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
 </template>
 ]]></Template>
             </Event>
@@ -5568,28 +4626,6 @@ TCP: listener %1 (sockaddr=%3) activated.]]></Message>
 ]]></Template>
             </Event>
             <Event>
-                <Id>1123</Id>
-                <Version>1</Version>
-                <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
-                <Level>Information</Level>
-                <Task>TcpListenerActivated</Task>
-                <Keyword>ut:TcpipListener</Keyword>
-                <Message><![CDATA[
-TCP: listener %1 (sockaddr=%3) activated.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="Listener" inType="win:Pointer" outType="win:HexInt64"/>
-  <data name="AddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="SocketAddress" inType="win:Binary" outType="win:SocketAddress" length="AddressLength"/>
-  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
-  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="CompartmentId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="AddressFamily" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="PsGetProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
                 <Id>1124</Id>
                 <Version>0</Version>
                 <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
@@ -5607,28 +4643,6 @@ TCP: listener %1 (sockaddr=%3) unbound.]]></Message>
   <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
   <data name="CompartmentId" inType="win:UInt32" outType="xs:unsignedInt"/>
   <data name="AddressFamily" inType="win:UInt32" outType="xs:unsignedInt"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
-                <Id>1124</Id>
-                <Version>1</Version>
-                <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
-                <Level>Information</Level>
-                <Task>TcpListenerUnbound</Task>
-                <Keyword>ut:TcpipListener</Keyword>
-                <Message><![CDATA[
-TCP: listener %1 (sockaddr=%3) unbound.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="Listener" inType="win:Pointer" outType="win:HexInt64"/>
-  <data name="AddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="SocketAddress" inType="win:Binary" outType="win:SocketAddress" length="AddressLength"/>
-  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
-  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="CompartmentId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="AddressFamily" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="PsGetProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
 </template>
 ]]></Template>
             </Event>
@@ -6298,7 +5312,7 @@ TCP: connection %1 SRTT measurement started (seq = %2, tick = %3).]]></Message>
                 <Id>1167</Id>
                 <Version>0</Version>
                 <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
-                <Level>Information</Level>
+                <Level>Verbose</Level>
                 <Task>TcpSrttMeasurementComplete</Task>
                 <Message><![CDATA[
 TCP: connection %1 SRTT measurement complete (tick = %3, sample = %4 ms, new srtt = %5 ms).]]></Message>
@@ -6940,29 +5954,6 @@ TCP: connection %8 (local=%2 remote=%4) terminating: Zero window probe timeout e
 ]]></Template>
             </Event>
             <Event>
-                <Id>1200</Id>
-                <Version>1</Version>
-                <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
-                <Level>Information</Level>
-                <Task>TcpDisconnectTcbZeroWindowTimeout</Task>
-                <Keyword>ut:TcpipTcb ut:TcpipDiagnosis ut:Endpoint</Keyword>
-                <Message><![CDATA[
-TCP: connection %8 (local=%2 remote=%4) terminating: Zero window probe timeout expired.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
-  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
-  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
-  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Compartment" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Tcb" inType="win:Pointer" outType="win:HexInt64"/>
-  <data name="PsGetProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
                 <Id>1201</Id>
                 <Version>0</Version>
                 <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
@@ -6981,29 +5972,6 @@ TCP: connection %8 (local=%2 remote=%4) terminating: FIN-WAIT-2 timeout expired.
   <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
   <data name="Compartment" inType="win:UInt32" outType="xs:unsignedInt"/>
   <data name="Tcb" inType="win:Pointer" outType="win:HexInt64"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
-                <Id>1201</Id>
-                <Version>1</Version>
-                <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
-                <Level>Information</Level>
-                <Task>TcpDisconnectTcbFinWait2Timeout</Task>
-                <Keyword>ut:TcpipTcb ut:TcpipDiagnosis ut:Endpoint</Keyword>
-                <Message><![CDATA[
-TCP: connection %8 (local=%2 remote=%4) terminating: FIN-WAIT-2 timeout expired.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
-  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
-  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
-  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Compartment" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Tcb" inType="win:Pointer" outType="win:HexInt64"/>
-  <data name="PsGetProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
 </template>
 ]]></Template>
             </Event>
@@ -8863,28 +7831,6 @@ TCP: connection %1 (local=%3 remote=%5) exists. State = %6. PID = %7.]]></Messag
 ]]></Template>
             </Event>
             <Event>
-                <Id>1300</Id>
-                <Version>1</Version>
-                <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
-                <Level>Information</Level>
-                <Task>TcpConnectionRundown</Task>
-                <Keyword>ut:TcpipTcb ut:TcpipDiagnosis ut:Endpoint</Keyword>
-                <Message><![CDATA[
-TCP: connection %1 (local=%3 remote=%5) exists. State = %6. PID = %7.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="Tcb" inType="win:Pointer" outType="win:HexInt64"/>
-  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
-  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
-  <data name="State" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Pid" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="PsGetProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
                 <Id>1301</Id>
                 <Version>0</Version>
                 <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
@@ -10059,30 +9005,6 @@ TCPIP has failed a %1 request from %4 to %6 on endpoint %2 owned by process %8 w
 ]]></Template>
             </Event>
             <Event>
-                <Id>1357</Id>
-                <Version>1</Version>
-                <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
-                <Level>Warning</Level>
-                <Task>TcpipAoacFailFast</Task>
-                <Keyword>ut:TcpipInterface ut:TcpipDiagnosis ut:TcpipCsDiag</Keyword>
-                <Message><![CDATA[
-TCPIP has failed a %1 request from %4 to %6 on endpoint %2 owned by process %8 with %7 since network interface %9 is in low-power mode.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="RequestType" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="TcbOrEndpoint" inType="win:Pointer" outType="win:HexInt64"/>
-  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
-  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
-  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
-  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="InterfaceIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="PsGetProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
                 <Id>1358</Id>
                 <Version>0</Version>
                 <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
@@ -10741,26 +9663,6 @@ UDP: endpoint (family=%5 pid=%3) create failed: address family not attached.]]><
 ]]></Template>
             </Event>
             <Event>
-                <Id>1389</Id>
-                <Version>1</Version>
-                <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
-                <Level>Information</Level>
-                <Task>UdpCreateEndpointAfFailure</Task>
-                <Keyword>ut:TcpipEndpoint ut:Endpoint</Keyword>
-                <Message><![CDATA[
-UDP: endpoint (family=%5 pid=%3) create failed: address family not attached.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
-  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
-  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="CompartmentId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="AddressFamily" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="PsGetProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
                 <Id>1390</Id>
                 <Version>0</Version>
                 <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
@@ -10776,26 +9678,6 @@ UDP: endpoint %1 (family=%5 pid=%3) create failed: compartment %4 not found.]]><
   <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
   <data name="CompartmentId" inType="win:UInt32" outType="xs:unsignedInt"/>
   <data name="AddressFamily" inType="win:UInt32" outType="xs:unsignedInt"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
-                <Id>1390</Id>
-                <Version>1</Version>
-                <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
-                <Level>Information</Level>
-                <Task>UdpCreateEndpointCompartmentFailure</Task>
-                <Keyword>ut:TcpipEndpoint ut:Endpoint</Keyword>
-                <Message><![CDATA[
-UDP: endpoint %1 (family=%5 pid=%3) create failed: compartment %4 not found.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
-  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
-  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="CompartmentId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="AddressFamily" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="PsGetProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
 </template>
 ]]></Template>
             </Event>
@@ -10819,26 +9701,6 @@ UDP: endpoint %1 (family=%5 pid=%3) created.]]></Message>
 ]]></Template>
             </Event>
             <Event>
-                <Id>1391</Id>
-                <Version>1</Version>
-                <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
-                <Level>Information</Level>
-                <Task>UdpCreateEndpointComplete</Task>
-                <Keyword>ut:TcpipEndpoint ut:Endpoint</Keyword>
-                <Message><![CDATA[
-UDP: endpoint %1 (family=%5 pid=%3) created.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
-  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
-  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="CompartmentId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="AddressFamily" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="PsGetProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
                 <Id>1392</Id>
                 <Version>0</Version>
                 <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
@@ -10854,26 +9716,6 @@ UDP: endpoint %1 (family=%5 pid=%3) create failed: inspection status = %2]]></Me
   <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
   <data name="CompartmentId" inType="win:UInt32" outType="xs:unsignedInt"/>
   <data name="AddressFamily" inType="win:UInt32" outType="xs:unsignedInt"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
-                <Id>1392</Id>
-                <Version>1</Version>
-                <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
-                <Level>Information</Level>
-                <Task>UdpCreateEndpointInspectionFailure</Task>
-                <Keyword>ut:TcpipEndpoint ut:Endpoint</Keyword>
-                <Message><![CDATA[
-UDP: endpoint %1 (family=%5 pid=%3) create failed: inspection status = %2]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
-  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
-  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="CompartmentId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="AddressFamily" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="PsGetProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
 </template>
 ]]></Template>
             </Event>
@@ -11453,109 +10295,6 @@ TCP: SACK Retransmit Additional Send, Connection = %1, BytesToSend = %2, SndNxt 
   <data name="Current State" inType="win:UInt32" outType="xs:unsignedInt"/>
   <data name="Processor Usage" inType="win:UInt32" outType="xs:unsignedInt"/>
   <data name="Current Tick" inType="win:UInt32" outType="xs:unsignedInt"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
-                <Id>1426</Id>
-                <Version>0</Version>
-                <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
-                <Level>Information</Level>
-                <Task>TcpCubicDataTransferCumAck</Task>
-                <Message><![CDATA[
-TCP: connection %1: Cumulative Ack event, SeqNo = %5, BytesAcked = %4, CWnd = %2, SndWnd = %3, InRecovery = %6, TimeSinceLastLossMS = %7, CubicCwnd = %8, AimdCwnd = %9, K = %10, Wmax = %11, LastWmax = %12, MaxSndWnd = %13.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="Tcb" inType="win:Pointer" outType="win:HexInt64"/>
-  <data name="Cwnd" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="SndWnd" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="BytesAcked" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="SeqNo" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="InRecovery" inType="win:UInt8" outType="xs:unsignedByte"/>
-  <data name="TimeSinceLastLossMS" inType="win:UInt64" outType="xs:unsignedLong"/>
-  <data name="CubicCwnd" inType="win:UInt64" outType="xs:unsignedLong"/>
-  <data name="AimdCwnd" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="K" inType="win:UInt64" outType="xs:unsignedLong"/>
-  <data name="Wmax" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="LastWmax" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="MaxSndWnd" inType="win:UInt32" outType="xs:unsignedInt"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
-                <Id>1427</Id>
-                <Version>0</Version>
-                <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
-                <Level>Information</Level>
-                <Task>TcpCubicDataTransferDupAck</Task>
-                <Message><![CDATA[
-TCP: connection %1: Duplicate ACK updated cwnd = %2 and updated ssthresh = %3 DupAckCount = %4 SndUna = %5 CwrMax = %6.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="Tcb" inType="win:Pointer" outType="win:HexInt64"/>
-  <data name="Cwnd" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="SSThresh" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="DupAckCount" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="SeqNo" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="CwrMax" inType="win:UInt32" outType="xs:unsignedInt"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
-                <Id>1428</Id>
-                <Version>0</Version>
-                <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
-                <Level>Information</Level>
-                <Task>TcpCubicDataTransferEcn</Task>
-                <Message><![CDATA[
-TCP: CUBIC ECN event. Connection %1, CWnd %2, SSThresh = %3, SndUna = %4]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="Tcb" inType="win:Pointer" outType="win:HexInt64"/>
-  <data name="Cwnd" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="SSThresh" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="SndUna" inType="win:UInt32" outType="xs:unsignedInt"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
-                <Id>1562</Id>
-                <Version>0</Version>
-                <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
-                <Level>Error</Level>
-                <Task>TcpCreateEndpointAccessFailure</Task>
-                <Keyword>ut:TcpipEndpoint ut:Endpoint</Keyword>
-                <Message><![CDATA[
-TCP: endpoint (PID=%4 ProcessSeqNum=%7) create failed: access denied.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
-  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
-  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="CompartmentId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="AddressFamily" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="ProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
-                <Id>1563</Id>
-                <Version>0</Version>
-                <Channel>Microsoft-Windows-TCPIP/Diagnostic</Channel>
-                <Level>Error</Level>
-                <Task>UdpCreateEndpointAccessFailure</Task>
-                <Keyword>ut:TcpipEndpoint ut:Endpoint</Keyword>
-                <Message><![CDATA[
-UDP: endpoint (PID=%3 ProcessSeqNum=%6) create failed: access denied.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
-  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
-  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="CompartmentId" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="AddressFamily" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="ProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
 </template>
 ]]></Template>
             </Event>

@@ -6,7 +6,7 @@
             <ResourceFilePath>C:\Windows\system32\spaceman.exe</ResourceFilePath>
             <ParameterFilePath></ParameterFilePath>
             <MessageFilePath>C:\Windows\system32\spaceman.exe</MessageFilePath>
-            <HelpLink>http://go.microsoft.com/fwlink/events.asp</HelpLink>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=spaceman.exe&amp;FileVer=10.0.14393.0</HelpLink>
             <PublisherMessage></PublisherMessage>
             <Channels>
                 <Channel>
@@ -55,7 +55,7 @@ For internal use.]]></Message>
                 <Template><![CDATA[
 <template xmlns="http://schemas.microsoft.com/win/2004/08/events">
   <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Tag" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
 </template>
 ]]></Template>
             </Event>
@@ -69,9 +69,8 @@ For internal use.]]></Message>
                 <Template><![CDATA[
 <template xmlns="http://schemas.microsoft.com/win/2004/08/events">
   <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="Tag" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="KernelModeStatus" inType="win:UInt32" outType="win:NTStatus"/>
-  <data name="UserModeStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
 </template>
 ]]></Template>
             </Event>

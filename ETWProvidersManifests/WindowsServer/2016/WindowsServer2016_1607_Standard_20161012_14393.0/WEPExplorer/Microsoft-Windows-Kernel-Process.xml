@@ -6,7 +6,7 @@
             <ResourceFilePath>C:\Windows\system32\Microsoft-Windows-System-Events.dll</ResourceFilePath>
             <ParameterFilePath></ParameterFilePath>
             <MessageFilePath>C:\Windows\system32\Microsoft-Windows-System-Events.dll</MessageFilePath>
-            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.447&amp;FileName=Microsoft-Windows-System-Events.dll&amp;FileVer=10.0.14393.447</HelpLink>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=Microsoft-Windows-System-Events.dll&amp;FileVer=10.0.14393.0</HelpLink>
             <PublisherMessage>Microsoft-Windows-Kernel-Process</PublisherMessage>
             <Channels>
                 <Channel>
@@ -731,36 +731,6 @@ Enumerated process %1 had started at time %2 by parent %3 running in session %4 
 ]]></Template>
             </Event>
             <Event>
-                <Id>19</Id>
-                <Version>2</Version>
-                <Channel>Microsoft-Windows-Kernel-Process/Analytic</Channel>
-                <Level>Information</Level>
-                <Task>PsIoRateControl</Task>
-                <Opcode>Start</Opcode>
-                <Keyword>WINEVENT_KEYWORD_JOB_IO</Keyword>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="Job ID" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="IoRateControl" inType="win:Pointer" outType="win:HexInt64"/>
-  <data name="MaxIops" inType="win:UInt64" outType="xs:unsignedLong"/>
-  <data name="MaxBandwidth" inType="win:UInt64" outType="xs:unsignedLong"/>
-  <data name="MaxTimePercent" inType="win:UInt64" outType="xs:unsignedLong"/>
-  <data name="ReservationIops" inType="win:UInt64" outType="xs:unsignedLong"/>
-  <data name="ReservationBandwidth" inType="win:UInt64" outType="xs:unsignedLong"/>
-  <data name="ReservationTimePercent" inType="win:UInt64" outType="xs:unsignedLong"/>
-  <data name="CriticalReservationIops" inType="win:UInt64" outType="xs:unsignedLong"/>
-  <data name="CriticalReservationBandwidth" inType="win:UInt64" outType="xs:unsignedLong"/>
-  <data name="CriticalReservationTimePercent" inType="win:UInt64" outType="xs:unsignedLong"/>
-  <data name="SoftMaxIops" inType="win:UInt64" outType="xs:unsignedLong"/>
-  <data name="SoftMaxBandwidth" inType="win:UInt64" outType="xs:unsignedLong"/>
-  <data name="SoftMaxTimePercent" inType="win:UInt64" outType="xs:unsignedLong"/>
-  <data name="ControlFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
-  <data name="StatusCode" inType="win:UInt32" outType="xs:unsignedInt"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
                 <Id>20</Id>
                 <Version>0</Version>
                 <Channel>Microsoft-Windows-Kernel-Process/Analytic</Channel>
@@ -800,36 +770,6 @@ Enumerated process %1 had started at time %2 by parent %3 running in session %4 
   <data name="CriticalReservationIops" inType="win:UInt64" outType="xs:unsignedLong"/>
   <data name="CriticalReservationBandwidth" inType="win:UInt64" outType="xs:unsignedLong"/>
   <data name="CriticalReservationTimePercent" inType="win:UInt64" outType="xs:unsignedLong"/>
-  <data name="ControlFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
-  <data name="StatusCode" inType="win:UInt32" outType="xs:unsignedInt"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
-                <Id>20</Id>
-                <Version>2</Version>
-                <Channel>Microsoft-Windows-Kernel-Process/Analytic</Channel>
-                <Level>Information</Level>
-                <Task>PsIoRateControl</Task>
-                <Opcode>Stop</Opcode>
-                <Keyword>WINEVENT_KEYWORD_JOB_IO</Keyword>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="Job ID" inType="win:UInt32" outType="xs:unsignedInt"/>
-  <data name="IoRateControl" inType="win:Pointer" outType="win:HexInt64"/>
-  <data name="MaxIops" inType="win:UInt64" outType="xs:unsignedLong"/>
-  <data name="MaxBandwidth" inType="win:UInt64" outType="xs:unsignedLong"/>
-  <data name="MaxTimePercent" inType="win:UInt64" outType="xs:unsignedLong"/>
-  <data name="ReservationIops" inType="win:UInt64" outType="xs:unsignedLong"/>
-  <data name="ReservationBandwidth" inType="win:UInt64" outType="xs:unsignedLong"/>
-  <data name="ReservationTimePercent" inType="win:UInt64" outType="xs:unsignedLong"/>
-  <data name="CriticalReservationIops" inType="win:UInt64" outType="xs:unsignedLong"/>
-  <data name="CriticalReservationBandwidth" inType="win:UInt64" outType="xs:unsignedLong"/>
-  <data name="CriticalReservationTimePercent" inType="win:UInt64" outType="xs:unsignedLong"/>
-  <data name="SoftMaxIops" inType="win:UInt64" outType="xs:unsignedLong"/>
-  <data name="SoftMaxBandwidth" inType="win:UInt64" outType="xs:unsignedLong"/>
-  <data name="SoftMaxTimePercent" inType="win:UInt64" outType="xs:unsignedLong"/>
   <data name="ControlFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
   <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
   <data name="StatusCode" inType="win:UInt32" outType="xs:unsignedInt"/>

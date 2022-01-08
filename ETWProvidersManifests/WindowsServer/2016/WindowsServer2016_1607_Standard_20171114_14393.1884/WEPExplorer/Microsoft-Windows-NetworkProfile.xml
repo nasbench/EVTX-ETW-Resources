@@ -1,0 +1,468 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-NetworkProfile</Name>
+        <Metadata>
+            <Guid>{FBCFAC3F-8459-419F-8E48-1F0B49CDB85E}</Guid>
+            <ResourceFilePath>C:\Windows\system32\netprofmsvc.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\netprofmsvc.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=netprofmsvc.dll&amp;FileVer=10.0.14393.0</HelpLink>
+            <PublisherMessage>Microsoft-Windows-NetworkProfile</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-NetworkProfile/Diagnostic</Message>
+                    <Path>Microsoft-Windows-NetworkProfile/Diagnostic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-NetworkProfile/Operational</Message>
+                    <Path>Microsoft-Windows-NetworkProfile/Operational</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Wait for Identification</Message>
+                    <Name>WaitForIdentification</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>Notify Clients</Message>
+                    <Name>NotifyClients</Name>
+                    <Value>2</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>LwtDiagnostic</Name>
+                    <Value>32</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:SendPath</Name>
+                    <Value>4294967296</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:ReceivePath</Name>
+                    <Value>8589934592</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:L3ConnectPath</Name>
+                    <Value>17179869184</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:L2ConnectPath</Name>
+                    <Value>34359738368</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:ClosePath</Name>
+                    <Value>68719476736</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:Authentication</Name>
+                    <Value>137438953472</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:Configuration</Name>
+                    <Value>274877906944</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:Global</Name>
+                    <Value>549755813888</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:Dropped</Name>
+                    <Value>1099511627776</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:PiiPresent</Name>
+                    <Value>2199023255552</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:Packet</Name>
+                    <Value>4398046511104</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:Address</Name>
+                    <Value>8796093022208</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:StdTemplateHint</Name>
+                    <Value>17592186044416</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:StateTransition</Name>
+                    <Value>35184372088832</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Response Time</Message>
+                    <Name>win:ResponseTime</Name>
+                    <Value>281474976710656</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>4001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkProfile/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Wait for Identification</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Entered State: %2 Interface Guid: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="CurrentOrNextState" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkProfile/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Wait for Identification</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Transitioning to State: %2 Interface Guid: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="CurrentOrNextState" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkProfile/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Wait for Identification</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Transitioning to State: %2 Interface Guid: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="CurrentOrNextState" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkProfile/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Network State Change Fired
+	New Internet Connection Profile: %1
+	Connection Cost Changed: %2
+	Domain Connectivity Level Changed: %3
+	Network Connectivity Level Changed: %4
+	Host Name Changed: %5
+	Wwan Registration State Changed: %6
+	Tethering Operational State Changed: %7
+	Tethering Client Count Changed: %8]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NewInternetConnectionProfile" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ConnectionCostChanged" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="DomainConnectivityLevelChanged" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="NetworkConnectivityLevelChanged" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="HostNameChanged" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="WwanRegistrationStateChanged" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="TetheringOperationalStateChanged" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="TetheringClientCountChanged" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkProfile/Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>LwtDiagnostic</Keyword>
+                <Message><![CDATA[
+Network Connected
+	Name: %1
+	Desc: %2
+	Type: %4
+	State: %5
+	Category: %6
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Description" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Guid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="State" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Category" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkProfile/Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>LwtDiagnostic</Keyword>
+                <Message><![CDATA[
+Network Disconnected
+	Name: %1
+	Desc: %2
+	Type: %4
+	State: %5
+	Category: %6
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Description" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Guid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="State" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Category" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkProfile/Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>LwtDiagnostic</Keyword>
+                <Message><![CDATA[
+Network Category Changed
+	Name: %1
+	Desc: %2
+	Type: %4
+	State: %5
+	Category: %6
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Description" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Guid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="State" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Category" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkProfile/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>Notify Clients</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Posting Network Connected Event Type: %1
+	ProfileID: %2
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NetworkProfileEventState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Guid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkProfile/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>Notify Clients</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Posted Network Connected Event Type: %1
+	ProfileID: %2
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NetworkProfileEventState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Guid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkProfile/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>Notify Clients</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Posting Network Profile Event Type: %1
+	ProfileID: %2
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NetworkProfileEventState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Guid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkProfile/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>Notify Clients</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Posted Network Profile Event Type: %1
+	ProfileID: %2
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NetworkProfileEventState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Guid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10007</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkProfile/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>Notify Clients</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Posting Network Disconnected Event Type: %1
+	ProfileID: %2
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NetworkProfileEventState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Guid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10008</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkProfile/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>Notify Clients</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Posted Network Disconnected Event Type: %1
+	ProfileID: %2
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NetworkProfileEventState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Guid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkProfile/Operational</Channel>
+                <Level>Error</Level>
+                <Keyword>LwtDiagnostic</Keyword>
+                <Message><![CDATA[
+NLM service initialization failed (error=%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+  <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkProfile/Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>LwtDiagnostic</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProfileGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Category" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCodev4" inType="win:Int32" outType="xs:int"/>
+  <data name="ErrorCodev6" inType="win:Int32" outType="xs:int"/>
+  <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkProfile/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Keyword>LwtDiagnostic</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InternetPresent" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="WnfStatusCode" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NetworkProfile/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Keyword>LwtDiagnostic</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FreeNetworkPresent" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="WnfStatusCode" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
