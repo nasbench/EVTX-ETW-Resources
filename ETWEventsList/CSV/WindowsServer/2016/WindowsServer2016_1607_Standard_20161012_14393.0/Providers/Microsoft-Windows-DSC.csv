@@ -182,7 +182,6 @@ Microsoft-Windows-DSC,Information,4325,0,Microsoft-Windows-DSC/Operational,,,,Jo
 Microsoft-Windows-DSC,Information,4326,0,Microsoft-Windows-DSC/Operational,,,,Job {JobId} : WebDownloadManager for AgentId {param1} Do-DscAction command; Http Client failed: {param2}.
 Microsoft-Windows-DSC,Information,4327,0,Microsoft-Windows-DSC/Operational,,,,Job {JobId} : WebDownloadManager for AgentId {param1} Do-DscAction command; GET Url: {param2}.
 Microsoft-Windows-DSC,Information,4328,0,Microsoft-Windows-DSC/Operational,,,,Job {JobId} : WebDownloadManager for AgentId {param1} Do-DscAction command; GET call result: {param2}.
-Microsoft-Windows-DSC,Information,4329,0,Microsoft-Windows-DSC/Operational,,,,Job {JobId} : Register-DscAgent command for AgentId {AgentId}.
 Microsoft-Windows-DSC,Information,4332,0,Microsoft-Windows-DSC/Operational,,,,Job {JobId} :  Resource execution sequence :: {ResourceSequence}.
 Microsoft-Windows-DSC,Information,4333,0,Microsoft-Windows-DSC/Operational,,,,Job {JobId} : Attempting to get the configuration from pull server using Download Manager {DownloadManagerName}. AssignedConfigurationName is {AssignedConfigurationName}.
 Microsoft-Windows-DSC,Information,4334,0,Microsoft-Windows-DSC/Operational,,,,Job {JobId} : Attempting to get the modules from pull server using Download Manager {DownloadManagerName}. Agent Id is {AgentId}. Modules are {Modules}.
@@ -231,21 +230,11 @@ Microsoft-Windows-DSC,Warning,4510,0,Microsoft-Windows-DSC/Operational,,,,Job {J
 Microsoft-Windows-DSC,Warning,4511,0,Microsoft-Windows-DSC/Operational,,,,Job {JobId} : {errorno} error closing job details log {logName}.
 Microsoft-Windows-DSC,Information,4512,0,Microsoft-Windows-DSC/Operational,,,,Job {JobId} : Details logging started to {logName}.
 Microsoft-Windows-DSC,Information,4513,0,Microsoft-Windows-DSC/Operational,,,,Job {JobId} : Details logging completed for {logName}.
-Microsoft-Windows-DSC,Error,4514,0,Microsoft-Windows-DSC/Operational,,,,Validating the signer signature chain failed with the status '{signatureStatus}'. A certificate chain could not be built to a trusted root authority.
-Microsoft-Windows-DSC,Error,4515,0,Microsoft-Windows-DSC/Operational,,,,Failed to open trusted publisher store with the error '{message}'. The store path is either invalid or does not exist.
-Microsoft-Windows-DSC,Error,4516,0,Microsoft-Windows-DSC/Operational,,,,Failed to retrieve signing certificate information from the trusted publisher store with the error '{message}'.
-Microsoft-Windows-DSC,Error,4517,0,Microsoft-Windows-DSC/Operational,,,,Failed to parse trusted publisher store path with the error '{message}'.
-Microsoft-Windows-DSC,Information,4518,0,Microsoft-Windows-DSC/Operational,,,,Trusted publisher store path is : '{storeInfo}'.
-Microsoft-Windows-DSC,Information,4519,0,Microsoft-Windows-DSC/Operational,,,,Signature validation was successful. Signer certificate is valid and trusted.
-Microsoft-Windows-DSC,Error,4520,0,Microsoft-Windows-DSC/Operational,,,,Validating the signer signature trust failed. The signer certificate did not match with any valid code signing certificate that is installed on the node.
-Microsoft-Windows-DSC,Error,4521,0,Microsoft-Windows-DSC/Operational,,,,Validating the signer signature hash failed with the status '{signatureStatus}'. The content of the configuration document or module has been changed.
-Microsoft-Windows-DSC,Error,4522,0,Microsoft-Windows-DSC/Operational,,,,Validating the signer signature failed with the status '{signatureStatus}'.
-Microsoft-Windows-DSC,Error,4523,0,Microsoft-Windows-DSC/Operational,,,,Validating the signature of the configuration document failed. The signature status on the document is '{signatureStatus}'.
-Microsoft-Windows-DSC,Information,4524,0,Microsoft-Windows-DSC/Operational,,,,Signature validation skipped becouse machine signature verification policy is set to '{currentMachinSignatureVerificationPolicy}'
-Microsoft-Windows-DSC,Error,4525,0,Microsoft-Windows-DSC/Operational,,,,Extracting the downloaded zip file '{zipFileName}' failed.
-Microsoft-Windows-DSC,Error,4526,0,Microsoft-Windows-DSC/Operational,,,,The downloaded zip file '{zipFileName}' does not contain a catalog file. Ensure the catalog file for the module exist inside the module folder.
-Microsoft-Windows-DSC,Error,4527,0,Microsoft-Windows-DSC/Operational,,,,Catalog signature verification failed for the downloaded zip file '{zipFileName}'.
-Microsoft-Windows-DSC,Information,4528,0,Microsoft-Windows-DSC/Operational,,,,Comparing the module catalalog with current contents of the module succeeded for module '{moduleName}'.
-Microsoft-Windows-DSC,Error,4529,0,Microsoft-Windows-DSC/Operational,,,,Comparing the module catalalog file with current contents of the module failed for the downloaded zip file '{zipFileName}'. Verify using 'Test-FileCatalog' cmdlet that contents of the module on the server has not changed after it is signed.
-Microsoft-Windows-DSC,Warning,4530,0,Microsoft-Windows-DSC/Operational,,,,The Local Configuration Manager could not find the partial configuration block that matches the server assigned configuration document '{assignedConfigName}'.
-Microsoft-Windows-DSC,Error,4531,0,Microsoft-Windows-DSC/Operational,,,,The uncompressed file size of the downloaded zip file {zipFile}; exceeded the 'MaximumDownloadSizeMB' value of {limit} MB provided in the metaconfiguration. Please increase this value in the metaconfiguration if you are expecting module size greater than the current limit.
+Microsoft-Windows-DSC,Error,4514,0,Microsoft-Windows-DSC/Operational,,,,Validating the signature of the configuration document failed. The signature status on the document is '{signatureStatus}'
+Microsoft-Windows-DSC,Information,4515,0,Microsoft-Windows-DSC/Operational,,,,Signature validation skipped becouse machine signature verification policy is set to '{currentMachinSignatureVerificationPolicy}'
+Microsoft-Windows-DSC,Error,4516,0,Microsoft-Windows-DSC/Operational,,,,Extracting the downloaded zip file '{zipFileName}' failed.
+Microsoft-Windows-DSC,Error,4517,0,Microsoft-Windows-DSC/Operational,,,,The downloaded zip file '{zipFileName}' does not contain a catalog file. Ensure the catalog file for the module exist inside the module folder.
+Microsoft-Windows-DSC,Error,4518,0,Microsoft-Windows-DSC/Operational,,,,Catalog signature verification failed for the downloaded zip file '{zipFileName}'.
+Microsoft-Windows-DSC,Information,4519,0,Microsoft-Windows-DSC/Operational,,,,Comparing the module catalalog with current contents of the module succeeded for module '{moduleName}'.
+Microsoft-Windows-DSC,Error,4520,0,Microsoft-Windows-DSC/Operational,,,,Comparing the module catalalog file with current contents of the module failed for the downloaded zip file '{zipFileName}'. Verify using 'Test-FileCatalog' cmdlet that contents of the module on the server has not changed after it is signed.
+Microsoft-Windows-DSC,Warning,4521,0,Microsoft-Windows-DSC/Operational,,,,The Local Configuration Manager could not find the partial configuration block that matches the server assigned configuration document '{assignedConfigName}'.

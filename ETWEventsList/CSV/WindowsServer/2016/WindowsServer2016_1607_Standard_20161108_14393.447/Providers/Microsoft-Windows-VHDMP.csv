@@ -1,0 +1,37 @@
+Provider,Level,Event ID,Version,Channel,Task,Opcode,Keyword,Message
+Microsoft-Windows-VHDMP,Information,1,0,Microsoft-Windows-VHDMP/Operational,,,,The VHD {VhdFileName} has come online (surfaced) as disk number {VhdDiskNumber}.
+Microsoft-Windows-VHDMP,Information,2,0,Microsoft-Windows-VHDMP/Operational,,,,The VHD {VhdFileName} has been removed (unsurfaced) as disk number {VhdDiskNumber}.
+Microsoft-Windows-VHDMP,Error,3,0,Microsoft-Windows-VHDMP/Operational,,,,Failed to surface VHD {VhdFileName}. Error status {Status}.
+Microsoft-Windows-VHDMP,Error,4,0,Microsoft-Windows-VHDMP/Operational,,,,Failed to surface VHD {VhdFileName}. Surface attempt was cancelled.
+Microsoft-Windows-VHDMP,Error,5,0,Microsoft-Windows-VHDMP/Operational,,,,Failed to {VhdMetaOps} VHD {VhdFileName}. Error status {Status}.
+Microsoft-Windows-VHDMP,Error,6,0,Microsoft-Windows-VHDMP/Operational,,,,Operation failed on VHD {VhdFileName}. Operation type {VhdIoType}. Error status {Status}.
+Microsoft-Windows-VHDMP,Error,7,0,Microsoft-Windows-VHDMP/Operational,,,,The Vhd Chain for VHD {VhdFileName} is corrupted. The expected LastWriteGUID {ExpectedParentLastWriteGUID1} ({ExpectedParentLastWriteGUID2}) did not match the parent's actual LastWriteGUID ({ParentLastWriteGUID}).
+Microsoft-Windows-VHDMP,Error,8,0,Microsoft-Windows-VHDMP/Operational,,,,The change tracking file for VHD {VhdFileName} is corrupted and cannot be read. No change tracking information will be available for this VHD; and change tracking will need to be enabled again before changed are tracked.
+Microsoft-Windows-VHDMP,Error,9,0,Microsoft-Windows-VHDMP/Operational,,,,The VHD file {VhdFileName} has been modified without updating its associated change tracking file. Because the consistency of the change tracking information cannot be ensured; the change tracking data has been reset. No change tracking information will be available for this VHD; and change tracking will need to be enabled again before changed are tracked.
+Microsoft-Windows-VHDMP,Error,10,0,Microsoft-Windows-VHDMP/Operational,,,,Error {Status} occured when attempting to update the change tracking file for VHD {VhdFileName}. This will invalidate the file's change tracking information. Change tracking will not be available for this VHD until change tracking is enabled again.
+Microsoft-Windows-VHDMP,Error,11,0,Microsoft-Windows-VHDMP/Operational,,,,Surface for VHD {VhdFileName} is invalidated and will be removed (unsurfaced) because of a {VhdIoType} operation failure with status {Status}.
+Microsoft-Windows-VHDMP,Information,50,0,Microsoft-Windows-VHDMP/Operational,,,,Performing {VhdMetaOps} VHD for {VhdFileName} (target '{TargetVhdFileName}').
+Microsoft-Windows-VHDMP,Information,51,0,Microsoft-Windows-VHDMP/Operational,,,,Successfully performed {VhdMetaOps} VHD {VhdFileName}.
+Microsoft-Windows-VHDMP,Information,100,0,Microsoft-Windows-VHDMP/Operational,,,,Vhd resiliency initiated for {VhdFile} (VM ID: {VmId}). A {VhdIoType} IO failed with error {Status}.
+Microsoft-Windows-VHDMP,Information,101,0,Microsoft-Windows-VHDMP/Operational,,,,Vhd resiliency successfully recovered {VhdFile} (VM ID: {VmId}).
+Microsoft-Windows-VHDMP,Error,102,0,Microsoft-Windows-VHDMP/Operational,,,,Vhd resiliency failed to recover {VhdFile} (VM ID: {VmId}) with error {Status}.
+Microsoft-Windows-VHDMP,Information,110,0,Microsoft-Windows-VHDMP/Operational,,,,Recovery initiated for {VhdFile} (VM ID: {VmId}) due to an IO failure with error {Status}.
+Microsoft-Windows-VHDMP,Information,111,0,Microsoft-Windows-VHDMP/Operational,,,,Recovery succeeded for {VhdFile} (VM ID: {VmId}).
+Microsoft-Windows-VHDMP,Error,112,0,Microsoft-Windows-VHDMP/Operational,,,,Recovery failed for {VhdFile} (VM ID: {VmId}) with error {Status}.
+Microsoft-Windows-VHDMP,Error,113,0,Microsoft-Windows-VHDMP/Operational,,,,File {VhdFile} is invalidated (VM ID: {VmId}) from current mode {Mode} with error {Status}. Any recovery in process will be failed and the virtual disk will be invalidated as well.
+Microsoft-Windows-VHDMP,Information,114,0,Microsoft-Windows-VHDMP/Operational,,,,Waiting on file ({RefType}) recovery for {VhdFile} (VM ID: {VmId}) due to an IO failure with error {Status}.
+Microsoft-Windows-VHDMP,Information,115,0,Microsoft-Windows-VHDMP/Operational,,,,Waiting on file ({RefType}) recovery for {VhdFile} (VM ID: {VmId}) completed with status {Status}.
+Microsoft-Windows-VHDMP,Information,116,0,Microsoft-Windows-VHDMP/Operational,,,,File ({RefType}) recovery succeeded for {VhdFile} (VM ID: {VmId}).
+Microsoft-Windows-VHDMP,Error,117,0,Microsoft-Windows-VHDMP/Operational,,,,File ({RefType}) recovery failed for {VhdFile} (VM ID: {VmId}) with error {Status}.
+Microsoft-Windows-VHDMP,Warning,118,0,Microsoft-Windows-VHDMP/Operational,,,,Failed to open file {VhdFile} with error {Status}. The file handle was previously invalidated due to a critical error. This operation will be retried periodically. (VM ID: {VmId}).
+Microsoft-Windows-VHDMP,Information,208,0,Microsoft-Windows-VHDMP/Operational,,,,Change Tracking has been enabled for the VHD {VhdFileName} ({VirtualDisk}) with log file {LogFileName}.
+Microsoft-Windows-VHDMP,Information,209,0,Microsoft-Windows-VHDMP/Operational,,,,Change Tracking has been disabled for the VHD {VhdFileName} ({VirtualDisk}).
+Microsoft-Windows-VHDMP,Error,210,0,Microsoft-Windows-VHDMP/Operational,,,,Change Tracking for the VHD {VirtualDisk} to the log file {LogFileName} has been stopped due to the error {Status}.
+Microsoft-Windows-VHDMP,Error,211,0,Microsoft-Windows-VHDMP/Operational,,,,Flushing of the header of the log file {LogFileName} has failed due to error {Status}.
+Microsoft-Windows-VHDMP,Error,212,0,Microsoft-Windows-VHDMP/Operational,,,,Flushing of the buffers to the log file {LogFileName} has failed due to error {Status}.
+Microsoft-Windows-VHDMP,Error,213,0,Microsoft-Windows-VHDMP/Operational,,,,Opening the log file {LogFileName} for tracking has failed due to error {Status}.
+Microsoft-Windows-VHDMP,Error,214,0,Microsoft-Windows-VHDMP/Operational,,,,Offline changes are detected for VHD {VhdFileName}. Log file: {LogFileName}; VHD time: {VHDFileTime}; Log file time: {LogFileTime}
+Microsoft-Windows-VHDMP,Verbose,1001,0,Microsoft-Windows-VHDMP-Analytic,IO request,Starting an IO.,,Starting an IO.
+Microsoft-Windows-VHDMP,Verbose,1002,0,Microsoft-Windows-VHDMP-Analytic,IO request,Completing an IO.,,Completing an IO.
+Microsoft-Windows-VHDMP,Verbose,1010,0,Microsoft-Windows-VHDMP-Analytic,,,,A {VhdSrbType} {VhdIoType} IO to {VhdFile} (VM ID: {VmId}) failed with error {Status}. Recovery of this virtual disk has been initiated. If this IO was initiated by a VM then it will be internally retried later when the virtual disk has successfully recovered.
+Microsoft-Windows-VHDMP,Verbose,1011,0,Microsoft-Windows-VHDMP-Analytic,,,,A {VhdSrbType} {VhdIoType} IO to {VhdFile} (VM ID: {VmId}) failed with error {Status}. Recovery for this virtual disk could not be initiated either because this is not a recoverable failure or recovery has failed or the virtual disk is in an invalid state.

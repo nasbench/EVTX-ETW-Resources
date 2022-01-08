@@ -3,23 +3,23 @@
 ETW Provider                                                                |  Number Of Events
 ----------------------------------------------------------------------------|------------------
 Microsoft-Windows-Shell-Core                                                |  2380
-Microsoft-Windows-AppXDeployment-Server                                     |  1472
+Microsoft-Windows-AppXDeployment-Server                                     |  1463
 Microsoft-AppV-SharedPerformance                                            |  1196
 Microsoft-Windows-AppModel-Exec                                             |  1038
 Microsoft-Windows-Immersive-Shell                                           |  770
 Microsoft-IE                                                                |  675
 Microsoft-WindowsPhone-CoreUIComponents                                     |  564
 Microsoft-Windows-SettingSync                                               |  508
-Microsoft-Windows-Documents                                                 |  497
 Microsoft-Windows-MediaFoundation-Performance                               |  497
+Microsoft-Windows-Documents                                                 |  493
 Microsoft-Windows-Application Server-Applications                           |  481
-Microsoft-IEFRAME                                                           |  472
-Microsoft-Windows-TCPIP                                                     |  469
+Microsoft-IEFRAME                                                           |  470
 Microsoft-Windows-DxgKrnl                                                   |  451
-Microsoft-Windows-Security-Auditing                                         |  450
 Microsoft-Windows-XAML                                                      |  449
+Microsoft-Windows-Security-Auditing                                         |  443
 Microsoft-Windows-MsiServer                                                 |  434
 Microsoft-Windows-TabletPC-InputPanel                                       |  429
+Microsoft-Windows-TCPIP                                                     |  413
 Microsoft-Windows-MSDTC                                                     |  387
 Microsoft-Windows-PushNotifications-Platform                                |  372
 Microsoft-Windows-Search-Core                                               |  370
@@ -35,18 +35,18 @@ Microsoft-Windows-IE-F12-Provider                                           |  2
 Microsoft-Windows-MCCS-ActiveSyncProvider                                   |  267
 Microsoft-Windows-Telephony-PhoneProviders                                  |  265
 Microsoft-Windows-MediaFoundation-Performance-Core                          |  253
-Microsoft-Windows-DSC                                                       |  250
 Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider          |  244
+Microsoft-Windows-DSC                                                       |  239
 Microsoft-Windows-Rdms-UI                                                   |  239
 Microsoft-User Experience Virtualization-App Agent                          |  236
 Microsoft-Windows-PDFReader                                                 |  228
 Microsoft-Windows-MPRMSG                                                    |  213
-Microsoft-Windows-PrintService                                              |  211
 Microsoft-Windows-WinRM                                                     |  210
-Microsoft-Windows-MPS-SRV                                                   |  203
+Microsoft-Windows-PrintService                                              |  209
 Microsoft-Windows-Backup                                                    |  203
 Microsoft-Windows-DXGI                                                      |  203
 Microsoft-Windows-GroupPolicy                                               |  201
+Microsoft-Windows-MPS-SRV                                                   |  199
 Microsoft-Windows-PowerShell                                                |  188
 Microsoft-PerfTrack-IEFRAME                                                 |  186
 Microsoft-Windows-AppxPackagingOM                                           |  183
@@ -57,7 +57,7 @@ Microsoft-Windows-PackageStateRoaming                                       |  1
 Microsoft-Windows-Telephony-PhoneService                                    |  170
 Microsoft-JScript                                                           |  170
 Microsoft-Windows-MCCS-SyncController                                       |  169
-Microsoft-Windows-DotNETRuntime                                             |  168
+Microsoft-Windows-DotNETRuntime                                             |  166
 Microsoft-Windows-WinINet                                                   |  161
 Microsoft-Windows-Dwm-Udwm                                                  |  159
 Microsoft-WindowsPhone-LocationServiceProvider                              |  158
@@ -65,19 +65,19 @@ Microsoft-Windows-UserDataAccess-UserDataService                            |  1
 Microsoft-Windows-ServerManager-DeploymentProvider                          |  157
 Microsoft-Windows-USB-USBHUB3                                               |  154
 Microsoft-Windows-TaskScheduler                                             |  151
-Microsoft-Windows-Kernel-Processor-Power                                    |  150
 Microsoft-Windows-NDIS                                                      |  150
 Microsoft-Windows-WebIO                                                     |  149
+Microsoft-Windows-Kernel-Processor-Power                                    |  146
 Microsoft-Windows-EFS                                                       |  145
 Microsoft-Windows-AppReadiness                                              |  144
 Microsoft-Windows-TerminalServices-RemoteConnectionManager                  |  143
 Microsoft-Windows-UserDataAccess-CEMAPI                                     |  141
-Microsoft-Windows-MediaEngine                                               |  134
 Microsoft-Windows-Diagnosis-AdvancedTaskManager                             |  134
 Microsoft-Windows-Complus                                                   |  133
+Microsoft-Windows-MediaEngine                                               |  132
 Microsoft-Windows-Servicing                                                 |  132
-Microsoft-Windows-SMBServer                                                 |  126
 Microsoft-Windows-Dhcp-Client                                               |  126
+Microsoft-Windows-SMBServer                                                 |  125
 Microsoft-Windows-DUI                                                       |  125
 Microsoft-Windows-Security-SPP                                              |  124
 Microsoft-Windows-MPS-CLNT                                                  |  124
@@ -88,8 +88,8 @@ Microsoft-Windows-LiveId                                                    |  1
 Microsoft-Windows-Bits-Client                                               |  119
 Microsoft-Windows-PDC                                                       |  118
 Microsoft-Windows-Winlogon                                                  |  117
-Microsoft-Windows-Kernel-Boot                                               |  115
 Microsoft-Windows-Narrator-Inproc                                           |  114
+Microsoft-Windows-Kernel-Boot                                               |  113
 Microsoft-Windows-Kernel-PnP                                                |  110
 Microsoft-Windows-AppHost                                                   |  109
 Microsoft-Windows-DeviceManagement-Pushrouter                               |  106
@@ -98,18 +98,17 @@ Microsoft-Windows-StorPort                                                  |  1
 Microsoft-Windows-USB-USBHUB                                                |  106
 Microsoft-Windows-AAD                                                       |  105
 Microsoft-Windows-Management-UI                                             |  105
-Microsoft-Windows-MF                                                        |  105
 Microsoft-Windows-Dwm-Api                                                   |  104
+Microsoft-Windows-MF                                                        |  104
 Microsoft-Windows-ESE                                                       |  103
 Microsoft-Windows-AppModel-State                                            |  103
 Microsoft-Windows-Wired-AutoConfig                                          |  101
 Microsoft-Windows-AppModel-Runtime                                          |  100
 Microsoft-Windows-Application-Experience                                    |  99
 Microsoft-Windows-SMBClient                                                 |  99
-Microsoft-Windows-User Device Registration                                  |  98
 Microsoft-Windows-HttpService                                               |  97
 Microsoft-Windows-Narrator                                                  |  96
-Microsoft-Antimalware-Engine                                                |  96
+Microsoft-Windows-User Device Registration                                  |  96
 Microsoft-Windows-TSF-msctf                                                 |  95
 Microsoft-Windows-XAML-Diagnostics                                          |  93
 Microsoft-Windows-Winsock-AFD                                               |  93
@@ -118,11 +117,10 @@ Microsoft-Windows-Audio                                                     |  9
 Microsoft-Windows-MediaFoundation-PlayAPI                                   |  92
 Microsoft-Windows-VolumeSnapshot-Driver                                     |  91
 Microsoft-Windows-MCCS-InternetMail                                         |  91
-Microsoft-Windows-CodeIntegrity                                             |  91
 Microsoft-Windows-DHCPv6-Client                                             |  90
-Microsoft-Windows-Directory-Services-SAM                                    |  89
 Microsoft-Windows-MCCS-AccountsHost                                         |  89
 Microsoft-Windows-Speech-UserExperience                                     |  89
+Microsoft-Windows-CodeIntegrity                                             |  89
 Microsoft-Windows-LanguagePackSetup                                         |  87
 Microsoft-Windows-PDH                                                       |  86
 Microsoft-Windows-RemoteDesktopServices-RdpCoreTS                           |  86
@@ -131,10 +129,10 @@ Microsoft-Windows-RRAS                                                      |  8
 Microsoft-Windows-TSF-UIManager                                             |  84
 Microsoft-Windows-Time-Service                                              |  83
 Microsoft-Windows-PrintBRM                                                  |  83
+Microsoft-Windows-Directory-Services-SAM                                    |  82
 Microsoft-Windows-Direct3D11                                                |  82
 Microsoft-Windows-TabletPC-MathInput                                        |  81
 Microsoft-Windows-UserDataAccess-UnifiedStore                               |  81
-Microsoft-Windows-StorageSpaces-Driver                                      |  81
 Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider                     |  80
 Microsoft-Windows-User Profiles Service                                     |  80
 Microsoft-Windows-Dism-Api                                                  |  80
@@ -151,12 +149,11 @@ Microsoft-Windows-MediaFoundation-MFCaptureEngine                           |  7
 Microsoft-Windows-TerminalServices-ClientActiveXCore                        |  75
 Microsoft-Windows-PerfCtrs                                                  |  74
 Microsoft-Windows-Runtime-Media                                             |  74
-Microsoft-Windows-USB-UCX                                                   |  74
 Microsoft-Windows-WinHttp                                                   |  73
 Microsoft-Windows-WindowsUpdateClient                                       |  73
 Microsoft-Windows-DUSER                                                     |  72
-Microsoft-Windows-Windows Defender                                          |  72
 Microsoft-Windows-Runtime-WebAPI                                            |  71
+Microsoft-Windows-USB-UCX                                                   |  71
 Microsoft-Windows-ServerManager-ManagementProvider                          |  70
 Microsoft-Windows-CertificateServicesClient-CertEnroll                      |  70
 Microsoft-Windows-Globalization                                             |  70
@@ -167,8 +164,8 @@ Microsoft-Windows-TabletPC-Platform-Input-Wisp                              |  6
 Microsoft-Windows-TabletPC-InputPersonalization                             |  68
 Microsoft-Windows-Wcmsvc                                                    |  67
 Microsoft-Windows-Media-Streaming                                           |  66
-Microsoft-Antimalware-Service                                               |  65
 Microsoft-Windows-DriverFrameworks-UserMode                                 |  65
+Microsoft-Windows-StorageSpaces-Driver                                      |  65
 Microsoft-Windows-DeviceSync                                                |  64
 Microsoft-Windows-Direct3D12                                                |  64
 Microsoft-Windows-Immersive-Shell-API                                       |  63
@@ -180,9 +177,11 @@ Microsoft-Windows-User-ControlPanel                                         |  6
 Volsnap                                                                     |  60
 Microsoft-Windows-Telephony-PhoneUtil                                       |  60
 Microsoft-Windows-SMBDirect                                                 |  59
+Microsoft-Windows-Windows Defender                                          |  59
 Microsoft-Windows-NCSI                                                      |  58
 Microsoft-Windows-FunctionDiscovery                                         |  58
 Microsoft-Windows-DirectManipulation                                        |  57
+Microsoft-Antimalware-Engine                                                |  57
 Microsoft-Windows-PrintDialogs3D                                            |  57
 Microsoft-Windows-PrintDialogs                                              |  57
 Microsoft-Windows-UIAutomationCore                                          |  56
@@ -201,8 +200,8 @@ Microsoft-Windows-ManagementTools-TaskManagerProvider                       |  5
 Microsoft-Windows-WinNat                                                    |  51
 Microsoft-Windows-FailoverClustering-Client                                 |  50
 Microsoft-Windows-MSMPEG2VDEC                                               |  50
-LsaSrv                                                                      |  50
 Microsoft-Windows-DfsSvc                                                    |  50
+LsaSrv                                                                      |  49
 Microsoft-Windows-MiStreamProvider                                          |  49
 Microsoft-Windows-Diagnosis-PLA                                             |  48
 Microsoft-Windows-NdisImPlatformEventProvider                               |  48
@@ -216,6 +215,7 @@ Microsoft-Windows-BrokerInfrastructure                                      |  4
 Microsoft-Windows-MediaFoundation-MFReadWrite                               |  47
 Microsoft-Windows-FileServices-ServerManager-EventProvider                  |  47
 Microsoft-Windows-Wordpad                                                   |  46
+Microsoft-Antimalware-Service                                               |  46
 Microsoft-Windows-EnhancedStorage-EhStorTcgDrv                              |  46
 Microsoft-Windows-Shell-LockScreenContent                                   |  46
 Microsoft-Windows-TerminalServices-LocalSessionManager                      |  46
@@ -251,8 +251,6 @@ Microsoft-Windows-RTWorkQueue-Threading                                     |  3
 Microsoft-Windows-MSPaint                                                   |  38
 Microsoft-Windows-SoftwareInventoryLogging-Provider                         |  38
 Microsoft-Windows-PortableDeviceSyncProvider                                |  38
-Microsoft-Windows-DistributedCOM                                            |  37
-Microsoft-Windows-DataIntegrityScan                                         |  37
 Microsoft-Windows-WebAuth                                                   |  37
 Microsoft-Windows-DeviceUx                                                  |  37
 Microsoft-Windows-ReadyBoost                                                |  37
@@ -261,7 +259,6 @@ Microsoft-Windows-USB-USBXHCI                                               |  3
 Microsoft-Windows-VHDMP                                                     |  36
 Microsoft-Windows-IME-TIP                                                   |  36
 Microsoft-Windows-ReFS                                                      |  35
-Microsoft-Windows-AppLocker                                                 |  35
 Microsoft-Windows-Minstore                                                  |  35
 Microsoft-Windows-WPD-CompositeClassDriver                                  |  35
 Microsoft-Windows-Diagtrack                                                 |  35
@@ -273,16 +270,18 @@ Microsoft-Windows-SettingSync-Desktop                                       |  3
 Microsoft-Windows-WindowsUIImmersive                                        |  34
 Microsoft-Windows-OOBE-Machine-DUI                                          |  34
 Microsoft-Windows-UxTheme                                                   |  33
+Microsoft-Windows-DistributedCOM                                            |  33
+Microsoft-Windows-DataIntegrityScan                                         |  33
 Microsoft-Windows-IdCtrls                                                   |  33
 Microsoft-Windows-Runtime-Networking-BackgroundTransfer                     |  33
 Microsoft-Windows-Program-Compatibility-Assistant                           |  33
 Microsoft-Windows-Security-Audit-Configuration-Client                       |  32
 Microsoft-Windows-Network-Connection-Broker                                 |  32
+Microsoft-Windows-AppLocker                                                 |  32
 Microsoft-Windows-MsLbfoEventProvider                                       |  32
 Microsoft-Windows-MSDTC 2                                                   |  32
 Microsoft-Windows-DirectShow-Core                                           |  32
 Microsoft-Windows-mobsync                                                   |  32
-Microsoft-Windows-Kernel-Process                                            |  32
 Microsoft-Windows-Serial-ClassExtension-V2                                  |  32
 Microsoft-Windows-WPDClassInstaller                                         |  32
 Microsoft-Windows-Kernel-WHEA                                               |  31
@@ -292,6 +291,7 @@ Microsoft-Windows-DXP                                                       |  3
 Microsoft-Windows-Kernel-LiveDump                                           |  30
 Microsoft-Windows-MCCS-SyncUtil                                             |  30
 Microsoft-Windows Networking VPN Plugin Platform                            |  30
+Microsoft-Windows-Kernel-Process                                            |  30
 Schannel                                                                    |  30
 Microsoft-Windows-IPSEC-SRV                                                 |  30
 Intel-iaLPSS-I2C                                                            |  29
@@ -313,7 +313,6 @@ Microsoft-Windows-OLE-Perf                                                  |  2
 Microsoft-Windows-Wallet                                                    |  28
 Microsoft-Windows-EventSystem                                               |  28
 Microsoft-Windows-DAL-Provider                                              |  28
-Microsoft-Windows-SDDC-Management                                           |  27
 Microsoft-Windows-WMPDMCUI                                                  |  27
 Microsoft-Windows-UAC-FileVirtualization                                    |  27
 Microsoft-Windows-RasSstp                                                   |  27
@@ -323,7 +322,6 @@ Microsoft-Windows-DataCollectionService                                     |  2
 Microsoft-Windows-SettingSync-Azure                                         |  27
 Microsoft-Windows-InputSwitch                                               |  27
 Microsoft-Windows-Security-IdentityStore                                    |  27
-Microsoft-Windows-HttpEvent                                                 |  26
 Microsoft-Windows-Subsys-SMSS                                               |  26
 Microsoft-Windows-Kerberos-KdcProxy                                         |  26
 Microsoft-Windows-TabletPC-MathRecognizer                                   |  25
@@ -333,7 +331,7 @@ Microsoft-Windows-SetupCl                                                   |  2
 Microsoft-Windows-Kernel-Acpi                                               |  25
 Microsoft-Windows-Kernel-EventTracing                                       |  25
 Microsoft-Windows-LinkLayerDiscoveryProtocol                                |  25
-Microsoft-Antimalware-RTP                                                   |  25
+Microsoft-Windows-HttpEvent                                                 |  25
 Microsoft-Windows-ntshrui                                                   |  24
 Microsoft-Windows-NFC-ClassExtension                                        |  24
 Microsoft-Windows-UI-Search                                                 |  24
@@ -357,6 +355,7 @@ Microsoft-Windows-Disk                                                      |  2
 Microsoft-Windows-WABSyncProvider                                           |  22
 Microsoft-Windows-WMI-Activity                                              |  22
 Microsoft-Windows-MCCS-NetworkHelper                                        |  22
+Microsoft-Antimalware-RTP                                                   |  22
 Microsoft-Windows-TerminalServices-SessionBroker-Client                     |  22
 Microsoft-Windows-Kernel-ShimEngine                                         |  21
 Microsoft-Windows-ServerManager-ConfigureSMRemoting                         |  21
@@ -405,7 +404,6 @@ Microsoft-User Experience Virtualization-SQM Uploader                       |  1
 Microsoft-Windows-TerminalServices-RdpSoundDriver                           |  17
 Microsoft-Windows-VAN                                                       |  17
 Microsoft-Windows-DirectWrite                                               |  17
-Microsoft-Windows-TPM-WMI                                                   |  17
 Microsoft-Windows-NetworkProfile                                            |  17
 Microsoft-Windows-Telephony-TelephonyInteractiveUser                        |  17
 Microsoft-Windows-FMS                                                       |  17
@@ -418,6 +416,7 @@ Microsoft-Windows-TextPredictionEngine                                      |  1
 Microsoft-User Experience Virtualization-Agent Driver                       |  16
 Microsoft-Windows-RPC                                                       |  16
 Microsoft-Windows-Kernel-Memory                                             |  16
+Microsoft-Windows-TPM-WMI                                                   |  16
 Microsoft-Windows-Ras-AgileVpn                                              |  16
 Microsoft-Windows-WebcamExperience                                          |  16
 Microsoft-Windows-FileShareShadowCopyProvider                               |  16
@@ -432,6 +431,7 @@ Microsoft-Windows-Diagnosis-WDC                                             |  1
 Microsoft-Windows-Crypto-DSSEnh                                             |  15
 Microsoft-Windows-Mobile-Broadband-Experience-Api-Internal                  |  15
 Microsoft-Windows-Crypto-RSAEnh                                             |  15
+NisDrvWFP Provider                                                          |  15
 Microsoft-Windows-FilterManager                                             |  15
 Microsoft-Windows-DirectWrite-FontCache                                     |  15
 Microsoft-Windows-Kernel-AppCompat                                          |  15
@@ -503,7 +503,6 @@ Microsoft-Windows-Mobile-Broadband-Experience-Api                           |  1
 Microsoft-Windows-BootUX                                                    |  10
 Microsoft-Windows-DiskDiagnosticResolver                                    |  10
 Microsoft-Windows-RPC-Events                                                |  10
-Microsoft-Antimalware-AMFilter                                              |  10
 Microsoft-Windows-ResetEng-Trace                                            |  10
 Microsoft-Windows-PushNotifications-InProc                                  |  10
 Microsoft-Windows-WUSA                                                      |  10
@@ -550,7 +549,10 @@ Microsoft-Windows-Tethering-Manager                                         |  8
 Microsoft-Windows-BestPractices                                             |  8
 Microsoft-Windows-PhotoAcq                                                  |  8
 Microsoft-Windows-User Profiles General                                     |  8
+Microsoft-Windows-RemoteDesktopServices-RemoteFX-VM-Kernel-Mode-Transport   |  8
 Microsoft-Windows-Dism-Cli                                                  |  8
+Microsoft-Antimalware-AMFilter                                              |  8
+Microsoft-Windows-RemoteDesktopServices-RemoteFX-VM-User-Mode-Transport     |  8
 Microsoft-Windows-Crypto-NCrypt                                             |  8
 Microsoft-Windows-EapMethods-RasTls                                         |  8
 Microsoft-Windows-OobeLdr                                                   |  8
@@ -588,7 +590,6 @@ Microsoft-Windows-Services                                                  |  7
 Microsoft-Windows-EapMethods-Ttls                                           |  7
 Microsoft-Windows-SendTo                                                    |  7
 Microsoft-Windows-SrumTelemetry                                             |  7
-Microsoft-Windows-Kernel-IO                                                 |  6
 Microsoft-Windows-SoftwareRestrictionPolicies                               |  6
 Microsoft-Windows-Security-EnterpriseData-FileRevocationManager             |  6
 Microsoft-Windows-SystemEventsBroker                                        |  6
@@ -617,6 +618,7 @@ Microsoft-Windows-FederationServices-Deployment                             |  6
 Microsoft-Windows-CoreWindow                                                |  6
 Microsoft-Windows-SmartCard-DeviceEnum                                      |  6
 Microsoft-Windows-WMP-Setup_WM                                              |  6
+Microsoft-Windows-Kernel-IO                                                 |  5
 Microsoft-Windows-Subsys-Csr                                                |  5
 Ntfs                                                                        |  5
 Microsoft-Windows-RPC-Proxy-LBS                                             |  5
@@ -683,6 +685,7 @@ Microsoft-Windows-Input-HIDCLASS                                            |  3
 Microsoft-Windows-WLGPA                                                     |  3
 Microsoft-Windows-CorruptedFileRecovery-Client                              |  3
 Microsoft-Windows-Compat-Appraiser                                          |  3
+Microsoft-Windows-RemoteDesktopServices-RemoteFX-Synth3dvsc                 |  3
 Microsoft-AppV-ServiceLog                                                   |  3
 Microsoft-Windows-RPC-FirewallManager                                       |  3
 Microsoft-Windows-IME-JPTIP                                                 |  3
@@ -725,7 +728,6 @@ Microsoft-Windows-NetworkBridge                                             |  2
 Microsoft-Windows-SCPNP                                                     |  2
 Microsoft-Windows-IME-CustomerFeedbackManagerUI                             |  2
 Microsoft-Windows-EDP-Audit-Regular                                         |  2
-Microsoft-Antimalware-Engine-Instrumentation                                |  2
 Microsoft-Windows-Services-Svchost                                          |  2
 Microsoft-Windows-IPMIProvider                                              |  2
 Microsoft-Windows-Globalization-FontGroups                                  |  2

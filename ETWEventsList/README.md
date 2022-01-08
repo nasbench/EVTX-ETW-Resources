@@ -137,21 +137,37 @@ Windows 10           |  Pro         |  2004     |  20200908.19041.508   |  883  
 Windows 10           |  Pro         |  2004     |  20211109.19041.1348  |  886           |  50445
 Windows 10           |  Pro         |  2004     |  20210608.19041.1052  |  883           |  50324
 Windows Server 2022  |  Standard    |  21H2     |  20211109.20348.350   |  817           |  46937
+Windows Server 2022  |  Standard    |  21H2     |  20201208.20348.405   |  818           |  47114
 Windows Server 2022  |  Standard    |  21H2     |  20210818.20348.169   |  817           |  46911
 Windows Server 2022  |  Standard    |  21H2     |  20210914.20348.230   |  817           |  46937
 Windows Server 2022  |  Standard    |  21H2     |  20211012.20348.288   |  817           |  46924
-Windows Server 2016  |  Standard    |  1607     |  20161012.14393.0     |  801           |  44121
+Windows Server 2016  |  Standard    |  1607     |  20161108.14393.447   |  803           |  43916
+Windows Server 2016  |  Standard    |  1607     |  20161012.14393.0     |  803           |  43896
+Windows Server 2016  |  Standard    |  1607     |  20171114.14393.1884  |  803           |  43929
+Windows Server 2019  |  Standard    |  1809     |  20191210.17763.914   |  813           |  45924
 Windows Server 2019  |  Standard    |  1809     |  20181113.17763.107   |  812           |  45874
+Windows Server 2019  |  Standard    |  1809     |  20190910.17763.737   |  813           |  45892
 Windows Server 2019  |  Standard    |  1809     |  20210608.17763.1999  |  813           |  46112
+Windows Server 2019  |  Standard    |  1809     |  20200512.17763.1217  |  813           |  45954
+Windows Server 2019  |  Standard    |  1809     |  20200811.17763.1397  |  813           |  45955
 Windows Server 2019  |  Standard    |  1809     |  20190312.17763.379   |  812           |  45876
 Windows Server 2019  |  Standard    |  1809     |  20200414.17763.1158  |  814           |  46017
+Windows Server 2019  |  Standard    |  1809     |  20200114.17763.973   |  813           |  45924
 Windows Server 2019  |  Standard    |  1809     |  20210309.17763.1817  |  816           |  46108
 Windows Server 2019  |  Standard    |  1809     |  20210511.17763.1935  |  813           |  46101
 Windows Server 2019  |  Standard    |  1809     |  20200609.17763.1282  |  814           |  46023
+Windows Server 2019  |  Standard    |  1809     |  20200714.17763.1339  |  813           |  45954
 Windows Server 2019  |  Standard    |  1809     |  20210112.17763.1697  |  816           |  46098
+Windows Server 2019  |  Standard    |  1809     |  20200910.17763.1457  |  813           |  45958
+Windows Server 2019  |  Standard    |  1809     |  20201208.17763.1637  |  816           |  46098
+Windows Server 2019  |  Standard    |  1809     |  20201110.17763.1577  |  816           |  46095
 Windows Server 2019  |  Standard    |  1809     |  20210209.17763.1757  |  816           |  46099
 Windows Server 2019  |  Standard    |  1809     |  20210713.17763.2061  |  813           |  46119
+Windows Server 2019  |  Standard    |  1809     |  20200211.17763.1039  |  813           |  45924
+Windows Server 2019  |  Standard    |  1809     |  20201013.17763.1518  |  814           |  45985
+Windows Server 2019  |  Standard    |  1809     |  20200310.17763.1098  |  813           |  45948
 Windows Server 2019  |  Standard    |  1809     |  20210810.17763.2114  |  813           |  46120
+Windows Server 2019  |  Standard    |  1809     |  20191112.17763.864   |  813           |  45924
 Windows Server 2019  |  Standard    |  1809     |  20190813.17763.678   |  813           |  45892
 Windows Server 2019  |  Standard    |  1809     |  20210413.17763.1879  |  813           |  46097
 Windows 8.1          |  9600        |  Pro      |                       |  706           |  36205
