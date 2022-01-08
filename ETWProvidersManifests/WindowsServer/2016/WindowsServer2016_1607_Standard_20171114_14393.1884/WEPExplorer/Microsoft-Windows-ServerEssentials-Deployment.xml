@@ -1,0 +1,126 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-ServerEssentials-Deployment</Name>
+        <Metadata>
+            <Guid>{AD9FC988-EB6F-43AF-9429-7BCDB78A7663}</Guid>
+            <ResourceFilePath>C:\Windows\system32\WSEDeployRes.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\WSEDeployRes.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=WSEDeployRes.dll&amp;FileVer=10.0.14393.0</HelpLink>
+            <PublisherMessage>Microsoft-Windows-ServerEssentials-Deployment</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Deploy</Message>
+                    <Path>Microsoft-Windows-ServerEssentials-Deployment/Deploy</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>129</Id>
+                <Version>0</Version>
+                <Channel>Deploy</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Essentials configuration wizard called PowerShell: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CmdletName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>130</Id>
+                <Version>0</Version>
+                <Channel>Deploy</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Unexpected error occured: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>131</Id>
+                <Version>0</Version>
+                <Channel>Deploy</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Essentials configuration wizard entered page: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PageName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>132</Id>
+                <Version>0</Version>
+                <Channel>Deploy</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Essentials configuration wizard left page: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PageName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>133</Id>
+                <Version>0</Version>
+                <Channel>Deploy</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Essentials configuration wizard is canceled: %1, and cancel type is: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PageName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Cancel" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>134</Id>
+                <Version>0</Version>
+                <Channel>Deploy</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Essentials configuration wizard fails to connect remotely, and it might because remote server is restarting. More information: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

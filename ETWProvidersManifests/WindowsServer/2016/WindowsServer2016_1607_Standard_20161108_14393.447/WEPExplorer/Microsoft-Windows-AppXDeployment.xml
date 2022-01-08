@@ -1,0 +1,1096 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-AppXDeployment</Name>
+        <Metadata>
+            <Guid>{8127F6D4-59F9-4ABF-8952-3E3A02073D5F}</Guid>
+            <ResourceFilePath>C:\Windows\system32\AppXDeploymentClient.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\AppXDeploymentClient.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=AppXDeploymentClient.dll&amp;FileVer=10.0.14393.0</HelpLink>
+            <PublisherMessage>Microsoft-Windows-AppXDeployment</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-AppXDeployment/Diagnostic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-AppXDeployment/Operational</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>AppXDeployment.Task.Client.ServiceStartup</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>AppXDeployment.Task.Client.AddPackage</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>AppXDeployment.Task.Client.RemovePackage</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>AppXDeployment.Task.Client.Deployment</Name>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>AppXDeployment.Task.Client.EnumAPI</Name>
+                    <Value>5</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>AppXSysprep.Task.Generalize</Name>
+                    <Value>6</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>AppXDeployment</Message>
+                    <Name>APPXDEPLOYMENT_KEYWORD</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>DMR</Message>
+                    <Name>APPMODEL_RUNTIME_DMR_KEYWORD</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>AppXDeployment</Name>
+                    <Value>65536</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>DMR</Name>
+                    <Value>131072</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ms:Measures</Name>
+                    <Value>70368744177664</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Response Time</Message>
+                    <Name>win:ResponseTime</Name>
+                    <Value>281474976710656</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>301</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Operational</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.Deployment</Task>
+                <Keyword>AppXDeployment</Keyword>
+                <Message><![CDATA[
+The calling process is %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>302</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Operational</Channel>
+                <Level>Error</Level>
+                <Task>AppXDeployment.Task.Client.Deployment</Task>
+                <Keyword>AppXDeployment</Keyword>
+                <Message><![CDATA[
+Failed to start system service: %1 with error: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ServiceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>303</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>AppXDeployment.Task.Client.Deployment</Task>
+                <Keyword>AppXDeployment</Keyword>
+                <Message><![CDATA[
+Failed to start system service: %1 with error: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ServiceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>304</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Operational</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.Deployment</Task>
+                <Keyword>AppXDeployment</Keyword>
+                <Message><![CDATA[
+Starting recovery of package repository during a %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RecoveryType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>305</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Operational</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.Deployment</Task>
+                <Keyword>AppXDeployment</Keyword>
+                <Message><![CDATA[
+Finished recovery of package repository with result code %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>306</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Operational</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.Deployment</Task>
+                <Keyword>AppXDeployment</Keyword>
+                <Message><![CDATA[
+Skipping recovery of package %1 because it is already installed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PackageFullName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>307</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Operational</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.Deployment</Task>
+                <Keyword>AppXDeployment</Keyword>
+                <Message><![CDATA[
+Recovery has completed for package %2 with result code %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="PackageFullName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>308</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Operational</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.Deployment</Task>
+                <Keyword>AppXDeployment</Keyword>
+                <Message><![CDATA[
+Starting staged package recovery.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>309</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Operational</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.Deployment</Task>
+                <Keyword>AppXDeployment</Keyword>
+                <Message><![CDATA[
+Finished staged package recovery with result code %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>310</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Operational</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.Deployment</Task>
+                <Keyword>AppXDeployment</Keyword>
+                <Message><![CDATA[
+Skipping recovery of package %1 because of error %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PackageFullName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>311</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Operational</Channel>
+                <Level>Error</Level>
+                <Task>AppXDeployment.Task.Client.Deployment</Task>
+                <Keyword>AppXDeployment</Keyword>
+                <Message><![CDATA[
+Failed to bind to the APPXSVC RPC server with error: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>312</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Operational</Channel>
+                <Level>Error</Level>
+                <Keyword>DMR</Keyword>
+                <Message><![CDATA[
+%2: Package runtime information %1 is corrupted (address=%5, size=%3, offset=%4, section=%6, processid=%7). Reinstall the package to fix this issue.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Size" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Offset" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HeaderAddr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Section" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessId" inType="win:UInt32" outType="win:PID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>313</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Operational</Channel>
+                <Level>Error</Level>
+                <Keyword>DMR</Keyword>
+                <Message><![CDATA[
+%2: Package runtime information %1 is missing expected data (address=%4, size=%3, section=%5, processid=%6). Reinstall the package to fix this issue.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Size" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="HeaderAddr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Section" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessId" inType="win:UInt32" outType="win:PID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>314</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Operational</Channel>
+                <Level>Error</Level>
+                <Keyword>DMR</Keyword>
+                <Message><![CDATA[
+%2: Package runtime information %1 contains conflicting data (address=%5, size=%3, offset=%4, section=%6, processid=%7). Reinstall the package to fix this issue.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Size" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Offset" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HeaderAddr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Section" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessId" inType="win:UInt32" outType="win:PID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>315</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Operational</Channel>
+                <Level>Error</Level>
+                <Keyword>DMR</Keyword>
+                <Message><![CDATA[
+%2: Package runtime information %1 contains unexpected data (address=%5, size=%3, offset=%4, section=%6, processid=%7). Reinstall the package to fix this issue.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Size" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Offset" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HeaderAddr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Section" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessId" inType="win:UInt32" outType="win:PID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>316</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Operational</Channel>
+                <Level>Error</Level>
+                <Keyword>DMR</Keyword>
+                <Message><![CDATA[
+%2: Package runtime information %1 failed to load (processid=%3).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ProcessId" inType="win:UInt32" outType="win:PID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>317</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Operational</Channel>
+                <Level>Error</Level>
+                <Keyword>DMR</Keyword>
+                <Message><![CDATA[
+Package runtime information %1 failed to load because exception %2 occurred.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ExceptionCode" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>318</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Operational</Channel>
+                <Level>Error</Level>
+                <Keyword>DMR</Keyword>
+                <Message><![CDATA[
+%2: Package runtime information %1 is missing expected data (address=%4, size=%3, section=%5, processid=%6). Reinstall the package to fix this issue.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="xs:int"/>
+  <data name="Size" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="HeaderAddr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ApplicationUserModelId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessId" inType="win:UInt32" outType="win:PID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>319</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Operational</Channel>
+                <Level>Error</Level>
+                <Keyword>DMR</Keyword>
+                <Message><![CDATA[
+%2: Application identity not accessible while loading package runtime information %1 (address=%4, size=%3, processid=%5).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="xs:int"/>
+  <data name="Size" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="HeaderAddr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ProcessId" inType="win:UInt32" outType="win:PID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.ServiceStartup</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>AppXDeployment</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.ServiceStartup</Task>
+                <Keyword>AppXDeployment</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.ServiceStartup</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>AppXDeployment</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.AddPackage</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>AppXDeployment</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.AddPackage</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>AppXDeployment</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.RemovePackage</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>AppXDeployment</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1007</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.RemovePackage</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>AppXDeployment</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1008</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.Deployment</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>AppXDeployment</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1009</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.Deployment</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>AppXDeployment</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1010</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.Deployment</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>AppXDeployment</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1011</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.Deployment</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>AppXDeployment</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1012</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.Deployment</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>AppXDeployment</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1013</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.Deployment</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>AppXDeployment</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1014</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.Deployment</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>AppXDeployment</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1015</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.Deployment</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>AppXDeployment</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1016</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.Deployment</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>AppXDeployment</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1017</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.Deployment</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>AppXDeployment</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1018</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.Deployment</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>AppXDeployment</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1019</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.Deployment</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>AppXDeployment</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1020</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.EnumAPI</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>AppXDeployment</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1021</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.EnumAPI</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>AppXDeployment</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1022</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.EnumAPI</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>AppXDeployment</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1023</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.EnumAPI</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>AppXDeployment</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1024</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.EnumAPI</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>AppXDeployment</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1025</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.EnumAPI</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>AppXDeployment</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1026</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.Deployment</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>AppXDeployment</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1027</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.Deployment</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>AppXDeployment</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1028</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.Deployment</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>AppXDeployment</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1029</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.Deployment</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>AppXDeployment</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1030</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.Deployment</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>AppXDeployment</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1031</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.Deployment</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>AppXDeployment</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1032</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.Deployment</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>AppXDeployment</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1033</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.Deployment</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>AppXDeployment</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1034</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.EnumAPI</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>AppXDeployment</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1035</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.EnumAPI</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>AppXDeployment</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1036</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.Deployment</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>AppXDeployment</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1037</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.Deployment</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>AppXDeployment</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1038</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.Deployment</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>AppXDeployment</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1039</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.Deployment</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>AppXDeployment</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1040</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.Deployment</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>AppXDeployment</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1041</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.Deployment</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>AppXDeployment</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1042</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.Deployment</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>AppXDeployment</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1043</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.Deployment</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>AppXDeployment</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1044</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.Deployment</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>AppXDeployment</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1045</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.Deployment</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>AppXDeployment</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1046</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.Deployment</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>AppXDeployment</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1047</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.Deployment</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>AppXDeployment</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1048</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.EnumAPI</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>AppXDeployment</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1049</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.EnumAPI</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>AppXDeployment</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1050</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.EnumAPI</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>AppXDeployment</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1051</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.EnumAPI</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>AppXDeployment</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1052</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.EnumAPI</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>AppXDeployment</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1053</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.EnumAPI</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>AppXDeployment</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1054</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.EnumAPI</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>AppXDeployment</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1055</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.EnumAPI</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>AppXDeployment</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1056</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.Deployment</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>AppXDeployment</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1057</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.Deployment</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>AppXDeployment</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1058</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.Deployment</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>AppXDeployment</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1059</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppXDeployment/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>AppXDeployment.Task.Client.Deployment</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>AppXDeployment</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

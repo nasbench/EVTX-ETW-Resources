@@ -1,0 +1,221 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-IE-JSDumpHeap</Name>
+        <Metadata>
+            <Guid>{7F8E35CA-68E8-41B9-86FE-D6ADC5B327E7}</Guid>
+            <ResourceFilePath>C:\Windows\system32\edgehtml.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\edgehtml.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%20Edge%20Web%20Platform&amp;ProdVer=11.0.14393.447&amp;FileName=edgehtml.dll&amp;FileVer=11.0.14393.447</HelpLink>
+            <PublisherMessage>Microsoft-IE-JSDumpHeap</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-JSDumpHeap/Diagnostic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>JSDumpHeapEnvelope</Name>
+                    <Guid>{FFF80BB3-0541-4423-B26B-8C4A5AF906FF}</Guid>
+                    <Value>321</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>JSDumpHeapBulkNode</Name>
+                    <Guid>{89B4A9E6-156F-4FF2-8C93-CD86B1BCE9A4}</Guid>
+                    <Value>323</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>JSDumpHeapBulkAttribute</Name>
+                    <Guid>{B171EF0B-D1FB-4901-9847-E13D583BFA86}</Guid>
+                    <Value>324</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>JSDumpHeapBulkEdge</Name>
+                    <Guid>{EC5809C8-EF06-456C-BE69-E8DCDF7554BA}</Guid>
+                    <Value>325</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>JSDumpHeapStringTable</Name>
+                    <Guid>{8A019204-6CC0-41F3-8FAE-E190DDFD05A7}</Guid>
+                    <Value>326</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>JSDumpHeapDoubleTable</Name>
+                    <Guid>{EAA70A14-D1C3-4939-8CA7-393C2F75FA58}</Guid>
+                    <Value>327</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>jsdumpheap</Name>
+                    <Value>32</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>jsdumpheapEnvelopeOnly</Name>
+                    <Value>2147483648</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Task>JSDumpHeapEnvelope</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>jsdumpheap jsdumpheapEnvelopeOnly</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <struct name="Settings">
+    <data name="Version" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="MaxStringLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="IsTypeNamePrivate" inType="win:Boolean" outType="xs:boolean"/>
+    <data name="IsEdgeStringValuePrivate" inType="win:Boolean" outType="xs:boolean"/>
+    <data name="IsEdgeNumberValuePrivate" inType="win:Boolean" outType="xs:boolean"/>
+    <data name="IsAttributeStringValuePrivate" inType="win:Boolean" outType="xs:boolean"/>
+    <data name="IsAttributeNumberValuePrivate" inType="win:Boolean" outType="xs:boolean"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>1</Version>
+                <Task>JSDumpHeapEnvelope</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>jsdumpheap jsdumpheapEnvelopeOnly</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <struct name="Summary">
+    <data name="HrResult" inType="win:HexInt32" outType="win:HexInt32"/>
+    <data name="NodeCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="EdgeCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="AttributeCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="NumberCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="StringCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="RundownDurationMS" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Task>JSDumpHeapBulkNode</Task>
+                <Keyword>jsdumpheap</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Index" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Count" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Values" count="Count">
+    <data name="Id" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="Address" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="TypeNameId" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="AttributeCount" inType="win:UInt16" outType="xs:unsignedShort"/>
+    <data name="EdgeCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Task>JSDumpHeapBulkAttribute</Task>
+                <Keyword>jsdumpheap</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Index" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Count" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Values" count="Count">
+    <data name="Type" inType="win:UInt16" outType="xs:unsignedShort"/>
+    <data name="Value" inType="win:Pointer" outType="win:HexInt64"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Task>JSDumpHeapBulkEdge</Task>
+                <Keyword>jsdumpheap</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Index" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Count" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Values" count="Count">
+    <data name="RelationshipType" inType="win:UInt8" outType="xs:unsignedByte"/>
+    <data name="TargetType" inType="win:UInt8" outType="xs:unsignedByte"/>
+    <data name="NameId" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="Value" inType="win:Pointer" outType="win:HexInt64"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Task>JSDumpHeapStringTable</Task>
+                <Keyword>jsdumpheap</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Index" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Count" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Values" count="Count">
+    <data name="StringEntry" inType="win:UnicodeString" outType="xs:string"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Task>JSDumpHeapDoubleTable</Task>
+                <Keyword>jsdumpheap</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Index" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Count" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Values" count="Count">
+    <data name="DoubleEntry" inType="win:Double" outType="xs:double"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

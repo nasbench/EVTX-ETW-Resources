@@ -6,7 +6,7 @@
             <ResourceFilePath>C:\Windows\system32\Microsoft-Windows-System-Events.dll</ResourceFilePath>
             <ParameterFilePath></ParameterFilePath>
             <MessageFilePath>C:\Windows\system32\Microsoft-Windows-System-Events.dll</MessageFilePath>
-            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.447&amp;FileName=Microsoft-Windows-System-Events.dll&amp;FileVer=10.0.14393.447</HelpLink>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=Microsoft-Windows-System-Events.dll&amp;FileVer=10.0.14393.0</HelpLink>
             <PublisherMessage>Microsoft-Windows-Kernel-Boot</PublisherMessage>
             <Channels>
                 <Channel>
@@ -263,11 +263,6 @@
                     <Message></Message>
                     <Name>ImageIntegrityCheck</Name>
                     <Value>43</Value>
-                </Task>
-                <Task>
-                    <Message></Message>
-                    <Name>BootPolicyMigration</Name>
-                    <Value>44</Value>
                 </Task>
             </Tasks>
             <Opcodes>
@@ -840,7 +835,7 @@ The PE/COFF image firmware update capsule (%1) failed to load with status %2.]]>
             <Event>
                 <Id>35</Id>
                 <Version>0</Version>
-                <Channel>Microsoft-Windows-Kernel-Boot/Operational</Channel>
+                <Channel>Microsoft-Windows-Kernel-Boot/Analytic</Channel>
                 <Level>Error</Level>
                 <Message><![CDATA[
 The Efi UpdateCapsule failed to apply updates with status %1.]]></Message>
@@ -1915,34 +1910,6 @@ The Virtualization Based Security (policies: %3) is %2 with status %1.]]></Messa
   <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
   <data name="EnableDisableReason" inType="win:UInt32" outType="xs:unsignedInt"/>
   <data name="VsmPolicy" inType="win:UInt32" outType="xs:unsignedInt"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
-                <Id>154</Id>
-                <Version>0</Version>
-                <Channel>Microsoft-Windows-Kernel-Boot/Operational</Channel>
-                <Level>Information</Level>
-                <Task>BootPolicyMigration</Task>
-                <Message><![CDATA[
-Boot Policy Migration used an authenticated variable.  Status: %1]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
-                <Id>155</Id>
-                <Version>0</Version>
-                <Channel>Microsoft-Windows-Kernel-Boot/Operational</Channel>
-                <Level>Warning</Level>
-                <Task>BootPolicyMigration</Task>
-                <Message><![CDATA[
-Boot Policy Migration used an unauthenticated variable.  Status: %1]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
 </template>
 ]]></Template>
             </Event>

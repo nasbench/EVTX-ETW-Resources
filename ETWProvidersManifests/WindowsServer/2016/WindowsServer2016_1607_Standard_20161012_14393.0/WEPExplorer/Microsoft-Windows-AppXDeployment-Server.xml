@@ -6,7 +6,7 @@
             <ResourceFilePath>C:\Windows\system32\AppXDeploymentServer.dll</ResourceFilePath>
             <ParameterFilePath></ParameterFilePath>
             <MessageFilePath>C:\Windows\system32\AppXDeploymentServer.dll</MessageFilePath>
-            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.2368&amp;FileName=AppXDeploymentServer.dll&amp;FileVer=10.0.14393.2368</HelpLink>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=AppXDeploymentServer.dll&amp;FileVer=10.0.14393.0</HelpLink>
             <PublisherMessage>Microsoft-Windows-AppXDeployment-Server</PublisherMessage>
             <Channels>
                 <Channel>
@@ -4343,11 +4343,10 @@ Volume %2 is offline. Although Windows can remove package %1 from the device, it
                 <Task>AppXDeployment.Task.Server.Deployment</Task>
                 <Keyword>AppXDeploymentServer Keyword</Keyword>
                 <Message><![CDATA[
-Windows failed to undo changes with error code %1 to package %2. The package needs to be reinstalled.]]></Message>
+Windows failed to undo changes to package %1. The package needs to be reinstalled.]]></Message>
                 <Template><![CDATA[
 <template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="Error" inType="win:HexInt32" outType="win:HexInt32"/>
-  <data name="PackageMoniker" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PackageName" inType="win:UnicodeString" outType="xs:string"/>
 </template>
 ]]></Template>
             </Event>
@@ -4571,21 +4570,6 @@ Windows cannot install appx package %1 to volume %2 because it is not supported 
 <template xmlns="http://schemas.microsoft.com/win/2004/08/events">
   <data name="PackageName" inType="win:UnicodeString" outType="xs:string"/>
   <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
-                <Id>771</Id>
-                <Version>0</Version>
-                <Channel>Microsoft-Windows-AppXDeploymentServer/Operational</Channel>
-                <Level>Warning</Level>
-                <Task>AppXDeployment.Task.Server.Deployment</Task>
-                <Keyword>AppXDeploymentServer Keyword</Keyword>
-                <Message><![CDATA[
-Could not find the path %1 in the State Repository database.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="PackageUri" inType="win:UnicodeString" outType="xs:string"/>
 </template>
 ]]></Template>
             </Event>
@@ -16396,97 +16380,6 @@ Creation of the Publishers folder failed with error code : %1.]]></Message>
                 <Keyword>State Extension Handler Keyword</Keyword>
                 <Message><![CDATA[
 Successfully created the Publishers folder.]]></Message>
-                <Template><![CDATA[
-]]></Template>
-            </Event>
-            <Event>
-                <Id>5277</Id>
-                <Version>0</Version>
-                <Channel>Microsoft-Windows-AppXDeploymentServer/Operational</Channel>
-                <Level>Warning</Level>
-                <Keyword>State Extension Handler Keyword</Keyword>
-                <Message><![CDATA[
-Application data local root folder is a mounted folder that has no target.]]></Message>
-                <Template><![CDATA[
-]]></Template>
-            </Event>
-            <Event>
-                <Id>5278</Id>
-                <Version>0</Version>
-                <Channel>Microsoft-Windows-AppXDeploymentServer/Operational</Channel>
-                <Level>Warning</Level>
-                <Keyword>State Extension Handler Keyword</Keyword>
-                <Message><![CDATA[
-Application data roaming root folder is a mounted folder that has no target.]]></Message>
-                <Template><![CDATA[
-]]></Template>
-            </Event>
-            <Event>
-                <Id>5279</Id>
-                <Version>0</Version>
-                <Channel>Microsoft-Windows-AppXDeploymentServer/Operational</Channel>
-                <Level>Warning</Level>
-                <Keyword>State Extension Handler Keyword</Keyword>
-                <Message><![CDATA[
-Application data temp root folder is a mounted folder that has no target.]]></Message>
-                <Template><![CDATA[
-]]></Template>
-            </Event>
-            <Event>
-                <Id>5280</Id>
-                <Version>0</Version>
-                <Channel>Microsoft-Windows-AppXDeploymentServer/Operational</Channel>
-                <Level>Warning</Level>
-                <Keyword>State Extension Handler Keyword</Keyword>
-                <Message><![CDATA[
-Application data local cache root folder is a mounted folder that has no target.]]></Message>
-                <Template><![CDATA[
-]]></Template>
-            </Event>
-            <Event>
-                <Id>5281</Id>
-                <Version>0</Version>
-                <Channel>Microsoft-Windows-AppXDeploymentServer/Debug</Channel>
-                <Level>Verbose</Level>
-                <Keyword>State Extension Handler Keyword</Keyword>
-                <Message><![CDATA[
-Successfully created the secure system app data folder.]]></Message>
-                <Template><![CDATA[
-]]></Template>
-            </Event>
-            <Event>
-                <Id>5282</Id>
-                <Version>0</Version>
-                <Channel>Microsoft-Windows-AppXDeploymentServer/Operational</Channel>
-                <Level>Warning</Level>
-                <Keyword>State Extension Handler Keyword</Keyword>
-                <Message><![CDATA[
-Creation of the secure system app data folder failed with error code : %1.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="ReturnVal" inType="win:HexInt32" outType="win:HexInt32"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
-                <Id>5283</Id>
-                <Version>0</Version>
-                <Channel>Microsoft-Windows-AppXDeploymentServer/Debug</Channel>
-                <Level>Verbose</Level>
-                <Keyword>State Extension Handler Keyword</Keyword>
-                <Message><![CDATA[
-The secure system app data folder already exists.]]></Message>
-                <Template><![CDATA[
-]]></Template>
-            </Event>
-            <Event>
-                <Id>5284</Id>
-                <Version>0</Version>
-                <Channel>Microsoft-Windows-AppXDeploymentServer/Debug</Channel>
-                <Level>Verbose</Level>
-                <Keyword>State Extension Handler Keyword</Keyword>
-                <Message><![CDATA[
-The secure system app data folder does not exist.]]></Message>
                 <Template><![CDATA[
 ]]></Template>
             </Event>

@@ -6,7 +6,7 @@
             <ResourceFilePath>C:\Windows\system32\dsc\DscCoreR.dll</ResourceFilePath>
             <ParameterFilePath>C:\Windows\system32\dsc\DscCoreR.dll</ParameterFilePath>
             <MessageFilePath>C:\Windows\system32\dsc\DscCoreR.dll</MessageFilePath>
-            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.82&amp;FileName=DscCoreR.dll&amp;FileVer=10.0.14393.82</HelpLink>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=DscCoreR.dll&amp;FileVer=10.0.14393.0</HelpLink>
             <PublisherMessage>Microsoft-Windows-Desired State Configuration</PublisherMessage>
             <Channels>
                 <Channel>
@@ -2901,21 +2901,6 @@ WebDownloadManager for AgentId %2 Do-DscAction command, GET call result: %3.]]><
 ]]></Template>
             </Event>
             <Event>
-                <Id>4329</Id>
-                <Version>0</Version>
-                <Channel>Microsoft-Windows-DSC/Operational</Channel>
-                <Level>Information</Level>
-                <Message><![CDATA[
-Job %1 : 
-Register-DscAgent command for AgentId %2.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="JobId" inType="win:UnicodeString" outType="xs:string"/>
-  <data name="AgentId" inType="win:UnicodeString" outType="xs:string"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
                 <Id>4332</Id>
                 <Version>0</Version>
                 <Channel>Microsoft-Windows-DSC/Operational</Channel>
@@ -3625,7 +3610,7 @@ Job %1 : Details logging completed for %2.]]></Message>
                 <Channel>Microsoft-Windows-DSC/Operational</Channel>
                 <Level>Error</Level>
                 <Message><![CDATA[
-Validating the signer signature chain failed with the status '%1'. A certificate chain could not be built to a trusted root authority.]]></Message>
+Validating the signature of the configuration document failed. The signature status on the document is '%1']]></Message>
                 <Template><![CDATA[
 <template xmlns="http://schemas.microsoft.com/win/2004/08/events">
   <data name="signatureStatus" inType="win:UnicodeString" outType="xs:string"/>
@@ -3634,121 +3619,6 @@ Validating the signer signature chain failed with the status '%1'. A certificate
             </Event>
             <Event>
                 <Id>4515</Id>
-                <Version>0</Version>
-                <Channel>Microsoft-Windows-DSC/Operational</Channel>
-                <Level>Error</Level>
-                <Message><![CDATA[
-Failed to open trusted publisher store with the error '%1'. The store path is either invalid or does not exist.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
-                <Id>4516</Id>
-                <Version>0</Version>
-                <Channel>Microsoft-Windows-DSC/Operational</Channel>
-                <Level>Error</Level>
-                <Message><![CDATA[
-Failed to retrieve signing certificate information from the trusted publisher store with the error '%1'.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
-                <Id>4517</Id>
-                <Version>0</Version>
-                <Channel>Microsoft-Windows-DSC/Operational</Channel>
-                <Level>Error</Level>
-                <Message><![CDATA[
-Failed to parse trusted publisher store path with the error '%1'.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
-                <Id>4518</Id>
-                <Version>0</Version>
-                <Channel>Microsoft-Windows-DSC/Operational</Channel>
-                <Level>Information</Level>
-                <Message><![CDATA[
-Trusted publisher store path is : '%1'.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="storeInfo" inType="win:UnicodeString" outType="xs:string"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
-                <Id>4519</Id>
-                <Version>0</Version>
-                <Channel>Microsoft-Windows-DSC/Operational</Channel>
-                <Level>Information</Level>
-                <Message><![CDATA[
-Signature validation was successful. Signer certificate is valid and trusted.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-</template>
-]]></Template>
-            </Event>
-            <Event>
-                <Id>4520</Id>
-                <Version>0</Version>
-                <Channel>Microsoft-Windows-DSC/Operational</Channel>
-                <Level>Error</Level>
-                <Message><![CDATA[
-Validating the signer signature trust failed. The signer certificate did not match with any valid code signing certificate that is installed on the node.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-</template>
-]]></Template>
-            </Event>
-            <Event>
-                <Id>4521</Id>
-                <Version>0</Version>
-                <Channel>Microsoft-Windows-DSC/Operational</Channel>
-                <Level>Error</Level>
-                <Message><![CDATA[
-Validating the signer signature hash failed with the status '%1'. The content of the configuration document or module has been changed.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="signatureStatus" inType="win:UnicodeString" outType="xs:string"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
-                <Id>4522</Id>
-                <Version>0</Version>
-                <Channel>Microsoft-Windows-DSC/Operational</Channel>
-                <Level>Error</Level>
-                <Message><![CDATA[
-Validating the signer signature failed with the status '%1'.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="signatureStatus" inType="win:UnicodeString" outType="xs:string"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
-                <Id>4523</Id>
-                <Version>0</Version>
-                <Channel>Microsoft-Windows-DSC/Operational</Channel>
-                <Level>Error</Level>
-                <Message><![CDATA[
-Validating the signature of the configuration document failed. The signature status on the document is '%1'.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="signatureStatus" inType="win:UnicodeString" outType="xs:string"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
-                <Id>4524</Id>
                 <Version>0</Version>
                 <Channel>Microsoft-Windows-DSC/Operational</Channel>
                 <Level>Information</Level>
@@ -3761,7 +3631,7 @@ Signature validation skipped becouse machine signature verification policy is se
 ]]></Template>
             </Event>
             <Event>
-                <Id>4525</Id>
+                <Id>4516</Id>
                 <Version>0</Version>
                 <Channel>Microsoft-Windows-DSC/Operational</Channel>
                 <Level>Error</Level>
@@ -3774,7 +3644,7 @@ Extracting the downloaded zip file '%1' failed.]]></Message>
 ]]></Template>
             </Event>
             <Event>
-                <Id>4526</Id>
+                <Id>4517</Id>
                 <Version>0</Version>
                 <Channel>Microsoft-Windows-DSC/Operational</Channel>
                 <Level>Error</Level>
@@ -3787,7 +3657,7 @@ The downloaded zip file '%1' does not contain a catalog file. Ensure the catalog
 ]]></Template>
             </Event>
             <Event>
-                <Id>4527</Id>
+                <Id>4518</Id>
                 <Version>0</Version>
                 <Channel>Microsoft-Windows-DSC/Operational</Channel>
                 <Level>Error</Level>
@@ -3800,7 +3670,7 @@ Catalog signature verification failed for the downloaded zip file '%1'.]]></Mess
 ]]></Template>
             </Event>
             <Event>
-                <Id>4528</Id>
+                <Id>4519</Id>
                 <Version>0</Version>
                 <Channel>Microsoft-Windows-DSC/Operational</Channel>
                 <Level>Information</Level>
@@ -3813,7 +3683,7 @@ Comparing the module catalalog with current contents of the module succeeded for
 ]]></Template>
             </Event>
             <Event>
-                <Id>4529</Id>
+                <Id>4520</Id>
                 <Version>0</Version>
                 <Channel>Microsoft-Windows-DSC/Operational</Channel>
                 <Level>Error</Level>
@@ -3826,7 +3696,7 @@ Comparing the module catalalog file with current contents of the module failed f
 ]]></Template>
             </Event>
             <Event>
-                <Id>4530</Id>
+                <Id>4521</Id>
                 <Version>0</Version>
                 <Channel>Microsoft-Windows-DSC/Operational</Channel>
                 <Level>Warning</Level>
@@ -3835,20 +3705,6 @@ The Local Configuration Manager could not find the partial configuration block t
                 <Template><![CDATA[
 <template xmlns="http://schemas.microsoft.com/win/2004/08/events">
   <data name="assignedConfigName" inType="win:UnicodeString" outType="xs:string"/>
-</template>
-]]></Template>
-            </Event>
-            <Event>
-                <Id>4531</Id>
-                <Version>0</Version>
-                <Channel>Microsoft-Windows-DSC/Operational</Channel>
-                <Level>Error</Level>
-                <Message><![CDATA[
-The uncompressed file size of the downloaded zip file %1, exceeded the 'MaximumDownloadSizeMB' value of %2 MB provided in the metaconfiguration. Please increase this value in the metaconfiguration if you are expecting module size greater than the current limit.]]></Message>
-                <Template><![CDATA[
-<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
-  <data name="zipFile" inType="win:UnicodeString" outType="xs:string"/>
-  <data name="limit" inType="win:UInt32" outType="xs:unsignedInt"/>
 </template>
 ]]></Template>
             </Event>

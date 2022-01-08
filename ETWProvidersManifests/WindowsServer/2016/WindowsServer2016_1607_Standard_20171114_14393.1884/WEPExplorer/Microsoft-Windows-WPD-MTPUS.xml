@@ -1,0 +1,285 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-WPD-MTPUS</Name>
+        <Metadata>
+            <Guid>{DCFC4489-9CE0-403C-99DF-A05422C60898}</Guid>
+            <ResourceFilePath>C:\Windows\System32\wpd_ci.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\System32\wpd_ci.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.14393.0&amp;FileName=wpd_ci.dll&amp;FileVer=10.0.14393.0</HelpLink>
+            <PublisherMessage>Microsoft-Windows-WPD-MTPUS</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Analytic</Message>
+                    <Path>Microsoft-Windows-WPD-MTPUS/Analytic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Write MTP USB SendCommand]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MTPUSLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MTPUSData" inType="win:Binary" outType="xs:hexBinary" length="MTPUSLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Write MTP USB Response]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MTPUSLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MTPUSData" inType="win:Binary" outType="xs:hexBinary" length="MTPUSLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Received MTP USB Device Event]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MTPUSLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MTPUSData" inType="win:Binary" outType="xs:hexBinary" length="MTPUSLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>103</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Read MTP USB Data header]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MTPUSLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MTPUSData" inType="win:Binary" outType="xs:hexBinary" length="MTPUSLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>104</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Write MTP USB Data header]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MTPUSLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MTPUSData" inType="win:Binary" outType="xs:hexBinary" length="MTPUSLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>105</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+MTP USB Control Transfer GetStatus request]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WINUSB_SETUP_PACKET_LENGTH" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="WINUSB_SETUP_PACKET" inType="win:Binary" outType="xs:hexBinary" length="WINUSB_SETUP_PACKET_LENGTH"/>
+  <data name="ControlTransferBufferLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ControlTransferBuffer" inType="win:Binary" outType="xs:hexBinary" length="ControlTransferBufferLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>106</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+MTP USB Control Transfer DeviceReset request]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WINUSB_SETUP_PACKET_LENGTH" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="WINUSB_SETUP_PACKET" inType="win:Binary" outType="xs:hexBinary" length="WINUSB_SETUP_PACKET_LENGTH"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>107</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+MTP USB Control Transfer CancelIO request]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WINUSB_SETUP_PACKET_LENGTH" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="WINUSB_SETUP_PACKET" inType="win:Binary" outType="xs:hexBinary" length="WINUSB_SETUP_PACKET_LENGTH"/>
+  <data name="ControlTransferBufferLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ControlTransferBuffer" inType="win:Binary" outType="xs:hexBinary" length="ControlTransferBufferLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>200</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Send MTP Multisession USB SendCommand]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MTPUSLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MTPUSData" inType="win:Binary" outType="xs:hexBinary" length="MTPUSLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>201</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Received MTP Multisession USB StartData block]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MTPUSLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MTPUSData" inType="win:Binary" outType="xs:hexBinary" length="MTPUSLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>202</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Received MTP Multisession USB Response block]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MTPUSLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MTPUSData" inType="win:Binary" outType="xs:hexBinary" length="MTPUSLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>203</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Received MTP Multisession USB DataHeader block]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MTPUSLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MTPUSData" inType="win:Binary" outType="xs:hexBinary" length="MTPUSLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>204</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Received MTP Multisession USB Event block]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MTPUSLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MTPUSData" inType="win:Binary" outType="xs:hexBinary" length="MTPUSLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>205</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Received MTP Multisession USB EndData block]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MTPUSLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MTPUSData" inType="win:Binary" outType="xs:hexBinary" length="MTPUSLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>206</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Received MTP Multisession USB Unknown block]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MTPUSLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MTPUSData" inType="win:Binary" outType="xs:hexBinary" length="MTPUSLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>207</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Sending MTP Multisession USB StartData block]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MTPUSLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MTPUSData" inType="win:Binary" outType="xs:hexBinary" length="MTPUSLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>208</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Sending MTP Multisession USB DataHeader block]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MTPUSLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MTPUSData" inType="win:Binary" outType="xs:hexBinary" length="MTPUSLength"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
