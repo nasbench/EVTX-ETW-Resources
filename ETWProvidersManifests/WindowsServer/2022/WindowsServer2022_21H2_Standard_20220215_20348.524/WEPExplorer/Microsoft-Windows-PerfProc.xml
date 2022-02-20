@@ -1,0 +1,139 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-PerfProc</Name>
+        <Metadata>
+            <Guid>{72D211E1-4C54-4A93-9520-4901681B2271}</Guid>
+            <ResourceFilePath>C:\Windows\system32\perfproc.dll</ResourceFilePath>
+            <ParameterFilePath>C:\Windows\system32\perfproc.dll</ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\perfproc.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.20348.1&amp;FileName=perfproc.dll&amp;FileVer=10.0.20348.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-PerfProc</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Application</Message>
+                    <Path>Application</Path>
+                    <Index>0</Index>
+                    <Id>9</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1001</Id>
+                <Version>1</Version>
+                <Channel>Application</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Unable to collect system process performance data because of an error during DLL initialization.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2001</Id>
+                <Version>1</Version>
+                <Channel>Application</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Unable to collect process virtual memory information. Error: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Win32 Error" inType="win:UInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2002</Id>
+                <Version>1</Version>
+                <Channel>Application</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Unable to open the job object %1 for query access. Error: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Win32 Error" inType="win:UInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2003</Id>
+                <Version>1</Version>
+                <Channel>Application</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Unable to query the job object %1 for its accounting info. Error: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Win32 Error" inType="win:UInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2004</Id>
+                <Version>1</Version>
+                <Channel>Application</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Unable to query the %1 object directory to look for job objects. Error: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Win32 Error" inType="win:UInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2005</Id>
+                <Version>1</Version>
+                <Channel>Application</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Unable to query the job object %1 for its process IDs. Error: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Win32 Error" inType="win:UInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2006</Id>
+                <Version>1</Version>
+                <Channel>Application</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Unable to allocate memory for Job counters.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8192</Id>
+                <Version>1</Version>
+                <Channel>Application</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Unable to collect system process performance information. Error: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Win32 Error" inType="win:UInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
