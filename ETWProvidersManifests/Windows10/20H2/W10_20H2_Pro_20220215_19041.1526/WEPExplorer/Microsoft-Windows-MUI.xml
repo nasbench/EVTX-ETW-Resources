@@ -1,0 +1,542 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-MUI</Name>
+        <Metadata>
+            <Guid>{A8A1F2F6-A13A-45E9-B1FE-3419569E5EF2}</Guid>
+            <ResourceFilePath>C:\Windows\system32\Microsoft-Windows-System-Events.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\Microsoft-Windows-System-Events.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.19041.662&amp;FileName=Microsoft-Windows-System-Events.dll&amp;FileVer=10.0.19041.662</HelpLink>
+            <PublisherMessage>Microsoft-Windows-MUI</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-MUI/Operational</Message>
+                    <Path>Microsoft-Windows-MUI/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-MUI/Admin</Message>
+                    <Path>Microsoft-Windows-MUI/Admin</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-MUI/Analytic</Message>
+                    <Path>Microsoft-Windows-MUI/Analytic</Path>
+                    <Index>2</Index>
+                    <Id>18</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-MUI/Debug</Message>
+                    <Path>Microsoft-Windows-MUI/Debug</Path>
+                    <Index>3</Index>
+                    <Id>19</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>MUI NotifyUILanguageChange task</Message>
+                    <Name>NotifyLanguageChange</Name>
+                    <Value>30</Value>
+                </Task>
+                <Task>
+                    <Message>MUI resource cache builder</Message>
+                    <Name>RescacheBuild</Name>
+                    <Value>31</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>Initialize</Name>
+                    <Value>30</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Invoke callback function</Message>
+                    <Name>InvokeCallback</Name>
+                    <Value>31</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Disable live cache</Message>
+                    <Name>DisableCache</Name>
+                    <Value>32</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Update resource cache manifest</Message>
+                    <Name>UpdateManifest</Name>
+                    <Value>33</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Build resource cache</Message>
+                    <Name>BuildCache</Name>
+                    <Value>34</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>Entry</Name>
+                    <Value>35</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>End</Message>
+                    <Name>Exit</Name>
+                    <Value>36</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>2000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MUI/Operational</Channel>
+                <Level>Error</Level>
+                <Task>MUI NotifyUILanguageChange task</Task>
+                <Opcode>Invoke callback function</Opcode>
+                <Message><![CDATA[
+MUI notify operation failed with status code %1. No callbacks were invoked.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MUI/Admin</Channel>
+                <Level>Error</Level>
+                <Task>MUI NotifyUILanguageChange task</Task>
+                <Opcode>Invoke callback function</Opcode>
+                <Message><![CDATA[
+MUI Callback failed for file %1 because it can not be loaded. To correct this error, replace this file or repair your Windows installation.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MUI/Admin</Channel>
+                <Level>Error</Level>
+                <Task>MUI NotifyUILanguageChange task</Task>
+                <Opcode>Invoke callback function</Opcode>
+                <Message><![CDATA[
+MUI Callback failed for file %1 registered as type %2 because the function %3 does not exist in the dll. To correct this error, replace the file or fix the registry entry.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MUI/Admin</Channel>
+                <Level>Error</Level>
+                <Task>MUI NotifyUILanguageChange task</Task>
+                <Opcode>Invoke callback function</Opcode>
+                <Message><![CDATA[
+MUI Callback failed for file %1 because it is not signed by Microsoft. To correct this error, replace with the original file that came with this Windows installation.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MUI/Admin</Channel>
+                <Level>Error</Level>
+                <Task>MUI NotifyUILanguageChange task</Task>
+                <Opcode>Invoke callback function</Opcode>
+                <Message><![CDATA[
+MUI Callback file %1 cannot be found. To correct this error, repair the registry or copy the file to the specified location.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MUI/Operational</Channel>
+                <Level>Error</Level>
+                <Task>MUI resource cache builder</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Wow redirection could not be disabled. New resource cache will not be built.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2007</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MUI/Operational</Channel>
+                <Level>Error</Level>
+                <Task>MUI resource cache builder</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Resource cache cannot be opened in writable mode. New resource cache will not be built.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2008</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MUI/Operational</Channel>
+                <Level>Error</Level>
+                <Task>MUI resource cache builder</Task>
+                <Opcode>Disable live cache</Opcode>
+                <Message><![CDATA[
+Live resource cache could not be disabled.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2009</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MUI/Operational</Channel>
+                <Level>Error</Level>
+                <Task>MUI resource cache builder</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Unable to retrieve language settings from MUI API. New resource cache will not be built.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2010</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MUI/Admin</Channel>
+                <Level>Error</Level>
+                <Task>MUI resource cache builder</Task>
+                <Opcode>Update resource cache manifest</Opcode>
+                <Message><![CDATA[
+Unable to parse the cacheable file list or write to the resource cache manifest. If configuration file was specified as command-line parameter, check that file exists and has correct format.  New resource cache will not be built.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2011</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MUI/Operational</Channel>
+                <Level>Error</Level>
+                <Task>MUI resource cache builder</Task>
+                <Opcode>Update resource cache manifest</Opcode>
+                <Message><![CDATA[
+Changes made to resource cache manifest cannot be written to disk. New resource cache will not be built.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2012</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MUI/Operational</Channel>
+                <Level>Error</Level>
+                <Task>MUI resource cache builder</Task>
+                <Opcode>Build resource cache</Opcode>
+                <Message><![CDATA[
+New resource cache could not be built due to internal error: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2013</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MUI/Operational</Channel>
+                <Level>Error</Level>
+                <Task>MUI resource cache builder</Task>
+                <Opcode>Build resource cache</Opcode>
+                <Message><![CDATA[
+Newly built resource cache could not be installed on the system.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2014</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MUI/Operational</Channel>
+                <Level>Error</Level>
+                <Task>MUI resource cache builder</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Resource cache manifest could not be created. New resource cache will not be built.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MUI/Operational</Channel>
+                <Level>Information</Level>
+                <Task>MUI NotifyUILanguageChange task</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+MUI notification for UI Language change has been invoked with flags set to %1 and the new languages set to %2 and the previous languages set to %3. The extended flags is set to %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewLanguage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PrevLanguage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ExtendedFlag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MUI/Operational</Channel>
+                <Level>Information</Level>
+                <Task>MUI NotifyUILanguageChange task</Task>
+                <Opcode>Invoke callback function</Opcode>
+                <Message><![CDATA[
+MUI notification callback API %2 in %1 returned with code %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ReturnValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MUI/Operational</Channel>
+                <Level>Information</Level>
+                <Task>MUI resource cache builder</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+MUI resource cache builder has been called with the following parameters: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MUI/Debug</Channel>
+                <Level>Information</Level>
+                <Task>MUI resource cache builder</Task>
+                <Opcode>Update resource cache manifest</Opcode>
+                <Message><![CDATA[
+MUI resource cache manifest entry for file %1 has been updated. Affinity: '%2', Sequence: %3, and Priority: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Affinity" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Sequence" inType="win:Int32" outType="xs:int"/>
+  <data name="Priority" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MUI/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>MUI resource cache builder</Task>
+                <Opcode>Build resource cache</Opcode>
+                <Message><![CDATA[
+Start: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MUI/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>MUI resource cache builder</Task>
+                <Opcode>Build resource cache</Opcode>
+                <Message><![CDATA[
+End: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3007</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MUI/Operational</Channel>
+                <Level>Information</Level>
+                <Task>MUI resource cache builder</Task>
+                <Opcode>Build resource cache</Opcode>
+                <Message><![CDATA[
+New resource cache built and installed on system. New cache index is %1, live cache index is %2 and config is set to %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NewCacheIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LiveCacheIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Config" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3008</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MUI/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>MUI resource cache builder</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Start: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3009</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MUI/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>MUI resource cache builder</Task>
+                <Opcode>End</Opcode>
+                <Message><![CDATA[
+End: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3010</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MUI/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>MUI resource cache builder</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Start: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3011</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MUI/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>MUI resource cache builder</Task>
+                <Opcode>End</Opcode>
+                <Message><![CDATA[
+End: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3012</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MUI/Debug</Channel>
+                <Level>Information</Level>
+                <Task>MUI resource cache builder</Task>
+                <Opcode>Update resource cache manifest</Opcode>
+                <Message><![CDATA[
+Resource file %1 will not be cached since it is not used frequently in the system.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3013</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MUI/Operational</Channel>
+                <Level>Information</Level>
+                <Task>MUI resource cache builder</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+The system is constrained in RAM, total disk space or free disk space, so the MUI resource cache will not be maintained.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MUI/Analytic</Channel>
+                <Level>Warning</Level>
+                <Task>MUI resource cache builder</Task>
+                <Opcode>Build resource cache</Opcode>
+                <Message><![CDATA[
+Unable to parse configuration parameters. The configuration parameters will be ignored.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

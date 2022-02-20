@@ -1,0 +1,90 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-EDP-Audit-Regular</Name>
+        <Metadata>
+            <Guid>{50F99B2D-96D2-421F-BE4C-222C4140DA9F}</Guid>
+            <ResourceFilePath>C:\Windows\System32\edpauditapi.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\System32\edpauditapi.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.19041.1&amp;FileName=edpauditapi.dll&amp;FileVer=10.0.19041.1</HelpLink>
+            <PublisherMessage>Microsoft Windows Information Protection Audit Regular Provider</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft Windows Information Protection Audit Regular Channel</Message>
+                    <Path>Microsoft-Windows-EDP-Audit-Regular/Admin</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Windows Information Protection Audit Data Copied Keyword</Message>
+                    <Name>EDP-Audit-Keyword-DataCopied</Name>
+                    <Value>16</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Windows Information Protection Audit Application Generated Keyword</Message>
+                    <Name>EDP-Audit-Keyword-ApplicationGenerated</Name>
+                    <Value>32</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>201</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows Information Protection Audit Regular Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>Windows Information Protection Audit Data Copied Keyword</Keyword>
+                <Message><![CDATA[
+%8 has been copied (%2) from %5 (tagged as %4) to %7 (tagged as %6)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UserId" inType="win:SID" outType="xs:string"/>
+  <data name="Policy" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Justification" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SourceEnterpriseId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SourceAppName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DestinationEnterpriseId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DestinationAppName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DataInfo" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>301</Id>
+                <Version>0</Version>
+                <Channel>Microsoft Windows Information Protection Audit Regular Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>Windows Information Protection Audit Application Generated Keyword</Keyword>
+                <Message><![CDATA[
+%3 has been changed from %5 (tagged as %6) to %7 (tagged as %8) in %9]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UserId" inType="win:SID" outType="xs:string"/>
+  <data name="Policy" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Object" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Action" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SourceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SourceEnterpriseId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DestinationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DestinationEnterpriseId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ApplicationName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
