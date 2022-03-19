@@ -1,0 +1,421 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-QoS-qWAVE</Name>
+        <Metadata>
+            <Guid>{6BA132C4-DA49-415B-A7F4-31870DC9FE25}</Guid>
+            <ResourceFilePath>C:\Windows\system32\qwave.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\qwave.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.20348.1&amp;FileName=qwave.dll&amp;FileVer=10.0.20348.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-QoS-qWAVE</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-QoS-qWAVE/Debug</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-QoS-qWAVE/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+QOSSetFlow Failure]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FlowId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SetFlowType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BufferLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Buffer" inType="win:Binary" outType="xs:hexBinary" length="BufferLen"/>
+  <data name="Flags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Failure Activity" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Failure Error Code Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Failure Error Code" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-QoS-qWAVE/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+QOSSetFlow Success]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FlowId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SetFlowType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BufferLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Buffer" inType="win:Binary" outType="xs:hexBinary" length="BufferLen"/>
+  <data name="Flags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="LLTD Supported" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-QoS-qWAVE/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+QOSQueryFlow Failure]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FlowId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="QueryFlowType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BufferLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Buffer" inType="win:Binary" outType="xs:hexBinary" length="BufferLen"/>
+  <data name="Flags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Failure Activity" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Failure Error Code Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Failure Error Code" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-QoS-qWAVE/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+QOSNotifyFlow Failure]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FlowId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NotifyFlowType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BufferLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Buffer" inType="win:Binary" outType="xs:hexBinary" length="BufferLen"/>
+  <data name="Flags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Failure Activity" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Failure Error Code Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Failure Error Code" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-QoS-qWAVE/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+QosAddSocketToFlow Failure]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AddressLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Address" inType="win:Binary" outType="win:SocketAddress" length="AddressLen"/>
+  <data name="TrafficType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Failure Activity" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Failure Error Code Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Failure Error Code" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-QoS-qWAVE/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+QOSEnumerateFlows Failure]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BufferLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Buffer" inType="win:Binary" outType="xs:hexBinary" length="BufferLen"/>
+  <data name="Failure Activity" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Failure Error Code Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Failure Error Code" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-QoS-qWAVE/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+QOSStartTrackingClient Failure]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AddressLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Address" inType="win:Binary" outType="win:SocketAddress" length="AddressLen"/>
+  <data name="Flags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Failure Activity" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Failure Error Code Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Failure Error Code" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-QoS-qWAVE/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+QOSStopTrackingClient Failure]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AddressLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Address" inType="win:Binary" outType="win:SocketAddress" length="AddressLen"/>
+  <data name="Flags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Failure Activity" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Failure Error Code Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Failure Error Code" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-QoS-qWAVE/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Network Congestion Begin]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SourceAddressLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SourceAddress" inType="win:Binary" outType="win:SocketAddress" length="SourceAddressLen"/>
+  <data name="DestAddressLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DestAddress" inType="win:Binary" outType="win:SocketAddress" length="DestAddressLen"/>
+  <data name="Bottleneck Bandwidth" inType="win:Double" outType="xs:double"/>
+  <data name="Is 802.1p Supported" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-QoS-qWAVE/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Network Congestion End]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SourceAddressLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SourceAddress" inType="win:Binary" outType="win:SocketAddress" length="SourceAddressLen"/>
+  <data name="DestAddressLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DestAddress" inType="win:Binary" outType="win:SocketAddress" length="DestAddressLen"/>
+  <data name="Bottleneck Bandwidth" inType="win:Double" outType="xs:double"/>
+  <data name="Available Bandwidth" inType="win:Double" outType="xs:double"/>
+  <data name="Is 802.1p Supported" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-QoS-qWAVE/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Available Bandwidth Detected]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SourceAddressLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SourceAddress" inType="win:Binary" outType="win:SocketAddress" length="SourceAddressLen"/>
+  <data name="DestAddressLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DestAddress" inType="win:Binary" outType="win:SocketAddress" length="DestAddressLen"/>
+  <data name="Bottleneck Bandwidth" inType="win:Double" outType="xs:double"/>
+  <data name="Available Bandwidth" inType="win:Double" outType="xs:double"/>
+  <data name="Is 802.1p Supported" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-QoS-qWAVE/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+QOSCreateHandle]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Process ID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Thread ID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="QoS Handle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Failure Activity" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Failure Error Code Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Failure Error Code" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-QoS-qWAVE/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Diagonstics]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Local Collection Error" inType="win:UInt32" outType="win:ErrorCode"/>
+  <data name="Remote Collection Error" inType="win:UInt32" outType="win:ErrorCode"/>
+  <data name="Cross Traffic Collection Error" inType="win:UInt32" outType="win:ErrorCode"/>
+  <data name="Path Analysis Result" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Remote Analysis Result" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Local Analysis Result" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-QoS-qWAVE/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+QDLHStartDiagnosingPath]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AddressLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Address" inType="win:Binary" outType="win:SocketAddress" length="AddressLen"/>
+  <data name="Flags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Failure Activity" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Failure Error Code Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Failure Error Code" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-QoS-qWAVE/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Packet Pair Result]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Source Address" inType="win:Binary" outType="win:SocketAddress" length="AddressLength"/>
+  <data name="Destination Address" inType="win:Binary" outType="win:SocketAddress" length="AddressLength"/>
+  <data name="Bottleneck Bandwidth" inType="win:Double" outType="xs:double"/>
+  <data name="Available Bandwidth" inType="win:Double" outType="xs:double"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-QoS-qWAVE/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Probe Quiescent]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Source Address" inType="win:Binary" outType="win:SocketAddress" length="AddressLength"/>
+  <data name="Destination Address" inType="win:Binary" outType="win:SocketAddress" length="AddressLength"/>
+  <data name="Quiescent" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-QoS-qWAVE/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+QosAddSocketToFlow Success]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AddressLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Address" inType="win:Binary" outType="win:SocketAddress" length="AddressLen"/>
+  <data name="TrafficType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Offlink" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-QoS-qWAVE/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Legacy Mode Active]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Non-LLTD Enabled Machine" inType="win:Binary" outType="win:SocketAddress" length="AddressLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-QoS-qWAVE/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Legacy Mode Inactive]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LLTD Enabled Machine" inType="win:Binary" outType="win:SocketAddress" length="AddressLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-QoS-qWAVE/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Burst Control]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CurrentTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SystemTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestedBandwidth" inType="win:Double" outType="xs:double"/>
+  <data name="NumBursts" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BurstSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-QoS-qWAVE/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AC Cache Initialized]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>22</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-QoS-qWAVE/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AC Cache DeInitialized]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,100 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Kernel-Prm</Name>
+        <Metadata>
+            <Guid>{B931ED29-66F4-576E-0579-0B8818A5DC6B}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\Microsoft-Windows-System-Events.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\system32\Microsoft-Windows-System-Events.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.22000.527&amp;FileName=Microsoft-Windows-System-Events.dll&amp;FileVer=10.0.22000.527</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Kernel-Prm</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-Kernel-Prm/Operational</Message>
+                    <Path>Microsoft-Windows-Kernel-PRM/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Prm/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+PRM has been invoked.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Prm/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+PRM module update failed. Module GUID %1, module version %2, status %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ModuleGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ModuleVersion" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="NtStatus" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Prm/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+PRM invocation failed. Handler GUID %1, module GUID %2, module version %3, interface status %4, handler status %5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HandlerGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ModuleGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ModuleVersion" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="InterfaceStatus" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="HandlerStatus" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Prm/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Excessive PRM handler runtime. Handler GUID %1, module GUID %2, module version %3, duration %4 us.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HandlerGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ModuleGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ModuleVersion" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="DurationInUs" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

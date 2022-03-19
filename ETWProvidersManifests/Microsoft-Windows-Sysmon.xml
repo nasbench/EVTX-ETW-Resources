@@ -1,0 +1,1063 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Sysmon</Name>
+        <Metadata>
+            <Guid>{5770385F-C22A-43E0-BF4C-06F5698FFBD9}</Guid>
+            <ResourceFilePath>C:\WINDOWS\Sysmon64.exe</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\WINDOWS\Sysmon64.exe</MessageFilePath>
+            <HelpLink></HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Sysmon/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Error report</Message>
+                    <Name>SysmonTask-SYSMONEVENT_ERROR</Name>
+                    <Guid>{C511FFB3-9FBF-45F5-A97B-9BEE000000FF}</Guid>
+                    <Value>255</Value>
+                </Task>
+                <Task>
+                    <Message>Process Create (rule: ProcessCreate)</Message>
+                    <Name>SysmonTask-SYSMONEVENT_CREATE_PROCESS</Name>
+                    <Guid>{C511FFB3-9FBF-45F5-A97B-9BEE00000001}</Guid>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>File creation time changed (rule: FileCreateTime)</Message>
+                    <Name>SysmonTask-SYSMONEVENT_FILE_TIME</Name>
+                    <Guid>{C511FFB3-9FBF-45F5-A97B-9BEE00000002}</Guid>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message>Network connection detected (rule: NetworkConnect)</Message>
+                    <Name>SysmonTask-SYSMONEVENT_NETWORK_CONNECT</Name>
+                    <Guid>{C511FFB3-9FBF-45F5-A97B-9BEE00000003}</Guid>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message>Sysmon service state changed</Message>
+                    <Name>SysmonTask-SYSMONEVENT_SERVICE_STATE_CHANGE</Name>
+                    <Guid>{C511FFB3-9FBF-45F5-A97B-9BEE00000004}</Guid>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message>Process terminated (rule: ProcessTerminate)</Message>
+                    <Name>SysmonTask-SYSMONEVENT_PROCESS_TERMINATE</Name>
+                    <Guid>{C511FFB3-9FBF-45F5-A97B-9BEE00000005}</Guid>
+                    <Value>5</Value>
+                </Task>
+                <Task>
+                    <Message>Driver loaded (rule: DriverLoad)</Message>
+                    <Name>SysmonTask-SYSMONEVENT_DRIVER_LOAD</Name>
+                    <Guid>{C511FFB3-9FBF-45F5-A97B-9BEE00000006}</Guid>
+                    <Value>6</Value>
+                </Task>
+                <Task>
+                    <Message>Image loaded (rule: ImageLoad)</Message>
+                    <Name>SysmonTask-SYSMONEVENT_IMAGE_LOAD</Name>
+                    <Guid>{C511FFB3-9FBF-45F5-A97B-9BEE00000007}</Guid>
+                    <Value>7</Value>
+                </Task>
+                <Task>
+                    <Message>CreateRemoteThread detected (rule: CreateRemoteThread)</Message>
+                    <Name>SysmonTask-SYSMONEVENT_CREATE_REMOTE_THREAD</Name>
+                    <Guid>{C511FFB3-9FBF-45F5-A97B-9BEE00000008}</Guid>
+                    <Value>8</Value>
+                </Task>
+                <Task>
+                    <Message>RawAccessRead detected (rule: RawAccessRead)</Message>
+                    <Name>SysmonTask-SYSMONEVENT_RAWACCESS_READ</Name>
+                    <Guid>{C511FFB3-9FBF-45F5-A97B-9BEE00000009}</Guid>
+                    <Value>9</Value>
+                </Task>
+                <Task>
+                    <Message>Process accessed (rule: ProcessAccess)</Message>
+                    <Name>SysmonTask-SYSMONEVENT_ACCESS_PROCESS</Name>
+                    <Guid>{C511FFB3-9FBF-45F5-A97B-9BEE0000000A}</Guid>
+                    <Value>10</Value>
+                </Task>
+                <Task>
+                    <Message>File created (rule: FileCreate)</Message>
+                    <Name>SysmonTask-SYSMONEVENT_FILE_CREATE</Name>
+                    <Guid>{C511FFB3-9FBF-45F5-A97B-9BEE0000000B}</Guid>
+                    <Value>11</Value>
+                </Task>
+                <Task>
+                    <Message>Registry object added or deleted (rule: RegistryEvent)</Message>
+                    <Name>SysmonTask-SYSMONEVENT_REG_KEY</Name>
+                    <Guid>{C511FFB3-9FBF-45F5-A97B-9BEE0000000C}</Guid>
+                    <Value>12</Value>
+                </Task>
+                <Task>
+                    <Message>Registry value set (rule: RegistryEvent)</Message>
+                    <Name>SysmonTask-SYSMONEVENT_REG_SETVALUE</Name>
+                    <Guid>{C511FFB3-9FBF-45F5-A97B-9BEE0000000D}</Guid>
+                    <Value>13</Value>
+                </Task>
+                <Task>
+                    <Message>Registry object renamed (rule: RegistryEvent)</Message>
+                    <Name>SysmonTask-SYSMONEVENT_REG_NAME</Name>
+                    <Guid>{C511FFB3-9FBF-45F5-A97B-9BEE0000000E}</Guid>
+                    <Value>14</Value>
+                </Task>
+                <Task>
+                    <Message>File stream created (rule: FileCreateStreamHash)</Message>
+                    <Name>SysmonTask-SYSMONEVENT_FILE_CREATE_STREAM_HASH</Name>
+                    <Guid>{C511FFB3-9FBF-45F5-A97B-9BEE0000000F}</Guid>
+                    <Value>15</Value>
+                </Task>
+                <Task>
+                    <Message>Sysmon config state changed</Message>
+                    <Name>SysmonTask-SYSMONEVENT_SERVICE_CONFIGURATION_CHANGE</Name>
+                    <Guid>{C511FFB3-9FBF-45F5-A97B-9BEE00000010}</Guid>
+                    <Value>16</Value>
+                </Task>
+                <Task>
+                    <Message>Pipe Created (rule: PipeEvent)</Message>
+                    <Name>SysmonTask-SYSMONEVENT_CREATE_NAMEDPIPE</Name>
+                    <Guid>{C511FFB3-9FBF-45F5-A97B-9BEE00000011}</Guid>
+                    <Value>17</Value>
+                </Task>
+                <Task>
+                    <Message>Pipe Connected (rule: PipeEvent)</Message>
+                    <Name>SysmonTask-SYSMONEVENT_CONNECT_NAMEDPIPE</Name>
+                    <Guid>{C511FFB3-9FBF-45F5-A97B-9BEE00000012}</Guid>
+                    <Value>18</Value>
+                </Task>
+                <Task>
+                    <Message>WmiEventFilter activity detected (rule: WmiEvent)</Message>
+                    <Name>SysmonTask-SYSMONEVENT_WMI_FILTER</Name>
+                    <Guid>{C511FFB3-9FBF-45F5-A97B-9BEE00000013}</Guid>
+                    <Value>19</Value>
+                </Task>
+                <Task>
+                    <Message>WmiEventConsumer activity detected (rule: WmiEvent)</Message>
+                    <Name>SysmonTask-SYSMONEVENT_WMI_CONSUMER</Name>
+                    <Guid>{C511FFB3-9FBF-45F5-A97B-9BEE00000014}</Guid>
+                    <Value>20</Value>
+                </Task>
+                <Task>
+                    <Message>WmiEventConsumerToFilter activity detected (rule: WmiEvent)</Message>
+                    <Name>SysmonTask-SYSMONEVENT_WMI_BINDING</Name>
+                    <Guid>{C511FFB3-9FBF-45F5-A97B-9BEE00000015}</Guid>
+                    <Value>21</Value>
+                </Task>
+                <Task>
+                    <Message>Dns query (rule: DnsQuery)</Message>
+                    <Name>SysmonTask-SYSMONEVENT_DNS_QUERY</Name>
+                    <Guid>{C511FFB3-9FBF-45F5-A97B-9BEE00000016}</Guid>
+                    <Value>22</Value>
+                </Task>
+                <Task>
+                    <Message>File Delete archived (rule: FileDelete)</Message>
+                    <Name>SysmonTask-SYSMONEVENT_FILE_DELETE</Name>
+                    <Guid>{C511FFB3-9FBF-45F5-A97B-9BEE00000017}</Guid>
+                    <Value>23</Value>
+                </Task>
+                <Task>
+                    <Message>Clipboard changed (rule: ClipboardChange)</Message>
+                    <Name>SysmonTask-SYSMONEVENT_CLIPBOARD</Name>
+                    <Guid>{C511FFB3-9FBF-45F5-A97B-9BEE00000018}</Guid>
+                    <Value>24</Value>
+                </Task>
+                <Task>
+                    <Message>Process Tampering (rule: ProcessTampering)</Message>
+                    <Name>SysmonTask-SYSMONEVENT_PROCESS_IMAGE_TAMPERING</Name>
+                    <Guid>{C511FFB3-9FBF-45F5-A97B-9BEE00000019}</Guid>
+                    <Value>25</Value>
+                </Task>
+                <Task>
+                    <Message>File Delete logged (rule: FileDeleteDetected)</Message>
+                    <Name>SysmonTask-SYSMONEVENT_FILE_DELETE_DETECTED</Name>
+                    <Guid>{C511FFB3-9FBF-45F5-A97B-9BEE0000001A}</Guid>
+                    <Value>26</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>5</Version>
+                <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Process Create (rule: ProcessCreate)</Task>
+                <Message><![CDATA[
+Process Create:
+RuleName: %1
+UtcTime: %2
+ProcessGuid: %3
+ProcessId: %4
+Image: %5
+FileVersion: %6
+Description: %7
+Product: %8
+Company: %9
+OriginalFileName: %10
+CommandLine: %11
+CurrentDirectory: %12
+User: %13
+LogonGuid: %14
+LogonId: %15
+TerminalSessionId: %16
+IntegrityLevel: %17
+Hashes: %18
+ParentProcessGuid: %19
+ParentProcessId: %20
+ParentImage: %21
+ParentCommandLine: %22
+ParentUser: %23]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RuleName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UtcTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ProcessId" inType="win:UInt32" outType="win:PID"/>
+  <data name="Image" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FileVersion" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Description" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Product" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Company" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="OriginalFileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CommandLine" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CurrentDirectory" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="User" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LogonGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LogonId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TerminalSessionId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IntegrityLevel" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Hashes" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ParentProcessGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ParentProcessId" inType="win:UInt32" outType="win:PID"/>
+  <data name="ParentImage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ParentCommandLine" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ParentUser" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>5</Version>
+                <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+                <Level>Information</Level>
+                <Task>File creation time changed (rule: FileCreateTime)</Task>
+                <Message><![CDATA[
+File creation time changed:
+RuleName: %1
+UtcTime: %2
+ProcessGuid: %3
+ProcessId: %4
+Image: %5
+TargetFilename: %6
+CreationUtcTime: %7
+PreviousCreationUtcTime: %8
+User: %9]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RuleName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UtcTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ProcessId" inType="win:UInt32" outType="win:PID"/>
+  <data name="Image" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TargetFilename" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CreationUtcTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PreviousCreationUtcTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="User" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>5</Version>
+                <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Network connection detected (rule: NetworkConnect)</Task>
+                <Message><![CDATA[
+Network connection detected:
+RuleName: %1
+UtcTime: %2
+ProcessGuid: %3
+ProcessId: %4
+Image: %5
+User: %6
+Protocol: %7
+Initiated: %8
+SourceIsIpv6: %9
+SourceIp: %10
+SourceHostname: %11
+SourcePort: %12
+SourcePortName: %13
+DestinationIsIpv6: %14
+DestinationIp: %15
+DestinationHostname: %16
+DestinationPort: %17
+DestinationPortName: %18]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RuleName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UtcTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ProcessId" inType="win:UInt32" outType="win:PID"/>
+  <data name="Image" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="User" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Protocol" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Initiated" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="SourceIsIpv6" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="SourceIp" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SourceHostname" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SourcePort" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SourcePortName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DestinationIsIpv6" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="DestinationIp" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DestinationHostname" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DestinationPort" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DestinationPortName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>3</Version>
+                <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Sysmon service state changed</Task>
+                <Message><![CDATA[
+Sysmon service state changed:
+UtcTime: %1
+State: %2
+Version: %3
+SchemaVersion: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UtcTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="State" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SchemaVersion" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>3</Version>
+                <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Process terminated (rule: ProcessTerminate)</Task>
+                <Message><![CDATA[
+Process terminated:
+RuleName: %1
+UtcTime: %2
+ProcessGuid: %3
+ProcessId: %4
+Image: %5
+User: %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RuleName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UtcTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ProcessId" inType="win:UInt32" outType="win:PID"/>
+  <data name="Image" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="User" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>4</Version>
+                <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Driver loaded (rule: DriverLoad)</Task>
+                <Message><![CDATA[
+Driver loaded:
+RuleName: %1
+UtcTime: %2
+ImageLoaded: %3
+Hashes: %4
+Signed: %5
+Signature: %6
+SignatureStatus: %7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RuleName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UtcTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ImageLoaded" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Hashes" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Signed" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Signature" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SignatureStatus" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>3</Version>
+                <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Image loaded (rule: ImageLoad)</Task>
+                <Message><![CDATA[
+Image loaded:
+RuleName: %1
+UtcTime: %2
+ProcessGuid: %3
+ProcessId: %4
+Image: %5
+ImageLoaded: %6
+FileVersion: %7
+Description: %8
+Product: %9
+Company: %10
+OriginalFileName: %11
+Hashes: %12
+Signed: %13
+Signature: %14
+SignatureStatus: %15
+User: %16]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RuleName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UtcTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ProcessId" inType="win:UInt32" outType="win:PID"/>
+  <data name="Image" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ImageLoaded" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FileVersion" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Description" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Product" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Company" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="OriginalFileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Hashes" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Signed" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Signature" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SignatureStatus" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="User" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>2</Version>
+                <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+                <Level>Information</Level>
+                <Task>CreateRemoteThread detected (rule: CreateRemoteThread)</Task>
+                <Message><![CDATA[
+CreateRemoteThread detected:
+RuleName: %1
+UtcTime: %2
+SourceProcessGuid: %3
+SourceProcessId: %4
+SourceImage: %5
+TargetProcessGuid: %6
+TargetProcessId: %7
+TargetImage: %8
+NewThreadId: %9
+StartAddress: %10
+StartModule: %11
+StartFunction: %12
+SourceUser: %13
+TargetUser: %14]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RuleName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UtcTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SourceProcessGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SourceProcessId" inType="win:UInt32" outType="win:PID"/>
+  <data name="SourceImage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TargetProcessGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="TargetProcessId" inType="win:UInt32" outType="win:PID"/>
+  <data name="TargetImage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NewThreadId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StartAddress" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StartModule" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StartFunction" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SourceUser" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TargetUser" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>2</Version>
+                <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+                <Level>Information</Level>
+                <Task>RawAccessRead detected (rule: RawAccessRead)</Task>
+                <Message><![CDATA[
+RawAccessRead detected:
+RuleName: %1
+UtcTime: %2
+ProcessGuid: %3
+ProcessId: %4
+Image: %5
+Device: %6
+User: %7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RuleName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UtcTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ProcessId" inType="win:UInt32" outType="win:PID"/>
+  <data name="Image" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Device" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="User" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>3</Version>
+                <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Process accessed (rule: ProcessAccess)</Task>
+                <Message><![CDATA[
+Process accessed:
+RuleName: %1
+UtcTime: %2
+SourceProcessGUID: %3
+SourceProcessId: %4
+SourceThreadId: %5
+SourceImage: %6
+TargetProcessGUID: %7
+TargetProcessId: %8
+TargetImage: %9
+GrantedAccess: %10
+CallTrace: %11
+SourceUser: %12
+TargetUser: %13]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RuleName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UtcTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SourceProcessGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SourceProcessId" inType="win:UInt32" outType="win:PID"/>
+  <data name="SourceThreadId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SourceImage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TargetProcessGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="TargetProcessId" inType="win:UInt32" outType="win:PID"/>
+  <data name="TargetImage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="GrantedAccess" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="CallTrace" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SourceUser" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TargetUser" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>2</Version>
+                <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+                <Level>Information</Level>
+                <Task>File created (rule: FileCreate)</Task>
+                <Message><![CDATA[
+File created:
+RuleName: %1
+UtcTime: %2
+ProcessGuid: %3
+ProcessId: %4
+Image: %5
+TargetFilename: %6
+CreationUtcTime: %7
+User: %8]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RuleName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UtcTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ProcessId" inType="win:UInt32" outType="win:PID"/>
+  <data name="Image" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TargetFilename" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CreationUtcTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="User" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>2</Version>
+                <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Registry object added or deleted (rule: RegistryEvent)</Task>
+                <Message><![CDATA[
+Registry object added or deleted:
+RuleName: %1
+EventType: %2
+UtcTime: %3
+ProcessGuid: %4
+ProcessId: %5
+Image: %6
+TargetObject: %7
+User: %8]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RuleName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EventType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UtcTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ProcessId" inType="win:UInt32" outType="win:PID"/>
+  <data name="Image" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TargetObject" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="User" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>2</Version>
+                <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Registry value set (rule: RegistryEvent)</Task>
+                <Message><![CDATA[
+Registry value set:
+RuleName: %1
+EventType: %2
+UtcTime: %3
+ProcessGuid: %4
+ProcessId: %5
+Image: %6
+TargetObject: %7
+Details: %8
+User: %9]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RuleName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EventType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UtcTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ProcessId" inType="win:UInt32" outType="win:PID"/>
+  <data name="Image" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TargetObject" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Details" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="User" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>2</Version>
+                <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Registry object renamed (rule: RegistryEvent)</Task>
+                <Message><![CDATA[
+Registry object renamed:
+RuleName: %1
+EventType: %2
+UtcTime: %3
+ProcessGuid: %4
+ProcessId: %5
+Image: %6
+TargetObject: %7
+NewName: %8
+User: %9]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RuleName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EventType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UtcTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ProcessId" inType="win:UInt32" outType="win:PID"/>
+  <data name="Image" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TargetObject" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NewName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="User" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>2</Version>
+                <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+                <Level>Information</Level>
+                <Task>File stream created (rule: FileCreateStreamHash)</Task>
+                <Message><![CDATA[
+File stream created:
+RuleName: %1
+UtcTime: %2
+ProcessGuid: %3
+ProcessId: %4
+Image: %5
+TargetFilename: %6
+CreationUtcTime: %7
+Hash: %8
+Contents: %9
+User: %10]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RuleName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UtcTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ProcessId" inType="win:UInt32" outType="win:PID"/>
+  <data name="Image" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TargetFilename" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CreationUtcTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Hash" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Contents" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="User" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>3</Version>
+                <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Sysmon config state changed</Task>
+                <Message><![CDATA[
+Sysmon config state changed:
+UtcTime: %1
+Configuration: %2
+ConfigurationFileHash: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UtcTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Configuration" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ConfigurationFileHash" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Pipe Created (rule: PipeEvent)</Task>
+                <Message><![CDATA[
+Pipe Created:
+RuleName: %1
+EventType: %2
+UtcTime: %3
+ProcessGuid: %4
+ProcessId: %5
+PipeName: %6
+Image: %7
+User: %8]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RuleName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EventType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UtcTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ProcessId" inType="win:UInt32" outType="win:PID"/>
+  <data name="PipeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Image" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="User" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Pipe Connected (rule: PipeEvent)</Task>
+                <Message><![CDATA[
+Pipe Connected:
+RuleName: %1
+EventType: %2
+UtcTime: %3
+ProcessGuid: %4
+ProcessId: %5
+PipeName: %6
+Image: %7
+User: %8]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RuleName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EventType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UtcTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ProcessId" inType="win:UInt32" outType="win:PID"/>
+  <data name="PipeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Image" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="User" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>3</Version>
+                <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+                <Level>Information</Level>
+                <Task>WmiEventFilter activity detected (rule: WmiEvent)</Task>
+                <Message><![CDATA[
+WmiEventFilter activity detected:
+RuleName: %1
+EventType: %2
+UtcTime: %3
+Operation: %4
+User: %5
+EventNamespace: %6
+Name: %7
+Query: %8]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RuleName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EventType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UtcTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Operation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="User" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EventNamespace" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Query" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>3</Version>
+                <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+                <Level>Information</Level>
+                <Task>WmiEventConsumer activity detected (rule: WmiEvent)</Task>
+                <Message><![CDATA[
+WmiEventConsumer activity detected:
+RuleName: %1
+EventType: %2
+UtcTime: %3
+Operation: %4
+User: %5
+Name: %6
+Type: %7
+Destination: %8]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RuleName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EventType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UtcTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Operation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="User" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Type" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Destination" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>3</Version>
+                <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+                <Level>Information</Level>
+                <Task>WmiEventConsumerToFilter activity detected (rule: WmiEvent)</Task>
+                <Message><![CDATA[
+WmiEventConsumerToFilter activity detected:
+RuleName: %1
+EventType: %2
+UtcTime: %3
+Operation: %4
+User: %5
+Consumer: %6
+Filter: %7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RuleName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EventType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UtcTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Operation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="User" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Consumer" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Filter" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>22</Id>
+                <Version>5</Version>
+                <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Dns query (rule: DnsQuery)</Task>
+                <Message><![CDATA[
+Dns query:
+RuleName: %1
+UtcTime: %2
+ProcessGuid: %3
+ProcessId: %4
+QueryName: %5
+QueryStatus: %6
+QueryResults: %7
+Image: %8
+User: %9]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RuleName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UtcTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ProcessId" inType="win:UInt32" outType="win:PID"/>
+  <data name="QueryName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="QueryStatus" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="QueryResults" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Image" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="User" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>23</Id>
+                <Version>5</Version>
+                <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+                <Level>Information</Level>
+                <Task>File Delete archived (rule: FileDelete)</Task>
+                <Message><![CDATA[
+File Delete archived:
+RuleName: %1
+UtcTime: %2
+ProcessGuid: %3
+ProcessId: %4
+User: %5
+Image: %6
+TargetFilename: %7
+Hashes: %8
+IsExecutable: %9
+Archived: %10]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RuleName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UtcTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ProcessId" inType="win:UInt32" outType="win:PID"/>
+  <data name="User" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Image" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TargetFilename" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Hashes" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsExecutable" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="Archived" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>24</Id>
+                <Version>5</Version>
+                <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Clipboard changed (rule: ClipboardChange)</Task>
+                <Message><![CDATA[
+Clipboard changed:
+RuleName: %1
+UtcTime: %2
+ProcessGuid: %3
+ProcessId: %4
+Image: %5
+Session: %6
+ClientInfo: %7
+Hashes: %8
+Archived: %9
+User: %10]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RuleName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UtcTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ProcessId" inType="win:UInt32" outType="win:PID"/>
+  <data name="Image" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Session" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ClientInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Hashes" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Archived" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="User" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25</Id>
+                <Version>5</Version>
+                <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Process Tampering (rule: ProcessTampering)</Task>
+                <Message><![CDATA[
+Process Tampering:
+RuleName: %1
+UtcTime: %2
+ProcessGuid: %3
+ProcessId: %4
+Image: %5
+Type: %6
+User: %7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RuleName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UtcTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ProcessId" inType="win:UInt32" outType="win:PID"/>
+  <data name="Image" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Type" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="User" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>26</Id>
+                <Version>5</Version>
+                <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+                <Level>Information</Level>
+                <Task>File Delete logged (rule: FileDeleteDetected)</Task>
+                <Message><![CDATA[
+File Delete logged:
+RuleName: %1
+UtcTime: %2
+ProcessGuid: %3
+ProcessId: %4
+User: %5
+Image: %6
+TargetFilename: %7
+Hashes: %8
+IsExecutable: %9]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RuleName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UtcTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ProcessId" inType="win:UInt32" outType="win:PID"/>
+  <data name="User" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Image" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TargetFilename" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Hashes" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsExecutable" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>255</Id>
+                <Version>3</Version>
+                <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Error report</Task>
+                <Message><![CDATA[
+Error report:
+UtcTime: %1
+ID: %2
+Description: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UtcTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
