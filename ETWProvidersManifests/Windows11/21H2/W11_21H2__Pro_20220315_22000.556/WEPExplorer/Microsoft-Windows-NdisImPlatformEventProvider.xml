@@ -1,0 +1,804 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-NdisImPlatformEventProvider</Name>
+        <Metadata>
+            <Guid>{11C5D8AD-756A-42C2-8087-EB1B4A72A846}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\drivers\NdisImPlatform.sys</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\system32\drivers\NdisImPlatform.sys</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp</HelpLink>
+            <PublisherMessage>Microsoft-Windows-NdisImPlatform</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-NdisImPlatform/Operational</Message>
+                    <Path>Microsoft-Windows-NdisImPlatform/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:SendPath</Name>
+                    <Value>4294967296</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:ReceivePath</Name>
+                    <Value>8589934592</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:L3ConnectPath</Name>
+                    <Value>17179869184</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:L2ConnectPath</Name>
+                    <Value>34359738368</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:ClosePath</Name>
+                    <Value>68719476736</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:Authentication</Name>
+                    <Value>137438953472</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:Configuration</Name>
+                    <Value>274877906944</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:Global</Name>
+                    <Value>549755813888</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:Dropped</Name>
+                    <Value>1099511627776</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:PiiPresent</Name>
+                    <Value>2199023255552</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:Packet</Name>
+                    <Value>4398046511104</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:Address</Name>
+                    <Value>8796093022208</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:StdTemplateHint</Name>
+                    <Value>17592186044416</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:StateTransition</Name>
+                    <Value>35184372088832</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NdisImPlatform/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Received NetPnPEvent %1 from Member %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NetPnpEvent" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Member" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NdisImPlatform/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Nic %1 is transitioning into a new power state %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Adapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PowerState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NdisImPlatform/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Member %1 is doing a status indication. StatusCode = %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Adapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StatusBufferLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StatusBuffer" inType="win:Binary" outType="xs:hexBinary" length="StatusBufferLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NdisImPlatform/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Member %1 is indicating a new link state. Link State Buffer = %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Adapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StatusBufferLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StatusBuffer" inType="win:Binary" outType="xs:hexBinary" length="StatusBufferLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NdisImPlatform/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Oid %1 on TeamNic %2 failed due to invalid port number. Oid Buffer = %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Oid" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Adapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="OidBufferLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OidBuffer" inType="win:Binary" outType="xs:hexBinary" length="OidBufferLen"/>
+  <data name="Status" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NdisImPlatform/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Forwarding of OID %1 from TeamNic %2 due to Member %3 failed.  Status = %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Oid" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TeamNic" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Member" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NdisImPlatform/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Querying for OID %1 on TeamNic %2 failed. OidBuffer is %4 failed.  Status = %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Oid" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Adapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="OidBufferLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OidBuffer" inType="win:Binary" outType="xs:hexBinary" length="OidBufferLen"/>
+  <data name="Status" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NdisImPlatform/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to set OID_GEN_CURRENT_LOOKAHEAD on Member %1. Status = %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Adapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NdisImPlatform/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to set OID_GEN_CURRENT_LOOKAHEAD on TeamNic %1. Status = %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Adapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NdisImPlatform/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+New Packet Filters for TeamNic %1 are %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TeamNic" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PacketFilter" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NdisImPlatform/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Received new per-port Packet Filters %3 for TeamNic %1 and Member %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TeamNic" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Member" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PacketFilter" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NdisImPlatform/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to set OID_GEN_CURRENT_PACKET_FILTER on Member %1.  Status = %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Adapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NdisImPlatform/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed OID_802_3_MULTICAST_LIST on Member %1 while processing the Oid on TeamNic %2. Status = %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Member" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TeamNic" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NdisImPlatform/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed OID_OFFLOAD_ENCAPSULATION on Member %1 while processing the Oid on TeamNic %2. Status = %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Member" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TeamNic" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NdisImPlatform/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to set OID %1 on TeamNic %2. Buffer is %4 . Status = %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Oid" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Adapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="OidBufferLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OidBuffer" inType="win:Binary" outType="xs:hexBinary" length="OidBufferLen"/>
+  <data name="Status" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NdisImPlatform/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Recalculating Packet Filters on Member %1 failed. Status = %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Adapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NdisImPlatform/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Failed Sending as TeamNic %1 is not available]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Adapter" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NdisImPlatform/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Failed Sending as Member is not found]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NdisImPlatform/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Aborted Sending on TeamNic %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Adapter" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NdisImPlatform/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Member %1 is not ready to receive.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Adapter" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NdisImPlatform/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Aborting receive on TeamNic %1 as it is not ready.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Adapter" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>22</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NdisImPlatform/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+No matching TeamNic found for packets received from member %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Adapter" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>23</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NdisImPlatform/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Aborting sending queued NBLs on TeamNic %1 and Member %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TeamNic" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Member" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>24</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NdisImPlatform/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Binding to member adapter %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Adapter" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NdisImPlatform/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Unbinding from member adapter %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Adapter" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>26</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NdisImPlatform/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Binding to member adapter %1 failed. Status = %2. Potential reason could be inadequate capabilities.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Adapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>27</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NdisImPlatform/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Creating internal binding between TeamNic %1 and Member %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TeamNic" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Member" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>28</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NdisImPlatform/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Creating internal binding between TeamNic %1 and Member %2 failed. Status = %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TeamNic" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Member" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>29</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NdisImPlatform/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Removed internal binding between TeamNic %1 and Member %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TeamNic" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Member" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NdisImPlatform/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Allocating Port failed for Member %1 on TeamNic %2, Status = %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TeamNic" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Member" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>31</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NdisImPlatform/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Creating team %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Team" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NdisImPlatform/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Creating team %1 failed, Status = %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Team" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>33</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NdisImPlatform/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Removed team %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Team" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>34</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NdisImPlatform/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Added Member %2 to team %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Team" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Member" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>35</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NdisImPlatform/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Added Member %2 from team %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Team" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Member" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>36</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NdisImPlatform/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Added TeamNic %2 to team %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Team" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TeamNic" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>37</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NdisImPlatform/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Removed TeamNic %2 from team %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Team" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TeamNic" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>38</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NdisImPlatform/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Creating TeamNic %2 for Team %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Team" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TeamNic" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>39</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NdisImPlatform/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Creating TeamNic %2 for Team %1 failed, Status = %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Team" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TeamNic" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>40</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NdisImPlatform/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Removed TeamNic %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Adapter" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>41</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NdisImPlatform/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Indicated new task offload hardware capabilities for TeamNic %1. StatusBuffer = %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TeamNic" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BufferLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Buffer" inType="win:Binary" outType="xs:hexBinary" length="BufferLen"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>42</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NdisImPlatform/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Indicated new task offload current config for TeamNic %1. StatusBuffer = %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TeamNic" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BufferLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Buffer" inType="win:Binary" outType="xs:hexBinary" length="BufferLen"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>43</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NdisImPlatform/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+TeamNic %1 indicated link state change. StatusBuffer = %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Adapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StatusBufferLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StatusBuffer" inType="win:Binary" outType="xs:hexBinary" length="StatusBufferLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>44</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NdisImPlatform/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Support MacOptions for TeamNic %1 reduced from %2 to %3 due to cached capabilities of a member which is currently not bound to the team]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TeamNic" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="OldValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>45</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NdisImPlatform/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Support MtuSize for TeamNic %1 reduced from %2 to %3 due to cached capabilities of a member which is currently not bound to the team]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TeamNic" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="OldValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>46</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NdisImPlatform/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+TeamNic %1 being initialized.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Adapter" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>47</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NdisImPlatform/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+TeamNic %1 failed to Initialize, Status = %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Adapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>48</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NdisImPlatform/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+TeamNic %1 halted.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Adapter" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

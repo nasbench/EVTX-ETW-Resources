@@ -1,0 +1,137 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-RPC-Proxy-LBS</Name>
+        <Metadata>
+            <Guid>{272A979B-34B5-48EC-94F5-7225A59C85A0}</Guid>
+            <ResourceFilePath>C:\Windows\system32\rpchttp.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\rpchttp.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.19041.1&amp;FileName=rpchttp.dll&amp;FileVer=10.0.19041.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-RPC-Proxy-LBS</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Debug</Message>
+                    <Path>Microsoft-Windows-RPC-Proxy/Debug</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>Arbitration</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>ServerState</Name>
+                    <Value>2</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>1</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>Arbitration</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+RPC/HTTP Load Balancing started arbitration for user %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UserName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>1</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+RPC/HTTP Load Balancing ended arbitration with status %2 and will use server %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ServerName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>1</Version>
+                <Channel>Debug</Channel>
+                <Level>Error</Level>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+RPC/HTTP Load Balancing arbitration received conflicting results for user %1 from servers %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UserName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServerList" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>1</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+RPC/HTTP Load Balancing added server %1 to the list of live servers.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ServerName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>1</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+RPC/HTTP Load Balancing removed server %1 from the list of live servers.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ServerName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

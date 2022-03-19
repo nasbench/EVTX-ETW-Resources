@@ -1,0 +1,562 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-SoftwareInventoryLogging-Provider</Name>
+        <Metadata>
+            <Guid>{51F092C6-6573-4A9B-A7FC-A245AE653BD1}</Guid>
+            <ResourceFilePath>C:\Windows\system32\wbem\silprovider.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\wbem\silprovider.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.20348.1&amp;FileName=silprovider.dll&amp;FileVer=10.0.20348.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-SilProvider</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Operational</Message>
+                    <Path>Microsoft-Windows-SilProvider/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Debug</Message>
+                    <Path>Microsoft-Windows-SilProvider/Debug</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Lifetime</Message>
+                    <Name>Lifetime</Name>
+                    <Guid>{C285AE72-37EC-4451-9031-3E2D28DDBF11}</Guid>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>GetTargetUri</Message>
+                    <Name>GetTargetUri</Name>
+                    <Guid>{E127C546-FE50-4C52-B829-16BF7FA4BC49}</Guid>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message>DataDecode</Message>
+                    <Name>DataDecode</Name>
+                    <Guid>{DF3DED7B-FEBF-4F2C-9E30-8A0DE4CFFA4D}</Guid>
+                    <Value>3</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Lifetime</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Provider loaded.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Lifetime</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Provider unloaded.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Lifetime</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+GetTargetUri started.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Lifetime</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+GetTargetUri started.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Lifetime</Task>
+                <Message><![CDATA[
+GetTargetUri error.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1006</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Lifetime</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+SetTargetUri started.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1007</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Lifetime</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+SetTargetUri stopped.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1008</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Lifetime</Task>
+                <Message><![CDATA[
+SetTargetUri error.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1009</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Lifetime</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+GetLoggingState started.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1010</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Lifetime</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+GetLoggingState stopped.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1011</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Lifetime</Task>
+                <Message><![CDATA[
+GetLoggingState error.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1012</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Lifetime</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+SetLoggingState started.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1013</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Lifetime</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+SetLoggingState stopped.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1014</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Lifetime</Task>
+                <Message><![CDATA[
+SetLoggingState error.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1015</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Lifetime</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+GetLoggingTime started.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1016</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Lifetime</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+GetLoggingTime stopped.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1017</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Lifetime</Task>
+                <Message><![CDATA[
+GetLoggingTime error.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1018</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Lifetime</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+SetLoggingTime started.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1019</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Lifetime</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+SetLoggingTime stopped.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1020</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Lifetime</Task>
+                <Message><![CDATA[
+SetLoggingTime error.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1030</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Lifetime</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Enumerate Server started.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1031</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Lifetime</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Enumerate Server stopped.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1032</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Lifetime</Task>
+                <Message><![CDATA[
+Enumerate Server error. Error: %1, Type: %2, Message: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="error" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="errorType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="errorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1033</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Lifetime</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Enumerate QFE started.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1034</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Lifetime</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Enumerate QFE stopped.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1035</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Lifetime</Task>
+                <Message><![CDATA[
+Enumerate QFE error.  Error: %1, Type: %2, Message: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="error" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="errorType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="errorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1036</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Lifetime</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Enumerate Software started.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1037</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Lifetime</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Enumerate Software stopped.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1038</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Lifetime</Task>
+                <Message><![CDATA[
+Enumerate Software error. Error: %1, Type: %2, Message: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="error" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="errorType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="errorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1039</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Lifetime</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Enumerate UAL Access started.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1040</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Lifetime</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Enumerate UAL Access stopped.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1041</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Lifetime</Task>
+                <Message><![CDATA[
+Enumerate UAL Access error. Error: %1, Type: %2, Message: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="error" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="errorType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="errorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1042</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Lifetime</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Get Guest Data started.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1043</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Lifetime</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Get Guest Data stopped.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1044</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Lifetime</Task>
+                <Message><![CDATA[
+Get Guest Data error. Error: %1, Type: %2, Message: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="error" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="errorType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="errorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1045</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Lifetime</Task>
+                <Message><![CDATA[
+Get Guest Data warning. Failed to get guest FQDN. Guest may not be running. VM Guid: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="vmGuid" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1100</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>DataDecode</Task>
+                <Message><![CDATA[
+Deserialize guest data started. VM Guid: %1, File: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="vmGuid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="tempFileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1101</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>DataDecode</Task>
+                <Message><![CDATA[
+Deserialize guest data stopped. VM Guid: %1, File: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="vmGuid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="tempFileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
