@@ -5,14 +5,14 @@ import os
 import csvtomd
 
 # This is a special version related to generating STATS
-def convertCsvToMDStats(folderName, windowsName, version, edition, build):
+def convertCsvToMDStats(folderName, windowsName, version, edition, date, build):
     csvReadme = folderName + "/README.csv"
     with open(csvReadme, "r") as f:
         table = csvtomd.csv_to_table(f, ",")
     
     if table:
         with open(folderName + "/README.md", "w") as f:
-            f.write("# " + windowsName + " " + edition + " " + version + " (Build: " + build + ") - ETW Providers\n\n")
+            f.write("# " + windowsName + " " + edition + " " + version  + "(Date: " + date + " - " + "Build: " + build + ") - ETW Providers\n\n")
             f.write(csvtomd.md_table(table, padding=2))
         os.remove(csvReadme)
     else:
@@ -153,7 +153,14 @@ def getNumberOfEventsPerVersion(listOfAllFiles):
             windowsName = "Windows " + fullName[0].split("W")[1]
         version = fullName[1]
         edition = fullName[2]
-        build = ".".join(fullName[3:])
+        try:
+            date = fullName[3][0:4] + "/" + fullName[3][4:6] + "/" + fullName[3][6:8]
+        except:
+            date = ""
+        try:
+            build = fullName[4]
+        except:
+            build = ""
 
         numOfProviders = 0
         with open(i, "r") as f:
@@ -169,13 +176,13 @@ def getNumberOfEventsPerVersion(listOfAllFiles):
                     numOfProviders += 1
                     ff.write("\n")
 
-            convertCsvToMDStats(folderName, windowsName, version, edition, build)
+            convertCsvToMDStats(folderName, windowsName, version, edition, date, build)
 
             #numOfProviders = len(Counter([i.split(",")[0] for i in allevents ]))
-        final_restls.append(windowsName + "," + edition + "," + version + "," + build + "," + str(numOfProviders) + "," + str(numOfEvents))
+        final_restls.append(windowsName + "," + edition + "," + version + "," + date + "," + build + "," + str(numOfProviders) + "," + str(numOfEvents))
 
     with open("ETWEventsList/etw-stats.csv", "w") as fff:
-            fff.write("Windows,Edition/SP,Version,Build,N° Providers, N° Events\n")
+            fff.write("Windows,Edition/SP,Version,Date,Build,N° Providers, N° Events\n")
             for i in final_restls:
                 fff.write(i)
                 fff.write("\n")
