@@ -1,0 +1,200 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-MFH264Enc</Name>
+        <Metadata>
+            <Guid>{2A49DE31-8A5B-4D3A-A904-7FC7409AE90D}</Guid>
+            <ResourceFilePath>C:\Windows\system32\MFH264Enc.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\MFH264Enc.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.19041.1566&amp;FileName=MFH264Enc.dll&amp;FileVer=10.0.19041.1566</HelpLink>
+            <PublisherMessage>Microsoft-Windows-MFH264Enc</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>WINDOWS_MFH264Enc_CHANNEL</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>MFH264Enc_EncodeSession</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>MFH264Enc_TrackSample</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>MFH264Enc_WorkItem</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>MFH264Enc_RateControl</Name>
+                    <Value>4</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>WINDOWS_MFH264Enc_CHANNEL</Channel>
+                <Level>Information</Level>
+                <Task>MFH264Enc_EncodeSession</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EncoderInstance" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Complexity" inType="win:Int32" outType="xs:int"/>
+  <data name="RateCtrlMode" inType="win:Int32" outType="xs:int"/>
+  <data name="ContentType" inType="win:Int32" outType="xs:int"/>
+  <data name="BufferSize" inType="win:Int32" outType="xs:int"/>
+  <data name="AverageBitRate" inType="win:Int32" outType="xs:int"/>
+  <data name="PeakBitRate" inType="win:Int32" outType="xs:int"/>
+  <data name="EntropyMode" inType="win:Int32" outType="xs:int"/>
+  <data name="MultithreadEncodingMode" inType="win:Int32" outType="xs:int"/>
+  <data name="NumberOfWorkerThreads" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>WINDOWS_MFH264Enc_CHANNEL</Channel>
+                <Level>Information</Level>
+                <Task>MFH264Enc_EncodeSession</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EncoderInstance" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>WINDOWS_MFH264Enc_CHANNEL</Channel>
+                <Level>Information</Level>
+                <Task>MFH264Enc_TrackSample</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EncoderInstance" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SampleTime" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>WINDOWS_MFH264Enc_CHANNEL</Channel>
+                <Level>Information</Level>
+                <Task>MFH264Enc_TrackSample</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EncoderInstance" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SampleTime" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>WINDOWS_MFH264Enc_CHANNEL</Channel>
+                <Level>Information</Level>
+                <Task>MFH264Enc_WorkItem</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EncoderInstance" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="TimeStamp" inType="win:Int64" outType="xs:long"/>
+  <data name="Type" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>WINDOWS_MFH264Enc_CHANNEL</Channel>
+                <Level>Information</Level>
+                <Task>MFH264Enc_WorkItem</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EncoderInstance" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="TimeStamp" inType="win:Int64" outType="xs:long"/>
+  <data name="Type" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>WINDOWS_MFH264Enc_CHANNEL</Channel>
+                <Level>Information</Level>
+                <Task>MFH264Enc_RateControl</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EncoderInstance" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="TimeStamp" inType="win:Int64" outType="xs:long"/>
+  <data name="GOPNumber" inType="win:Int32" outType="xs:int"/>
+  <data name="FrameNumber" inType="win:Int32" outType="xs:int"/>
+  <data name="FrameRate" inType="win:Double" outType="xs:double"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>WINDOWS_MFH264Enc_CHANNEL</Channel>
+                <Level>Information</Level>
+                <Task>MFH264Enc_RateControl</Task>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EncoderInstance" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="TimeStamp" inType="win:Int64" outType="xs:long"/>
+  <data name="GOPNumber" inType="win:Int32" outType="xs:int"/>
+  <data name="FrameNumber" inType="win:Int32" outType="xs:int"/>
+  <data name="BitRate" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

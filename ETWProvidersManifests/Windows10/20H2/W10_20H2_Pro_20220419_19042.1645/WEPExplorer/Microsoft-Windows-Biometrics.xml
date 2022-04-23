@@ -1,0 +1,1556 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Biometrics</Name>
+        <Metadata>
+            <Guid>{A0E3D8EA-C34F-4419-A1DB-90435B8B21D0}</Guid>
+            <ResourceFilePath>C:\Windows\System32\wbiosrvc.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\System32\wbiosrvc.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.19041.423&amp;FileName=wbiosrvc.dll&amp;FileVer=10.0.19041.423</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Biometrics</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-Biometrics/Operational</Message>
+                    <Path>Microsoft-Windows-Biometrics/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-Biometrics/Analytic</Message>
+                    <Path>Microsoft-Windows-Biometrics/Analytic</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>WBioSrvc</Message>
+                    <Name>WBioSrvcTask</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>BioCredProv</Message>
+                    <Name>BioCredProvTask</Name>
+                    <Value>2</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>WBioSrvc</Task>
+                <Message><![CDATA[
+The Windows Biometric Service could not verify %13 (%12) using sensor: %1.The operation failed with error: %14.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BiometricSensor" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SensorAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EngineAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StorageAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DatabaseID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SensorMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SensorPool" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsolationLevel" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsolationSensorAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsolationEngineAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsolationStorageAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Username" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>WBioSrvc</Task>
+                <Message><![CDATA[
+The Windows Biometric Service successfully verified %13 (%12) using sensor: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BiometricSensor" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SensorAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EngineAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StorageAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DatabaseID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SensorMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SensorPool" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsolationLevel" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsolationSensorAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsolationEngineAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsolationStorageAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Username" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>WBioSrvc</Task>
+                <Message><![CDATA[
+The Windows Biometric Service could not match %13 (%12) with the sample from sensor: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BiometricSensor" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SensorAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EngineAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StorageAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DatabaseID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SensorMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SensorPool" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsolationLevel" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsolationSensorAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsolationEngineAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsolationStorageAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Username" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>WBioSrvc</Task>
+                <Message><![CDATA[
+The Windows Biometric Service could not complete an identification operation using sensor: %1.The operation failed with error: %12]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BiometricSensor" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SensorAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EngineAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StorageAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DatabaseID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SensorMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SensorPool" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsolationLevel" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsolationSensorAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsolationEngineAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsolationStorageAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>WBioSrvc</Task>
+                <Message><![CDATA[
+The Windows Biometric Service successfully identified %13 (%12) using sensor: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BiometricSensor" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SensorAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EngineAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StorageAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DatabaseID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SensorMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SensorPool" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsolationLevel" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsolationSensorAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsolationEngineAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsolationStorageAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Username" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>WBioSrvc</Task>
+                <Message><![CDATA[
+The Windows Biometric Service could not determine the identity of the sample from sensor: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BiometricSensor" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SensorAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EngineAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StorageAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DatabaseID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SensorMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SensorPool" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsolationLevel" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsolationSensorAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsolationEngineAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsolationStorageAdapter" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>WBioSrvc</Task>
+                <Message><![CDATA[
+The Windows Biometric Service started an enrollment operation using sensor: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BiometricSensor" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SensorAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EngineAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StorageAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DatabaseID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SensorMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SensorPool" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsolationLevel" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsolationSensorAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsolationEngineAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsolationStorageAdapter" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1007</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>WBioSrvc</Task>
+                <Message><![CDATA[
+The Windows Biometric Service encountered an error while processing and updating an enrollment request using sensor: %1.The operation failed with error: %12]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BiometricSensor" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SensorAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EngineAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StorageAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DatabaseID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SensorMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SensorPool" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsolationLevel" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsolationSensorAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsolationEngineAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsolationStorageAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1008</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>WBioSrvc</Task>
+                <Message><![CDATA[
+The Windows Biometric Service is processing an enrollment operation and updating an enrollment using sensor: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BiometricSensor" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SensorAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EngineAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StorageAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DatabaseID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SensorMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SensorPool" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsolationLevel" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsolationSensorAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsolationEngineAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsolationStorageAdapter" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1009</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>WBioSrvc</Task>
+                <Message><![CDATA[
+The Windows Biometric Service failed to enroll %13 (%12) using sensor: %1.The operation failed with error: %14.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BiometricSensor" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SensorAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EngineAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StorageAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DatabaseID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SensorMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SensorPool" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsolationLevel" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsolationSensorAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsolationEngineAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsolationStorageAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Username" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1010</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Information</Level>
+                <Task>WBioSrvc</Task>
+                <Message><![CDATA[
+The Windows Biometric Service successfully enrolled %13 (%12) using sensor: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BiometricSensor" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SensorAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EngineAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StorageAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DatabaseID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SensorMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SensorPool" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsolationLevel" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsolationSensorAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsolationEngineAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsolationStorageAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Username" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1011</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>WBioSrvc</Task>
+                <Message><![CDATA[
+The Windows Biometric Service failed to begin a capture operation using sensor: %1.The operation failed with error: %12]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BiometricSensor" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SensorAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EngineAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StorageAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DatabaseID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SensorMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SensorPool" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsolationLevel" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsolationSensorAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsolationEngineAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsolationStorageAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1012</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>WBioSrvc</Task>
+                <Message><![CDATA[
+The Windows Biometric Service failed to complete a capture operation using sensor: %1.The operation failed with error: %12, reject detail: %13]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BiometricSensor" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SensorAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EngineAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StorageAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DatabaseID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SensorMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SensorPool" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsolationLevel" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsolationSensorAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsolationEngineAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsolationStorageAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="RejectDetail" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1013</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>WBioSrvc</Task>
+                <Message><![CDATA[
+The Windows Biometric Service failed to export data from sensor: %1.The operation failed with error: %12]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BiometricSensor" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SensorAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EngineAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StorageAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DatabaseID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SensorMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SensorPool" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsolationLevel" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsolationSensorAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsolationEngineAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsolationStorageAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1014</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Error</Level>
+                <Task>WBioSrvc</Task>
+                <Message><![CDATA[
+The Windows Biometric Service failed to delete a database record for %13 (%12) on sensor: %1.The operation failed with error: %14.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BiometricSensor" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SensorAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EngineAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StorageAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DatabaseID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SensorMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SensorPool" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsolationLevel" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsolationSensorAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsolationEngineAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsolationStorageAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Username" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1015</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Information</Level>
+                <Task>WBioSrvc</Task>
+                <Message><![CDATA[
+The Windows Biometric Service successfully deleted a database record for %13 (%12) on sensor: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BiometricSensor" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SensorAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EngineAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StorageAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DatabaseID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SensorMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SensorPool" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsolationLevel" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsolationSensorAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsolationEngineAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsolationStorageAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Username" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1016</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>WBioSrvc</Task>
+                <Message><![CDATA[
+The Windows Biometric Service failed to complete a vendor-specific operation for sensor: %1.The command was directed to the biometric unit's "%12" component.The operation failed with error: %15]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BiometricSensor" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SensorAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EngineAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StorageAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DatabaseID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SensorMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SensorPool" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsolationLevel" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsolationSensorAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsolationEngineAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsolationStorageAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Component" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ControlCode" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="OperationStatus" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1017</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>WBioSrvc</Task>
+                <Message><![CDATA[
+The Windows Biometric Service completed a vendor-specific operation for sensor: %1.The command was directed to the biometric unit's "%12" component.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BiometricSensor" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SensorAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EngineAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StorageAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DatabaseID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SensorMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SensorPool" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsolationLevel" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsolationSensorAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsolationEngineAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsolationStorageAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Component" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ControlCode" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="OperationStatus" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1018</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>WBioSrvc</Task>
+                <Message><![CDATA[
+The Windows Biometric Service failed to complete a privileged vendor-specific operation for sensor: %1.The command was directed to the biometric unit's "%12" component.The operation failed with error: %15]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BiometricSensor" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SensorAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EngineAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StorageAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DatabaseID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SensorMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SensorPool" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsolationLevel" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsolationSensorAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsolationEngineAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsolationStorageAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Component" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ControlCode" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="OperationStatus" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1019</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>WBioSrvc</Task>
+                <Message><![CDATA[
+The Windows Biometric Service completed a privileged vendor-specific operation for sensor: %1.The command was directed to the biometric unit's "%12" component.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BiometricSensor" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SensorAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EngineAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StorageAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DatabaseID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SensorMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SensorPool" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsolationLevel" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsolationSensorAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsolationEngineAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsolationStorageAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Component" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ControlCode" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="OperationStatus" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1020</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>WBioSrvc</Task>
+                <Message><![CDATA[
+The Windows Biometric Service cannot complete a request because biometric operations are disabled by current system policy.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1021</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>WBioSrvc</Task>
+                <Message><![CDATA[
+The Windows Biometric Service cannot complete a request because Terminal Server client sessions are not allowed to access the System sensor pool.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1100</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Information</Level>
+                <Task>WBioSrvc</Task>
+                <Message><![CDATA[
+The Windows Biometric Service failed to load an adapter binary: %1.The operation failed with error: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ModulePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1101</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Information</Level>
+                <Task>WBioSrvc</Task>
+                <Message><![CDATA[
+The Windows Biometric Service failed to load an adapter binary: %1.The module's "Force Integrity" flag was not set.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ModulePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1102</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Information</Level>
+                <Task>WBioSrvc</Task>
+                <Message><![CDATA[
+The Windows Biometric Service failed to load an adapter binary: %1.The module's "%2" interface is not valid.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ModulePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Component" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1103</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Information</Level>
+                <Task>WBioSrvc</Task>
+                <Message><![CDATA[
+The Windows Biometric Service failed to open sensor: %1.The operation failed with error: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BiometricSensor" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1104</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Information</Level>
+                <Task>WBioSrvc</Task>
+                <Message><![CDATA[
+The Windows Biometric Service failed to set the mode of sensor: %1.The operation failed with error: %12See the "Details" pane for information about the failing configuration.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BiometricSensor" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SensorAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EngineAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StorageAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DatabaseID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SensorMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SensorPool" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsolationLevel" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsolationSensorAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsolationEngineAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsolationStorageAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1105</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Information</Level>
+                <Task>WBioSrvc</Task>
+                <Message><![CDATA[
+The Windows Biometric Service failed to initialize an adapter binary: %1.The module's "%12" initialization routine failed with error: %13See the "Details" pane for information about the failing configuration.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BiometricSensor" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SensorAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EngineAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StorageAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DatabaseID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SensorMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SensorPool" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsolationLevel" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsolationSensorAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsolationEngineAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsolationStorageAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Component" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1106</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Information</Level>
+                <Task>WBioSrvc</Task>
+                <Message><![CDATA[
+The Windows Biometric Service detected a missing or invalid biometric database configuration for sensor: %1.The operation failed with error: %12See the "Details" pane for information about the failing configuration.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BiometricSensor" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SensorAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EngineAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StorageAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DatabaseID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SensorMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SensorPool" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsolationLevel" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsolationSensorAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsolationEngineAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsolationStorageAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1107</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Information</Level>
+                <Task>WBioSrvc</Task>
+                <Message><![CDATA[
+The Windows Biometric Service encountered an error while opening the database associated with sensor: %1.The operation failed with error: %12See the "Details" pane for information about the failing configuration.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BiometricSensor" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SensorAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EngineAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StorageAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DatabaseID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SensorMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SensorPool" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsolationLevel" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsolationSensorAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsolationEngineAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsolationStorageAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1108</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>WBioSrvc</Task>
+                <Message><![CDATA[
+The Windows Biometric Service successfully created a Biometric Unit for sensor: %1The sensor's mode is "%6," its pool-type is "%7," and it's isolated in a "%8" process.See the "Details" pane for additional information about the sensor's new configuration.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BiometricSensor" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SensorAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EngineAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StorageAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DatabaseID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SensorMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SensorPool" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsolationLevel" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsolationSensorAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsolationEngineAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsolationStorageAdapter" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1109</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Information</Level>
+                <Task>WBioSrvc</Task>
+                <Message><![CDATA[
+The Windows Biometric Service failed to configure a Biometric Unit for sensor: %1.The operation failed with error: %12See the "Details" pane for information about the failing configuration.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BiometricSensor" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SensorAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EngineAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StorageAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DatabaseID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SensorMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SensorPool" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsolationLevel" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsolationSensorAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsolationEngineAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsolationStorageAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1110</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Information</Level>
+                <Task>WBioSrvc</Task>
+                <Message><![CDATA[
+The Windows Biometric Service failed to create a Biometric Unit for sensor: %1.The driver installation package has missing or incorrect configuration values. Contact your PC support personnel for assistance.The operation failed with error: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BiometricSensor" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1111</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Information</Level>
+                <Task>WBioSrvc</Task>
+                <Message><![CDATA[
+The Windows Biometric Service failed to create a Biometric Unit for sensor: %1.The operation failed with error: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BiometricSensor" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1112</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Information</Level>
+                <Task>WBioSrvc</Task>
+                <Message><![CDATA[
+The Windows Biometric Service failed to complete the calibration setup protocol: %1.The "%12" failed with error: %13See the "Details" pane for information about the failing configuration.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BiometricSensor" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SensorAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EngineAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StorageAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DatabaseID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SensorMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SensorPool" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsolationLevel" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsolationSensorAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsolationEngineAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsolationStorageAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Component" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1113</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Information</Level>
+                <Task>WBioSrvc</Task>
+                <Message><![CDATA[
+The Windows Biometric Service failed to load an adapter binary: %1.The module was not properly signed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ModulePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1114</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Information</Level>
+                <Task>WBioSrvc</Task>
+                <Message><![CDATA[
+The Windows Biometric Service failed to transfer private sensor type information to the matching engine: %1.The "%12" failed with error: %13See the "Details" pane for information about the failing configuration.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BiometricSensor" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SensorAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EngineAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StorageAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DatabaseID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SensorMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SensorPool" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsolationLevel" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsolationSensorAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsolationEngineAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsolationStorageAdapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Component" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1400</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>BioCredProv</Task>
+                <Message><![CDATA[
+The Windows Fingerprint Credential Provider could not log %1 on because the stored credential was invalid.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Username" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1401</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Error</Level>
+                <Task>BioCredProv</Task>
+                <Message><![CDATA[
+The Windows Fingerprint Credential Provider failed to enumerate its tile.The operation failed with error: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1402</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>BioCredProv</Task>
+                <Message><![CDATA[
+The Windows Fingerprint Credential Provider could not log %1 on because the user does not have a credential stored for biometric logon.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Username" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1403</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Error</Level>
+                <Task>BioCredProv</Task>
+                <Message><![CDATA[
+The Windows Fingerprint Credential Provider has disabled biometric authentication.The operation failed with error: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1500</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>BioCredProv</Task>
+                <Message><![CDATA[
+The Windows Biometric Credential Manager successfully stored a credential for %2 (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Username" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1501</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Information</Level>
+                <Task>BioCredProv</Task>
+                <Message><![CDATA[
+The Windows Biometric Credential Manager failed to store a credential for %2 (%1) due to the caller having insufficient privileges.The operation failed with error: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Username" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1502</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Information</Level>
+                <Task>BioCredProv</Task>
+                <Message><![CDATA[
+The Windows Biometric Credential Manager failed to store a credential because the Windows Fingerprint Credential Provider is disabled.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1503</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Information</Level>
+                <Task>BioCredProv</Task>
+                <Message><![CDATA[
+The Windows Biometric Credential Manager failed to store a credential.The operation failed with error: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1504</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>BioCredProv</Task>
+                <Message><![CDATA[
+The Windows Biometric Credential Manager successfully removed a credential for %2 (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Username" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1505</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Information</Level>
+                <Task>BioCredProv</Task>
+                <Message><![CDATA[
+The Windows Biometric Credential Manager failed to remove a credential for %2 (%1) due to the caller having insufficient privileges.The operation failed with error: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Username" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1506</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Information</Level>
+                <Task>BioCredProv</Task>
+                <Message><![CDATA[
+The Windows Biometric Credential Manager failed to remove a credential because the Windows Fingerprint Credential Provider is disabled.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1507</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Information</Level>
+                <Task>BioCredProv</Task>
+                <Message><![CDATA[
+The Windows Biometric Credential Manager failed to remove a credential.The operation failed with error: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1508</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>BioCredProv</Task>
+                <Message><![CDATA[
+The Windows Biometric Credential Manager successfully retrieved the credential state for %2 (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Username" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1509</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Information</Level>
+                <Task>BioCredProv</Task>
+                <Message><![CDATA[
+The Windows Biometric Credential Manager failed to retrieve the credential state for %2 (%1) due to the caller having insufficient privileges.The operation failed with error: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Username" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1510</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Information</Level>
+                <Task>BioCredProv</Task>
+                <Message><![CDATA[
+The Windows Biometric Credential Manager failed to retrieve the credential state because the Windows Fingerprint Credential Provider is disabled.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1511</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Information</Level>
+                <Task>BioCredProv</Task>
+                <Message><![CDATA[
+The Windows Biometric Credential Manager failed to retrieve the state of a credential.The operation failed with error: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1512</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>BioCredProv</Task>
+                <Message><![CDATA[
+The Windows Biometric Credential Manager successfully switched to user %2 (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Username" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1513</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Information</Level>
+                <Task>BioCredProv</Task>
+                <Message><![CDATA[
+The Windows Biometric Credential Manager failed to switch to user %2 (%1) due to the caller having insufficient privileges.The operation failed with error: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Username" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1514</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Information</Level>
+                <Task>BioCredProv</Task>
+                <Message><![CDATA[
+The Windows Biometric Credential Manager failed to switch to the specified user because the Windows Fingerprint Credential Provider is disabled.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1515</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Information</Level>
+                <Task>BioCredProv</Task>
+                <Message><![CDATA[
+The Windows Biometric Credential Manager failed to switch to user %2 (%1) because they are already the interactive user.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Username" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1516</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Information</Level>
+                <Task>BioCredProv</Task>
+                <Message><![CDATA[
+The Windows Biometric Credential Manager failed to switch to the specified user.The operation failed with error: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1600</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Information</Level>
+                <Task>WBioSrvc</Task>
+                <Message><![CDATA[
+The Windows Biometric Service failed to start its secure component.The operation failed with error: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1601</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Information</Level>
+                <Task>WBioSrvc</Task>
+                <Message><![CDATA[
+The Windows Biometric Service successfully started its secure component.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1605</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Information</Level>
+                <Task>WBioSrvc</Task>
+                <Message><![CDATA[
+The Windows Biometric Service secure component successfully authorized user %2 (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Username" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1606</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Information</Level>
+                <Task>WBioSrvc</Task>
+                <Message><![CDATA[
+The Windows Biometric Service secure component successfully redeemed an authorization for user %2 (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Username" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1607</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Information</Level>
+                <Task>WBioSrvc</Task>
+                <Message><![CDATA[
+The Windows Biometric Service secure componets successfully established a secure connection with sensor: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BiometricSensor" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1608</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Information</Level>
+                <Task>WBioSrvc</Task>
+                <Message><![CDATA[
+The Windows Biometric Service secure componets successfully reestablished a secure connection with sensor: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BiometricSensor" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1609</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Error</Level>
+                <Task>WBioSrvc</Task>
+                <Message><![CDATA[
+The Windows Biometric Service secure component failed to establish a secure connection with sensor: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BiometricSensor" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1610</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Error</Level>
+                <Task>WBioSrvc</Task>
+                <Message><![CDATA[
+The Windows Biometric Service secure component failed to delete an authorized enrollment for %3 (%2) on sensor: %1.The operation failed with error: %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BiometricSensor" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Username" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1611</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Information</Level>
+                <Task>WBioSrvc</Task>
+                <Message><![CDATA[
+The Windows Biometric Service secure component successfully deleted an authorized enrollment for %3 (%2) on sensor: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BiometricSensor" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Username" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1700</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Information</Level>
+                <Task>WBioSrvc</Task>
+                <Message><![CDATA[
+The Windows Biometric Service successfully protected data for user %2 (%1).Type: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Username" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1701</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Error</Level>
+                <Task>WBioSrvc</Task>
+                <Message><![CDATA[
+The Windows Biometric Service failed to protect data for user %2 (%1).Type: %3The operation failed with error: %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Username" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1702</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Information</Level>
+                <Task>WBioSrvc</Task>
+                <Message><![CDATA[
+The Windows Biometric Service successfully unprotected data for user %2 (%1).Type: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Username" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1703</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Operational</Channel>
+                <Level>Error</Level>
+                <Task>WBioSrvc</Task>
+                <Message><![CDATA[
+The Windows Biometric Service failed to unprotect data for user %2 (%1).Type: %3The operation failed with error: %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Username" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>WBioSrvc</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>WBioSrvc</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>WBioSrvc</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>WBioSrvc</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>WBioSrvc</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>WBioSrvc</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>WBioSrvc</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7007</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>WBioSrvc</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7008</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>WBioSrvc</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7009</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>WBioSrvc</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7010</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>WBioSrvc</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7011</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>WBioSrvc</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7012</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>WBioSrvc</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7013</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Biometrics/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>WBioSrvc</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
