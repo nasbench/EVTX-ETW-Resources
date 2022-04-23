@@ -40,7 +40,8 @@ def parse_etw_xml(file_path):
     # This is used to skip "empty" ETW manifest
     skip = False
     root = ET.parse(file_path).getroot()
-
+    print(file_path)
+    print(root)
     if root[0][0].tag == "Name":
         provider_name = root[0][0].text
     else:
