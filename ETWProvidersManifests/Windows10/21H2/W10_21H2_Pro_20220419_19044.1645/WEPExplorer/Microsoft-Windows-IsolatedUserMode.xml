@@ -1,0 +1,138 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-IsolatedUserMode</Name>
+        <Metadata>
+            <Guid>{73A33AB2-1966-4999-8ADD-868C41415269}</Guid>
+            <ResourceFilePath>C:\Windows\system32\iumbase.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\iumbase.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.19041.1&amp;FileName=iumbase.dll&amp;FileVer=10.0.19041.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-IsolatedUserMode</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>0</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ms:ReservedKeyword44</Name>
+                    <Value>17592186044416</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ms:Telemetry</Name>
+                    <Value>35184372088832</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ms:Measures</Name>
+                    <Value>70368744177664</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ms:CriticalData</Name>
+                    <Value>140737488355328</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Secure Trustlet %4 Id %1 and Pid %2 started with status %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TrustletIdentity" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="NormalProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="ImageName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Secure Trustlet Id %1 and Pid %2 stopped with status %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TrustletIdentity" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="NormalProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Secure Kernel started with status %1 and flags %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Secure Trustlet Id %1 and Pid %2 failed to start with status %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TrustletIdentity" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="NormalProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Secure Trustlet %4 Id %1 and Pid %2 started with status %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TrustletIdentity" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="NormalProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="ImageName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
