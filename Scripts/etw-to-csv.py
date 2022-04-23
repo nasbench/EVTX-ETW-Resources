@@ -40,12 +40,13 @@ def parse_etw_xml(file_path):
     # This is used to skip "empty" ETW manifest
     skip = False
     root = ET.parse(file_path).getroot()
-    print(file_path)
-    print(root)
-    if root[0][0].tag == "Name":
-        provider_name = root[0][0].text
-    else:
-        provider_name = ""
+    try:
+        if root[0][0].tag == "Name":
+            provider_name = root[0][0].text
+        else:
+            provider_name = ""
+    except IndexError:
+        print(f"Name - IndexError while reading the file : {file_path}")
 
     try:
         if root[0][2].tag == "EventMetadata":
@@ -53,6 +54,7 @@ def parse_etw_xml(file_path):
         else:
             eventMetaData = ""
     except IndexError:
+            print(f"EventMetaData - IndexError while reading the file : {file_path}")
             skip = True
 
     if not skip:
