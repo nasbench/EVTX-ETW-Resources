@@ -1,0 +1,117 @@
+<Providers>
+    <Provider>
+        <Name>Splashtop-Splashtop Business app-Status</Name>
+        <Metadata>
+            <Guid>{66A2EA53-FC6C-42E5-9176-18749AB2CA12}</Guid>
+            <ResourceFilePath>C:\ProgramData\Splashtop\Common\Event\stevt_src_b.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\ProgramData\Splashtop\Common\Event\stevt_src_b.dll</MessageFilePath>
+            <HelpLink></HelpLink>
+            <PublisherMessage>Splashtop-Splashtop Business app-Status</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Splashtop-Splashtop Business app-Status/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>30000</Id>
+                <Version>0</Version>
+                <Channel>Splashtop-Splashtop Business app-Status/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Splashtop Business app has been opened.
+App version: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Version_number" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30001</Id>
+                <Version>0</Version>
+                <Channel>Splashtop-Splashtop Business app-Status/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Splashtop Business app has been closed.
+App version: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Version_number" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30100</Id>
+                <Version>0</Version>
+                <Channel>Splashtop-Splashtop Business app-Status/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A user logged in Splashtop Business app.
+App version: %1
+User's Splashtop account: %2
+Error code: N/A]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Version_number" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SPID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30101</Id>
+                <Version>0</Version>
+                <Channel>Splashtop-Splashtop Business app-Status/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A user logged in Splashtop Business app.
+App version: %1
+User's Splashtop account: %2
+Error code: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Version_number" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SPID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error_code" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30102</Id>
+                <Version>0</Version>
+                <Channel>Splashtop-Splashtop Business app-Status/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A user logged out of Splashtop Business app.
+App version: %1
+User's Splashtop account: %2
+Error code: N/A]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Version_number" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SPID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

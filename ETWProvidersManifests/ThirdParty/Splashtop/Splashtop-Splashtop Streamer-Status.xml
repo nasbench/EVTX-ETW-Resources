@@ -1,0 +1,223 @@
+<Providers>
+    <Provider>
+        <Name>Splashtop-Splashtop Streamer-Status</Name>
+        <Metadata>
+            <Guid>{66A2EA53-FC6C-42E5-9176-18749AB2CA14}</Guid>
+            <ResourceFilePath>C:\ProgramData\Splashtop\Common\Event\stevt_srs.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\ProgramData\Splashtop\Common\Event\stevt_srs.dll</MessageFilePath>
+            <HelpLink></HelpLink>
+            <PublisherMessage>Splashtop-Splashtop Streamer-Status</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Splashtop-Splashtop Streamer-Status/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Splashtop-Splashtop Streamer-Status/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Splashtop streamer has been opened.
+App version: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Version_number" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Splashtop-Splashtop Streamer-Status/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Splashtop streamer has been closed.
+App version: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Version_number" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Channel>Splashtop-Splashtop Streamer-Status/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The streamer was logged in.
+App version: %1
+Splashtop account: %2
+Server Info: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Version_number" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SPID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FQDN" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Channel>Splashtop-Splashtop Streamer-Status/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The streamer was logged out.
+App version: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Version_number" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>200</Id>
+                <Version>0</Version>
+                <Channel>Splashtop-Splashtop Streamer-Status/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+This computer was added to a Splashtop team.
+App version: %1
+Team owner: %2
+Server Info: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Version_number" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SPID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FQDN" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>201</Id>
+                <Version>0</Version>
+                <Channel>Splashtop-Splashtop Streamer-Status/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+This computer was removed from a Splashtop team.
+App version: %1
+Team owner: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Version_number" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SPID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>300</Id>
+                <Version>0</Version>
+                <Channel>Splashtop-Splashtop Streamer-Status/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Splashtop streamer went online.
+App version: %1
+Server Info: %2
+RMM ID: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Version_number" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FQDN" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RMM_ID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>301</Id>
+                <Version>0</Version>
+                <Channel>Splashtop-Splashtop Streamer-Status/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Splashtop streamer went offline.
+App version: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Version_number" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>400</Id>
+                <Version>0</Version>
+                <Channel>Splashtop-Splashtop Streamer-Status/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A remote user has renamed the computer.
+App version: %1
+From: %2
+To: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Version_number" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Previous_SRS_Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SRS_Name" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>401</Id>
+                <Version>0</Version>
+                <Channel>Splashtop-Splashtop Streamer-Status/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A remote user has restarted the streamer.
+App version: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Version_number" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>402</Id>
+                <Version>0</Version>
+                <Channel>Splashtop-Splashtop Streamer-Status/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A remote user has triggered Normal Reboot.
+App version: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Version_number" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>403</Id>
+                <Version>0</Version>
+                <Channel>Splashtop-Splashtop Streamer-Status/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A remote user has triggered Safe mode reboot.
+App version: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Version_number" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

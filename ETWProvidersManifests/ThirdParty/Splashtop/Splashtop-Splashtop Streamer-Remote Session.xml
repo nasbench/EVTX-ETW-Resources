@@ -1,0 +1,388 @@
+<Providers>
+    <Provider>
+        <Name>Splashtop-Splashtop Streamer-Remote Session</Name>
+        <Metadata>
+            <Guid>{66A2EA53-FC6C-42E5-9176-18749AB2CA11}</Guid>
+            <ResourceFilePath>C:\ProgramData\Splashtop\Common\Event\stevt_srs.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\ProgramData\Splashtop\Common\Event\stevt_srs.dll</MessageFilePath>
+            <HelpLink></HelpLink>
+            <PublisherMessage>Splashtop-Splashtop Streamer-Remote Session</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Splashtop-Splashtop Streamer-Remote Session/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1000</Id>
+                <Version>0</Version>
+                <Channel>Splashtop-Splashtop Streamer-Remote Session/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A Splashtop remote session (%1) has started to this computer by %2 from the device %3.
+App version: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Session_ID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SPID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SRC_Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Version_number" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>Splashtop-Splashtop Streamer-Remote Session/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The Splashtop remote session (%1) has ended. The remote session lasted %2.
+App version: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Session_ID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Duration_Time" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Version_number" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1100</Id>
+                <Version>0</Version>
+                <Channel>Splashtop-Splashtop Streamer-Remote Session/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A file was transferred during the Splashtop remote session (%1).
+App version: %2
+File name: %3
+From: %4 (%5)
+To: %6 (%7)
+Error code: N/A]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Session_ID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Version_number" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="File_Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SRS_Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SRS_Path" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SRC_Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SRC_Path" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1101</Id>
+                <Version>0</Version>
+                <Channel>Splashtop-Splashtop Streamer-Remote Session/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A file was transferred during the Splashtop remote session (%1).
+App version: %2
+File name: %3
+From: %4 (%5)
+To: %6 (%7)
+Error cod: N/A]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Session_ID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Version_number" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="File_Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SRC_Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SRC_Path" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SRS_Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SRS_Path" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1110</Id>
+                <Version>0</Version>
+                <Channel>Splashtop-Splashtop Streamer-Remote Session/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A file was transferred during the Splashtop remote session (%1).
+App version: %2
+File name: %3
+From: %4 (%5)
+To: %6 (%7)
+Error code: %8]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Session_ID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Version_number" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="File_Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SRS_Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SRS_Path" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SRC_Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SRC_Path" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error_code" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1111</Id>
+                <Version>0</Version>
+                <Channel>Splashtop-Splashtop Streamer-Remote Session/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A file was transferred during the Splashtop remote session (%1).
+App version: %2
+File name: %3
+From: %4 (%5)
+To: %6 (%7)
+Error code: %8]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Session_ID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Version_number" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="File_Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SRC_Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SRC_Path" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SRS_Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SRS_Path" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error_code" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1200</Id>
+                <Version>0</Version>
+                <Channel>Splashtop-Splashtop Streamer-Remote Session/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The user %1 enabled blank Screen during the Splashtop remote session (%2).
+App version: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SPID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Session_ID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Version_number" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1201</Id>
+                <Version>0</Version>
+                <Channel>Splashtop-Splashtop Streamer-Remote Session/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The user %1 disabled blank Screen during the Splashtop remote session (%2).
+App version: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SPID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Session_ID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Version_number" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1300</Id>
+                <Version>0</Version>
+                <Channel>Splashtop-Splashtop Streamer-Remote Session/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The user %1 triggered Normal Reboot during the Splashtop remote session (%2).
+App version: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SPID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Session_ID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Version_number" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1310</Id>
+                <Version>0</Version>
+                <Channel>Splashtop-Splashtop Streamer-Remote Session/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The user %1 triggered Safe Mode Reboot during the Splashtop remote session (%2).
+App version: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SPID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Session_ID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Version_number" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1500</Id>
+                <Version>0</Version>
+                <Channel>Splashtop-Splashtop Streamer-Remote Session/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The user %1 enabled Lock Keyboard and Mouse during the Splashtop remote session (%2).
+App version: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SPID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Session_ID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Version_number" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1501</Id>
+                <Version>0</Version>
+                <Channel>Splashtop-Splashtop Streamer-Remote Session/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The user %1 disabled Lock Keyboard and Mouse during the Splashtop remote session (%2).
+App version: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SPID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Session_ID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Version_number" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1600</Id>
+                <Version>0</Version>
+                <Channel>Splashtop-Splashtop Streamer-Remote Session/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The user %1 has changed to a different session during the Splashtop remote session (%2).
+App version: %3
+To: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SPID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Session_ID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Version_number" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Terminal_Session_ID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1700</Id>
+                <Version>0</Version>
+                <Channel>Splashtop-Splashtop Streamer-Remote Session/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The user %1 enabled Device Redirection during the Splashtop remote session (%2).
+App version: %3
+Source: %4
+
+Device info
+Product name: %5 (%6)
+Manufacturer: %7 (%8)
+Serial number: %9
+VendorID: %10
+ProductID: %11
+Class type: %12 (%13)
+Sub-class type: %14 (%15)
+Protocol: %16 (%17)
+Device version: %18
+Usb version: %19]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SPID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Session_ID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Version_number" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Reason" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Product_Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Mounted_Product_Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Manufacturer" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Mounted_Manufacturer" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Serial_Numver" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Vendor_ID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Product_ID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Class_Type" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Mounted_Class_Type" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SubClass_Type" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Mounted_SubClass_Type" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Protocol" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Mounted_Protocol" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Device_Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="USB_Version" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1701</Id>
+                <Version>0</Version>
+                <Channel>Splashtop-Splashtop Streamer-Remote Session/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The user %1 disabled Device Redirection during the Splashtop remote session (%2).
+App version: %3
+Source: %4
+
+Device info
+Product name: %5 (%6)
+Manufacturer: %7 (%8)
+Serial number: %9
+VendorID: %10
+ProductID: %11
+Class type: %12 (%13)
+Sub-class type: %14 (%15)
+Protocol: %16 (%17)
+Device version: %18
+Usb version: %19]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SPID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Session_ID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Version_number" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Reason" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Product_Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Mounted_Product_Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Manufacturer" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Mounted_Manufacturer" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Serial_Numver" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Vendor_ID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Product_ID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Class_Type" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Mounted_Class_Type" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SubClass_Type" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Mounted_SubClass_Type" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Protocol" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Mounted_Protocol" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Device_Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="USB_Version" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1710</Id>
+                <Version>0</Version>
+                <Channel>Splashtop-Splashtop Streamer-Remote Session/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The user %1 enabled Remote Microphone during the Splashtop remote session (%2).
+App version: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SPID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Session_ID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Version_number" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
