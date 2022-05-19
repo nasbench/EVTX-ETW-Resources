@@ -1,0 +1,365 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-ZTraceMaps</Name>
+        <Metadata>
+            <Guid>{B865B57B-BDDA-4E1D-A2C8-ADFA69FE6AB9}</Guid>
+            <ResourceFilePath>%windir%\system32\ZTrace_Maps.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%windir%\system32\ZTrace_Maps.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.22000.653&amp;FileName=ZTrace_Maps.dll&amp;FileVer=10.0.22000.653</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-ZTraceMaps/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-ZTraceMaps/Function</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Debug</Message>
+                    <Name>Debug</Name>
+                    <Value>1</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1050</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ZTraceMaps/Function</Channel>
+                <Level>Error</Level>
+                <Keyword>Debug</Keyword>
+                <Message><![CDATA[
+[Z!O] %2: originated: %1 (%3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:Int32" outType="win:Hresult"/>
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Line" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1051</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ZTraceMaps/Function</Channel>
+                <Level>Error</Level>
+                <Keyword>Debug</Keyword>
+                <Message><![CDATA[
+[Z!O] %2@%3: originated: %1 (%4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:Int32" outType="win:Hresult"/>
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="This" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Line" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1052</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ZTraceMaps/Function</Channel>
+                <Level>Error</Level>
+                <Keyword>Debug</Keyword>
+                <Message><![CDATA[
+[Z!P] %2: failed: %1 (%3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:Int32" outType="win:Hresult"/>
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Line" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1053</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ZTraceMaps/Function</Channel>
+                <Level>Error</Level>
+                <Keyword>Debug</Keyword>
+                <Message><![CDATA[
+[Z!P] %2@%3: failed: %1 (%4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:Int32" outType="win:Hresult"/>
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="This" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Line" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1054</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ZTraceMaps/Function</Channel>
+                <Level>Warning</Level>
+                <Keyword>Debug</Keyword>
+                <Message><![CDATA[
+      %2: ignored: %1 (%3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:Int32" outType="win:Hresult"/>
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Line" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1055</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ZTraceMaps/Function</Channel>
+                <Level>Warning</Level>
+                <Keyword>Debug</Keyword>
+                <Message><![CDATA[
+      %2@%3: ignored: %1 (%4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:Int32" outType="win:Hresult"/>
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="This" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Line" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1061</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ZTraceMaps/Operational</Channel>
+                <Level>Error</Level>
+                <Keyword>Debug</Keyword>
+                <Message><![CDATA[
+[Z!E] %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MyMessage" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1062</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ZTraceMaps/Operational</Channel>
+                <Level>Error</Level>
+                <Keyword>Debug</Keyword>
+                <Message><![CDATA[
+[Z!E] %1: %2 (%3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Message" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Line" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1063</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ZTraceMaps/Operational</Channel>
+                <Level>Error</Level>
+                <Keyword>Debug</Keyword>
+                <Message><![CDATA[
+[Z!E] %1@%3: %2 (%4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Message" inType="win:AnsiString" outType="xs:string"/>
+  <data name="This" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Line" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1071</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ZTraceMaps/Operational</Channel>
+                <Level>Warning</Level>
+                <Keyword>Debug</Keyword>
+                <Message><![CDATA[
+[Z!W] %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MyMessage" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1072</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ZTraceMaps/Operational</Channel>
+                <Level>Warning</Level>
+                <Keyword>Debug</Keyword>
+                <Message><![CDATA[
+[Z!W] %1: %2 (%3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Message" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Line" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ZTraceMaps/Operational</Channel>
+                <Level>Warning</Level>
+                <Keyword>Debug</Keyword>
+                <Message><![CDATA[
+[Z!W] %1@%3: %2 (%4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Message" inType="win:AnsiString" outType="xs:string"/>
+  <data name="This" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Line" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1081</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ZTraceMaps/Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>Debug</Keyword>
+                <Message><![CDATA[
+      %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MyMessage" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1082</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ZTraceMaps/Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>Debug</Keyword>
+                <Message><![CDATA[
+      %1: %2 (%3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Message" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Line" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1083</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ZTraceMaps/Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>Debug</Keyword>
+                <Message><![CDATA[
+      %1@%3: %2 (%4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Message" inType="win:AnsiString" outType="xs:string"/>
+  <data name="This" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Line" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1091</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ZTraceMaps/Operational</Channel>
+                <Level>Verbose</Level>
+                <Keyword>Debug</Keyword>
+                <Message><![CDATA[
+      %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MyMessage" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1092</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ZTraceMaps/Operational</Channel>
+                <Level>Verbose</Level>
+                <Keyword>Debug</Keyword>
+                <Message><![CDATA[
+      %1: %2 (%3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Message" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Line" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1093</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ZTraceMaps/Operational</Channel>
+                <Level>Verbose</Level>
+                <Keyword>Debug</Keyword>
+                <Message><![CDATA[
+      %1@%3: %2 (%4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Message" inType="win:AnsiString" outType="xs:string"/>
+  <data name="This" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Line" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1100</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ZTraceMaps/Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>Debug</Keyword>
+                <Message><![CDATA[
+[ZZZ] %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MyMessage" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

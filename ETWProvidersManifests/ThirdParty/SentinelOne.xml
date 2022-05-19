@@ -1,0 +1,1698 @@
+<Providers>
+    <Provider>
+        <Name>SentinelOne</Name>
+        <Metadata>
+            <Guid>{7557185D-243A-489D-9DFB-191262F284D8}</Guid>
+            <ResourceFilePath>C:\Windows\System32\drivers\SentinelOne\21.6.5.1072\Events.dll</ResourceFilePath>
+            <ParameterFilePath>C:\Windows\System32\drivers\SentinelOne\21.6.5.1072\Events.dll</ParameterFilePath>
+            <MessageFilePath>C:\Windows\System32\drivers\SentinelOne\21.6.5.1072\Events.dll</MessageFilePath>
+            <HelpLink></HelpLink>
+            <PublisherMessage>SentinelOne</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>SentinelOne/Operational</Message>
+                    <Path>SentinelOne/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>SentinelOne/Firewall</Message>
+                    <Path>SentinelOne/Firewall</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Critical</Message>
+                    <Name>Critical</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>Administrative</Message>
+                    <Name>Administrative</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message>Extended information</Message>
+                    <Name>ExtendedInformation</Name>
+                    <Value>3</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Windows Agent is starting in %3 mode. Agent version %1, running on Windows %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProductVersion" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="WindowsVersion" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AgentMode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Policy was changed in the Console:
+
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  ]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Policy was changed with override commands:
+
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  ]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Failed to register with management because it no longer exists. Not retrying.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Failed to register with management: %1 (%2). Retrying in %3 seconds.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Reason" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="xs:int"/>
+  <data name="RetrySeconds" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Threat remediation: Failed to delete file %1 because it was already deleted.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FilePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Threat remediation: Failed to delete file %1.
+Error: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FilePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Threat remediation: Failed to rename file %1 to %2 because the file was deleted.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SourceFilePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DestinationFilePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Threat remediation: Failed to rename file %1 to %2 because the file's parent directory does not exist.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SourceFilePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DestinationFilePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Threat remediation: Failed to rename file %1 to %2 because the destination path already exists.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SourceFilePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DestinationFilePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Threat remediation: Failed to rename file %1 to %2.
+Error: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SourceFilePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DestinationFilePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Threat remediation: Failed to restore file %1 to timestamp %2 because no snapshots were found up to the desired period.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FilePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DesiredTimestamp" inType="win:FILETIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Threat remediation: Failed to restore file %1 to timestamp %2 because it is being used by another process.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FilePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DesiredTimestamp" inType="win:FILETIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Threat remediation: Failed to restore file %1 to timestamp %2 because access was denied.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FilePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DesiredTimestamp" inType="win:FILETIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Threat remediation: Failed to restore registry value (key: %1, value: %2) because it does not exist.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RegistryKeyPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Threat mitigation: Failed to kill malicious processes because the true context does not exist.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Threat mitigation completion after reboot requested another reboot.
+True Context ID: %1, Mitigation action: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TrueContextID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MitigationAction" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Threat mitigation: Not killing process %1 (Path: %2, Process ID: %3) due to relation %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessID" inType="win:UInt32" outType="win:PID"/>
+  <data name="Relation" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Threat mitigation: Cannot kill process %1 (Path: %2, Process ID: %3) because it is a core OS process.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessID" inType="win:UInt32" outType="win:PID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Threat mitigation: Cannot kill process %1 (Path: %2, Process ID: %3) because it is signed by SentinelOne.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessID" inType="win:UInt32" outType="win:PID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Threat mitigation: Cannot kill process %1 (Path: %2, Process ID: %3) due to an unknown error.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessID" inType="win:UInt32" outType="win:PID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>22</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Threat mitigation: Cannot kill threads of process %1 (Path: %2, Process ID: %3) due to an unknown error.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessID" inType="win:UInt32" outType="win:PID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>23</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Threat mitigation: Failed to quarantine file %1 because the file is remote.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FilePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>24</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Threat mitigation: Failed to quarantine file %1 because the file belongs to a core OS process.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FilePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Threat mitigation: Failed to scramble file %1.
+Error: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FilePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>26</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Threat mitigation: skipping quarantine of file %1 because the file was already quarantined by another threat mitigation.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FilePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>27</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Threat mitigation: Failed to quarantine file %1 because the file does not exist.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FilePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>28</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Threat mitigation: A reboot is required to complete the quarantine of file %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FilePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>29</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Threat mitigation: Failed to quarantine a file.
+Error: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Network quarantine failed.
+Error: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>31</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Malware detected!
+
+True Context ID: %1
+Name: %2
+Path: %3
+Detection engine: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TrueContextID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DetectionEngine" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Mitigation report
+
+True Context ID: %1
+Action: %2
+Result: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TrueContextID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Action" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Result" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>33</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Failed to unquarantine file %1 because the file cannot be found]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FilePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>34</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Unquarantine: Failed to restore file times for %1.
+Error: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FilePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>35</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Failed to unquarantine files affected by threat of True Context ID %1.
+Error: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TrueContextID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>36</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Network unquarantine failed.
+Error: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>37</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Policy not changed. Verification key not provided. Get the Agent passphrase and enter it with the -k flag.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>38</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Policy not changed. The provided verification key is incorrect.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>39</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Policy not changed. A parameter cannot be both set and undefined.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>40</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Policy not changed. Parameter was not provided.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>41</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Policy not changed. The value %2 is not valid for %1: invalid URL.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>42</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Policy not changed. The value %2 is not valid. Remove the slash from the end of the URL.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>43</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Policy not changed. The provided proxy credentials are invalid.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>44</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Policy not changed. Failed to write value %1 for UI Language due to error: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>45</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Policy not changed. Invalid UI configuration property %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>46</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Policy not changed. Invalid engine status %2.
+Engine status must be one of: "off", "suppressed", "disable", "local".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>47</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Policy not changed. Invalid parameter %1: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>48</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Policy not changed.
+Error: %3.
+Parameter: %1
+Invalid given value: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>49</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Policy not changed. Cannot undefine parameter %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Parameter" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>50</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Cannot scan %1 because the path does not exist.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Cannot scan %1 because it is not a folder.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>52</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Scan not started because a previous scan is still in progress.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>53</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Cannot scan because Sentinel Agent is not running. Load the Agent and try again.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>54</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Scan aborted.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>55</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Full Disk Scan started.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>56</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Scan of %1 started.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>57</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Scan completed successfully.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>58</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Failed to execute command %1.
+Error: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Command" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>59</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Remote Shell: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>60</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Agent Upgrade: BITS job created for downloading the new Agent.
+Job title: %1
+GUID: %2
+Destination: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BITSJobTitle" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BITSJobGUID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DownloadDestination" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>61</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Agent Upgrade: BITS download job complete. Executing installation.
+Job title: %1
+GUID: %2
+Destination: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BITSJobTitle" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BITSJobGUID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DownloadDestinationPath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>62</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Agent Upgrade: BITS download job failed.
+Error: %1 (%2)
+Job title: %3
+GUID: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="BITSJobTitle" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BITSJobGUID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>63</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Agent Upgrade: BITS download job failed. Falling back to the classic downloader.
+Error: %1 (%2)
+Job title: %3
+GUID: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="BITSJobTitle" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BITSJobGUID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>64</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Agent Upgrade: BITS is unavailable. Falling back to the classic downloader.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>65</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Agent handled the creation of process %1 (PID: %2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="GroupUID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>66</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+DB pruning %1.
+Size before: %2
+Size after: %3
+New DB GUID: %4
+Old DB path: %5
+New DB path: %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Result" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SizeBefore" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="SizeAfter" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="NewGUID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="OldPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NewPath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>67</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Customer ID: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="customerID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>68</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Mark as %2 on True Context ID %1 received from Deep Visibility]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TrueContextID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>69</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Failed to Mark True Context ID %1 as %2.
+Error: True Context ID was not found on the Agent]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TrueContextID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>70</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Failed to Mark as %2: True Context ID %1.
+Error: Already marked]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TrueContextID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>71</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+True Context ID %1 was changed from suspicious to threat]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TrueContextID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>72</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Failed to Mark as %2: True Context ID %1.
+Error: Marked as Exclusion]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TrueContextID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>73</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Failed to Mark as Suspicious True Context ID %1.
+Error: Already marked as Threat]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TrueContextID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>74</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Failed to Mark as %2 True Context ID %1.
+Error: Status is invalid]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TrueContextID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>75</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Agent handled the termination of process %1 (PID: %2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="GroupUID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>76</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Agent encountered invalid pattern: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Pattern" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>77</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+USB device %1 was %2 based on SentinelOne Device Control policy
+
+Class: %3
+Interface: USB
+Vendor ID: %4
+Product ID: %5
+Serial ID: %6
+Device Name: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Action" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UsbDeviceClass" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VendorId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProductId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SerialId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>78</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Bluetooth device %1 was %2 based on SentinelOne Device Control policy
+
+Class: %3
+Minor Class: %4
+Interface: Bluetooth
+Vendor ID: %5
+Product ID: %6
+Manufacturer Name: %7
+Bluetooth Address: %8
+Device Name: %1
+Bluetooth Version: %9
+GATT Service: %10
+Device Information: %11]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Action" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DeviceClass" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DeviceMinorClass" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VendorId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProductId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ManufacturerName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BluetoothAddress" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BluetoothVersion" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="GATTService" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DeviceInformation" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>79</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+%1 device %2 was %3 based on SentinelOne Device Control policy
+
+%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Interface" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DeviceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Action" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Info" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>80</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+The agent encountered an error that is usually ignored, but shouldn't be ignored in automation: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>81</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Scan ended.
+Scan start time: %1
+Scan end time: %2
+Scanned %3
+Scan triggered by: %4
+Total files scanned: %5
+Malicious files count: %6
+Excluded malicious files count: %7
+Scan status: %8]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ScanStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="ScanEndTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="ScannedPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TriggerType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ScannedCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="MaliciousCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ExcludedMaliciousCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Status" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>82</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+BlueKeep exploitation attempt detected from: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IP" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>83</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Resizing the VSS diff area on %2 was blocked.
+The existing diff area has %3 used bytes and %4 allocated bytes.
+The requested new diff area maximum was %5 bytes.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+  <data name="OldDiffAreaUsed" inType="win:Int64" outType="xs:long"/>
+  <data name="OldDiffAreaAllocated" inType="win:Int64" outType="xs:long"/>
+  <data name="NewDiffAreaMaximum" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>84</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Firewall</Channel>
+                <Level>Information</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Blocked %5 connection. Rule Id: %9 Rule Name: %10 PID: %3 Remote Address: %1:%2, FQDN: %8.
+Application Name :%4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RemoteAddress" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Port" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AppId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PacketDirection" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FilterId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="LayerId" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Fqdn" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RuleId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RuleName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>85</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Unable to handle configuration change, dropping the configuration]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>86</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+UI storage reached maximum allowed file size]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>87</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+UI storage read error %2 "%1"]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>88</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+UI storage write error %2 "%1"]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>89</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+UI storage is corrupted and will be deleted.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>90</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Error deleting corrupted UI storage.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>91</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Remote script orchestrator: script %1 execution completed. Start time: %2, duration: %3 milliseconds, exit status: %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ScriptName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="Duration" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ExitCode" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>92</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+File %1 was detected as a malicious driver when attempting to load it (Malicious Driver Type: %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FilePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MaliciousDriverType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>93</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+SentinelCTL command of type "%1" was executed - result was: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CommandType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Result" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>94</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Anti-tampering was activated.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>95</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Anti-tampering was deactivated.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>96</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Agent upgrade was initiated. (%1 -> %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="OldVersion" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NewVersion" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>97</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Windows Agent is shutting down.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>98</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Sentinel process has crashed. Dump file path: "%1".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DumpPath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>99</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Dump file was deleted, as dump limit of %1 was reached. Dump file path: "%2".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DumpFileLimit" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DumpPath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+The agent has successfully connected to the SentinelOne console (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ConsoleURL" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+The agent received a "%1" command from console]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CommandType" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Entering disable mode by command.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>103</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+Exiting disable mode.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>104</Id>
+                <Version>0</Version>
+                <Channel>SentinelOne/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Critical</Task>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CommSdkMessage" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

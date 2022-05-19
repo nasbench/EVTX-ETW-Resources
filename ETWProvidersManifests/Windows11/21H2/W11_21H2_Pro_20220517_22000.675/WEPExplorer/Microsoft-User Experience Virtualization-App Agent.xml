@@ -1,0 +1,4053 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-User Experience Virtualization-App Agent</Name>
+        <Metadata>
+            <Guid>{1ED6976A-4171-4764-B415-7EA08BC46C51}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\Microsoft.Uev.EventLogMessages.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\system32\Microsoft.Uev.EventLogMessages.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.22000.1&amp;FileName=Microsoft.Uev.EventLogMessages.dll&amp;FileVer=10.0.22000.1</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Operational</Message>
+                    <Path>Microsoft-User Experience Virtualization-App Agent/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-User Experience Virtualization-App Agent/Debug</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Analytic</Message>
+                    <Path>Microsoft-User Experience Virtualization-App Agent/Analytic</Path>
+                    <Index>2</Index>
+                    <Id>18</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Log Always</Message>
+                    <Name>win:LogAlways</Name>
+                    <Value>0</Value>
+                </Level>
+                <Level>
+                    <Message>Critical</Message>
+                    <Name>win:Critical</Name>
+                    <Value>1</Value>
+                </Level>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Install/uninstall, bootstrap parameters</Message>
+                    <Name>Install-Log-Task</Name>
+                    <Guid>{A090EF76-EEA0-4BD4-A7C3-82CA6EAFC888}</Guid>
+                    <Value>10</Value>
+                </Task>
+                <Task>
+                    <Message>App Agent runtime</Message>
+                    <Name>Agent-Runtime</Name>
+                    <Guid>{9B568FC9-A798-4017-8E47-7710169ED80A}</Guid>
+                    <Value>20</Value>
+                </Task>
+                <Task>
+                    <Message>Packager</Message>
+                    <Name>Packager</Name>
+                    <Guid>{FFC66045-6916-48EB-A2BA-CE8603DFC74D}</Guid>
+                    <Value>30</Value>
+                </Task>
+                <Task>
+                    <Message>Local/remote change manager, offline files</Message>
+                    <Name>Synchronization</Name>
+                    <Guid>{A7C22FBF-9B9C-4197-AF1C-78762A593E5A}</Guid>
+                    <Value>40</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>AgentService</Name>
+                    <Guid>{E4FA07E8-35FB-42EB-AFBA-5D039E26B862}</Guid>
+                    <Value>50</Value>
+                </Task>
+                <Task>
+                    <Message>Configuration</Message>
+                    <Name>Configuration</Name>
+                    <Guid>{3E841148-B238-4911-B349-F0511CF213ED}</Guid>
+                    <Value>60</Value>
+                </Task>
+                <Task>
+                    <Message>Code Injection</Message>
+                    <Name>Injection</Name>
+                    <Guid>{61C89927-4216-4BB6-851C-66A8C1B5680E}</Guid>
+                    <Value>70</Value>
+                </Task>
+                <Task>
+                    <Message>Service Control</Message>
+                    <Name>ServiceControl</Name>
+                    <Guid>{02CC2762-C83F-46B1-A689-FAA433CBD08D}</Guid>
+                    <Value>110</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>TemplateProcessing</Name>
+                    <Guid>{6CB57A15-C9F9-4B4D-BD21-4491BFF45356}</Guid>
+                    <Value>80</Value>
+                </Task>
+                <Task>
+                    <Message>Settings Template Catalog Processing</Message>
+                    <Name>SettingsTemplateCatalogProcessing</Name>
+                    <Guid>{771A38BF-AB52-434F-BECC-31B889070F1C}</Guid>
+                    <Value>90</Value>
+                </Task>
+                <Task>
+                    <Message>Orchestrator</Message>
+                    <Name>Orchestrator</Name>
+                    <Guid>{1CC44327-6FEF-4031-A7D1-1C760BCE39E0}</Guid>
+                    <Value>120</Value>
+                </Task>
+                <Task>
+                    <Message>Synchronization to filesystem</Message>
+                    <Name>SynchronizationToFilesystem</Name>
+                    <Guid>{8AE85121-52B2-4890-A2ED-7A9705E637E5}</Guid>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>UEVGenerator</Message>
+                    <Name>SettingsDiscovery</Name>
+                    <Guid>{21B5A23E-F55E-484E-A591-A342DA8C63FA}</Guid>
+                    <Value>130</Value>
+                </Task>
+                <Task>
+                    <Message>LocalStore</Message>
+                    <Name>LocalStore</Name>
+                    <Guid>{12ED7DC1-3A4B-487A-A794-DAC591ACEA9F}</Guid>
+                    <Value>140</Value>
+                </Task>
+                <Task>
+                    <Message>Offline Files Operations</Message>
+                    <Name>OfflineFilesOperations</Name>
+                    <Guid>{C84C2AF7-773C-4218-A239-F9BB98FF3FAB}</Guid>
+                    <Value>150</Value>
+                </Task>
+                <Task>
+                    <Message>AppAgent</Message>
+                    <Name>DBG-AppAgent</Name>
+                    <Guid>{6670BA77-CCC3-49F1-9990-BF17621A9E52}</Guid>
+                    <Value>1001</Value>
+                </Task>
+                <Task>
+                    <Message>AgentService</Message>
+                    <Name>DBG-AgentService</Name>
+                    <Guid>{01013E9A-B13A-4092-B18E-A1E7FC89AF8A}</Guid>
+                    <Value>1002</Value>
+                </Task>
+                <Task>
+                    <Message>AppAgentCommon</Message>
+                    <Name>DBG-AppAgentCommon</Name>
+                    <Guid>{75CADA97-58A4-499C-963A-0D749D101782}</Guid>
+                    <Value>1003</Value>
+                </Task>
+                <Task>
+                    <Message>UevCommon</Message>
+                    <Name>DBG-UevCommon</Name>
+                    <Guid>{44878C5B-A7B9-443F-8991-52A204CF0538}</Guid>
+                    <Value>1004</Value>
+                </Task>
+                <Task>
+                    <Message>ChangeManager</Message>
+                    <Name>DBG-ChangeManager</Name>
+                    <Guid>{916BBD7C-EA0F-47C1-B6C5-1B0CC5214EDF}</Guid>
+                    <Value>1005</Value>
+                </Task>
+                <Task>
+                    <Message>Configuration</Message>
+                    <Name>DBG-Configuration</Name>
+                    <Guid>{55077306-CE97-4489-AFE1-41E23AE5029D}</Guid>
+                    <Value>1006</Value>
+                </Task>
+                <Task>
+                    <Message>CscChangeManager</Message>
+                    <Name>DBG-CscChangeManager</Name>
+                    <Guid>{F67AF0F4-7588-4FD0-AF4E-3FDD4310A5D9}</Guid>
+                    <Value>1007</Value>
+                </Task>
+                <Task>
+                    <Message>CscTool</Message>
+                    <Name>DBG-CscTool</Name>
+                    <Guid>{B6D8A9EE-A9B7-415A-AFD0-55227196CF0F}</Guid>
+                    <Value>1008</Value>
+                </Task>
+                <Task>
+                    <Message>LocalStore</Message>
+                    <Name>DBG-LocalStore</Name>
+                    <Guid>{CD2AE62D-19AE-411D-A9DE-F025A272BD19}</Guid>
+                    <Value>1009</Value>
+                </Task>
+                <Task>
+                    <Message>Orchestrator</Message>
+                    <Name>DBG-Orchestrator</Name>
+                    <Guid>{2F8CD704-93BF-4679-A0A2-53EAF4AD1FA1}</Guid>
+                    <Value>1010</Value>
+                </Task>
+                <Task>
+                    <Message>Packager</Message>
+                    <Name>DBG-Packager</Name>
+                    <Guid>{F634FE44-63BC-419F-80E3-41308260078F}</Guid>
+                    <Value>1011</Value>
+                </Task>
+                <Task>
+                    <Message>TemplateService</Message>
+                    <Name>DBG-TemplateService</Name>
+                    <Guid>{2F2D3539-EC1B-428C-AA00-259ACC013637}</Guid>
+                    <Value>1012</Value>
+                </Task>
+                <Task>
+                    <Message>Task to save in-memory SQM session data to a file.</Message>
+                    <Name>SqmSaveSessionData</Name>
+                    <Guid>{C76D062F-3368-4F22-AE81-B71DA68D09F8}</Guid>
+                    <Value>10000</Value>
+                </Task>
+                <Task>
+                    <Message>SyncProvider</Message>
+                    <Name>DBG-SyncProvider</Name>
+                    <Guid>{00C3753B-8064-40B8-BB8C-6B1BEDC1DE8B}</Guid>
+                    <Value>1013</Value>
+                </Task>
+                <Task>
+                    <Message>SyncController</Message>
+                    <Name>DBG-SyncController</Name>
+                    <Guid>{BCA66254-7914-4CC5-BA72-36FD9104BC7A}</Guid>
+                    <Value>1014</Value>
+                </Task>
+                <Task>
+                    <Message>SyncController</Message>
+                    <Name>SyncController</Name>
+                    <Guid>{9287B854-1006-474E-ACCC-D82F86103CC4}</Guid>
+                    <Value>160</Value>
+                </Task>
+                <Task>
+                    <Message>AppMonitor</Message>
+                    <Name>DBG-AppMonitor</Name>
+                    <Guid>{FE642815-1D4C-41A0-89AA-09B16B8A7453}</Guid>
+                    <Value>1015</Value>
+                </Task>
+                <Task>
+                    <Message>AppMonitor</Message>
+                    <Name>AppMonitor</Name>
+                    <Guid>{D6FF723A-D3FA-471B-959B-BDFB92ECA364}</Guid>
+                    <Value>170</Value>
+                </Task>
+                <Task>
+                    <Message>TemplateConsole</Message>
+                    <Name>TemplateConsole</Name>
+                    <Guid>{6C7BF418-1BC1-4B51-9405-0DF534DED5BB}</Guid>
+                    <Value>1016</Value>
+                </Task>
+                <Task>
+                    <Message>TemplateConsole</Message>
+                    <Name>DBG-TemplateConsole</Name>
+                    <Guid>{70CB86F5-A8CB-47A3-AF5A-D88BF9EE0765}</Guid>
+                    <Value>1017</Value>
+                </Task>
+                <Task>
+                    <Message>TrayApp</Message>
+                    <Name>DBG-TrayApp</Name>
+                    <Guid>{9A744E4B-0425-4C6A-A854-A3B6135FE3F1}</Guid>
+                    <Value>1018</Value>
+                </Task>
+                <Task>
+                    <Message>CommonWinRT</Message>
+                    <Name>DBG-CommonWinRT</Name>
+                    <Guid>{9AD138FF-AFEA-40E2-BB10-ADCAFD3D5A3A}</Guid>
+                    <Value>1019</Value>
+                </Task>
+                <Task>
+                    <Message>IPCMessage</Message>
+                    <Name>IPCMessage</Name>
+                    <Guid>{FDC826F8-2BDE-4161-84E8-2D0282DF42A2}</Guid>
+                    <Value>180</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>EnableDisableUev</Name>
+                    <Guid>{63B0D83A-9959-4C79-8379-20C929C5F42C}</Guid>
+                    <Value>200</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>ProcessUevInboxTemplates</Name>
+                    <Guid>{A9B5913B-EE53-4EA2-9D81-3DEBF2A752DB}</Guid>
+                    <Value>210</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>TemplateConsole</Name>
+                    <Value>10</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>UE-V Generator</Message>
+                    <Name>UevGenerator</Name>
+                    <Value>15</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>App Agent</Message>
+                    <Name>AppAgent</Name>
+                    <Value>16</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>TrayApp</Name>
+                    <Value>17</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Template Service</Message>
+                    <Name>TemplateService</Name>
+                    <Value>18</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Agent Service</Message>
+                    <Name>AgentService</Name>
+                    <Value>22</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Apply Settings Location Template Catalog</Message>
+                    <Name>ApplySettingsLocationTemplateCatalog</Name>
+                    <Value>23</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>CSC Tool</Message>
+                    <Name>CscTool</Name>
+                    <Value>25</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Synchronization Controller</Message>
+                    <Name>SyncController</Name>
+                    <Value>26</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Application Monitor</Message>
+                    <Name>AppMonitor</Name>
+                    <Value>27</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>AppManagementConfiguration</Name>
+                    <Value>34</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Debug Out Messages.</Message>
+                    <Name>DebugTrace</Name>
+                    <Value>1</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-User Experience Virtualization-App Agent/Debug</Channel>
+                <Level>Verbose</Level>
+                <Keyword>Debug Out Messages.</Keyword>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-User Experience Virtualization-App Agent/Debug</Channel>
+                <Level>Verbose</Level>
+                <Task>AppAgent</Task>
+                <Opcode>App Agent</Opcode>
+                <Keyword>Debug Out Messages.</Keyword>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WString1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-User Experience Virtualization-App Agent/Debug</Channel>
+                <Level>Verbose</Level>
+                <Task>AgentService</Task>
+                <Opcode>Agent Service</Opcode>
+                <Keyword>Debug Out Messages.</Keyword>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-User Experience Virtualization-App Agent/Debug</Channel>
+                <Level>Verbose</Level>
+                <Task>AppAgentCommon</Task>
+                <Opcode>App Agent</Opcode>
+                <Keyword>Debug Out Messages.</Keyword>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-User Experience Virtualization-App Agent/Debug</Channel>
+                <Level>Verbose</Level>
+                <Task>UevCommon</Task>
+                <Opcode>App Agent</Opcode>
+                <Keyword>Debug Out Messages.</Keyword>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-User Experience Virtualization-App Agent/Debug</Channel>
+                <Level>Verbose</Level>
+                <Task>ChangeManager</Task>
+                <Opcode>App Agent</Opcode>
+                <Keyword>Debug Out Messages.</Keyword>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-User Experience Virtualization-App Agent/Debug</Channel>
+                <Level>Verbose</Level>
+                <Task>Configuration</Task>
+                <Opcode>App Agent</Opcode>
+                <Keyword>Debug Out Messages.</Keyword>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-User Experience Virtualization-App Agent/Debug</Channel>
+                <Level>Verbose</Level>
+                <Task>CscChangeManager</Task>
+                <Opcode>App Agent</Opcode>
+                <Keyword>Debug Out Messages.</Keyword>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-User Experience Virtualization-App Agent/Debug</Channel>
+                <Level>Verbose</Level>
+                <Task>CscTool</Task>
+                <Opcode>CSC Tool</Opcode>
+                <Keyword>Debug Out Messages.</Keyword>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-User Experience Virtualization-App Agent/Debug</Channel>
+                <Level>Verbose</Level>
+                <Task>LocalStore</Task>
+                <Opcode>App Agent</Opcode>
+                <Keyword>Debug Out Messages.</Keyword>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-User Experience Virtualization-App Agent/Debug</Channel>
+                <Level>Verbose</Level>
+                <Task>Orchestrator</Task>
+                <Opcode>App Agent</Opcode>
+                <Keyword>Debug Out Messages.</Keyword>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-User Experience Virtualization-App Agent/Debug</Channel>
+                <Level>Verbose</Level>
+                <Task>Packager</Task>
+                <Opcode>App Agent</Opcode>
+                <Keyword>Debug Out Messages.</Keyword>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-User Experience Virtualization-App Agent/Debug</Channel>
+                <Level>Verbose</Level>
+                <Task>TemplateService</Task>
+                <Opcode>Template Service</Opcode>
+                <Keyword>Debug Out Messages.</Keyword>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-User Experience Virtualization-App Agent/Debug</Channel>
+                <Level>Verbose</Level>
+                <Task>SyncProvider</Task>
+                <Opcode>Synchronization Controller</Opcode>
+                <Keyword>Debug Out Messages.</Keyword>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-User Experience Virtualization-App Agent/Debug</Channel>
+                <Level>Verbose</Level>
+                <Task>SyncController</Task>
+                <Opcode>Synchronization Controller</Opcode>
+                <Keyword>Debug Out Messages.</Keyword>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-User Experience Virtualization-App Agent/Debug</Channel>
+                <Level>Verbose</Level>
+                <Task>AppMonitor</Task>
+                <Opcode>Application Monitor</Opcode>
+                <Keyword>Debug Out Messages.</Keyword>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-User Experience Virtualization-App Agent/Debug</Channel>
+                <Level>Verbose</Level>
+                <Task>TemplateConsole</Task>
+                <Opcode>TemplateConsole</Opcode>
+                <Keyword>Debug Out Messages.</Keyword>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-User Experience Virtualization-App Agent/Debug</Channel>
+                <Level>Verbose</Level>
+                <Task>TrayApp</Task>
+                <Opcode>TrayApp</Opcode>
+                <Keyword>Debug Out Messages.</Keyword>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-User Experience Virtualization-App Agent/Debug</Channel>
+                <Level>Verbose</Level>
+                <Task>CommonWinRT</Task>
+                <Opcode>Synchronization Controller</Opcode>
+                <Keyword>Debug Out Messages.</Keyword>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>501</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>App Agent runtime</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+The user's session is ending; saving OS settings.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>502</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>App Agent runtime</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+The monitored application threw a UE-V exception.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>503</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>App Agent runtime</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+The monitored application threw a C++ exception of type std::exception.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>504</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>App Agent runtime</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+The UE-V Agent encountered an error while attempting to detour the process's exit functions. The application or Windows OS settings will probably not synchronize when the process ends.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>505</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>App Agent runtime</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+An error occurred while registering for user session events. Windows OS settings will not be uploaded or downloaded for the current user session.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>506</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>App Agent runtime</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+A critical shutdown was detected. OS Settings will not be synchronized to the settings storage location.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>507</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>App Agent runtime</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+The synchronization process failed with error %1. Settings data may not have been synchronized with the settings storage location. Try running the synchronization process again by launching it using the "Company Settings Center" console.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="intValue1" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>508</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>App Agent runtime</Task>
+                <Opcode>Template Service</Opcode>
+                <Message><![CDATA[
+Timed out waiting for the synchronization process to complete. The synchronization process will continue to run in the background.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>509</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>App Agent runtime</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+The synchronization process failed to start. Error %1 was returned because "%2". Settings data was not synchronized with the settings storage location. Try running the synchronization process again by launching it using the "Company Settings Center" console.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Int1" inType="win:Int32" outType="xs:int"/>
+  <data name="String1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>550</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Task>App Agent runtime</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Entering DLL_PROCESS_ATTACH for the AppAgent.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>551</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Task>App Agent runtime</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Exiting DLL_PROCESS_ATTACH for the AppAgent.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>552</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Task>App Agent runtime</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Entering AppAgent's ExeMain detour.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>553</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Task>App Agent runtime</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+The AppAgent is calling the application's real ExeMain function.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>554</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Task>App Agent runtime</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+The real ExeMain has returned back to the AppAgent.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>555</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Task>App Agent runtime</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Exiting from the ExeMain detour (application ends).]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>556</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Task>App Agent runtime</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Entering the ExitProcess detour (called by the application).]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>557</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Task>App Agent runtime</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Exiting the ExitProcess detour.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>558</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Task>App Agent runtime</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Entering the TerminateProcess detour (called by the application).]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>559</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Task>App Agent runtime</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Exiting the TerminateProcess detour.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>560</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Task>App Agent runtime</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Entering Shell end session.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>561</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Task>App Agent runtime</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Exiting Shell end session.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>562</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Task>App Agent runtime</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Entering modern app sync.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>563</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Task>App Agent runtime</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Exiting modern app sync.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>690</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-User Experience Virtualization-App Agent/Debug</Channel>
+                <Task>AgentService</Task>
+                <Opcode>Agent Service</Opcode>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>691</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-User Experience Virtualization-App Agent/Debug</Channel>
+                <Level>Critical</Level>
+                <Task>AgentService</Task>
+                <Opcode>Agent Service</Opcode>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>692</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-User Experience Virtualization-App Agent/Debug</Channel>
+                <Level>Error</Level>
+                <Task>AgentService</Task>
+                <Opcode>Agent Service</Opcode>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>693</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-User Experience Virtualization-App Agent/Debug</Channel>
+                <Level>Warning</Level>
+                <Task>AgentService</Task>
+                <Opcode>Agent Service</Opcode>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>694</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-User Experience Virtualization-App Agent/Debug</Channel>
+                <Level>Information</Level>
+                <Task>AgentService</Task>
+                <Opcode>Agent Service</Opcode>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>695</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-User Experience Virtualization-App Agent/Debug</Channel>
+                <Level>Verbose</Level>
+                <Task>AgentService</Task>
+                <Opcode>Agent Service</Opcode>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>700</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Service Control</Task>
+                <Opcode>Agent Service</Opcode>
+                <Message><![CDATA[
+The Agent Service started successfully.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>701</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Service Control</Task>
+                <Opcode>Agent Service</Opcode>
+                <Message><![CDATA[
+The UE-V Agent service failed to start.
+Service-specific error code %1. Try to restart the service and check the Windows service event log for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="intValue1" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>702</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Service Control</Task>
+                <Opcode>Agent Service</Opcode>
+                <Message><![CDATA[
+The Agent Service was stopped.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>703</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Code Injection</Task>
+                <Opcode>Agent Service</Opcode>
+                <Message><![CDATA[
+The UE-V Agent service timed out waiting to attach to the application or Windows operating system process %1.
+The application or Windows operating system settings might not synchronize.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Ulong1" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>704</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Code Injection</Task>
+                <Opcode>Agent Service</Opcode>
+                <Message><![CDATA[
+The UE-V Agent service failed to attach to process %1. The application or Windows operating system settings cannot synchronize.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Ulong1" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>705</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Code Injection</Task>
+                <Opcode>Agent Service</Opcode>
+                <Message><![CDATA[
+One or more of the UE-V components is missing a valid signature.
+The application or Windows operating system settings cannot be synchronized %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Ulong1" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>706</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Service Control</Task>
+                <Opcode>Agent Service</Opcode>
+                <Message><![CDATA[
+The UE-V evaluation period has expired.  Please uninstall the evaluation version and install the full version of UE-V.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>707</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Service Control</Task>
+                <Opcode>Agent Service</Opcode>
+                <Message><![CDATA[
+SLAPI check failed. Please report this to Microsoft. HRESULT = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="intValue1" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>708</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Service Control</Task>
+                <Opcode>Agent Service</Opcode>
+                <Message><![CDATA[
+The UE-V Agent service cannot be started due to reboot required.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>709</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Service Control</Task>
+                <Opcode>Agent Service</Opcode>
+                <Message><![CDATA[
+The UE-V Agent service cannot be started due to UE-V being disabled.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-User Experience Virtualization-App Agent/Debug</Channel>
+                <Level>Information</Level>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Configuration</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Unable to open the registry key containing the settings location template index.
+[System error code %1].]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Ulong1" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Configuration</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Unable to query information for a settings location template index subkey in the registry.
+[System error code %1].]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Ulong1" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Configuration</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Unable to enumerate one of the settings location template index subkeys in the registry.
+[System error code %1].]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Ulong1" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Configuration</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Unable to delete the existing settings location template index subtree in the registry.
+This may result in programs continuing to be monitored after their settings location template has been deleted.
+[System error %1].]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Ulong1" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1006</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Configuration</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+You do not have sufficient rights to be able to access the settings location template index key (or one of its subkeys) in the registry.
+Please ensure that you have Administrator access rights as they are required by the Template Service.
+[System error code %1]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Ulong1" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1007</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Configuration</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Unable to create the settings location template index key in the Registry.
+[System error code %1].]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Ulong1" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1008</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Configuration</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Unable to create the settings location template index subkey for the program and template ID combination '%1'.
+[System error code %2].]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Ulong2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1009</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>TemplateProcessing</Task>
+                <Opcode>Agent Service</Opcode>
+                <Message><![CDATA[
+Error while determining enabled/disabled state for template ID '%1'.
+[System error code %2].]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Ulong2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1010</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>TemplateProcessing</Task>
+                <Opcode>Template Service</Opcode>
+                <Message><![CDATA[
+Unable to determine which template should be used for a particular process. Settings cannot be synchronized for this process.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1011</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>TemplateProcessing</Task>
+                <Opcode>Template Service</Opcode>
+                <Message><![CDATA[
+Error while setting enabled/disabled state for template ID '%1'.
+[System error code %2].]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Ulong2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1012</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>TemplateProcessing</Task>
+                <Opcode>Template Service</Opcode>
+                <Message><![CDATA[
+%1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WString1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1013</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>TemplateProcessing</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Error determining Microsoft account connection status with error code %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Ulong1" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1014</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>TemplateProcessing</Task>
+                <Opcode>Template Service</Opcode>
+                <Message><![CDATA[
+Error %1 occurred while retrieving the associated profile for settings template %2. Settings data will not be synchronized for this settings template.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Int1" inType="win:Int32" outType="xs:int"/>
+  <data name="String1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1501</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Settings Template Catalog Processing</Task>
+                <Opcode>Apply Settings Location Template Catalog</Opcode>
+                <Message><![CDATA[
+The settings template catalog folder (%1) cannot be found or read. Confirm that the settings template catalog location exists and that the user has the necessary permissions.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WString1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1502</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Settings Template Catalog Processing</Task>
+                <Opcode>Apply Settings Location Template Catalog</Opcode>
+                <Message><![CDATA[
+An unknown exception occurred while applying the settings template catalog.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1503</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>TemplateProcessing</Task>
+                <Opcode>Apply Settings Location Template Catalog</Opcode>
+                <Message><![CDATA[
+An exception occurred while applying the settings template catalog: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String1" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1504</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Settings Template Catalog Processing</Task>
+                <Opcode>Apply Settings Location Template Catalog</Opcode>
+                <Message><![CDATA[
+An exception occurred while processing the file <%1> from the settings template catalog: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WString1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AnsiString1" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1505</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Settings Template Catalog Processing</Task>
+                <Opcode>Apply Settings Location Template Catalog</Opcode>
+                <Message><![CDATA[
+More than one settings location template with id <%1> was found in the settings template catalog.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WString1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1506</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Settings Template Catalog Processing</Task>
+                <Opcode>Apply Settings Location Template Catalog</Opcode>
+                <Message><![CDATA[
+Unable to get process token for elevation check (Error code %1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="intValue1" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1507</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Settings Template Catalog Processing</Task>
+                <Opcode>Apply Settings Location Template Catalog</Opcode>
+                <Message><![CDATA[
+Unable to get process token information for elevation check (Error code %1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="intValue1" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1508</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Settings Template Catalog Processing</Task>
+                <Opcode>Apply Settings Location Template Catalog</Opcode>
+                <Message><![CDATA[
+The ApplySettingsTemplateCatalog utility requires administrator privileges.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1509</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Settings Template Catalog Processing</Task>
+                <Opcode>Apply Settings Location Template Catalog</Opcode>
+                <Message><![CDATA[
+An error occurred in the ApplySettingsTemplateCatalog utility.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1510</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Settings Template Catalog Processing</Task>
+                <Opcode>Apply Settings Location Template Catalog</Opcode>
+                <Message><![CDATA[
+A change in the settings template catalog has been found. Settings location template "%1" has been successfully added.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WString1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1511</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Settings Template Catalog Processing</Task>
+                <Opcode>Apply Settings Location Template Catalog</Opcode>
+                <Message><![CDATA[
+A change in the settings template catalog has been found. Settings location template "%1" has been successfully removed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WString1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1512</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Settings Template Catalog Processing</Task>
+                <Opcode>Apply Settings Location Template Catalog</Opcode>
+                <Message><![CDATA[
+A change in the settings template catalog has been found. Settings location template "%1" has been successfully updated.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WString1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1513</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Settings Template Catalog Processing</Task>
+                <Opcode>Apply Settings Location Template Catalog</Opcode>
+                <Message><![CDATA[
+The settings location template, "%1", was found in the settings template catalog. This template was ignored because UE-V was installed with the RegisterMSTemplates parameter set to true.  For information on how to change this setting, see "Planning for Custom Template Deployment" in the UE-V Administrator's Guide.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WString1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1514</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Settings Template Catalog Processing</Task>
+                <Opcode>Apply Settings Location Template Catalog</Opcode>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WString1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2000</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Orchestrator</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+The current request terminated abnormally while processing the settings package for setting location template "%1".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WString1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2001</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Orchestrator</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+A thread exception occurred while processing the settings package for settings location template "%1". Exception Message: "%2" Error code: "%3"]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WString1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AnsiString2" inType="win:AnsiString" outType="xs:string"/>
+  <data name="HRESULT1" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2002</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Orchestrator</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+An unknown exception has occurred while processing the settings package for settings location template "%1". Exception message: "%2"]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WString1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="WString2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2004</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Orchestrator</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Could not initialize COM while processing the settings package for settings location template "%1". Error code: "%2"]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WString1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT1" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2005</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Orchestrator</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+An exception has occurred while processing the settings package for settings location template "%1". Exception message: "%2" Error code: "%3".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WString1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AnsiString2" inType="win:AnsiString" outType="xs:string"/>
+  <data name="HRESULT1" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2006</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Orchestrator</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+An unknown exception has occurred while processing the settings package for settings location template "%1". Exception message: "%2"]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WString1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AnsiString1" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2008</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Orchestrator</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+The settings for settings location template "%1" could not be applied to the computer because the operation took too long. Allow time for the UE-V Agent to download the settings from the settings storage path and then restart the application.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WString1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2009</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Orchestrator</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+User settings for the settings location template named "%1" have been successfully applied to the local machine.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2010</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Orchestrator</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+User settings for the settings location template "%1" have been successfully uploaded to the settings storage location.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2014</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Orchestrator</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+An attempt to restore user settings for settings location template "%1" failed with error code "%2".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="intValue1" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2015</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Orchestrator</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+User settings for settings location template "%1" could not be uploaded to the remote settings storage location because a user settings reset request is pending.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2016</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Orchestrator</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+User settings could not be restored for settings location template "%1" because the initial settings package could not be found.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2018</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Orchestrator</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+An error "%2" occurred while creating the initial settings package for setting location template "%1". You cannot restore the settings for this settings template.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="intValue1" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2020</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Orchestrator</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+An invalid settings package for settings location template "%1" was downloaded from the settings storage location. This settings package will be replaced with a new copy when the application is closed or the user logs off from the current session.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2021</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Orchestrator</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+The initial settings package for settings location template "%1" is invalid. The initial settings package will be replaced with a new copy.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2022</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Orchestrator</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+The current settings package for settings location template "%1" is invalid. The current settings package will be replaced with a new copy.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2024</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Orchestrator</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Failed in clearing the restore flag for the user settings defined in the settings location template "%1". Error code = %2. The user settings will not be restored. An attempt will be made to clear this flag the next time the application is run.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="intValue1" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2025</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Orchestrator</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Changes to the user settings cannot upload to the settings storage location because an earlier error occurred while downloading the settings package for the settings location template "%1".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2026</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Orchestrator</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+An older version of the setting location template exists for "%1". The settings package has been updated for the local machine, but will not be uploaded to the remote settings storage location until the setting location template is updated to the new version.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2027</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Orchestrator</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Error %1 occurred when signaling that the upload or download of a settings package was complete.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="intValue1" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2028</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Orchestrator</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+The application has been allowed to start while additional settings packages are downloaded and applied to the local machine.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2029</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Orchestrator</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+A timeout occurred while waiting for a previous download request to complete.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2030</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Orchestrator</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+A timeout occurred while waiting for a previous download request to complete]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2031</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Orchestrator</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+A timeout occurred while waiting for a previous upload request to complete.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2033</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Orchestrator</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+UE-V is either currently offline or the application being closed has been running longer than %1 day(s). UE-V will prevent the settings package "%2" from overwriting newer settings on the settings storage location.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Int1" inType="win:Int32" outType="xs:int"/>
+  <data name="String1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2039</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Orchestrator</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Skipped synchronization of the settings package for settings location template "%1". The last application using the template will perform the synchronization.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2040</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Orchestrator</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Error "%1" occurred while rolling back the application settings from a failed attempt to apply settings to the local machine (template: "%2").]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WString1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="WString2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2041</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Orchestrator</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Error "%1" occurred while rolling back the initial package from a failed attempt to apply settings to the local machine (template "%2").]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WString1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="WString2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2042</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Orchestrator</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Error "%1" occurred while attempting to apply settings to the local machine. (template "%2")]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WString1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="WString2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2045</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Orchestrator</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Failed in reading the restore flag for the user settings defined the settings location template "%1". Error code = %2. The user settings will not be restored. Ensure that the restore flag in the registry is readable for the current user.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="intValue1" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2046</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Orchestrator</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+The settings package restore flag for settings location template "%1" has expired but could not be cleared. Error code = %2. An attempt will be made to clear this flag the next time the application is run.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="intValue1" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2048</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Orchestrator</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+An exception has occurred while processing the settings package for settings location template "%1". Exception message: "%2" Error code: "%3".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WString1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="WString2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT1" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2049</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Orchestrator</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Settings data update check has been completed.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3000</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Packager</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Error %3 occurred while resetting file attributes 0x%2 on file %1. The file attributes will have to be reset manually on the file.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Int1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Int2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4000</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Synchronization to filesystem</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+A settings file failed to synchronize to the settings storage.
+
+Settings storage location: [%1]
+File: [%2]
+SyncID: [%3]
+HRESULT: [%4]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="repositoryPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="settingsFilePathToAdd" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="syncID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="hresult" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4004</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Synchronization to filesystem</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Failed to copy settings package from staging location to settings storage.
+
+Settings location template ID: [%1]
+Settings file to copy: [%2]
+Settings storage location: [%3]
+HRESULT: [%4]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fileIdentifier" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packagePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="serverRoot" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hresult" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4005</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Synchronization to filesystem</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Unable to create COM instance of offline files cache. File synchronization will not be able to succeed.
+
+HRESULT = [%1]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="intValue1" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4006</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Synchronization to filesystem</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+File synchronization will not be able to succeed because the Sync Center (for offline files support) is not currently enabled for offline files support.
+Please enable offline files through the Sync Center's 'manage offline files' option.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4009</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Local/remote change manager, offline files</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+A package could not be synchronized to the settings storage because an invalid settings location template ID was provided.
+
+Parameter: Template ID: [%1]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4010</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Local/remote change manager, offline files</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+A settings package could not be synchronized to the settings storage because the path to the package is invalid.
+
+Parameter: filePath
+Value: [%1]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4017</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Synchronization to filesystem</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Unable to get the file type for a file within the settings storage.
+
+File: [%1]
+HRESULT: [%2]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="intValue1" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4018</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Synchronization to filesystem</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Change Manager was not able to get the parent directory item for a path in the settings storage.
+
+Path: [%1]
+HRESULT: [%2]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="intValue1" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4020</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Synchronization to filesystem</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Change Manager failed to get the OfflineFilesConnectInfo interface for a requested file.
+
+File: [%1]
+HRESULT: [%2]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="intValue1" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4025</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Synchronization to filesystem</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+The UE-V Agent was unable to access the settings storage location [%1]
+HRESULT: [%2].]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="intValue1" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4026</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Synchronization to filesystem</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+The UE-V Agent was unable to create a directory in the settings storage location.
+
+Current settings storage location: [%1]
+HRESULT: [%2]; Check that the user has the necessary permission on the settings storage location.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="intValue1" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4027</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Synchronization to filesystem</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+A settings package could not be synchronized from the settings storage because an invalid settings location template ID was provided.
+
+Parameter: Template ID: [%1]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4028</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Synchronization to filesystem</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+A settings file failed to synchronize from the settings storage.
+
+Settings storage location: [%1]
+File: [%2]
+SyncID: [%3]
+HRESULT: [%4]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="repositoryPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="recipeIDToSync" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SyncID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="hresult" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4041</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Synchronization to filesystem</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Failed to sync a settings package to the settings storage.
+
+Settings location template ID: [%1]
+Package Path: [%2]
+HRESULT: [%3]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WString1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="WString2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT1" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4042</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Local/remote change manager, offline files</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Failed to sync settings from the settings storage.
+
+Settings location template ID: [%1]
+HRESULT: [%2]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WString1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT1" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4044</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Local/remote change manager, offline files</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+The UE-V Agent was unable to reset the offline files cache. The offline files cache must be reset before changes to the user settings will upload to the settings storage location.
+HRESULT: [%1]
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="intValue1" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4045</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Synchronization to filesystem</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+A call was made to the Remote Change Manager before it was initialized.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4046</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Synchronization to filesystem</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+An error occurred while attempting to copy a settings package to the settings storage location.
+
+Message: [%1]
+Task: [%2]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String1" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Int1" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4047</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Synchronization to filesystem</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+The Change Manager was not able to determine a settings package file size. The system was not able to notify of if the package exceeded the allowable package size.
+Package: [%1]
+Error Description: [%2]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WString1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AnsiString1" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4048</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Synchronization to filesystem</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+A settings package exceeded the allowable package size. Evaluate the settings location template to see if unnecessary settings or data are being packaged.
+Package: [%1]
+Package Size: [%2]
+Allowable Size: [%3]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="package" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="actualSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="maxSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4050</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Synchronization to filesystem</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+The settings storage location cannot be found. The user settings cannot synchronize. Ensure that the settings storage location exists and that the user has necessary permissions.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4051</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Synchronization to filesystem</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Attempt to expand supplied settings storage path '%1' failed.  Reason:  %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WString1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="WString2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4059</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Synchronization to filesystem</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+The UE-V Agent was unable to set attributes [%1] on the settings storage path [%2]. Error Code: [%3]
+ Check that the user has the necessary permission on the settings storage location.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Int1" inType="win:Int32" outType="xs:int"/>
+  <data name="String1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Int2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4060</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Synchronization to filesystem</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+The UE-V Agent cannot use the Active Directory-defined path for the settings storage location.
+Path: %1
+Error Code: %2
+Confirm that the path defined in Active Directory is configured correctly.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="intValue1" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4061</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Synchronization to filesystem</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+The Active Directory settings storage path changed.
+Old value: [%1]
+New value: [%2]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="stringValue2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4063</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Synchronization to filesystem</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+The UE-V Agent was unable to create the following settings storage folder: [%1] Reason: [%2]
+Check that the settings storage path is valid and the user has read/write access to the folder.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WString1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AnsiString1" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4064</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Local/remote change manager, offline files</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Failed to delete a setting file from the settings storage.
+
+Settings location template ID: [%1]
+File name: [%2]
+HRESULT: [%3]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WString1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="WString2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT1" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4065</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Local/remote change manager, offline files</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+An error occurred while attempting to delete a setting file from the settings storage.
+
+Message: [%1]
+Task: [%2]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String1" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Int1" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4066</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Synchronization to filesystem</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+UE-V was unable to set the last-writer-wins policy settings for offline file collisions.
+Path: %1
+Error Code: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="intValue1" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4070</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Local/remote change manager, offline files</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Failed to copy settings package from settings storage to staging location.
+
+Settings location template ID: [%1]
+Settings file to copy: [%2]
+Local staging directory: [%3]
+HRESULT: [%4]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fileIdentifier" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packagePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="serverRoot" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hresult" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4071</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Local/remote change manager, offline files</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Change Manager was failed while verifying existence of a settings package in the settings storage. Settings location template ID: [%1]
+HRESULT: [%2]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WString1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT1" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4073</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Local/remote change manager, offline files</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+A background synchronization operation has timed out. Source: [%1] Destination [%2]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="stringValue2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4074</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Local/remote change manager, offline files</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+An error occurred while copying a file from the central storage location. 
+Source: [%1] 
+Error message: [%2]
+Error code: [%3]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="String2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Int" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4075</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Synchronization to filesystem</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+The currently logged on user is not the owner of the settings storage path folder %1. To correct this problem, delete the hidden folder %2 in path %3 and log off the current session and then log on again.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="String2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="String3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5000</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Packager</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+The settings directory for the settings location template %1 cannot be created. The error %2 was returned.
+
+Additional error data: %3.
+Ensure that the user has permission to create directories in the remote settings location.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RecipeID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="xs:int"/>
+  <data name="AdditionalInformation" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5001</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Packager</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+The settings package for settings location template %1 could not be copied to the local package folder for current settings.  Error %2 was returned. Additional data: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RecipeID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="xs:int"/>
+  <data name="AdditionalInformation" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5002</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Packager</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+The path to a local settings package for settings location template %1 could not be retrieved. Error %2 was returned. Additional data: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RecipeID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="xs:int"/>
+  <data name="AdditionalInformation" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5003</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Packager</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+The path to a local last known good meta data for settings location template %1 could not be retrieved. Error %2 was returned. Additional data: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RecipeID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="xs:int"/>
+  <data name="AdditionalInformation" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5312</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Packager</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+The settings package for settings location template %1 could not be copied to the local package folder for initial settings.  Error %2 was returned. Additional data: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RecipeID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="xs:int"/>
+  <data name="AdditionalInformation" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5313</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Packager</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+The settings package was created by an earlier version of the product and is not compatible with the current version. Please delete the settings package file and retry the operation. 
+Settings location template ID: %1. 
+Settings package Version: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="intValue1" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5314</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Packager</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+The imported package with template ID %1 contains a setting that uses an unresolvable environment variable: %2. Ensure that the template on this machine is up to date and the user environment variables are properly defined.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="stringValue2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8000</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>UEVGenerator</Task>
+                <Opcode>UE-V Generator</Opcode>
+                <Message><![CDATA[
+The process executable (%1) was added to the settings location template, but does not actually exist. Was unable to find the required information for this process executable, and will not add it to the final template.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8010</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>UEVGenerator</Task>
+                <Opcode>UE-V Generator</Opcode>
+                <Message><![CDATA[
+This version is invalid and did not get constructed. The Major version range does not exclusively have a min and a max version. It is required that all versions have a major version range of size 2. Size of Major range = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="intValue1" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8020</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>UEVGenerator</Task>
+                <Opcode>UE-V Generator</Opcode>
+                <Message><![CDATA[
+Not enough processes to make a valid settings location template. You must have at least one process added to the template, %1. ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8030</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>UEVGenerator</Task>
+                <Opcode>UE-V Generator</Opcode>
+                <Message><![CDATA[
+Not enough versions for the process, %1, to make a valid settings location template. This process information will not be added to the template.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8100</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>UEVGenerator</Task>
+                <Opcode>UE-V Generator</Opcode>
+                <Message><![CDATA[
+Was unable to initialize the COM library. Export of the settings location template has been cancelled. HRESULT = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="intValue1" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8110</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>UEVGenerator</Task>
+                <Opcode>UE-V Generator</Opcode>
+                <Message><![CDATA[
+Was unable to create the XML Document Parser. Export of the settings location template has been cancelled. HRESULT = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="intValue1" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8200</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>UEVGenerator</Task>
+                <Opcode>UE-V Generator</Opcode>
+                <Message><![CDATA[
+Was unable to create an element %1 from the XML parser. Export of the settings location template has been cancelled. HRESULT = %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="intValue1" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8210</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>UEVGenerator</Task>
+                <Opcode>UE-V Generator</Opcode>
+                <Message><![CDATA[
+Was unable to set the attribute(%1) of the current element(%2). Export of the settings location template has been cancelled. HRESULT = %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="String2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Int" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8220</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>UEVGenerator</Task>
+                <Opcode>UE-V Generator</Opcode>
+                <Message><![CDATA[
+Was unable to insert the text, %1, into this element(%2). Export of the settings location template has been cancelled. HRESULT = %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="String2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Int" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8230</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>UEVGenerator</Task>
+                <Opcode>UE-V Generator</Opcode>
+                <Message><![CDATA[
+Was unable to append the child element(%1) to the parent element(%2). Export of the settings location template has been cancelled. HRESULT = %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="String2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Int" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8240</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>UEVGenerator</Task>
+                <Opcode>UE-V Generator</Opcode>
+                <Message><![CDATA[
+TemplateIO was unable to save this settings location template at the file location %1. Export of the template has been cancelled. HRESULT = %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="intValue1" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8300</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>UEVGenerator</Task>
+                <Opcode>UE-V Generator</Opcode>
+                <Message><![CDATA[
+Was unable to retrieve the node name from this element. This probably means the element is actually empty or does not exist. Import of this settings location template has been cancelled. HRESULT = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="intValue1" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8310</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>UEVGenerator</Task>
+                <Opcode>UE-V Generator</Opcode>
+                <Message><![CDATA[
+Was unable to retrieve the text from the element %1. Import of settings location template has been cancelled. HRESULT = %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="intValue1" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8320</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>UEVGenerator</Task>
+                <Opcode>UE-V Generator</Opcode>
+                <Message><![CDATA[
+Was unable to select the element, %1, from its parent. Import of settings location template was cancelled. HRESULT = %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="intValue1" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8330</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>UEVGenerator</Task>
+                <Opcode>UE-V Generator</Opcode>
+                <Message><![CDATA[
+Was unable to get the length of the list of elements. Import of settings location template has been cancelled.  HRESULT = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="intValue1" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8340</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>UEVGenerator</Task>
+                <Opcode>UE-V Generator</Opcode>
+                <Message><![CDATA[
+Was unable to get the item at index %1 from the list of nodes of size %2. Import of settings location template has been cancelled. HRESULT = %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UIntValue1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UIntValue2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="intValue" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8350</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>UEVGenerator</Task>
+                <Opcode>UE-V Generator</Opcode>
+                <Message><![CDATA[
+Was unable to retrieve child nodes of the element %1. This probably means the parent element is actually empty or does not exist. Import of this settings location template has been cancelled.  HRESULT = %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="intValue1" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8360</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>UEVGenerator</Task>
+                <Opcode>UE-V Generator</Opcode>
+                <Message><![CDATA[
+Was unable to get the list of nodes with the xpath %1 from element %2. Import of settings location template has been cancelled. HRESULT = %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="String2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Int" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8370</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>UEVGenerator</Task>
+                <Opcode>UE-V Generator</Opcode>
+                <Message><![CDATA[
+TemplateIO was unable to load the xml file %1. Check that it exists and is an xml document. Import of settings location template has been cancelled. HRESULT = %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="intValue1" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8400</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>UEVGenerator</Task>
+                <Opcode>UE-V Generator</Opcode>
+                <Message><![CDATA[
+The format of the string %1, is not acceptable by the CLSIDFromString method. Verify that the data in the xml document confines to these rules. HRESULT = %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="intValue1" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9001</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>LocalStore</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Failed to open registry key: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9002</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>LocalStore</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Failed to find file or folder path: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9003</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>LocalStore</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Failed to find registry value: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9004</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>LocalStore</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+File IO exception occurred: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String1" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9005</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>LocalStore</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+File IO exception occurred: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9006</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>LocalStore</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Registry IO exception occurred: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9007</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>LocalStore</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Failed to read registry value from: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9008</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>LocalStore</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Registry type value not recognized for key: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9009</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>LocalStore</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Failed to query registry key information for: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9010</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>LocalStore</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Failed to enumerate registry keys from: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9011</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>LocalStore</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Failed to delete registry key or value: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9012</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>LocalStore</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Failed to create registry key: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9013</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>LocalStore</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Failed to set registry key value: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9014</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>LocalStore</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Failed to create destination folder path: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9015</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>LocalStore</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Failed to copy file to the destination path: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9016</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>LocalStore</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Failed to open folder path to process files: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9017</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>LocalStore</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Failed to read all subfolders or files from the folder path: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9018</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>LocalStore</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Failed to initialize COM library to parse OS settings mapping file: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9019</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>LocalStore</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Failed to create MSXML document object for OS settings mapping file: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9020</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>LocalStore</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Failed to load XML document for OS settings mapping: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9021</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>LocalStore</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Failed to read OS settings mapping file: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9022</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>LocalStore</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Failed to find root node (OSSettingsList) in OS settings mapping file: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9023</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>LocalStore</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Failed to find "Path" node in OS settings mapping file: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9024</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>LocalStore</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Failed to find the "Name" attribute in "MainSetting" node in OS settings mapping file: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9025</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>LocalStore</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Failed to find "Win7" node in OS settings mapping file: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9026</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>LocalStore</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Failed to find OS setting details for: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9027</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>LocalStore</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Failed to create MSXML schema cache object for OS Mapping file: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9028</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>LocalStore</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Failed to add schema for OS mapping file: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9029</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>LocalStore</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Failed to set XML schema cache for OS mapping file: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9030</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>LocalStore</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Failed to validate OS mapping file %1 to schema. Reason: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="String2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9031</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>LocalStore</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Failed to find the "Version" attribute in "MainSetting" node in OS settings mapping file: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9032</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>LocalStore</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Unsupported OS version found in OS mapping file: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9033</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>LocalStore</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+DOM operation failed while reading OS mapping file: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9034</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>LocalStore</Task>
+                <Opcode>App Agent</Opcode>
+                <Message><![CDATA[
+Failed to access OS system setting: %1. Setting enumerator: %2. GetLastError returned %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Int1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Int2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10000</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Offline Files Operations</Task>
+                <Opcode>CSC Tool</Opcode>
+                <Message><![CDATA[
+The settings storage location is transitioning from offline to online.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10001</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Offline Files Operations</Task>
+                <Opcode>CSC Tool</Opcode>
+                <Message><![CDATA[
+The settings storage location is transitioning from online to offline.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12001</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Task to save in-memory SQM session data to a file.</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Saving SQM session data begins.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12002</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Task to save in-memory SQM session data to a file.</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Saving SQM session data ends.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12003</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Task to save in-memory SQM session data to a file.</Task>
+                <Message><![CDATA[
+Duration of the SQM save session time]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Start time" inType="win:SYSTEMTIME" outType="xs:dateTime"/>
+  <data name="End time" inType="win:SYSTEMTIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13000</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>SyncController</Task>
+                <Opcode>Synchronization Controller</Opcode>
+                <Message><![CDATA[
+An exception has occurred while synchronizing settings packages. Exception message: "%1".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13001</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>SyncController</Task>
+                <Opcode>Synchronization Controller</Opcode>
+                <Message><![CDATA[
+The UE-V synchronization controller could not get a list of registered templates. Settings data will not be synchronized for any of the applications specified in the installed templates. The cause of the failure is: "%1".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13002</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>SyncController</Task>
+                <Opcode>Synchronization Controller</Opcode>
+                <Message><![CDATA[
+The UE-V synchronization controller could not get a list of installed modern applications. Settings data will not be synchronized for any of the installed modern applications. The cause of the failure is: "%1".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13005</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Task>SyncController</Task>
+                <Opcode>Synchronization Controller</Opcode>
+                <Message><![CDATA[
+Start of the synchronization process.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13006</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Task>SyncController</Task>
+                <Opcode>Synchronization Controller</Opcode>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="intValue1" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13007</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>SyncController</Task>
+                <Opcode>Synchronization Controller</Opcode>
+                <Message><![CDATA[
+Cannot get settings storage path for template %1. Settings data will not be synchronized.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13008</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>SyncController</Task>
+                <Opcode>Synchronization Controller</Opcode>
+                <Message><![CDATA[
+Error %1 was returned while initializing sync provider for template %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Int1" inType="win:Int32" outType="xs:int"/>
+  <data name="String1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13009</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>SyncController</Task>
+                <Opcode>Synchronization Controller</Opcode>
+                <Message><![CDATA[
+The local and remote settings storage paths are equal. Please specify a new remote setting storage path. Settings will not be synchronized for template %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14000</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>AppMonitor</Task>
+                <Opcode>Application Monitor</Opcode>
+                <Message><![CDATA[
+An exception has occurred while synchronizing Windows App settings. Exception message: "%1".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15000</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>TemplateConsole</Task>
+                <Opcode>TemplateConsole</Opcode>
+                <Message><![CDATA[
+Sync Now failed with error code: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="intValue1" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15002</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>TemplateConsole</Task>
+                <Opcode>TemplateConsole</Opcode>
+                <Message><![CDATA[
+Not all of the templates are in the same state. This usually means that template state has been modified outside the Company Settings Center UI.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15003</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>TemplateConsole</Task>
+                <Opcode>TemplateConsole</Opcode>
+                <Message><![CDATA[
+Enable\Disable of template %1 failed with exception %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="stringValue2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16000</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>IPCMessage</Task>
+                <Message><![CDATA[
+The IPC event message listener cannot be started. IPC events will be unavailable.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16001</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>IPCMessage</Task>
+                <Message><![CDATA[
+The IPC message %1 could not be sent.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17000</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>EnableDisableUev</Task>
+                <Opcode>AppManagementConfiguration</Opcode>
+                <Message><![CDATA[
+Enable Uev failed with error %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hresultValue" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17001</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>EnableDisableUev</Task>
+                <Opcode>AppManagementConfiguration</Opcode>
+                <Message><![CDATA[
+Disable Uev failed with error %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hresultValue" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17002</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>ProcessUevInboxTemplates</Task>
+                <Opcode>AppManagementConfiguration</Opcode>
+                <Message><![CDATA[
+Register inbox templates failed with error %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hresultValue" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17003</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>ProcessUevInboxTemplates</Task>
+                <Opcode>AppManagementConfiguration</Opcode>
+                <Message><![CDATA[
+Register inbox template %1 failed with error %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WString1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT1" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

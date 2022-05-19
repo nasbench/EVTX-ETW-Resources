@@ -1,0 +1,458 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-StorageManagement-PartUtil</Name>
+        <Metadata>
+            <Guid>{93DB76C2-63AB-5DE1-88B3-C068686675B8}</Guid>
+            <ResourceFilePath>mispace.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>mispace.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-StorageManagement-PartUtil/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>101</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-StorageManagement-PartUtil/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to get disk properties.             
+Function: %1             
+Disk Number: %2             
+Callee: %3             
+HResult: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="DiskNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Callee" inType="win:AnsiString" outType="xs:string"/>
+  <data name="HResult" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-StorageManagement-PartUtil/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The disk was onlined successfully.             
+Function: %1             
+Disk Path: %2             
+Duration: %3 us]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="DiskPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DurationInUs" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>103</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-StorageManagement-PartUtil/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to online the disk.             
+Function: %1             
+Disk Path: %2             
+Callee: %3             
+HResult: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="DiskPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Callee" inType="win:AnsiString" outType="xs:string"/>
+  <data name="HResult" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>104</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-StorageManagement-PartUtil/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The disk was set to read-only successfully.             
+Function: %1             
+Disk Path: %2             
+Duration: %3 us]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="DiskPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DurationInUs" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>105</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-StorageManagement-PartUtil/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to set the disk read-only.             
+Function: %1             
+Disk Path: %2             
+Callee: %3             
+HResult: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="DiskPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Callee" inType="win:AnsiString" outType="xs:string"/>
+  <data name="HResult" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>106</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-StorageManagement-PartUtil/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The disk was set to read-write successfully.             
+Function: %1             
+Disk Path: %2             
+Duration: %3 us]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="DiskPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DurationInUs" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>107</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-StorageManagement-PartUtil/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to set the disk read-write.             
+Function: %1             
+Disk Path: %2             
+Callee: %3             
+HResult: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="DiskPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Callee" inType="win:AnsiString" outType="xs:string"/>
+  <data name="HResult" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>108</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-StorageManagement-PartUtil/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The disk was offlined successfully.             
+Function: %1             
+Disk Path: %2             
+Duration: %3 us]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="DiskPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DurationInUs" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>109</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-StorageManagement-PartUtil/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to offline the disk.             
+Function: %1             
+Disk Path: %2             
+Callee: %3             
+HResult: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="DiskPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Callee" inType="win:AnsiString" outType="xs:string"/>
+  <data name="HResult" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>110</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-StorageManagement-PartUtil/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The disk was initialized successfully.             
+Function: %1             
+Disk Number: %2             
+Partition Style: %3             
+Duration: %4 us]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="DiskNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PartitionStyle" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DurationInUs" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>111</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-StorageManagement-PartUtil/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to initialize the disk.             
+Function: %1             
+Disk Number: %2             
+Partition Style: %3             
+Callee: %4             
+HResult: %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="DiskNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PartitionStyle" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Callee" inType="win:AnsiString" outType="xs:string"/>
+  <data name="HResult" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>112</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-StorageManagement-PartUtil/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The disk was cleaned successfully.             
+Function: %1             
+Disk Number: %2             
+Duration: %3 us]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="DiskNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DurationInUs" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>113</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-StorageManagement-PartUtil/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to clean the disk.             
+Function: %1             
+Disk Number: %2             
+Callee: %3             
+HResult: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="DiskNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Callee" inType="win:AnsiString" outType="xs:string"/>
+  <data name="HResult" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>201</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-StorageManagement-PartUtil/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to get partition properties.             
+Function: %1             
+Disk Number: %2             
+Partition Number: %3             
+Callee: %4             
+HResult: %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="DiskNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PartitionNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Callee" inType="win:AnsiString" outType="xs:string"/>
+  <data name="HResult" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>202</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-StorageManagement-PartUtil/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The partition was created successfully.             
+Function: %1             
+Disk Number: %2             
+Offset: %3             
+Size : %4             
+Alignment: %5             
+Partition Style: %6             
+MbrPartitionType: %7             
+MbrBootIndicator: %8             
+GptPartitionType: %9             
+GptPartitionId: %10             
+GptAttributes: %11             
+GptName: %12             
+Duration: %13 us]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="DiskNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Offset" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Size" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Alignment" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PartitionStyle" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MbrPartitionType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MbrBootIndicator" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="GptPartitionType" inType="win:GUID" outType="xs:GUID"/>
+  <data name="GptPartitionId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="GptAttributes" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="GptName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DurationInUs" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>203</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-StorageManagement-PartUtil/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to create the partition.             
+Function: %1             
+Disk Number: %2             
+Offset: %3             
+Size : %4             
+Alignment: %5             
+Partition Style: %6             
+MbrPartitionType: %7             
+MbrBootIndicator: %8             
+GptPartitionType: %9             
+GptPartitionId: %10             
+GptAttributes: %11             
+GptName: %12             
+Callee: %13             
+HResult: %14]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="DiskNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Offset" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Size" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Alignment" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PartitionStyle" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MbrPartitionType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MbrBootIndicator" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="GptPartitionType" inType="win:GUID" outType="xs:GUID"/>
+  <data name="GptPartitionId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="GptAttributes" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="GptName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Callee" inType="win:AnsiString" outType="xs:string"/>
+  <data name="HResult" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>204</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-StorageManagement-PartUtil/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The partition was deleted successfully.             
+Function: %1             
+Disk Number: %2             
+Partition Number: %3             
+Duration: %4 us]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="DiskNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PartitionNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DurationInUs" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>205</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-StorageManagement-PartUtil/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to delete the partition.             
+Function: %1             
+Disk Number: %2             
+Partition Number: %3             
+Callee: %4             
+HResult: %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="DiskNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PartitionNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Callee" inType="win:AnsiString" outType="xs:string"/>
+  <data name="HResult" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>207</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-StorageManagement-PartUtil/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to get partition access paths.                    
+Function: %1                    
+Disk Number: %2                    
+Partition Number: %3                    
+Callee: %4                    
+HResult: %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="DiskNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PartitionNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Callee" inType="win:AnsiString" outType="xs:string"/>
+  <data name="HResult" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
