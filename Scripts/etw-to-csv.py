@@ -197,7 +197,7 @@ def getNumberOfEventsPerVersion(listOfAllFiles):
         f.write("The following folder contains a list of all ETW events extracted from the currently dumped ETW manifests (See [**ETW Providers Manifests**](https://github.com/nasbench/ETW-Resources/tree/main/ETWProvidersManifests) for the complete list).\n\n")
         f.write("## Global ETW Stats\n")
         f.write(csvtomd.md_table(table, padding=2))
-        os.remove("ETWEventsList/etw-stats.csv")
+        #os.remove("ETWEventsList/etw-stats.csv")
 
 def generateStats():
     listOfAllFiles = []
@@ -226,14 +226,14 @@ if __name__=="__main__":
     manifestsDir = "ETWProvidersManifests"
     csvDir = "ETWEventsList/CSV/"
     etwdir = []
+
+    # This is used to extract the name of the folders
     for subdir, dirs, files in os.walk(manifestsDir):
         if "WEPExplorer" in str(subdir): 
             etwdir.append(subdir)
-            # This is used to extract the name of the folders
-
-
+            
     for i in etwdir:
-        # This will get the name of the folder/subfolders to create in order to replicate the same structure as the XML
+        # This will get the name of the folder/subfolders to create in order to replicate the same structure as the XML's
         folderToCreate = i[i.find("ETWProvidersManifests")+len("ETWProvidersManifests")+1:].replace("WEPExplorer", "").replace("\\", "/")
         # We call the "getListOfFiles" to generate a list of file paths
         listOfProviders = getListOfFiles(i)
@@ -251,7 +251,7 @@ if __name__=="__main__":
         else:
             print(csvDir + folderToCreate + " - Already exists")
 
-        # We then start to generate the CSV file
+        # We then start to generate the CSV files
         for p in listOfParsedProviders:
             converterStart(p, folderToCreate, csvDir)
         merge_csv(folderToCreate, csvDir)
