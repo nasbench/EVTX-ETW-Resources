@@ -1,0 +1,105 @@
+Provider,Level,Event ID,Version,Channel,Task,Opcode,Keyword,Message
+Microsoft-Windows-PDC,,1,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,ActivatorRegistration,,Activators CsDiag,Activator {Client} (PDC Identifier:{PdcId}) registered with status: {Status}
+Microsoft-Windows-PDC,,2,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,ActivatorDeregistration,,Activators,Activator {Client} (PDC Identifier:{PdcId}) deregistered with status: {Status}
+Microsoft-Windows-PDC,,3,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,NotificationRegistration,,Notifications,Notification client {Client} (PDC Identifier:{PdcId}) registered with status: {Status}
+Microsoft-Windows-PDC,,4,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,NotificationDeregistration,,Notifications,Notification client {Client} (PDC Identifier:{PdcId}) deregistered with status: {Status}
+Microsoft-Windows-PDC,,5,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,ResiliencyClientRegistration,,ResiliencyClients,Resiliency client {Client} (PDC Identifier:{PdcId}) registered with status: {Status}
+Microsoft-Windows-PDC,,6,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,ResiliencyClientDeregistration,,ResiliencyClients,Resiliency client {Client} (PDC Identifier:{PdcId}) deregistered with status: {Status}
+Microsoft-Windows-PDC,,7,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,ActivatorMessage,,Activators,Notification message {Message}: Status/Active: {Status/Active}; ActivityType: {ActivityType}
+Microsoft-Windows-PDC,,8,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,ActivatorAcknowledgement,,Activators,Activators received acknowledgement: Status: {Status}; State: {State}
+Microsoft-Windows-PDC,,9,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,ActivatorClientAcknowledgement,,Activators,Activator client {Client} received acknowledgement: Status: {State}
+Microsoft-Windows-PDC,,10,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,NotificationStarted,,Notifications CsDiag,Notification started: Type: {Type}; ClientContext:{ClientContext}; PDC Sequence:{PdcSequence}; Value:{Value}; WaitTime:{WaitTime}
+Microsoft-Windows-PDC,,11,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,ControlNotification,,Notifications,Control notification: Type: {Type}; Flags:{Flags}
+Microsoft-Windows-PDC,,12,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,InvalidNotification,,Errors Notifications,Invalid notification: Client: {Client}; Expected sequence number:{AssumedPdcSequence}; Received sequence number:{ReceivedPdcSequence}
+Microsoft-Windows-PDC,,13,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,NotificationReceived,,Notifications CsDiag,Notification received: Client: {Client}; Received sequence number:{PdcSequence}
+Microsoft-Windows-PDC,,14,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,NotificationAllClientResponded,,Notifications,Notification received from all clients: Status:{Status}
+Microsoft-Windows-PDC,,15,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,NotificationCallback,,Notifications,Callback activated for type: {Status}
+Microsoft-Windows-PDC,,16,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,NotificationMessage,,Notifications CsDiag,Notification message: Client {Client}; Message: {Message}; Control: {Control}; Status: {Status}; PDC Sequence: {PdcSequence}
+Microsoft-Windows-PDC,,17,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,ActivatorReceive,,Activators,Activator Client {Client} sent a request to PDC
+Microsoft-Windows-PDC,,18,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,ActivatorSend,,Activators,Response from PDC to activator Client {Client}
+Microsoft-Windows-PDC,,19,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,ResiliencyClient,,ResiliencyClients,Resiliency client {Client}; Port: {Port}; ResiliencyType: {ResiliencyType}; ClientReferences: {References}; Transation Id: {TransactionId}; CurrentState: {CurrentState}; CurrentState: {NextState}
+Microsoft-Windows-PDC,,20,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,ResiliencyMessage,,ResiliencyClients,Message {Message}; TransactionId: {TransactionId}; ClientState: {ClientState}; ClientStatus: {ClientStatus}
+Microsoft-Windows-PDC,,21,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,ResiliencyReceive,,ResiliencyClients,Activator Client {Client} sent a request to PDC
+Microsoft-Windows-PDC,,22,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,ResiliencySend,,ResiliencyClients,Response from PDC to activator Client {Client}
+Microsoft-Windows-PDC,,23,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,ResiliencyReference,,ResiliencyClients CsDiag,PDC resiliency client {Client} referenced
+Microsoft-Windows-PDC,,24,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,ResiliencyDereference,,ResiliencyClients CsDiag,PDC resiliency client {Client} dereferenced
+Microsoft-Windows-PDC,,25,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,CsEnterPhase,,Activators CsDiag,PDC is entering {Phase} phase
+Microsoft-Windows-PDC,,26,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,CsExitPhase,,Activators CsDiag,PDC is exiting {Phase} phase with status: {Status}
+Microsoft-Windows-PDC,,27,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,CsDisplayState,,Activators,PDC received display notification: {On}
+Microsoft-Windows-PDC,,28,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,CsMonitorRequestEnter,,Activators,PDC received monitor request ON/OFF: {On}; Console:{Console}
+Microsoft-Windows-PDC,,29,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,CsMonitorRequestExit,,Activators,PDC received monitor request exit at: {At}; Status:{Status}
+Microsoft-Windows-PDC,,30,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,CsMonitorContext,,Activators,PDC monitor context - Session Count:{ConnectedSessionCount}; Console Session:{ConsoleSessionId}; Session: {SessionId}; Current On Request: {OnRequestCurrent}; Processed On Request: {OnRequestProcessed};  Current Off Request: {OffRequestCurrent}; Processed Off Request: {OffRequestProcessed}
+Microsoft-Windows-PDC,,31,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,CsMonitorHandler,,Activators CsDiag,PDC monitor handler activated at:{At}
+Microsoft-Windows-PDC,,32,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,CsMonitorControl,,Activators,
+Microsoft-Windows-PDC,,33,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,CsPowerButtonHandler,,Activators,
+Microsoft-Windows-PDC,,34,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,CsPowerButtonConsumed,,Activators CsDiag,
+Microsoft-Windows-PDC,,35,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,CsDisplayNotification,,Activators CsDiag,
+Microsoft-Windows-PDC,,36,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,CsEnterExit,,Activators,PDC PdcCsEnterExit handler activated at:{At}.
+Microsoft-Windows-PDC,,37,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,CsEnableInput,,Activators,
+Microsoft-Windows-PDC,,38,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,CsDisableInput,,Activators,
+Microsoft-Windows-PDC,,39,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,CsSuspendResumeHandler,,Activators,PDC Suspend/Resume handler activated. :{Suspend}.
+Microsoft-Windows-PDC,,40,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,CsSessionConnect,,Activators,PDC Session handler - Session {SessionId}; Console: {Console}; Connected: {Connected}.
+Microsoft-Windows-PDC,,41,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,CsConnectionEvent,,Activators,
+Microsoft-Windows-PDC,,42,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,PdcInit,,Activators,PDC Initialization - AoAc: {AoAc}; Status:{Status}.
+Microsoft-Windows-PDC,,43,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,SuspendResumeRegistration,,SuspendResume,Suspend/Resume client in process {Process} (session:{Session}) at {Client} (PDC Identifier:{PdcId}) registered with status: {Status}
+Microsoft-Windows-PDC,,44,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,SuspendResumeDeregistration,,SuspendResume,Suspend/Resume client in process {Process} (session:{Session}) at {Client} (PDC Identifier:{PdcId}) deregistered with status: {Status}
+Microsoft-Windows-PDC,,45,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,SuspendResumeReceive,,SuspendResume,Suspend/reesume Client {Client} sent a request to PDC
+Microsoft-Windows-PDC,,46,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,SuspendResumeSend,,SuspendResume,Response from PDC to suspend/resume client {Client}
+Microsoft-Windows-PDC,,47,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,SuspendResumeMessage,,SuspendResume,Suspend/resume message {Message}: Transaction id: {TransactionId}; PowerEvent: {PowerEvent}
+Microsoft-Windows-PDC,,48,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,SuspendAppsEnter,,SuspendResume,
+Microsoft-Windows-PDC,,49,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,SuspendAppsExit,,SuspendResume,
+Microsoft-Windows-PDC,,50,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,SuspendSvcsEnter,,SuspendResume,
+Microsoft-Windows-PDC,,51,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,SuspendSvcsExit,,SuspendResume,
+Microsoft-Windows-PDC,,52,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,ResumeAppsEnter,,SuspendResume,
+Microsoft-Windows-PDC,,53,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,ResumeAppsExit,,SuspendResume,
+Microsoft-Windows-PDC,,54,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,ResumeSvcsEnter,,SuspendResume,
+Microsoft-Windows-PDC,,55,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,ResumeSvcsExit,,SuspendResume,
+Microsoft-Windows-PDC,,56,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,SuspendResumeCallback,,SuspendResume,Suspend/Resume callback
+Microsoft-Windows-PDC,,57,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,SuspendResumeStarted,,SuspendResume,Suspend/resume started: Type: {Type}; Session: {Session}; IteratioType: {Iteration}; ClientContext:{ClientContext}; PDC Sequence:{PdcSequence}; Power Event:{Value}; WaitTime:{WaitTime}
+Microsoft-Windows-PDC,,58,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,NotificationReceived,,SuspendResume,Notification received: Client: {Client}; Received sequence number:{PdcSequence}
+Microsoft-Windows-PDC,,59,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,InvalidNotification,,Errors SuspendResume,Invalid notification: Client: {Client}; Expected sequence number:{AssumedPdcSequence}; Received sequence number:{ReceivedPdcSequence}
+Microsoft-Windows-PDC,,60,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,SuspendeResumeAllClientsResponded,,SuspendResume,Notification received from all clients: Status:{Status}
+Microsoft-Windows-PDC,,61,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,CsSuspendResumeEvent,,SuspendResume,PDC Suspend/Resume event handler activated. Session:{Session}; Suspend:{Suspend}; Apps:{Apps/Svcs}; User:{User}.
+Microsoft-Windows-PDC,Information,62,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,EnterConnectedStandbyStart,,Activators CsDiag,
+Microsoft-Windows-PDC,Information,63,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,EnterConnectedStandbyEnd,,Activators CsDiag,CS entered with times: PLM: {DisableInputToPLMEntry}; DAM: {DisableInputToDAMEntry};Low Power Epoch: {DisableInputToLowPowerEpochEntry}
+Microsoft-Windows-PDC,Information,64,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,ExitFromConnectedStandbyStart,,Activators CsDiag,Connected standby about the exit
+Microsoft-Windows-PDC,Information,65,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,ExitFromConnectedStandbyEnd,,Activators CsDiag,CS exited with times: Low Power Epoch: {ResiliencyExitToLowPowerEpochEntry}; DAM:{ResiliencyExitToDAMEntry}; PLM:{ResiliencyExitToPLMEntry}
+Microsoft-Windows-PDC,Information,66,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,AbortConnectedStandbyStart,,Activators,
+Microsoft-Windows-PDC,Information,67,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,AbortConnectedStandbyEnd,,Activators,
+Microsoft-Windows-PDC,,68,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,PdcStateChange,,Activators,PDC state changed: new: {NewState}; old:{OldState}
+Microsoft-Windows-PDC,,69,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,PdcScreenOffRequest,,Activators,Console Display Off request status:{Status}
+Microsoft-Windows-PDC,,70,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,PdcScreenOffDisabled,,Activators,
+Microsoft-Windows-PDC,,71,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,ActivatorRegistrationRundown,,Activators CsDiag,Activator {Client} (PDC Identifier:{PdcId}) registered with status: {ResiliencyClientCount}
+Microsoft-Windows-PDC,,72,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,NotificationRegistrationRundown,,Notifications CsDiag,Notification client {Client} (PDC Identifier:{PdcId}) registered with status: {Type}
+Microsoft-Windows-PDC,,73,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,ResiliencyClientRegistrationRundown,,ResiliencyClients CsDiag,Resiliency client {Client} (PDC Identifier:{ClientReferences}) registered with status: {CurrentState}
+Microsoft-Windows-PDC,,74,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,CsFilterInput,,Activators,
+Microsoft-Windows-PDC,,75,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,TaskRegistration,,Tasks,Task client {Client} (PDC Identifier:{PdcId}) registered with status: {Status}
+Microsoft-Windows-PDC,,76,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,TaskDeregistration,,Tasks,Task client {Client} (PDC Identifier:{PdcId}) deregistered with status: {Status}
+Microsoft-Windows-PDC,,77,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,TaskMessage,,Tasks,Task message {Message}: Status/Active: {Status/Active}
+Microsoft-Windows-PDC,,78,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,TaskReceive,,Tasks,Task Client {Client} sent a request to PDC
+Microsoft-Windows-PDC,,79,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,TaskSend,,Tasks,Response from PDC to task client {Client}
+Microsoft-Windows-PDC,,80,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,TaskRundown,,Tasks,Rundown of PDC task client {Client} - PDC identifier:{PdcId}; ReferenceCount:{ReferenceCount}; Status:{Status}; Name:{ClientNameLength}
+Microsoft-Windows-PDC,,81,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,TaskReference,,Tasks CsDiag,PDC task client {TaskClient} referenced at csphase {At}
+Microsoft-Windows-PDC,,82,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,TaskDereference,,Tasks,PDC task client {TaskClient} dereferenced at csphase {At}
+Microsoft-Windows-PDC,Information,83,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,DisplayOffStart,,Activators CsDiag,
+Microsoft-Windows-PDC,Information,84,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,DisplayOffEnd,,Activators CsDiag,
+Microsoft-Windows-PDC,Information,85,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,DisplayOffAbort,,Activators CsDiag,
+Microsoft-Windows-PDC,Information,86,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,EnterConnectedStandbyAbort,,Activators CsDiag,
+Microsoft-Windows-PDC,Information,87,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,ActivationStatistics,,Activators CsDiag sleepstudy,
+Microsoft-Windows-PDC,,88,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,SpmClientRegistration,,SPM,Scenario client {Client} (PDC Identifier:{PdcId}) registered with status: {Status}
+Microsoft-Windows-PDC,,89,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,SpmClientDeregistration,,SPM,Scenario client {Client} (PDC Identifier:{PdcId}) deregistered with status: {Status}
+Microsoft-Windows-PDC,,90,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,SpmClientMessage,,SPM,Task message {PdcMessage}: Status/Active: {Client}
+Microsoft-Windows-PDC,,91,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,SpmClientReceive,,SPM,Scenario Client {Client} sent a request to PDC
+Microsoft-Windows-PDC,,92,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,SpmClientSend,,SPM,Response from PDC to scenario client {Client}
+Microsoft-Windows-PDC,,93,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,SpmClientRundown,,SPM,Rundown of PDC scenario client {Client} - PDC identifier:{PdcId}; Active:{Active}; Status:{Status}; Name:{ClientNameLength}
+Microsoft-Windows-PDC,,94,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,SpmScenarioStateChange,,SPM,SPM scenario {Scenario} state changed: new {NextState}; old {PreviousState}
+Microsoft-Windows-PDC,,95,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,SpmScenarioDependencyRundown,,SPM,SPM scenario {Scenario} has {ClientIdCount} scenario clients of dependency type {Type}
+Microsoft-Windows-PDC,,96,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,SpmClientInformationRundown,,SPM,SPM scenario client {ClientId} info - Name:{ClientNameLength} TestClient:{TestClient}
+Microsoft-Windows-PDC,,97,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,SpmScenarioRundown,,SPM sleepstudy,Rundown of SPM scenario {Scenario} - GUID:{Guid}; Flags:{Flags}; State:{State}; Name:{ScenarioName}
+Microsoft-Windows-PDC,,98,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,SpmScenarioAccountingRundown,,SPM,Rundown of SPM scenario {Scenario} - DripsTime:{DripsTimeInUs}; DripsCount:{DripsTranstions}; PlatformIdleTranstions:{PlatformIdleTimeInUs}; PlatformIdleCount:{PlatformIdleTranstions}
+Microsoft-Windows-PDC,,99,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,SpmClientControlStateChange,,SPM,SPM client ID {PdcId} state changed: old {PreviousState}; new {NextState}
+Microsoft-Windows-PDC,,100,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,SpmClientControlStateRundown,,SPM,SPM client {ClientName} (ID: {PdcId}) has current reference count {ReferenceCount}
+Microsoft-Windows-PDC,Information,101,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,PhaseAccounting,,sleepstudy,
+Microsoft-Windows-PDC,Information,102,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,ClientVerboseRundown,,sleepstudy,
+Microsoft-Windows-PDC,Information,103,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,ActivatorActiveTooLong,,Activators Activators CsDiag,
+Microsoft-Windows-PDC,,104,0,Microsoft-Windows-Kernel-Pdc/Diagnostic,SpmScenarioAccountingSnapshot,,sleepstudy,Rundown of SPM scenario {Scenario} - DripsTime:{DripsTimeInUs}; DripsCount:{DripsTranstions}; PlatformIdleTranstions:{PlatformIdleTimeInUs}; PlatformIdleCount:{PlatformIdleTranstions}
