@@ -3,8 +3,6 @@ import xml.etree.ElementTree as ET
 import csv
 import re
 
-from numpy import single
-
 # This function replaces the variables inside the data with their corresponding values in the templates. For example:
 # If we look at an ETW manifest the message section of an event looks like this : "Process %1 started at time %2 by parent %3 running in session %4 with name %5"
 # This function replaces the "%" with their corresponding values
