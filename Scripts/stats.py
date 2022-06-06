@@ -109,6 +109,8 @@ def searchProviderName(providerName, etwdir_list_fullpath):
 def createProvidersCSV(provider_dict, folderName):
     for providerName, providersPaths in provider_dict.items():
         print("Creating file for provider: " + str(providerName))
+        print("ProviderName Type = " + str(type(providerName)))
+        print("FolderName Type = " + str(type(folderName)))
         unsortedFileName = "ETWProvidersCSVs/"+ str(folderName) + "/" + str(providerName) + "_unsorted.csv"
         with open(unsortedFileName, "w") as f:
             # CSV HEADER
