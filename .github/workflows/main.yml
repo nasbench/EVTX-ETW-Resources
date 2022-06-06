@@ -29,13 +29,13 @@ jobs:
         run: |
           python3.8 -m pip install --upgrade pip
           python3.8 -m pip install csvtomd
-      - name: Delete previous CSV entries
-        run: |
-          rm -r ETWEventsList/
-      - name: Execute converter
-        run: |
-          echo "Running etw-to-csv converter..."
-          python3.8 ./Scripts/etw-to-csv.py
+      #- name: Delete previous CSV entries
+      #  run: |
+      #    rm -r ETWEventsList/
+      #- name: Execute converter
+      #  run: |
+      #    echo "Running etw-to-csv converter..."
+      #    python3.8 ./Scripts/etw-to-csv.py
       - name: Delete previous CSV entries for Stats Providers
         run: |
           find ETWProvidersCSVs -type f -name '*.csv' -exec rm -f {} \;
