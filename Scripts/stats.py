@@ -3,6 +3,8 @@ import xml.etree.ElementTree as ET
 import csv
 import re
 
+from numpy import single
+
 # This function replaces the variables inside the data with their corresponding values in the templates. For example:
 # If we look at an ETW manifest the message section of an event looks like this : "Process %1 started at time %2 by parent %3 running in session %4 with name %5"
 # This function replaces the "%" with their corresponding values
@@ -93,19 +95,22 @@ def getAllProvidersNameAvailable(etwdir_list):
     # We use the "set" function to remove any duplicates
     return list(set(allFiles))
 
-def searchProviderName(providerName, etwdir_list):
+def searchProviderName(providerName, etwdir_list_fullpath):
     fullPathList = []
-    for dirName in etwdir_list:
-        listOfFile = os.listdir(dirName)
-        for entry in listOfFile:
-            if entry != "All.xml":
-                if os.path.splitext(entry)[1] == ".xml":
-                    if entry == providerName:
-                        fullPathList.append(os.path.join(dirName, entry))
+    for entry in etwdir_list_fullpath:
+        if os.name == "nt":
+            fileName = entry.split("\\")[-1]
+        else:
+            fileName = entry.split("/")[-1]
+        if fileName != "All.xml":
+            if os.path.splitext(fileName)[1] == ".xml":
+                if fileName == providerName:
+                    fullPathList.append(entry)
     return fullPathList
 
 def createProvidersCSV(provider_dict, folderName):
     for providerName, providersPaths in provider_dict.items():
+        print("Creating file for provider: " + str(providerName))
         unsortedFileName = "ETWProvidersCSVs/"+ folderName + "/" + providerName + "_unsorted.csv"
         with open(unsortedFileName, "w") as f:
             # CSV HEADER
@@ -196,14 +201,24 @@ def createProvidersCSV(provider_dict, folderName):
 
 if __name__=="__main__":
     manifestsDir = "ETWProvidersManifests"
-    etwdir = []
-    thirdParty_etwdir = []
+    etwdir, etwdir_fullPaths, thirdParty_etwdir, thirdParty_etwdir_fullPaths = [], [], [], []
+
     # This is used to extract the name of the folders containing the XML manifests
     for subdir, dirs, files in os.walk(manifestsDir):
         if "WEPExplorer" in str(subdir):
             etwdir.append(subdir)
+            for singleFile in files:
+                if os.name == 'nt':
+                    etwdir_fullPaths.append(subdir + "\\" + singleFile)
+                else:
+                    etwdir_fullPaths.append(subdir + "/" + singleFile)
         elif "ThirdParty" in str(subdir):
             thirdParty_etwdir.append(subdir)
+            for singleFile in files:
+                if os.name == 'nt':
+                    thirdParty_etwdir_fullPaths.append(subdir + "\\" + singleFile)
+                else:
+                    thirdParty_etwdir_fullPaths.append(subdir + "/" + singleFile)
 
     # We call "getAllProvidersNameAvailable" to collect all the available provider names for both Windows providers and thrid party ones
     all_providers_names = getAllProvidersNameAvailable(etwdir)
@@ -216,12 +231,14 @@ if __name__=="__main__":
     # We do this for internal providers
     provider_dict = {}
     for i in all_providers_names:
-        provider_dict[os.path.splitext(i)[0]] = searchProviderName(i, etwdir)
+        provider_dict[os.path.splitext(i)[0]] = searchProviderName(i, etwdir_fullPaths)
+    print("Internal Providers Dict READY")
 
     # We do the same for third party providers
     thrid_party_provider_dict = {}
     for i in thrid_party_providers_names:
-        thrid_party_provider_dict[os.path.splitext(i)[0]] = searchProviderName(i, thirdParty_etwdir)
+        thrid_party_provider_dict[os.path.splitext(i)[0]] = searchProviderName(i, thirdParty_etwdir_fullPaths)
+    print("Third Party Providers Dict READY")
 
     # Now let's make a CSV like this
     #---> Provider
