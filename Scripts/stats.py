@@ -117,7 +117,7 @@ def createProvidersCSV(provider_dict, CSVfolderName):
                 parsedProvider = parse_etw_xml(provider)
                 if parsedProvider != "Empty Provider":
                     # We will extract windows infom from the path for the "Internal" providers case
-                    if folderName == "Internal":
+                    if CSVfolderName == "Internal":
                         if os.name == 'nt':
                             # We are splitting the provider name to get rid of the ".xml"
                             # Example => ETWProvidersManifests\\Windows10\\1507\\W10_1507_Pro_20150729_10240\\WEPExplorer\\Microsoft-Windows-Kernel-Process.xml
@@ -144,7 +144,7 @@ def createProvidersCSV(provider_dict, CSVfolderName):
                         # Example: 10240
                         windowsBuild = folderName[4]
 
-                    elif folderName == "ThirdParty":
+                    elif CSVfolderName == "ThirdParty":
                         windowsMajorVersion = "N/A"
                         windowsMinorVersion = "N/A"
                         windowsEdition = "N/A"
