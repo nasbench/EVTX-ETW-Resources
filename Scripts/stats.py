@@ -106,12 +106,10 @@ def searchProviderName(providerName, etwdir_list_fullpath):
                     fullPathList.append(entry)
     return fullPathList
 
-def createProvidersCSV(provider_dict, folderName):
+def createProvidersCSV(provider_dict, CSVfolderName):
     for providerName, providersPaths in provider_dict.items():
         print("Creating file for provider: " + str(providerName))
-        print("ProviderName Type = " + str(type(providerName)))
-        print("FolderName Type = " + str(type(folderName)))
-        unsortedFileName = "ETWProvidersCSVs/"+ str(folderName) + "/" + str(providerName) + "_unsorted.csv"
+        unsortedFileName = "ETWProvidersCSVs/"+ CSVfolderName + "/" + providerName + "_unsorted.csv"
         with open(unsortedFileName, "w") as f:
             # CSV HEADER
             f.write("Event ID,Event Version,Level,Channel,Task,Opcode,Keyword,Windows,Version,Edition,Date,Build,Event Message,Event Fields\n")
