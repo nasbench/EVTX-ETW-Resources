@@ -36,6 +36,13 @@ jobs:
         run: |
           echo "Running etw-to-csv converter..."
           python3.8 ./Scripts/etw-to-csv.py
+      - name: Delete previous CSV entries for Stats Providers
+        run: |
+          find ETWProvidersCSVs -type f -name '*.csv' -exec rm -f {} \;
+      - name: Execute CSV Provider generator 
+        run: |
+          echo "Running stats.py generator..."
+          python3.8 ./Scripts/stats.py
       - name: Commit generated data to local repository
         run: |
           git config --global user.name 'Github Actions';
