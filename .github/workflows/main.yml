@@ -4,7 +4,7 @@ name: XML Manifests Converter
 on:
   # Triggers the workflow on push events but only for the main branch
   push:
-    branches: [ main ]
+    branches: [ test ]
     paths: ["ETWProvidersManifests/**.xml"]
 
   # Allows you to run this workflow manually from the Actions tab
@@ -36,7 +36,14 @@ jobs:
         run: |
           echo "Running etw-to-csv converter..."
           python3.8 ./Scripts/etw-to-csv.py
-      - name: Commit generated CSV folder to local repository
+      - name: Delete previous CSV entries for Stats Providers
+        run: |
+          find ETWProvidersCSVs -type f -name '*.csv' -exec rm -f {} \;
+      - name: Execute CSV Provider generator 
+        run: |
+          echo "Running stats.py generator..."
+          python3.8 ./Scripts/stats.py
+      - name: Commit generated data to local repository
         run: |
           git config --global user.name 'Github Actions';
           git config --global user.email 'robot@noreply.github.com';

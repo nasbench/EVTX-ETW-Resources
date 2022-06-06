@@ -3,6 +3,7 @@ from collections import Counter
 from optparse import OptionParser
 import os
 import csvtomd
+import csv
 
 # This is a special version related to generating STATS
 def convertCsvToMDStats(folderName, windowsName, version, edition, date, build):
@@ -184,11 +185,19 @@ def getNumberOfEventsPerVersion(listOfAllFiles):
             #numOfProviders = len(Counter([i.split(",")[0] for i in allevents ]))
         final_restls.append(windowsName + "," + edition + "," + version + "," + date + "," + build + "," + str(numOfProviders) + "," + str(numOfEvents))
 
-    with open("ETWEventsList/etw-stats.csv", "w") as fff:
+    with open("ETWEventsList/etw-stats-unsorted.csv", "w") as fff:
             fff.write("Windows,Edition/SP,Version,Date,Build,N° Providers, N° Events\n")
             for i in final_restls:
                 fff.write(i)
                 fff.write("\n")
+    # Let's sort the created file by "Num Of Providers"
+    reader = csv.reader(open("ETWEventsList/etw-stats-unsorted.csv"), delimiter=",")
+    with open("ETWEventsList/etw-stats.csv", "w") as f:
+        for i in sorted(reader, key=lambda row:row[5], reverse=True):
+            f.write(",".join(i))
+            f.write("\n")
+    os.remove("ETWEventsList/etw-stats-unsorted.csv")
+
     # Convert Results to MD
     with open("ETWEventsList/etw-stats.csv", "r") as f:
         table = csvtomd.csv_to_table(f, ",")
