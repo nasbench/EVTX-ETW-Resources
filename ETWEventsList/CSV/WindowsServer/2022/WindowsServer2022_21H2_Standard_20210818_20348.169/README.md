@@ -1,4 +1,4 @@
-# Windows Server 2022 Standard 21H2(Date: 2021/08/18 - Build: 20348.169) - ETW Providers
+# Windows Server 2022 Standard 21H2 (Date: 2021/08/18 - Build: 20348.169) - ETW Providers
 
 ETW Provider                                                                |  Number Of Events
 ----------------------------------------------------------------------------|------------------

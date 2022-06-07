@@ -1,4 +1,4 @@
-# Windows Server 2016 Standard 1607(Date: 2017/11/14 - Build: 14393.1884) - ETW Providers
+# Windows Server 2016 Standard 1607 (Date: 2017/11/14 - Build: 14393.1884) - ETW Providers
 
 ETW Provider                                                                |  Number Of Events
 ----------------------------------------------------------------------------|------------------

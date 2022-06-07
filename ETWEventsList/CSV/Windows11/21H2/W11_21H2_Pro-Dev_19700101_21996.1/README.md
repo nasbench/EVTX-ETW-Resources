@@ -1,4 +1,4 @@
-# Windows 11 Pro-Dev 21H2(Date: 1970/01/01 - Build: 21996.1) - ETW Providers
+# Windows 11 Pro-Dev 21H2 (Date: 1970/01/01 - Build: 21996.1) - ETW Providers
 
 ETW Provider                                                                |  Number Of Events
 ----------------------------------------------------------------------------|------------------

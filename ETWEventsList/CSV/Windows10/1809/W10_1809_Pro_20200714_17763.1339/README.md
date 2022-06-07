@@ -1,4 +1,4 @@
-# Windows 10 Pro 1809(Date: 2020/07/14 - Build: 17763.1339) - ETW Providers
+# Windows 10 Pro 1809 (Date: 2020/07/14 - Build: 17763.1339) - ETW Providers
 
 ETW Provider                                                                |  Number Of Events
 ----------------------------------------------------------------------------|------------------

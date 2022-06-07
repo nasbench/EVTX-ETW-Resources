@@ -1,4 +1,4 @@
-# Windows 10 Pro 21H2(Date: 2021/10/12 - Build: 19044.1288) - ETW Providers
+# Windows 10 Pro 21H2 (Date: 2021/10/12 - Build: 19044.1288) - ETW Providers
 
 ETW Provider                                                                |  Number Of Events
 ----------------------------------------------------------------------------|------------------

@@ -1,4 +1,4 @@
-# Windows 10 Pro 1511(Date: 1970/01/01 - Build: 10586.0) - ETW Providers
+# Windows 10 Pro 1511 (Date: 1970/01/01 - Build: 10586.0) - ETW Providers
 
 ETW Provider                                                                |  Number Of Events
 ----------------------------------------------------------------------------|------------------

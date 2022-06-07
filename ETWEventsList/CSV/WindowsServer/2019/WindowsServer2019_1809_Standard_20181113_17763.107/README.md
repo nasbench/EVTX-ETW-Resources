@@ -1,4 +1,4 @@
-# Windows Server 2019 Standard 1809(Date: 2018/11/13 - Build: 17763.107) - ETW Providers
+# Windows Server 2019 Standard 1809 (Date: 2018/11/13 - Build: 17763.107) - ETW Providers
 
 ETW Provider                                                                |  Number Of Events
 ----------------------------------------------------------------------------|------------------

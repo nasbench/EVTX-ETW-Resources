@@ -1,4 +1,4 @@
-# Windows 10 Enterprise 1511(Date: 2016/02/09 - Build: 10586.104) - ETW Providers
+# Windows 10 Enterprise 1511 (Date: 2016/02/09 - Build: 10586.104) - ETW Providers
 
 ETW Provider                                                                |  Number Of Events
 ----------------------------------------------------------------------------|------------------

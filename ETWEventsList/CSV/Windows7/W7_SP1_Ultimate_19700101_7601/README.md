@@ -1,4 +1,4 @@
-# Windows 7 Ultimate SP1(Date: 1970/01/01 - Build: 7601) - ETW Providers
+# Windows 7 Ultimate SP1 (Date: 1970/01/01 - Build: 7601) - ETW Providers
 
 ETW Provider                                                         |  Number Of Events
 ---------------------------------------------------------------------|------------------

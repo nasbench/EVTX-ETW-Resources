@@ -1,4 +1,4 @@
-# Windows 10 Pro 1709(Date: 2017/12/12 - Build: 16299.125) - ETW Providers
+# Windows 10 Pro 1709 (Date: 2017/12/12 - Build: 16299.125) - ETW Providers
 
 ETW Provider                                                                |  Number Of Events
 ----------------------------------------------------------------------------|------------------

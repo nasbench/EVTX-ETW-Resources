@@ -1,4 +1,4 @@
-# Windows 8.1 Pro 8.1(Date: 1970/01/01 - Build: 9600) - ETW Providers
+# Windows 8.1 Pro 8.1 (Date: 1970/01/01 - Build: 9600) - ETW Providers
 
 ETW Provider                                                                |  Number Of Events
 ----------------------------------------------------------------------------|------------------

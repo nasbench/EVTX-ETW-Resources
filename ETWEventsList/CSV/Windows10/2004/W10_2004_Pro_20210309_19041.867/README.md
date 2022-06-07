@@ -1,4 +1,4 @@
-# Windows 10 Pro 2004(Date: 2021/03/09 - Build: 19041.867) - ETW Providers
+# Windows 10 Pro 2004 (Date: 2021/03/09 - Build: 19041.867) - ETW Providers
 
 ETW Provider                                                                |  Number Of Events
 ----------------------------------------------------------------------------|------------------

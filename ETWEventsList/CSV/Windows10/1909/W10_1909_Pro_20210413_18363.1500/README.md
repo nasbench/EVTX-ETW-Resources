@@ -1,4 +1,4 @@
-# Windows 10 Pro 1909(Date: 2021/04/13 - Build: 18363.1500) - ETW Providers
+# Windows 10 Pro 1909 (Date: 2021/04/13 - Build: 18363.1500) - ETW Providers
 
 ETW Provider                                                                |  Number Of Events
 ----------------------------------------------------------------------------|------------------

@@ -1,4 +1,4 @@
-# Windows 10 Pro 1507(Date: 2015/07/29 - Build: 10240) - ETW Providers
+# Windows 10 Pro 1507 (Date: 2015/07/29 - Build: 10240) - ETW Providers
 
 ETW Provider                                                                |  Number Of Events
 ----------------------------------------------------------------------------|------------------

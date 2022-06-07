@@ -1,4 +1,4 @@
-# Windows 10 Pro 1903(Date: 2019/09/10 - Build: 18362.356) - ETW Providers
+# Windows 10 Pro 1903 (Date: 2019/09/10 - Build: 18362.356) - ETW Providers
 
 ETW Provider                                                                |  Number Of Events
 ----------------------------------------------------------------------------|------------------

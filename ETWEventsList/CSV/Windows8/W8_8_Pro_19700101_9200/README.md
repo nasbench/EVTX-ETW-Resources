@@ -1,4 +1,4 @@
-# Windows 8 Pro 8(Date: 1970/01/01 - Build: 9200) - ETW Providers
+# Windows 8 Pro 8 (Date: 1970/01/01 - Build: 9200) - ETW Providers
 
 ETW Provider                                                             |  Number Of Events
 -------------------------------------------------------------------------|------------------

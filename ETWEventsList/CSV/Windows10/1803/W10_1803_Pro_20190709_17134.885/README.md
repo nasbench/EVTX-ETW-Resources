@@ -1,4 +1,4 @@
-# Windows 10 Pro 1803(Date: 2019/07/09 - Build: 17134.885) - ETW Providers
+# Windows 10 Pro 1803 (Date: 2019/07/09 - Build: 17134.885) - ETW Providers
 
 ETW Provider                                                                |  Number Of Events
 ----------------------------------------------------------------------------|------------------

@@ -1,4 +1,4 @@
-# Windows 11 Pro 21H2(Date: 2021/11/09 - Build: 22000.318) - ETW Providers
+# Windows 11 Pro 21H2 (Date: 2021/11/09 - Build: 22000.318) - ETW Providers
 
 ETW Provider                                                                |  Number Of Events
 ----------------------------------------------------------------------------|------------------

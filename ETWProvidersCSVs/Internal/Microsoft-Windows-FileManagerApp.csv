@@ -1,15 +1,16 @@
 Event ID,Event Version,Level,Channel,Task,Opcode,Keyword,Windows,Version,Edition,Date,Build,Event Message,Event Fields
 1,0,Error,Microsoft-Windows-FileManagerApp/Operational,LogTask,,Default,Windows 8.1,8.1,Pro,1970/01/01,9600,Error message: {String},{String}
+2,0,Warning,Microsoft-Windows-FileManagerApp/Operational,LogTask,,Default,Windows 8.1,8.1,Pro,1970/01/01,9600,Warning message: {String},{String}
+3,0,Information,Microsoft-Windows-FileManagerApp/Operational,LogTask,,Default,Windows 8.1,8.1,Pro,1970/01/01,9600,Information message: {String},{String}
+4,0,Information,,LogTask,,Default,Windows 8.1,8.1,Pro,1970/01/01,9600,Information message: {String},{String}
+5,0,Warning,,LogTask,,Default,Windows 8.1,8.1,Pro,1970/01/01,9600,Warning message: {String},{String}
+6,0,Error,,LogTask,,Default,Windows 8.1,8.1,Pro,1970/01/01,9600,Error message: {String},{String}
+7,0,Error,,LogTask,,Default,Windows 8.1,8.1,Pro,1970/01/01,9600,Unhandled exception: HRESULT={Prop_HRESULT}; Message={Prop_Message},{Prop_HRESULT} | {Prop_Message}
+8,0,Warning,,LogTask,,Default,Windows 8.1,8.1,Pro,1970/01/01,9600,backtrace from {MethodName}; trace: {Backtrace},{MethodName} | {Backtrace}
+9,0,Warning,,LogTask,,Default,Windows 8.1,8.1,Pro,1970/01/01,9600,Error opening directory {LogPath}; error: {ErrorCode},{LogPath} | {ErrorCode}
 10,0,Warning,,LogTask,,Default,Windows 8.1,8.1,Pro,1970/01/01,9600,Error getting compression for directory {LogPath}; error: {ErrorCode},{LogPath} | {ErrorCode}
+11,0,Warning,,LogTask,,Default,Windows 8.1,8.1,Pro,1970/01/01,9600,Error setting compression on directory {LogPath}; error: {ErrorCode},{LogPath} | {ErrorCode}
 100,0,Information,,SkyDriveTabNavigate,,Navigation,Windows 8.1,8.1,Pro,1970/01/01,9600,,
-1000,0,Information,,PerfTrack_LaunchSkyDriveFirstPage,,,Windows 8.1,8.1,Pro,1970/01/01,9600,,
-1001,0,Information,,PerfTrack_OpenPickerFirstPage,,,Windows 8.1,8.1,Pro,1970/01/01,9600,,
-1002,0,Information,,PerfTrack_SavePickerFirstPage,,,Windows 8.1,8.1,Pro,1970/01/01,9600,,
-1003,0,Information,,PerfTrack_Navigation,,,Windows 8.1,8.1,Pro,1970/01/01,9600,,
-1004,0,Information,,PerfTrack_GetALink,Start,,Windows 8.1,8.1,Pro,1970/01/01,9600,,
-1005,0,Information,,PerfTrack_GetALink,Stop,,Windows 8.1,8.1,Pro,1970/01/01,9600,,
-1006,0,Information,,PerfTrack_InvitePeople,Start,,Windows 8.1,8.1,Pro,1970/01/01,9600,,
-1007,0,Information,,PerfTrack_InvitePeople,Stop,,Windows 8.1,8.1,Pro,1970/01/01,9600,,
 101,0,Information,,SkyDriveSignOutPageLoaded,,Authentication,Windows 8.1,8.1,Pro,1970/01/01,9600,,
 103,0,Information,,PickerNavigationSelection,Start,Navigation,Windows 8.1,8.1,Pro,1970/01/01,9600,,
 104,0,Information,,PickerNavigationSelection,Stop,Navigation,Windows 8.1,8.1,Pro,1970/01/01,9600,,
@@ -18,7 +19,6 @@ Event ID,Event Version,Level,Channel,Task,Opcode,Keyword,Windows,Version,Edition
 107,0,Information,,FirstPage,,Startup,Windows 8.1,8.1,Pro,1970/01/01,9600,,
 108,0,Information,,ViewComplete,,Startup,Windows 8.1,8.1,Pro,1970/01/01,9600,,
 109,0,Information,,OpenPickerLaunch,,Startup,Windows 8.1,8.1,Pro,1970/01/01,9600,,
-11,0,Warning,,LogTask,,Default,Windows 8.1,8.1,Pro,1970/01/01,9600,Error setting compression on directory {LogPath}; error: {ErrorCode},{LogPath} | {ErrorCode}
 110,0,Information,,SavePickerLaunch,,Startup,Windows 8.1,8.1,Pro,1970/01/01,9600,,
 111,0,Information,,AppLaunch,,Startup,Windows 8.1,8.1,Pro,1970/01/01,9600,,
 112,0,Information,,AppResume,,Startup,Windows 8.1,8.1,Pro,1970/01/01,9600,,
@@ -105,9 +105,7 @@ Event ID,Event Version,Level,Channel,Task,Opcode,Keyword,Windows,Version,Edition
 197,0,Information,,SetSourceAndShowIconCancelOperation,,Tile,Windows 8.1,8.1,Pro,1970/01/01,9600,,
 198,0,Information,,FastPanningPhaseOnItemPropertyChanged,,Tile,Windows 8.1,8.1,Pro,1970/01/01,9600,,
 199,0,Information,,FastPanningPhaseGlyph,Start,Tile,Windows 8.1,8.1,Pro,1970/01/01,9600,,
-2,0,Warning,Microsoft-Windows-FileManagerApp/Operational,LogTask,,Default,Windows 8.1,8.1,Pro,1970/01/01,9600,Warning message: {String},{String}
 200,0,Information,,FastPanningPhaseGlyph,Stop,Tile,Windows 8.1,8.1,Pro,1970/01/01,9600,,
-2000,0,Information,,,,,Windows 8.1,8.1,Pro,1970/01/01,9600,,
 201,0,Information,,DiskSpaceRequirementCalculation,Start,Actions,Windows 8.1,8.1,Pro,1970/01/01,9600,,
 202,0,Information,,DiskSpaceRequirementCalculation,Stop,Actions,Windows 8.1,8.1,Pro,1970/01/01,9600,Make all files offline disk state: Disk Size {Prop_TotalDiskSpaceBytes} byes; Free Space {Prop_FreeDiskSpaceBytes} bytes; SkyDrive Size {Prop_StorageSpaceInCloudBytes} bytes; SkyDrive Size on Disk {Prop_StorageSpaceOnDiskBytes} bytes; Low Disk Space Limit {Prop_LowDiskSpaceLimitBytes},{Prop_TotalDiskSpaceBytes} | {Prop_FreeDiskSpaceBytes} | {Prop_StorageSpaceInCloudBytes} | {Prop_StorageSpaceOnDiskBytes} | {Prop_LowDiskSpaceLimitBytes}
 203,0,Information,,FolderViewTileOnItemChanged,,Tile,Windows 8.1,8.1,Pro,1970/01/01,9600,,
@@ -164,12 +162,14 @@ Event ID,Event Version,Level,Channel,Task,Opcode,Keyword,Windows,Version,Edition
 254,0,Error,,OpenWith,,Actions,Windows 8.1,8.1,Pro,1970/01/01,9600,,
 255,0,Error,,Paste,,Actions,Windows 8.1,8.1,Pro,1970/01/01,9600,,
 256,0,Error,,Rename,,Actions,Windows 8.1,8.1,Pro,1970/01/01,9600,,
-3,0,Information,Microsoft-Windows-FileManagerApp/Operational,LogTask,,Default,Windows 8.1,8.1,Pro,1970/01/01,9600,Information message: {String},{String}
+1000,0,Information,,PerfTrack_LaunchSkyDriveFirstPage,,,Windows 8.1,8.1,Pro,1970/01/01,9600,,
+1001,0,Information,,PerfTrack_OpenPickerFirstPage,,,Windows 8.1,8.1,Pro,1970/01/01,9600,,
+1002,0,Information,,PerfTrack_SavePickerFirstPage,,,Windows 8.1,8.1,Pro,1970/01/01,9600,,
+1003,0,Information,,PerfTrack_Navigation,,,Windows 8.1,8.1,Pro,1970/01/01,9600,,
+1004,0,Information,,PerfTrack_GetALink,Start,,Windows 8.1,8.1,Pro,1970/01/01,9600,,
+1005,0,Information,,PerfTrack_GetALink,Stop,,Windows 8.1,8.1,Pro,1970/01/01,9600,,
+1006,0,Information,,PerfTrack_InvitePeople,Start,,Windows 8.1,8.1,Pro,1970/01/01,9600,,
+1007,0,Information,,PerfTrack_InvitePeople,Stop,,Windows 8.1,8.1,Pro,1970/01/01,9600,,
+2000,0,Information,,,,,Windows 8.1,8.1,Pro,1970/01/01,9600,,
 3000,0,Information,,,,Default,Windows 8.1,8.1,Pro,1970/01/01,9600,,
 3001,0,Information,,,,Default,Windows 8.1,8.1,Pro,1970/01/01,9600,,
-4,0,Information,,LogTask,,Default,Windows 8.1,8.1,Pro,1970/01/01,9600,Information message: {String},{String}
-5,0,Warning,,LogTask,,Default,Windows 8.1,8.1,Pro,1970/01/01,9600,Warning message: {String},{String}
-6,0,Error,,LogTask,,Default,Windows 8.1,8.1,Pro,1970/01/01,9600,Error message: {String},{String}
-7,0,Error,,LogTask,,Default,Windows 8.1,8.1,Pro,1970/01/01,9600,Unhandled exception: HRESULT={Prop_HRESULT}; Message={Prop_Message},{Prop_HRESULT} | {Prop_Message}
-8,0,Warning,,LogTask,,Default,Windows 8.1,8.1,Pro,1970/01/01,9600,backtrace from {MethodName}; trace: {Backtrace},{MethodName} | {Backtrace}
-9,0,Warning,,LogTask,,Default,Windows 8.1,8.1,Pro,1970/01/01,9600,Error opening directory {LogPath}; error: {ErrorCode},{LogPath} | {ErrorCode}
