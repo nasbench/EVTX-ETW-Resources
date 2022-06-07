@@ -190,7 +190,7 @@ def createProvidersCSV(provider_dict, csvFolderName):
         # We write everythin to a new file called ("sorted") 
         csvdata = pd.read_csv(unsortedFileName)
         if csvFolderName == "Internal":
-            csvdata.sort_values(["Event ID", "Event Version", "Build"], axis=0, ascending=[True, True, True], inplace=True)
+            csvdata.sort_values(["Event ID", "Event Version", "Build"], axis=0, ascending=[True, True, False], inplace=True)
         elif csvFolderName == "ThirdParty":
             csvdata.sort_values(["Event ID", "Event Version"], axis=0, ascending=[True, True], inplace=True)
         csvdata.to_csv(unsortedFileName.replace("_unsorted.csv", ".csv"), encoding='utf-8', index=False)
