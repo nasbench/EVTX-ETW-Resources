@@ -2,6 +2,7 @@ import os
 import xml.etree.ElementTree as ET
 import csv
 import re
+import pandas as pd
 
 # This function replaces the variables inside the data with their corresponding values in the templates. For example:
 # If we look at an ETW manifest the message section of an event looks like this : "Process %1 started at time %2 by parent %3 running in session %4 with name %5"
@@ -106,10 +107,10 @@ def searchProviderName(providerName, etwdir_list_fullpath):
                     fullPathList.append(entry)
     return fullPathList
 
-def createProvidersCSV(provider_dict, CSVfolderName):
+def createProvidersCSV(provider_dict, csvFolderName):
     for providerName, providersPaths in provider_dict.items():
         print("Creating file for provider: " + str(providerName))
-        unsortedFileName = "ETWProvidersCSVs/"+ CSVfolderName + "/" + providerName + "_unsorted.csv"
+        unsortedFileName = "ETWProvidersCSVs/"+ csvFolderName + "/" + providerName + "_unsorted.csv"
         with open(unsortedFileName, "w") as f:
             # CSV HEADER
             f.write("Event ID,Event Version,Level,Channel,Task,Opcode,Keyword,Windows,Version,Edition,Date,Build,Event Message,Event Fields\n")
@@ -117,7 +118,7 @@ def createProvidersCSV(provider_dict, CSVfolderName):
                 parsedProvider = parse_etw_xml(provider)
                 if parsedProvider != "Empty Provider":
                     # We will extract windows infom from the path for the "Internal" providers case
-                    if CSVfolderName == "Internal":
+                    if csvFolderName == "Internal":
                         if os.name == 'nt':
                             # We are splitting the provider name to get rid of the ".xml"
                             # Example => ETWProvidersManifests\\Windows10\\1507\\W10_1507_Pro_20150729_10240\\WEPExplorer\\Microsoft-Windows-Kernel-Process.xml
@@ -144,7 +145,7 @@ def createProvidersCSV(provider_dict, CSVfolderName):
                         # Example: 10240
                         windowsBuild = folderName[4]
 
-                    elif CSVfolderName == "ThirdParty":
+                    elif csvFolderName == "ThirdParty":
                         windowsMajorVersion = "N/A"
                         windowsMinorVersion = "N/A"
                         windowsEdition = "N/A"
@@ -184,17 +185,15 @@ def createProvidersCSV(provider_dict, CSVfolderName):
                             eventFields + "\n"
                         )
         
-        # We then sort the data first by EID and then by Event Version and write it to a new file
-        unsorted_file = open(unsortedFileName)
-        reader = csv.reader(unsorted_file, delimiter=",")
-        with open(unsortedFileName.replace("_unsorted.csv", ".csv"), "w") as f:
-            f.write("Event ID,Event Version,Level,Channel,Task,Opcode,Keyword,Windows,Version,Edition,Date,Build,Event Message,Event Fields\n")
-            for sortedData in sorted(reader, key=lambda row:(row[0],row[1]), reverse=False)[:-1]:
-                f.write(",".join(sortedData))
-                f.write("\n")
-        
-        # We remove the unsorted data
-        unsorted_file.close()
+        # We then sort the data first by EID and then by Event Version
+        # If the folder is Internal we add sorting bu "Build" (Since this information is not yet available for Third party providers)
+        # We write everythin to a new file called ("sorted") 
+        csvdata = pd.read_csv(unsortedFileName)
+        if csvFolderName == "Internal":
+            csvdata.sort_values(["Event ID", "Event Version", "Build"], axis=0, ascending=[True, True, True], inplace=True)
+        elif csvFolderName == "ThirdParty":
+            csvdata.sort_values(["Event ID", "Event Version"], axis=0, ascending=[True, True], inplace=True)
+        csvdata.to_csv(unsortedFileName.replace("_unsorted.csv", ".csv"), encoding='utf-8', index=False)
         os.remove(unsortedFileName)
 
 if __name__=="__main__":

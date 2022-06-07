@@ -1,9 +1,9 @@
 import xml.etree.ElementTree as ET
 from collections import Counter
-from optparse import OptionParser
 import os
 import csvtomd
 import csv
+import pandas as pd
 
 # This is a special version related to generating STATS
 def convertCsvToMDStats(folderName, windowsName, version, edition, date, build):
@@ -185,28 +185,25 @@ def getNumberOfEventsPerVersion(listOfAllFiles):
             #numOfProviders = len(Counter([i.split(",")[0] for i in allevents ]))
         final_restls.append(windowsName + "," + edition + "," + version + "," + date + "," + build + "," + str(numOfProviders) + "," + str(numOfEvents))
 
-    with open("ETWEventsList/etw-stats-unsorted.csv", "w") as fff:
-            fff.write("Windows,Edition/SP,Version,Date,Build,N° Providers, N° Events\n")
+    with open("ETWEventsList/etw-stats-unsorted.csv", "w") as f:
+            f.write("Windows,Edition/SP,Version,Date,Build,Num Providers, Num Events\n")
             for i in final_restls:
-                fff.write(i)
-                fff.write("\n")
+                f.write(i)
+                f.write("\n")
     # Let's sort the created file by "Num Of Providers"
-    reader = csv.reader(open("ETWEventsList/etw-stats-unsorted.csv"), delimiter=",")
-    with open("ETWEventsList/etw-stats.csv", "w") as f:
-        for i in sorted(reader, key=lambda row:row[5], reverse=True):
-            f.write(",".join(i))
-            f.write("\n")
+    csvdata = pd.read_csv("ETWEventsList/etw-stats-unsorted.csv")
+    csvdata.sort_values(["Num Providers", "Num Events"], axis=0, ascending=[False, False], inplace=True)
+    csvdata.to_csv("ETWEventsList/etw-global-stats.csv", encoding='utf-8', index=False)
     os.remove("ETWEventsList/etw-stats-unsorted.csv")
 
     # Convert Results to MD
-    with open("ETWEventsList/etw-stats.csv", "r") as f:
+    with open("ETWEventsList/etw-global-stats.csv", "r") as f:
         table = csvtomd.csv_to_table(f, ",")
     with open("ETWEventsList/README.md", "w") as f:
         f.write("# ETW Events List\n\n")
         f.write("The following folder contains a list of all ETW events extracted from the currently dumped ETW manifests (See [**ETW Providers Manifests**](https://github.com/nasbench/ETW-Resources/tree/main/ETWProvidersManifests) for the complete list).\n\n")
         f.write("## Global ETW Stats\n")
         f.write(csvtomd.md_table(table, padding=2))
-        #os.remove("ETWEventsList/etw-stats.csv")
 
 def generateStats():
     listOfAllFiles = []
