@@ -13,7 +13,7 @@ def convertCsvToMDStats(folderName, windowsName, version, edition, date, build):
     
     if table:
         with open(folderName + "/README.md", "w") as f:
-            f.write("# " + windowsName + " " + edition + " " + version  + "(Date: " + date + " - " + "Build: " + build + ") - ETW Providers\n\n")
+            f.write("# " + windowsName + " " + edition + " " + version  + " (Date: " + date + " - " + "Build: " + build + ") - ETW Providers\n\n")
             f.write(csvtomd.md_table(table, padding=2))
         os.remove(csvReadme)
     else:
@@ -186,7 +186,7 @@ def getNumberOfEventsPerVersion(listOfAllFiles):
         final_restls.append(windowsName + "," + edition + "," + version + "," + date + "," + build + "," + str(numOfProviders) + "," + str(numOfEvents))
 
     with open("ETWEventsList/etw-stats-unsorted.csv", "w") as f:
-            f.write("Windows,Edition/SP,Version,Date,Build,Num Providers, Num Events\n")
+            f.write("Windows,Edition/SP,Version,Date,Build,Num Providers,Num Events\n")
             for i in final_restls:
                 f.write(i)
                 f.write("\n")
