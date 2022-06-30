@@ -1,0 +1,1215 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Wcmsvc</Name>
+        <Metadata>
+            <Guid>{67D07935-283A-4791-8F8D-FA9117F3E6F2}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\wcmsvc.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\system32\wcmsvc.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.22000.1&amp;FileName=wcmsvc.dll&amp;FileVer=10.0.22000.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Wcmsvc</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Operational</Message>
+                    <Path>Microsoft-Windows-Wcmsvc/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Diagnostic</Message>
+                    <Path>Microsoft-Windows-Wcmsvc/Diagnostic</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Measure WWAN Resume Reconnect task</Message>
+                    <Name>TaskWwanResumeReconnect</Name>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message>Measure WLAN Resume Reconnect task</Message>
+                    <Name>TaskWlanResumeReconnect</Name>
+                    <Value>5</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>LwtDiagnostic</Name>
+                    <Value>32</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Response Time</Message>
+                    <Name>win:ResponseTime</Name>
+                    <Value>281474976710656</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>LwtDiagnostic</Keyword>
+                <Message><![CDATA[
+WCMSVC: Service Startup]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>LwtDiagnostic</Keyword>
+                <Message><![CDATA[
+WCMSVC: Service Shutdown]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>LwtDiagnostic</Keyword>
+                <Message><![CDATA[
+CDE reported a state change 
+
+ State: %1 
+
+ Name: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Name" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A Group Policy change was processed]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>LwtDiagnostic</Keyword>
+                <Message><![CDATA[
+A Power change was processed. 
+
+ Reason: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1006</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>LwtDiagnostic</Keyword>
+                <Message><![CDATA[
+A Terminal Services session change was processed. 
+
+ Reason: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1007</Id>
+                <Version>0</Version>
+                <Channel>Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+CDE reported a state change 
+
+ State: %1 
+
+ Name: Nlasvc.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1008</Id>
+                <Version>0</Version>
+                <Channel>Diagnostic</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+NLA interface property change 
+
+Interface: %1
+Internet v4: %2
+Internet v6: %3
+Probe Complete v4: %4
+Probe Complete v6: %5
+Domain Authenticated: %6
+Domain Probe Complete: %7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Interface GUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Internet Connectivity v4" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="Internet Connectivity v6" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="Internet Probe Complete v4" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="Internet Probe Complete v6" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="Domain Connectivity" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="Domain Probe Complete" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1009</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>LwtDiagnostic</Keyword>
+                <Message><![CDATA[
+CDE reported an L2 adapter arrival 
+
+ Interface: %1 
+
+ Type: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="MediaType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1010</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>LwtDiagnostic</Keyword>
+                <Message><![CDATA[
+CDE reported an L2 adapter removal 
+
+ Interface: %1 
+
+ Type: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="MediaType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1011</Id>
+                <Version>0</Version>
+                <Channel>Diagnostic</Channel>
+                <Level>Information</Level>
+                <Keyword>LwtDiagnostic</Keyword>
+                <Message><![CDATA[
+CDE reported a successful connection 
+
+ Interface: %1 
+
+ Type: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="MediaType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1012</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>LwtDiagnostic</Keyword>
+                <Message><![CDATA[
+CDE reported a connection failure 
+
+ Interface: %1 
+
+ Type: %2
+
+ Status: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="MediaType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1013</Id>
+                <Version>0</Version>
+                <Channel>Diagnostic</Channel>
+                <Level>Information</Level>
+                <Keyword>LwtDiagnostic</Keyword>
+                <Message><![CDATA[
+CDE reported a disconnection 
+
+ Interface: %1 
+
+ Type: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="MediaType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1014</Id>
+                <Version>0</Version>
+                <Channel>Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+WcmSetParameter Called
+
+Interface: %1
+Profile Name: %2
+Wcm Opcode: %3
+Data Length: %4
+Caller Process ID: %5
+Return Value: %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Interface GUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Profile Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Wcm Opcode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Data length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Caller Process ID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Return Value" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1015</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>LwtDiagnostic</Keyword>
+                <Message><![CDATA[
+Interface Token Applied
+
+Interface: %1
+Media Type: %2
+Manual enabled: %3
+Manual Filter: %4
+Num Manual: %5
+Manual Profiles: %6
+Auto enabled: %7
+Auto filter: %8
+Num Auto: %9
+Auto Profiles: %10]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Interface GUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Mediatype" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Manual Connect" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="Manual Filter control" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Num Manual profiles" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Manual Profile Names" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Auto Connect" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="Auto Filter control" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Num Auto profiles" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Auto Profile Names" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1015</Id>
+                <Version>2</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>LwtDiagnostic</Keyword>
+                <Message><![CDATA[
+Interface Token Applied
+
+Interface: %1
+Media Type: %2
+Manual enabled: %3
+Auto enabled: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Interface GUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Mediatype" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="manualConnectEnabled" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="autoConnectEnabled" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1016</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>LwtDiagnostic</Keyword>
+                <Message><![CDATA[
+Interface Token Failed
+
+Interface: %1
+Media Type: %2
+Manual enabled: %3
+Manual Filter: %4
+Num Manual: %5
+Manual Profiles: %6
+Auto enabled: %7
+Auto filter: %8
+Num Auto: %9
+AutoProfiles: %10
+Status: %11]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Interface GUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Mediatype" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Manual Connect" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="Manual Filter control" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Num Manual profiles" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Manual Profile Names" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Auto Connect" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="Auto Filter control" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Num Auto profiles" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Auto Profile Names" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1016</Id>
+                <Version>2</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>LwtDiagnostic</Keyword>
+                <Message><![CDATA[
+Interface Token Failed
+
+Interface: %1
+Media Type: %2
+Manual enabled: %3
+Auto enabled: %4
+Status: %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Interface GUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Mediatype" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="manualConnectEnabled" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="autoConnectEnabled" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="Error" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1017</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Soft disconnect over thresholds for interface: %1
+AvgIn: %2 AvgOut: %3 SpikeIn: %4 SpikeOut: %5
+Thresholds: AvgIn: %6 AvgOut: %7 SpikeIn: %8 SpikeOut:%9
+All values are in bytes/second]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Interface GUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Avg In" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Avg Out" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Spike In" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Spike Out" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Threshold Avg In" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Threshold Avg Out" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Threshold Spike In" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Threshold Spike Out" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1018</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Soft disconnect under thresholds for interface: %1
+AvgIn: %2 AvgOut: %3 SpikeIn: %4 SpikeOut: %5
+Thresholds: AvgIn: %6 AvgOut: %7 SpikeIn: %8 SpikeOut:%9
+All values are in bytes/second]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Interface GUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Avg In" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Avg Out" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Spike In" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Spike Out" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Threshold Avg In" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Threshold Avg Out" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Threshold Spike In" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Threshold Spike Out" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1019</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>LwtDiagnostic</Keyword>
+                <Message><![CDATA[
+CDE reported an unblocked profile 
+
+ Interface: %1 
+
+ Type: %2
+
+ Profile: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="MediaType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Profile Name" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1020</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>LwtDiagnostic</Keyword>
+                <Message><![CDATA[
+WCM Preferred Order List:
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WCM Preferred Order List" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1022</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>LwtDiagnostic</Keyword>
+                <Message><![CDATA[
+WCM entered connected standby]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1023</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>LwtDiagnostic</Keyword>
+                <Message><![CDATA[
+WCM exited connected standby]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1024</Id>
+                <Version>0</Version>
+                <Channel>Diagnostic</Channel>
+                <Level>Verbose</Level>
+                <Keyword>LwtDiagnostic</Keyword>
+                <Message><![CDATA[
+Acquired NDIS NIC Active Reference for interface: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Interface GUID" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1025</Id>
+                <Version>0</Version>
+                <Channel>Diagnostic</Channel>
+                <Level>Verbose</Level>
+                <Keyword>LwtDiagnostic</Keyword>
+                <Message><![CDATA[
+Released NDIS NIC Active Reference for interface: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Interface GUID" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1026</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>LwtDiagnostic</Keyword>
+                <Message><![CDATA[
+CDE reported an NDIS adapter arrival 
+
+ Interface: %1 
+
+ Type: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="MediaType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1027</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>LwtDiagnostic</Keyword>
+                <Message><![CDATA[
+CDE reported an NDIS adapter removal 
+
+ Interface: %1 
+
+ Type: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="MediaType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1028</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>LwtDiagnostic</Keyword>
+                <Message><![CDATA[
+WCM entered net quiet mode]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1029</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>LwtDiagnostic</Keyword>
+                <Message><![CDATA[
+WCM exited net quiet mode]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1030</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Billing Cycle Reset Successful]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Profile Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Profile Updated or Deleted" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1031</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Server Time Retrieval Failure]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ConfigtoSyncWithTimeServer" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="Time Server Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Num Server Time Retries" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Server Time Retrieval Error" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1032</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Keyword>LwtDiagnostic</Keyword>
+                <Message><![CDATA[
+Acquire NDIS NIC Active Reference Failed for interface: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Interface GUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Ndis Ref Error" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1033</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Keyword>LwtDiagnostic</Keyword>
+                <Message><![CDATA[
+Release NDIS NIC Active Reference Failed for interface: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Interface GUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Ndis Ref Error" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1034</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+OnDemandInterfaceStateChanged. OnDemandType:%1, Interface: %2, OnDemandInfo:%3, ProviderID:%4, NewState:%5, Ref counter:%6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="OnDemandType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Interface GUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OnDemand Info" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Provider ID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="New State" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Ref count" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1035</Id>
+                <Version>0</Version>
+                <Channel>Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+OnDemand PDP Profile Created. OnDemandInfo:%1, ProviderID:%2, SubscriberID:%3, Profile Name:%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="APN name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Provider ID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Subscriber ID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Profile name" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1036</Id>
+                <Version>0</Version>
+                <Channel>Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+OnDemand PDP Profile Deleted. Profile Name:%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Profile name" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1037</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+OnDemand Request opened. App ID:%1, ProcessID:%2,OnDemandType:%3, OnDemandInfo:%4, ProviderID:%5, Error: %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="App ID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Process ID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OnDemandType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OnDemand Info" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Provider ID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1038</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+OnDemand Request closed. App ID:%1, ProcessID:%2,OnDemandType:%3, OnDemandInfo:%4, ProviderID:%5, Error: %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="App ID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Process ID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OnDemandType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OnDemand Info" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Provider ID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1039</Id>
+                <Version>0</Version>
+                <Channel>Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+OnDemand Request started. App ID:%1, ProcessID:%2,OnDemandType:%3, OnDemandInfo:%4, ProviderID:%5, Error: %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="App ID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Process ID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OnDemandType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OnDemand Info" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Provider ID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1040</Id>
+                <Version>0</Version>
+                <Channel>Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+OnDemand Request cancelled. App ID:%1, ProcessID:%2,OnDemandType:%3, OnDemandInfo:%4, ProviderID:%5, Error: %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="App ID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Process ID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OnDemandType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OnDemand Info" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Provider ID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1050</Id>
+                <Version>0</Version>
+                <Channel>Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+WcmSvc acquired the NIC reference for Interface: %1 for reason: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Interface GUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ActionType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1051</Id>
+                <Version>0</Version>
+                <Channel>Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+WcmSvc released the NIC reference for Interface: %1 for reason: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Interface GUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ActionType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1052</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>LwtDiagnostic</Keyword>
+                <Message><![CDATA[
+WcmSvc signalled disconnected standby]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1053</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>LwtDiagnostic</Keyword>
+                <Message><![CDATA[
+WcmSvc signalled end of disconnected standby]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1054</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>LwtDiagnostic</Keyword>
+                <Message><![CDATA[
+WcmSvc received power policy update for networking in standby - the new policy value is %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PolicyValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4020</Id>
+                <Version>0</Version>
+                <Channel>Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>Measure WWAN Resume Reconnect task</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+End of Wwan Resume Reconnect]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4021</Id>
+                <Version>0</Version>
+                <Channel>Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>Measure WLAN Resume Reconnect task</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+End of Wlan Resume Reconnect to Same Network]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4022</Id>
+                <Version>0</Version>
+                <Channel>Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>Measure WLAN Resume Reconnect task</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+End of Wlan Resume Reconnect to Same Network OneX]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4023</Id>
+                <Version>0</Version>
+                <Channel>Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>Measure WLAN Resume Reconnect task</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+End of Wlan Resume Reconnect to Different Network]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4024</Id>
+                <Version>0</Version>
+                <Channel>Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>Measure WLAN Resume Reconnect task</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+End of Wlan Resume Reconnect to Different Network OneX]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4025</Id>
+                <Version>0</Version>
+                <Channel>Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>Measure WLAN Resume Reconnect task</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Cancel of Wlan Resume Reconnect2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4026</Id>
+                <Version>0</Version>
+                <Channel>Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>Measure WWAN Resume Reconnect task</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4027</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>LwtDiagnostic</Keyword>
+                <Message><![CDATA[
+WcmSvc CmPdcActivationClientRegister - Status [%1]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4028</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>LwtDiagnostic</Keyword>
+                <Message><![CDATA[
+WcmSvc CmPdcActivationClientUnregister - Status [%1]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4029</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>LwtDiagnostic</Keyword>
+                <Message><![CDATA[
+WcmSvc CmPdcActivationClientActivityRequest - Activate [%1], Status [%2]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Activity" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4030</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>LwtDiagnostic</Keyword>
+                <Message><![CDATA[
+WcmSvc SetNetworkReference - Activate [%1], Result [%2], TotalNetworkRefCount [%3], ProcessId [%4], PerProcessNetworkRefCount [%5], App [%6]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Activate" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="Result" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TotalNetworkRefCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProcessNetworkRefCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AppName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4031</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>LwtDiagnostic</Keyword>
+                <Message><![CDATA[
+WcmSvc ReleaseNetworkReferenceInProcess - ProcessId [%1], PerProcessNetworkRefCount [%2], TotalNetworkRefCount [%3]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProcessNetworkRefCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TotalNetworkRefCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4032</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>LwtDiagnostic</Keyword>
+                <Message><![CDATA[
+WcmSvc AcquireNdisReference - Result [%1], TotalCmNdisRefCount [%2], ProcessId [%3], PerProcessCmNdisRefCount [%4], App [%5]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Result" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TotalCmNdisRefCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PerProcessCmNdisRefCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AppName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4033</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>LwtDiagnostic</Keyword>
+                <Message><![CDATA[
+WcmSvc ReleaseNdisReference - Result [%1], TotalCmNdisRefCount [%2], ProcessId [%3], PerProcessCmNdisRefCount [%4], App [%5]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Result" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TotalCmNdisRefCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PerProcessCmNdisRefCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AppName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4034</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>LwtDiagnostic</Keyword>
+                <Message><![CDATA[
+WcmSvc ReleaseNdisReferenceInProcess - ProcessId [%1], PerProcessCmNdisRefCount [%2], TotalCmNdisRefCount [%3]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProcessNetworkRefCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TotalNetworkRefCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4035</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>LwtDiagnostic</Keyword>
+                <Message><![CDATA[
+WcmSvc NdisReferenceError - [%1]: Result [%2]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FunctionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4036</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>LwtDiagnostic</Keyword>
+                <Message><![CDATA[
+CmService::NdisReference - [%1] InterfaceLuid [%2], Result [%3]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Acquire-Release" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="InterfaceLuid" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Result" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10001</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+WCMSVC: Start WCM Service Startup]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10002</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+WCMSVC: Complete WCM Service Startup]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10003</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+WCMSVC: Start Service Shutdown]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10004</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+WCMSVC: Complete Service Shutdown]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10005</Id>
+                <Version>0</Version>
+                <Channel>Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Tethering Manager Loaded Successfully]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10006</Id>
+                <Version>0</Version>
+                <Channel>Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Tethering Manager Unloaded Successfully]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
