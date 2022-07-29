@@ -1,0 +1,168 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-L2NACP</Name>
+        <Metadata>
+            <Guid>{85FE7609-FF4A-48E9-9D50-12918E43E1DA}</Guid>
+            <ResourceFilePath>%windir%\system32\l2nacp.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%windir%\system32\l2nacp.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.22000.1&amp;FileName=l2nacp.dll&amp;FileVer=10.0.22000.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-L2NACP</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-WLAN-AutoConfig/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>true</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Wired-AutoConfig/Operational</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>true</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-L2NACP/Diagnostic</Message>
+                    <Path>Microsoft-Windows-L2NA/Diagnostic</Path>
+                    <Index>2</Index>
+                    <Id>18</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Credential</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Filter</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:Authentication</Name>
+                    <Value>137438953472</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>13003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-WLAN-AutoConfig/Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>Credential</Keyword>
+                <Message><![CDATA[
+The pre-logon connection attempt is complete.
+
+Network connection attempt result: %1
+Reason: %2
+Interface GUID: %3
+Profile Name: %4
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Result" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ProfileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-WLAN-AutoConfig/Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>Credential</Keyword>
+                <Message><![CDATA[
+The pre-logon connection attempt is complete.
+
+Windows authentication result: %1
+Interface GUID: %2
+Profile Name: %3
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Result" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ProfileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13023</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Wired-AutoConfig/Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>Credential</Keyword>
+                <Message><![CDATA[
+The pre-logon connection attempt is complete.
+
+Network connection attempt result: %1
+Reason: %2
+Interface GUID: %3
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Result" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13024</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Wired-AutoConfig/Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>Credential</Keyword>
+                <Message><![CDATA[
+The pre-logon connection attempt is complete.
+
+Windows authentication result: %1
+Interface GUID: %2
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Result" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-L2NACP/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Keyword>Filter</Keyword>
+                <Message><![CDATA[
+Plap Enabled = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Enabled" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="Remote" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="Dot3Allowed" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="WlanAllowed" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="CredentialsFound" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
