@@ -1,0 +1,1050 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-AsynchronousCausality</Name>
+        <Metadata>
+            <Guid>{19A4C69A-28EB-4D4B-8D94-5F19055A1B5C}</Guid>
+            <ResourceFilePath>C:\Windows\system32\combase.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\combase.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.19041.1320&amp;FileName=combase.dll&amp;FileVer=10.0.19041.1320</HelpLink>
+            <PublisherMessage>Microsoft-Windows-AsyncCausality</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-AsynchronousCausality/Causality</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Critical</Message>
+                    <Name>win:Critical</Name>
+                    <Value>1</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Identifies events for asynchronous operations.</Message>
+                    <Name>AsynchronousOperation</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Identifies events for synchronous work items.</Message>
+                    <Name>SynchronousWorkItem</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Identifies events relating synchronous work items to asynchronous operations.</Message>
+                    <Name>Relation</Name>
+                    <Value>4</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Identifies events for work done by asynchronous operations.</Message>
+                    <Name>OperationWork</Name>
+                    <Value>16</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Identifies events orginated by system components.</Message>
+                    <Name>SystemOperation</Name>
+                    <Value>256</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Identifies events originated by libraries and language projections.</Message>
+                    <Name>LibraryOperation</Name>
+                    <Value>512</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Identifies events originated by an application.</Message>
+                    <Name>ApplicationOperation</Name>
+                    <Value>1024</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Identifies events originated by the creation of an asynchronous operation.</Message>
+                    <Name>OperationCreate</Name>
+                    <Value>2048</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>4112</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Critical</Level>
+                <Keyword>Identifies events for asynchronous operations. Identifies events orginated by system components. Identifies events originated by the creation of an asynchronous operation.</Keyword>
+                <Message><![CDATA[
+Event fired when an asynchronous operation is created.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="OperationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RelatedId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4113</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Critical</Level>
+                <Keyword>Identifies events for asynchronous operations. Identifies events originated by libraries and language projections. Identifies events originated by the creation of an asynchronous operation.</Keyword>
+                <Message><![CDATA[
+Event fired when an asynchronous operation is created.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="OperationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RelatedId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4114</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Critical</Level>
+                <Keyword>Identifies events for asynchronous operations. Identifies events originated by an application. Identifies events originated by the creation of an asynchronous operation.</Keyword>
+                <Message><![CDATA[
+Event fired when an asynchronous operation is created.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="OperationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RelatedId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4144</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Warning</Level>
+                <Keyword>Identifies events for asynchronous operations. Identifies events orginated by system components. Identifies events originated by the creation of an asynchronous operation.</Keyword>
+                <Message><![CDATA[
+Event fired when an asynchronous operation is created.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="OperationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RelatedId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4145</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Warning</Level>
+                <Keyword>Identifies events for asynchronous operations. Identifies events originated by libraries and language projections. Identifies events originated by the creation of an asynchronous operation.</Keyword>
+                <Message><![CDATA[
+Event fired when an asynchronous operation is created.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="OperationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RelatedId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4146</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Warning</Level>
+                <Keyword>Identifies events for asynchronous operations. Identifies events originated by an application. Identifies events originated by the creation of an asynchronous operation.</Keyword>
+                <Message><![CDATA[
+Event fired when an asynchronous operation is created.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="OperationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RelatedId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4176</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Verbose</Level>
+                <Keyword>Identifies events for asynchronous operations. Identifies events orginated by system components. Identifies events originated by the creation of an asynchronous operation.</Keyword>
+                <Message><![CDATA[
+Event fired when an asynchronous operation is created.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="OperationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RelatedId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4177</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Verbose</Level>
+                <Keyword>Identifies events for asynchronous operations. Identifies events originated by libraries and language projections. Identifies events originated by the creation of an asynchronous operation.</Keyword>
+                <Message><![CDATA[
+Event fired when an asynchronous operation is created.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="OperationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RelatedId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4178</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Verbose</Level>
+                <Keyword>Identifies events for asynchronous operations. Identifies events originated by an application. Identifies events originated by the creation of an asynchronous operation.</Keyword>
+                <Message><![CDATA[
+Event fired when an asynchronous operation is created.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="OperationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RelatedId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8208</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Critical</Level>
+                <Keyword>Identifies events for asynchronous operations. Identifies events orginated by system components.</Keyword>
+                <Message><![CDATA[
+Event fired when an asynchronous operation is completed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="CompletionStatus" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8209</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Critical</Level>
+                <Keyword>Identifies events for asynchronous operations. Identifies events originated by libraries and language projections.</Keyword>
+                <Message><![CDATA[
+Event fired when an asynchronous operation is completed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="CompletionStatus" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8210</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Critical</Level>
+                <Keyword>Identifies events for asynchronous operations. Identifies events originated by an application.</Keyword>
+                <Message><![CDATA[
+Event fired when an asynchronous operation is completed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="CompletionStatus" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8240</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Warning</Level>
+                <Keyword>Identifies events for asynchronous operations. Identifies events orginated by system components.</Keyword>
+                <Message><![CDATA[
+Event fired when an asynchronous operation is completed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="CompletionStatus" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8241</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Warning</Level>
+                <Keyword>Identifies events for asynchronous operations. Identifies events originated by libraries and language projections.</Keyword>
+                <Message><![CDATA[
+Event fired when an asynchronous operation is completed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="CompletionStatus" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8242</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Warning</Level>
+                <Keyword>Identifies events for asynchronous operations. Identifies events originated by an application.</Keyword>
+                <Message><![CDATA[
+Event fired when an asynchronous operation is completed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="CompletionStatus" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8272</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Verbose</Level>
+                <Keyword>Identifies events for asynchronous operations. Identifies events orginated by system components.</Keyword>
+                <Message><![CDATA[
+Event fired when an asynchronous operation is completed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="CompletionStatus" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8273</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Verbose</Level>
+                <Keyword>Identifies events for asynchronous operations. Identifies events originated by libraries and language projections.</Keyword>
+                <Message><![CDATA[
+Event fired when an asynchronous operation is completed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="CompletionStatus" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8274</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Verbose</Level>
+                <Keyword>Identifies events for asynchronous operations. Identifies events originated by an application.</Keyword>
+                <Message><![CDATA[
+Event fired when an asynchronous operation is completed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="CompletionStatus" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12304</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Critical</Level>
+                <Keyword>Identifies events relating synchronous work items to asynchronous operations. Identifies events orginated by system components.</Keyword>
+                <Message><![CDATA[
+Event fired relating a synchronous work items to  an asynchronous operation.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Relation" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12305</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Critical</Level>
+                <Keyword>Identifies events relating synchronous work items to asynchronous operations. Identifies events originated by libraries and language projections.</Keyword>
+                <Message><![CDATA[
+Event fired relating a synchronous work items to  an asynchronous operation.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Relation" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12306</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Critical</Level>
+                <Keyword>Identifies events relating synchronous work items to asynchronous operations. Identifies events originated by an application.</Keyword>
+                <Message><![CDATA[
+Event fired relating a synchronous work items to  an asynchronous operation.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Relation" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12336</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Warning</Level>
+                <Keyword>Identifies events relating synchronous work items to asynchronous operations. Identifies events orginated by system components.</Keyword>
+                <Message><![CDATA[
+Event fired relating a synchronous work items to  an asynchronous operation.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Relation" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12337</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Warning</Level>
+                <Keyword>Identifies events relating synchronous work items to asynchronous operations. Identifies events originated by libraries and language projections.</Keyword>
+                <Message><![CDATA[
+Event fired relating a synchronous work items to  an asynchronous operation.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Relation" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12338</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Warning</Level>
+                <Keyword>Identifies events relating synchronous work items to asynchronous operations. Identifies events originated by an application.</Keyword>
+                <Message><![CDATA[
+Event fired relating a synchronous work items to  an asynchronous operation.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Relation" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12368</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Verbose</Level>
+                <Keyword>Identifies events relating synchronous work items to asynchronous operations. Identifies events orginated by system components.</Keyword>
+                <Message><![CDATA[
+Event fired relating a synchronous work items to  an asynchronous operation.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Relation" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12369</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Verbose</Level>
+                <Keyword>Identifies events relating synchronous work items to asynchronous operations. Identifies events originated by libraries and language projections.</Keyword>
+                <Message><![CDATA[
+Event fired relating a synchronous work items to  an asynchronous operation.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Relation" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12370</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Verbose</Level>
+                <Keyword>Identifies events relating synchronous work items to asynchronous operations. Identifies events originated by an application.</Keyword>
+                <Message><![CDATA[
+Event fired relating a synchronous work items to  an asynchronous operation.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Relation" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16400</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Critical</Level>
+                <Keyword>Identifies events for synchronous work items. Identifies events orginated by system components.</Keyword>
+                <Message><![CDATA[
+Event fired when a synchronous work item starts.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="WorkItemType" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16401</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Critical</Level>
+                <Keyword>Identifies events for synchronous work items. Identifies events originated by libraries and language projections.</Keyword>
+                <Message><![CDATA[
+Event fired when a synchronous work item starts.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="WorkItemType" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16402</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Critical</Level>
+                <Keyword>Identifies events for synchronous work items. Identifies events originated by an application.</Keyword>
+                <Message><![CDATA[
+Event fired when a synchronous work item starts.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="WorkItemType" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16432</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Warning</Level>
+                <Keyword>Identifies events for synchronous work items. Identifies events orginated by system components.</Keyword>
+                <Message><![CDATA[
+Event fired when a synchronous work item starts.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="WorkItemType" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16433</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Warning</Level>
+                <Keyword>Identifies events for synchronous work items. Identifies events originated by libraries and language projections.</Keyword>
+                <Message><![CDATA[
+Event fired when a synchronous work item starts.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="WorkItemType" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16434</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Warning</Level>
+                <Keyword>Identifies events for synchronous work items. Identifies events originated by an application.</Keyword>
+                <Message><![CDATA[
+Event fired when a synchronous work item starts.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="WorkItemType" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16464</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Verbose</Level>
+                <Keyword>Identifies events for synchronous work items. Identifies events orginated by system components.</Keyword>
+                <Message><![CDATA[
+Event fired when a synchronous work item starts.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="WorkItemType" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16465</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Verbose</Level>
+                <Keyword>Identifies events for synchronous work items. Identifies events originated by libraries and language projections.</Keyword>
+                <Message><![CDATA[
+Event fired when a synchronous work item starts.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="WorkItemType" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16466</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Verbose</Level>
+                <Keyword>Identifies events for synchronous work items. Identifies events originated by an application.</Keyword>
+                <Message><![CDATA[
+Event fired when a synchronous work item starts.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="WorkItemType" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16656</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Critical</Level>
+                <Keyword>Identifies events for work done by asynchronous operations. Identifies events orginated by system components.</Keyword>
+                <Message><![CDATA[
+Event fired when a synchronous work item starts.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="WorkItemType" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16657</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Critical</Level>
+                <Keyword>Identifies events for work done by asynchronous operations. Identifies events originated by libraries and language projections.</Keyword>
+                <Message><![CDATA[
+Event fired when a synchronous work item starts.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="WorkItemType" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16658</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Critical</Level>
+                <Keyword>Identifies events for work done by asynchronous operations. Identifies events originated by an application.</Keyword>
+                <Message><![CDATA[
+Event fired when a synchronous work item starts.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="WorkItemType" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16688</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Warning</Level>
+                <Keyword>Identifies events for work done by asynchronous operations. Identifies events orginated by system components.</Keyword>
+                <Message><![CDATA[
+Event fired when a synchronous work item starts.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="WorkItemType" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16689</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Warning</Level>
+                <Keyword>Identifies events for work done by asynchronous operations. Identifies events originated by libraries and language projections.</Keyword>
+                <Message><![CDATA[
+Event fired when a synchronous work item starts.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="WorkItemType" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16690</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Warning</Level>
+                <Keyword>Identifies events for work done by asynchronous operations. Identifies events originated by an application.</Keyword>
+                <Message><![CDATA[
+Event fired when a synchronous work item starts.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="WorkItemType" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16720</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Verbose</Level>
+                <Keyword>Identifies events for work done by asynchronous operations. Identifies events orginated by system components.</Keyword>
+                <Message><![CDATA[
+Event fired when a synchronous work item starts.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="WorkItemType" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16721</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Verbose</Level>
+                <Keyword>Identifies events for work done by asynchronous operations. Identifies events originated by libraries and language projections.</Keyword>
+                <Message><![CDATA[
+Event fired when a synchronous work item starts.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="WorkItemType" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16722</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Verbose</Level>
+                <Keyword>Identifies events for work done by asynchronous operations. Identifies events originated by an application.</Keyword>
+                <Message><![CDATA[
+Event fired when a synchronous work item starts.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="WorkItemType" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20496</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Critical</Level>
+                <Keyword>Identifies events for synchronous work items. Identifies events orginated by system components.</Keyword>
+                <Message><![CDATA[
+Event fired when a synchronous work item completes.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20497</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Critical</Level>
+                <Keyword>Identifies events for synchronous work items. Identifies events originated by libraries and language projections.</Keyword>
+                <Message><![CDATA[
+Event fired when a synchronous work item completes.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20498</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Critical</Level>
+                <Keyword>Identifies events for synchronous work items. Identifies events originated by an application.</Keyword>
+                <Message><![CDATA[
+Event fired when a synchronous work item completes.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20528</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Warning</Level>
+                <Keyword>Identifies events for synchronous work items. Identifies events orginated by system components.</Keyword>
+                <Message><![CDATA[
+Event fired when a synchronous work item completes.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20529</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Warning</Level>
+                <Keyword>Identifies events for synchronous work items. Identifies events originated by libraries and language projections.</Keyword>
+                <Message><![CDATA[
+Event fired when a synchronous work item completes.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20530</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Warning</Level>
+                <Keyword>Identifies events for synchronous work items. Identifies events originated by an application.</Keyword>
+                <Message><![CDATA[
+Event fired when a synchronous work item completes.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20560</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Verbose</Level>
+                <Keyword>Identifies events for synchronous work items. Identifies events orginated by system components.</Keyword>
+                <Message><![CDATA[
+Event fired when a synchronous work item completes.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20561</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Verbose</Level>
+                <Keyword>Identifies events for synchronous work items. Identifies events originated by libraries and language projections.</Keyword>
+                <Message><![CDATA[
+Event fired when a synchronous work item completes.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20562</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Verbose</Level>
+                <Keyword>Identifies events for synchronous work items. Identifies events originated by an application.</Keyword>
+                <Message><![CDATA[
+Event fired when a synchronous work item completes.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20752</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Critical</Level>
+                <Keyword>Identifies events for work done by asynchronous operations. Identifies events orginated by system components.</Keyword>
+                <Message><![CDATA[
+Event fired when a synchronous work item completes.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20753</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Critical</Level>
+                <Keyword>Identifies events for work done by asynchronous operations. Identifies events originated by libraries and language projections.</Keyword>
+                <Message><![CDATA[
+Event fired when a synchronous work item completes.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20754</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Critical</Level>
+                <Keyword>Identifies events for work done by asynchronous operations. Identifies events originated by an application.</Keyword>
+                <Message><![CDATA[
+Event fired when a synchronous work item completes.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20784</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Warning</Level>
+                <Keyword>Identifies events for work done by asynchronous operations. Identifies events orginated by system components.</Keyword>
+                <Message><![CDATA[
+Event fired when a synchronous work item completes.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20785</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Warning</Level>
+                <Keyword>Identifies events for work done by asynchronous operations. Identifies events originated by libraries and language projections.</Keyword>
+                <Message><![CDATA[
+Event fired when a synchronous work item completes.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20786</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Warning</Level>
+                <Keyword>Identifies events for work done by asynchronous operations. Identifies events originated by an application.</Keyword>
+                <Message><![CDATA[
+Event fired when a synchronous work item completes.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20816</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Verbose</Level>
+                <Keyword>Identifies events for work done by asynchronous operations. Identifies events orginated by system components.</Keyword>
+                <Message><![CDATA[
+Event fired when a synchronous work item completes.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20817</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Verbose</Level>
+                <Keyword>Identifies events for work done by asynchronous operations. Identifies events originated by libraries and language projections.</Keyword>
+                <Message><![CDATA[
+Event fired when a synchronous work item completes.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20818</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-AsynchronousCausality/Causality</Channel>
+                <Level>Verbose</Level>
+                <Keyword>Identifies events for work done by asynchronous operations. Identifies events originated by an application.</Keyword>
+                <Message><![CDATA[
+Event fired when a synchronous work item completes.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
