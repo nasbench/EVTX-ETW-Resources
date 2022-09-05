@@ -1,0 +1,64 @@
+Event ID,Event Version,Level,Channel,Task,Opcode,Keyword,Windows,Version,Edition,Date,Build,Event Message,Event Fields
+1,0,Information,,,Start,,,,,,,Driver Loaded {version},{version}
+2,0,Information,,,Stop,,,,,,,,
+3,0,Information,,,,,,,,,,The $LogFile restart count has changed on device {DeviceName},{DeviceName}
+4,0,Information,,,,,,,,,,Successfully attached to device {DeviceName},{DeviceName}
+5,0,Information,,,,,,,,,,Device {DeviceName} has been stopped (IRP_MN_STOP_DEVICE),{DeviceName}
+6,0,Information,,,,,,,,,,Device {DeviceName} has been removed (IRP_MN_REMOVE_DEVICE),{DeviceName}
+7,0,Information,,,,,,,,,,Device {DeviceName} has been surprise removed (IRP_MN_SURPRISE_REMOVAL),{DeviceName}
+8,0,Information,,,,,,,,,,Tracking has been enabled on device {DeviceName},{DeviceName}
+9,0,Information,,,,,,,,,,Tracking has been disabled on device {DeviceName},{DeviceName}
+10,0,Warning,,,,,,,,,,,
+11,0,Error,,,,,,,,,,Failed to enable tracking on device {DeviceName},{DeviceName}
+12,0,Information,,,,,,,,,,IRP_MJ_SHUTDOWN received on device {DeviceName},{DeviceName}
+13,0,Information,,,,,,,,,,IOCTL_MRCBT_QUERY_VOLUME_TRACKING_INFORMATION failed on device {DeviceName} with status {Status},{DeviceName} | {Status}
+14,0,Information,,,,,,,,,,Invalidating boot sector on device {DeviceName},{DeviceName}
+15,0,Information,,,,,,,,,,The NTFS $LogFile has been reset. This is normally caused by the Linux NTFS-3G driver.,
+16,0,Information,,,,,,,,,,Failed to allocate file buffer with size {ReferenceCount} for device {DeviceName},{ReferenceCount} | {DeviceName}
+17,0,Information,,,,,,,,,,Reading boot sector on device {DeviceName},{DeviceName}
+18,0,Information,,,,,,,,,,The file-system on device {DeviceName} is not supported,{DeviceName}
+19,0,Error,,,,,,,,,,The volume {DeviceName} is offline,{DeviceName}
+20,0,Error,,,,,,,,,,The file-system on device {DeviceName} is locked,{DeviceName}
+21,0,Error,,,,,,,,,,Failed to create log file with status {ErrorCode},{ErrorCode}
+1000,0,Information,,,,,,,,,,Received GUID_TARGET_DEVICE_REMOVE_COMPLETE for device {DeviceName} with ReferenceCount {ReferenceCount},{DeviceName} | {ReferenceCount}
+1001,0,Information,,,,,,,,,,Received GUID_IO_VOLUME_MOUNT for device {DeviceName},{DeviceName}
+1002,0,Information,,,,,,,,,,Received GUID_IO_VOLUME_DISMOUNT for device {DeviceName},{DeviceName}
+1003,0,Information,,,,,,,,,,Received GUID_IO_VOLUME_PHYSICAL_CONFIGURATION_CHANGE for device {DeviceName},{DeviceName}
+1004,0,Error,,,,,,,,,,Failed to initialize the tracking file on device {DeviceName},{DeviceName}
+1005,0,Information,,,,,,,,,,PlugPlay notification has been registered for device {DeviceName} with ReferenceCount {ReferenceCount},{DeviceName} | {ReferenceCount}
+1006,0,Information,,,,,,,,,,PlugPlay notification has been unregistered for device {DeviceName} with ReferenceCount {ReferenceCount},{DeviceName} | {ReferenceCount}
+1007,0,Information,,,,,,,,,,Received GUID_IO_VOLUME_LOCK_FAILED for device {DeviceName},{DeviceName}
+1008,0,Information,,,,,,,,,,Received GUID_IO_VOLUME_UNLOCK for device {DeviceName},{DeviceName}
+1009,0,Information,,,,,,,,,,Received GUID_TARGET_DEVICE_REMOVE_CANCELLED for device {DeviceName},{DeviceName}
+1010,0,Information,,,,,,,,,,Received GUID_TARGET_DEVICE_QUERY_REMOVE for device {DeviceName},{DeviceName}
+1011,0,Information,,,,,,,,,,Received GUID_IO_VOLUME_LOCK for device {DeviceName},{DeviceName}
+1012,0,Information,,,,,,,,,,Received GUID_IO_VOLUME_FVE_STATUS_CHANGE for device {DeviceName},{DeviceName}
+1013,0,Error,,,,,,,,,,IRP_MJ_READ failed on device {DeviceName} with status {ReferenceCount},{DeviceName} | {ReferenceCount}
+1014,0,Error,,,,,,,,,,IRP_MJ_WRITE failed on device {DeviceName} with status {ReferenceCount},{DeviceName} | {ReferenceCount}
+1015,0,Warning,,,,,,,,,,Received GUID_IO_VOLUME_SIZE_CHANGE for device {DeviceName},{DeviceName}
+1016,0,Information,,,,,,,,,,Received GUID_IO_VOLUME_DISMOUNT_FAILED for device {DeviceName},{DeviceName}
+1017,0,Information,,,,,,,,,,Received GUID_IO_VOLUME_NEED_CHKDSK for device {DeviceName},{DeviceName}
+2001,0,Warning,,,,,,,,,,Failed to open an existing tracking file on device {DeviceName} with status {ReferenceCount},{DeviceName} | {ReferenceCount}
+2002,0,Error,,,,,,,,,,Failed to protect the tracking file on device {DeviceName} with status {ReferenceCount},{DeviceName} | {ReferenceCount}
+2003,0,Error,,,,,,,,,,Failed to get retrieval pointers for the tracking file on device {DeviceName} with status {ReferenceCount},{DeviceName} | {ReferenceCount}
+2004,0,Error,,,,,,,,,,The tracking file on device {DeviceName} is corrupt,{DeviceName}
+2005,0,Error,,,,,,,,,,Failed to create the tracking file on device {DeviceName} with status {Status},{DeviceName} | {Status}
+2006,0,Error,,,,,,,,,,Failed to write to the tracking file on device {DeviceName} with status {Status},{DeviceName} | {Status}
+2007,0,Error,,,,,,,,,,The checksum for the tracking file on device {DeviceName} is incorrect. The tracking file has been reset.,{DeviceName}
+2008,0,Error,,,,,,,,,,The previous session did not finalize the tracking file on device {DeviceName}. The tracking file has been reset.,{DeviceName}
+2009,0,Warning,,,,,,,,,,Failed to reopen an existing tracking file on device {DeviceName} with status {ReferenceCount},{DeviceName} | {ReferenceCount}
+3001,0,Information,,,,,,,,,,Received IRP_MN_SET_POWER with type of SystemPowerState and SystemState {ReferenceCount} for device {DeviceName},{ReferenceCount} | {DeviceName}
+3002,0,Information,,,,,,,,,,Received IRP_MN_SET_POWER with type of DevicePowerState and DeviceState {ReferenceCount} for device {DeviceName},{ReferenceCount} | {DeviceName}
+3003,0,Information,,,,,,,,,,Received IRP_MN_QUERY_POWER with type of SystemPowerState and SystemState {ReferenceCount} for device {DeviceName},{ReferenceCount} | {DeviceName}
+3004,0,Information,,,,,,,,,,Received IRP_MN_QUERY_POWER with type of DevicePowerState and DeviceState {ReferenceCount} for device {DeviceName},{ReferenceCount} | {DeviceName}
+4004,0,Warning,,,,,,,,,,Received IRP_MJ_WRITE request at DISPATCH_LEVEL for device {DeviceName}. You are receiving this warning because a third-party filter driver has generated an illegitimate request and CBT has been forced to take appropriate steps to avoid generating a system crash. This will not effect the integrity of your backups; but is an indication that you are possibly running faulty third-party software. This message will no longer be displayed for this volume during this session.,{DeviceName}
+5001,0,Error,,,,,,,,,,An error was encountered while processing the Ntfs system metadata on line {SourceLine}. Status {Status}.,{SourceLine} | {Status}
+5002,0,Information,,,,,,,,,,The size of the $LogFile on device {DeviceName} is {Size} bytes with {Fragments} fragments,{DeviceName} | {Size} | {Fragments}
+5003,0,Error,,,,,,,,,,Failed to read the $LogFile metadata for device {DeviceName},{DeviceName}
+5004,0,Error,,,,,,,,,,Failed to read {Length} bytes from device {DeviceName} with status {Status},{Length} | {DeviceName} | {Status}
+5006,0,Information,,,,,,,,,,MappingPairsLength={Length},{Length}
+5007,0,Information,,,,,,,,,,CurrentLcn={CurrentLcn}; CurrentVcn={CurrentVcn}; LcnBytes={LcnBytes}; VcnBytes={VcnBytes},{CurrentLcn} | {CurrentVcn} | {LcnBytes} | {VcnBytes}
+5008,0,Information,,,,,,,,,,Detected Windows Sandbox Virtual Disk ({DeviceName}). Tracking will not be available on this device.,{DeviceName}
+5009,0,Information,,,,,,,,,,Detected Windows Xvdd Virtual Disk ({DeviceName}). Tracking will not be available on this device.,{DeviceName}
+6001,0,Information,,,,,,,,,,Detected ReFS version {MajorVersion}.{MinorVersion} boot sector sector on device {DeviceName},{MajorVersion} | {MinorVersion} | {DeviceName}
+6002,0,Information,,,,,,,,,,Found ReFS SuperBlock on device {DeviceName},{DeviceName}
