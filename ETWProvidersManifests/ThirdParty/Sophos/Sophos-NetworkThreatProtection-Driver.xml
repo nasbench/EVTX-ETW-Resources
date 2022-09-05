@@ -1,0 +1,213 @@
+<Providers>
+    <Provider>
+        <Name>Sophos-NetworkThreatProtection-Driver</Name>
+        <Metadata>
+            <Guid>{04AA2CBE-7547-4BD8-B629-381B838565FB}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\drivers\sntp.sys</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\system32\drivers\sntp.sys</MessageFilePath>
+            <HelpLink></HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Debug Log</Message>
+                    <Path>Sophos-NetworkThreatProtection-Driver/Debug</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>1</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The Sophos Network Threat Protection driver has been successfully loaded.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The Sophos Network Threat Protection driver has been unloaded.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Debug Log</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+SNTP Warning: %1 [%3], status: %2. @%4, line %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="status" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="param1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="source_filename" inType="win:AnsiString" outType="xs:string"/>
+  <data name="source_line" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Debug Log</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+SNTP Info: %1 %2 ; %3. @%4, line %5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param1" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="param2" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="source_filename" inType="win:AnsiString" outType="xs:string"/>
+  <data name="source_line" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Debug Log</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+SNTP %1: Network traffic filtering has been enabled.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="filtering_type" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Debug Log</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+SNTP %1: Network traffic filtering has been disabled.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="filtering_type" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The SNTP driver could not be initialized. Please check the Sophos Network Threat Protection driver debug log for further information. STATUS %1 LINE %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="status" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="line_number" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The driver's network event buffer is full. Network events may be ignored. LINE %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="status" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="line_number" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>Debug Log</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+SNTP Warning: Failed to add exclusion (invalid format): %1 @ %4, line %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="status" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="param1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="source_filename" inType="win:AnsiString" outType="xs:string"/>
+  <data name="source_line" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>103</Id>
+                <Version>0</Version>
+                <Channel>Debug Log</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+SophosNTPLWF Warning: %1 [%3], status: %2. @%4, line %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="status" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="param1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="source_filename" inType="win:AnsiString" outType="xs:string"/>
+  <data name="source_line" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>104</Id>
+                <Version>0</Version>
+                <Channel>Debug Log</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+SophosNTPLWF Info: %1 %2 ; %3. @%4, line %5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param1" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="param2" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="source_filename" inType="win:AnsiString" outType="xs:string"/>
+  <data name="source_line" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
