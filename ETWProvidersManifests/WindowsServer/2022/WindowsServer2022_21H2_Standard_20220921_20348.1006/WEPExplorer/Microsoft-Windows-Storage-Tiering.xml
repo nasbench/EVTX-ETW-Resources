@@ -1,0 +1,163 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Storage-Tiering</Name>
+        <Metadata>
+            <Guid>{4A104570-EC6D-4560-A40F-858FA955E84F}</Guid>
+            <ResourceFilePath>C:\Windows\System32\TieringEngineService.exe</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\System32\TieringEngineService.exe</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.20348.1&amp;FileName=TieringEngineService.exe&amp;FileVer=10.0.20348.1</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Storage-Tiering/Admin</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Storage-Tiering/Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The Storage Tiers Management service started monitoring a volume on a tiered storage space. No action is required.  Volume name: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Storage-Tiering/Admin</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The Storage Tiers Management service encountered an error with the database of manually assigned files and re-created the database. Confirm that files that were manually assigned to a particular storage tier are still assigned to the correct tier, as appropriate. Volume name: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Storage-Tiering/Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The Storage Tiers Management service is monitoring a volume on a tiered storage space. No action is required.
+
+           Local volume name: %2
+           CSV name: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+  <data name="CsvNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="CsvName" inType="win:UnicodeString" outType="xs:string" length="CsvNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Storage-Tiering/Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The Storage Tiers Management service completed optimization of the tiered storage space. No action is required. Volume name: %2 Result: %7.  Processing time (in minutes): %8 Optimization time (in minutes): %9  Number of clusters requested to move to Performance tier: %3; to Capacity tier: %4  Actual number of clusters moved to Performance tier: %5; to Capacity tier: %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+  <data name="AskedToMoveToFlash" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="AskedToMoveToDisk" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="MovedToFlash" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="MovedToDisk" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="HResult" inType="win:Int32" outType="win:Hresult"/>
+  <data name="ProcessTimeInMinutes" inType="win:Int32" outType="xs:int"/>
+  <data name="DefragTimeInMinutes" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>22</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Storage-Tiering/Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Storage Tier Optimization Report for volume %2
+
+	% I/Os serviced from Perf tier		Performance tier size required
+%3
+Current size of the Performance tier: %4
+Percent of total I/Os serviced from the Performance tier: %5% 
+
+Size of files pinned to the Performance tier: %6
+Percent of total I/Os: %7% 
+
+Size of files pinned to the Capacity tier: %8
+Percent of total I/Os: %9%]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+  <data name="Report" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FasterTierSize" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TotalIOPercentFromPerfTier" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SizeOfPerfTierPinnedFiles" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PercentOfPerfTierPinnedFilesIO" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SizeOfCapacityTierPinnedFiles" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PercentOfCapacityTierPinnedFilesIO" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>31</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Storage-Tiering/Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The Storage Tiers Management service reached the limit of in-memory records of reads and writes to a tiered storage space. Additional read and write activity will not be recorded or considered during optimization of storage tiers on this storage space for the rest of the hour.  Consider increasing the MaxInMemoryTreeSize registry value. Memory entries limit: %3 Volume name: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+  <data name="NumberEntries" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
