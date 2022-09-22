@@ -1,0 +1,66 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Privacy-Auditing-PermissiveLearningMode</Name>
+        <Metadata>
+            <Guid>{811A1DDB-2E69-5F25-ADC0-4B186170E760}</Guid>
+            <ResourceFilePath>%SystemRoot%\System32\CapabilityAccessManager.dll</ResourceFilePath>
+            <ParameterFilePath>%SystemRoot%\System32\CapabilityAccessManager.dll</ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\System32\CapabilityAccessManager.dll</MessageFilePath>
+            <HelpLink></HelpLink>
+            <PublisherMessage>Microsoft-Windows-Privacy-Auditing-PermissiveLearningMode</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Privacy-Auditing-PermissiveLearningMode/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Access Check</Message>
+                    <Name>AccessCheck</Name>
+                    <Value>10</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>AccessCheck</Message>
+                    <Name>AccessCheck</Name>
+                    <Value>1</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>2000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Privacy-Auditing-PermissiveLearningMode/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Access Check</Task>
+                <Keyword>AccessCheck</Keyword>
+                <Message><![CDATA[
+App %4 running as user %1 was allowed access to capability %2 due to Permissive Learning Mode. App must manifest %2 to function outside of Permissive Learning Mode.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TargetUserSid" inType="win:SID" outType="xs:string"/>
+  <data name="CapabilityName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CapabilitySid" inType="win:SID" outType="xs:string"/>
+  <data name="AppPackageFamilyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PackageSid" inType="win:SID" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

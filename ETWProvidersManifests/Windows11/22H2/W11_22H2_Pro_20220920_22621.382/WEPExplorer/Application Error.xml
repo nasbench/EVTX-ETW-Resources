@@ -1,0 +1,114 @@
+<Providers>
+    <Provider>
+        <Name>Application Error</Name>
+        <Metadata>
+            <Guid>{A0E9B465-B939-57D7-B27D-95D8E925FF57}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\wer.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\system32\wer.dll</MessageFilePath>
+            <HelpLink></HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Application</Message>
+                    <Path>Application</Path>
+                    <Index>0</Index>
+                    <Id>9</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Application Crashing Events</Message>
+                    <Name>Task_UserCrash</Name>
+                    <Value>100</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1000</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Task>Application Crashing Events</Task>
+                <Message><![CDATA[
+Faulting application name: %1, version: %2, time stamp: 0x%3
+Faulting module name: %4, version: %5, time stamp: 0x%6
+Exception code: 0x%7
+Fault offset: 0x%8
+Faulting process id: 0x%9
+Faulting application start time: 0x%10
+Faulting application path: %11
+Faulting module path: %12
+Report Id: %13
+Faulting package full name: %14
+Faulting package-relative application ID: %15]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AppName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AppVersion" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AppTimeStamp" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ModuleName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ModuleVersion" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ModuleTimeStamp" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ExceptionCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FaultingOffset" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ProcessCreationTime" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="AppPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ModulePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IntegratorReportId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PackageFullName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PackageRelativeAppId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Task>Application Crashing Events</Task>
+                <Message><![CDATA[
+Windows cannot access the file %1 for one of the following reasons: there is a problem with the network connection, the disk that the file is stored on, or the storage drivers installed on this computer; or the disk is missing. Windows closed the program %2 because of this error.
+
+Program: %2
+File: %1
+
+The error value is listed in the Additional Data section.
+User Action
+1. Open the file again. This situation might be a temporary problem that corrects itself when the program runs again.
+2. If the file still cannot be accessed and
+	- It is on the network, your network administrator should verify that there is not a problem with the network and that the server can be contacted.
+	- It is on a removable disk, for example, a floppy disk or CD-ROM, verify that the disk is fully inserted into the computer.
+3. Check and repair the file system by running CHKDSK. To run CHKDSK, click Start, click Run, type CMD, and then click OK. At the command prompt, type CHKDSK /F, and then press ENTER.
+4. If the problem persists, restore the file from a backup copy.
+5. Determine whether other files on the same disk can be opened. If not, the disk might be damaged. If it is a hard disk, contact your administrator or computer hardware vendor for further assistance.
+
+Additional Data
+Error value: %3
+Disk type: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FilePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AppName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StatusCode" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="MediumType" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
