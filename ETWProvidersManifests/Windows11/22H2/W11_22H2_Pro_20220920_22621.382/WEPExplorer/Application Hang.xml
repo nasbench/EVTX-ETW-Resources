@@ -1,0 +1,66 @@
+<Providers>
+    <Provider>
+        <Name>Application Hang</Name>
+        <Metadata>
+            <Guid>{C631C3DC-C676-59E4-2DB3-5C0AF00F9675}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\wersvc.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\system32\wersvc.dll</MessageFilePath>
+            <HelpLink></HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Application</Message>
+                    <Path>Application</Path>
+                    <Index>0</Index>
+                    <Id>9</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Hanging Events</Message>
+                    <Name>Task_Hang</Name>
+                    <Value>101</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Task>Hanging Events</Task>
+                <Message><![CDATA[
+The program %1 version %2 stopped interacting with Windows and was closed. To see if more information about the problem is available, check the problem history in the Security and Maintenance control panel.
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AppName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AppVersion" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ProcessId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="StartTime" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TerminationTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ExeFileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ReportId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PackageFullName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PackageRelativeAppId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HangType" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

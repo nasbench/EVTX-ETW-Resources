@@ -1,0 +1,260 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Devices-Query</Name>
+        <Metadata>
+            <Guid>{DF63D0DC-97C2-5E48-C1CC-7B46BFD4DF88}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\cfgmgr32.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\system32\cfgmgr32.dll</MessageFilePath>
+            <HelpLink></HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Devices-Query/Performance</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message></Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message></Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>ioctl_create_query</Name>
+                    <Value>100</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>rpc_create_query</Name>
+                    <Value>200</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>inproc_create_query</Name>
+                    <Value>300</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message></Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>devquery</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ioctl</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>rpc</Name>
+                    <Value>4</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>inproc</Name>
+                    <Value>8</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>create</Name>
+                    <Value>16</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>query</Name>
+                    <Value>32</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>error</Name>
+                    <Value>64</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Devices-Query/Performance</Channel>
+                <Level>win:Informational</Level>
+                <Task>ioctl_create_query</Task>
+                <Opcode>win:Start</Opcode>
+                <Keyword>devquery ioctl create query</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="context" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="objectType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="queryType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="objectIds" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="queryFlags" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="preferredLanguages" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="requestedPropertiesCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="filterLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="extendedParametersLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Devices-Query/Performance</Channel>
+                <Level>win:Informational</Level>
+                <Task>ioctl_create_query</Task>
+                <Opcode>win:Stop</Opcode>
+                <Keyword>devquery ioctl create query</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="context" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Devices-Query/Performance</Channel>
+                <Level>win:Error</Level>
+                <Task>ioctl_create_query</Task>
+                <Keyword>devquery ioctl create query error</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="context" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="error" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>200</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Devices-Query/Performance</Channel>
+                <Level>win:Informational</Level>
+                <Task>rpc_create_query</Task>
+                <Opcode>win:Start</Opcode>
+                <Keyword>devquery rpc create query</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="context" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="objectType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="queryType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="objectIds" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="queryFlags" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="preferredLanguages" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="requestedPropertiesCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="filterLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="extendedParametersLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>201</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Devices-Query/Performance</Channel>
+                <Level>win:Informational</Level>
+                <Task>rpc_create_query</Task>
+                <Opcode>win:Stop</Opcode>
+                <Keyword>devquery rpc create query</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="context" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>202</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Devices-Query/Performance</Channel>
+                <Level>win:Error</Level>
+                <Task>rpc_create_query</Task>
+                <Keyword>devquery rpc create query error</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="context" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="error" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>300</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Devices-Query/Performance</Channel>
+                <Level>win:Informational</Level>
+                <Task>inproc_create_query</Task>
+                <Opcode>win:Start</Opcode>
+                <Keyword>devquery inproc create query</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="context" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="objectType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="queryType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="objectIds" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="queryFlags" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="preferredLanguages" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="requestedPropertiesCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="filterLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="extendedParametersLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>301</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Devices-Query/Performance</Channel>
+                <Level>win:Informational</Level>
+                <Task>inproc_create_query</Task>
+                <Opcode>win:Stop</Opcode>
+                <Keyword>devquery inproc create query</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="context" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>302</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Devices-Query/Performance</Channel>
+                <Level>win:Error</Level>
+                <Task>inproc_create_query</Task>
+                <Keyword>devquery ioctl inproc create error</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="context" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="error" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
