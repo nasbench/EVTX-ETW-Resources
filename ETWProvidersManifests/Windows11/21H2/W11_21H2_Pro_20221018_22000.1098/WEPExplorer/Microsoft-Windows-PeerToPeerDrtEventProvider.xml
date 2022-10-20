@@ -1,0 +1,71 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-PeerToPeerDrtEventProvider</Name>
+        <Metadata>
+            <Guid>{40AE003C-6F3D-4590-AE1C-0E8BE526B50F}</Guid>
+            <ResourceFilePath>%windir%\system32\drt.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%windir%\system32\drt.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.22000.1&amp;FileName=drt.dll&amp;FileVer=10.0.22000.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-PeerToPeerDrtEventProvider</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-PeerToPeerDrtEventProvider/DiagnosticChannel</Message>
+                    <Path>Microsoft-Windows-PeerToPeerDrtEventProvider/Diagnostic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>DrtDelete</Message>
+                    <Name>TransportCreate</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>DrtDelete</Message>
+                    <Name>TransportDelete</Name>
+                    <Value>2</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>10000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PeerToPeerDrtEventProvider/DiagnosticChannel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Create a DRT CMT instance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PeerToPeerDrtEventProvider/DiagnosticChannel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Delete a DRT CMT instance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

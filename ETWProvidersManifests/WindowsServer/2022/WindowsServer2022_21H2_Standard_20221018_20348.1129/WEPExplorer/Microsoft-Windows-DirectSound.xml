@@ -1,0 +1,63 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-DirectSound</Name>
+        <Metadata>
+            <Guid>{8A93B54B-C75A-49B5-A5BE-9060715B1A33}</Guid>
+            <ResourceFilePath>C:\Windows\System32\dsound.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\System32\dsound.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.20348.1&amp;FileName=dsound.dll&amp;FileVer=10.0.20348.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-DirectSound</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-DirectSound/Debug</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>0</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DirectSound/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A DirectSound Stream Switch has started.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DirectSound/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A DirectSound Stream Switch has completed with status %1 (%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hr" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="hrString" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

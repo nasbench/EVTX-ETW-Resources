@@ -1,0 +1,399 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Kernel-WDI</Name>
+        <Metadata>
+            <Guid>{2FF3E6B7-CB90-4700-9621-443F389734ED}</Guid>
+            <ResourceFilePath>C:\Windows\system32\Microsoft-Windows-System-Events.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\Microsoft-Windows-System-Events.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.20348.1129&amp;FileName=Microsoft-Windows-System-Events.dll&amp;FileVer=10.0.20348.1129</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Kernel-WDI</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-Kernel-WDI/Analytic</Message>
+                    <Path>Microsoft-Windows-Kernel-WDI/Analytic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-Kernel-WDI/Debug</Message>
+                    <Path>Microsoft-Windows-Kernel-WDI/Debug</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-Kernel-WDI/Operational</Message>
+                    <Path>Microsoft-Windows-Kernel-WDI/Operational</Path>
+                    <Index>2</Index>
+                    <Id>18</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>SEM Scenario Lifecycle</Message>
+                    <Name>WDI_SEM_TASK_SCENARIO</Name>
+                    <Value>9</Value>
+                </Task>
+                <Task>
+                    <Message>SEM Initialization</Message>
+                    <Name>WDI_SEM_TASK_INIT</Name>
+                    <Value>10</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Scenario start enables context providers to the WDI context logger.</Message>
+                    <Name>WDI_SEM_TASK_SCENARIO_OPCODE_START</Name>
+                    <Value>10</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Scenario end disables context providers to the WDI context logger.</Message>
+                    <Name>WDI_SEM_TASK_SCENARIO_OPCODE_END</Name>
+                    <Value>11</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>When a scenario has remained in-flight beyond the maximum time window it is automatically terminated by the SEM.</Message>
+                    <Name>WDI_SEM_TASK_SCENARIO_OPCODE_TIMEOUT</Name>
+                    <Value>12</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>A scenario start attempt failed in the SEM.</Message>
+                    <Name>WDI_SEM_TASK_SCENARIO_OPCODE_START_FAILED</Name>
+                    <Value>13</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>A scenario end attempt failed in the SEM.</Message>
+                    <Name>WDI_SEM_TASK_SCENARIO_OPCODE_END_FAILED</Name>
+                    <Value>14</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>The SEM received a request to start a new scenario, but the maximum number of scenarios were already in-flight.</Message>
+                    <Name>WDI_SEM_TASK_SCENARIO_OPCODE_INFLIGHT_MAX</Name>
+                    <Value>15</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>There is an invalid configuration parameter in the SEM registry namespace.</Message>
+                    <Name>WDI_SEM_TASK_INIT_OPCODE_MISCONFIG</Name>
+                    <Value>16</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>The SEM is configured with more scenarios than the maximum allowed count.</Message>
+                    <Name>WDI_SEM_TASK_INIT_OPCODE_SCENARIO_MAX</Name>
+                    <Value>17</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>The SEM is configured with a scenario with too many context providers.</Message>
+                    <Name>WDI_SEM_TASK_INIT_OPCODE_SCENARIO_CONTEXT_PROVIDER_MAX</Name>
+                    <Value>18</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>The SEM is configured with a scenario that has too many end events.</Message>
+                    <Name>WDI_SEM_TASK_INIT_OPCODE_SCENARIO_END_EVENT_MAX</Name>
+                    <Value>19</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>The number of providers specified across all scenarios is above the maximum allowed amount.</Message>
+                    <Name>WDI_SEM_TASK_INIT_OPCODE_PROVIDER_MAX</Name>
+                    <Value>20</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Verbose context events</Message>
+                    <Name>context</Name>
+                    <Value>4294967296</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Scenario trigger events</Message>
+                    <Name>diag</Name>
+                    <Value>8589934592</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>SQM</Message>
+                    <Name>win:SQM</Name>
+                    <Value>2251799813685248</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>32</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-WDI/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>SEM Scenario Lifecycle</Task>
+                <Opcode>Scenario start enables context providers to the WDI context logger.</Opcode>
+                <Message><![CDATA[
+The Scenario Event Mapper started a scenario for provider %1 (event ID %2) with %4 context providers.  The context logger dropped event count was %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProviderID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="EventID" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DroppedEventCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ActionCount" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <struct name="SemActions" count="ActionCount">
+    <data name="ProviderID" inType="win:GUID" outType="xs:GUID"/>
+    <data name="Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+    <data name="Reserved" inType="win:UInt8" outType="xs:unsignedByte" count="7"/>
+    <data name="Keyword" inType="win:UInt64" outType="xs:unsignedLong"/>
+    <data name="EnableProperty" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="NTStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>33</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-WDI/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>SEM Scenario Lifecycle</Task>
+                <Opcode>Scenario end disables context providers to the WDI context logger.</Opcode>
+                <Message><![CDATA[
+The Scenario Event Mapper stopped a scenario for provider %1 (event ID %2) with %4 context providers.  The context logger dropped event count was %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProviderID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="EventID" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DroppedEventCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ActionCount" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <struct name="SemActions" count="ActionCount">
+    <data name="ProviderID" inType="win:GUID" outType="xs:GUID"/>
+    <data name="Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+    <data name="Reserved" inType="win:UInt8" outType="xs:unsignedByte" count="7"/>
+    <data name="Keyword" inType="win:UInt64" outType="xs:unsignedLong"/>
+    <data name="EnableProperty" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="NTStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>34</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-WDI/Analytic</Channel>
+                <Level>Warning</Level>
+                <Task>SEM Scenario Lifecycle</Task>
+                <Opcode>When a scenario has remained in-flight beyond the maximum time window it is automatically terminated by the SEM.</Opcode>
+                <Message><![CDATA[
+An in-flight scenario from provider %1 (event ID %2) timed out and was stopped automatically by the Scenario Event Mapper.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProviderID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="EventID" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>35</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-WDI/Debug</Channel>
+                <Level>Warning</Level>
+                <Task>SEM Scenario Lifecycle</Task>
+                <Opcode>The SEM received a request to start a new scenario, but the maximum number of scenarios were already in-flight.</Opcode>
+                <Message><![CDATA[
+The Scenario Event Mapper was unable to start a new scenario for provider %1 (event ID %2) because the maximum number of scenarios are already in flight.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProviderID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="EventID" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ScenarioCount" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <struct name="ScenarioInflightItems" count="ScenarioCount">
+    <data name="ProviderID" inType="win:GUID" outType="xs:GUID"/>
+    <data name="EventID" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="Reserved" inType="win:UInt16" outType="xs:unsignedShort"/>
+    <data name="InflightCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>36</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-WDI/Debug</Channel>
+                <Level>Warning</Level>
+                <Task>SEM Scenario Lifecycle</Task>
+                <Opcode>A scenario start attempt failed in the SEM.</Opcode>
+                <Message><![CDATA[
+The Scenario Event Mapper was unable to start a scenario for provider %1 (event ID %2).  The error code was %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProviderID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="EventID" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="NTStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>37</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-WDI/Debug</Channel>
+                <Level>Warning</Level>
+                <Task>SEM Scenario Lifecycle</Task>
+                <Opcode>A scenario end attempt failed in the SEM.</Opcode>
+                <Message><![CDATA[
+The Scenario Event Mapper was unable to stop a scenario for provider %1 (event ID %2).  The error code was %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProviderID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="EventID" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="NTStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>38</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-WDI/Operational</Channel>
+                <Level>Error</Level>
+                <Task>SEM Initialization</Task>
+                <Opcode>The SEM is configured with more scenarios than the maximum allowed count.</Opcode>
+                <Message><![CDATA[
+The Scenario Event Mapper is configured with more than the maximum number of scenarios.  The scenario for provider %1 (event ID %2) will be ignored.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProviderID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="EventID" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>39</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-WDI/Operational</Channel>
+                <Level>Error</Level>
+                <Task>SEM Initialization</Task>
+                <Opcode>The SEM is configured with a scenario with too many context providers.</Opcode>
+                <Message><![CDATA[
+The Scenario Event Mapper is configured with more than the maximum number of context providers for the scenario with provider %1 (event ID %2).  The scenario will be ignored.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProviderID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="EventID" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>40</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-WDI/Operational</Channel>
+                <Level>Error</Level>
+                <Task>SEM Initialization</Task>
+                <Opcode>The SEM is configured with a scenario that has too many end events.</Opcode>
+                <Message><![CDATA[
+The Scenario Event Mapper is configured with more than the maximum number of end events for the scenario with provider %1 (event ID %2).  The scenario will be ignored.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProviderID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="EventID" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>41</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-WDI/Operational</Channel>
+                <Level>Error</Level>
+                <Task>SEM Initialization</Task>
+                <Opcode>The number of providers specified across all scenarios is above the maximum allowed amount.</Opcode>
+                <Message><![CDATA[
+The Scenario Event Mapper is configured with more than the maximum number of providers.  The provider %1 will be ignored.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProviderID" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>42</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-WDI/Operational</Channel>
+                <Level>Error</Level>
+                <Task>SEM Initialization</Task>
+                <Opcode>There is an invalid configuration parameter in the SEM registry namespace.</Opcode>
+                <Message><![CDATA[
+The Scenario Event Mapper is configured with an unsupported scenario. The scenario for provider %1 (event ID %2) encountered error code %3 and will be ignored.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProviderID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="EventID" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="NTStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>43</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SqmType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SqmSid" inType="win:SID" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>44</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SqmSessionGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SqmID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SqmType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SqmDWORDDatapointValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>45</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SqmSessionGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SqmID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SqmType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SqmStreamRowLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="SqmStreamRow" count="SqmStreamRowLength">
+    <data name="SqmTypeEntry" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="SqmDWORDEntry" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="SqmStringEntry" inType="win:UnicodeString" outType="xs:string"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
