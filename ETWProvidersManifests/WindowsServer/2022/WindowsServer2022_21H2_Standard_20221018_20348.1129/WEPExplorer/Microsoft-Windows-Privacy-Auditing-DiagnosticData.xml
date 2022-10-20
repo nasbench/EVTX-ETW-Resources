@@ -1,0 +1,109 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Privacy-Auditing-DiagnosticData</Name>
+        <Metadata>
+            <Guid>{D3610DCA-4501-5A5D-21A7-30CA91130711}</Guid>
+            <ResourceFilePath>C:\Windows\system32\diagtrack.dll</ResourceFilePath>
+            <ParameterFilePath>C:\Windows\system32\diagtrack.dll</ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\diagtrack.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.20348.1&amp;FileName=diagtrack.dll&amp;FileVer=10.0.20348.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Privacy-Auditing-DiagnosticData</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Privacy-Auditing/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Diagnostic Data Value Changed</Message>
+                    <Name>DiagnosticDataValueChanged</Name>
+                    <Value>10</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>System Global Consent</Message>
+                    <Name>SystemGlobal</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Failure</Message>
+                    <Name>Failure</Name>
+                    <Value>64</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Privacy-Auditing/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Diagnostic Data Value Changed</Task>
+                <Keyword>System Global Consent</Keyword>
+                <Message><![CDATA[
+The Diagnostic Data Value was changed from %4 to %5 by %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CallerUserSid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CallerProcessName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CallerAppPackageFamilyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="OldConsentValue" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NewConsentValue" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SetByHigherAuthority" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="EffectiveConsentValue" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TargetUserSid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ConsentID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AppPackageFamilyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HResult" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SettingName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Privacy-Auditing/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Diagnostic Data Value Changed</Task>
+                <Keyword>System Global Consent Failure</Keyword>
+                <Message><![CDATA[
+The Diagnostic Data Value failed to change from %4 to %5 by %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CallerUserSid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CallerProcessName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CallerAppPackageFamilyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="OldConsentValue" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NewConsentValue" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SetByHigherAuthority" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="EffectiveConsentValue" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TargetUserSid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ConsentID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AppPackageFamilyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HResult" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SettingName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

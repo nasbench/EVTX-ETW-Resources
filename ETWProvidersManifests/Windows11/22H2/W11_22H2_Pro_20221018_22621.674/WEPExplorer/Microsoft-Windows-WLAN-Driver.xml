@@ -1,0 +1,201 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-WLAN-Driver</Name>
+        <Metadata>
+            <Guid>{DAA6A96B-F3E7-4D4D-A0D6-31A350E6A445}</Guid>
+            <ResourceFilePath>%windir%\system32\wlansvc.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%windir%\system32\wlansvc.dll</MessageFilePath>
+            <HelpLink></HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-WLAN-Driver/Analytic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>DataTransmitReceive</Name>
+                    <Value>1</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message></Message>
+                    <Name>Transmit</Name>
+                    <Value>11</Value>
+                    <Task>1</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>Receive</Name>
+                    <Value>12</Value>
+                    <Task>1</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>DataPath</Name>
+                    <Value>1</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>0</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-WLAN-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>DataTransmitReceive</Task>
+                <Opcode>Transmit</Opcode>
+                <Keyword>DataPath</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FrameUniqueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TID" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="PeerID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PayloadLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="QueueLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="QueueState" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="CustomData1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CustomData2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CustomData3" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-WLAN-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>DataTransmitReceive</Task>
+                <Opcode>Transmit</Opcode>
+                <Keyword>DataPath</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FrameUniqueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="QueueLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="QueueState" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CustomData1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CustomData2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CustomData3" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-WLAN-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>DataTransmitReceive</Task>
+                <Opcode>Transmit</Opcode>
+                <Keyword>DataPath</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FrameUniqueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SequenceNumber" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RetryCount" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="CustomData1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CustomData2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CustomData3" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-WLAN-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>DataTransmitReceive</Task>
+                <Opcode>Transmit</Opcode>
+                <Keyword>DataPath</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FrameUniqueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CustomData1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CustomData2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CustomData3" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-WLAN-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>DataTransmitReceive</Task>
+                <Opcode>Receive</Opcode>
+                <Keyword>DataPath</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FrameUniqueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TID" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="PeerID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SequenceNumber" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PayloadLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="QueueLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Retransmit" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CustomData1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CustomData2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CustomData3" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-WLAN-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>DataTransmitReceive</Task>
+                <Opcode>Receive</Opcode>
+                <Keyword>DataPath</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FrameUniqueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RxBacklog" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="CustomData1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CustomData2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CustomData3" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-WLAN-Driver/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>DataTransmitReceive</Task>
+                <Opcode>Receive</Opcode>
+                <Keyword>DataPath</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FrameUniqueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="QueueLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="RxBacklog" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="CustomData1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CustomData2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CustomData3" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

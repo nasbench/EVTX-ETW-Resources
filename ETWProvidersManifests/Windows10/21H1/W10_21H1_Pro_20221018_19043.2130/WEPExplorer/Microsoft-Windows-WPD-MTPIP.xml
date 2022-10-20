@@ -1,0 +1,155 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-WPD-MTPIP</Name>
+        <Metadata>
+            <Guid>{C374D21E-69B2-4CD7-9A25-62187C5A5619}</Guid>
+            <ResourceFilePath>C:\Windows\System32\wpd_ci.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\System32\wpd_ci.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.19041.1151&amp;FileName=wpd_ci.dll&amp;FileVer=10.0.19041.1151</HelpLink>
+            <PublisherMessage>Microsoft-Windows-WPD-MTPIP</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Analytic</Message>
+                    <Path>Microsoft-Windows-WPD-MTPIP/Analytic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Write MTP IP Packet to Data channel]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MTPIPPacketLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MTPIPPacketData" inType="win:Binary" outType="xs:hexBinary" length="MTPIPPacketLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Write MTP IP Packet to Event channel]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MTPIPPacketLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MTPIPPacketData" inType="win:Binary" outType="xs:hexBinary" length="MTPIPPacketLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Read MTP IP Packet from Data channel]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MTPIPPacketLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MTPIPPacketData" inType="win:Binary" outType="xs:hexBinary" length="MTPIPPacketLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>103</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Read MTP IP Packet from Event channel]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MTPIPPacketLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MTPIPPacketData" inType="win:Binary" outType="xs:hexBinary" length="MTPIPPacketLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>104</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Read MTP IP Data Packet]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MTPIPPacketLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MTPIPPacketType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>105</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Received IP Device Event]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MTPIPEventLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MTPIPEventData" inType="win:Binary" outType="xs:hexBinary" length="MTPIPEventLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>106</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Received IP Unexpected header on data channel]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MTPIPPacketLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MTPIPPacketType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>107</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Received IP Unexpected header on event channel]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MTPIPPacketLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MTPIPPacketType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

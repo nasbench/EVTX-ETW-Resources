@@ -1,0 +1,1371 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-DriverFrameworks-UserMode</Name>
+        <Metadata>
+            <Guid>{2E35AAEB-857F-4BEB-A418-2E6C0E54D988}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\WUDFPlatform.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\system32\WUDFPlatform.dll</MessageFilePath>
+            <HelpLink></HelpLink>
+            <PublisherMessage>Microsoft-Windows-DriverFrameworks-UserMode</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Operational</Message>
+                    <Path>Microsoft-Windows-DriverFrameworks-UserMode/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Kernel-Power/Diagnostic</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>true</Imported>
+                </Channel>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>2</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Critical</Message>
+                    <Name>win:Critical</Name>
+                    <Value>1</Value>
+                </Level>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Startup of the driver manager service.</Message>
+                    <Name>DriverManager_Startup</Name>
+                    <Guid>{3C59B640-5C5F-4AFF-B2AA-4C08BA1231C8}</Guid>
+                    <Value>16</Value>
+                </Task>
+                <Task>
+                    <Message>Creation of a new driver host process.</Message>
+                    <Name>DriverManager_CreateHost</Name>
+                    <Guid>{4CA6210C-DFD0-4F59-A7C5-16BDE1C4D89F}</Guid>
+                    <Value>17</Value>
+                </Task>
+                <Task>
+                    <Message>Shutdown of a driver host process.</Message>
+                    <Name>DriverManager_ShutdownHost</Name>
+                    <Guid>{74E7BCC4-50D3-4395-8DD3-6733CAC699E0}</Guid>
+                    <Value>18</Value>
+                </Task>
+                <Task>
+                    <Message>Startup of a new driver host process.</Message>
+                    <Name>Host_Startup</Name>
+                    <Guid>{30BA0D00-B0DD-45B5-AA11-9F47EBE06E16}</Guid>
+                    <Value>32</Value>
+                </Task>
+                <Task>
+                    <Message>Loading drivers to control a newly discovered device.</Message>
+                    <Name>Host_DeviceArrival</Name>
+                    <Guid>{570E0A75-5F4D-471A-B6E1-CB727F1EB250}</Guid>
+                    <Value>33</Value>
+                </Task>
+                <Task>
+                    <Message>Pnp or Power Management operation to a particular device.</Message>
+                    <Name>Host_PnpOperation</Name>
+                    <Guid>{9EC0ECE4-C06B-464F-B35D-B485C6E3B68F}</Guid>
+                    <Value>37</Value>
+                </Task>
+                <Task>
+                    <Message>Shutdown of a driver host process.</Message>
+                    <Name>Host_Shutdown</Name>
+                    <Guid>{3C93D137-2148-4FFA-81F4-4457184DAAC8}</Guid>
+                    <Value>41</Value>
+                </Task>
+                <Task>
+                    <Message>Installation or update of device drivers.</Message>
+                    <Name>Installation</Name>
+                    <Guid>{E26225B2-3C55-4C8C-A9B2-94D6CD72A138}</Guid>
+                    <Value>48</Value>
+                </Task>
+                <Task>
+                    <Message>User-mode Driver problems.</Message>
+                    <Name>UMDF_Crash</Name>
+                    <Guid>{4064201E-A283-4824-A76D-11F58F85BE14}</Guid>
+                    <Value>64</Value>
+                </Task>
+                <Task>
+                    <Message>Pnp or Power Management operation to a particular driver in a device stack.</Message>
+                    <Name>Fx_PnpOperation</Name>
+                    <Guid>{1DCB8DB8-6B98-4E58-A9E9-CC43C30D07B1}</Guid>
+                    <Value>80</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>PowerTransition_Driver</Name>
+                    <Guid>{98D390F0-891B-46C0-9A03-CFDFE20E8E85}</Guid>
+                    <Value>96</Value>
+                </Task>
+                <Task>
+                    <Message>Startup of the UMDF reflector</Message>
+                    <Name>Reflector_Startup</Name>
+                    <Guid>{6625B667-C360-4F2C-872A-0F67026FB381}</Guid>
+                    <Value>101</Value>
+                </Task>
+                <Task>
+                    <Message>Testing UMDF</Message>
+                    <Name>UMDF_Test</Name>
+                    <Guid>{4BA1131A-5E74-41B2-8921-9A27041D9906}</Guid>
+                    <Value>116</Value>
+                </Task>
+                <Task>
+                    <Message>DDI call to read from Hardware.</Message>
+                    <Name>Task_Umdf_Fx_Ddi_ReadFromHardware</Name>
+                    <Guid>{0082CFBF-DFFC-4948-940D-9E27140EDA49}</Guid>
+                    <Value>117</Value>
+                </Task>
+                <Task>
+                    <Message>Read from Hardware.</Message>
+                    <Name>Task_Umdf_ReadFromHardware</Name>
+                    <Guid>{B8E6C4B4-19E2-4E6A-A7C1-43E18EB0FEAB}</Guid>
+                    <Value>118</Value>
+                </Task>
+                <Task>
+                    <Message>DDI call to Write to hardware.</Message>
+                    <Name>Task_Umdf_Fx_Ddi_WriteToHardware</Name>
+                    <Guid>{751953A7-1403-4B64-959E-B2989C5DDC62}</Guid>
+                    <Value>119</Value>
+                </Task>
+                <Task>
+                    <Message>Write to hardware.</Message>
+                    <Name>Task_Umdf_WriteToHardware</Name>
+                    <Guid>{04682840-EEED-4651-A7E3-AEE87D18C919}</Guid>
+                    <Value>120</Value>
+                </Task>
+                <Task>
+                    <Message>UMDF hardware interrupt notification.</Message>
+                    <Name>Task_Umdf_InterruptNotification</Name>
+                    <Guid>{174470B5-64D6-4574-9A6C-637220585159}</Guid>
+                    <Value>121</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>NestingStart</Name>
+                    <Value>32</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>NestingStop</Name>
+                    <Value>33</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>umdf:PowerTransition</Name>
+                    <Value>1</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1000</Id>
+                <Version>1</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Startup of the driver manager service.</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+The Driver Manager service started successfully]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Version" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1000</Id>
+                <Version>2</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Startup of the driver manager service.</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+The Driver Manager service started successfully]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1001</Id>
+                <Version>1</Version>
+                <Channel>Operational</Channel>
+                <Level>Critical</Level>
+                <Task>Startup of the driver manager service.</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+The Driver Manager service failed to start.  The error reported was %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1001</Id>
+                <Version>2</Version>
+                <Channel>Operational</Channel>
+                <Level>Critical</Level>
+                <Task>Startup of the driver manager service.</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+The Driver Manager service failed to start.  The error reported was %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>1</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Startup of the driver manager service.</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+The Driver Manager service was stopped]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>1</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Creation of a new driver host process.</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+The Driver Manager service is starting a host process for device %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LifetimeId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="HostGuid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="InstanceId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>1</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Creation of a new driver host process.</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+The host process (%1) started successfully.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LifetimeId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FinalStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>1</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Creation of a new driver host process.</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+The host process (%1) failed to start successfully.  The error reported was %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LifetimeId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FinalStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1006</Id>
+                <Version>1</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Shutdown of a driver host process.</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+The host process (%1) is being asked to shutdown.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LifetimeId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1007</Id>
+                <Version>1</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Shutdown of a driver host process.</Task>
+                <Message><![CDATA[
+The host process (%1) has a problem (%2) and is being terminated.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LifetimeId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Problem" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="DetectedBy" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ActiveOperation" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ExitCode" inType="win:UInt32" outType="win:ErrorCode"/>
+  <data name="Message" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1008</Id>
+                <Version>1</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Shutdown of a driver host process.</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+The host process (%1) has been shutdown.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LifetimeId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="TerminationStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+  <data name="ExitCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2000</Id>
+                <Version>1</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Startup of a new driver host process.</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+The UMDF Host Process (%1) is starting up.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LifetimeId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2001</Id>
+                <Version>1</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Startup of a new driver host process.</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+The UMDF Host Process (%1) started successfully.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LifetimeId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ExitCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2002</Id>
+                <Version>1</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Startup of a new driver host process.</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+The UMDF Host Process (%1) failed to start successfully.  The error reported was %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LifetimeId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ExitCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2003</Id>
+                <Version>1</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Loading drivers to control a newly discovered device.</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+The UMDF Host Process (%1) has been asked to load drivers for device %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LifetimeId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="InstanceId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2004</Id>
+                <Version>1</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Loading drivers to control a newly discovered device.</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+The UMDF Host is loading driver %4 at level %3 for device %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LifetimeId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="InstanceId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Level" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Service" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClsId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2005</Id>
+                <Version>1</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Loading drivers to control a newly discovered device.</Task>
+                <Message><![CDATA[
+The UMDF Host Process (%1) has loaded module %3 while loading drivers for device %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LifetimeId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="InstanceId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ModulePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CompanyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FileDescription" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FileVersion" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2006</Id>
+                <Version>1</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Loading drivers to control a newly discovered device.</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+The UMDF Host successfully loaded the driver at level %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LifetimeId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="InstanceId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Level" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FinalStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2007</Id>
+                <Version>1</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Loading drivers to control a newly discovered device.</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+The UMDF Host failed to load the driver at level %3.  The error reported was %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LifetimeId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="InstanceId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Level" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FinalStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2010</Id>
+                <Version>1</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Loading drivers to control a newly discovered device.</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+The UMDF Host Process (%1) has successfully loaded drivers for device %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LifetimeId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="InstanceId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FinalStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2011</Id>
+                <Version>1</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Loading drivers to control a newly discovered device.</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+The UMDF Host Process (%1) has failed to load drivers for device %2.  The error reported was %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LifetimeId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="InstanceId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FinalStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2100</Id>
+                <Version>1</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Pnp or Power Management operation to a particular device.</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Received a Pnp or Power operation (%3, %4) for device %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LifetimeId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="InstanceId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MajorCode" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="MinorCode" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Argument1" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Argument2" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Argument3" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Argument4" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2101</Id>
+                <Version>1</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Pnp or Power Management operation to a particular device.</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Completed a Pnp or Power operation (%3, %4) for device %2 with status %9.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LifetimeId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="InstanceId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MajorCode" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="MinorCode" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Argument1" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Argument2" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Argument3" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Argument4" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2102</Id>
+                <Version>1</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Pnp or Power Management operation to a particular device.</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Forwarded a finished Pnp or Power operation (%3, %4) to the lower driver for device %2 with status %9.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LifetimeId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="InstanceId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MajorCode" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="MinorCode" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Argument1" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Argument2" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Argument3" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Argument4" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2103</Id>
+                <Version>1</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Pnp or Power Management operation to a particular device.</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Completed a Pnp or Power operation (%3, %4) for device %2 with status %9.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LifetimeId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="InstanceId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MajorCode" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="MinorCode" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Argument1" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Argument2" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Argument3" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Argument4" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2105</Id>
+                <Version>1</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Pnp or Power Management operation to a particular device.</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Forwarded a Pnp or Power operation (%3, %4) for device %2 to the lower driver with status %9]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LifetimeId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="InstanceId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MajorCode" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="MinorCode" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Argument1" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Argument2" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Argument3" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Argument4" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2106</Id>
+                <Version>1</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Pnp or Power Management operation to a particular device.</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Received a Pnp or Power operation (%3, %4) for device %2 which was completed by the lower drivers with status %9]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LifetimeId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="InstanceId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MajorCode" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="MinorCode" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Argument1" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Argument2" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Argument3" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Argument4" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2107</Id>
+                <Version>1</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Pnp or Power Management operation to a particular device.</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Received a Pnp or Power operation (%3, %4) for device %2 which was completed by the lower drivers with status %9]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LifetimeId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="InstanceId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MajorCode" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="MinorCode" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Argument1" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Argument2" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Argument3" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Argument4" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2900</Id>
+                <Version>1</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Shutdown of a driver host process.</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+The UMDF Host (%1) has been asked to shutdown.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LifetimeId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2901</Id>
+                <Version>1</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Shutdown of a driver host process.</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+The UMDF Host (%1) has shutdown.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LifetimeId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3000</Id>
+                <Version>1</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Pnp or Power Management operation to a particular driver in a device stack.</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+UMDF State Machine %4 start processing event %5 (Queueing %6)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LifetimeId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="InstanceId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Level" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StateMachine" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Event" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Queueing" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3001</Id>
+                <Version>1</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Pnp or Power Management operation to a particular driver in a device stack.</Task>
+                <Message><![CDATA[
+UMDF State Machine %4 dropped event %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LifetimeId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="InstanceId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Level" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StateMachine" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Event" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3010</Id>
+                <Version>1</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Pnp or Power Management operation to a particular driver in a device stack.</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+UMDF State Machine %4 state change from %5 to %7 on event %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LifetimeId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="InstanceId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Level" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StateMachine" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CurrentState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Event" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3011</Id>
+                <Version>1</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Pnp or Power Management operation to a particular driver in a device stack.</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+UMDF State Machine %4 event processing finished in state %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LifetimeId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="InstanceId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Level" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StateMachine" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="CurrentState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3020</Id>
+                <Version>1</Version>
+                <Channel>Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>Pnp or Power Management operation to a particular driver in a device stack.</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+UMDF State Machine %4 event processing stopped in state %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LifetimeId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="InstanceId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Level" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StateMachine" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Event" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10000</Id>
+                <Version>1</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Task>Installation or update of device drivers.</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+A driver package which uses user-mode driver framework version %2 is being installed on device %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FrameworkVersion" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10001</Id>
+                <Version>1</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Task>Installation or update of device drivers.</Task>
+                <Message><![CDATA[
+The UMDF service %1 (CLSID %2) was installed.  It requires framework version %3 or higher.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ServiceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CLSID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FxVersion" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Upgrade" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10002</Id>
+                <Version>1</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Task>Installation or update of device drivers.</Task>
+                <Message><![CDATA[
+The UMDF service %1 (CLSID %2) was upgraded.  It requires framework version %3 or higher.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ServiceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CLSID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FxVersion" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Upgrade" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10100</Id>
+                <Version>1</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Task>Installation or update of device drivers.</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+The driver package installation has succeeded.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FinalStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10101</Id>
+                <Version>1</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>Installation or update of device drivers.</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+The driver package installation has failed.  The final status was %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FinalStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10110</Id>
+                <Version>1</Version>
+                <Channel>System</Channel>
+                <Level>Critical</Level>
+                <Task>User-mode Driver problems.</Task>
+                <Message><![CDATA[
+A problem has occurred with one or more user-mode drivers and the hosting process has been terminated.  This may temporarily interrupt your ability to access the devices.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LifetimeId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Problem" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="DetectedBy" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ActiveOperation" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ExitCode" inType="win:UInt32" outType="win:ErrorCode"/>
+  <data name="Message" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10111</Id>
+                <Version>1</Version>
+                <Channel>System</Channel>
+                <Level>Critical</Level>
+                <Task>User-mode Driver problems.</Task>
+                <Message><![CDATA[
+The device %2 (location %3) is offline due to a user-mode driver crash.  Windows will attempt to restart the device %5 more times.  Please contact the device manufacturer for more information about this problem.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LifetimeId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FriendlyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Location" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="InstanceId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RestartCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10112</Id>
+                <Version>1</Version>
+                <Channel>System</Channel>
+                <Level>Critical</Level>
+                <Task>User-mode Driver problems.</Task>
+                <Message><![CDATA[
+The device %2 (location %3) is offline due to a user-mode device crash.  Windows will no longer attempt to restart this device because the maximum restart limit has been reached.  Disconnecting the device and reconnecting it, or disabling it and re-enabling it from the device manager, will reset this limit and allow the device to be accessed again.  Please contact the device manufacturer for more information about this problem.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LifetimeId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FriendlyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Location" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="InstanceId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RestartCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10113</Id>
+                <Version>1</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>Startup of a new driver host process.</Task>
+                <Message><![CDATA[
+The device %2 was unable to start due to conflict between the settings for driver %5 (%3 - %4) and the other drivers.  Windows will not be able to start this device.  Please contact the device manufacturer for assistance.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LifetimeId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="InstanceId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ConflictingParameter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="DriverName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10115</Id>
+                <Version>1</Version>
+                <Channel>System</Channel>
+                <Level>Critical</Level>
+                <Task>User-mode Driver problems.</Task>
+                <Message><![CDATA[
+The device %2 (location %3) is offline due to a user-mode driver crash.  Windows will attempt to restart the device %5 more times in its own process.  Please contact the device manufacturer for more information about this problem.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LifetimeId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FriendlyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Location" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="InstanceId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RestartCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10116</Id>
+                <Version>1</Version>
+                <Channel>System</Channel>
+                <Level>Critical</Level>
+                <Task>User-mode Driver problems.</Task>
+                <Message><![CDATA[
+The device %2 (location %3) is offline due to a user-mode driver crash.  Windows will attempt to restart the device in the shared process %5 more times before moving the device in its own process.  Please contact the device manufacturer for more information about this problem.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LifetimeId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FriendlyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Location" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="InstanceId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RestartCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10117</Id>
+                <Version>1</Version>
+                <Channel>System</Channel>
+                <Level>Critical</Level>
+                <Task>Installation or update of device drivers.</Task>
+                <Message><![CDATA[
+UMDF driver service %1 failed to load because it was compiled using a pre-release version of the Windows Driver Kit(WDK). The driver should be recompiled using a release version of the WDK. Driver's function table count is %2 and the expected count is %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ServiceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ActualFuntionTableCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ExpectedFuntionTableCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10118</Id>
+                <Version>1</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Task>Startup of the UMDF reflector</Task>
+                <Message><![CDATA[
+UMDF reflector is unable to connect to service control manager (SCM). This is expected during boot, when SCM has not started yet. Will retry when it starts.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19999</Id>
+                <Version>1</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Task>Testing UMDF</Task>
+                <Message><![CDATA[
+UMDF Test Event (%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20030</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Kernel-Power/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>PowerTransition_Driver</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>umdf:PowerTransition</Keyword>
+                <Message><![CDATA[
+Power IRP related event in the User-mode Driver Frameworks Host Process]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Device" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="DriverName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20031</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Kernel-Power/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>PowerTransition_Driver</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>umdf:PowerTransition</Keyword>
+                <Message><![CDATA[
+Power IRP related event in the User-mode Driver Frameworks Host Process]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Device" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20032</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Kernel-Power/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>PowerTransition_Driver</Task>
+                <Opcode>NestingStart</Opcode>
+                <Keyword>umdf:PowerTransition</Keyword>
+                <Message><![CDATA[
+Power IRP related event in the User-mode Driver Frameworks Host Process]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Device" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20033</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Kernel-Power/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>PowerTransition_Driver</Task>
+                <Opcode>NestingStop</Opcode>
+                <Keyword>umdf:PowerTransition</Keyword>
+                <Message><![CDATA[
+Power IRP related event in the User-mode Driver Frameworks Host Process]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Device" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30008</Id>
+                <Version>1</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>DDI call to read from Hardware.</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+DDI to read from hardware begins (TargetType: %1, TargetSize: %2, BufferCount: %3).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HwAccessTargetType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HwAccessTargetSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HwAccessBufferCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30009</Id>
+                <Version>1</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>DDI call to read from Hardware.</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+DDI to read from hardware ends (TargetType: %1, TargetSize: %2, BufferCount: %3).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HwAccessTargetType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HwAccessTargetSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HwAccessBufferCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30010</Id>
+                <Version>1</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Read from Hardware.</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Read from hardware begins (TargetType: %1, TargetSize: %2, BufferCount: %3).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HwAccessTargetType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HwAccessTargetSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HwAccessBufferCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30011</Id>
+                <Version>1</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Read from Hardware.</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Read from hardware ends (TargetType: %1, TargetSize: %2, BufferCount: %3).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HwAccessTargetType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HwAccessTargetSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HwAccessBufferCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30012</Id>
+                <Version>1</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>DDI call to Write to hardware.</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+DDI to write to hardware begins (TargetType: %1, TargetSize: %2, BufferCount: %3).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HwAccessTargetType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HwAccessTargetSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HwAccessBufferCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30013</Id>
+                <Version>1</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>DDI call to Write to hardware.</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+DDI to write to hardware ends (TargetType: %1, TargetSize: %2, BufferCount: %3).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HwAccessTargetType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HwAccessTargetSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HwAccessBufferCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30014</Id>
+                <Version>1</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Write to hardware.</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Write to hardware begins (TargetType: %1, TargetSize: %2, BufferCount: %3).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HwAccessTargetType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HwAccessTargetSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HwAccessBufferCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30015</Id>
+                <Version>1</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Write to hardware.</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Write to hardware ends (TargetType: %1, TargetSize: %2, BufferCount: %3).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HwAccessTargetType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HwAccessTargetSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HwAccessBufferCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30016</Id>
+                <Version>1</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Read from Hardware.</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Read from hardware begins (TargetType: %1, TargetSize: %2, BufferCount: %3).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HwAccessTargetType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HwAccessTargetSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HwAccessBufferCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30017</Id>
+                <Version>1</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Read from Hardware.</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Read from hardware ends (TargetType: %1, TargetSize: %2, BufferCount: %3).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HwAccessTargetType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HwAccessTargetSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HwAccessBufferCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30018</Id>
+                <Version>1</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Write to hardware.</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Write to hardware begins (TargetType: %1, TargetSize: %2, BufferCount: %3).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HwAccessTargetType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HwAccessTargetSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HwAccessBufferCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30019</Id>
+                <Version>1</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Write to hardware.</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Write to hardware ends (TargetType: %1, TargetSize: %2, BufferCount: %3).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HwAccessTargetType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HwAccessTargetSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HwAccessBufferCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30020</Id>
+                <Version>1</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>UMDF hardware interrupt notification.</Task>
+                <Message><![CDATA[
+UMDF Reflector sent notification for hardware interrupt (Message ID %1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterruptMessageNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30021</Id>
+                <Version>1</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>UMDF hardware interrupt notification.</Task>
+                <Message><![CDATA[
+UMDF framework received notification for hardware interrupt (Message ID %1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterruptMessageNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

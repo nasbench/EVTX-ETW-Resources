@@ -1,0 +1,48 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Kernel-LicensingSqm</Name>
+        <Metadata>
+            <Guid>{A0AF438F-4431-41CB-A675-A265050EE947}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\Microsoft-Windows-System-Events.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\system32\Microsoft-Windows-System-Events.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.22000.1098&amp;FileName=Microsoft-Windows-System-Events.dll&amp;FileVer=10.0.22000.1098</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>SQM</Message>
+                    <Name>win:SQM</Name>
+                    <Value>2251799813685248</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SqmType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SqmSessionGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SqmID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SqmDWORDDatapointValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

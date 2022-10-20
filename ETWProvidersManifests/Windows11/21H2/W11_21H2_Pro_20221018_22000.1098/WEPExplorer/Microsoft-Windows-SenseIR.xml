@@ -1,0 +1,244 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-SenseIR</Name>
+        <Metadata>
+            <Guid>{B6D775EF-1436-4FE6-BAD3-9E436319E218}</Guid>
+            <ResourceFilePath>%ProgramFiles%\Windows Defender Advanced Threat Protection\SenseIR.exe</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%ProgramFiles%\Windows Defender Advanced Threat Protection\SenseIR.exe</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.8210.22000.978&amp;FileName=SenseIR.exe&amp;FileVer=10.8210.22000.978</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-SenseIR/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Trigger</Name>
+                    <Value>8</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SenseIR/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Starting action %1. Action ID: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ActionType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ActionId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SenseIR/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Failed to run action %1. Action ID: %2, error code: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ActionType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ActionId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SenseIR/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Succeeded to run action %1. Action ID: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ActionType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ActionId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SenseIR/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+SenseIR executable started.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SenseIR/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+SenseIR executable terminated. Exit code: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SenseIR/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+SenseIR requested registration as an AIRS client. Result code: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SenseIR/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Encountered unexpected error while getting actions from AIRS server. Error code: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SenseIR/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Found the caller of SenseIR executable to be invalid. Terminating executable. Error code: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SenseIR/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Failed to deserialize SenseIR parameters. Error code: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SenseIR/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Finished uploading results of action %1. Action ID: %2, upload result code: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ActionType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ActionId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SenseIR/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Failed to deserialize actions, received invalid actions from AIRS server. Error code: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SenseIR/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Failed to execute AIRS request. Error code: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SenseIR/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Starting to upload results of action %1. Action ID: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ActionType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ActionId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SenseIR/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Failure during action %1. Action ID: %2, Action phase: %3, error code: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ActionType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ActionId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ActionPhase" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

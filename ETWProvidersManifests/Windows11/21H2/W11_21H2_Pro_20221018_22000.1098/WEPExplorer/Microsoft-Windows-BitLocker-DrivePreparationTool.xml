@@ -1,0 +1,378 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-BitLocker-DrivePreparationTool</Name>
+        <Metadata>
+            <Guid>{632F767E-0EC3-47B9-BA1C-A0E62A74728A}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\BdeHdCfgLib.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\system32\BdeHdCfgLib.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.22000.1&amp;FileName=BdeHdCfgLib.dll&amp;FileVer=10.0.22000.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-BitLocker-DrivePreparationTool</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-BitLocker-DrivePreparationTool/Admin</Message>
+                    <Path>Microsoft-Windows-BitLocker-DrivePreparationTool/Admin</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-BitLocker-DrivePreparationTool/Operational</Message>
+                    <Path>Microsoft-Windows-BitLocker-DrivePreparationTool/Operational</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Initialization</Message>
+                    <Name>bdecfg:Initialization</Name>
+                    <Value>10</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Shrink</Message>
+                    <Name>bdecfg:ShrinkDrive</Name>
+                    <Value>11</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Create</Message>
+                    <Name>bdecfg:CreateDrive</Name>
+                    <Value>12</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Prepare</Message>
+                    <Name>bdecfg:PrepareDrive</Name>
+                    <Value>13</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-BitLocker-DrivePreparationTool/Admin</Channel>
+                <Level>Error</Level>
+                <Opcode>Initialization</Opcode>
+                <Message><![CDATA[
+A problem occurred while running the BitLocker Drive Preparation Tool.
+Error Code: %1
+Error Text: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MessageCode" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="MessageText" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-BitLocker-DrivePreparationTool/Admin</Channel>
+                <Level>Error</Level>
+                <Opcode>Shrink</Opcode>
+                <Message><![CDATA[
+A problem occurred while running the BitLocker Drive Preparation Tool.
+Error Code: %1
+Error Text: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MessageCode" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="MessageText" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-BitLocker-DrivePreparationTool/Admin</Channel>
+                <Level>Error</Level>
+                <Opcode>Create</Opcode>
+                <Message><![CDATA[
+A problem occurred while running the BitLocker Drive Preparation Tool.
+Error Code: %1
+Error Text: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MessageCode" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="MessageText" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-BitLocker-DrivePreparationTool/Admin</Channel>
+                <Level>Error</Level>
+                <Opcode>Prepare</Opcode>
+                <Message><![CDATA[
+A problem occurred while running the BitLocker Drive Preparation Tool.
+Error Code: %1
+Error Text: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MessageCode" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="MessageText" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-BitLocker-DrivePreparationTool/Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+A problem occurred while running the BitLocker Drive Preparation Tool.
+Error Code: %1
+Error Text: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MessageCode" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="MessageText" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>256</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-BitLocker-DrivePreparationTool/Admin</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Warning Code: %1
+Warning Text: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MessageCode" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="MessageText" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>512</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-BitLocker-DrivePreparationTool/Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The BitLocker Drive Configuration Tool successfully completed. The target hard disk is ready for BitLocker.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4096</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-BitLocker-DrivePreparationTool/Operational</Channel>
+                <Level>Verbose</Level>
+                <Opcode>Initialization</Opcode>
+                <Message><![CDATA[
+Found a candidate volume for shrink or merge.
+Shrinkable: %1
+Candidate Volume Name: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Shrinkable" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ContainsWinRE" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeSize" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="VolumeFreeSpace" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="VolumeMaxShrinkSize" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="VolumeFlags" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="DriveLetter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DiskNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PartitionNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4097</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-BitLocker-DrivePreparationTool/Operational</Channel>
+                <Level>Information</Level>
+                <Opcode>Initialization</Opcode>
+                <Message><![CDATA[
+Found an unallocated extent large enough for the requested size.
+Offset: %3
+Size: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DiskId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Type" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Offset" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Size" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="VolumeId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4098</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-BitLocker-DrivePreparationTool/Operational</Channel>
+                <Level>Verbose</Level>
+                <Opcode>Initialization</Opcode>
+                <Message><![CDATA[
+Disk extent located on the hard disk containing the System Drive.
+Offset: %3
+Size: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DiskId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Type" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Offset" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Size" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="VolumeId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4099</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-BitLocker-DrivePreparationTool/Operational</Channel>
+                <Level>Information</Level>
+                <Opcode>Initialization</Opcode>
+                <Message><![CDATA[
+Command-line parameters for the BitLocker Drive Preparation Tool:
+   %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RawCommandLine" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ShowUsage" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="DisplayDriveInfo" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="TargetDriveLetter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TargetAction" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewSystemDriveLetter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ShrinkSize" inType="win:Int64" outType="xs:long"/>
+  <data name="QuietMode" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="AutoRestart" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4100</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-BitLocker-DrivePreparationTool/Operational</Channel>
+                <Level>Information</Level>
+                <Opcode>Initialization</Opcode>
+                <Message><![CDATA[
+Drive will shrink and new active drive %6 will be created. 
+Volume Name: %1
+Shrink Size: %5 Bytes]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DriveLetter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DiskNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PartitionNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ShrinkSize" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="NewDriveLetter" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4101</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-BitLocker-DrivePreparationTool/Operational</Channel>
+                <Level>Information</Level>
+                <Opcode>Initialization</Opcode>
+                <Message><![CDATA[
+New drive %3 will be created from unallocated space
+Unallocated extent offset: %1
+New partition size: %2 Bytes]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ExtentOffset" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="NewPartitionSize" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="NewDriveLetter" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4102</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-BitLocker-DrivePreparationTool/Operational</Channel>
+                <Level>Information</Level>
+                <Opcode>Initialization</Opcode>
+                <Message><![CDATA[
+Drive will be set as the new system drive
+Volume Name: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DriveLetter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DiskNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PartitionNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4103</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-BitLocker-DrivePreparationTool/Operational</Channel>
+                <Level>Information</Level>
+                <Opcode>Initialization</Opcode>
+                <Message><![CDATA[
+Detected Windows Recovery Environment volume
+Volume Path: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WinREVolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DriveLetter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DiskNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PartitionNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4104</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-BitLocker-DrivePreparationTool/Operational</Channel>
+                <Level>Information</Level>
+                <Opcode>Initialization</Opcode>
+                <Message><![CDATA[
+A volume failed to meet the requirements for a target volume.
+Volume Name: %3
+Reason: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MessageCode" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="MessageText" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DriveLetter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DiskNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PartitionNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
