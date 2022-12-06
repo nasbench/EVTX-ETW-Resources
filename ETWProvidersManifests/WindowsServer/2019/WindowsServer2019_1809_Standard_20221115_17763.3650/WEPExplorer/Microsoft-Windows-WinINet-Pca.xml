@@ -1,0 +1,65 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-WinINet-Pca</Name>
+        <Metadata>
+            <Guid>{4860EA43-3F05-5FB8-20CE-7BA346A44747}</Guid>
+            <ResourceFilePath>C:\Windows\system32\wininet.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\wininet.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Internet%20Explorer&amp;ProdVer=11.0.17763.3469&amp;FileName=wininet.dll&amp;FileVer=11.0.17763.3469</HelpLink>
+            <PublisherMessage>Microsoft-Windows-WinINet</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-WinINet/Pca</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>WDI</Name>
+                    <Value>33554432</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>63200</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-WinINet/Pca</Channel>
+                <Level>Information</Level>
+                <Keyword>WDI</Keyword>
+                <Message><![CDATA[
+The WinINet TLS handshake failed with version mismatch error]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ModuleName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ModulePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

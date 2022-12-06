@@ -1,0 +1,425 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-FMS</Name>
+        <Metadata>
+            <Guid>{DEA07764-0790-44DE-B9C4-49677B17174F}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\fms.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\system32\fms.dll</MessageFilePath>
+            <HelpLink></HelpLink>
+            <PublisherMessage>Microsoft-Windows-FMS</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>0</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-FMS/Operational</Message>
+                    <Path>Microsoft-Windows-FMS/Operational</Path>
+                    <Index>1</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-FMS/Analytic</Message>
+                    <Path>Microsoft-Windows-FMS/Analytic</Path>
+                    <Index>2</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-FMS/Debug</Message>
+                    <Path>Microsoft-Windows-FMS/Debug</Path>
+                    <Index>3</Index>
+                    <Id>18</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>FMS DLL initialization</Message>
+                    <Name>ModuleInitialization</Name>
+                    <Value>30</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>PerfTrack_DisplayFmsInit</Name>
+                    <Value>31</Value>
+                </Task>
+                <Task>
+                    <Message>ETW Debug Msg</Message>
+                    <Name>FMS_SingleTask</Name>
+                    <Value>32</Value>
+                </Task>
+                <Task>
+                    <Message>FMS API entry call</Message>
+                    <Name>ApiEntryCalls</Name>
+                    <Value>35</Value>
+                </Task>
+                <Task>
+                    <Message>FMS API exit call</Message>
+                    <Name>ApiExitCalls</Name>
+                    <Value>36</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>NameResolution</Message>
+                    <Name>NameResOp</Name>
+                    <Value>16</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>GetFontNameTable Start</Message>
+                    <Name>GetFontNameTableStartOp</Name>
+                    <Value>17</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>GetFontNameTable Stop</Message>
+                    <Name>GetFontNameTableStopOp</Name>
+                    <Value>18</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Get Name Record Start</Message>
+                    <Name>GetNameRecordStartOp</Name>
+                    <Value>19</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Get Name Record Stop</Message>
+                    <Name>GetNameRecordStopOp</Name>
+                    <Value>20</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Get Name Strings Start</Message>
+                    <Name>GetNameStringsStartOp</Name>
+                    <Value>21</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Get Name Strings Stop</Message>
+                    <Name>GetNameStringsStopOp</Name>
+                    <Value>22</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Get Font Data Start</Message>
+                    <Name>GetFontDataStartOp</Name>
+                    <Value>23</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Get Font Data Stop</Message>
+                    <Name>GetFontDataStopOp</Name>
+                    <Value>24</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>GdiGetFontRealizationInfo Start</Message>
+                    <Name>GdiGetFontRealizationInfoStartOp</Name>
+                    <Value>25</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>GdiGetFontRealizationInfo Stop</Message>
+                    <Name>GdiGetFontRealizationInfoStopOp</Name>
+                    <Value>26</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>FmsErrorMessage</Message>
+                    <Name>FmsErrorOp</Name>
+                    <Value>27</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Response Time</Message>
+                    <Name>win:ResponseTime</Name>
+                    <Value>281474976710656</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1000</Id>
+                <Version>1</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>FMS DLL initialization</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+FMS DLL initialization failed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2015</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-FMS/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>FMS API entry call</Task>
+                <Message><![CDATA[
+FMS API entry for: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApiName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2016</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-FMS/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>FMS API exit call</Task>
+                <Message><![CDATA[
+FMS API exit for: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApiName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-FMS/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>PerfTrack_DisplayFmsInit</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-FMS/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>PerfTrack_DisplayFmsInit</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>40000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-FMS/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>ETW Debug Msg</Task>
+                <Opcode>NameResolution</Opcode>
+                <Message><![CDATA[
+FMS ETW: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApiName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>40001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-FMS/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>ETW Debug Msg</Task>
+                <Opcode>GetFontNameTable Start</Opcode>
+                <Message><![CDATA[
+FMS ETW: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApiName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>40002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-FMS/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>ETW Debug Msg</Task>
+                <Opcode>GetFontNameTable Stop</Opcode>
+                <Message><![CDATA[
+FMS ETW: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApiName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>40003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-FMS/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>ETW Debug Msg</Task>
+                <Opcode>Get Name Record Start</Opcode>
+                <Message><![CDATA[
+FMS ETW: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApiName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>40004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-FMS/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>ETW Debug Msg</Task>
+                <Opcode>Get Name Record Stop</Opcode>
+                <Message><![CDATA[
+FMS ETW: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApiName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>40005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-FMS/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>ETW Debug Msg</Task>
+                <Opcode>Get Name Strings Start</Opcode>
+                <Message><![CDATA[
+FMS ETW: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApiName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>40006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-FMS/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>ETW Debug Msg</Task>
+                <Opcode>Get Name Strings Stop</Opcode>
+                <Message><![CDATA[
+FMS ETW: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApiName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>40007</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-FMS/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>ETW Debug Msg</Task>
+                <Opcode>Get Font Data Start</Opcode>
+                <Message><![CDATA[
+FMS ETW: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApiName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>40008</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-FMS/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>ETW Debug Msg</Task>
+                <Opcode>Get Font Data Stop</Opcode>
+                <Message><![CDATA[
+FMS ETW: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApiName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>40009</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-FMS/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>ETW Debug Msg</Task>
+                <Opcode>GdiGetFontRealizationInfo Start</Opcode>
+                <Message><![CDATA[
+FMS ETW: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApiName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>40010</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-FMS/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>ETW Debug Msg</Task>
+                <Opcode>GdiGetFontRealizationInfo Stop</Opcode>
+                <Message><![CDATA[
+FMS ETW: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApiName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>40011</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-FMS/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>ETW Debug Msg</Task>
+                <Opcode>FmsErrorMessage</Opcode>
+                <Message><![CDATA[
+FMS ETW: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApiName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

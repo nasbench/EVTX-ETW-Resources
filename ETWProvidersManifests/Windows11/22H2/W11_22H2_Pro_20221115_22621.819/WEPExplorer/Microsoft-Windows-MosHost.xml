@@ -1,0 +1,458 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-MosHost</Name>
+        <Metadata>
+            <Guid>{D116F0F2-A6D6-4F1F-BDDA-0C88C8D1F2E9}</Guid>
+            <ResourceFilePath>%windir%\system32\Microsoft-Windows-MosHost.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%windir%\system32\Microsoft-Windows-MosHost.dll</MessageFilePath>
+            <HelpLink></HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-MosHost/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-MosHost/Performance</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>MosHost</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>Odml</Name>
+                    <Value>2</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>API</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Performance</Name>
+                    <Value>2</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MosHost/Operational</Channel>
+                <Level>Information</Level>
+                <Task>MosHost</Task>
+                <Keyword>API</Keyword>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MosHost/Operational</Channel>
+                <Level>Information</Level>
+                <Task>MosHost</Task>
+                <Keyword>API</Keyword>
+                <Message><![CDATA[
+%1 %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="String2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MosHost/Operational</Channel>
+                <Level>Error</Level>
+                <Task>MosHost</Task>
+                <Keyword>API</Keyword>
+                <Message><![CDATA[
+%1 Error: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MosHost/Operational</Channel>
+                <Level>Information</Level>
+                <Task>MosHost</Task>
+                <Keyword>API</Keyword>
+                <Message><![CDATA[
+Framework State: %2, HRESULT: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="State" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MosHost/Operational</Channel>
+                <Level>Information</Level>
+                <Task>MosHost</Task>
+                <Keyword>API</Keyword>
+                <Message><![CDATA[
+MosHost ServiceStart]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MosHost/Operational</Channel>
+                <Level>Information</Level>
+                <Task>MosHost</Task>
+                <Keyword>API</Keyword>
+                <Message><![CDATA[
+MosHost ServiceStop]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MosHost/Operational</Channel>
+                <Level>Information</Level>
+                <Task>MosHost</Task>
+                <Keyword>API</Keyword>
+                <Message><![CDATA[
+MosHost IncrementClientCount]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>31</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MosHost/Operational</Channel>
+                <Level>Information</Level>
+                <Task>MosHost</Task>
+                <Keyword>API</Keyword>
+                <Message><![CDATA[
+MosHost DecrementClientCount]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>50</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MosHost/Operational</Channel>
+                <Level>Information</Level>
+                <Task>MosHost</Task>
+                <Keyword>API</Keyword>
+                <Message><![CDATA[
+MosHost ExecCommand]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>70</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MosHost/Operational</Channel>
+                <Level>Information</Level>
+                <Task>MosHost</Task>
+                <Keyword>API</Keyword>
+                <Message><![CDATA[
+MosHost GetDataDirectory]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>80</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MosHost/Operational</Channel>
+                <Level>Information</Level>
+                <Task>MosHost</Task>
+                <Keyword>API</Keyword>
+                <Message><![CDATA[
+MosHost GetResourceDirectory]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>90</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MosHost/Operational</Channel>
+                <Level>Information</Level>
+                <Task>MosHost</Task>
+                <Keyword>API</Keyword>
+                <Message><![CDATA[
+MosHost GetBrowseCacheSizeInMBytes]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MosHost/Operational</Channel>
+                <Level>Information</Level>
+                <Task>MosHost</Task>
+                <Keyword>API</Keyword>
+                <Message><![CDATA[
+MosHost RegisterClient]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MosHost/Operational</Channel>
+                <Level>Information</Level>
+                <Task>MosHost</Task>
+                <Keyword>API</Keyword>
+                <Message><![CDATA[
+MosHost RegisterClient PID: %1 Type: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Dword1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Dword2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>110</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MosHost/Operational</Channel>
+                <Level>Information</Level>
+                <Task>MosHost</Task>
+                <Keyword>API</Keyword>
+                <Message><![CDATA[
+MosHost DeregisterClient]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>111</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MosHost/Operational</Channel>
+                <Level>Information</Level>
+                <Task>MosHost</Task>
+                <Keyword>API</Keyword>
+                <Message><![CDATA[
+MosHost DeregisterClient PID: %1 Type: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Dword1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Dword2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>120</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MosHost/Operational</Channel>
+                <Level>Information</Level>
+                <Task>MosHost</Task>
+                <Keyword>API</Keyword>
+                <Message><![CDATA[
+MosHost GetActiveClients]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>121</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MosHost/Operational</Channel>
+                <Level>Information</Level>
+                <Task>MosHost</Task>
+                <Keyword>API</Keyword>
+                <Message><![CDATA[
+MosHost GetActiveClients Total: %1 Unique: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Dword1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Dword2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>130</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MosHost/Operational</Channel>
+                <Level>Information</Level>
+                <Task>MosHost</Task>
+                <Keyword>API</Keyword>
+                <Message><![CDATA[
+MosHost GetReadSharingToken]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>131</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MosHost/Operational</Channel>
+                <Level>Information</Level>
+                <Task>MosHost</Task>
+                <Keyword>API</Keyword>
+                <Message><![CDATA[
+MosHost GetReadSharingToken Info Path: %1 Token: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="String2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>150</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MosHost/Operational</Channel>
+                <Level>Information</Level>
+                <Task>MosHost</Task>
+                <Keyword>API</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>151</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MosHost/Operational</Channel>
+                <Level>Information</Level>
+                <Task>MosHost</Task>
+                <Keyword>API</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>152</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MosHost/Operational</Channel>
+                <Level>Information</Level>
+                <Task>MosHost</Task>
+                <Keyword>API</Keyword>
+                <Message><![CDATA[
+MosHost ConnectivityCallback Online: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Dword1" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>153</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MosHost/Operational</Channel>
+                <Level>Information</Level>
+                <Task>MosHost</Task>
+                <Keyword>API</Keyword>
+                <Message><![CDATA[
+MosHost SetMosOnline Online: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Dword1" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MosHost/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Odml</Task>
+                <Keyword>API</Keyword>
+                <Message><![CDATA[
+Odml IncrementOdmlClientCount]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MosHost/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Odml</Task>
+                <Keyword>API</Keyword>
+                <Message><![CDATA[
+Odml DecrementOdmlClientCount]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1010</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MosHost/Performance</Channel>
+                <Level>Information</Level>
+                <Task>Odml</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>API Performance</Keyword>
+                <Message><![CDATA[
+Odml StartInstallation Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1011</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MosHost/Performance</Channel>
+                <Level>Information</Level>
+                <Task>Odml</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>API Performance</Keyword>
+                <Message><![CDATA[
+Odml StartInstallation Stop]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

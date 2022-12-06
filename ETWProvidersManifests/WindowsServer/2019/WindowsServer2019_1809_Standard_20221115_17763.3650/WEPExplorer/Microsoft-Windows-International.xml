@@ -1,0 +1,923 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-International</Name>
+        <Metadata>
+            <Guid>{3AA52B8B-6357-4C18-A92E-B53FB177853B}</Guid>
+            <ResourceFilePath>C:\Windows\system32\Microsoft-Windows-System-Events.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\Microsoft-Windows-System-Events.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17763.3532&amp;FileName=Microsoft-Windows-System-Events.dll&amp;FileVer=10.0.17763.3532</HelpLink>
+            <PublisherMessage>Microsoft-Windows-International</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-International/Operational</Message>
+                    <Path>Microsoft-Windows-International/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Critical</Message>
+                    <Name>win:Critical</Name>
+                    <Value>1</Value>
+                </Level>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>NLS code page functions</Message>
+                    <Name>CharacterEncoding</Name>
+                    <Value>30</Value>
+                </Task>
+                <Task>
+                    <Message>NLS date/time functions</Message>
+                    <Name>DateTimeCalendar</Name>
+                    <Value>32</Value>
+                </Task>
+                <Task>
+                    <Message>NLS Unattended Regional and Language Options</Message>
+                    <Name>CME</Name>
+                    <Value>33</Value>
+                </Task>
+                <Task>
+                    <Message>NLS group policy</Message>
+                    <Name>GroupPolicy</Name>
+                    <Value>34</Value>
+                </Task>
+                <Task>
+                    <Message>NLS locale functions</Message>
+                    <Name>Locale</Name>
+                    <Value>35</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>NLS data table operations</Message>
+                    <Name>DataTable</Name>
+                    <Value>30</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>NLS initialization</Message>
+                    <Name>Initialize</Name>
+                    <Value>31</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>NLS configuration changes</Message>
+                    <Name>ConfigurationChange</Name>
+                    <Value>32</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>NLS operations</Message>
+                    <Name>Operation</Name>
+                    <Value>33</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>NLS clean-up operations</Message>
+                    <Name>Cleanup</Name>
+                    <Value>34</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-International/Operational</Channel>
+                <Level>Critical</Level>
+                <Task>NLS locale functions</Task>
+                <Opcode>NLS initialization</Opcode>
+                <Message><![CDATA[
+The NLS operation failed because the registry key %1 cannot be opened. Error code is %2. Error message: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RegistryKey" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-International/Operational</Channel>
+                <Level>Critical</Level>
+                <Task>NLS locale functions</Task>
+                <Opcode>NLS initialization</Opcode>
+                <Message><![CDATA[
+The NLS operation failed because the registry key %1 cannot be opened. Status code is %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RegistryKey" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StatusCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-International/Operational</Channel>
+                <Level>Critical</Level>
+                <Task>NLS code page functions</Task>
+                <Opcode>NLS data table operations</Opcode>
+                <Message><![CDATA[
+NLS codepage operation failed for the codepage %1 because the file %2 is missing.  To correct this error, replace this file or repair your Windows installation.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CodePage" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-International/Operational</Channel>
+                <Level>Critical</Level>
+                <Task>NLS code page functions</Task>
+                <Opcode>NLS data table operations</Opcode>
+                <Message><![CDATA[
+NLS codepage operation failed for the codepage %1 because the file %2 is corrupted. To correct this error, replace this file or repair your Windows installation.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CodePage" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-International/Operational</Channel>
+                <Level>Critical</Level>
+                <Task>NLS locale functions</Task>
+                <Opcode>NLS data table operations</Opcode>
+                <Message><![CDATA[
+NLS operation failed for %1 locale because the file %2\globalization\%1.nlp is missing.  To fix this problem, reinstall this custom locale.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LocaleName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="WinDir" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-International/Operational</Channel>
+                <Level>Critical</Level>
+                <Task>NLS locale functions</Task>
+                <Opcode>NLS data table operations</Opcode>
+                <Message><![CDATA[
+NLS operation failed for %1 locale because the file %2\globalization\%1.nlp is corrupted.  To fix this problem, reinstall this custom locale.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LocaleName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="WinDir" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1500</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-International/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>NLS group policy</Task>
+                <Opcode>NLS operations</Opcode>
+                <Message><![CDATA[
+Group Policy has prevented process number %1 (%2) from changing the standards and format information for the user.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProdessName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1501</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-International/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>NLS group policy</Task>
+                <Opcode>NLS operations</Opcode>
+                <Message><![CDATA[
+Group Policy has prevented the geographical location from being changed.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1502</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-International/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>NLS group policy</Task>
+                <Opcode>NLS operations</Opcode>
+                <Message><![CDATA[
+Group Policy has prevented the user from changing their user locale to "%1".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LocaleName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1503</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-International/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>NLS group policy</Task>
+                <Opcode>NLS operations</Opcode>
+                <Message><![CDATA[
+Group Policy does not allow custom user locales for standards and formats. The user was unable to select "%1" as their user locale.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LocaleName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-International/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>NLS locale functions</Task>
+                <Opcode>NLS initialization</Opcode>
+                <Message><![CDATA[
+NLS operation recreated the registry key %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RegistryKey" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2500</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-International/Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>NLS locale functions</Task>
+                <Opcode>NLS initialization</Opcode>
+                <Message><![CDATA[
+Windows has detected inconsistencies in NLS internal data. To correct this problem, log off of Windows and log on again.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-International/Operational</Channel>
+                <Level>Information</Level>
+                <Task>NLS locale functions</Task>
+                <Opcode>NLS operations</Opcode>
+                <Message><![CDATA[
+Process number %1 (%2) called SetLocaleInfo(%3, %4, "%5")  successfully.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProdessName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Locale" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LCType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="lpLCData" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-International/Operational</Channel>
+                <Level>Information</Level>
+                <Task>NLS date/time functions</Task>
+                <Opcode>NLS operations</Opcode>
+                <Message><![CDATA[
+Process number %1 (%2) called SetCalendarInfo(%3, %4, %5, "%6")  successfully.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProdessName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Locale" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Calendar" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CalType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="lpLCalData" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-International/Operational</Channel>
+                <Level>Information</Level>
+                <Task>NLS locale functions</Task>
+                <Opcode>NLS operations</Opcode>
+                <Message><![CDATA[
+Process number %1 (%2) called SetUserGeoID(%3) successfully.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProdessName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="GeoId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-International/Operational</Channel>
+                <Level>Information</Level>
+                <Task>NLS locale functions</Task>
+                <Opcode>NLS operations</Opcode>
+                <Message><![CDATA[
+The system updated the locale "%1" with flag %2. Process number %3 (%4). Return code is %5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LocaleName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProdessName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ReturnCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-International/Operational</Channel>
+                <Level>Error</Level>
+                <Task>NLS Unattended Regional and Language Options</Task>
+                <Opcode>NLS operations</Opcode>
+                <Message><![CDATA[
+The user tried to apply an unattended XML file (%1) in an unsupported format. Reason: %3 (Line %2). The system has not been changed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Reason" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-International/Operational</Channel>
+                <Level>Error</Level>
+                <Task>NLS Unattended Regional and Language Options</Task>
+                <Opcode>NLS operations</Opcode>
+                <Message><![CDATA[
+Unsupported XML in function.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-International/Operational</Channel>
+                <Level>Error</Level>
+                <Task>NLS Unattended Regional and Language Options</Task>
+                <Opcode>NLS operations</Opcode>
+                <Message><![CDATA[
+The user locale "%1" (specified by the UserLocale element) is not a supported locale name or is not installed on the system. The user locale was not changed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LocaleName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-International/Operational</Channel>
+                <Level>Error</Level>
+                <Task>NLS Unattended Regional and Language Options</Task>
+                <Opcode>NLS operations</Opcode>
+                <Message><![CDATA[
+Unsupported alternate sort "%1".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LocaleName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-International/Operational</Channel>
+                <Level>Error</Level>
+                <Task>NLS Unattended Regional and Language Options</Task>
+                <Opcode>NLS operations</Opcode>
+                <Message><![CDATA[
+"%1" is not a supported sort order for locale "%2".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AltSort" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Locale" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-International/Operational</Channel>
+                <Level>Error</Level>
+                <Task>NLS Unattended Regional and Language Options</Task>
+                <Opcode>NLS operations</Opcode>
+                <Message><![CDATA[
+The selected system locale (specified by the SystemLocale element) is not installed on the system. The system locale was not changed.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10007</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-International/Operational</Channel>
+                <Level>Error</Level>
+                <Task>NLS Unattended Regional and Language Options</Task>
+                <Opcode>NLS operations</Opcode>
+                <Message><![CDATA[
+Internal error while changing System locale (specified by the SystemLocale element).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StatusCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10008</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-International/Operational</Channel>
+                <Level>Error</Level>
+                <Task>NLS Unattended Regional and Language Options</Task>
+                <Opcode>NLS operations</Opcode>
+                <Message><![CDATA[
+Error while changing keyboard/input method for "%1".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LocaleName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10009</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-International/Operational</Channel>
+                <Level>Error</Level>
+                <Task>NLS Unattended Regional and Language Options</Task>
+                <Opcode>NLS operations</Opcode>
+                <Message><![CDATA[
+Error while changing location preference (geoid): %1. This error may be caused by an unsupported location preference (geoid) or a Group Policy restriction. Error code is %2. Error message: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Value" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Win32ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Win32ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10010</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-International/Operational</Channel>
+                <Level>Error</Level>
+                <Task>NLS Unattended Regional and Language Options</Task>
+                <Opcode>NLS operations</Opcode>
+                <Message><![CDATA[
+Failed to change UI Language to "%1". Status code is: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LocaleName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StatusCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10011</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-International/Operational</Channel>
+                <Level>Error</Level>
+                <Task>NLS Unattended Regional and Language Options</Task>
+                <Opcode>NLS operations</Opcode>
+                <Message><![CDATA[
+Failed to change UI Language fallback order to "%1". Status code is: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LocaleName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StatusCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10012</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-International/Operational</Channel>
+                <Level>Error</Level>
+                <Task>NLS Unattended Regional and Language Options</Task>
+                <Opcode>NLS operations</Opcode>
+                <Message><![CDATA[
+The user tried to apply an unattended XML file %1, but the file does not exist.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10013</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-International/Operational</Channel>
+                <Level>Error</Level>
+                <Task>NLS Unattended Regional and Language Options</Task>
+                <Opcode>NLS operations</Opcode>
+                <Message><![CDATA[
+Error while the user changed setting "%1" with value "%2" for the current user locale. Error code is: %3. Error message: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LCType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Win32ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Win32ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10014</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-International/Operational</Channel>
+                <Level>Error</Level>
+                <Task>NLS Unattended Regional and Language Options</Task>
+                <Opcode>NLS operations</Opcode>
+                <Message><![CDATA[
+The selected calendar "%1;" (specified by the Calendar element) is not a supported calendar. The user locale was not changed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10015</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-International/Operational</Channel>
+                <Level>Error</Level>
+                <Task>NLS Unattended Regional and Language Options</Task>
+                <Opcode>NLS operations</Opcode>
+                <Message><![CDATA[
+The selected TwoDigitYearMax "%1;" (specified by the TwoDigitYearMax element) is not a supported value. The user locale was not changed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10111</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-International/Operational</Channel>
+                <Level>Error</Level>
+                <Task>NLS Unattended Regional and Language Options</Task>
+                <Opcode>NLS operations</Opcode>
+                <Message><![CDATA[
+The user does not have permission to change the TwoDigitYearMax setting]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StatusCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10112</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-International/Operational</Channel>
+                <Level>Error</Level>
+                <Task>NLS Unattended Regional and Language Options</Task>
+                <Opcode>NLS operations</Opcode>
+                <Message><![CDATA[
+The user does not have permission to copy current settings to the Default and/or System Account]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10113</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-International/Operational</Channel>
+                <Level>Error</Level>
+                <Task>NLS Unattended Regional and Language Options</Task>
+                <Opcode>NLS operations</Opcode>
+                <Message><![CDATA[
+The user does not have permission to change the system locale (specified by the SystemLocale element).]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10115</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-International/Operational</Channel>
+                <Level>Error</Level>
+                <Task>NLS Unattended Regional and Language Options</Task>
+                <Opcode>NLS operations</Opcode>
+                <Message><![CDATA[
+The user does not have permission to change the calendar.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10216</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-International/Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>NLS Unattended Regional and Language Options</Task>
+                <Opcode>NLS operations</Opcode>
+                <Message><![CDATA[
+Unexpected failure. Stack overflow]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10218</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-International/Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>NLS Unattended Regional and Language Options</Task>
+                <Opcode>NLS operations</Opcode>
+                <Message><![CDATA[
+Unexpected failure. Unsupported flag]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10219</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-International/Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>NLS Unattended Regional and Language Options</Task>
+                <Opcode>NLS operations</Opcode>
+                <Message><![CDATA[
+Unexpected failure. Unsupported parameter]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10220</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-International/Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>NLS Unattended Regional and Language Options</Task>
+                <Opcode>NLS operations</Opcode>
+                <Message><![CDATA[
+Unexpected failure. Unrecoverable error.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10221</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-International/Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>NLS Unattended Regional and Language Options</Task>
+                <Opcode>NLS operations</Opcode>
+                <Message><![CDATA[
+Failed when calling internal function. Error code is: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StatusCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10222</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-International/Operational</Channel>
+                <Level>Verbose</Level>
+                <Task>NLS Unattended Regional and Language Options</Task>
+                <Opcode>NLS operations</Opcode>
+                <Message><![CDATA[
+The operation timed out.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10300</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-International/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>NLS Unattended Regional and Language Options</Task>
+                <Opcode>NLS operations</Opcode>
+                <Message><![CDATA[
+Group Policy has prevented the user from changing the system locale (specified by the SystemLocale element).]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-International/Operational</Channel>
+                <Level>Information</Level>
+                <Task>NLS Unattended Regional and Language Options</Task>
+                <Opcode>NLS operations</Opcode>
+                <Message><![CDATA[
+The user changed their user locale (specified by the UserLocale element) to "%1".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LocaleName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-International/Operational</Channel>
+                <Level>Information</Level>
+                <Task>NLS Unattended Regional and Language Options</Task>
+                <Opcode>NLS operations</Opcode>
+                <Message><![CDATA[
+The user reset all customizations for their user locale "%1" (specified by the UserLocale element) to the system default.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LocaleName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-International/Operational</Channel>
+                <Level>Information</Level>
+                <Task>NLS Unattended Regional and Language Options</Task>
+                <Opcode>NLS operations</Opcode>
+                <Message><![CDATA[
+The user changed their user locale setting "%1" (specified by the UserLocale element) to "%2".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LCType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-International/Operational</Channel>
+                <Level>Information</Level>
+                <Task>NLS Unattended Regional and Language Options</Task>
+                <Opcode>NLS operations</Opcode>
+                <Message><![CDATA[
+The locale has to be changed to the current locale in order to make customizations.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-International/Operational</Channel>
+                <Level>Information</Level>
+                <Task>NLS Unattended Regional and Language Options</Task>
+                <Opcode>NLS operations</Opcode>
+                <Message><![CDATA[
+The user changed their alternate sort to "%1".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LocaleName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-International/Operational</Channel>
+                <Level>Information</Level>
+                <Task>NLS Unattended Regional and Language Options</Task>
+                <Opcode>NLS operations</Opcode>
+                <Message><![CDATA[
+The user changed their calendar to "%1".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-International/Operational</Channel>
+                <Level>Information</Level>
+                <Task>NLS Unattended Regional and Language Options</Task>
+                <Opcode>NLS operations</Opcode>
+                <Message><![CDATA[
+The user changed their TwoDigitYearMax to %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13007</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-International/Operational</Channel>
+                <Level>Information</Level>
+                <Task>NLS Unattended Regional and Language Options</Task>
+                <Opcode>NLS operations</Opcode>
+                <Message><![CDATA[
+The user changed their location preference (geoid) to %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Value" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13008</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-International/Operational</Channel>
+                <Level>Information</Level>
+                <Task>NLS Unattended Regional and Language Options</Task>
+                <Opcode>NLS operations</Opcode>
+                <Message><![CDATA[
+The system locale (specified by the SystemLocale element) was changed to "%1".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LocaleName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13009</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-International/Operational</Channel>
+                <Level>Information</Level>
+                <Task>NLS Unattended Regional and Language Options</Task>
+                <Opcode>NLS operations</Opcode>
+                <Message><![CDATA[
+The current user settings were copied to the default user account.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13010</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-International/Operational</Channel>
+                <Level>Information</Level>
+                <Task>NLS Unattended Regional and Language Options</Task>
+                <Opcode>NLS operations</Opcode>
+                <Message><![CDATA[
+The current user settings were copied to the system accounts.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13011</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-International/Operational</Channel>
+                <Level>Information</Level>
+                <Task>NLS Unattended Regional and Language Options</Task>
+                <Opcode>NLS operations</Opcode>
+                <Message><![CDATA[
+The user has changed their UI Language to "%1".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LocaleName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13012</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-International/Operational</Channel>
+                <Level>Information</Level>
+                <Task>NLS Unattended Regional and Language Options</Task>
+                <Opcode>NLS operations</Opcode>
+                <Message><![CDATA[
+The user has changed their UI Language fallback order to "%1".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LocaleName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
