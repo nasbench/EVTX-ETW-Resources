@@ -1,0 +1,3592 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-LiveId</Name>
+        <Metadata>
+            <Guid>{05F02597-FE85-4E67-8542-69567AB8FD4F}</Guid>
+            <ResourceFilePath>C:\Windows\system32\wlidres.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\wlidres.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17763.1&amp;FileName=wlidres.dll&amp;FileVer=10.0.17763.1</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-LiveId/Analytic</Message>
+                    <Path>Microsoft-Windows-LiveId/Analytic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-LiveId/Operational</Message>
+                    <Path>Microsoft-Windows-LiveId/Operational</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Critical</Message>
+                    <Name>win:Critical</Name>
+                    <Value>1</Value>
+                </Level>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>WLID Service Operation</Message>
+                    <Name>WLIDService</Name>
+                    <Value>101</Value>
+                </Task>
+                <Task>
+                    <Message>LiveSsp Operation</Message>
+                    <Name>LiveSsp</Name>
+                    <Value>102</Value>
+                </Task>
+                <Task>
+                    <Message>Identity Provider Operation</Message>
+                    <Name>IdentityProvider</Name>
+                    <Value>103</Value>
+                </Task>
+                <Task>
+                    <Message>LiveId Modern API Operation</Message>
+                    <Name>LiveIdModernApi</Name>
+                    <Value>104</Value>
+                </Task>
+                <Task>
+                    <Message>WLIDCredProv Operation</Message>
+                    <Name>WLIDCredProv</Name>
+                    <Value>105</Value>
+                </Task>
+                <Task>
+                    <Message>TokenProvider Operation</Message>
+                    <Name>TokenProvider</Name>
+                    <Value>106</Value>
+                </Task>
+                <Task>
+                    <Message>Function Call</Message>
+                    <Name>FunctionCall</Name>
+                    <Value>200</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Telemetry trigger events</Message>
+                    <Name>Telemetry</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Error</Message>
+                    <Name>Error</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Analytic</Message>
+                    <Name>Analytic</Name>
+                    <Value>4</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Function</Message>
+                    <Name>Function</Name>
+                    <Value>8</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Operational</Message>
+                    <Name>Operational</Name>
+                    <Value>16</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Warning</Message>
+                    <Name>Warning</Name>
+                    <Value>32</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Critical</Message>
+                    <Name>Critical</Name>
+                    <Value>64</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Request Start</Message>
+                    <Name>RequestStart</Name>
+                    <Value>128</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>livessp</Message>
+                    <Name>LiveSsp</Name>
+                    <Value>256</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>wlidcredprov</Message>
+                    <Name>CredProv</Name>
+                    <Value>512</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>wlidnsp</Message>
+                    <Name>WlidNsp</Name>
+                    <Value>1024</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>wlidsvc</Message>
+                    <Name>WlidSvc</Name>
+                    <Value>2048</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>wlidmodern</Message>
+                    <Name>WlidModern</Name>
+                    <Value>4096</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>wlidcli</Message>
+                    <Name>WlidCli</Name>
+                    <Value>8192</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>wlidprov</Message>
+                    <Name>WlidProv</Name>
+                    <Value>16384</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>wlidbho</Message>
+                    <Name>WlidBho</Name>
+                    <Value>32768</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>TokenProvider</Message>
+                    <Name>TokenProvider</Name>
+                    <Value>65536</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>MSA Extension API</Message>
+                    <Name>Extension</Name>
+                    <Value>131072</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Cache</Message>
+                    <Name>Cache</Name>
+                    <Value>262144</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Credentials</Message>
+                    <Name>Credentials</Name>
+                    <Value>524288</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>StateMachine</Message>
+                    <Name>StateMachine</Name>
+                    <Value>1048576</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>SOAP</Message>
+                    <Name>SOAP</Name>
+                    <Value>2097152</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>RPC</Message>
+                    <Name>RPC</Name>
+                    <Value>4194304</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ms:Measures</Name>
+                    <Value>70368744177664</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Identity Provider Operation</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+ConnectIdentity_Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Identity Provider Operation</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+ConnectIdentity_Stop.
+Status: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Result" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1007</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Identity Provider Operation</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+DisconnectIdentity_Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1008</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Identity Provider Operation</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+DisconnectIdentity_Stop.
+Status: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Result" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1013</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>WLID Service Operation</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+NetworkCall_Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1014</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>WLID Service Operation</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+NetworkCall_Stop.
+Number of Targets: %1
+RequestType: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NoOfTargets" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1015</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>LiveId Modern API Operation</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+DeviceAuth_Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1016</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>LiveId Modern API Operation</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+DeviceAuth_Stop.
+Status: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TicketsCached" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="Result" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1017</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>LiveId Modern API Operation</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+UserAuth_Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1018</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>LiveId Modern API Operation</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+UserAuth_Stop.
+Status: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TicketsCached" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="Result" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1019</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>LiveId Modern API Operation</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+PromptForCredentials_Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1020</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>LiveId Modern API Operation</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+PromptForCredentials_Stop.
+Status: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Result" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1021</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Operational</Channel>
+                <Level>Error</Level>
+                <Task>LiveId Modern API Operation</Task>
+                <Keyword>Error Operational</Keyword>
+                <Message><![CDATA[
+SignOutUser_RegistryOpenOrReadFailure. 
+RegistryLocation: %1. 
+Status: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RegistryLocation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1022</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Operational</Channel>
+                <Level>Error</Level>
+                <Task>LiveId Modern API Operation</Task>
+                <Keyword>Error Operational</Keyword>
+                <Message><![CDATA[
+SignOutUser_RegistryWriteFailure. 
+RegistryLocation: %1. 
+Status: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RegistryLocation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2008</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>LiveId Modern API Operation</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+DeviceAuthAsync_Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2009</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>LiveId Modern API Operation</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+DeviceAuthAsync_Stop]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2010</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>LiveId Modern API Operation</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+UserAuthAsync_Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2011</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>LiveId Modern API Operation</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+UserAuthAsync_Stop]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2012</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>LiveId Modern API Operation</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+SignOutUser_Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2013</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>LiveId Modern API Operation</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+SignOutUser_Stop]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2014</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>WLID Service Operation</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+WLIDSvcReady]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2015</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>WLIDCredProv Operation</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+CommandLinkClicked_Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2016</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>WLIDCredProv Operation</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+CommandLinkClicked_Stop.
+Status: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Result" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2017</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>WLIDCredProv Operation</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+UserImageGetBitmapValue_Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2018</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>WLIDCredProv Operation</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+UserImageGetBitmapValue_Stop.
+Status: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Result" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2019</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>WLIDCredProv Operation</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+CredProvSetSerialization_Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2020</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>WLIDCredProv Operation</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+CredProvSetSerialization_Stop.
+Status: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Result" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2021</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>WLIDCredProv Operation</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+CredProvGetSerialization_Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2022</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>WLIDCredProv Operation</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Analytic</Keyword>
+                <Message><![CDATA[
+CredProvGetSerialization_Stop.
+Status: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Result" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2023</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Operational</Channel>
+                <Level>Information</Level>
+                <Task>WLID Service Operation</Task>
+                <Keyword>Operational</Keyword>
+                <Message><![CDATA[
+Operation: %1
+Details: %2
+Status: %3
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Operation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Target" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Result" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2024</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Operational</Channel>
+                <Level>Information</Level>
+                <Task>WLID Service Operation</Task>
+                <Keyword>Operational</Keyword>
+                <Message><![CDATA[
+Operation: %1
+Details: %2
+Status: %3
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Operation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Details" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2025</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Operational</Channel>
+                <Level>Error</Level>
+                <Task>WLID Service Operation</Task>
+                <Keyword>Error Operational</Keyword>
+                <Message><![CDATA[
+WLIDSvc service failed to start.
+Function: %1
+Reason: %2
+Status: %3
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Operation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Reason" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Result" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2026</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Keyword>Telemetry trigger events</Keyword>
+                <Message><![CDATA[
+Generic telemetry trigger event.
+PointType: %1
+AppName: %2
+ModuleName: %3
+ModuleVersion: %4
+FileName: %5
+FunctionName: %6
+LineNumber: %7
+ErrorCode: %8
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PointType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AppName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ModuleName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ModuleVersion" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2027</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Analytic</Channel>
+                <Level>Information</Level>
+                <Keyword>Telemetry trigger events</Keyword>
+                <Message><![CDATA[
+User specific telemetry trigger event for CID %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="cid" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2028</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Operational</Channel>
+                <Level>Error</Level>
+                <Keyword>Telemetry trigger events Error</Keyword>
+                <Message><![CDATA[
+ErrorVerifier in function %1 encountered unexpected error code (%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3000</Id>
+                <Version>0</Version>
+                <Level>Critical</Level>
+                <Keyword>Critical livessp</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3001</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error livessp</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3002</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Keyword>Warning livessp</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3003</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>livessp</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3004</Id>
+                <Version>0</Version>
+                <Level>Critical</Level>
+                <Keyword>Critical livessp</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3005</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error livessp</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3006</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Keyword>Warning livessp</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3007</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>livessp</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3008</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>Function livessp</Keyword>
+                <Message><![CDATA[
++%2@%1_%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3009</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>Function livessp</Keyword>
+                <Message><![CDATA[
+-%1=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3010</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error Function livessp</Keyword>
+                <Message><![CDATA[
+-%1=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3011</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>Function livessp</Keyword>
+                <Message><![CDATA[
+-%1=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Address" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3012</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error livessp</Keyword>
+                <Message><![CDATA[
+Process name %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3013</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error livessp</Keyword>
+                <Message><![CDATA[
+IF_FAILEXIT failure: (%4), hr = %5, in %2 @%1_%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Expression" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3014</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Keyword>Function Warning livessp</Keyword>
+                <Message><![CDATA[
+-%1=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3015</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>livessp</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3016</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>livessp</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4000</Id>
+                <Version>0</Version>
+                <Level>Critical</Level>
+                <Keyword>Critical wlidcredprov</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4001</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error wlidcredprov</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4002</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Keyword>Warning wlidcredprov</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4003</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>wlidcredprov</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4004</Id>
+                <Version>0</Version>
+                <Level>Critical</Level>
+                <Keyword>Critical wlidcredprov</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4005</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error wlidcredprov</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4006</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Keyword>Warning wlidcredprov</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4007</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>wlidcredprov</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4008</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>Function wlidcredprov</Keyword>
+                <Message><![CDATA[
++%2@%1_%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4009</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>Function wlidcredprov</Keyword>
+                <Message><![CDATA[
+-%1=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4010</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error Function wlidcredprov</Keyword>
+                <Message><![CDATA[
+-%1=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4011</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>Function wlidcredprov</Keyword>
+                <Message><![CDATA[
+-%1=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Address" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4012</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error wlidcredprov</Keyword>
+                <Message><![CDATA[
+Process name %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4013</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error wlidcredprov</Keyword>
+                <Message><![CDATA[
+IF_FAILEXIT failure: (%4), hr = %5, in %2 @%1_%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Expression" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4014</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Keyword>Function Warning wlidcredprov</Keyword>
+                <Message><![CDATA[
+-%1=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4015</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>wlidcredprov</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4016</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>wlidcredprov</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5000</Id>
+                <Version>0</Version>
+                <Level>Critical</Level>
+                <Keyword>Critical wlidnsp</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5001</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error wlidnsp</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5002</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Keyword>Warning wlidnsp</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5003</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>wlidnsp</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5004</Id>
+                <Version>0</Version>
+                <Level>Critical</Level>
+                <Keyword>Critical wlidnsp</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5005</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error wlidnsp</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5006</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Keyword>Warning wlidnsp</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5007</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>wlidnsp</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5008</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>Function wlidnsp</Keyword>
+                <Message><![CDATA[
++%2@%1_%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5009</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>Function wlidnsp</Keyword>
+                <Message><![CDATA[
+-%1=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5010</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error Function wlidnsp</Keyword>
+                <Message><![CDATA[
+-%1=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5011</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>Function wlidnsp</Keyword>
+                <Message><![CDATA[
+-%1=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Address" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5012</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error wlidnsp</Keyword>
+                <Message><![CDATA[
+Process name %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5013</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error wlidnsp</Keyword>
+                <Message><![CDATA[
+IF_FAILEXIT failure: (%4), hr = %5, in %2 @%1_%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Expression" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5014</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Keyword>Function Warning wlidnsp</Keyword>
+                <Message><![CDATA[
+-%1=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5015</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>wlidnsp</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5016</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>wlidnsp</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6000</Id>
+                <Version>0</Version>
+                <Level>Critical</Level>
+                <Keyword>Critical wlidsvc</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6001</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error wlidsvc</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6002</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Keyword>Warning wlidsvc</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6003</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>wlidsvc</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6004</Id>
+                <Version>0</Version>
+                <Level>Critical</Level>
+                <Keyword>Critical wlidsvc</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6005</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error wlidsvc</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6006</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Keyword>Warning wlidsvc</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6007</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>wlidsvc</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6008</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Task>Function Call</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Function wlidsvc</Keyword>
+                <Message><![CDATA[
++%2@%1_%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6009</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Task>Function Call</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Function wlidsvc</Keyword>
+                <Message><![CDATA[
+-%1=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6010</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Task>Function Call</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Error Function wlidsvc</Keyword>
+                <Message><![CDATA[
+-%1=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6011</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Task>Function Call</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Function wlidsvc</Keyword>
+                <Message><![CDATA[
+-%1=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Address" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6012</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error wlidsvc</Keyword>
+                <Message><![CDATA[
+Process name %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6013</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error wlidsvc</Keyword>
+                <Message><![CDATA[
+IF_FAILEXIT failure: (%4), hr = %5, in %2 @%1_%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Expression" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6014</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Keyword>Function Warning wlidsvc</Keyword>
+                <Message><![CDATA[
+-%1=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6015</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>wlidsvc</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6016</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>wlidsvc</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6100</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>Request Start wlidsvc</Keyword>
+                <Message><![CDATA[
+Service Create Context for [%1]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="value" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6101</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>wlidsvc Credentials</Keyword>
+                <Message><![CDATA[
+Token with target [%1] expired on %2, Deleting it from CredMan.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TargetName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ExpiryTime" inType="win:FILETIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6102</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>wlidsvc Credentials</Keyword>
+                <Message><![CDATA[
+Certificate (target = [%1]) has expired. Deleting from CredMan.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="value" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6103</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>wlidsvc Credentials</Keyword>
+                <Message><![CDATA[
+RemoveCachedAuthInfo Deleting item for target [%1] from CredMan.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="value" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6104</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>wlidsvc Credentials</Keyword>
+                <Message><![CDATA[
+RemoveCachedAuthInfo ALL Deleting [%1] items from CredMan.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="value" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6105</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>wlidsvc Credentials</Keyword>
+                <Message><![CDATA[
+RemovePersistedTokens Deleting item for target [%1] from CredMan.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="value" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6112</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>wlidsvc Credentials</Keyword>
+                <Message><![CDATA[
+CredMan activity skipped. Credential not changed for [WindowsLive:(token):name=%1;serviceuri=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="value1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="value2" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6113</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Operational</Channel>
+                <Level>Error</Level>
+                <Keyword>Error Operational wlidsvc RPC</Keyword>
+                <Message><![CDATA[
+RPC call to function %1 returned the following error code: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6114</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Operational</Channel>
+                <Level>Error</Level>
+                <Keyword>Error Operational wlidsvc SOAP</Keyword>
+                <Message><![CDATA[
+SOAP Request of type %1 for user CID '%2' in %4 environment received the following error code from the Microsoft Account server: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="cid" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+  <data name="MachineEnvironment" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6115</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>wlidsvc SOAP</Keyword>
+                <Message><![CDATA[
+## SOAP Request: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Value" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6116</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>wlidsvc SOAP</Keyword>
+                <Message><![CDATA[
+## SOAP Response: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Value" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6117</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LiveId/Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>wlidsvc SOAP</Keyword>
+                <Message><![CDATA[
+Acquired Service token.
+ResourceURI: %1
+Created: %2
+Expires: %3
+TokenType: %4
+AuthRequired: %5
+RequestStatus: %6
+HasFlowUrl: %7
+HasAuthUrl: %8
+HasEndAuthUrl: %9]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7000</Id>
+                <Version>0</Version>
+                <Level>Critical</Level>
+                <Keyword>Critical wlidmodern</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7001</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error wlidmodern</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7002</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Keyword>Warning wlidmodern</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7003</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>wlidmodern</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7004</Id>
+                <Version>0</Version>
+                <Level>Critical</Level>
+                <Keyword>Critical wlidmodern</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7005</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error wlidmodern</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7006</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Keyword>Warning wlidmodern</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7007</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>wlidmodern</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7008</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>Function wlidmodern</Keyword>
+                <Message><![CDATA[
++%2@%1_%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7009</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>Function wlidmodern</Keyword>
+                <Message><![CDATA[
+-%1=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7010</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error Function wlidmodern</Keyword>
+                <Message><![CDATA[
+-%1=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7011</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>Function wlidmodern</Keyword>
+                <Message><![CDATA[
+-%1=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Address" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7012</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error wlidmodern</Keyword>
+                <Message><![CDATA[
+Process name %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7013</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error wlidmodern</Keyword>
+                <Message><![CDATA[
+IF_FAILEXIT failure: (%4), hr = %5, in %2 @%1_%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Expression" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7014</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Keyword>Function Warning wlidmodern</Keyword>
+                <Message><![CDATA[
+-%1=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7015</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>wlidmodern</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7016</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>wlidmodern</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7100</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>wlidmodern Cache</Keyword>
+                <Message><![CDATA[
+Cached ticket for site %1 and policy %2 found which is valid for another %3 seconds.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Uri" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Policy" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TimeToLive" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7101</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>wlidmodern</Keyword>
+                <Message><![CDATA[
+ApplicationId Overwritten [%1] becomes [%2]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="value1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="value2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7102</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>Request Start wlidmodern</Keyword>
+                <Message><![CDATA[
+ApplicationId [%1]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="value" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7103</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>wlidmodern Cache</Keyword>
+                <Message><![CDATA[
+Cached ticket for site %1 and policy %2 not found or has expired.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="value1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="value2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7104</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>wlidmodern StateMachine</Keyword>
+                <Message><![CDATA[
+Attempts = [%1], latestIterationResult = [%2], continueRetry = [%3], isConnected = [%4], flowUrl = [%5], defaultUser = [%6], promptType = [%7], authUrl = [%8], endAuthUrl = [%8]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Attempts" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="latestIterationResult" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="continueRetry" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="isConnected" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="flowUrl" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="defaultUser" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="promptType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="authUrl" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="endAuthUrl" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7105</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>wlidmodern Credentials</Keyword>
+                <Message><![CDATA[
+WLIDCPersistCredential [%1]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="value" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8000</Id>
+                <Version>0</Version>
+                <Level>Critical</Level>
+                <Keyword>Critical wlidcli</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8001</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error wlidcli</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8002</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Keyword>Warning wlidcli</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8003</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>wlidcli</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8004</Id>
+                <Version>0</Version>
+                <Level>Critical</Level>
+                <Keyword>Critical wlidcli</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8005</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error wlidcli</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8006</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Keyword>Warning wlidcli</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8007</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>wlidcli</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8008</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>Function wlidcli</Keyword>
+                <Message><![CDATA[
++%2@%1_%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8009</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>Function wlidcli</Keyword>
+                <Message><![CDATA[
+-%1=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8010</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error Function wlidcli</Keyword>
+                <Message><![CDATA[
+-%1=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8011</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>Function wlidcli</Keyword>
+                <Message><![CDATA[
+-%1=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Address" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8012</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error wlidcli</Keyword>
+                <Message><![CDATA[
+Process name %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8013</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error wlidcli</Keyword>
+                <Message><![CDATA[
+IF_FAILEXIT failure: (%4), hr = %5, in %2 @%1_%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Expression" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8014</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Keyword>Function Warning wlidcli</Keyword>
+                <Message><![CDATA[
+-%1=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8015</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>wlidcli</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8016</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>wlidcli</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9000</Id>
+                <Version>0</Version>
+                <Level>Critical</Level>
+                <Keyword>Critical wlidprov</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9001</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error wlidprov</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9002</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Keyword>Warning wlidprov</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9003</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>wlidprov</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9004</Id>
+                <Version>0</Version>
+                <Level>Critical</Level>
+                <Keyword>Critical wlidprov</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9005</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error wlidprov</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9006</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Keyword>Warning wlidprov</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9007</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>wlidprov</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9008</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>Function wlidprov</Keyword>
+                <Message><![CDATA[
++%2@%1_%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9009</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>Function wlidprov</Keyword>
+                <Message><![CDATA[
+-%1=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9010</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error Function wlidprov</Keyword>
+                <Message><![CDATA[
+-%1=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9011</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>Function wlidprov</Keyword>
+                <Message><![CDATA[
+-%1=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Address" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9012</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error wlidprov</Keyword>
+                <Message><![CDATA[
+Process name %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9013</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error wlidprov</Keyword>
+                <Message><![CDATA[
+IF_FAILEXIT failure: (%4), hr = %5, in %2 @%1_%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Expression" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9014</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Keyword>Function Warning wlidprov</Keyword>
+                <Message><![CDATA[
+-%1=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9015</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>wlidprov</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9016</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>wlidprov</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9100</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>wlidprov Credentials</Keyword>
+                <Message><![CDATA[
+WLIDCPersistCredential [%1]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="value" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10000</Id>
+                <Version>0</Version>
+                <Level>Critical</Level>
+                <Keyword>Critical wlidbho</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10001</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error wlidbho</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10002</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Keyword>Warning wlidbho</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10003</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>wlidbho</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10004</Id>
+                <Version>0</Version>
+                <Level>Critical</Level>
+                <Keyword>Critical wlidbho</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10005</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error wlidbho</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10006</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Keyword>Warning wlidbho</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10007</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>wlidbho</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10008</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>Function wlidbho</Keyword>
+                <Message><![CDATA[
++%2@%1_%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10009</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>Function wlidbho</Keyword>
+                <Message><![CDATA[
+-%1=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10010</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error Function wlidbho</Keyword>
+                <Message><![CDATA[
+-%1=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10011</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>Function wlidbho</Keyword>
+                <Message><![CDATA[
+-%1=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Address" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10012</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error wlidbho</Keyword>
+                <Message><![CDATA[
+Process name %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10013</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error wlidbho</Keyword>
+                <Message><![CDATA[
+IF_FAILEXIT failure: (%4), hr = %5, in %2 @%1_%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Expression" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10014</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Keyword>Function Warning wlidbho</Keyword>
+                <Message><![CDATA[
+-%1=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10015</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>wlidbho</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10016</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>wlidbho</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11000</Id>
+                <Version>0</Version>
+                <Level>Critical</Level>
+                <Keyword>Critical TokenProvider</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11001</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error TokenProvider</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11002</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Keyword>Warning TokenProvider</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11003</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>TokenProvider</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11004</Id>
+                <Version>0</Version>
+                <Level>Critical</Level>
+                <Keyword>Critical TokenProvider</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11005</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error TokenProvider</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11006</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Keyword>Warning TokenProvider</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11007</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>TokenProvider</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11008</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>Function TokenProvider</Keyword>
+                <Message><![CDATA[
++%2@%1_%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11009</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>Function TokenProvider</Keyword>
+                <Message><![CDATA[
+-%1=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11010</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error Function TokenProvider</Keyword>
+                <Message><![CDATA[
+-%1=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11011</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>Function TokenProvider</Keyword>
+                <Message><![CDATA[
+-%1=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Address" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11012</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error TokenProvider</Keyword>
+                <Message><![CDATA[
+Process name %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11013</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error TokenProvider</Keyword>
+                <Message><![CDATA[
+IF_FAILEXIT failure: (%4), hr = %5, in %2 @%1_%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Expression" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11014</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Keyword>Function Warning TokenProvider</Keyword>
+                <Message><![CDATA[
+-%1=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11015</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>TokenProvider</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11016</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>TokenProvider</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12000</Id>
+                <Version>0</Version>
+                <Level>Critical</Level>
+                <Keyword>Critical MSA Extension API</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12001</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error MSA Extension API</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12002</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Keyword>Warning MSA Extension API</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12003</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>MSA Extension API</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12004</Id>
+                <Version>0</Version>
+                <Level>Critical</Level>
+                <Keyword>Critical MSA Extension API</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12005</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error MSA Extension API</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12006</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Keyword>Warning MSA Extension API</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12007</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>MSA Extension API</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12008</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>Function MSA Extension API</Keyword>
+                <Message><![CDATA[
++%2@%1_%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12009</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>Function MSA Extension API</Keyword>
+                <Message><![CDATA[
+-%1=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12010</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error Function MSA Extension API</Keyword>
+                <Message><![CDATA[
+-%1=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12011</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>Function MSA Extension API</Keyword>
+                <Message><![CDATA[
+-%1=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Address" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12012</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error MSA Extension API</Keyword>
+                <Message><![CDATA[
+Process name %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12013</Id>
+                <Version>0</Version>
+                <Level>Error</Level>
+                <Keyword>Error MSA Extension API</Keyword>
+                <Message><![CDATA[
+IF_FAILEXIT failure: (%4), hr = %5, in %2 @%1_%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Expression" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12014</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Keyword>Function Warning MSA Extension API</Keyword>
+                <Message><![CDATA[
+-%1=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12015</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>MSA Extension API</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12016</Id>
+                <Version>0</Version>
+                <Level>Verbose</Level>
+                <Keyword>MSA Extension API</Keyword>
+                <Message><![CDATA[
+%3 @%1_%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="description" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

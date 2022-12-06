@@ -1,0 +1,2227 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-EFS</Name>
+        <Metadata>
+            <Guid>{3663A992-84BE-40EA-BBA9-90C7ED544222}</Guid>
+            <ResourceFilePath>C:\Windows\system32\efscore.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\efscore.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17763.2686&amp;FileName=efscore.dll&amp;FileVer=10.0.17763.2686</HelpLink>
+            <PublisherMessage>Microsoft-Windows-EFS</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-EFS/Debug</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Application</Message>
+                    <Path>Application</Path>
+                    <Index>1</Index>
+                    <Id>9</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+An API call failed at %1.%2.  Error code: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Param" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+An API call failed at %1.%2.  Error code: %3, Data: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Param1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Param2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+An API call failed at %1.%2.  Error code: %3, Data: %4, %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Param1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Param2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Param3" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+%1.%2: Failed to allocate %3 bytes.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Param" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>256</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+EFS key promoted from current key.  CertValidated: %1, cbHash: %2, pbHash: %3, ContainerName: %4, ProviderName: %5, DisplayInformation: %6, dwCapabilities: %7, bIsCurrentKey: %8, eKeyType: %9]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CertValidated" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="cbHash" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="pbHash" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ContainerName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProviderName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DisplayInformation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="dwCapabilities" inType="win:AnsiString" outType="xs:string"/>
+  <data name="bIsCurrentKey" inType="win:AnsiString" outType="xs:string"/>
+  <data name="eKeyType" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>257</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+EFS key demoted from current key.  CertValidated: %1, cbHash: %2, pbHash: %3, ContainerName: %4, ProviderName: %5, DisplayInformation: %6, dwCapabilities: %7, bIsCurrentKey: %8, eKeyType: %9]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CertValidated" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="cbHash" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="pbHash" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ContainerName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProviderName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DisplayInformation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="dwCapabilities" inType="win:AnsiString" outType="xs:string"/>
+  <data name="bIsCurrentKey" inType="win:AnsiString" outType="xs:string"/>
+  <data name="eKeyType" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>258</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+EFS key flushed from cache.  CertValidated: %1, cbHash: %2, pbHash: %3, ContainerName: %4, ProviderName: %5, DisplayInformation: %6, dwCapabilities: %7, bIsCurrentKey: %8, eKeyType: %9]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CertValidated" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="cbHash" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="pbHash" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ContainerName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProviderName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DisplayInformation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="dwCapabilities" inType="win:AnsiString" outType="xs:string"/>
+  <data name="bIsCurrentKey" inType="win:AnsiString" outType="xs:string"/>
+  <data name="eKeyType" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>259</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: The specified key is not valid for EFS]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>260</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: Attempt to create a new EFS key]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>261</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: A new EFS key was successfully created]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>262</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: Begin searching the MY store for a valid EFS key]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>263</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: Begin searching the MY store for a valid EFS key]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>264</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: Deleting currentkey from registry]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>265</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: The EFS cert is self-signed, but self-signed certs are disabled by policy]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>272</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: RSA is required by policy, but the key does not support RSA encryption]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>273</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: MASTERKEY is required by policy, but the key does not support MASTERKEY encryption]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>274</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: SMARTCARDS are required by policy, but the key is not SMARTCARD-based]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>275</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: key is expired]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>276</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: key is valid]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>277</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: try and locate the matching key based on cert hash]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>278</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: key successfully loaded from registry]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>279</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: try and locate the matching key in cache]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>280</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: trying to load the masterkey history]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>281</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: masterkey history loaded]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>288</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: failed to encrypt: SIS or HSM file]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>289</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: Suite B is disabled by policy, but the key is a Suite B key]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>290</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: Suite B is required by policy, but the key is not a Suite B key]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>512</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: releasing user cache object.  Refcount: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Param" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>513</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: trying to stop cache polling thread]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>514</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: no decryption status in cache]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>515</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: found matching decryption status in cache]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>516</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: attempting to add key to user cache]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>517</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+EFS key added to user cache.  CertValidated: %1, cbHash: %2, pbHash: %3, ContainerName: %4, ProviderName: %5, DisplayInformation: %6, dwCapabilities: %7, bIsCurrentKey: %8, eKeyType: %9]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CertValidated" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="cbHash" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="pbHash" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ContainerName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProviderName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DisplayInformation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="dwCapabilities" inType="win:AnsiString" outType="xs:string"/>
+  <data name="bIsCurrentKey" inType="win:AnsiString" outType="xs:string"/>
+  <data name="eKeyType" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>518</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: ensuring user has cache node]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>519</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: found cache node in user info]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>520</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: found cache node in global cache]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>521</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: creating new cache node for user]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>768</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: Policy settings specified flush on card removal.  Starting the polling thread...]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>769</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: Policy settings specified NO flush on timeout.  Stopping the polling thread...]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>770</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: Policy settings specified flush on timeout.  Starting the polling thread...]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>771</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: Policy settings specified new cache flush interval: %3.  Stop polling (will restart if there are active user caches)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Param" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>772</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: Polling thread stopped]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>773</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: Flush cache specified by policy, and we have active user caches.  Start polling.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>774</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: Polling thread started]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>775</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: User logon detected.  Beginning SSO processing.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>776</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: User logon detected, but is not smartcard-based.  No SSO processing required.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>777</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: Smartcard notification detected.  Beginning SSO processing.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>784</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: Smartcard notification detected, but the logon cert is already cached.  No processing required.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>785</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: Current key matches the logon cert.  Setting up the PIN cache.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>786</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: User does not yet have a current key.  If smartcard is required by policy, the logon cert and PIN will be cached.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>787</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: Logon notification detected on DC.  Beginning DRA install.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>788</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: user does not already have a cache: generating one now]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>789</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: generating pre-cache for PIN and logon cert]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>790</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: tried to install logon cert, but it's not available (not a smartcard logon, or the smartcard was removed)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>791</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: logon cert successfully installed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>792</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: trying to install logon cert]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>793</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: User lock detected.  Beginning SSO processing.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>800</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: User logoff detected.  Beginning SSO processing.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>801</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: Flushing the user cache]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>802</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: User has locked workstation, but policy says not to flush cache]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>803</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: Checking for expired cache entries]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>804</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: Expired certificate in recovery policy]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>805</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: Certificate in recovery policy is not yet valid]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1024</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: SL policy successfully updated]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1040</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: EFS is disabled by SL policy]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1041</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: EFS is not yet initialized]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1042</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: EFS is disabled]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1280</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: the data received by the API was too large.  Expected: %3, Actual: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Param1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Param2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1281</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: the data received by the API was too small.  Expected: %3, Actual: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Param1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Param2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1282</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: POSSIBLE EFS ATTACK DETECTED: %3, %4, %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DomainName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UserName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AttackId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1283</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: attempting to validate EFS stream]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1284</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: EFS stream validated]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1536</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+PIN prompt dialog has closed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1537</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Prompt the user to select a smartcard-based EFS cert]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1538</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Smartcard-based EFS cert successfully selected by the user]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1539</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Prompt the user for PIN]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1540</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+PIN successfully acquired from the user]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1541</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Perfect match found in cache.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1542</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Masterkey history already loaded]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1543</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Current key loaded from cache]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1544</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Current key loaded from registry]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1545</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: Masterkey history: failed size consistency check.  %3, %4, %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Param1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Param2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Param3" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4096</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: Encrypted keys not equal]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4097</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: doing a REKEY, but the DDF entry already exists]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4098</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: replace operation added a DDF (unexpected)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4099</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: user is modifying a DDF entry not matching the PoP entry.  Require WRITE_ATTRIBUTES]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4100</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: user is modifying a DDF matching the PoP entry, or the DRF.  Don't require WRITE_ATTRIBUTES]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4101</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+%1.%2: UNEXPECTED condition: no ENCRYPTED_KEY for SC failure]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4102</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+%1.%2: Plug-n-Play service not ready. EFS server will not try to detect interrupted encryption/decryption operation(s).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4353</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+%1.%2: Cannot open log file. Encryption/decryption operation(s) cannot be recovered.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4354</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+%1.%2: Cannot read log file. Encryption/decryption operation(s) cannot be recovered.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4355</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+%1.%2: A corrupted or different format log file has been found. No action was taken.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4356</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+%1.%2: The log file cannot be opened as non-cached IO. No action was taken.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4357</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: Interrupted encryption/decryption operation(s) found on a volume. Recovery procedure started.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4358</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+%1.%2: EFS recovery service cannot open the file %3. The interrupted encryption/decryption operation cannot be recovered.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4359</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: EFS service recovered %3 successfully.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4360</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+%1.%2: EFS service could not open all the streams on file %3  The file was not recovered.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4361</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+%1.%2: %3 could not be recovered Completely.  EFS driver may be missing.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4368</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+%1.%2: IO Error occurred during stream recovery.  %3 was not recovered.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4369</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+%1.%2: EFS recovery service cannot open the backup file %3 by name. The interrupted encryption/decryption operation (on file %4) may be recovered.  The backup file will not be deleted. User should delete the backup file if the recovery operation is done successfully.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4370</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+%1.%2: %3 was opened by File ID successfully the first time but not the second time. No recovery operation was tried on file %4. This is an internal error.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4371</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+%1.%2: EFS recovery service cannot get the backup file name. The interrupted encryption/decryption operation (on file %3) may be recovered.  The temporary backup file %4 is not deleted.  User should delete the backup file if the recovery operation is done successfully.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4372</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+%1.%2: %3 could not be opened. %4 was not recovered.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4373</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+%1.%2: Stream Information could not be got from %3. %4 was not recovered.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4374</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+%1.%2: EFS service could not open all the streams on file %3.  %4 was not recovered.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4375</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: EFS Service received logon notification.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4376</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+EFS Service failed to start. Error code: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4377</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: User cache entry purged. Reference count: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Param" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4378</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1.%2: All user cache entries purged. Reference count: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Param" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4379</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+EFS service was unable to populate SID information. Error code: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4380</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+EFS service was unable to determine the computer name. Error code: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4381</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+EFS service was unable to initialize cache lock. Error code: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4382</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+EFS service was unable to initialize the BCrypt Algorithm Provider. Error code: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4383</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+EFS service was unable to query Software Licensing for the cache size. Error code: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4384</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+EFS service was unable to open handle to the MS_DEF_PROV provider. Error code: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4385</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+EFS service was unable to setup notifications from LSA. Error code: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4386</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+EFS service was unable to initialize the recovery policy resource. Error code: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4387</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+EFS service was unable process the recovery policy. Error code: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4388</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+EFS service was unable to notify NTFS of its state. Error code: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4389</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+EFS service was unable to setup group policy change notifications. Error code: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4390</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+EFS service was unable to process active user sessions. Error code: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4391</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Encrypting File System server ready to accept calls.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4392</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+%1.%2: EFS service failed to subscribe for updates to an MDM policy. Index: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4393</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+%1.%2: Failed to initialize one or more synchronization objects. Error code: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4400</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+%1.%2: EFS service failed to process MDM policy updates. Error code: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4401</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+%1.%2: EFS service failed to provision a user for Windows Information Protection. Error code: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4402</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+%1.%2: EFS service failed to provision a user for DPL. Error code: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4403</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+%1.%2: EFS service failed to initialize file encryption queues. Error code: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4404</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+%1.%2: Recovery policy data is in an invalid format. Error code: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4405</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+%1.%2: Start: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4406</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+%1.%2: Complete: %3. Code: %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Param2" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4407</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+%1.%2: Error Code: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Param1" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4408</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+%1.%2: Status Code: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Param1" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4409</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+%1.%2: Enter: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4410</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+%1.%2: Leave: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4411</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+%1.%2: Leave: %3. Code: %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Param2" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4412</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+%1.%2: Error: %3. Code: %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Param2" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4413</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+%1.%2: Warning: %3. Code: %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Param2" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4414</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+%1.%2: %3. Code: %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Param2" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4415</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+%1.%2: %3. Value: %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Param2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4416</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+%1.%2: Complete: %3. Code: %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Param2" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4417</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+%1.%2: Leave: %3. Code: %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Param2" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4418</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+%1.%2: EFS service failed to provision RMS for Windows Information Protection. Error code: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4419</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-EFS/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Thread %1: %2, Line %3, HRESULT %4, Message: '%5']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ThreadId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="File" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4420</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+A client attempted to call an EFS service API without privacy level authentication. Error code: %3. See https://go.microsoft.com/fwlink/?linkid=2181030.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7000</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Machine role cannot be determined. %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Reason" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7002</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Default group policy object cannot be created. %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Reason" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
