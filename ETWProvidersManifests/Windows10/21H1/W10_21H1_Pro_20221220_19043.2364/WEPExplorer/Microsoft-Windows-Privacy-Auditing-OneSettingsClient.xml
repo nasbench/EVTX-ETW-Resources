@@ -1,0 +1,65 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Privacy-Auditing-OneSettingsClient</Name>
+        <Metadata>
+            <Guid>{23F0F2C7-C77C-51EE-0AC1-5AC7796A85DF}</Guid>
+            <ResourceFilePath>C:\Windows\system32\OneSettingsClient.dll</ResourceFilePath>
+            <ParameterFilePath>C:\Windows\system32\OneSettingsClient.dll</ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\OneSettingsClient.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.19041.1110&amp;FileName=OneSettingsClient.dll&amp;FileVer=10.0.19041.1110</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Privacy-Auditing-OneSettingsClient</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Privacy-Auditing/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Settings downloaded</Message>
+                    <Name>SettingsEndpointDownload</Name>
+                    <Value>1</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Settings Download</Message>
+                    <Name>SettingsDownload</Name>
+                    <Value>1</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Privacy-Auditing/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Settings downloaded</Task>
+                <Keyword>Settings Download</Keyword>
+                <Message><![CDATA[
+Settings were downloaded from the %2.%3 endpoint by %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CallerId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Partner" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Feature" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DownloadResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,436 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Kernel-ShimEngine</Name>
+        <Metadata>
+            <Guid>{0BF2FB94-7B60-4B4D-9766-E82F658DF540}</Guid>
+            <ResourceFilePath>C:\Windows\system32\Microsoft-Windows-System-Events.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\Microsoft-Windows-System-Events.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.20348.1129&amp;FileName=Microsoft-Windows-System-Events.dll&amp;FileVer=10.0.20348.1129</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Kernel-ShimEngine</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Kernel-ShimEngine/Debug</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-Kernel-ShimEngine/Operational</Message>
+                    <Path>Microsoft-Windows-Kernel-ShimEngine/Operational</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Kernel-ShimEngine/Diagnostic</Path>
+                    <Index>2</Index>
+                    <Id>18</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ShimEngineEvents</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ShimEngineMessages</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>DriverScopeGeneral</Name>
+                    <Value>256</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>DriverScopePnp</Name>
+                    <Value>512</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>DriverScopePower</Name>
+                    <Value>1024</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>DriverScopeIrps</Name>
+                    <Value>2048</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>DriverScopePool</Name>
+                    <Value>4096</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>SkipDriverUnloadGeneral</Name>
+                    <Value>8192</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Kernel-ShimEngine/Debug</Channel>
+                <Level>Error</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EventId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DebugMessage" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Kernel-ShimEngine/Debug</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EventId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DebugMessage" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Kernel-ShimEngine/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%3 shim(s) were applied to driver [%1].
+
+Shim(s) source: %2.
+
+Shim GUID(s): %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DriverName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ShimSource" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ShimCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AppliedGuids" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Kernel-ShimEngine/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Flags [%4] were applied to device [%1] - class [%2].
+
+Flags source: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DeviceClass" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FlagSource" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Kernel-ShimEngine/Operational</Channel>
+                <Level>Verbose</Level>
+                <Keyword>SkipDriverUnloadGeneral</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DriverName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DriverBase" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="DriverSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DriverTimeStamp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DriverCheckSum" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Kernel-ShimEngine/Operational</Channel>
+                <Level>Verbose</Level>
+                <Keyword>SkipDriverUnloadGeneral</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DriverObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="DriverBase" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Kernel-ShimEngine/Diagnostic</Channel>
+                <Level>Verbose</Level>
+                <Keyword>DriverScopeGeneral</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DriverName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DriverBase" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="DriverSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DriverTimeStamp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DriverCheckSum" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Kernel-ShimEngine/Diagnostic</Channel>
+                <Level>Verbose</Level>
+                <Keyword>DriverScopeGeneral</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DriverObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="DriverBase" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Kernel-ShimEngine/Diagnostic</Channel>
+                <Level>Verbose</Level>
+                <Keyword>DriverScopeGeneral</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DriverBase" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="DriverSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DriverObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Pdo" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ServiceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HardwareId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Kernel-ShimEngine/Diagnostic</Channel>
+                <Level>Verbose</Level>
+                <Keyword>DriverScopePool</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Address" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Caller" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Size" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Tag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Kernel-ShimEngine/Diagnostic</Channel>
+                <Level>Verbose</Level>
+                <Keyword>DriverScopePool</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Address" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Caller" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Tag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Kernel-ShimEngine/Diagnostic</Channel>
+                <Level>Verbose</Level>
+                <Keyword>DriverScopeIrps</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DriverObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Fdo" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Kernel-ShimEngine/Diagnostic</Channel>
+                <Level>Verbose</Level>
+                <Keyword>DriverScopeGeneral</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DriverObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Fdo" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="DeviceType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DeviceCharacteristics" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Exclusive" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Kernel-ShimEngine/Diagnostic</Channel>
+                <Level>Verbose</Level>
+                <Keyword>DriverScopeIrps</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DriverObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Fdo" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="MajorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Kernel-ShimEngine/Diagnostic</Channel>
+                <Level>Verbose</Level>
+                <Keyword>DriverScopePnp</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DriverObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Fdo" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="MinorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Kernel-ShimEngine/Diagnostic</Channel>
+                <Level>Verbose</Level>
+                <Keyword>DriverScopePnp</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DriverObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Fdo" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Kernel-ShimEngine/Diagnostic</Channel>
+                <Level>Verbose</Level>
+                <Keyword>DriverScopePnp</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DriverObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Fdo" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Kernel-ShimEngine/Diagnostic</Channel>
+                <Level>Verbose</Level>
+                <Keyword>DriverScopePower</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DriverObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Fdo" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="MinorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PowerType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PowerState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>22</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Kernel-ShimEngine/Diagnostic</Channel>
+                <Level>Verbose</Level>
+                <Keyword>DriverScopePower</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DriverObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Fdo" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="MinorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PowerType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PowerState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>23</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Kernel-ShimEngine/Diagnostic</Channel>
+                <Level>Verbose</Level>
+                <Keyword>DriverScopePower</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DriverObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Fdo" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="MinorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PowerState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>24</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Kernel-ShimEngine/Diagnostic</Channel>
+                <Level>Verbose</Level>
+                <Keyword>DriverScopePower</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DriverObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Fdo" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
