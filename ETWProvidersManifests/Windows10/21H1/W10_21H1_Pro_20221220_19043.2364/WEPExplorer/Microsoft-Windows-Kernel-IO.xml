@@ -1,0 +1,201 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Kernel-IO</Name>
+        <Metadata>
+            <Guid>{ABF1F586-2E50-4BA8-928D-49044E6F0DB7}</Guid>
+            <ResourceFilePath>C:\Windows\system32\Microsoft-Windows-System-Events.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\Microsoft-Windows-System-Events.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.19041.2130&amp;FileName=Microsoft-Windows-System-Events.dll&amp;FileVer=10.0.19041.2130</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Kernel-IO</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-Kernel-IO/Operational</Message>
+                    <Path>Microsoft-Windows-Kernel-IO/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>1</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>VolumeMount</Name>
+                    <Value>1</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>VolumeMounts</Name>
+                    <Value>1</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-IO/Operational</Channel>
+                <Level>Information</Level>
+                <Task>VolumeMount</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>VolumeMounts</Keyword>
+                <Message><![CDATA[
+Windows has started processing the volume mount request.
+
+           Volume GUID: %1
+           Volume Name: %3
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-IO/Operational</Channel>
+                <Level>Information</Level>
+                <Task>VolumeMount</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>VolumeMounts</Keyword>
+                <Message><![CDATA[
+The volume has been successfully mounted.
+
+           Volume GUID: %1
+           Volume Name: %3
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-IO/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>VolumeMount</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>VolumeMounts</Keyword>
+                <Message><![CDATA[
+Windows failed to mount the volume.
+
+           Status: %4
+           Volume GUID: %1
+           Volume Name: %3
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+  <data name="Error" inType="win:HexInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1205</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Windows is configured to block legacy file system filters.
+
+           Filter name: %2
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FilterNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FilterName" inType="win:UnicodeString" outType="xs:string" length="FilterNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1206</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Legacy file system filters cannot attach to byte addressable volumes.
+
+           Filter name: %2
+           Volume name: %4
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FilterNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FilterName" inType="win:UnicodeString" outType="xs:string" length="FilterNameLength"/>
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1207</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Dumps are disabled on the machine since there was an error enabling dump encryption: %1.                  
+See http://go.microsoft.com/fwlink/?LinkId=824149 for more information on dump encryption]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DumpEncryptionFailureReason" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

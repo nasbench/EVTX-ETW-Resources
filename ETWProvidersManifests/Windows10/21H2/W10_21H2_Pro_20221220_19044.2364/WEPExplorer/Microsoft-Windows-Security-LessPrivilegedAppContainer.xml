@@ -1,0 +1,57 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Security-LessPrivilegedAppContainer</Name>
+        <Metadata>
+            <Guid>{45EEC9E5-4A1B-5446-7AD8-A4AB1313C437}</Guid>
+            <ResourceFilePath>C:\Windows\system32\Microsoft-Windows-System-Events.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\Microsoft-Windows-System-Events.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.19041.2130&amp;FileName=Microsoft-Windows-System-Events.dll&amp;FileVer=10.0.19041.2130</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Security-LessPrivilegedAppContainer</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-Security-LessPrivilegedAppContainer/Operational</Message>
+                    <Path>Microsoft-Windows-Security-LessPrivilegedAppContainer/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>AccessFailure</Name>
+                    <Value>1</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Security-LessPrivilegedAppContainer/Operational</Channel>
+                <Level>Error</Level>
+                <Task>AccessFailure</Task>
+                <Message><![CDATA[
+Access to the a resource has been denied for a less privileged app container at %1 (StackHash: %2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FailureTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="StackHash" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
