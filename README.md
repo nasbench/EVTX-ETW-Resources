@@ -2,6 +2,42 @@
 
 This is a repository that contains a bunch of resources to learn and understand EVTX/ETW (Event Tracing for Windows)
 
+## A Quick Rundown
+
+Here's what you can expect from each of the main subfolders within this repo. Please take a minute to educate yourself!
+
+### ETWProvidersManifests
+
+[ETWProvidersManifests](https://github.com/nasbench/EVTX-ETW-Resources/tree/main/ETWProvidersManifests) will contain raw XMLs for each Event Log Provider for each respective version of Windows. At minimum, there should be 800 of these for each system. An example can be seen below:
+
+![](https://github.com/nasbench/EVTX-ETW-Resources/blob/main/Media/ETWProvidersManifests.gif?raw=true)
+
+### ETWProvidersCSVs
+
+[ETWProvidersCSVs](https://github.com/nasbench/EVTX-ETW-Resources/tree/main/ETWProvidersCSVs) will contain a CSV for each Provider and all the possible event IDs, event messages, etc contained within that Provider. An example can be seen below:
+
+![](https://github.com/nasbench/EVTX-ETW-Resources/blob/main/Media/ETWProvidersCSVs.gif?raw=true)
+
+Within the ETWProvidersCSVs subfolder, there are two other subfolders that separate Windows-native and Third-Party Event Log Providers.
+
+#### Internal
+
+Any Event Log Provider that exists upon a clean install of Windows will be included here. 
+
+#### ThirdParty
+
+Any Event Log Provider that doesn't ship with Windows will be included here. Some examples can include, but are not limited to: Third-Party Antivirus, Sysmon, Microsoft Office (technically doesn't ship with Windows), or Remote Admin Tools like Splashtop.
+
+### ETWEventsList
+
+[ETWEventsList](https://github.com/nasbench/EVTX-ETW-Resources/tree/main/ETWEventsList) will provide a CSV for each respective version of Windows that contains ALL of the possible event IDs, event messages, etc for that version of Windows. This is offered in a combined CSV for ALL Providers as well as each Provider separated out into their own CSV for that specific version of Windows. An example can be seen below:
+
+![](https://github.com/nasbench/EVTX-ETW-Resources/blob/main/Media/ETWEventsList.gif?raw=true)
+
+### Examples
+
+[Examples](https://github.com/nasbench/ETW-Resources/tree/main/Examples) will contain example scripts to collect ETW events using different libraries.
+
 ## Content
 
 - [EVTX/ETW Resources](#evtxetw-resources)
@@ -19,13 +55,6 @@ This is a repository that contains a bunch of resources to learn and understand 
     - [Books](#books)
     - [Other Github Projects w/ ETW Content](#other-github-projects-w-etw-content)
   - [Contributing](#contributing)
-
-## Structure
-
-- [ETW Providers Manifests](https://github.com/nasbench/ETW-Resources/tree/main/ETW%20Providers%20Manifests) - List of ETW XML manifests from different versions of Windows.
-- [Examples](https://github.com/nasbench/ETW-Resources/tree/main/Examples) - Example scripts to collect ETW events using different libraries.
-- [ETW Events List](https://github.com/nasbench/ETW-Resources/tree/main/ETW%20Events%20List) - List of all ETW events extracted from the currently dumped ETW providers.
-- [ETW Providers CSVs](https://github.com/nasbench/EVTX-ETW-Resources/tree/main/ETWProvidersCSVs) - List containing CSVs for each ETW provider available. Where each CSV have all the available events for that specific provider across all versions of windows. 
 
 ## Blogs / Research (<https://nasbench.medium.com/>)
 
