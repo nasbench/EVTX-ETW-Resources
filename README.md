@@ -8,13 +8,13 @@ Here's what you can expect from each of the main subfolders within this repo. Pl
 
 ### ETWProvidersManifests
 
-[ETW Providers Manifests](https://github.com/nasbench/ETW-Resources/tree/main/ETW%20Providers%20Manifests) will contain raw XMLs for each Event Log Provider for each respective version of Windows. At minimum, there should be 800 of these for each system. An example can be seen below:
+[ETWProvidersManifests](https://github.com/nasbench/EVTX-ETW-Resources/tree/main/ETWProvidersManifests) will contain raw XMLs for each Event Log Provider for each respective version of Windows. At minimum, there should be 800 of these for each system. An example can be seen below:
 
 ![](https://github.com/nasbench/EVTX-ETW-Resources/blob/main/Media/ETWProvidersManifests.gif?raw=true)
 
 ### ETWProvidersCSVs
 
-[ETW Providers CSVs](https://github.com/nasbench/EVTX-ETW-Resources/tree/main/ETWProvidersCSVs) will contain a CSV for each Provider and all the possible event IDs, event messages, etc contained within that Provider. An example can be seen below:
+[ETWProvidersCSVs](https://github.com/nasbench/EVTX-ETW-Resources/tree/main/ETWProvidersCSVs) will contain a CSV for each Provider and all the possible event IDs, event messages, etc contained within that Provider. An example can be seen below:
 
 ![](https://github.com/nasbench/EVTX-ETW-Resources/blob/main/Media/ETWProvidersCSVs.gif?raw=true)
 
@@ -30,7 +30,7 @@ Any Event Log Provider that doesn't ship with Windows will be included here. Som
 
 ### ETWEventsList
 
-[ETW Events List](https://github.com/nasbench/ETW-Resources/tree/main/ETW%20Events%20List) will provide a CSV for each respective version of Windows that contains ALL of the possible event IDs, event messages, etc for that version of Windows. This is offered in a combined CSV for ALL Providers as well as each Provider separated out into their own CSV for that specific version of Windows. An example can be seen below:
+[ETWEventsList](https://github.com/nasbench/EVTX-ETW-Resources/tree/main/ETWEventsList) will provide a CSV for each respective version of Windows that contains ALL of the possible event IDs, event messages, etc for that version of Windows. This is offered in a combined CSV for ALL Providers as well as each Provider separated out into their own CSV for that specific version of Windows. An example can be seen below:
 
 ![](https://github.com/nasbench/EVTX-ETW-Resources/blob/main/Media/ETWEventsList.gif?raw=true)
 
