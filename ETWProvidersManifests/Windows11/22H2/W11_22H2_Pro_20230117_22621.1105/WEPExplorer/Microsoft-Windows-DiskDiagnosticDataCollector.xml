@@ -1,0 +1,67 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-DiskDiagnosticDataCollector</Name>
+        <Metadata>
+            <Guid>{E104FB41-6B04-4F3A-B47D-F0DF2F02B954}</Guid>
+            <ResourceFilePath>%windir%\system32\dfdts.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%windir%\system32\dfdts.dll</MessageFilePath>
+            <HelpLink></HelpLink>
+            <PublisherMessage>Microsoft-Windows-DiskDiagnosticDataCollector</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-DiskDiagnosticDataCollector/Operational</Message>
+                    <Path>Microsoft-Windows-DiskDiagnosticDataCollector/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DiskDiagnosticDataCollector/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Windows Disk Diagnostic Data Collection completed successfully.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DiskDiagnosticDataCollector/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Windows Disk Diagnostic Data Collection will be deferred because the CEIP policy was not configured.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DiskDiagnosticDataCollector/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Windows Disk Diagnostic Data Collection will be cancelled because the CEIP policy was not configured and the data collection retry limit has been reached.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
