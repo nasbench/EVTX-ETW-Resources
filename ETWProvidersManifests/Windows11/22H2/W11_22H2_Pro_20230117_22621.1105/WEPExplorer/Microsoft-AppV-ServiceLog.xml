@@ -1,0 +1,102 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-AppV-ServiceLog</Name>
+        <Metadata>
+            <Guid>{9CC69D1C-7917-4ACD-8066-6BF8B63E551B}</Guid>
+            <ResourceFilePath>%windir%\system32\AppvClientEventLog.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%windir%\system32\AppvClientEventLog.dll</MessageFilePath>
+            <HelpLink></HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-AppV-Client/Debug</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Debug AppV Client</Message>
+                    <Name>DBG-AppVClient</Name>
+                    <Guid>{C79AA2CE-84EB-4F7A-97C6-BA0E8EAF643C}</Guid>
+                    <Value>1</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>AppV Client Service</Message>
+                    <Name>Service</Name>
+                    <Value>10</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Debug Out Messages.</Message>
+                    <Name>DebugTrace</Name>
+                    <Value>1</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-AppV-Client/Debug</Channel>
+                <Level>Verbose</Level>
+                <Keyword>Debug Out Messages.</Keyword>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stringValue1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-AppV-Client/Debug</Channel>
+                <Level>Verbose</Level>
+                <Task>Debug AppV Client</Task>
+                <Opcode>AppV Client Service</Opcode>
+                <Keyword>Debug Out Messages.</Keyword>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WString1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-AppV-Client/Debug</Channel>
+                <Level>Verbose</Level>
+                <Task>Debug AppV Client</Task>
+                <Opcode>AppV Client Service</Opcode>
+                <Keyword>Debug Out Messages.</Keyword>
+                <Message><![CDATA[
+%1 [%2; %3]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Function" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Line" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

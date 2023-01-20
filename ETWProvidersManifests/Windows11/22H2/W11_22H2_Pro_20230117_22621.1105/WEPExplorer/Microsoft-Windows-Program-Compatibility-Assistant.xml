@@ -1,0 +1,638 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Program-Compatibility-Assistant</Name>
+        <Metadata>
+            <Guid>{4CB314DF-C11F-47D7-9C04-65FB0051561B}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\pcaevts.dll</ResourceFilePath>
+            <ParameterFilePath>%SystemRoot%\system32\pcaevts.dll</ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\system32\pcaevts.dll</MessageFilePath>
+            <HelpLink></HelpLink>
+            <PublisherMessage>Microsoft-Windows-Program-Compatibility-Assistant</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Analytic</Message>
+                    <Path>Microsoft-Windows-Program-Compatibility-Assistant/Analytic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Application-Experience/Program-Compatibility-Assistant</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>true</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Application-Experience/Program-Compatibility-Assistant/Analytic</Path>
+                    <Index>2</Index>
+                    <Id>18</Id>
+                    <Imported>true</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Analytic</Message>
+                    <Path>Microsoft-Windows-Program-Compatibility-Assistant/CompatAfterUpgrade</Path>
+                    <Index>3</Index>
+                    <Id>19</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>PCA_ServiceStartup</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>PCA_MonitorProcess</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>PCA_ServiceInitialize</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>PCA_ServiceShutdown</Name>
+                    <Value>4</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>WDI</Name>
+                    <Value>256</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ms:ReservedKeyword44</Name>
+                    <Value>17592186044416</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ms:Telemetry</Name>
+                    <Value>35184372088832</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ms:Measures</Name>
+                    <Value>70368744177664</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ms:CriticalData</Name>
+                    <Value>140737488355328</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApplicationNameSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ApplicationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CommandLineSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CommandLine" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CurrentDirectorySize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CurrentDirectory" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DllNameSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DllName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="InterfaceCLSID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SessionId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApplicationNameSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ApplicationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CommandLineSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CommandLine" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CurrentDirectorySize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CurrentDirectory" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DllNameSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DllName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="InterfaceCLSID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SessionId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApplicationNameSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ApplicationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CommandLineSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CommandLine" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CurrentDirectorySize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CurrentDirectory" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DllNameSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DllName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="InterfaceCLSID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SessionId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApplicationNameSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ApplicationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CommandLineSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CommandLine" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CurrentDirectorySize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CurrentDirectory" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DllNameSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DllName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="InterfaceCLSID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SessionId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApplicationNameSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ApplicationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CommandLineSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CommandLine" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CurrentDirectorySize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CurrentDirectory" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DllNameSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DllName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="InterfaceCLSID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SessionId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApplicationNameSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ApplicationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CommandLineSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CommandLine" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CurrentDirectorySize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CurrentDirectory" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DllNameSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DllName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="InterfaceCLSID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SessionId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DisplayNameSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DisplayName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FullImagePathSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FullImagePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SessionId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApplicationNameSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ApplicationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CommandLineSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CommandLine" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CurrentDirectorySize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CurrentDirectory" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DllNameSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DllName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="InterfaceCLSID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SessionId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApplicationNameSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ApplicationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CommandLineSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CommandLine" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CurrentDirectorySize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CurrentDirectory" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DllNameSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DllName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="InterfaceCLSID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SessionId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Binary data sent from PCA Diagnostic Module to PCA service for processing. It is not meant to be human readable.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TokenDataSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TokenData" inType="win:Binary" outType="xs:hexBinary" length="TokenDataSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Application-Experience/Program-Compatibility-Assistant</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+PCA has finished monitoring an application: %1
+
+The problems detected code is: %2
+
+If this number is not 0, PCA observed some indications of compatibility problems.
+
+For this application, the following dialog type was shown:%3
+
+If this number is not 0, an actual dialog was shown offering possible fixes to suspected problems.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ExePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ResolverMap" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="DialogType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Application-Experience/Program-Compatibility-Assistant</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Exe: %1
+
+ResolverName: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ExePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ResolverName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Application-Experience/Program-Compatibility-Assistant</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The Program Compatibility Assistant was invoked to correct a compatibility problem. Information about the application is below.
+
+Application name: %1
+Application version: %2
+Executable path: %3
+Scenario ID: %4
+User action: %5
+Compatibility layer: %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApplicationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ApplicationVersion" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ExecutablePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ScenarioId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UserAction" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CompatibilityLayer" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>31</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Application-Experience/Program-Compatibility-Assistant</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The Program Compatibility Assistant was invoked to correct a compatibility problem. Information about the application is below.
+
+Application name: %1
+Application version: %2
+Executable path: %3
+Scenario ID: %4
+User action: %5
+Compatibility layer: %6
+Deprecated component: %7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApplicationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ApplicationVersion" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ExecutablePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ScenarioId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UserAction" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CompatibilityLayer" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DeprecatedComponent" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Application-Experience/Program-Compatibility-Assistant</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The Program Compatibility Assistant was invoked due to an unsigned driver install. This version of Windows requires all drivers to have a valid digital signature. Information about the driver is below.
+
+Driver: %1
+Service: %2
+Publisher: %3
+Location: %4
+Version: %5
+
+This driver is unavailable and the program that uses this driver might not work correctly.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DriverName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServiceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PublisherName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DriverPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DriverVersion" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>PCA_ServiceStartup</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+PCA Service startup begin.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>PCA_ServiceStartup</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+PCA Service startup finished.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>103</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>PCA_MonitorProcess</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+PCA Process Monitor begin.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>104</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>PCA_MonitorProcess</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+PCA Process Monitor finished.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>105</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>PCA_ServiceInitialize</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+PCA Service initialization begin.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>106</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>PCA_ServiceInitialize</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+PCA Service initialization finished.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>107</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>PCA_ServiceShutdown</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+PCA Service initialization begin.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>108</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>PCA_ServiceShutdown</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+PCA Service initialization finished.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>200</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Application-Experience/Program-Compatibility-Assistant</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The Program Compatibility Assistant service was stopped successfully.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>201</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Application-Experience/Program-Compatibility-Assistant</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The Program Compatibility Assistant service started successfully.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>202</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Application-Experience/Program-Compatibility-Assistant</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The Program Compatibility Assistant service failed to initialize.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>203</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Application-Experience/Program-Compatibility-Assistant</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The Program Compatibility Assistant service failed to start.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>204</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Application-Experience/Program-Compatibility-Assistant</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The Program Compatibility Assistant service failed to stop.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>205</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Application-Experience/Program-Compatibility-Assistant</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The Program Compatibility Assistant service failed to perform the phase two initialization.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>206</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Application-Experience/Program-Compatibility-Assistant</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The Program Compatibility Assistant service successfully performed phase two initialization.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1100</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Application-Experience/Program-Compatibility-Assistant/Analytic</Channel>
+                <Level>Information</Level>
+                <Keyword>WDI</Keyword>
+                <Message><![CDATA[
+Notified PCA service of status icon registration.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1200</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Keyword>WDI</Keyword>
+                <Message><![CDATA[
+PCA Trigger event:%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TriggerID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ExtraDataSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ExtraData" inType="win:Binary" outType="xs:hexBinary" length="ExtraDataSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1234</Id>
+                <Version>0</Version>
+                <Channel>Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Exe: AppId%1
+
+Uptime %2 
+
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApplicationID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Uptime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,307 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-NcdAutoSetup</Name>
+        <Metadata>
+            <Guid>{EC23F986-AE2D-4269-B52F-4E20765C1A94}</Guid>
+            <ResourceFilePath>%windir%\system32\NcdAutoSetup.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%windir%\system32\NcdAutoSetup.dll</MessageFilePath>
+            <HelpLink></HelpLink>
+            <PublisherMessage>Microsoft-Windows-NcdAutoSetup</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-NcdAutoSetup/Operational</Message>
+                    <Path>Microsoft-Windows-NcdAutoSetup/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-NcdAutoSetup/Diagnostic</Message>
+                    <Path>Microsoft-Windows-NcdAutoSetup/Diagnostic</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Device Qualified</Message>
+                    <Name>taskDeviceQualified</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>Device Disqualified</Message>
+                    <Name>taskDeviceDisqualified</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message>Network Qualified</Message>
+                    <Name>taskNetworkQualified</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message>Network Disqualified</Message>
+                    <Name>taskNetworkDisqualified</Name>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>taskNetworkSizeCalculation</Name>
+                    <Value>5</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>taskNetworkQualificationCheck</Name>
+                    <Value>6</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>4001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NcdAutoSetup/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Device Qualified</Task>
+                <Message><![CDATA[
+Network connected device (Name: %1; Model %2) got qualified for automatic setup]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="String2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NcdAutoSetup/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Device Disqualified</Task>
+                <Message><![CDATA[
+Network connected device (Name: %1; Model %2) got disqualified for automatic setup because it was manually removed earlier]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="String2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NcdAutoSetup/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Device Disqualified</Task>
+                <Message><![CDATA[
+Network connected device (Name: %1; Model %2) got disqualified for automatic setup because its device category is disqualified]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="String2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NcdAutoSetup/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Device Disqualified</Task>
+                <Message><![CDATA[
+Network connected device (Name: %1; Model %2) got disqualified for automatic setup due to an unexpected error (%3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="String2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Integer1" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NcdAutoSetup/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Device Disqualified</Task>
+                <Message><![CDATA[
+Network connected device (Name: %1; Model %2) got disqualified for automatic setup because its device category property is missing]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="String2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NcdAutoSetup/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Device Disqualified</Task>
+                <Message><![CDATA[
+Network connected device (Name: %1; Model %2) got disqualified for automatic setup because its device IP address property is missing]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="String2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4007</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NcdAutoSetup/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Device Disqualified</Task>
+                <Message><![CDATA[
+Network connected device (Name: %1; Model %2) got disqualified for automatic setup because its device PnP-X Id property is missing]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="String2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4008</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NcdAutoSetup/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Device Disqualified</Task>
+                <Message><![CDATA[
+Network connected device (Model %1) got disqualified for automatic setup because its device friendly name property is missing]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NcdAutoSetup/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Network Qualified</Task>
+                <Message><![CDATA[
+Network (%1) got qualified for automatic setup of network connected devices]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NcdAutoSetup/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Network Disqualified</Task>
+                <Message><![CDATA[
+Network (%1) got disqualified for automatic setup of network connected devices because its network category is disqualified]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NcdAutoSetup/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Network Disqualified</Task>
+                <Message><![CDATA[
+Network (%1) got disqualified for automatic setup of network connected devices because its network size is disqualified]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NcdAutoSetup/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Network Disqualified</Task>
+                <Message><![CDATA[
+Network (%1) got disqualified for automatic setup of network connected devices because network discovery is turned off]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NcdAutoSetup/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Network Disqualified</Task>
+                <Message><![CDATA[
+Network (%1) got disqualified for automatic setup of network connected devices because %2 bits are used for its mask]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Integer1" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NcdAutoSetup/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>taskNetworkSizeCalculation</Task>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NcdAutoSetup/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>taskNetworkSizeCalculation</Task>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NcdAutoSetup/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>taskNetworkQualificationCheck</Task>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-NcdAutoSetup/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>taskNetworkQualificationCheck</Task>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

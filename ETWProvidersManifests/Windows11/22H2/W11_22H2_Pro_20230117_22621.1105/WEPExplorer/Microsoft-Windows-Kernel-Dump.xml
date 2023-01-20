@@ -1,0 +1,307 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Kernel-Dump</Name>
+        <Metadata>
+            <Guid>{17D2A329-4539-5F4D-3435-F510634CE3B9}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\Microsoft-Windows-System-Events.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\system32\Microsoft-Windows-System-Events.dll</MessageFilePath>
+            <HelpLink></HelpLink>
+            <PublisherMessage>Microsoft-Windows-Kernel-Dump</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-Kernel-Dump/Operational</Message>
+                    <Path>Microsoft-Windows-Kernel-Dump/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>CrashDump Policy</Message>
+                    <Name>DUMP_TASK_CRASHDUMP_POLICY</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>CrashDump Config</Message>
+                    <Name>DUMP_TASK_CRASHDUMP_CONFIG</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message>Dump Config</Message>
+                    <Name>DUMP_TASK_DUMP_CONFIG</Name>
+                    <Value>3</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Policy Operation Failed</Message>
+                    <Name>CrashDumpPolicyOperationFailure</Name>
+                    <Value>11</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Policy Value Changed</Message>
+                    <Name>CrashDumpPolicyValueChanged</Name>
+                    <Value>12</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>CrashDump Disabled On Boot</Message>
+                    <Name>CrashDumpDisabledOnBootByPolicy</Name>
+                    <Value>13</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Dump Disable Failed</Message>
+                    <Name>CrashDumpDisableFailed</Name>
+                    <Value>14</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Dump Initialization Failed.</Message>
+                    <Name>CrashDumpInitializeFailed</Name>
+                    <Value>15</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Dump Load Driver Failed.</Message>
+                    <Name>CrashDumpLoadDriverFailed</Name>
+                    <Value>16</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Dump Stack Initialization Failed</Message>
+                    <Name>CrashDumpDumpStackInitializationFailed</Name>
+                    <Value>17</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Free Dump Stack Failed</Message>
+                    <Name>CrashDumpFreeDumpStackFailed</Name>
+                    <Value>18</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Load Dump Stack Failed</Message>
+                    <Name>CrashDumpLoadDumpStackFailed</Name>
+                    <Value>19</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Dump Disabled</Message>
+                    <Name>CrashDumpDisabled</Name>
+                    <Value>20</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Dump Reconfigured</Message>
+                    <Name>CrashDumpReconfigured</Name>
+                    <Value>21</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Dump disabled forcefully</Message>
+                    <Name>ForceDumpDisabled</Name>
+                    <Value>22</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Dump/Operational</Channel>
+                <Level>Information</Level>
+                <Task>CrashDump Policy</Task>
+                <Opcode>Policy Operation Failed</Opcode>
+                <Message><![CDATA[
+AllowCrashDump policy: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="OperationType" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Dump/Operational</Channel>
+                <Level>Information</Level>
+                <Task>CrashDump Policy</Task>
+                <Opcode>Policy Value Changed</Opcode>
+                <Message><![CDATA[
+AllowCrashDump policy value changed (AllowCrashDump = %1). Configure crash dump. NT status: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PolicyValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NTStatus" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Dump/Operational</Channel>
+                <Level>Information</Level>
+                <Task>CrashDump Policy</Task>
+                <Opcode>CrashDump Disabled On Boot</Opcode>
+                <Message><![CDATA[
+CrashDump disabled on boot by policy (AllowCrashDump = %1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PolicyValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Dump/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>CrashDump Config</Task>
+                <Opcode>Dump Disable Failed</Opcode>
+                <Message><![CDATA[
+Crash dump disable failed. NT status: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NTStatus" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Dump/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>CrashDump Config</Task>
+                <Opcode>Dump Initialization Failed.</Opcode>
+                <Message><![CDATA[
+Crash dump initialization failed. NT status: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NTStatus" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Dump/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>CrashDump Config</Task>
+                <Opcode>Dump Load Driver Failed.</Opcode>
+                <Message><![CDATA[
+Crash dump load driver failed. NT status: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NTStatus" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Dump/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>CrashDump Config</Task>
+                <Opcode>Dump Stack Initialization Failed</Opcode>
+                <Message><![CDATA[
+Crash dump dump stack initialization failed. NT status: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NTStatus" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Dump/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>CrashDump Config</Task>
+                <Opcode>Free Dump Stack Failed</Opcode>
+                <Message><![CDATA[
+Crash dump free dump stack failed. NT status: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NTStatus" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Dump/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>CrashDump Config</Task>
+                <Opcode>Load Dump Stack Failed</Opcode>
+                <Message><![CDATA[
+Crash dump load dump stack failed. NT status: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NTStatus" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Dump/Operational</Channel>
+                <Level>Information</Level>
+                <Task>CrashDump Config</Task>
+                <Opcode>Dump Disabled</Opcode>
+                <Message><![CDATA[
+Crash dump disabled.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Dump/Operational</Channel>
+                <Level>Information</Level>
+                <Task>CrashDump Config</Task>
+                <Opcode>Dump Reconfigured</Opcode>
+                <Message><![CDATA[
+Crash dump reconfigured. NT status: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NTStatus" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Dump/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Dump Config</Task>
+                <Opcode>Dump disabled forcefully</Opcode>
+                <Message><![CDATA[
+Dump disabled forcefully (ForceDumpDisabled: %1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ForceDumpDisabled" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
