@@ -1,0 +1,157 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Kernel-CPU-Starvation</Name>
+        <Metadata>
+            <Guid>{7F54CA8A-6C72-5CBC-B96F-D0EF905B8BCE}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\Microsoft-Windows-System-Events.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\system32\Microsoft-Windows-System-Events.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.22000.1098&amp;FileName=Microsoft-Windows-System-Events.dll&amp;FileVer=10.0.22000.1098</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Kernel-CPU-Starvation</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-Kernel-CPU-Starvation/Operational</Message>
+                    <Path>Microsoft-Windows-Kernel-CPU-Starvation/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>DPC Soft Timeout</Message>
+                    <Name>CPU_STARVATION_TASK_DPC_SOFT_TIMEOUT</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>DPC Profiling</Message>
+                    <Name>CPU_STARVATION_TASK_DPC_PROFILING_STACK</Name>
+                    <Value>2</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Single DPC Soft Timeout Reached</Message>
+                    <Name>SingleDpcSoftTimeout</Name>
+                    <Value>11</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Cumulative DPC Soft Timeout Reached</Message>
+                    <Name>CumulativeDpcSoftTimeout</Name>
+                    <Value>12</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>DPC Profiling Threshold Reached</Message>
+                    <Name>DpcProfilingStackBegin</Name>
+                    <Value>13</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>DPC Profiling Stack Capture</Message>
+                    <Name>DpcProfilingStack</Name>
+                    <Value>14</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>DpcSoftTimeout</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>DpcProfiling</Name>
+                    <Value>2</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-CPU-Starvation/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>DPC Soft Timeout</Task>
+                <Opcode>Single DPC Soft Timeout Reached</Opcode>
+                <Keyword>DpcSoftTimeout</Keyword>
+                <Message><![CDATA[
+CPU %3 exceeded its single DPC soft timeout of %5 clock ticks. A single DPC in module %7, with key %1, ran for %4 clock ticks on the thread with TID %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DpcRoutineKey" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ThreadID" inType="win:UInt32" outType="win:TID"/>
+  <data name="CpuNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TickCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SoftTimeoutTicks" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ModuleNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ModuleName" inType="win:UnicodeString" outType="xs:string" length="ModuleNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-CPU-Starvation/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>DPC Soft Timeout</Task>
+                <Opcode>Cumulative DPC Soft Timeout Reached</Opcode>
+                <Keyword>DpcSoftTimeout</Keyword>
+                <Message><![CDATA[
+CPU %2 exceeded its cumulative DPC soft timeout of %4 clock ticks, by running at an IRQL greater than or equal to DISPATCH_LEVEL for %3 clock ticks on the thread with TID %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ThreadID" inType="win:UInt32" outType="win:TID"/>
+  <data name="CpuNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CumulativeTickCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CumulativeSoftTimeoutTicks" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Task>DPC Profiling</Task>
+                <Opcode>DPC Profiling Threshold Reached</Opcode>
+                <Keyword>DpcProfiling</Keyword>
+                <Message><![CDATA[
+Thread %1 on CPU %2 exceeded the threshold of %4 ticks running at DISPATCH_LEVEL or higher, profiling started with sequence number %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ThreadID" inType="win:UInt32" outType="win:TID"/>
+  <data name="CpuNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DpcSequenceNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ThresholdTicks" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Cumulative" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Level>Warning</Level>
+                <Task>DPC Profiling</Task>
+                <Opcode>DPC Profiling Stack Capture</Opcode>
+                <Keyword>DpcProfiling</Keyword>
+                <Message><![CDATA[
+Capture DPC sequence number %1 at tick %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DpcSequenceNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Tick" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

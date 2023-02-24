@@ -1,0 +1,99 @@
+<Providers>
+    <Provider>
+        <Name>Windows Error Reporting</Name>
+        <Metadata>
+            <Guid>{0EAD09BD-2157-539A-8D6D-C87F95B64D70}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\wer.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\system32\wer.dll</MessageFilePath>
+            <HelpLink></HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Application</Message>
+                    <Path>Application</Path>
+                    <Index>0</Index>
+                    <Id>9</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Fault bucket %1, type %2
+Event Name: %3
+Response: %4
+Cab Id: %5
+
+Problem signature:
+P1: %6
+P2: %7
+P3: %8
+P4: %9
+P5: %10
+P6: %11
+P7: %12
+P8: %13
+P9: %14
+P10: %15
+
+Attached files:%16
+
+These files may be available here:
+%17
+
+Analysis symbol: %18
+Rechecking for solution: %19
+Report Id: %20
+Report Status: %21
+Hashed bucket: %22
+Cab Guid: %23]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Bucket" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BucketType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EventName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Response" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CabId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="P1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="P2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="P3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="P4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="P5" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="P6" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="P7" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="P8" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="P9" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="P10" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AttachedFiles" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StorePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AnalysisSymbol" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Rechecking" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ReportId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ReportStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HashedBucket" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CabGuid" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

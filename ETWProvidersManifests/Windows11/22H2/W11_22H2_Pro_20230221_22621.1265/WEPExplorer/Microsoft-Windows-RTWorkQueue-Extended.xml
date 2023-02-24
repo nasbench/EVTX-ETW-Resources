@@ -1,0 +1,472 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-RTWorkQueue-Extended</Name>
+        <Metadata>
+            <Guid>{83FAAA86-63C8-4DD8-A2DA-FBADDDFC0655}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\rtworkq.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\system32\rtworkq.dll</MessageFilePath>
+            <HelpLink></HelpLink>
+            <PublisherMessage>Microsoft-Windows-RTWorkQueue-Extended</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>RTWorkQueue Extended</Message>
+                    <Path>RTWorkQueueExtended</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>WorkQueue: Queue Extended</Message>
+                    <Name>WorkQueue_Queue_Extended</Name>
+                    <Value>100</Value>
+                </Task>
+                <Task>
+                    <Message>WorkQueue: Extended LongRunning</Message>
+                    <Name>WorkQueue_Extended_LongRunning</Name>
+                    <Value>101</Value>
+                </Task>
+                <Task>
+                    <Message>WorkQueue: Extended InvalidUsageAttempt</Message>
+                    <Name>WorkQueue_Extended_InvalidUsageAttempt</Name>
+                    <Value>102</Value>
+                </Task>
+                <Task>
+                    <Message>WorkQueue: Extended InvalidCallbackAttempt</Message>
+                    <Name>WorkQueue_Extended_InvalidCallbackAttempt</Name>
+                    <Value>103</Value>
+                </Task>
+                <Task>
+                    <Message>WorkQueue: PlatformRef</Message>
+                    <Name>WorkQueue_Extended_PlatformRef</Name>
+                    <Value>104</Value>
+                </Task>
+                <Task>
+                    <Message>WorkQueue: RTLock</Message>
+                    <Name>WorkQueue_Extended_RTLock</Name>
+                    <Value>105</Value>
+                </Task>
+                <Task>
+                    <Message>WorkQueue: SetAVMode</Message>
+                    <Name>WorkQueue_Extended_SetAVMode</Name>
+                    <Value>106</Value>
+                </Task>
+                <Task>
+                    <Message>WorkQueue: RTLockAcquire</Message>
+                    <Name>WorkQueue_Extended_RTLockAcquire</Name>
+                    <Value>107</Value>
+                </Task>
+                <Task>
+                    <Message>WorkQueue: TimerCallback</Message>
+                    <Name>WorkQueue_Extended_TimerCallback</Name>
+                    <Value>108</Value>
+                </Task>
+                <Task>
+                    <Message>WorkQueue: TimerMode</Message>
+                    <Name>WorkQueue_Extended_TimerMode</Name>
+                    <Value>109</Value>
+                </Task>
+                <Task>
+                    <Message>WorkQueue: TimerSet</Message>
+                    <Name>WorkQueue_Extended_TimerSet</Name>
+                    <Value>110</Value>
+                </Task>
+                <Task>
+                    <Message>WorkQueue: TimerResChange</Message>
+                    <Name>WorkQueue_Extended_TimerResChange</Name>
+                    <Value>111</Value>
+                </Task>
+                <Task>
+                    <Message>WorkQueue: Lock</Message>
+                    <Name>WorkQueue_Extended_Lock</Name>
+                    <Value>112</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>RTWorkQueue Extended</Channel>
+                <Level>Information</Level>
+                <Task>WorkQueue: Queue Extended</Task>
+                <Message><![CDATA[
+WorkQueue Queue extended: AsyncResult=%1 AsyncResultVTable=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AsyncResult" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AsyncResultVTable" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>RTWorkQueue Extended</Channel>
+                <Level>Verbose</Level>
+                <Task>WorkQueue: Extended LongRunning</Task>
+                <Message><![CDATA[
+WorkQueue Extended LongRunning: RefCount workQueueID=%1 refcount=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RefCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>RTWorkQueue Extended</Channel>
+                <Level>Verbose</Level>
+                <Task>WorkQueue: Extended InvalidUsageAttempt</Task>
+                <Message><![CDATA[
+WorkQueue extended InvalidUsageAttempt: Platform=%1 WorkQueueID=%2 PrivateQueueIndex=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Platform" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="WorkPrivateIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>RTWorkQueue Extended</Channel>
+                <Level>Verbose</Level>
+                <Task>WorkQueue: Extended InvalidCallbackAttempt</Task>
+                <Message><![CDATA[
+WorkQueue extended InvalidCallbackAttempt: Platform=%1 Callback=%2 WorkQueueID=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Platform" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Callback" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>RTWorkQueue Extended</Channel>
+                <Level>Verbose</Level>
+                <Task>WorkQueue: PlatformRef</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+WorkQueue Extended PlatformRef: Start platform=%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>RTWorkQueue Extended</Channel>
+                <Level>Verbose</Level>
+                <Task>WorkQueue: PlatformRef</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+WorkQueue Extended PlatformRef: Stop platform=%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>RTWorkQueue Extended</Channel>
+                <Level>Verbose</Level>
+                <Task>WorkQueue: PlatformRef</Task>
+                <Message><![CDATA[
+WorkQueue Extended PlatformRef: ref platform=%1 ref:%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Count" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>RTWorkQueue Extended</Channel>
+                <Level>Verbose</Level>
+                <Task>WorkQueue: RTLock</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+WorkQueue Extended RTLock: Start workQueueID=%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>RTWorkQueue Extended</Channel>
+                <Level>Verbose</Level>
+                <Task>WorkQueue: RTLock</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+WorkQueue Extended RTLock: Stop workQueueID=%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>RTWorkQueue Extended</Channel>
+                <Level>Verbose</Level>
+                <Task>WorkQueue: SetAVMode</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+WorkQueue Extended SetAVMode: Start group=%1 mode=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="handle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Mode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>RTWorkQueue Extended</Channel>
+                <Level>Verbose</Level>
+                <Task>WorkQueue: SetAVMode</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+WorkQueue Extended SetAVMode: Stop group=%1 mode=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="handle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Mode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>RTWorkQueue Extended</Channel>
+                <Level>Verbose</Level>
+                <Task>WorkQueue: RTLockAcquire</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+WorkQueue Extended RTLockAcquire: Start workQueueID=%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Channel>RTWorkQueue Extended</Channel>
+                <Level>Verbose</Level>
+                <Task>WorkQueue: RTLockAcquire</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+WorkQueue Extended RTLockAcquire: Stop workQueueID=%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Channel>RTWorkQueue Extended</Channel>
+                <Level>Verbose</Level>
+                <Task>WorkQueue: TimerCallback</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+WorkQueue Extended TimerCallback: Start object=%1 id=%2 mode=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="workqueue" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Mode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Channel>RTWorkQueue Extended</Channel>
+                <Level>Verbose</Level>
+                <Task>WorkQueue: TimerCallback</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+WorkQueue Extended TimerCallback: Stop object=%1 id=%2 mode=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="workqueue" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Mode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Channel>RTWorkQueue Extended</Channel>
+                <Level>Verbose</Level>
+                <Task>WorkQueue: TimerMode</Task>
+                <Message><![CDATA[
+WorkQueue TimerMode: Set workqueue_ptr=%1 workQueueID=%2 Mode=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WorkQueuePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OldMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Channel>RTWorkQueue Extended</Channel>
+                <Level>Verbose</Level>
+                <Task>WorkQueue: TimerSet</Task>
+                <Message><![CDATA[
+WorkQueue TimerSet: Set workqueue_ptr=%1 workQueueID=%2 Delta=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WorkQueuePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Mode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Delta" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Channel>RTWorkQueue Extended</Channel>
+                <Level>Verbose</Level>
+                <Task>WorkQueue: TimerResChange</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+WorkQueue Extended TimerResChange: Start object=%1 id=%2 mode=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="workqueue" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Resolution" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Channel>RTWorkQueue Extended</Channel>
+                <Level>Verbose</Level>
+                <Task>WorkQueue: TimerResChange</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+WorkQueue Extended TimerResChange: Stop object=%1 id=%2 mode=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="workqueue" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Resolution" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Channel>RTWorkQueue Extended</Channel>
+                <Level>Verbose</Level>
+                <Task>WorkQueue: Lock</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+WorkQueue Extended Lock: object=%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="workqueue" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>0</Version>
+                <Channel>RTWorkQueue Extended</Channel>
+                <Level>Verbose</Level>
+                <Task>WorkQueue: Lock</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+WorkQueue Extended Unlock: object=%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="workqueue" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>22</Id>
+                <Version>0</Version>
+                <Channel>RTWorkQueue Extended</Channel>
+                <Level>Verbose</Level>
+                <Task>WorkQueue: Lock</Task>
+                <Message><![CDATA[
+WorkQueue Extended Lock RefCount: object=%1 extRefCount=%2 IntRefCount=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="workqueue" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ExtRefCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IntRefCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
