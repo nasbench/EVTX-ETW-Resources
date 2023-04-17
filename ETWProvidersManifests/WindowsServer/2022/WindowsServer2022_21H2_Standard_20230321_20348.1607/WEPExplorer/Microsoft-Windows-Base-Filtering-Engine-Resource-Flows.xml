@@ -1,0 +1,126 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Base-Filtering-Engine-Resource-Flows</Name>
+        <Metadata>
+            <Guid>{92765247-03A9-4AE3-A575-B42264616E78}</Guid>
+            <ResourceFilePath>C:\Windows\system32\drivers\fwpkclnt.sys</ResourceFilePath>
+            <ParameterFilePath>%C:\Windows\system32\drivers\fwpkclnt.sys</ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\drivers\fwpkclnt.sys</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.20348.1607&amp;FileName=fwpkclnt.sys&amp;FileVer=10.0.20348.1607</HelpLink>
+            <PublisherMessage>BFE IPsec Connections' Resource Flows</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>BFE IPsec Connections' Resource Flows Operational Log</Message>
+                    <Path>Microsoft-Windows-Base-Filtering-Engine-Resource-Flows/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ut:PiiPresent</Name>
+                    <Value>2199023255552</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>2002</Id>
+                <Version>0</Version>
+                <Channel>BFE IPsec Connections' Resource Flows Operational Log</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+New Resource Flow]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ConnectionUsedId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Protocol" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="RemoteIPAddress" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="LocalIPAddress" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="RemotePort" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="LocalPort" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="StartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2003</Id>
+                <Version>0</Version>
+                <Channel>BFE IPsec Connections' Resource Flows Operational Log</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Resource Flow Closed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ConnectionUsedId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Protocol" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="RemoteIPAddress" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="LocalIPAddress" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="RemotePort" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="LocalPort" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="StartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="CloseTime" inType="win:FILETIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2004</Id>
+                <Version>0</Version>
+                <Channel>BFE IPsec Connections' Resource Flows Operational Log</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+New Resource Flow]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ConnectionUsedId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Protocol" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="RemoteIPAddress" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="LocalIPAddress" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="RemotePort" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="LocalPort" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="StartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2005</Id>
+                <Version>0</Version>
+                <Channel>BFE IPsec Connections' Resource Flows Operational Log</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Resource Flow Closed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ConnectionUsedId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Protocol" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="RemoteIPAddress" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="LocalIPAddress" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="RemotePort" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="LocalPort" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="StartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="CloseTime" inType="win:FILETIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

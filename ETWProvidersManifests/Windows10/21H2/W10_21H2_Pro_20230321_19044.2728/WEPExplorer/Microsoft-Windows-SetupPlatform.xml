@@ -1,0 +1,211 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-SetupPlatform</Name>
+        <Metadata>
+            <Guid>{530FB9B9-C515-4472-9313-FB346F9255E3}</Guid>
+            <ResourceFilePath>C:\Windows\system32\setupetw.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\setupetw.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.19041.1&amp;FileName=setupetw.dll&amp;FileVer=10.0.19041.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-SetupPlatform</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-SetupPlatform/Analytic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Setup</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>true</Imported>
+                </Channel>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>2</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Run operation</Message>
+                    <Name>OperationRun</Name>
+                    <Guid>{3EEC6A5B-EFA7-485F-ADDE-7F213B6949A6}</Guid>
+                    <Value>1000</Value>
+                </Task>
+                <Task>
+                    <Message>Online gather</Message>
+                    <Name>OnlineGatherRun</Name>
+                    <Guid>{C864E0EB-D617-49D4-BEBD-BEEFD7404D92}</Guid>
+                    <Value>1001</Value>
+                </Task>
+                <Task>
+                    <Message>Offline gather</Message>
+                    <Name>OfflineGatherRun</Name>
+                    <Guid>{C7357B22-F641-4E37-BAF5-3E93C147400F}</Guid>
+                    <Value>1002</Value>
+                </Task>
+                <Task>
+                    <Message>Install Windows Task</Message>
+                    <Name>InstallWindows</Name>
+                    <Guid>{B4D65F05-5C4E-4A39-84D8-B774B586124F}</Guid>
+                    <Value>1003</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Performance</Message>
+                    <Name>keyPerformance</Name>
+                    <Value>1</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SetupPlatform/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Run operation</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+Start operation: %1, %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Operation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SetupPlatform/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Run operation</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+Stop operation: %1, %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Operation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SetupPlatform/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Online gather</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+Online gather starts: %1, %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="OfflineWinDir" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MachineSpecific" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SetupPlatform/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Online gather</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+Online gather stops: %1, %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="OfflineWinDir" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MachineSpecific" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SetupPlatform/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Offline gather</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+Offline gather starts]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SetupPlatform/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Offline gather</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Performance</Keyword>
+                <Message><![CDATA[
+Offline gather stops]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2005</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Task>Install Windows Task</Task>
+                <Message><![CDATA[
+New Setup information]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Installation choice" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Host OS Major version" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Host OS Minor version" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Host OS Build number" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Host OS Service pack major number" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Host OS Service pack minor number" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

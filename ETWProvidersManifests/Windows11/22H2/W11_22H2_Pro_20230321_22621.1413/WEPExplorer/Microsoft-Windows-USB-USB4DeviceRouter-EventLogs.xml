@@ -1,0 +1,122 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-USB-USB4DeviceRouter-EventLogs</Name>
+        <Metadata>
+            <Guid>{D07E8C3F-78FB-4C22-B77C-2203D00BFDF3}</Guid>
+            <ResourceFilePath>%SystemRoot%\System32\DriverStore\FileRepository\usb4devicerouter.inf_amd64_8fd04498ac5eb6bc\Usb4DeviceRouter.sys</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\System32\DriverStore\FileRepository\usb4devicerouter.inf_amd64_8fd04498ac5eb6bc\Usb4DeviceRouter.sys</MessageFilePath>
+            <HelpLink></HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>0</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>DP tunnel creation</Message>
+                    <Name>USB4DEVICEROUTER_DP_TUNNEL_CREATION</Name>
+                    <Value>1</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Error</Message>
+                    <Name>ERROR</Name>
+                    <Value>10</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Default</Name>
+                    <Value>1</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Task>DP tunnel creation</Task>
+                <Keyword>Default</Keyword>
+                <Message><![CDATA[
+A monitor attached to your hub or dock was successfully enumerated by the USB4 Connection Manager.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_DomainId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="fid_DpOutRouterTopologyId" inType="win:UInt8" outType="xs:unsignedByte" count="7"/>
+  <data name="fid_DpcdCmId" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="fid_DpOutAdapterNumber" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="fid_DpInRouterDepth" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="fid_DpInAdapterNumber" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="fid_IsRebuilding" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="fid_Attempts" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="fid_DpOutLocalCapabilities" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="fid_DpInLocalCapabilities" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="fid_MaskedRemoteCapabilities" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="fid_DpRxPollingDuration" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="fid_CommonCapabilities" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="fid_BandwidthUsed" inType="win:UInt16" outType="win:HexInt16"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>DP tunnel creation</Task>
+                <Opcode>Error</Opcode>
+                <Keyword>Default</Keyword>
+                <Message><![CDATA[
+A monitor attached to your hub or dock could not be enumerated by the USB4 Connection Manager. This may be expected if the dock or system does not have sufficient resources or bandwidth to support the monitor. ReasonCode1:%13 ReasonCode2:%14 Status:%15]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_DomainId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="fid_DpOutRouterTopologyId" inType="win:UInt8" outType="xs:unsignedByte" count="7"/>
+  <data name="fid_DpcdCmId" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="fid_DPOutAdapterNumber" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="fid_DpInRouterDepth" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="fid_DPInAdapterNumber" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="fid_IsRebuilding" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="fid_Attempts" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="fid_DpOutLocalCapabilities" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="fid_DpInLocalCapabilities" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="fid_MaskedRemoteCapabilities" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="fid_DpRxPollingDuration" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="fid_ReasonCode1" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="fid_ReasonCode2" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="fid_Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

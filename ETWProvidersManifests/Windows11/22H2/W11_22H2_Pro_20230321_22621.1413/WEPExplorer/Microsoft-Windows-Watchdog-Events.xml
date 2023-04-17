@@ -1,0 +1,362 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Watchdog-Events</Name>
+        <Metadata>
+            <Guid>{70E74DD8-39DB-5F6F-6FD1-F5581B29E834}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\drivers\watchdog.sys</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\system32\drivers\watchdog.sys</MessageFilePath>
+            <HelpLink></HelpLink>
+            <PublisherMessage>Microsoft-Windows-Watchdog-Events</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Watchdog-Events/WdLog</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Log Always</Message>
+                    <Name>win:LogAlways</Name>
+                    <Value>0</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>LogAssert</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>LogError</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>LogWarning</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>LogEvent</Name>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>LogTrace</Name>
+                    <Value>5</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>LogLowResource</Name>
+                    <Value>6</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>LogPresentTokenEvent</Name>
+                    <Value>7</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>LogDmmEvent</Name>
+                    <Value>8</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>LogPower</Name>
+                    <Value>9</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>LogDebug</Name>
+                    <Value>10</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>LogUnknown</Name>
+                    <Value>11</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>WdLogAssert</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>WdLogError</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>WdLogWarning</Name>
+                    <Value>4</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>WdLogEvent</Name>
+                    <Value>8</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>WdLogTrace</Name>
+                    <Value>16</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>WdLogLowResource</Name>
+                    <Value>32</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>WdLogDmmEvent</Name>
+                    <Value>64</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>WdLogPresentTokenEvent</Name>
+                    <Value>128</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>WdLogPower</Name>
+                    <Value>256</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>WdLogDebug</Name>
+                    <Value>512</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>WdLogUnknown</Name>
+                    <Value>1024</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Watchdog-Events/WdLog</Channel>
+                <Task>LogAssert</Task>
+                <Keyword>WdLogAssert</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Return Address" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="LogEntry" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Level" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Param1" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Param2" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Param3" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Param4" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Param5" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Watchdog-Events/WdLog</Channel>
+                <Task>LogError</Task>
+                <Keyword>WdLogError</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Return Address" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="LogEntry" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Level" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Param1" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Param2" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Param3" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Param4" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Param5" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Watchdog-Events/WdLog</Channel>
+                <Task>LogWarning</Task>
+                <Keyword>WdLogWarning</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Return Address" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="LogEntry" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Level" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Param1" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Param2" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Param3" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Param4" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Param5" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>103</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Watchdog-Events/WdLog</Channel>
+                <Task>LogEvent</Task>
+                <Keyword>WdLogEvent</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Return Address" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="LogEntry" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Level" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Param1" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Param2" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Param3" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Param4" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Param5" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>104</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Watchdog-Events/WdLog</Channel>
+                <Task>LogTrace</Task>
+                <Keyword>WdLogTrace</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Return Address" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="LogEntry" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Level" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Param1" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Param2" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Param3" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Param4" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Param5" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>105</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Watchdog-Events/WdLog</Channel>
+                <Task>LogLowResource</Task>
+                <Keyword>WdLogLowResource</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Return Address" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="LogEntry" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Level" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Param1" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Param2" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Param3" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Param4" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Param5" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>106</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Watchdog-Events/WdLog</Channel>
+                <Task>LogDmmEvent</Task>
+                <Keyword>WdLogDmmEvent</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Return Address" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="LogEntry" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Level" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Param1" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Param2" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Param3" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Param4" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Param5" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>107</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Watchdog-Events/WdLog</Channel>
+                <Task>LogPresentTokenEvent</Task>
+                <Keyword>WdLogPresentTokenEvent</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Return Address" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="LogEntry" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Level" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Param1" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Param2" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Param3" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Param4" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Param5" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>108</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Watchdog-Events/WdLog</Channel>
+                <Task>LogPower</Task>
+                <Keyword>WdLogPower</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Return Address" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="LogEntry" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Level" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Param1" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Param2" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Param3" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Param4" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Param5" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>109</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Watchdog-Events/WdLog</Channel>
+                <Task>LogDebug</Task>
+                <Keyword>WdLogDebug</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Return Address" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="LogEntry" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Level" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Param1" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Param2" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Param3" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Param4" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Param5" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>110</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Watchdog-Events/WdLog</Channel>
+                <Task>LogUnknown</Task>
+                <Keyword>WdLogUnknown</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Return Address" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="LogEntry" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Level" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Param1" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Param2" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Param3" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Param4" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Param5" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
