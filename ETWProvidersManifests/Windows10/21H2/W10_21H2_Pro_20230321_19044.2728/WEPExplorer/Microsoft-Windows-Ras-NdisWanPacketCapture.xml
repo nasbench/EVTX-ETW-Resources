@@ -1,0 +1,110 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Ras-NdisWanPacketCapture</Name>
+        <Metadata>
+            <Guid>{D84521F7-2235-4237-A7C0-14E3A9676286}</Guid>
+            <ResourceFilePath>C:\Windows\system32\drivers\ndiswan.sys</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\drivers\ndiswan.sys</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.19041.2846&amp;FileName=ndiswan.sys&amp;FileVer=10.0.19041.2846</HelpLink>
+            <PublisherMessage>Microsoft-Windows-RRAS-NdisWanPacketCapture-Provider</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Ras-NdisWanPacketCapture/Diagnostic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Loading State</Message>
+                    <Name>Load</Name>
+                    <Value>21</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Unloading State</Message>
+                    <Name>Unload</Name>
+                    <Value>22</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>rras_ndiswan_sendpath</Name>
+                    <Value>4294967296</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>rras_ndiswan_recvpath</Name>
+                    <Value>8589934592</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>5001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Ras-NdisWanPacketCapture/Diagnostic</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+Sending NDIS Wan Packet (%3 bytes)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RoutingDomainID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RRASUserName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FragmentSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Fragment" inType="win:Binary" outType="xs:hexBinary" length="FragmentSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Ras-NdisWanPacketCapture/Diagnostic</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+Reciving NDIS Wan Packet (%3 bytes)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RoutingDomainID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RRASUserName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FragmentSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Fragment" inType="win:Binary" outType="xs:hexBinary" length="FragmentSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Ras-NdisWanPacketCapture/Diagnostic</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+Event: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

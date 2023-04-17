@@ -1,0 +1,294 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-EQoS</Name>
+        <Metadata>
+            <Guid>{54CB22FF-26B4-4393-A8C2-6B0715912C5F}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\eqossnap.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\system32\eqossnap.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.22000.1&amp;FileName=eqossnap.dll&amp;FileVer=10.0.22000.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Policy-based QoS</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-Policy-based QoS/Operational</Message>
+                    <Path>Microsoft-Windows-Policy/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-Policy-based QoS/Analytic</Message>
+                    <Path>Microsoft-Windows-Policy/Analytic</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Policy-based QoS/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1 QoS policies successfully refreshed. No changes detected.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PolicyType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Policy-based QoS/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1 QoS policies successfully refreshed. Policy changes detected.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PolicyType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Policy-based QoS/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The Advanced QoS Setting for inbound TCP throughput level successfully refreshed. %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Level" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Policy-based QoS/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The Advanced QoS Setting for DSCP marking overrides successfully refreshed. %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Setting" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Policy-based QoS/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Selective application of legacy QoS policies based on domain or non-domain network category has been disabled on this machine. QoS policies will be applied to all network interfaces.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Policy-based QoS/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+In the past %1 hour(s) and %2 minute(s), %3 HTTP.SYS responses have had their application requested QoS conflict with URL QoS policies.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Hours" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Minutes" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Collisions" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Policy-based QoS/Analytic</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+There is at least one policy containing minimum bandwidth specification and at least one other policy that does not. It is generally not a good idea to mix these two classes of policies on the same system.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Policy-based QoS/Analytic</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+A %1 QoS policy "%2" has an invalid version number. This policy will not be applied.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PolicyType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>104</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Policy-based QoS/Analytic</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+A %1 QoS policy "%2" does not specify a QoS parameter (e.g. DSCP value, throttle rate, etc.) This policy will not be applied.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PolicyType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>108</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Policy-based QoS/Analytic</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+A %1 QoS policy "%2" potentially conflicts with other QoS policies. See documentation for rules about which policy will be applied at packet send time.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PolicyType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>110</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Policy-based QoS/Analytic</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+A %1 QoS policy "%2" was ignored because the application path could not be processed. The application path may be totally invalid, or has an invalid drive letter, or contains network-mapped drive letter.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PolicyType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>200</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Policy-based QoS/Analytic</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+%1 QoS policies failed to refresh. Error code: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PolicyType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NtStatus" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>204</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Policy-based QoS/Analytic</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+A %1 QoS policy exceeds the maximum allowed name length. The offending policy is listed under the relevant policy root key with index %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PolicyType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Index" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>206</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Policy-based QoS/Analytic</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+A %1 QoS policy has a zero length name. The offending policy is listed under the relevant policy root key with index %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PolicyType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Index" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>208</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Policy-based QoS/Analytic</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to open the registry subkey for a %1 QoS policy. The policy is listed under the relevant policy root key with index %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PolicyType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Index" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>210</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Policy-based QoS/Analytic</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to read or validate the "%2" field for %1 QoS policy named "%3".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PolicyType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PolicyFieldName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>212</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Policy-based QoS/Analytic</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to read or set inbound TCP throughput level. Error code: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NtStatus" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>213</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Policy-based QoS/Analytic</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to read or set the DSCP marking override setting. Error code: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NtStatus" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

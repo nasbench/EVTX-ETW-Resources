@@ -1,0 +1,145 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-DiskDiagnosticResolver</Name>
+        <Metadata>
+            <Guid>{6B1FFE48-5B1E-4793-9F7F-AE926454499D}</Guid>
+            <ResourceFilePath>C:\Windows\system32\dfdwiz.exe</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\dfdwiz.exe</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.20348.1&amp;FileName=dfdwiz.exe&amp;FileVer=10.0.20348.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-DiskDiagnosticResolver</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-DiskDiagnosticResolver/Operational</Message>
+                    <Path>Microsoft-Windows-DiskDiagnosticResolver/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DiskDiagnosticResolver/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Windows Disk Diagnostic Resolver started with administrative privileges.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DiskDiagnosticResolver/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Windows Disk Diagnostic Resolver started without administrative privileges.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DiskDiagnosticResolver/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Windows Disk Diagnostic is exiting silently because it is disabled by Group Policy.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DiskDiagnosticResolver/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Windows Disk Diagnostic Resolver is exiting because the user requested suppression of any S.M.A.R.T. faults that were detected.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DiskDiagnosticResolver/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Windows Disk Diagnostic Resolver is exiting because no S.M.A.R.T. faults were detected on this computer.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DiskDiagnosticResolver/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Windows Disk Diagnostic Resolver was disabled successfully.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DiskDiagnosticResolver/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Windows Disk Diagnostic Resolver could not be disabled.  The error code was %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DiskDiagnosticResolver/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Windows Disk Diagnostic Resolver launched backup at the user's request.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DiskDiagnosticResolver/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Windows Disk Diagnostic Resolver deleted stale entries from the S.M.A.R.T. fault cache.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DiskDiagnosticResolver/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Windows Disk Diagnostic Resolver suppressed all active S.M.A.R.T. faults at the user's request.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

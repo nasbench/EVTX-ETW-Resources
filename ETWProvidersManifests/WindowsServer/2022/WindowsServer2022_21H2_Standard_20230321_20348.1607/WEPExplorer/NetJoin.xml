@@ -1,0 +1,113 @@
+<Providers>
+    <Provider>
+        <Name>NetJoin</Name>
+        <Metadata>
+            <Guid>{9741FD4E-3757-479F-A3C6-FC49F6D5EDD0}</Guid>
+            <ResourceFilePath>C:\Windows\System32\netjoin.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\System32\netjoin.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.20348.1129&amp;FileName=netjoin.dll&amp;FileVer=10.0.20348.1129</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>0</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>4096</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The machine %2 successfully joined the domain %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DomainName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ComputerName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4097</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The machine %2 attempted to join the domain %1 but failed. The error code was %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DomainName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ComputerName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NetStatusCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4100</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+During domain join, the domain controller contacted found an existing computer account in Active Directory with the same name.
+An attempt to re-use this account was permitted. 
+
+Domain controller searched: %1
+Existing computer account DN: %2
+
+See https://go.microsoft.com/fwlink/?linkid=2202145 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DomainName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ComputerName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4101</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+During domain join, the domain controller contacted found an existing computer account in Active Directory with the same name.
+An attempt to re-use this account was prevented for security reasons.
+
+Domain controller searched: %1
+Existing computer account DN: %2
+The error code was %3.
+
+See https://go.microsoft.com/fwlink/?linkid=2202145 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DomainName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ComputerName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NetStatusCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

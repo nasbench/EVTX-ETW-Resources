@@ -1,0 +1,52 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Video-For-Windows</Name>
+        <Metadata>
+            <Guid>{712ABB2D-D806-4B42-9682-26DA01D8B307}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\mciavi32.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\system32\mciavi32.dll</MessageFilePath>
+            <HelpLink></HelpLink>
+            <PublisherMessage>Microsoft-Windows-Video For Windows</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Application</Message>
+                    <Path>Application</Path>
+                    <Index>0</Index>
+                    <Id>9</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The file %2 could not be processed by the application %1 because it requires Indeo® Decoders of type %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApplicationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ContentType" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
