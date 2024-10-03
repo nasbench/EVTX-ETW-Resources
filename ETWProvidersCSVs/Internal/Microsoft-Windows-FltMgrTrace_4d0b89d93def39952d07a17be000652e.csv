@@ -1,0 +1,231 @@
+Event ID,Event Version,Level,Channel,Task,Opcode,Keyword,Windows,Version,Edition,Date,Build,Event Message,Event Fields
+10,0,Verbose,,,,GFL_TRACE_EXTEND_COMPLETION_STACK,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] AllocateIrpCtrlSup.c(342) %!FUNC!:Forcing small completion stack size of {A10_stackSize}!d! instead of {A11_oldStackSize}!d!,{A10_stackSize} | {A11_oldStackSize}
+11,0,Verbose,,,,GFL_TRACE_EXTEND_COMPLETION_STACK,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] AllocateIrpCtrlSup.c(1362) %!FUNC!:Extending completion stack from {A10_IrpCtrl->CompletionStackLength}!d! to {A11_newStackSize}!d! (irpCtrl={A12_IrpCtrl}!p!),{A11_newStackSize} | {A12_IrpCtrl}
+12,0,Verbose,,,,GFL_TRACE_COMPLETION_NODES,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] AllocateIrpCtrlSup.c(1445) %!FUNC!:CN Insert Active (extend) IrpCtrl={A10_newCNode->IrpCtrl}!p! CompNode={A11_newCNode}!p!; [{A12_newCNode->DataSnapshot.MajorFunction}!d!],{A11_newCNode}
+13,0,Verbose,,,,GFL_TRACE_COMPLETION_NODES,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] AllocateIrpCtrlSup.c(1460) %!FUNC!:CN Insert Waiting (extend)  IrpCtrl={A10_newCNode->IrpCtrl}!p! CompNode={A11_newCNode}!p!; [{A12_newCNode->DataSnapshot.MajorFunction}!d!],{A11_newCNode}
+14,0,Verbose,,,,GFL_TRACE_EXTEND_COMPLETION_STACK,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] AllocateIrpCtrlSup.c(1486) %!FUNC!:While extending; hit non-tracked completion node; IrpCtrl={A10_IrpCtrl}!p! [{A11_(CHAR)newCNode->DataSnapshot.MajorFunction}!d!;{A12_(CHAR)newCNode->DataSnapshot.MinorFunction}!d!],{A10_IrpCtrl}
+15,0,Verbose,,,,GFL_TRACE_EXTEND_COMPLETION_STACK,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] AllocateIrpCtrlSup.c(1508) %!FUNC!:Extending an already extended stack,
+16,0,Verbose,,,,GFL_TRACE_STATIC_IRPCTRL,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] AllocateIrpCtrlSup.c(1834) %!FUNC!:Allocated type {A10_OpType}!d! IrpCtrl ({A11_irpCtrl}!p!) for thread ({A12_Frame->ReserveIrpCtrls.StaticOwningThread[OpType]}!p!),{A10_OpType} | {A11_irpCtrl}
+17,0,Verbose,,,,GFL_TRACE_STATIC_IRPCTRL,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] AllocateIrpCtrlSup.c(1893) %!FUNC!:Freeing type {A10_OpType}!d! IrpCtrl ({A11_IrpCtrl}!p!) for thread ({A12_Frame->ReserveIrpCtrls.StaticOwningThread[OpType]}!p!),{A10_OpType} | {A11_IrpCtrl}
+18,0,Verbose,,,,GFL_TRACE_STATIC_IRPCTRL,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] AllocateIrpCtrlSup.c(2037) %!FUNC!:Allocated BackPocket IrpCtrl-1: ({A10_irpCtrl}!p!) for thread ({A11_th}!p!); count={A12_Frame->ReserveIrpCtrls.Entries[i].Count}!d! index={A13_i}!d!,{A10_irpCtrl} | {A11_th} | {A13_i}
+19,0,Verbose,,,,GFL_TRACE_STATIC_IRPCTRL,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] AllocateIrpCtrlSup.c(2109) %!FUNC!:Allocated BackPocket IrpCtrl-2: ({A10_irpCtrl}!p!) for thread ({A11_th}!p!); count={A12_Frame->ReserveIrpCtrls.Entries[i].Count}!d! index={A13_i}!d!,{A10_irpCtrl} | {A11_th} | {A13_i}
+20,0,Verbose,,,,GFL_TRACE_STATIC_IRPCTRL,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] AllocateIrpCtrlSup.c(2206) %!FUNC!:Freeing BackPocket IrpCtrl ({A10_IrpCtrl}!p!) for thread ({A11_IrpCtrl->Data.Thread}!p!); count={A12_Frame->ReserveIrpCtrls.Entries[i].Count}!d! index={A13_i}!d!,{A10_IrpCtrl} | {A13_i}
+21,0,Verbose,,,,GFL_TRACE_ATTACH_DETACH,Windows 11,24H2,Pro,2024/10/2,26100.1742,,
+22,0,Error,,,,GFL_TRACE_ATTACH_DETACH,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] AttachDetachSup.c(1818) %!FUNC!:Error creating control device object; status={A10_status},{A10_status}
+23,0,Error,,,,GFL_TRACE_ATTACH_DETACH,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] AttachDetachSup.c(1956) %!FUNC!:Error creating volume device object; status={A10_status},{A10_status}
+24,0,Error,,,,GFL_TRACE_ATTACH_DETACH,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] AttachDetachSup.c(1992) %!FUNC!:Error initializing Volume structure; status={A10_status},{A10_status}
+25,0,Verbose,,,,GFL_TRACE_ATTACH_DETACH,Windows 11,24H2,Pro,2024/10/2,26100.1742,,
+26,0,Verbose,,,,GFL_TRACE_ATTACH_DETACH,Windows 11,24H2,Pro,2024/10/2,26100.1742,,
+27,0,Verbose,,,,GFL_TRACE_ATTACH_DETACH,Windows 11,24H2,Pro,2024/10/2,26100.1742,,
+28,0,Verbose,,,,GFL_TRACE_ATTACH_DETACH,Windows 11,24H2,Pro,2024/10/2,26100.1742,,
+29,0,Information,,,,GFL_TRACE_INFO,Windows 11,24H2,Pro,2024/10/2,26100.1742,,
+30,0,Information,,,,GFL_TRACE_INFO,Windows 11,24H2,Pro,2024/10/2,26100.1742,,
+31,0,Verbose,,,,GFL_TRACE_BUFFER_SWAPPED,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] CallbackSup.c(377) %!FUNC!:Buffer Swap Detected:      oldB={A10_*origBufferPtr}!p! oldMdl={A11_origMdlAddressPtr ? *origMdlAddressPtr : NULL}!p! newB={A12_*newBufferPtr}!p! newMdl={A13_newMdlAddressPtr ? *newMdlAddressPtr : NULL}!p!,
+32,0,Verbose,,,,FLTMGR_TRACE_MINIFILTER_IOSTATUS,Windows 11,24H2,Pro,2024/10/2,26100.1742,,
+33,0,Information,,,,FLTMGR_TRACE_MINIFILTER_IOSTATUS,Windows 11,24H2,Pro,2024/10/2,26100.1742,,
+34,0,Verbose,,,,FLTMGR_TRACE_MINIFILTER_IOSTATUS,Windows 11,24H2,Pro,2024/10/2,26100.1742,,
+35,0,Information,,,,FLTMGR_TRACE_MINIFILTER_IOSTATUS,Windows 11,24H2,Pro,2024/10/2,26100.1742,,
+36,0,Verbose,,,,FLTMGR_TRACE_FILE_SYSTEM_IOSTATUS,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] CallbackSup.c(841) %!FUNC!:File System returned an error: Irp {A10_event.IrpPtr}!p!; MajorFunction {A11_event.MajorFunction}!S!; InitiatingInstance {A12_IrpCtrl->InitiatingInstance}!p!; FileObject {A13_event.FileObject}!p!; FsContext {A14_event.FsContext}!p!; Status {A15_status}!S!,{A15_status}
+37,0,Information,,,,FLTMGR_TRACE_FILE_SYSTEM_IOSTATUS,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] CallbackSup.c(860) %!FUNC!:File System returned an error: Irp {A10_event.IrpPtr}!p!; MajorFunction {A11_event.MajorFunction}!S!; InitiatingInstance {A12_IrpCtrl->InitiatingInstance}!p!; FileObject {A13_event.FileObject}!p!; FsContext {A14_event.FsContext}!p!; Status {A15_status}!S!,{A15_status}
+38,0,Verbose,,,,GFL_TRACE_HIDDEN_OPERATIONS,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] CallbackSup.c(1262) %!FUNC!:Hiding operation in FltpPerformPreCallbacks:  T={A10_KeGetCurrentThread()}!p! FO={A11_irpCtrl->FileObject}!p! Vol={A12_volume}!p! Major={A13_(CHAR)irpMajorId}!d! ({A14_FltGetIrpName(irpMajorId)}!S!),{A12_volume}
+39,0,Verbose,,,,GFL_TRACE_PENDING_IRPS,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] CallbackSup.c(1884) %!FUNC!:Pending operation:         {A10_irpMajorId}!x!; Irpctrl={A11_irpCtrl}!p!; callbackNode={A12_callbackNode}!p! ({A13_FlagOn(irpCtrlFlags;IRPCTRFL_SYNCHRONIZE) ? 'SYNC' : 'NotSYNC'}!S!),{A10_irpMajorId} | {A11_irpCtrl} | {A12_callbackNode}
+40,0,Verbose,,,,GFL_TRACE_TERMINATE_IRP,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] CompletionNodeSup.c(335) %!FUNC!:Freeing completion node tracking structure {A10_TrackingCtrl->PointerToFree}!p!,
+41,0,Verbose,,,,GFL_TRACE_COMPLETION_NODES,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] CompletionNodeSup.c(401) %!FUNC!:CN Not Tracking   IrpCtrl={A10_CompNode->IrpCtrl}!p! CompNode={A11_CompNode}!p! [{A12_(CHAR)CompNode->DataSnapshot.MajorFunction}!d!],{A11_CompNode}
+42,0,Verbose,,,,GFL_TRACE_COMPLETION_NODES,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] CompletionNodeSup.c(440) %!FUNC!:CN Insert Active  IrpCtrl={A10_CompNode->IrpCtrl}!p! CompNode={A11_CompNode}!p! [{A12_(CHAR)CompNode->DataSnapshot.MajorFunction}!d!],{A11_CompNode}
+43,0,Verbose,,,,GFL_TRACE_COMPLETION_NODES,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] CompletionNodeSup.c(480) %!FUNC!:CN Insert Waiting IrpCtrl={A10_irpCtrl}!p! CompNode={A11_CompNode}!p! [{A12_(CHAR)CompNode->DataSnapshot.MajorFunction}!d!],{A10_irpCtrl} | {A11_CompNode}
+44,0,Verbose,,,,GFL_TRACE_TERMINATE_IRP,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] CompletionNodeSup.c(506) %!FUNC!:Linking; swapped buffers; canceling IRP {A10_(CHAR)irpCtrl->Data.Iopb->MajorFunction}!d!;{A11_(CHAR)irpCtrl->Data.Iopb->MinorFunction}!d! ({A12_FltGetIrpName(irpCtrl->Data.Iopb->MajorFunction)}!S!),
+45,0,Verbose,,,,GFL_TRACE_TERMINATE_IRP,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] CompletionNodeSup.c(514) %!FUNC!:Linking; swapped buffers; wait for non-IRP operation {A10_(CHAR)irpCtrl->Data.Iopb->MajorFunction}!d!;{A11_(CHAR)irpCtrl->Data.Iopb->MinorFunction}!d! ({A12_FltGetIrpName(irpCtrl->Data.Iopb->MajorFunction)}!S!),
+46,0,Verbose,,,,GFL_TRACE_COMPLETION_NODES,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] CompletionNodeSup.c(548) %!FUNC!:CN Insert Waiting (non-drainable) IrpCtrl={A10_irpCtrl}!p! CompNode={A11_CompNode}!p! [{A12_(CHAR)CompNode->DataSnapshot.MajorFunction}!d!],{A10_irpCtrl} | {A11_CompNode}
+47,0,Verbose,,,,GFL_TRACE_TERMINATE_IRP,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] CompletionNodeSup.c(559) %!FUNC!:Linking; wait for non-drainable operation {A10_(CHAR)irpCtrl->Data.Iopb->MajorFunction}!d!;{A11_(CHAR)irpCtrl->Data.Iopb->MinorFunction}!d! ({A12_FltGetIrpName(irpCtrl->Data.Iopb->MajorFunction)}!S!) IrpCtrl={A13_irpCtrl}!p!,{A13_irpCtrl}
+48,0,Verbose,,,,GFL_TRACE_COMPLETION_NODES,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] CompletionNodeSup.c(596) %!FUNC!:CN Delete         IrpCtrl={A10_CompNode->IrpCtrl}!p! CompNode={A11_CompNode}!p! [{A12_(CHAR)CompNode->DataSnapshot.MajorFunction}!d!],{A11_CompNode}
+49,0,Verbose,,,,GFL_TRACE_TERMINATE_IRP,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] CompletionNodeSup.c(780) %!FUNC!:Draining; IRP Cancel routine called,
+50,0,Verbose,,,,GFL_TRACE_TERMINATE_IRP,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] CompletionNodeSup.c(965) %!FUNC!:Draining operation {A10_(CHAR)localIrpCtrl.Data.Iopb->MajorFunction}!d!;{A11_(CHAR)localIrpCtrl.Data.Iopb->MinorFunction}!d! ({A12_FltGetIrpName(localIrpCtrl.Data.Iopb->MajorFunction)}!S!) IrpCtrl={A13_localCompNode.IrpCtrl}!p!,
+51,0,Verbose,,,,GFL_TRACE_COMPLETION_NODES,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] CompletionNodeSup.c(1130) %!FUNC!:CN Insert Waiting (bufSwaped) IrpCtrl={A10_completionNode->IrpCtrl}!p! CompNode={A11_completionNode}!p! [{A12_(CHAR)completionNode->DataSnapshot.MajorFunction}!d!],{A11_completionNode}
+52,0,Verbose,,,,GFL_TRACE_TERMINATE_IRP,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] CompletionNodeSup.c(1153) %!FUNC!:Draining; Swapped buffers; canceling IRP {A10_(CHAR)irpCtrl->Data.Iopb->MajorFunction}!d!;{A11_(CHAR)irpCtrl->Data.Iopb->MinorFunction}!d! ({A12_FltGetIrpName(irpCtrl->Data.Iopb->MajorFunction)}!S!) IrpCtrl={A13_irpCtrl}!p!,{A13_irpCtrl}
+53,0,Verbose,,,,GFL_TRACE_TERMINATE_IRP,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] CompletionNodeSup.c(1216) %!FUNC!:Draining; Swapped buffers; waiting for non-IRP operation {A10_(CHAR)irpCtrl->Data.Iopb->MajorFunction}!d!;{A11_(CHAR)irpCtrl->Data.Iopb->MinorFunction}!d! ({A12_FltGetIrpName(irpCtrl->Data.Iopb->MajorFunction)}!S!) IrpCtrl={A13_irpCtrl}!p!,{A13_irpCtrl}
+54,0,Verbose,,,,GFL_TRACE_COMPLETION_NODES,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] CompletionNodeSup.c(1249) %!FUNC!:CN Insert Waiting (NotDrainable) IrpCtrl={A10_completionNode->IrpCtrl}!p! CompNode={A11_completionNode}!p! [{A12_(CHAR)completionNode->DataSnapshot.MajorFunction}!d!],{A11_completionNode}
+55,0,Verbose,,,,GFL_TRACE_TERMINATE_IRP,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] CompletionNodeSup.c(1264) %!FUNC!:Draining; Waiting for non-drainable operation {A10_(CHAR)irpCtrl->Data.Iopb->MajorFunction}!d!;{A11_(CHAR)irpCtrl->Data.Iopb->MinorFunction}!d! ({A12_FltGetIrpName(irpCtrl->Data.Iopb->MajorFunction)}!S!) IrpCtrl={A13_irpCtrl}!p!,{A13_irpCtrl}
+56,0,Error,,,,GFL_TRACE_ERROR,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] EnumerationSup.c(1127) %!FUNC!:Wrong type of device object passed in: devobj {A10_DeviceObject}!p!,{A10_DeviceObject}
+57,0,Error,,,,GFL_TRACE_ERROR,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] ExceptionSup.c(62) %!FUNC!:Caught exception ({A10_ExceptionPointer->ExceptionRecord->ExceptionCode}!08x!; {A11_ExceptionPointer->ContextRecord}!p!; {A12_ExceptionPointer->ExceptionRecord}!p!; {A13_ExceptionPointer->ExceptionRecord->ExceptionAddress}!p!),
+58,0,Verbose,,,,GFL_TRACE_FAST_IO,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] FastIoSup.c(337) %!FUNC!:passing through FAST_IO_CHECK_IF_POSSIBLE,
+59,0,Verbose,,,,GFL_TRACE_FAST_IO,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] FastIoSup.c(362) %!FUNC!:passing through FAST_IO_READ,
+60,0,Verbose,,,,GFL_TRACE_FAST_IO,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] FastIoSup.c(387) %!FUNC!:passing through FAST_IO_WRITE,
+61,0,Verbose,,,,GFL_TRACE_FAST_IO,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] FastIoSup.c(411) %!FUNC!:passing through FAST_IO_QUERY_BASIC_INFO,
+62,0,Verbose,,,,GFL_TRACE_FAST_IO,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] FastIoSup.c(436) %!FUNC!:passing through FAST_IO_QUERY_STANDARD_INFO,
+63,0,Verbose,,,,GFL_TRACE_FAST_IO,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] FastIoSup.c(457) %!FUNC!:passing through FAST_IO_QUERY_NETWORK_OPEN_INFO,
+64,0,Verbose,,,,GFL_TRACE_FAST_IO,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] FastIoSup.c(496) %!FUNC!:passing through FAST_IO_LOCK,
+65,0,Verbose,,,,GFL_TRACE_FAST_IO,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] FastIoSup.c(521) %!FUNC!:passing through FAST_IO_UNLOCK_SINGLE,
+66,0,Verbose,,,,GFL_TRACE_FAST_IO,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] FastIoSup.c(544) %!FUNC!:passing through FAST_IO_UNLOCK_ALL,
+67,0,Verbose,,,,GFL_TRACE_FAST_IO,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] FastIoSup.c(565) %!FUNC!:passing through FAST_IO_UNLOCK_ALL_BY_KEY,
+68,0,Verbose,,,,GFL_TRACE_FAST_IO,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] FastIoSup.c(594) %!FUNC!:passing through FAST_IO_DEVICE_CONTROL,
+69,0,Verbose,,,,GFL_TRACE_FAST_IO,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] FastIoSup.c(622) %!FUNC!:passing through FAST_IO_QUERY_OPEN,
+70,0,Verbose,,,,GFL_TRACE_FAST_IO,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] FastIoSup.c(684) %!FUNC!:passing through FAST_IO_MDL_READ,
+71,0,Verbose,,,,GFL_TRACE_FAST_IO,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] FastIoSup.c(708) %!FUNC!:passing through FAST_IO_MDL_READ_COMPLETE,
+72,0,Verbose,,,,GFL_TRACE_FAST_IO,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] FastIoSup.c(728) %!FUNC!:passing through FAST_IO_PREPARE_MDL_WRITE,
+73,0,Verbose,,,,GFL_TRACE_FAST_IO,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] FastIoSup.c(752) %!FUNC!:passing through FAST_IO_MDL_WRITE_COMPLETE,
+74,0,Verbose,,,,GFL_TRACE_STREAM_LIST_CTRL,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] FileListCtrlSup.c(198) %!FUNC!:Starting ({A10__localHead}!p!),{A10__localHead}
+75,0,Verbose,,,,GFL_TRACE_STREAM_LIST_CTRL,Windows 11,24H2,Pro,2024/10/2,26100.1742,,
+76,0,Verbose,,,,GFL_TRACE_STREAM_LIST_CTRL,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] FileListCtrlSup.c(274) %!FUNC!:FSDelete  ({A10_fileList}!p!)              Fl={A11_fileList->Flags}!03x! Use={A12_fileList->UseCount}!d!,{A10_fileList}
+77,0,Verbose,,,,GFL_TRACE_STREAM_LIST_CTRL,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] FileListCtrlSup.c(445) %!FUNC!:Found     ({A10_fileList}!p!)              Fl={A11_fileList->Flags}!03x! Use={A12_fileList->UseCount}!d!,{A10_fileList}
+78,0,Verbose,,,,GFL_TRACE_STREAM_LIST_CTRL,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] FileListCtrlSup.c(565) %!FUNC!:Created   ({A10_newFileList}!p!)              Fl={A11_newFileList->Flags}!03x! Use={A12_newFileList->UseCount}!d!,{A10_newFileList}
+79,0,Verbose,,,,GFL_TRACE_STREAM_LIST_CTRL,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] FileListCtrlSup.c(588) %!FUNC!:Found New ({A10_fileList}!p!)              Fl={A11_fileList->Flags}!03x! Use={A12_fileList->UseCount}!d!,{A10_fileList}
+80,0,Verbose,,,,GFL_TRACE_STREAM_LIST_CTRL,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] FileListCtrlSup.c(732) %!FUNC!:Allocate  ({A10_newFileList}!p!)              Fl={A11_newFileList->Flags}!03x! Use={A12_newFileList->UseCount}!d!,{A10_newFileList}
+81,0,Verbose,,,,GFL_TRACE_STREAM_LIST_CTRL,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] FileListCtrlSup.c(769) %!FUNC!:Release   ({A10_FileList}!p!)              Fl={A11_FileList->Flags}!03x! Use={A12_FileList->UseCount}!d!,{A10_FileList}
+82,0,Verbose,,,,GFL_TRACE_STREAM_LIST_CTRL,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] FileListCtrlSup.c(792) %!FUNC!:DEFFERED  ({A10_FileList}!p!)              Fl={A11_FileList->Flags}!03x! Use={A12_FileList->UseCount}!d!,{A10_FileList}
+83,0,Verbose,,,,GFL_TRACE_STREAM_LIST_CTRL,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] FileListCtrlSup.c(827) %!FUNC!:Cleanup   ({A10_FileList}!p!)              Fl={A11_FileList->Flags}!03x! Use={A12_FileList->UseCount}!d!,{A10_FileList}
+84,0,Error,,,,GFL_TRACE_ERROR,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] fltmgr.c(996) %!FUNC!:DriverEntry: Error EtwRegister; status={A10_status}!x!,{A10_status}
+85,0,Error,,,,GFL_TRACE_ERROR,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] fltmgr.c(1033) %!FUNC!:Failed to start notification for dynamic settings. status={A10_status}!x!,{A10_status}
+86,0,Information,,,,GFL_TRACE_INFO,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] fltmgr.c(1096) %!FUNC!:Num processors={A10_FltGlobals.NumProcessors}!d!,
+87,0,Information,,,,GFL_TRACE_INFO,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] fltmgr.c(1100) %!FUNC!:Max processors={A10_KeQueryMaximumProcessorCountEx( ALL_PROCESSOR_GROUPS )}!d!,
+88,0,Information,,,,GFL_TRACE_INFO,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] fltmgr.c(1104) %!FUNC!:CacheLine size={A10_FltGlobals.CacheLineSize}!d! (0x{A11_FltGlobals.CacheLineSize}!x!),
+89,0,Information,,,,GFL_TRACE_INFO,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] fltmgr.c(1111) %!FUNC!:Breaking on errors,
+90,0,Information,,,,GFL_TRACE_INFO,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] fltmgr.c(1117) %!FUNC!:Attaching to File System Recognizers,
+91,0,Information,,,,GFL_TRACE_INFO,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] fltmgr.c(1123) %!FUNC!:Randomly using STATIC IrpCtrl,
+92,0,Information,,,,GFL_TRACE_INFO,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] fltmgr.c(1129) %!FUNC!:Randomly using short CompletionNode stacks,
+93,0,Error,,,,GFL_TRACE_ERROR,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] fltmgr.c(1189) %!FUNC!:DriverEntry: Error creating device; status={A10_status}!x!,{A10_status}
+94,0,Error,,,,GFL_TRACE_ERROR,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] fltmgr.c(1219) %!FUNC!:DriverEntry: Error creating symbolic link for control device; status={A10_status}!x!,{A10_status}
+95,0,Verbose,,,,GFL_TRACE_WARNING,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] fltmgr.c(1270) %!FUNC!:DriverEntry: Failed query for perf trace routines; status={A10_status}!x!,{A10_status}
+96,0,Error,,,,GFL_TRACE_ERROR,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] fltmgr.c(1412) %!FUNC!:DriverEntry: Error Initializing Messaging Support; status={A10_status}!x!,{A10_status}
+97,0,Verbose,,,,GFL_TRACE_ATTACH_DETACH,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] fltmgr.c(1678) %!FUNC!:Unloading driver ({A10_DriverObject}!p!),{A10_DriverObject}
+98,0,Error,,,,GFL_TRACE_ERROR,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] fltmgr.c(1958) %!FUNC!:Waiting for {A10_i}!d! Zombied FltObject(s) to be freed,{A10_i}
+99,0,Error,,,,GFL_TRACE_ERROR,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] fltmgr.c(1966) %!FUNC!:Rundown wait complete,
+100,0,Error,,,,GFL_TRACE_ERROR,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] fltmgr.c(1990) %!FUNC!:Waiting for {A10_i}!d! outstanding IrpCtrl(s) to complete,{A10_i}
+101,0,Error,,,,GFL_TRACE_ERROR,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] fltmgr.c(1999) %!FUNC!:Rundown wait complete,
+102,0,Verbose,,,,GFL_TRACE_ATTACH_DETACH,Windows 11,24H2,Pro,2024/10/2,26100.1742,,
+103,0,Verbose,,,,GFL_TRACE_PAGING_FILE_OPERATIONS,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] fltmgr.c(2271) %!FUNC!:Paging File operation; {A10_FltGetIrpName(irpSp->MajorFunction)}({A11_irpSp->MajorFunction}!d!),
+104,0,Verbose,,,,GFL_TRACE_FILE_OPEN_CLOSE,Windows 11,24H2,Pro,2024/10/2,26100.1742,,
+105,0,Verbose,,,,GFL_TRACE_IRP,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] fltmgr.c(4518) %!FUNC!:Posting Irp {A10_IrpCtrl->Irp}!p! major={A11_IrpCtrl->Data.Iopb->MajorFunction}!d!,
+106,0,Verbose,,,,GFL_TRACE_IRP,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] fltmgr.c(4846) %!FUNC!:Posting Irp {A10_Irp}!p!,{A10_Irp}
+107,0,Verbose,,,,GFL_TRACE_IRP,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] fltmgr.c(5015) %!FUNC!:TopLevelIrp set with unknown Irp 0x{A10_irpSp->MajorFunction}!x!,
+108,0,Verbose,,,,GFL_TRACE_HIDDEN_OPERATIONS,Windows 11,24H2,Pro,2024/10/2,26100.1742,,
+109,0,Verbose,,,,GFL_TRACE_SETUP_TEARDOWN_NOTIFIES,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] fltmgr.c(5930) %!FUNC!:Calling InstanceSetup on CreateIrp,
+110,0,Verbose,,,,GFL_TRACE_FILE_OPEN_CLOSE,Windows 11,24H2,Pro,2024/10/2,26100.1742,,
+111,0,Verbose,,,,GFL_TRACE_HIDDEN_OPERATIONS,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] fltmgr.c(6237) %!FUNC!:Reset thread hiding in FltpCreatePostCompl:   T={A10_KeGetCurrentThread()}!p! FO={A11_IrpCtrl->FileObject}!p! Vol={A12_volume}!p! status={A13_IrpCtrl->Data.IoStatus.Status}!S!,{A12_volume}
+112,0,Verbose,,,,GFL_TRACE_HIDDEN_OPERATIONS,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] fltmgr.c(6245) %!FUNC!:Continue Thread hiding in FltpCreatePostCompl:T={A10_KeGetCurrentThread()}!p! FO={A11_IrpCtrl->FileObject}!p! Vol={A12_volume}!p! status={A13_IrpCtrl->Data.IoStatus.Status}!S!,{A12_volume}
+113,0,Verbose,,,,GFL_TRACE_SETUP_TEARDOWN_NOTIFIES,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] fltmgr.c(6386) %!FUNC!:Calling InstanceSetup on CreateIrp,
+114,0,Verbose,,,,GFL_TRACE_ATTACH_DETACH,Windows 11,24H2,Pro,2024/10/2,26100.1742,,
+115,0,Verbose,,,,GFL_TRACE_ATTACH_DETACH,Windows 11,24H2,Pro,2024/10/2,26100.1742,,
+116,0,Verbose,,,,GFL_TRACE_ATTACH_DETACH,Windows 11,24H2,Pro,2024/10/2,26100.1742,,
+117,0,Verbose,,,,GFL_TRACE_SETUP_TEARDOWN_NOTIFIES,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] fltmgr.c(11225) %!FUNC!:Calling InstanceSetup on FastIoQueryOpen,
+118,0,Error,,,,GFL_TRACE_ERROR,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] fltmgr.c(12559) %!FUNC!:Failed to restart registry watch; Context={A10_Context}!p!; status={A11_regWatchContext->NotificationStatus}!x!,{A10_Context}
+119,0,Error,,,,GFL_TRACE_ERROR,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] fltmgr.c(13405) %!FUNC!:Resetting notification for dynamic registry settings failed. Context={A10_regWatchContext}!p!; status={A11_regWatchContext->NotificationStatus}!x!,{A10_regWatchContext}
+120,0,Error,,,,GFL_TRACE_ERROR,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] FrameSup.c(549) %!FUNC!:Error registering FS change notification; status={A10_status}!x!,{A10_status}
+121,0,Verbose,,,,GFL_TRACE_WARNING,Windows 11,24H2,Pro,2024/10/2,26100.1742,,
+122,0,Verbose,,,,GFL_TRACE_WARNING,Windows 11,24H2,Pro,2024/10/2,26100.1742,,
+123,0,Information,,,,GFL_TRACE_INFO,Windows 11,24H2,Pro,2024/10/2,26100.1742,,
+124,0,Verbose,,,,GFL_TRACE_ATTACH_DETACH,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] FrameSup.c(1647) %!FUNC!:Failed allocating timer,
+125,0,Verbose,,,,GFL_TRACE_ATTACH_DETACH,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] FrameSup.c(1659) %!FUNC!:Starting timer,
+126,0,Verbose,,,,GFL_TRACE_ATTACH_DETACH,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] FrameSup.c(1762) %!FUNC!:FltpManualDeviceAttachWorker: Delaying: fl={A10_ctxFlags}!Ix!; dl={A11_FltGlobals.ManualAttachDelayCounter}!d! ({A12_FltGlobals.ManualDeviceAttachLimit}!d!),{A10_ctxFlags}
+127,0,Verbose,,,,GFL_TRACE_ATTACH_DETACH,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] FrameSup.c(1778) %!FUNC!:FltpManualDeviceAttachWorker: Checking: fl={A10_ctxFlags}!Ix!; dl={A11_FltGlobals.ManualAttachDelayCounter}!d! ({A12_FltGlobals.ManualDeviceAttachLimit}!d!),{A10_ctxFlags}
+128,0,Information,,,,GFL_TRACE_INFO,Windows 11,24H2,Pro,2024/10/2,26100.1742,,
+129,0,Information,,,,GFL_TRACE_INFO,Windows 11,24H2,Pro,2024/10/2,26100.1742,,
+130,0,Verbose,,,,GFL_TRACE_SETUP_TEARDOWN_NOTIFIES,Windows 11,24H2,Pro,2024/10/2,26100.1742,,
+131,0,Verbose,,,,GFL_TRACE_SETUP_TEARDOWN_NOTIFIES,Windows 11,24H2,Pro,2024/10/2,26100.1742,,
+132,0,Verbose,,,,GFL_TRACE_INSTANCE,Windows 11,24H2,Pro,2024/10/2,26100.1742,,
+133,0,Verbose,,,,GFL_TRACE_INSTANCE,Windows 11,24H2,Pro,2024/10/2,26100.1742,,
+134,0,Verbose,,,,GFL_TRACE_SETUP_TEARDOWN_NOTIFIES,Windows 11,24H2,Pro,2024/10/2,26100.1742,,
+135,0,Verbose,,,,GFL_TRACE_FLTIO_FAST_IO,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] IoSup.c(4573) %!FUNC!:Attemping Fastio (no lower minifilters) from FltReadFile: Buffer={A10_Buffer}!p!; offset={A11_fileOffset.QuadPart}!I64x!; length={A12_Length}!x!,{A10_Buffer} | {A12_Length}
+136,0,Verbose,,,,GFL_TRACE_FLTIO_FAST_IO,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] IoSup.c(4623) %!FUNC!:Attemping Fastio from FltReadFile: Buffer={A10_Buffer}!p!; offset={A11_fileOffset.QuadPart}!I64x!; length={A12_Length}!x!,{A10_Buffer} | {A12_Length}
+137,0,Verbose,,,,GFL_TRACE_FLTIO_FAST_IO,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] IoSup.c(4729) %!FUNC!:Fastio attempt from FltReadFile failed,
+138,0,Verbose,,,,GFL_TRACE_FLTIO_FAST_IO,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] IoSup.c(5145) %!FUNC!:Attemping Fastio (no lower minifilters) from FltWriteFile: Buffer={A10_Buffer}!p!; offset={A11_fileOffset.QuadPart}!I64x!; length={A12_Length}!x!,{A10_Buffer} | {A12_Length}
+139,0,Verbose,,,,GFL_TRACE_FLTIO_FAST_IO,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] IoSup.c(5196) %!FUNC!:Attemping Fastio from FltWriteFile: Buffer={A10_Buffer}!p!; offset={A11_fileOffset.QuadPart}!I64x!; length={A12_Length}!x!,{A10_Buffer} | {A12_Length}
+140,0,Verbose,,,,GFL_TRACE_FLTIO_FAST_IO,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] IoSup.c(5303) %!FUNC!:Fastio attempt from FltWriteFile failed,
+141,0,Verbose,,,,GFL_TRACE_FLTIO_FAST_IO,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] IoSup.c(5505) %!FUNC!:(No lower minifilters),
+142,0,Verbose,,,,GFL_TRACE_FLTIO_FAST_IO,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] IoSup.c(5580) %!FUNC!:(Lower minifilter(s) exist),
+143,0,Verbose,,,,GFL_TRACE_FLTIO_FAST_IO,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] IoSup.c(5718) %!FUNC!:Attemping Fastio from FltFastIoMdlRead: MDLChain={A10_MdlChain}!p!; offset={A11_FileOffset->QuadPart}!I64x!; length={A12_Length}!x!,{A10_MdlChain} | {A12_Length}
+144,0,Verbose,,,,GFL_TRACE_FLTIO_FAST_IO,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] IoSup.c(5736) %!FUNC!:Fastio attempt from FltReadFile failed,
+145,0,Verbose,,,,GFL_TRACE_FLTIO_FAST_IO,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] IoSup.c(5757) %!FUNC!:Attemping Fastio from FltFastIoMdlReadComplete: MDLChain={A10_MdlChain}!p!,{A10_MdlChain}
+146,0,Verbose,,,,GFL_TRACE_FLTIO_FAST_IO,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] IoSup.c(5772) %!FUNC!:Fastio attempt from FltFastIoMdlReadComplete failed,
+147,0,Verbose,,,,GFL_TRACE_FLTIO_FAST_IO,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] IoSup.c(5797) %!FUNC!:Attemping Fastio from FltFastIoPrepareMdlWrite: MDLChain={A10_MdlChain}!p!; offset={A11_FileOffset->QuadPart}!I64x!; length={A12_Length}!x!,{A10_MdlChain} | {A12_Length}
+148,0,Verbose,,,,GFL_TRACE_FLTIO_FAST_IO,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] IoSup.c(5815) %!FUNC!:Fastio attempt from FltFastIoPrepareMdlWrite failed,
+149,0,Verbose,,,,GFL_TRACE_FLTIO_FAST_IO,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] IoSup.c(5838) %!FUNC!:Attemping Fastio from FltFastIoMdlWriteComplete: MDLChain={A10_MdlChain}!p!; offset={A11_FileOffset->QuadPart}!I64x!,{A10_MdlChain}
+150,0,Verbose,,,,GFL_TRACE_FLTIO_FAST_IO,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] IoSup.c(5855) %!FUNC!:Fastio attempt from FltFastIoMdlWriteComplete failed,
+151,0,Verbose,,,,GFL_TRACE_MESSAGE,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] MessageSup.c(1888) %!FUNC!:Timed out waiting for listener.,
+152,0,Verbose,,,,GFL_TRACE_MESSAGE,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] MessageSup.c(1901) %!FUNC!:Port is disconncted: abandoning listener,
+153,0,Verbose,,,,GFL_TRACE_MESSAGE,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] MessageSup.c(1909) %!FUNC!:Thread is Terminating.,
+154,0,Verbose,,,,GFL_TRACE_MESSAGE,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] MessageSup.c(1985) %!FUNC!:Timed out waiting for listener.,
+155,0,Verbose,,,,GFL_TRACE_MESSAGE,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] MessageSup.c(1998) %!FUNC!:Port is disconncted: abandoning listener,
+156,0,Verbose,,,,GFL_TRACE_MESSAGE,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] MessageSup.c(2006) %!FUNC!:Thread is Terminating.,
+157,0,Verbose,,,,GFL_TRACE_MESSAGE,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] MessageSup.c(2039) %!FUNC!:Found waiter IRP ({A10_irp}!p!); dequeued it,{A10_irp}
+158,0,Verbose,,,,GFL_TRACE_MESSAGE,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] MessageSup.c(2140) %!FUNC!:Found waiter; but could not map user's buffer; IRP={A10_irp}!p!,{A10_irp}
+159,0,Verbose,,,,GFL_TRACE_MESSAGE,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] MessageSup.c(2264) %!FUNC!:Queueing replyWaiter ({A10__replyWaiter}!p!),{A10__replyWaiter}
+160,0,Verbose,,,,GFL_TRACE_MESSAGE,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] MessageSup.c(2317) %!FUNC!:Wait for reply status {A10_status}!x!,{A10_status}
+161,0,Verbose,,,,GFL_TRACE_MESSAGE,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] MessageSup.c(2325) %!FUNC!:Thread is Terminating Thread timed out Port disconnected,
+162,0,Verbose,,,,GFL_TRACE_MESSAGE,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] MessageSup.c(2686) %!FUNC!:Found waiter {A10_currentWaiter}!p!; dequeued it,{A10_currentWaiter}
+163,0,Verbose,,,,GFL_TRACE_MESSAGE,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] MessageSup.c(2749) %!FUNC!:Setting reply event,
+164,0,Verbose,,,,GFL_TRACE_MESSAGE,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] MessageSup.c(2766) %!FUNC!:No waiter for reply; messageId: 0x{A10_(ULONG) replyMessageId}!X!,
+165,0,Verbose,,,,GFL_TRACE_MESSAGE,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] MessageSup.c(2815) %!FUNC!:Allocated {A10_Irp}!p!; enqueueing it (async),{A10_Irp}
+166,0,Verbose,,,,GFL_TRACE_MESSAGE,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] MessageSup.c(2878) %!FUNC!:Dequeued waiter {A10_irp}!p!,{A10_irp}
+167,0,Verbose,,,,GFL_TRACE_MESSAGE,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] MessageSup.c(2930) %!FUNC!:Verifying waiter list for Queue: {A10_Queue}!p! -- ,{A10_Queue}
+168,0,Verbose,,,,GFL_TRACE_MESSAGE,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] MessageSup.c(2940) %!FUNC!:                    -- currentLink {A10_currentLink}!p!,{A10_currentLink}
+169,0,Error,,,,GFL_TRACE_ERROR,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] MessageSup.c(3041) %!FUNC!:Error creating server port object type; status={A10_status}!x!,{A10_status}
+170,0,Error,,,,GFL_TRACE_ERROR,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] MessageSup.c(3106) %!FUNC!:Error creating connection port object type; status={A10_status}!x!,{A10_status}
+171,0,Error,,,,GFL_TRACE_ERROR,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] MessageSup.c(3128) %!FUNC!:Error creating msg device object; status={A10_status}!x!,{A10_status}
+172,0,Error,,,,GFL_TRACE_ERROR,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] MessageSup.c(3146) %!FUNC!:Error creating symbolic link to msg device object; status={A10_status}!x!,{A10_status}
+173,0,Verbose,,,,GFL_TRACE_MESSAGE,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] MessageSup.c(3248) %!FUNC!:Setting MessageWaiter event,
+174,0,Verbose,,,,GFL_TRACE_MESSAGE,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] MessageSup.c(3260) %!FUNC!:Setting MessageWaiter semaphore,
+175,0,Verbose,,,,GFL_TRACE_MESSAGE,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] MessageSup.c(3318) %!FUNC!:Cancelling MessageWaiter {A10_Irp}!p!,{A10_Irp}
+176,0,Verbose,,,,GFL_TRACE_MESSAGE,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] MessageSup.c(3367) %!FUNC!:Removed MessageWaiter {A10_Irp}!p! from queue,{A10_Irp}
+177,0,Verbose,,,,GFL_TRACE_FILE_NAME_CACHING,Windows 11,24H2,Pro,2024/10/2,26100.1742,,
+178,0,Verbose,,,,GFL_TRACE_FILE_NAME_CACHING,Windows 11,24H2,Pro,2024/10/2,26100.1742,,
+179,0,Verbose,,,,GFL_TRACE_FILE_NAME_CACHING,Windows 11,24H2,Pro,2024/10/2,26100.1742,,
+180,0,Verbose,,,,GFL_TRACE_FILE_NAMES,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] NameCacheSup.c(3717) %!FUNC!:Getting NORMALIZED name for fo: {A10_GenCtx->FileObject}!p!,
+181,0,Verbose,,,,GFL_TRACE_FILE_NAMES,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] NameCacheSup.c(3726) %!FUNC!:Getting OPENED name for fo: {A10_GenCtx->FileObject}!p!,
+182,0,Verbose,,,,GFL_TRACE_FILE_NAMES,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] NameCacheSup.c(3736) %!FUNC!:Getting SHORT name for fo: {A10_GenCtx->FileObject}!p!,
+183,0,Verbose,,,,GFL_TRACE_FILE_NAME_CACHING,Windows 11,24H2,Pro,2024/10/2,26100.1742,,
+184,0,Verbose,,,,GFL_TRACE_FILE_NAME_CACHING,Windows 11,24H2,Pro,2024/10/2,26100.1742,,
+185,0,Verbose,,,,GFL_TRACE_FILE_NAME_CACHING,Windows 11,24H2,Pro,2024/10/2,26100.1742,,
+186,0,Verbose,,,,GFL_TRACE_FILE_NAME_CACHING,Windows 11,24H2,Pro,2024/10/2,26100.1742,,
+187,0,Verbose,,,,GFL_TRACE_FILE_NAME_CACHING,Windows 11,24H2,Pro,2024/10/2,26100.1742,,
+188,0,Verbose,,,,GFL_TRACE_FILE_NAME_CACHING,Windows 11,24H2,Pro,2024/10/2,26100.1742,,
+189,0,Verbose,,,,GFL_TRACE_FILE_NAME_CACHING,Windows 11,24H2,Pro,2024/10/2,26100.1742,,
+190,0,Verbose,,,,GFL_TRACE_RELEASE_FILE_NAME,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] NameCacheSup.c(6006) %!FUNC!:Refcounting file name information: {A10_FileNameInformation}!p! cnt={A11_nameCacheNode->UseCount}!d!,{A10_FileNameInformation}
+191,0,Verbose,,,,GFL_TRACE_RELEASE_FILE_NAME,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] NameCacheSup.c(6067) %!FUNC!:Releasing fni {A10_FileNameInformation}!p!,{A10_FileNameInformation}
+192,0,Verbose,,,,GFL_TRACE_RELEASE_FILE_NAME,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] NameCacheSup.c(6096) %!FUNC!: *FREEING FNI*,
+193,0,Verbose,,,,GFL_TRACE_RELEASE_FILE_NAME,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] NameCacheSup.c(6105) %!FUNC!:,
+194,0,Verbose,,,,GFL_TRACE_FILE_NAMES,Windows 11,24H2,Pro,2024/10/2,26100.1742,,
+195,0,Verbose,,,,GFL_TRACE_FILE_NAME_CACHING,Windows 11,24H2,Pro,2024/10/2,26100.1742,,
+196,0,Error,,,,GFL_TRACE_ERROR,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] NameCacheSup.c(7448) %!FUNC!:Failed to invalidate name cache for POSIX delete: {A10_status},{A10_status}
+197,0,Verbose,,,,GFL_TRACE_FILE_NAMES_ERROR,Windows 11,24H2,Pro,2024/10/2,26100.1742,,
+198,0,Verbose,,,,GFL_TRACE_FILE_NAMES,Windows 11,24H2,Pro,2024/10/2,26100.1742,,
+199,0,Verbose,,,,GFL_TRACE_FILE_NAMES,Windows 11,24H2,Pro,2024/10/2,26100.1742,,
+200,0,Verbose,,,,GFL_TRACE_FILE_NAMES,Windows 11,24H2,Pro,2024/10/2,26100.1742,,
+201,0,Verbose,,,,GFL_TRACE_FILE_NAMES,Windows 11,24H2,Pro,2024/10/2,26100.1742,,
+202,0,Verbose,,,,GFL_TRACE_FILE_NAMES,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] NameSup.c(5963) %!FUNC!:Expanding path for fo: {A10_GenCtx->FileObject}!p!,
+203,0,Verbose,,,,GFL_TRACE_PARSE_FILE_NAME,Windows 11,24H2,Pro,2024/10/2,26100.1742,,
+204,0,Verbose,,,,GFL_TRACE_PARSE_FILE_NAME,Windows 11,24H2,Pro,2024/10/2,26100.1742,,
+205,0,Verbose,,,,GFL_TRACE_PARSE_FILE_NAME,Windows 11,24H2,Pro,2024/10/2,26100.1742,,
+206,0,Verbose,,,,GFL_TRACE_PARSE_FILE_NAME,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] NameSup.c(7345) %!FUNC!:UNKNOWN FORMAT for name in ({A10_FileNameInformation}!p!),{A10_FileNameInformation}
+207,0,Verbose,,,,GFL_TRACE_PENDING_IRPS,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] PendingSup.c(626) %!FUNC!:Resumed Pending operation: {A10_CallbackData->Iopb->MajorFunction}!x!; Irpctrl={A11_icc.IrpCtrl}!p!; callbackNode={A12_icc.IrpCtrl->PendingCallbackNode}!p! ({A13_FlagOn(icc.IrpCtrl->Flags;IRPCTRFL_SYNCHRONIZE) ? 'SYNC' : 'NotSYNC'}!S!),
+208,0,Verbose,,,,GFL_TRACE_POST_OPERATION_PROCESSING,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] queuesup.c(686) %!FUNC!:Posting --- Irp:{A10_irpCtrl->Irp}!p! MajorFunction:{A11_irpCtrl->Data.Iopb->MajorFunction}!d!,
+209,0,Verbose,,,,GFL_TRACE_POST_OPERATION_PROCESSING,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] queuesup.c(712) %!FUNC!:Could not post -- Irp:{A10_irpCtrl->Irp}!p! MajorFunction:{A11_irpCtrl->Data.Iopb->MajorFunction}!d!,
+210,0,Verbose,,,,GFL_TRACE_POST_OPERATION_PROCESSING,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] queuesup.c(723) %!FUNC!:Processing inline -- Irp:{A10_irpCtrl->Irp}!p! MajorFunction: {A11_irpCtrl->Data.Iopb->MajorFunction}!d!,
+211,0,Error,,,,GFL_TRACE_ERROR,Windows 11,24H2,Pro,2024/10/2,26100.1742,,
+212,0,Information,,,,GFL_TRACE_INFO,Windows 11,24H2,Pro,2024/10/2,26100.1742,,
+213,0,Information,,,,GFL_TRACE_INFO,Windows 11,24H2,Pro,2024/10/2,26100.1742,,
+214,0,Verbose,,,,GFL_TRACE_STREAM_LIST_CTRL,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] StreamListCtrlSup.c(177) %!FUNC!:Starting ({A10__localHead}!p!),{A10__localHead}
+215,0,Verbose,,,,GFL_TRACE_STREAM_LIST_CTRL,Windows 11,24H2,Pro,2024/10/2,26100.1742,,
+216,0,Verbose,,,,GFL_TRACE_STREAM_LIST_CTRL,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] StreamListCtrlSup.c(256) %!FUNC!:FSDelete  ({A10_streamList}!p!)              Fl={A11_streamList->Flags}!03x! Use={A12_streamList->UseCount}!d!,{A10_streamList}
+217,0,Verbose,,,,GFL_TRACE_STREAM_LIST_CTRL,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] StreamListCtrlSup.c(409) %!FUNC!:Found     ({A10_streamList}!p!)              Fl={A11_streamList->Flags}!03x! Use={A12_streamList->UseCount}!d!,{A10_streamList}
+218,0,Verbose,,,,GFL_TRACE_STREAM_LIST_CTRL,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] StreamListCtrlSup.c(540) %!FUNC!:Created   ({A10_newStreamList}!p!)              Fl={A11_newStreamList->Flags}!03x! Use={A12_newStreamList->UseCount}!d!,{A10_newStreamList}
+219,0,Verbose,,,,GFL_TRACE_STREAM_LIST_CTRL,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] StreamListCtrlSup.c(572) %!FUNC!:Found New ({A10_streamList}!p!)              Fl={A11_streamList->Flags}!03x! Use={A12_streamList->UseCount}!d!,{A10_streamList}
+220,0,Verbose,,,,GFL_TRACE_STREAM_LIST_CTRL,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] StreamListCtrlSup.c(715) %!FUNC!:Allocate  ({A10_newStreamList}!p!)              Fl={A11_newStreamList->Flags}!03x! Use={A12_newStreamList->UseCount}!d!,{A10_newStreamList}
+221,0,Verbose,,,,GFL_TRACE_STREAM_LIST_CTRL,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] StreamListCtrlSup.c(754) %!FUNC!:Release   ({A10_StreamList}!p!)              Fl={A11_StreamList->Flags}!03x! Use={A12_StreamList->UseCount}!d!,{A10_StreamList}
+222,0,Verbose,,,,GFL_TRACE_STREAM_LIST_CTRL,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] StreamListCtrlSup.c(807) %!FUNC!:DEFFERED  ({A10_StreamList}!p!)              Fl={A11_StreamList->Flags}!03x! Use={A12_StreamList->UseCount}!d!,{A10_StreamList}
+223,0,Verbose,,,,GFL_TRACE_STREAM_LIST_CTRL,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] StreamListCtrlSup.c(843) %!FUNC!:Cleanup   ({A10_StreamList}!p!)              Fl={A11_StreamList->Flags}!03x! Use={A12_StreamList->UseCount}!d!,{A10_StreamList}
+224,0,Verbose,,,,GFL_TRACE_ERROR,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] SyncSup.c(260) %!FUNC!:PointerRef:   {A10_FltObject}!p! ({A11_((PFLT_OBJECT)FltObject)->PointerCount}!d!) {A12_reason}!S!,{A10_FltObject} | {A12_reason}
+225,0,Verbose,,,,GFL_TRACE_ERROR,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] SyncSup.c(302) %!FUNC!:PointerDeRef: {A10_FltObject}!p! ({A11_((PFLT_OBJECT)FltObject)->PointerCount}!d!) {A12_reason}!S!,{A10_FltObject} | {A12_reason}
+226,0,Error,,,,GFL_TRACE_ERROR,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] TargetedIoSup.c(1924) %!FUNC!:Wrong type of device object passed in: devobj {A10_deviceObject}!p!,{A10_deviceObject}
+227,0,Error,,,,GFL_TRACE_ERROR,Windows 11,24H2,Pro,2024/10/2,26100.1742,,
+228,0,Verbose,,,,GFL_TRACE_SETUP_TEARDOWN_NOTIFIES,Windows 11,24H2,Pro,2024/10/2,26100.1742,,
+229,0,Verbose,,,,GFL_TRACE_HIDDEN_OPERATIONS,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] VolumeSup.c(2606) %!FUNC!:Cleared thread hiding in FltpClearHiddenOp...: T={A10_KeGetCurrentThread()}!p! FO={A11_FileObject}!p! Vol={A12_Volume}!p! IrpMaj={A13_IrpMajor}!d!,{A11_FileObject} | {A12_Volume} | {A13_IrpMajor}
+230,0,Verbose,,,,GFL_TRACE_WORK,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] WorkSup.c(193) %!FUNC!:Work={A10_FltWork}!p! QueType={A11_QueueType}!d! Count={A12_FltGlobals.ThrottledWorkCtrl.Queues[QueueType].RunningCount}!d! Limit={A13_FltGlobals.ThrottledWorkCtrl.Queues[QueueType].RunningLimit}!d!; QUEUED,{A10_FltWork} | {A11_QueueType}
+231,0,Verbose,,,,GFL_TRACE_WORK,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] WorkSup.c(214) %!FUNC!:Work={A10_FltWork}!p! QType={A11_QueueType}!d! Count={A12_FltGlobals.ThrottledWorkCtrl.Queues[QueueType].RunningCount}!d! Limit={A13_FltGlobals.ThrottledWorkCtrl.Queues[QueueType].RunningLimit}!d!; THROTTLED,{A10_FltWork} | {A11_QueueType}
+232,0,Verbose,,,,GFL_TRACE_WORK,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] WorkSup.c(290) %!FUNC!:Work={A10_fltWork}!p! QType={A11_QueueType}!d! Count={A12_FltGlobals.ThrottledWorkCtrl.Queues[QueueType].RunningCount}!d! Limit={A13_FltGlobals.ThrottledWorkCtrl.Queues[QueueType].RunningLimit}!d!; UnTHROTTLED,{A10_fltWork} | {A11_QueueType}
+233,0,Verbose,,,,GFL_TRACE_WORK,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] WorkSup.c(319) %!FUNC!:Work={A10_NULL}!p! QType={A11_QueueType}!d! Count={A12_FltGlobals.ThrottledWorkCtrl.Queues[QueueType].RunningCount}!d! Limit={A13_FltGlobals.ThrottledWorkCtrl.Queues[QueueType].RunningLimit}!d!; UnQUEUED,{A10_NULL} | {A11_QueueType}
+234,0,Verbose,,,,GFL_TRACE_WORK,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] WorkSup.c(457) %!FUNC!:Work={A10_GenericWorkItem}!p! QType={A11_qtype}!d! FltObj={A12_fltObject}!p! Routine={A13_GenericWorkItem->GenericWorkerRoutine}!p! Context={A14_GenericWorkItem->Context}!p! IoPriority={A15_GenericWorkItem->IoPriorityInfo.IoPriority}!d!,{A10_GenericWorkItem} | {A11_qtype} | {A12_fltObject}
+235,0,Verbose,,,,GFL_TRACE_WORK,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] WorkSup.c(569) %!FUNC!:Work={A10_DeferredWorkItem}!p! QType={A11_qtype}!d! Instnc={A12_instance}!p! Routine={A13_DeferredWorkItem->DeferredWorkerRoutine}!p! Context={A14_DeferredWorkItem->Context}!p! IoPriority={A15_DeferredWorkItem->IoPriorityInfo.IoPriority}!d!,{A10_DeferredWorkItem} | {A11_qtype} | {A12_instance}
+236,0,Verbose,,,,GFL_TRACE_WORK,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] WorkSup.c(666) %!FUNC!:Work={A10_FltWorkItem}!p! QType={A11_FltWorkItem->QueueType}!d! FltObj={A12_FltWorkItem->FltObject}!p! Routine={A13_FltWorkItem->GenericWorkerRoutine}!p! Context={A14_FltWorkItem->Context}!p!,{A10_FltWorkItem}
+237,0,Verbose,,,,GFL_TRACE_WORK,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] WorkSup.c(714) %!FUNC!:Work={A10_FltWorkItem}!p! QType={A11_FltWorkItem->QueueType}!d! Instnc={A12_FltWorkItem->Instance}!p! Routine={A13_FltWorkItem->DeferredWorkerRoutine}!p! Context={A14_FltWorkItem->Context}!p!,{A10_FltWorkItem}
+238,0,Verbose,,,,GFL_TRACE_WORK,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] WorkSup.c(841) %!FUNC!:Work={A10_FltWorkItem}!p! QType={A11_QueueType}!d! FltObj={A12_FltObject}!p! Routine={A13_WorkerRoutine}!p! Context={A14_Context}!p! IoPriority={A15_FltWorkItem->IoPriorityInfo.IoPriority}!d!,{A10_FltWorkItem} | {A11_QueueType} | {A12_FltObject} | {A13_WorkerRoutine} | {A14_Context}
+239,0,Verbose,,,,GFL_TRACE_WORK,Windows 11,24H2,Pro,2024/10/2,26100.1742, [TL_%!LEVEL!] WorkSup.c(1022) %!FUNC!:Work={A10_FltWorkItem}!p! QType={A11_QueueType}!d! Instnc={A12_FltWorkItem->Instance}!p! Routine={A13_WorkerRoutine}!p! Context={A14_Context}!p! IoPriority={A15_FltWorkItem->IoPriorityInfo.IoPriority}!d!,{A10_FltWorkItem} | {A11_QueueType} | {A13_WorkerRoutine} | {A14_Context}
