@@ -1,0 +1,1092 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-DeviceAssociationService</Name>
+        <Metadata>
+            <Guid>{56C71C31-CFBD-4CDD-8559-505E042BBBE1}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\das.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\system32\das.dll</MessageFilePath>
+            <HelpLink></HelpLink>
+            <PublisherMessage>Microsoft-Windows-OneCore-DeviceAssociationService</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-DeviceAssociationService/Performance</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>1</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>das_Watchdog</Name>
+                    <Value>3000</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>das_Dispatcher</Name>
+                    <Value>4000</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>das_Query</Name>
+                    <Value>5000</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>das_Association</Name>
+                    <Value>7000</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>PerfTrackContext</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>DeviceAssociationService</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>query</Name>
+                    <Value>4</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>association</Name>
+                    <Value>8</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>log</Name>
+                    <Value>16</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>DeviceAssociationClient</Name>
+                    <Value>256</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>2500</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Task>das_Association</Task>
+                <Keyword>DeviceAssociationService log</Keyword>
+                <Message><![CDATA[
+Device Association (Pairing) Succeeded.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AepId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientProcessName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientPid" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsPersisted" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="IsManagingDevnodes" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="IsPerUser" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="PerUserSid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsPartOfSet" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="AssociationError" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProtocolError" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2501</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Task>das_Association</Task>
+                <Keyword>DeviceAssociationService log</Keyword>
+                <Message><![CDATA[
+Device Disassociation (Unpairing) Succeeded.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="pid" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="tid" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="timeout" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3500</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>das_Watchdog</Task>
+                <Keyword>DeviceAssociationService log</Keyword>
+                <Message><![CDATA[
+Device Association Service detected a fatal hang.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="pid" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="tid" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="timeout" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3501</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>das_Association</Task>
+                <Keyword>DeviceAssociationService log</Keyword>
+                <Message><![CDATA[
+Device Association Failed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AepId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientProcessName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientPid" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsPersisted" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="IsManagingDevnodes" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="IsPerUser" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="PerUserSid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsPartOfSet" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="AssociationError" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProtocolError" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3502</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>das_Association</Task>
+                <Keyword>DeviceAssociationService log</Keyword>
+                <Message><![CDATA[
+Device Disassociation (Unpairing) Failed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AepId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientProcessName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientPid" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AssociationError" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProtocolError" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3503</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>das_Query</Task>
+                <Keyword>DeviceAssociationService log</Keyword>
+                <Message><![CDATA[
+Device Association Service detected an endpoint discovery failure.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AbortingProtocolProvider" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientProcessName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientPid" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InternalError" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3504</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>das_Association</Task>
+                <Keyword>DeviceAssociationService log</Keyword>
+                <Message><![CDATA[
+Device Association Failed - Initialize OOB.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AepId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientProcessName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientPid" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AssociationError" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProtocolError" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3505</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>das_Association</Task>
+                <Keyword>DeviceAssociationService log</Keyword>
+                <Message><![CDATA[
+Device Association Failed - Enumerate Ceremonies.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AepId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientProcessName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientPid" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AssociationError" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProtocolError" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3506</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>das_Association</Task>
+                <Keyword>DeviceAssociationService log</Keyword>
+                <Message><![CDATA[
+Device Association Failed - Read Ceremony Data.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AepId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientProcessName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientPid" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AssociationError" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProtocolError" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3507</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>das_Association</Task>
+                <Keyword>DeviceAssociationService log</Keyword>
+                <Message><![CDATA[
+Device Association Failed - Write Ceremony Data.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AepId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientProcessName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientPid" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AssociationError" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProtocolError" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3508</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>das_Association</Task>
+                <Keyword>DeviceAssociationService log</Keyword>
+                <Message><![CDATA[
+Device Association Failed - Initialize Association.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AepId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AumId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientProcessName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientPid" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AssociationError" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProtocolError" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3509</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>das_Association</Task>
+                <Keyword>DeviceAssociationService log</Keyword>
+                <Message><![CDATA[
+Device Association Failed - Select Ceremony.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AepId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientProcessName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientPid" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AssociationError" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProtocolError" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3510</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>das_Association</Task>
+                <Keyword>DeviceAssociationService log</Keyword>
+                <Message><![CDATA[
+Device Association Failed - Finalize.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AepId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientProcessName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientPid" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AssociationError" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProtocolError" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4500</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Task>das_Dispatcher</Task>
+                <Keyword>DeviceAssociationService log</Keyword>
+                <Message><![CDATA[
+Device Association Service dispatched thread timed out.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="pid" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="tid" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="timeout" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5500</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceAssociationService/Performance</Channel>
+                <Level>Information</Level>
+                <Task>das_Query</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>DeviceAssociationService query</Keyword>
+                <Message><![CDATA[
+Device Association Service RPC create query has started.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DasContext" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5501</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceAssociationService/Performance</Channel>
+                <Level>Information</Level>
+                <Task>das_Query</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>DeviceAssociationService query</Keyword>
+                <Message><![CDATA[
+Device Association Service RPC create query has exited.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DasContext" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5502</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceAssociationService/Performance</Channel>
+                <Level>Information</Level>
+                <Task>das_Query</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>DeviceAssociationService query</Keyword>
+                <Message><![CDATA[
+Device Association Service create query has started (provider queries inclusive).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DasContext" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5503</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceAssociationService/Performance</Channel>
+                <Level>Information</Level>
+                <Task>das_Query</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>DeviceAssociationService query</Keyword>
+                <Message><![CDATA[
+Device Association Service create query has exited (provider queries inclusive).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DasContext" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5504</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceAssociationService/Performance</Channel>
+                <Level>Information</Level>
+                <Task>das_Query</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>DeviceAssociationService query</Keyword>
+                <Message><![CDATA[
+Device Association provider create query has started.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProviderName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DasContext" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5505</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceAssociationService/Performance</Channel>
+                <Level>Information</Level>
+                <Task>das_Query</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>DeviceAssociationService query</Keyword>
+                <Message><![CDATA[
+Device Association provider create query has exited.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProviderName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DasContext" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5700</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceAssociationService/Performance</Channel>
+                <Level>Information</Level>
+                <Task>das_Association</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>DeviceAssociationService association</Keyword>
+                <Message><![CDATA[
+Device Association Service create association context has started (provider inclusive).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DasContext" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5701</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceAssociationService/Performance</Channel>
+                <Level>Information</Level>
+                <Task>das_Association</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>DeviceAssociationService association</Keyword>
+                <Message><![CDATA[
+Device Association Service create association context has exited (provider inclusive).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DasContext" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5702</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceAssociationService/Performance</Channel>
+                <Level>Information</Level>
+                <Task>das_Association</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>DeviceAssociationService association</Keyword>
+                <Message><![CDATA[
+Device Association Service create association context has started (provider only).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DasContext" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5703</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceAssociationService/Performance</Channel>
+                <Level>Information</Level>
+                <Task>das_Association</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>DeviceAssociationService association</Keyword>
+                <Message><![CDATA[
+Device Association Service create association context has exited (provider only).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DasContext" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5704</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceAssociationService/Performance</Channel>
+                <Level>Information</Level>
+                <Task>das_Association</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>DeviceAssociationService association</Keyword>
+                <Message><![CDATA[
+Device Association Service enum association ceremonies has started (provider inclusive).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DasContext" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5705</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceAssociationService/Performance</Channel>
+                <Level>Information</Level>
+                <Task>das_Association</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>DeviceAssociationService association</Keyword>
+                <Message><![CDATA[
+Device Association Service enum association ceremonies has exited (provider inclusive).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DasContext" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5706</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceAssociationService/Performance</Channel>
+                <Level>Information</Level>
+                <Task>das_Association</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>DeviceAssociationService association</Keyword>
+                <Message><![CDATA[
+Device Association Service enum association ceremonies has started (provider only).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DasContext" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5707</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceAssociationService/Performance</Channel>
+                <Level>Information</Level>
+                <Task>das_Association</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>DeviceAssociationService association</Keyword>
+                <Message><![CDATA[
+Device Association Service enum association ceremonies has exited (provider only).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DasContext" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5708</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceAssociationService/Performance</Channel>
+                <Level>Information</Level>
+                <Task>das_Association</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>DeviceAssociationService association</Keyword>
+                <Message><![CDATA[
+Device Association Service select ceremony has started (provider inclusive).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DasContext" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5709</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceAssociationService/Performance</Channel>
+                <Level>Information</Level>
+                <Task>das_Association</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>DeviceAssociationService association</Keyword>
+                <Message><![CDATA[
+Device Association Service select ceremony has exited (provider inclusive).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DasContext" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5710</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceAssociationService/Performance</Channel>
+                <Level>Information</Level>
+                <Task>das_Association</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>DeviceAssociationService association</Keyword>
+                <Message><![CDATA[
+Device Association Service select ceremony ceremonies has started (provider only).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DasContext" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5711</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceAssociationService/Performance</Channel>
+                <Level>Information</Level>
+                <Task>das_Association</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>DeviceAssociationService association</Keyword>
+                <Message><![CDATA[
+Device Association Service select ceremony has exited (provider only).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DasContext" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5712</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceAssociationService/Performance</Channel>
+                <Level>Information</Level>
+                <Task>das_Association</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>DeviceAssociationService association</Keyword>
+                <Message><![CDATA[
+Device Association Service read ceremony data has started (provider inclusive).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DasContext" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5713</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceAssociationService/Performance</Channel>
+                <Level>Information</Level>
+                <Task>das_Association</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>DeviceAssociationService association</Keyword>
+                <Message><![CDATA[
+Device Association Service read ceremony data has exited (provider inclusive).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DasContext" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5714</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceAssociationService/Performance</Channel>
+                <Level>Information</Level>
+                <Task>das_Association</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>DeviceAssociationService association</Keyword>
+                <Message><![CDATA[
+Device Association Service read ceremony data ceremonies has started (provider only).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DasContext" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5715</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceAssociationService/Performance</Channel>
+                <Level>Information</Level>
+                <Task>das_Association</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>DeviceAssociationService association</Keyword>
+                <Message><![CDATA[
+Device Association Service read ceremony data has exited (provider only).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DasContext" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5716</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceAssociationService/Performance</Channel>
+                <Level>Information</Level>
+                <Task>das_Association</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>DeviceAssociationService association</Keyword>
+                <Message><![CDATA[
+Device Association Service write ceremony data has started (provider inclusive).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DasContext" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5717</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceAssociationService/Performance</Channel>
+                <Level>Information</Level>
+                <Task>das_Association</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>DeviceAssociationService association</Keyword>
+                <Message><![CDATA[
+Device Association Service write ceremony data has exited (provider inclusive).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DasContext" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5718</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceAssociationService/Performance</Channel>
+                <Level>Information</Level>
+                <Task>das_Association</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>DeviceAssociationService association</Keyword>
+                <Message><![CDATA[
+Device Association Service write ceremony data ceremonies has started (provider only).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DasContext" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5719</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceAssociationService/Performance</Channel>
+                <Level>Information</Level>
+                <Task>das_Association</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>DeviceAssociationService association</Keyword>
+                <Message><![CDATA[
+Device Association Service write ceremony data has exited (provider only).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DasContext" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5720</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceAssociationService/Performance</Channel>
+                <Level>Information</Level>
+                <Task>das_Association</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>DeviceAssociationService association</Keyword>
+                <Message><![CDATA[
+Device Association Service finalize ceremony has started (provider inclusive).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DasContext" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5721</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceAssociationService/Performance</Channel>
+                <Level>Information</Level>
+                <Task>das_Association</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>DeviceAssociationService association</Keyword>
+                <Message><![CDATA[
+Device Association Service finalize ceremony has exited (provider inclusive).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DasContext" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5722</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceAssociationService/Performance</Channel>
+                <Level>Information</Level>
+                <Task>das_Association</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>DeviceAssociationService association</Keyword>
+                <Message><![CDATA[
+Device Association Service finalize ceremony ceremonies has started (provider only).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DasContext" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5723</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceAssociationService/Performance</Channel>
+                <Level>Information</Level>
+                <Task>das_Association</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>DeviceAssociationService association</Keyword>
+                <Message><![CDATA[
+Device Association Service finalize ceremony has exited (provider only).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DasContext" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5724</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceAssociationService/Performance</Channel>
+                <Level>Information</Level>
+                <Task>das_Association</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>DeviceAssociationService association</Keyword>
+                <Message><![CDATA[
+Device Association Service finalize ceremony has started (provider inclusive).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DasContext" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5725</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceAssociationService/Performance</Channel>
+                <Level>Information</Level>
+                <Task>das_Association</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>DeviceAssociationService association</Keyword>
+                <Message><![CDATA[
+Device Association Service finalize ceremony has exited (provider inclusive).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DasContext" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5726</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceAssociationService/Performance</Channel>
+                <Level>Information</Level>
+                <Task>das_Association</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>DeviceAssociationService association</Keyword>
+                <Message><![CDATA[
+Device Association Service finalize ceremony ceremonies has started (provider only).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DasContext" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5727</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceAssociationService/Performance</Channel>
+                <Level>Information</Level>
+                <Task>das_Association</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>DeviceAssociationService association</Keyword>
+                <Message><![CDATA[
+Device Association Service finalize ceremony has exited (provider only).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DasContext" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5728</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceAssociationService/Performance</Channel>
+                <Level>Information</Level>
+                <Task>das_Association</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>DeviceAssociationService association</Keyword>
+                <Message><![CDATA[
+Device Association Service remove association has started (provider inclusive).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DasContext" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5729</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceAssociationService/Performance</Channel>
+                <Level>Information</Level>
+                <Task>das_Association</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>DeviceAssociationService association</Keyword>
+                <Message><![CDATA[
+Device Association Service remove association has exited (provider inclusive).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DasContext" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5730</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceAssociationService/Performance</Channel>
+                <Level>Information</Level>
+                <Task>das_Association</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>DeviceAssociationService association</Keyword>
+                <Message><![CDATA[
+Device Association Service remove association ceremonies has started (provider only).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DasContext" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5731</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceAssociationService/Performance</Channel>
+                <Level>Information</Level>
+                <Task>das_Association</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>DeviceAssociationService association</Keyword>
+                <Message><![CDATA[
+Device Association Service remove association has exited (provider only).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DasContext" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5732</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceAssociationService/Performance</Channel>
+                <Level>Information</Level>
+                <Task>das_Association</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>DeviceAssociationService association</Keyword>
+                <Message><![CDATA[
+Device Association Service close association has started (provider inclusive).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DasContext" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5733</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceAssociationService/Performance</Channel>
+                <Level>Information</Level>
+                <Task>das_Association</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>DeviceAssociationService association</Keyword>
+                <Message><![CDATA[
+Device Association Service close association has exited (provider inclusive).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DasContext" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5734</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceAssociationService/Performance</Channel>
+                <Level>Information</Level>
+                <Task>das_Association</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>DeviceAssociationService association</Keyword>
+                <Message><![CDATA[
+Device Association Service close association ceremonies has started (provider only).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DasContext" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5735</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceAssociationService/Performance</Channel>
+                <Level>Information</Level>
+                <Task>das_Association</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>DeviceAssociationService association</Keyword>
+                <Message><![CDATA[
+Device Association Service close association has exited (provider only).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DasContext" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5736</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceAssociationService/Performance</Channel>
+                <Level>Information</Level>
+                <Task>das_Association</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>DeviceAssociationService association</Keyword>
+                <Message><![CDATA[
+Device Association Service association has started (provider inclusive, entire association).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DasContext" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5737</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DeviceAssociationService/Performance</Channel>
+                <Level>Information</Level>
+                <Task>das_Association</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>DeviceAssociationService association</Keyword>
+                <Message><![CDATA[
+Device Association Service association has exited (provider inclusive, entire association).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DasContext" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

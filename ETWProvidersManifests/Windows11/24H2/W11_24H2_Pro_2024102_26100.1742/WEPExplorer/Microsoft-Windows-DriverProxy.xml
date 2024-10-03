@@ -1,0 +1,116 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-DriverProxy</Name>
+        <Metadata>
+            <Guid>{45C0E4CB-5120-5F84-0418-8A18ED702E9A}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\Microsoft-Windows-System-Events.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\system32\Microsoft-Windows-System-Events.dll</MessageFilePath>
+            <HelpLink></HelpLink>
+            <PublisherMessage>Microsoft-Windows-DriverProxy</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Dirver Proxy Performance</Message>
+                    <Path>Microsoft-Windows-DriverProxy/Performance</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Driver Proxy Operational</Message>
+                    <Path>Microsoft-Windows-DriverProxy/Operational</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Serviceability</Message>
+                    <Name>Task_DriverProxy_Serviceability</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>Performance</Message>
+                    <Name>Task_DriverProxy_Performance</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message>Log</Message>
+                    <Name>Task_DriverProxy_Log</Name>
+                    <Value>3</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Dirver Proxy Performance</Channel>
+                <Level>Information</Level>
+                <Task>Serviceability</Task>
+                <Message><![CDATA[
+Driver %2 Average Hot-Swap acquire rundown time in last log period(us):%3; Average Hot-Swap acquire rundown time(us):%4; Total rundown acquire count:%5; Total rundown acquire failure:%6;]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DriverNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Driver" inType="win:UnicodeString" outType="xs:string" length="DriverNameLength"/>
+  <data name="AvgServiceLockAcquisitionTimeInLastLogPeriodInMicroSeconds" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="AvgServiceLockAcquisitionTimeInMicroSeconds" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="TotalAcquisitionCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FailedAcquisitionCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Driver Proxy Operational</Channel>
+                <Level>Information</Level>
+                <Task>Performance</Task>
+                <Message><![CDATA[
+Driver %2 Last Hot-Swap result:%3 (LKG phase=%4); Last Hot-Swap total time (us):%5; Last Hot-Swap pre-process time (us):%6; Last Hot-Swap acquire rundown time (us):%7; Last Hot-Swap driver callback time with rundown lock held (us):%8; Last Hot-Swap post-process time (us):%9;]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DriverNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Driver" inType="win:UnicodeString" outType="xs:string" length="DriverNameLength"/>
+  <data name="LastServiceStatus" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="LastServiceFinalPhase" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LastServiceLockAcquisitionTimeTotalInMicroSeconds" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="LastServiceLockAcquisitionTimePreProcessPhaseInMicroSeconds" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="LastServiceLockAcquisitionTimeAcquireRundownPhaseInMicroSeconds" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="LastServiceLockAcquisitionTimeStalledPhaseInMicroSeconds" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="LastServiceLockAcquisitionTimePostProcessPhaseInMicroSeconds" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Driver Proxy Operational</Channel>
+                <Level>Information</Level>
+                <Task>Log</Task>
+                <Message><![CDATA[
+Driver %2: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DriverNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Driver" inType="win:UnicodeString" outType="xs:string" length="DriverNameLength"/>
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

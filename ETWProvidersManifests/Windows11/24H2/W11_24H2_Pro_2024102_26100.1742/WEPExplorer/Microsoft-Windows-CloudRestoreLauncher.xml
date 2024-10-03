@@ -1,0 +1,1132 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-CloudRestoreLauncher</Name>
+        <Metadata>
+            <Guid>{DC327E90-7748-58ED-F39C-8A8987CFAC58}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\CloudRestoreLauncher.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\system32\CloudRestoreLauncher.dll</MessageFilePath>
+            <HelpLink></HelpLink>
+            <PublisherMessage>Microsoft-Windows-CloudRestoreLauncher</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-CloudRestoreLauncher/Operational</Message>
+                    <Path>Microsoft-Windows-CloudRestoreLauncher/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Error %2 occurred. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+  <data name="File" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A backup operation has started. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="activityId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="cv" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Trigger" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A backup operation has completed. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="activityId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="cv" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Trigger" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A restore operation has started. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="activityId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="cv" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Trigger" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A restore operation has completed. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="activityId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="cv" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Trigger" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+Invoking backup restore handler %2 at index %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HandlerIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HandlerId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Skipping backup restore handler %2 at index %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HandlerIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HandlerId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+Configuration is using variant %1 with payload %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Variant" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Payload" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Manifest-based %1 operation failed to initialize with error %2. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="OperationMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+Manifest-based %1 operation processed a backup unit and returned status %2. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="OperationMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StatusCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ManifestId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Scope" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Manifest-based %1 operation failed to process a backup with error %2. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="OperationMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+  <data name="StatusCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ManifestId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Scope" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+The backup operation is associated with a file. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ItemId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ContentUri" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SyncRootRelativePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+The backup operation is associated with a file. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LocalPath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+The restore operation is associated with a file. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ItemId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ContentUri" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SyncRootRelativePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+The restore operation is associated with a file. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LocalPath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+Loaded cloud data for %1. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TypeName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Version" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="IsDefault" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Unable to load cloud data for %1. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TypeName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Version" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="IsDefault" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+Saved cloud data for %1. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TypeName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LoadedVersion" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="SavedVersion" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+Windows backup preferences settings Cloud store APIs Call Event. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Operation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+Windows backup preferences settings Cloud store APIs Data Event. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Operation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CloudStorePolicyOption" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+Information Message. See event details for message details]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HandlerType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>22</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+The backup operation is associated with contrast theme. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="type" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="currentThemePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="contrastThemePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="baseContrastThemeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="customThemeName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>23</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+The restore operation is associated with contrast theme. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="type" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="currentThemePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="contrastThemePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="baseContrastThemeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="customThemeName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>24</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+The restore operation is associated with contrast theme. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContrastThemeLocalPath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+The backup operation is associated with Date and time. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="isAutoTimeZoneEnabled" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="timezone" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>26</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+The restore operation is associated with Date and time. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="isAutoTimeZoneEnabled" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="timezone" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>27</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+Background Color]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HandlerType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Red" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Green" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Blue" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>28</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+Position of the Picture]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HandlerType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Position" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>29</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+Updated backup time in device profile %1 and sent to server transport for delivery to cloud.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProfileId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Updated backup time in device profile %1 in local cache; transport not available for delivery to cloud.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProfileId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>31</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Error %1 occurred while attempting to update backup time in device profile %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+  <data name="ProfileId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Stage" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+The backup operation is associated with personalization theme. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="type" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="basePersonalizationThemeName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>33</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The restore service identified %1 placeholder tiles requiring replacement.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlaceholderCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>34</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The restore service was resumed to monitor placeholders.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>35</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%1 for %2: Product %3 with tile %4 was %5 with heuristic %6 and replaced by %7.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Origin" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OriginContext" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AppIdOrProducCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TileId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RemoveKind" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Heuristic" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ReplacedByTileId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>36</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+The backup operation is associated with Secondary Accounts. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="accountName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="safeCustomerID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>37</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+The restore operation is associated with Secondary Accounts. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="accountName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="safeCustomerID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>38</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+The API data returned to backup associated with Secondary Accounts. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="propertyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="propertyValue" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>39</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Processing packaged products started]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>40</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Processing packaged products stopped]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>41</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Processing unpackaged products started]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>42</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Processing unpackaged products stopped]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>43</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Creating process %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CommandLine" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>44</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Created process %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>45</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Process %1 exited.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>46</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+The restore operation is associated with personalization theme. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="type" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="basePersonalizationThemeName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>47</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+The backup operation is associated with ColorSettings. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AppColorMode" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="SystemColorMode" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="enableTransperency" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="colorPrevalnce" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="accentColorMode" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="dwmColorPrevalence" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Red" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Green" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Blue" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>48</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+The restore operation is associated with ColorSettings. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AppColorMode" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="SystemColorMode" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="enableTransperency" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="colorPrevalnce" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="accentColorMode" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="dwmColorPrevalence" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Red" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Green" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Blue" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>49</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+An app restore operation has started.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>50</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A app restore operation has completed.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Consulting compat providers started.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>52</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Consulting compat providers stopped. Store returned: %1; Appraiser returned: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StoreResult" inType="win:Int32" outType="win:Hresult"/>
+  <data name="AppraiserResult" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>53</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+The backup operation is associated with Lunar Calendar Settings. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CalendarType" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>54</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+The restore operation is associated with Lunar Calendar Settings. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CalendarType" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>55</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+The backup operation is associated with Nightlight settings. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="automaticOnSchedule" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="automaticOnSunset" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="manualScheduleBlueLightReductionOnHours" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="manualScheduleBlueLightReductionOffHours" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="targetColorTemperature" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="sunsetHours" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="sunriseHours" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="previewColorTemperatureChanges" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="darkMode" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>56</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+The backup operation is associated with Nightlight settings. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="state" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="source" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="isSupported" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>57</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+The restore operation is associated with Nightlight settings. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="automaticOnSchedule" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="automaticOnSunset" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="manualScheduleBlueLightReductionOnHours" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="manualScheduleBlueLightReductionOffHours" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="targetColorTemperature" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="sunsetHours" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="sunriseHours" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="previewColorTemperatureChanges" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="darkMode" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>58</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+The restore operation is associated with Nightlight settings. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="state" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="source" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="isSupported" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>59</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+The restore operation is associated with Sound settings. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Operation" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>60</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+The restore operation data, Associated with Sound settings. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CurrentSoundSchemeFile" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DefaultSoundSchemeFile" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>61</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+The backup operation is associated with Ink Pen Settings. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="singleClickOverride" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="singleClickPenWorkspaceVerb" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="doubleClickOverride" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="doubleClickPenWorkspaceVerb" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="longPressOverride" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="longPressPenWorkspaceVerb" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="penWorkspaceAppLaunchOnPenDetachEnabled" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="penEnablePenButtonOverride" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="singleClickCustomAppPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="doubleClickCustomAppPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="longPressCustomAppPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="singleClickCustomAppID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="doubleClickCustomAppID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="longPressCustomAppID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>62</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+The restore operation is associated with Ink Pen Settings. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="singleClickOverride" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="singleClickPenWorkspaceVerb" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="doubleClickOverride" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="doubleClickPenWorkspaceVerb" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="longPressOverride" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="longPressPenWorkspaceVerb" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="penWorkspaceAppLaunchOnPenDetachEnabled" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="penEnablePenButtonOverride" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="singleClickCustomAppPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="doubleClickCustomAppPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="longPressCustomAppPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="singleClickCustomAppID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="doubleClickCustomAppID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="longPressCustomAppID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>63</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+Ink Pen Setting Status. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Setting" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>64</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+The backup operation is associated with Background Slideshow Settings. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="OneDrivefolder" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Shuffle" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="TimeInMillSec" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>65</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+The restore operation is associated with Background Slideshow Settings. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="OneDrivefolder" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Shuffle" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="TimeInMillSec" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>66</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The restore operation Error, Associated with Sound settings. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LogMessage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RegKeyPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>67</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+CPL Excluded Event Name, Associated with Sound settings. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LogMessage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Event Name" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>68</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+The backup operation is associated with Device settings. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SettingName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SettingDataValue" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>69</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+The restore operation is associated with Device settings. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SettingName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SettingDataValue" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>70</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+The backup operation is associated with Device settings. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Operation" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>71</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+The restore operation is associated with Device settings. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Operation" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>72</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+The Bond Schema Activity backup associated with Device settings restore opration. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Operation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LogMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>73</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+The Bond Schema Activity backup associated with Device settings backup opration. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Operation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LogMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>74</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CloudRestoreLauncher/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The Skipping operation is associated with Device settings. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Operation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LogMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

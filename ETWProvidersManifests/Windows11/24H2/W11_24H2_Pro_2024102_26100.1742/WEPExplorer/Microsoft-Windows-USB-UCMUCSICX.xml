@@ -1,0 +1,72 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-USB-UCMUCSICX</Name>
+        <Metadata>
+            <Guid>{569D11AA-5068-5EE5-DA22-CE541C0B1481}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\drivers\UcmUcsiCx.sys</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\system32\drivers\UcmUcsiCx.sys</MessageFilePath>
+            <HelpLink></HelpLink>
+            <PublisherMessage>Microsoft-Windows-USB-UCMUCSICX</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-USB-UCMUCSICX/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Failure Encountered</Message>
+                    <Name>UCMUCSICX_FAILURE</Name>
+                    <Value>1</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Default</Name>
+                    <Value>1</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-USB-UCMUCSICX/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Failure Encountered</Task>
+                <Keyword>Default</Keyword>
+                <Message><![CDATA[
+UcmUcsiCx device has encountered a failure. Please contact the manufacturer of your computer or device to investigate.                     
+Device Instance ID: %1                     
+Service: %2                     
+Failure Type: %3                     
+UCSI Command: %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_DeviceInstanceId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="fid_Service" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="fid_FailureType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="fid_FailureSubType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="fid_AssociatedUcsiCommand" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="fid_UcsiCommand" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="fid_Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

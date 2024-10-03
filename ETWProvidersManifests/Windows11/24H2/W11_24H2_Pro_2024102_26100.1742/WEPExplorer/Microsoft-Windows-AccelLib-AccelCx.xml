@@ -1,0 +1,90 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-AccelLib-AccelCx</Name>
+        <Metadata>
+            <Guid>{9C4CF201-DD11-5E35-9DE5-2C2146832011}</Guid>
+            <ResourceFilePath>%systemroot%\system32\drivers\WinAccelCx.sys</ResourceFilePath>
+            <ParameterFilePath>%systemroot%\system32\drivers\WinAccelCx.sys</ParameterFilePath>
+            <MessageFilePath>%systemroot%\system32\drivers\WinAccelCx.sys</MessageFilePath>
+            <HelpLink></HelpLink>
+            <PublisherMessage>Microsoft-Windows-AccelLib-AccelCx</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-AccelLib-AccelCx/Operational</Message>
+                    <Path>Microsoft-Windows-AccelLib-AccelCx/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ms:ReservedKeyword44</Name>
+                    <Value>17592186044416</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ms:Telemetry</Name>
+                    <Value>35184372088832</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ms:Measures</Name>
+                    <Value>70368744177664</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ms:CriticalData</Name>
+                    <Value>140737488355328</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AccelLib-AccelCx/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AccelCx Accelerator Added. Type %1, SubType %2, InstanceId %3, NumaNode %4, AcceleratorCountOnThisNode %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HardwareType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HardwareSubtype" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InstanceId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NumaNode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AcceleratorCountOnThisNode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AccelLib-AccelCx/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+AccelCx Accelerator Removed. Type %1, SubType %2, InstanceId %3, NumaNode %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HardwareType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HardwareSubtype" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InstanceId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NumaNode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

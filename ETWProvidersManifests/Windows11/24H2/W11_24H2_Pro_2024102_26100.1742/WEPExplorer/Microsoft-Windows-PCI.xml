@@ -1,0 +1,145 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-PCI</Name>
+        <Metadata>
+            <Guid>{1A9443D4-B099-44D6-8EB1-829B9C2FE290}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\Microsoft-Windows-System-Events.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\system32\Microsoft-Windows-System-Events.dll</MessageFilePath>
+            <HelpLink></HelpLink>
+            <PublisherMessage>Microsoft-Windows-PCI</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>PCI Diagnostic</Message>
+                    <Path>Microsoft-Windows-PCI/Diagnostic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>PCI Operational</Message>
+                    <Path>Microsoft-Windows-PCI/Operational</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Log</Message>
+                    <Name>Task_PCI_Log</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>AspmErrataRundown</Name>
+                    <Value>10</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Diagnostic</Message>
+                    <Name>PciDiag</Name>
+                    <Value>1</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>PCI Operational</Channel>
+                <Level>Information</Level>
+                <Task>Log</Task>
+                <Keyword>Diagnostic</Keyword>
+                <Message><![CDATA[
+%6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Category" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Rid" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Secondary" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="PreciseTime" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Qpc" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>PCI Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Log</Task>
+                <Keyword>Diagnostic</Keyword>
+                <Message><![CDATA[
+%6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Category" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Rid" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Secondary" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="PreciseTime" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Qpc" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>PCI Operational</Channel>
+                <Level>Error</Level>
+                <Task>Log</Task>
+                <Keyword>Diagnostic</Keyword>
+                <Message><![CDATA[
+%6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Category" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Rid" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Secondary" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="PreciseTime" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Qpc" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>PCI Operational</Channel>
+                <Level>Information</Level>
+                <Task>AspmErrataRundown</Task>
+                <Keyword>Diagnostic</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

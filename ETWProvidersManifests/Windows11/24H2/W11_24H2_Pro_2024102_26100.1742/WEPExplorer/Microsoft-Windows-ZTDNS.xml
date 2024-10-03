@@ -1,0 +1,277 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-ZTDNS</Name>
+        <Metadata>
+            <Guid>{8507CD07-F18B-54F0-B871-23C43A5BF118}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\drivers\ztdns.sys</ResourceFilePath>
+            <ParameterFilePath>%SystemRoot%\system32\drivers\ztdns.sys</ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\system32\drivers\ztdns.sys</MessageFilePath>
+            <HelpLink></HelpLink>
+            <PublisherMessage>Microsoft-Windows-ZTDNS</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Operational</Message>
+                    <Path>Microsoft-Windows-ZTDNS/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>PermittedConnections</Message>
+                    <Path>Microsoft-Windows-ZTDNS/PermittedConnections</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>BlockedConnections</Message>
+                    <Path>Microsoft-Windows-ZTDNS/BlockedConnections</Path>
+                    <Index>2</Index>
+                    <Id>18</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>3</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>Task_Classify</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>Task_Notify</Name>
+                    <Value>2</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message></Message>
+                    <Name>Opcode_Classify</Name>
+                    <Value>10</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>Opcode_Notify</Name>
+                    <Value>20</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Keyword_Classify_Permit</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Keyword_Classify_Block</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Keyword_Trusted_Servers_Update</Name>
+                    <Value>4</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Keyword_Exceptions_Removal</Name>
+                    <Value>8</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Keyword_Exceptions_Addition</Name>
+                    <Value>16</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Keyword_State_Update</Name>
+                    <Value>32</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Keyword_Service_Start</Name>
+                    <Value>64</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Keyword_Service_Stop</Name>
+                    <Value>128</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>PermittedConnections</Channel>
+                <Level>Information</Level>
+                <Task>Task_Classify</Task>
+                <Opcode>Opcode_Classify</Opcode>
+                <Keyword>Keyword_Classify_Permit</Keyword>
+                <Message><![CDATA[
+PERMIT - Connection [%2]:%3 -> [%5]:%6 by process (%8) %9 because of %10 %11 from service %12]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="LocalPort" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+  <data name="RemotePort" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Protocol" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProcessId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ProcessPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PermitType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PermitInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServiceName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>BlockedConnections</Channel>
+                <Level>Information</Level>
+                <Task>Task_Classify</Task>
+                <Opcode>Opcode_Classify</Opcode>
+                <Keyword>Keyword_Classify_Block</Keyword>
+                <Message><![CDATA[
+BLOCK - Connection [%2]:%3 -> [%5]:%6 by process (%8) %9 from service %10]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="LocalPort" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+  <data name="RemotePort" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Protocol" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProcessId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ProcessPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServiceName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Task_Notify</Task>
+                <Opcode>Opcode_Notify</Opcode>
+                <Keyword>Keyword_Trusted_Servers_Update</Keyword>
+                <Message><![CDATA[
+UPDATE - Trusted servers by process (%1) %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ProcessPath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Task_Notify</Task>
+                <Opcode>Opcode_Notify</Opcode>
+                <Keyword>Keyword_Exceptions_Removal</Keyword>
+                <Message><![CDATA[
+REMOVE - %1%2 by process (%3) %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ExceptionsUpdateType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ExceptionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ProcessPath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Task_Notify</Task>
+                <Opcode>Opcode_Notify</Opcode>
+                <Keyword>Keyword_Exceptions_Addition</Keyword>
+                <Message><![CDATA[
+ADD - %1%2 by process (%3) %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ExceptionsUpdateType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ExceptionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ProcessPath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Task_Notify</Task>
+                <Opcode>Opcode_Notify</Opcode>
+                <Keyword>Keyword_State_Update</Keyword>
+                <Message><![CDATA[
+UPDATE - State to %1 by process (%2) %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ServiceState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProcessId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ProcessPath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Task_Notify</Task>
+                <Opcode>Opcode_Notify</Opcode>
+                <Keyword>Keyword_Service_Start</Keyword>
+                <Message><![CDATA[
+START - ZTDNS service with status %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Task_Notify</Task>
+                <Opcode>Opcode_Notify</Opcode>
+                <Keyword>Keyword_Service_Stop</Keyword>
+                <Message><![CDATA[
+STOP - ZTDNS service with status %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
