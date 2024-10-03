@@ -1,0 +1,127 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Client-License-Flexible-Platform</Name>
+        <Metadata>
+            <Guid>{6E0DF32C-7F11-54F7-E8EE-5AD4032727CE}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\fclip.exe</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\system32\fclip.exe</MessageFilePath>
+            <HelpLink></HelpLink>
+            <PublisherMessage>Microsoft-Windows-FlexibleClip</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Client-License-Flexible-Platform/Diagnostic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Client-License-Flexible-Platform/Debug</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Client-License-Flexible-Platform/Admin</Path>
+                    <Index>2</Index>
+                    <Id>18</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Critical</Message>
+                    <Name>win:Critical</Name>
+                    <Value>1</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>FClip Keyword</Message>
+                    <Name>FCLIP_KEYWORD</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>FClip Perf Keyword</Message>
+                    <Name>FCLIP_PERF_KEYWORD</Name>
+                    <Value>2</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Client-License-Flexible-Platform/Admin</Channel>
+                <Level>Critical</Level>
+                <Keyword>FClip Keyword</Keyword>
+                <Message><![CDATA[
+FClip exited at stage %1 with result %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Client-License-Flexible-Platform/Admin</Channel>
+                <Level>Information</Level>
+                <Keyword>FClip Keyword</Keyword>
+                <Message><![CDATA[
+FClip invocation of SPP exited at stage %1 with result %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Client-License-Flexible-Platform/Admin</Channel>
+                <Level>Information</Level>
+                <Keyword>FClip Keyword</Keyword>
+                <Message><![CDATA[
+Task has been scheduled with interval of %1 seconds with result %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="interval" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HRESULT" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>103</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Client-License-Flexible-Platform/Admin</Channel>
+                <Level>Information</Level>
+                <Keyword>FClip Keyword</Keyword>
+                <Message><![CDATA[
+User notification completed with codes %1 and %2: Number of sessions %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="HR2" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="SessionCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

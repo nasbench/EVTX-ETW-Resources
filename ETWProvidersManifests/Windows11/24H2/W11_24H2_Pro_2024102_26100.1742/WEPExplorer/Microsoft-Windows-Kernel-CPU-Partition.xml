@@ -1,0 +1,130 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Kernel-CPU-Partition</Name>
+        <Metadata>
+            <Guid>{3A493674-937F-5A23-F598-D56B9BD10D28}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\Microsoft-Windows-System-Events.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\system32\Microsoft-Windows-System-Events.dll</MessageFilePath>
+            <HelpLink></HelpLink>
+            <PublisherMessage>Microsoft-Windows-Kernel-CPU-Partition</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-Kernel-CPU-Partition/Analytic</Message>
+                    <Path>Microsoft-Windows-Kernel-CPU-Partition/Analytic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>CPU Partition violation</Message>
+                    <Name>CPU_PARTITION_TASK_VIOLATION</Name>
+                    <Value>1</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>An affinitization request violated CPU Partitions</Message>
+                    <Name>AffinityViolation</Name>
+                    <Value>11</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>A DPC scheduling request violated CPU Partitions</Message>
+                    <Name>DpcSchedulingViolation</Name>
+                    <Value>12</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>A generic DPC call request violated CPU Partitions</Message>
+                    <Name>GenericDpcViolation</Name>
+                    <Value>13</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>CpuPartitionAffinityViolation</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>CpuPartitionDpcViolation</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>CpuPartitionGenericDpcViolation</Name>
+                    <Value>4</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-CPU-Partition/Analytic</Channel>
+                <Level>Warning</Level>
+                <Task>CPU Partition violation</Task>
+                <Opcode>An affinitization request violated CPU Partitions</Opcode>
+                <Keyword>CpuPartitionAffinityViolation</Keyword>
+                <Message><![CDATA[
+An affinitization request (Kernel = %1) for the thread with TID %2 violated CPU Partitions with the following affinity: %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="KernelAffinitization" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ThreadID" inType="win:UInt32" outType="win:TID"/>
+  <data name="GroupCount" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <struct name="RequestedAffinity" count="GroupCount">
+    <data name="Group" inType="win:UInt16" outType="xs:unsignedShort"/>
+    <data name="Mask" inType="win:Pointer" outType="win:HexInt64"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-CPU-Partition/Analytic</Channel>
+                <Level>Warning</Level>
+                <Task>CPU Partition violation</Task>
+                <Opcode>A DPC scheduling request violated CPU Partitions</Opcode>
+                <Keyword>CpuPartitionDpcViolation</Keyword>
+                <Message><![CDATA[
+A DPC (Pointer = %1) was scheduled on processor %2, across CPU Partition reservations.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeferredRoutineAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="RequestedProcessorNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-CPU-Partition/Analytic</Channel>
+                <Level>Warning</Level>
+                <Task>CPU Partition violation</Task>
+                <Opcode>A generic DPC call request violated CPU Partitions</Opcode>
+                <Keyword>CpuPartitionGenericDpcViolation</Keyword>
+                <Message><![CDATA[
+A DPC (Pointer = %1) was scheduled as a generic DPC call, across CPU Partition reservations.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeferredRoutineAddress" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

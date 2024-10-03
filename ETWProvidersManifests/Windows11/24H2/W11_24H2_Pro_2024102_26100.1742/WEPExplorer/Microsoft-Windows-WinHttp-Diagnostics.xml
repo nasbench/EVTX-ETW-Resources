@@ -1,0 +1,74 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-WinHttp-Diagnostics</Name>
+        <Metadata>
+            <Guid>{64DE121B-5F08-5853-AB48-7758F2EA2DD3}</Guid>
+            <ResourceFilePath>%windir%\system32\winhttp.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%windir%\system32\winhttp.dll</MessageFilePath>
+            <HelpLink></HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-WebIO-DiagInfo</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>HttpDiagInfoKeyword</Name>
+                    <Value>1</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>0</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-WebIO-DiagInfo</Channel>
+                <Level>Information</Level>
+                <Keyword>HttpDiagInfoKeyword</Keyword>
+                <Message><![CDATA[
+Http Diag Msg ProcessName %1 ModuleName %2 EventGuid %3 HttpProtVersion %4 Transport %5 Host %6 Path %7 HttpMethod %8 HttpStatus %9 FaultReason %10 FaultDescription %11 ErrorCode %12 ParseBuffer %13]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ModuleName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EventGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="HttpProtVersion" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Transport" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Host" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Path" inType="win:AnsiString" outType="xs:string"/>
+  <data name="HttpMethod" inType="win:AnsiString" outType="xs:string"/>
+  <data name="HttpStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FaultReason" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FaultCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ParseBuffer" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

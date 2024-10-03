@@ -1,0 +1,286 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-ReFsDedupSvc</Name>
+        <Metadata>
+            <Guid>{596CB176-FB71-587A-8FFB-F5CF15EE1E36}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\ReFsDedupSvc.Exe</ResourceFilePath>
+            <ParameterFilePath>%SystemRoot%\system32\ReFsDedupSvc.Exe</ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\system32\ReFsDedupSvc.exe</MessageFilePath>
+            <HelpLink></HelpLink>
+            <PublisherMessage>Microsoft-Windows-ReFsDedupSvc</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-ReFsDedupSvc/Operational</Message>
+                    <Path>Microsoft-Windows-ReFsDedupSvc/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Status</Message>
+                    <Name>Status</Name>
+                    <Value>1</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>ReFs Dedup Service</Message>
+                    <Name>svc</Name>
+                    <Value>16</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>ReFs Dedup Job</Message>
+                    <Name>job</Name>
+                    <Value>32</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>ReFs Dedup Volume</Message>
+                    <Name>vol</Name>
+                    <Value>64</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ReFsDedupSvc/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Status</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>ReFs Dedup Service</Keyword>
+                <Message><![CDATA[
+ReFs Dedup Service Started]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ReFsDedupSvc/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Status</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>ReFs Dedup Service</Keyword>
+                <Message><![CDATA[
+ReFs Dedup Service Stopped.
+%1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ReFsDedupSvc/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Status</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>ReFs Dedup Job ReFs Dedup Volume</Keyword>
+                <Message><![CDATA[
+ReFs Dedup/Compression job Started.
+%1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-ReFsDedupSvc/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Status</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>ReFs Dedup Job ReFs Dedup Volume</Keyword>
+                <Message><![CDATA[
+ReFs Dedup/Compression job Stopped.
+%1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ReFsDedupSvc/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Status</Task>
+                <Keyword>ReFs Dedup Volume</Keyword>
+                <Message><![CDATA[
+ReFs Dedup/Compression schedule updated.
+%1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ReFsDedupSvc/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Status</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>ReFs Dedup Volume</Keyword>
+                <Message><![CDATA[
+ReFs Dedup Service started monitoring a volume.
+%1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ReFsDedupSvc/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Status</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>ReFs Dedup Volume</Keyword>
+                <Message><![CDATA[
+ReFs Dedup Service stopped monitoring a volume.
+%1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ReFsDedupSvc/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Status</Task>
+                <Keyword>ReFs Dedup Job ReFs Dedup Volume</Keyword>
+                <Message><![CDATA[
+ReFs Dedup/Compression job exceeded maximum run time.
+%1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ReFsDedupSvc/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Status</Task>
+                <Keyword>ReFs Dedup Volume</Keyword>
+                <Message><![CDATA[
+ReFs Dedup service detected corrupt schedule data in volume.
+%1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ReFsDedupSvc/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Status</Task>
+                <Keyword>ReFs Dedup Volume</Keyword>
+                <Message><![CDATA[
+ReFs Dedup service detected corrupt results data in volume.
+%1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ReFsDedupSvc/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Status</Task>
+                <Keyword>ReFs Dedup Volume</Keyword>
+                <Message><![CDATA[
+ReFs Dedup service detected corrupt state.
+%1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ReFsDedupSvc/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Status</Task>
+                <Keyword>ReFs Dedup Volume</Keyword>
+                <Message><![CDATA[
+ReFs Dedup/Compression settings updated for volume.
+%1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ReFsDedupSvc/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Status</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>ReFs Dedup Job ReFs Dedup Volume</Keyword>
+                <Message><![CDATA[
+ReFs Dedup/Compression job Failed.
+%1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ReFsDedupSvc/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Status</Task>
+                <Keyword>ReFs Dedup Volume</Keyword>
+                <Message><![CDATA[
+ReFs Dedup scrub schedule updated.
+%1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ReFsDedupSvc/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Status</Task>
+                <Keyword>ReFs Dedup Volume</Keyword>
+                <Message><![CDATA[
+ReFs Dedup service detected corrupt scrub schedule data in volume.
+%1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

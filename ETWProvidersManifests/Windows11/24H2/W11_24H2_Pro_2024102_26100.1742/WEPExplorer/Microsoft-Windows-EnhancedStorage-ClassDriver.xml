@@ -1,0 +1,338 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-EnhancedStorage-ClassDriver</Name>
+        <Metadata>
+            <Guid>{F6CF91BE-E7D7-57D6-2A3D-278CA406D190}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\drivers\EhStorClass.sys</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\system32\drivers\EhStorClass.sys</MessageFilePath>
+            <HelpLink></HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-EnhancedStorage-EhStorClass/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>101</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-EnhancedStorage-EhStorClass/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Enhanced storage state changed on device with Class Disk Device Guid: %5.                    
+Device type: %6                    
+Previous state: %7                    
+New state: %8]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PathID" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="TargetID" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="LUN" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ClassDeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="DeviceType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="OldState" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="NewState" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-EnhancedStorage-EhStorClass/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Enhanced storage device with Class Disk Device Guid: %5 failed command: %6.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PathID" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="TargetID" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="LUN" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ClassDeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Command" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="Parameter1Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter1Value" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Parameter2Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter2Value" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Parameter3Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter3Value" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Parameter4Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter4Value" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>103</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-EnhancedStorage-EhStorClass/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Enhanced storage device with Class Disk Device Guid: %5 was surpise removed.                    
+Device type: %6                    
+Device state: %7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PathID" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="TargetID" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="LUN" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ClassDeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="DeviceType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="DeviceState" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>104</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-EnhancedStorage-EhStorClass/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Enhanced storage device with Class Disk Device Guid: %5 entered D0 power state.                    
+Device type: %6                    
+Device state: %7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PathID" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="TargetID" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="LUN" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ClassDeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="DeviceType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="DeviceState" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>105</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-EnhancedStorage-EhStorClass/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Enhanced storage device with Class Disk Device Guid: %5 exited D0 power state.                    
+Device type: %6                    
+Device state: %7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PathID" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="TargetID" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="LUN" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ClassDeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="DeviceType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="DeviceState" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>106</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-EnhancedStorage-EhStorClass/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Storage device PDO capabilities discovered on Class Disk Device Guid: %5.                    
+Device PDO Capabilities: %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PathID" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="TargetID" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="LUN" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ClassDeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="DevicePdoCaps" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>107</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-EnhancedStorage-EhStorClass/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The following informational event has occurred on Storage device with Class Disk Device Guid: %5.                    
+Message: %6                    
+Parameter1Name: %7                    
+Parameter1Value: %8                    
+Parameter2Name: %9                    
+Parameter2Value: %10                    
+Parameter3Name: %11                    
+Parameter3Value: %12                    
+Parameter4Name: %13                    
+Parameter4Value: %14                    
+Parameter5Name: %15                    
+Parameter5Value: %16                    
+Parameter6Name: %17                    
+Parameter6Value: %18                    
+Parameter7Name: %19                    
+Parameter7Value: %20                    
+Parameter8Name: %21                    
+Parameter8Value: %22]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PathID" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="TargetID" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="LUN" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ClassDeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter1Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter1Value" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Parameter2Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter2Value" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Parameter3Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter3Value" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Parameter4Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter4Value" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Parameter5Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter5Value" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Parameter6Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter6Value" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Parameter7Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter7Value" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Parameter8Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter8Value" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>108</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-EnhancedStorage-EhStorClass/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The following warning event has occurred on Storage device with Class Disk Device Guid: %5.                    
+Message: %6                    
+Parameter1Name: %7                    
+Parameter1Value: %8                    
+Parameter2Name: %9                    
+Parameter2Value: %10                    
+Parameter3Name: %11                    
+Parameter3Value: %12                    
+Parameter4Name: %13                    
+Parameter4Value: %14                    
+Parameter5Name: %15                    
+Parameter5Value: %16                    
+Parameter6Name: %17                    
+Parameter6Value: %18                    
+Parameter7Name: %19                    
+Parameter7Value: %20                    
+Parameter8Name: %21                    
+Parameter8Value: %22]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PathID" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="TargetID" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="LUN" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ClassDeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter1Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter1Value" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Parameter2Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter2Value" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Parameter3Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter3Value" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Parameter4Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter4Value" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Parameter5Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter5Value" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Parameter6Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter6Value" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Parameter7Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter7Value" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Parameter8Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter8Value" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>109</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-EnhancedStorage-EhStorClass/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The following error event has occurred on Storage device with Class Disk Device Guid: %5.                    
+Message: %6                    
+Parameter1Name: %7                    
+Parameter1Value: %8                    
+Parameter2Name: %9                    
+Parameter2Value: %10                    
+Parameter3Name: %11                    
+Parameter3Value: %12                    
+Parameter4Name: %13                    
+Parameter4Value: %14                    
+Parameter5Name: %15                    
+Parameter5Value: %16                    
+Parameter6Name: %17                    
+Parameter6Value: %18                    
+Parameter7Name: %19                    
+Parameter7Value: %20                    
+Parameter8Name: %21                    
+Parameter8Value: %22]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PortNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PathID" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="TargetID" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="LUN" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ClassDeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter1Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter1Value" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Parameter2Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter2Value" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Parameter3Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter3Value" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Parameter4Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter4Value" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Parameter5Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter5Value" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Parameter6Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter6Value" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Parameter7Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter7Value" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Parameter8Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Parameter8Value" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

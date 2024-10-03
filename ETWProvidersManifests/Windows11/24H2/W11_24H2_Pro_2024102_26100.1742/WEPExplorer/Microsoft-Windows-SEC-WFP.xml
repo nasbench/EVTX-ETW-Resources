@@ -1,0 +1,126 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-SEC-WFP</Name>
+        <Metadata>
+            <Guid>{62834E12-795F-5AB2-B404-8D6D870DBBEB}</Guid>
+            <ResourceFilePath>%SystemRoot%\System32\Drivers\mssecwfp.sys</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\System32\Drivers\mssecwfp.sys</MessageFilePath>
+            <HelpLink></HelpLink>
+            <PublisherMessage>Microsoft-Windows-SEC-WFP</PublisherMessage>
+            <Channels>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Event_WfpCallout</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Event_WfpCalloutExclusion</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Event_WfpCalloutAudit</Name>
+                    <Value>4</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>1</Version>
+                <Level>Information</Level>
+                <Keyword>Event_WfpCallout</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ModuleTag" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ProcessId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ProcessCreationTime" inType="win:Int64" outType="xs:long"/>
+  <data name="IsBlocked" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="Direction" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsExistingConnection" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="FilterId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="LayerId" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="InterfaceIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Protocol" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>1</Version>
+                <Level>Information</Level>
+                <Keyword>Event_WfpCalloutExclusion</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ModuleTag" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ProcessId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ProcessCreationTime" inType="win:Int64" outType="xs:long"/>
+  <data name="IsBlocked" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="Direction" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsExistingConnection" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="FilterId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="LayerId" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="InterfaceIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Protocol" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>1</Version>
+                <Level>Information</Level>
+                <Keyword>Event_WfpCalloutAudit</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ModuleTag" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ProcessId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ProcessStartKey" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ProcessCreationTime" inType="win:Int64" outType="xs:long"/>
+  <data name="IsBlocked" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="Direction" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsExistingConnection" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="FilterId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="LayerId" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="InterfaceIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Protocol" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="LocalAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalAddressLength"/>
+  <data name="RemoteAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddressLength"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

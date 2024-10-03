@@ -1,0 +1,239 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Crashdump</Name>
+        <Metadata>
+            <Guid>{ECDAACFA-6FE9-477C-B5F0-85B76F8F50AA}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\drivers\crashdmp.sys</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\system32\drivers\crashdmp.sys</MessageFilePath>
+            <HelpLink></HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Crashdump/Analytic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Crashdump/Operational</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Resume capable settings</Message>
+                    <Name>TaskResumeCapable</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>Transfer size settings</Message>
+                    <Name>TaskTransferSizes</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message>Create dump file settings</Message>
+                    <Name>TaskCreateDumpFile</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message>Early Crash Dump</Message>
+                    <Name>EarlyCrashDump</Name>
+                    <Value>4</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message></Message>
+                    <Name>OpCodeResumeCapable</Name>
+                    <Value>11</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>Supported</Name>
+                    <Value>11</Value>
+                    <Task>4</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>OpCodeTransferSizes</Name>
+                    <Value>12</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>Initialized</Name>
+                    <Value>12</Value>
+                    <Task>4</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>OpCodeCreateDumpFile</Name>
+                    <Value>13</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>PrepareFailure</Name>
+                    <Value>13</Value>
+                    <Task>4</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>InitializationFailure</Name>
+                    <Value>14</Value>
+                    <Task>4</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Config</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>EarlyCrashDump</Name>
+                    <Value>2</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Crashdump/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Resume capable settings</Task>
+                <Opcode>OpCodeResumeCapable</Opcode>
+                <Keyword>Config</Keyword>
+                <Message><![CDATA[
+Resume capable]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ResumeCapable" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ReasonCodes" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Crashdump/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Transfer size settings</Task>
+                <Opcode>OpCodeTransferSizes</Opcode>
+                <Keyword>Config</Keyword>
+                <Message><![CDATA[
+Transfer sizes]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Minimum" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Maximum" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>2</Version>
+                <Channel>Microsoft-Windows-Crashdump/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Create dump file settings</Task>
+                <Opcode>OpCodeCreateDumpFile</Opcode>
+                <Keyword>Config</Keyword>
+                <Message><![CDATA[
+Create dump file]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IoSpaceEnabled" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="PhysicalMemorySizeInBytes" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="DumpFileSizeInBytes" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="CreateDumpFileDurationInMs" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="LargeDumpThresholdGB" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Crashdump/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Early Crash Dump</Task>
+                <Opcode>PrepareFailure</Opcode>
+                <Keyword>EarlyCrashDump</Keyword>
+                <Message><![CDATA[
+Soft restart prepare for early crash dump failed with status %1, failure point %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="FailurePoint" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Crashdump/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Early Crash Dump</Task>
+                <Opcode>InitializationFailure</Opcode>
+                <Keyword>EarlyCrashDump</Keyword>
+                <Message><![CDATA[
+Early crash dump support failed to initialize with status %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Crashdump/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Early Crash Dump</Task>
+                <Opcode>Initialized</Opcode>
+                <Keyword>EarlyCrashDump</Keyword>
+                <Message><![CDATA[
+Early crash dump support succesfully initialized]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Crashdump/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Early Crash Dump</Task>
+                <Opcode>Supported</Opcode>
+                <Keyword>EarlyCrashDump</Keyword>
+                <Message><![CDATA[
+Early crash dump is supported by the operating system]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
