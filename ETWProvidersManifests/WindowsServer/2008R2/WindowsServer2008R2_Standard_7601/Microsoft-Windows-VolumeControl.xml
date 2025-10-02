@@ -1,0 +1,85 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-VolumeControl</Name>
+        <Metadata>
+            <Guid>{07DE7879-1C96-41CE-AFBD-C659A0E8E643}</Guid>
+            <ResourceFilePath>C:\Windows\System32\sndvolsso.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\System32\sndvolsso.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=sndvolsso.dll&amp;FileVer=6.1.7600.16385</HelpLink>
+            <PublisherMessage>Microsoft-Windows-AudioUI</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Performance</Message>
+                    <Path>Microsoft-Windows-VolumeControl/Performance</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>AudioPerf_Task_LaunchFlyout</Name>
+                    <Value>101</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Response Time</Message>
+                    <Name>win:ResponseTime</Name>
+                    <Value>281474976710656</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>102</Id>
+                <Version>0</Version>
+                <Channel>Performance</Channel>
+                <Level>Information</Level>
+                <Task>AudioPerf_Task_LaunchFlyout</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>103</Id>
+                <Version>0</Version>
+                <Channel>Performance</Channel>
+                <Level>Information</Level>
+                <Task>AudioPerf_Task_LaunchFlyout</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

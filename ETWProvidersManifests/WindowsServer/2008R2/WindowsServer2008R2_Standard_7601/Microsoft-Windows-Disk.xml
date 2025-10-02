@@ -1,0 +1,77 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Disk</Name>
+        <Metadata>
+            <Guid>{6B4DB0BC-9A3D-467D-81B9-A84C6F2F3D40}</Guid>
+            <ResourceFilePath>C:\Windows\system32\drivers\disk.sys</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\drivers\disk.sys</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Disk/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Disk Cache Information</Message>
+                    <Name>TaskDiskCacheInfo</Name>
+                    <Value>1</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message></Message>
+                    <Name>OpCodeDiskCacheInfo</Name>
+                    <Value>11</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>DiskCache</Name>
+                    <Value>1</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Disk/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Disk Cache Information</Task>
+                <Opcode>OpCodeDiskCacheInfo</Opcode>
+                <Keyword>DiskCache</Keyword>
+                <Message><![CDATA[
+Disk Cache Information]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ReadCacheEnabled" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="WriteCacheEnabled" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ReadRetentionPriority" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="WriteRetentionPriority" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="PrefetchScalar" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="DisablePrefetchTransferLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Minimum" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Maximum" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="MaximumBlocks" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

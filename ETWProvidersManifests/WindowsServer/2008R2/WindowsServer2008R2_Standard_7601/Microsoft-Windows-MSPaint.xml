@@ -1,0 +1,615 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-MSPaint</Name>
+        <Metadata>
+            <Guid>{1D75856D-36A7-4ECB-A3F5-B13152222D29}</Guid>
+            <ResourceFilePath>C:\Windows\system32\mspaint.exe</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\mspaint.exe</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=mspaint.exe&amp;FileVer=6.1.7600.16385</HelpLink>
+            <PublisherMessage>Microsoft-Windows-MSPaint</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-MSPaint/Admin</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-MSPaint/Diagnostic</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-MSPaint/Debug</Path>
+                    <Index>2</Index>
+                    <Id>18</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>MSPaint_Launch</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>MSPaint_Exit</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>Select_Tool</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>Commit_Tool</Name>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>Undo</Name>
+                    <Value>5</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>MeasurePaintLag</Name>
+                    <Value>6</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>SaveDrawing</Name>
+                    <Value>7</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>OpenImage</Name>
+                    <Value>8</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>FlipOperation</Name>
+                    <Value>9</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>RotateOperation</Name>
+                    <Value>10</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>CropOperation</Name>
+                    <Value>11</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>InvertColorOperation</Name>
+                    <Value>12</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>ResizeSkewOperation</Name>
+                    <Value>13</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MSPaint/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Intializing current instance of the application]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MSPaint/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Exiting current Instance of the application]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MSPaint/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>MSPaint_Launch</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+MSPaint Launch Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MSPaint/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>MSPaint_Launch</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+MSPaint Launch End]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MSPaint/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>MSPaint_Exit</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+MSPaint Exit Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MSPaint/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>MSPaint_Exit</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+MSPaint Exit End]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MSPaint/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>Select_Tool</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Select Tool(ID: %1) Start]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Tool ID" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MSPaint/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>Select_Tool</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Select Tool End]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MSPaint/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>Commit_Tool</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Commit Tool(ID: %1)b Start]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Tool ID" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MSPaint/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>Commit_Tool</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Commit Tool End]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MSPaint/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>Undo</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Undo Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MSPaint/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>Undo</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Undo End]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MSPaint/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Change Tool(ID: %1) Thickness(%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Tool ID" inType="win:Int32" outType="xs:int"/>
+  <data name="Tool Thickness" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MSPaint/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Change Stroke Color(RGB: %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Color" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MSPaint/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Change Fill Color(RGB: %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Color" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MSPaint/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Change DrawMode(%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Shape DrawMode" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MSPaint/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Change Brush CrossSection(%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Tool Crosssection" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MSPaint/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Change Caligraphic Brush CrossSection(%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Tool Crosssection" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MSPaint/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Change Glitter Color(%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Color" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MSPaint/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Error enabling/disabling RTS]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HResult" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MSPaint/Debug</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to load msftedit.dll]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>22</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MSPaint/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>MeasurePaintLag</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Start measure paint lag]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>23</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MSPaint/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>MeasurePaintLag</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Stop measure paint lag]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>24</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MSPaint/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>MeasurePaintLag</Task>
+                <Message><![CDATA[
+Recieved RTS Packet]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MSPaint/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>SaveDrawing</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Start save drawing]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>26</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MSPaint/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>SaveDrawing</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Stop save drawing]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Save operation result" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>27</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MSPaint/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>OpenImage</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Start open image]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>28</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MSPaint/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>OpenImage</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Stop open image]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>29</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MSPaint/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>FlipOperation</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Start flip operation]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MSPaint/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>FlipOperation</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Stop flip operation]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>31</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MSPaint/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>RotateOperation</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Start rotate operation]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MSPaint/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>RotateOperation</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Stop rotate operation]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>33</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MSPaint/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>CropOperation</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Start crop operation]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>34</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MSPaint/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>CropOperation</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Stop crop operation]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>35</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MSPaint/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>InvertColorOperation</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Start invert color operation]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>36</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MSPaint/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>InvertColorOperation</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Stop invert color operation]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>37</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MSPaint/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>ResizeSkewOperation</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Start resize skew operation]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>38</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MSPaint/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>ResizeSkewOperation</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Stop resize skew operation]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Resize skew Operation result" inType="win:Int32" outType="xs:int"/>
+  <data name="Width of the canvas" inType="win:Int32" outType="xs:int"/>
+  <data name="Height of the canvas" inType="win:Int32" outType="xs:int"/>
+  <data name="Horizontal resize percentage" inType="win:Int32" outType="xs:int"/>
+  <data name="Vertical resize percentage" inType="win:Int32" outType="xs:int"/>
+  <data name="Horizontal skew angle" inType="win:Int32" outType="xs:int"/>
+  <data name="Vertical skew angle" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

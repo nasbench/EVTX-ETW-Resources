@@ -1,0 +1,100 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-User Profiles General</Name>
+        <Metadata>
+            <Guid>{DB00DFB6-29F9-4A9C-9B3B-1F4F9E7D9770}</Guid>
+            <ResourceFilePath>C:\Windows\System32\userenv.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\System32\userenv.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=userenv.dll&amp;FileVer=6.1.7600.16385</HelpLink>
+            <PublisherMessage>Microsoft-Windows-User Profile General</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Application</Message>
+                    <Path>Application</Path>
+                    <Index>0</Index>
+                    <Id>9</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1509</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Windows cannot copy file %1 to location %2. This error may be caused by network problems or insufficient security rights. 
+
+ DETAIL - %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Source" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Target" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1534</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+There are too many profile copy errors. Refer to the previous events for details. Windows will not log any additional copy errors for this copy process. 
+
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1600</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Windows cannot copy profile from %1 to %2, you do not have enough disk space.
+
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Source" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Target" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1601</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Windows cannot copy profile from %1 to %2, you have exceeded the profile quota.
+
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Source" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Target" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

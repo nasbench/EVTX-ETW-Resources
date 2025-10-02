@@ -1,0 +1,977 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Servicing</Name>
+        <Metadata>
+            <Guid>{BD12F3B8-FC40-4A61-A307-B7A013A069C1}</Guid>
+            <ResourceFilePath>C:\Windows\servicing\cbsmsg.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\servicing\cbsmsg.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=cbsmsg.dll&amp;FileVer=6.1.7600.16385</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Servicing</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Setup</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Classic</Message>
+                    <Name>win:EventlogClassic</Name>
+                    <Value>36028797018963968</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Setup</Channel>
+                <Message><![CDATA[
+Initiating changes for package %1. Current state is %2. Target state is %4. Client id: %6.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="identifier" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="currentPackageState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="currentPackageStateTextized" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="targetPackageState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="targetPackageStateTextized" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="client" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Setup</Channel>
+                <Message><![CDATA[
+Package %1 was successfully changed to the %2 state.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="identifier" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="targetPackageState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="targetPackageStateTextized" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="errorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="client" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Setup</Channel>
+                <Message><![CDATA[
+Package %1 failed to be changed to the %2 state. Status: %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="identifier" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="targetPackageState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="targetPackageStateTextized" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="errorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="client" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Setup</Channel>
+                <Message><![CDATA[
+A reboot is necessary before package %1 can be changed to the %2 state.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="identifier" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="targetPackageState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="targetPackageStateTextized" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="errorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="client" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Setup</Channel>
+                <Message><![CDATA[
+The servicing request received for package %1 cannot be satisfied since the package is not applicable.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="identifier" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="targetPackageState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="targetPackageStateTextized" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="errorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="client" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Setup</Channel>
+                <Message><![CDATA[
+Package %1 failed to be changed to the %2 state and is now partially installed. Status: %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="identifier" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="targetPackageState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="targetPackageStateTextized" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="errorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="client" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Setup</Channel>
+                <Message><![CDATA[
+Initiating changes to turn on update %1 of package %2. Client id: %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="updateName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="identifier" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="errorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="client" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>Setup</Channel>
+                <Message><![CDATA[
+Initiating changes to turn off update %1 of package %2. Client id: %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="updateName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="identifier" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="errorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="client" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>Setup</Channel>
+                <Message><![CDATA[
+Selectable update %1 of package %2 was successfully turned on.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="updateName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="identifier" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="errorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="client" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>Setup</Channel>
+                <Message><![CDATA[
+Selectable update %1 of package %2 was successfully turned off.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="updateName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="identifier" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="errorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="client" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>Setup</Channel>
+                <Message><![CDATA[
+Update %1 of package %2 failed to be turned on. Status: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="updateName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="identifier" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="errorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="client" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>Setup</Channel>
+                <Message><![CDATA[
+Update %1 of package %2 failed to be turned off. Status: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="updateName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="identifier" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="errorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="client" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Channel>Setup</Channel>
+                <Message><![CDATA[
+A reboot is necessary before the selectable update %1 of package %2 can be turned on.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="updateName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="identifier" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="errorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="client" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Channel>Setup</Channel>
+                <Message><![CDATA[
+A reboot is necessary before the selectable update %1 of package %2 can be turned off.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="updateName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="identifier" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="errorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="client" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1000</Id>
+                <Version>0</Version>
+                <Channel>Setup</Channel>
+                <Message><![CDATA[
+Windows Servicing is processing hotpatch package %1(%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="identifier" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="releaseType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageStateLoc" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageState" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageAssembly" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operationCompleted" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="errorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="rebootOption" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="missingElements" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>Setup</Channel>
+                <Message><![CDATA[
+Windows Servicing disabled hotpatching for package %2(%3) because update %1 is not enabled for hotpatching.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="updateName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="identifier" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="releaseType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="updateStateLoc" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="updateState" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageAssembly" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="updateDisplayName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operationCompleted" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="errorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="rebootOption" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Channel>Setup</Channel>
+                <Message><![CDATA[
+Windows Servicing disabled hotpatching for package %1(%2) because servicing is being performed offline.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="identifier" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="releaseType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageStateLoc" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageState" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageAssembly" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operationCompleted" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="errorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="rebootOption" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="missingElements" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Channel>Setup</Channel>
+                <Message><![CDATA[
+Windows Servicing disabled hotpatching for package %1(%2) because a reboot is required to complete a prior operation.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="identifier" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="releaseType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageStateLoc" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageState" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageAssembly" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operationCompleted" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="errorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="rebootOption" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="missingElements" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>0</Version>
+                <Channel>Setup</Channel>
+                <Message><![CDATA[
+Windows Servicing successfully installed hotpatching package %1(%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="identifier" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="releaseType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageStateLoc" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageState" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageAssembly" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operationCompleted" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="errorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="rebootOption" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="missingElements" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>0</Version>
+                <Channel>Setup</Channel>
+                <Message><![CDATA[
+Windows Servicing has required a reboot to complete the installation of hotpatching package %1(%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="identifier" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="releaseType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageStateLoc" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageState" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageAssembly" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operationCompleted" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="errorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="rebootOption" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="missingElements" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1006</Id>
+                <Version>0</Version>
+                <Channel>Setup</Channel>
+                <Message><![CDATA[
+Windows Servicing disabled hotpatching for package %1(%2) because a file could not be replaced immediately.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="identifier" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="releaseType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageStateLoc" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageState" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageAssembly" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operationCompleted" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="errorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="rebootOption" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="missingElements" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1007</Id>
+                <Version>0</Version>
+                <Channel>Setup</Channel>
+                <Message><![CDATA[
+Windows Servicing disabled hotpatching for package %1(%2) because required files or custom actions are incompatible with hotpatching.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="identifier" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="releaseType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageStateLoc" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageState" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageAssembly" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operationCompleted" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="errorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="rebootOption" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="missingElements" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1008</Id>
+                <Version>0</Version>
+                <Channel>Setup</Channel>
+                <Message><![CDATA[
+Windows Servicing failed to perform hotpatching for package %1(%2) because the hotpatch installer required a reboot.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="identifier" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="releaseType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageStateLoc" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageState" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageAssembly" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operationCompleted" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="errorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="rebootOption" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="missingElements" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1009</Id>
+                <Version>0</Version>
+                <Channel>Setup</Channel>
+                <Message><![CDATA[
+Windows Servicing failed to perform hotpatching for package %1(%2) because of an error (%8).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="identifier" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="releaseType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageStateLoc" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageState" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageAssembly" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operationCompleted" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="errorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="rebootOption" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="missingElements" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1010</Id>
+                <Version>0</Version>
+                <Channel>Setup</Channel>
+                <Message><![CDATA[
+Windows Servicing disabled hotpatching for package %2(%3) because update %1 is being set to state %4(%5).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="updateName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="identifier" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="releaseType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="updateStateLoc" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="updateState" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageAssembly" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="updateDisplayName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operationCompleted" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="errorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="rebootOption" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1011</Id>
+                <Version>0</Version>
+                <Channel>Setup</Channel>
+                <Message><![CDATA[
+Windows Servicing disabled hotpatching for package %2(%3) because hotpatch update %1 will not be installed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="updateName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="identifier" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="releaseType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="updateStateLoc" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="updateState" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageAssembly" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="updateDisplayName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operationCompleted" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="errorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="rebootOption" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1012</Id>
+                <Version>0</Version>
+                <Channel>Setup</Channel>
+                <Message><![CDATA[
+Windows Servicing disabled hotpatching for package %2(%3) to process regular update %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="updateName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="identifier" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="releaseType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="updateStateLoc" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="updateState" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageAssembly" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="updateDisplayName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operationCompleted" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="errorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="rebootOption" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073746195</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Windows Servicing started a process of changing package %1(%2) state from %3(%4) to %5(%6)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="identifier" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="releaseType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="initialPackageStateLoc" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="initialPackageState" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageStateLoc" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageState" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageAssembly" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="client" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="supportInformation" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073746196</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Windows Servicing is setting package %1(%2) state to %3(%4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="identifier" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="releaseType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageStateLoc" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageState" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageAssembly" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operationCompleted" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="errorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="rebootOption" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="missingElements" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073746197</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Windows Servicing successfully set package %1(%2) state to %3(%4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="identifier" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="releaseType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageStateLoc" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageState" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageAssembly" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operationCompleted" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="errorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="rebootOption" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="missingElements" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147488022</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Windows Servicing identified that package %1(%2) is not applicable for this system]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="identifier" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="releaseType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageStateLoc" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageState" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageAssembly" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operationCompleted" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="errorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="rebootOption" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="missingElements" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229847</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Windows Servicing failed to complete the process of setting package %1 (%2) into %3(%4) state]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="identifier" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="releaseType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageStateLoc" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageState" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageAssembly" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operationCompleted" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="errorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="rebootOption" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="missingElements" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147488024</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Servicing has required reboot to complete the operation of setting package %1(%2) into %3(%4) state]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="identifier" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="releaseType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageStateLoc" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageState" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageAssembly" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operationCompleted" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="errorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="rebootOption" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="missingElements" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073746207</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Windows Servicing completed the process of changing update %1 from package %2 (%3) into %4(%5) state]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="updateName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="identifier" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="releaseType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="updateStateLoc" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="updateState" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageAssembly" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="updateDisplayName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operationCompleted" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="errorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="rebootOption" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229857</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Windows Servicing failed to complete the process of changing update %1 from package %2(%3) into %4(%5) state]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="updateName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="identifier" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="releaseType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="updateStateLoc" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="updateState" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageAssembly" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="updateDisplayName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operationCompleted" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="errorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="rebootOption" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147488034</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Windows Servicing required reboot to complete the process of changing update %1 from package %2(%3) into %4(%5) state]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="updateName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="identifier" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="releaseType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="updateStateLoc" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="updateState" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageAssembly" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="updateDisplayName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operationCompleted" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="errorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="rebootOption" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073746224</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Windows Servicing is processing hotpatch package %1(%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="identifier" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="releaseType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageStateLoc" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageState" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageAssembly" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operationCompleted" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="errorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="rebootOption" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="missingElements" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073746225</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Windows Servicing disabled hotpatching for package %2(%3) because update %1 is not enabled for hotpatching.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="updateName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="identifier" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="releaseType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="updateStateLoc" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="updateState" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageAssembly" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="updateDisplayName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operationCompleted" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="errorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="rebootOption" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073746226</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Windows Servicing disabled hotpatching for package %1(%2) because servicing is being performed offline.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="identifier" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="releaseType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageStateLoc" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageState" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageAssembly" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operationCompleted" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="errorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="rebootOption" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="missingElements" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073746227</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Windows Servicing disabled hotpatching for package %1(%2) because a reboot is required to complete a prior operation.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="identifier" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="releaseType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageStateLoc" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageState" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageAssembly" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operationCompleted" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="errorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="rebootOption" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="missingElements" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073746228</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Windows Servicing successfully installed hotpatching package %1(%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="identifier" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="releaseType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageStateLoc" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageState" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageAssembly" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operationCompleted" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="errorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="rebootOption" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="missingElements" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073746229</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Windows Servicing has required a reboot to complete the installation of hotpatching package %1(%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="identifier" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="releaseType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageStateLoc" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageState" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageAssembly" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operationCompleted" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="errorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="rebootOption" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="missingElements" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147488054</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Windows Servicing disabled hotpatching for package %1(%2) because a file could not be replaced immediately.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="identifier" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="releaseType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageStateLoc" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageState" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageAssembly" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operationCompleted" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="errorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="rebootOption" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="missingElements" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147488055</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Windows Servicing disabled hotpatching for package %1(%2) because required files or custom actions are incompatible with hotpatching.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="identifier" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="releaseType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageStateLoc" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageState" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageAssembly" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operationCompleted" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="errorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="rebootOption" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="missingElements" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147488056</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Windows Servicing failed to perform hotpatching for package %1(%2) because the hotpatch installer required a reboot.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="identifier" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="releaseType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageStateLoc" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageState" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageAssembly" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operationCompleted" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="errorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="rebootOption" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="missingElements" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147488057</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Windows Servicing failed to perform hotpatching for package %1(%2) because of an error (%8).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="identifier" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="releaseType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageStateLoc" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageState" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageAssembly" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operationCompleted" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="errorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="rebootOption" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="missingElements" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073746240</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Windows Servicing disabled hotpatching for package %2(%3) because update %1 is being set to state %4(%5).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="updateName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="identifier" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="releaseType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="updateStateLoc" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="updateState" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageAssembly" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="updateDisplayName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operationCompleted" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="errorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="rebootOption" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147488065</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Windows Servicing disabled hotpatching for package %2(%3) because hotpatch update %1 will not be installed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="updateName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="identifier" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="releaseType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="updateStateLoc" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="updateState" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageAssembly" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="updateDisplayName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operationCompleted" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="errorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="rebootOption" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147488066</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Windows Servicing disabled hotpatching for package %2(%3) to process regular update %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="updateName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="identifier" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="releaseType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="updateStateLoc" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="updateState" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="packageAssembly" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="updateDisplayName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="operationCompleted" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="errorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="rebootOption" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

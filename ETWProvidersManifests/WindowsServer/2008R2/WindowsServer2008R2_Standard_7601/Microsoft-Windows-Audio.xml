@@ -1,0 +1,316 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Audio</Name>
+        <Metadata>
+            <Guid>{AE4BD3BE-F36F-45B6-8D21-BDD6FB832853}</Guid>
+            <ResourceFilePath>C:\Windows\System32\audioses.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\System32\audioses.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=audioses.dll&amp;FileVer=6.1.7600.16385</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Audio</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Application</Message>
+                    <Path>Application</Path>
+                    <Index>0</Index>
+                    <Id>9</Id>
+                    <Imported>true</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Audio/Operational</Path>
+                    <Index>1</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Audio/CaptureMonitor</Path>
+                    <Index>2</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Performance</Message>
+                    <Path>Microsoft-Windows-Audio/Performance</Path>
+                    <Index>3</Index>
+                    <Id>18</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>AudioPerf_Task_LaunchAudioDG</Name>
+                    <Value>100</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>AudioPerf_Task_EndpointVolume</Name>
+                    <Value>101</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>AudioPerf_Task_SessionAPI</Name>
+                    <Value>102</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Response Time</Message>
+                    <Name>win:ResponseTime</Name>
+                    <Value>281474976710656</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>0</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Audio/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Windows Audio encountered an error while processing a device event.
+                    Event ID     : 0x%1 (%2) 
+                    Failure Code : 0x%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Event" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="EventName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hr" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Audio/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Windows Audio encountered an error while processing a device event.
+                    DeviceEventType : 0x%1 (%2) 
+                    Failure Code    : 0x%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceEventType" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="DeviceEventTypeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hr" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Windows Audio failed during a call to SetServiceStatus.
+                    Service Type               : 0x%1 
+                    Current State              : 0x%2 
+                    Controls Accepted          : 0x%3 
+                    Win32 Exit Code            : 0x%4 
+                    Service Specific Exit Code : 0x%5 
+                    Check Point                : 0x%6 
+                    Wait Hint                  : 0x%7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwServiceType" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="dwCurrentState" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="dwControlsAccepted" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="dwWin32ExitCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="dwServiceSpecificExitCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="dwCheckPoint" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="dwWaitHint" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Audio/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Windows Audio failed to start the %1 subsystem.
+                    Subsystem Failure Code     : 0x%2 
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szSubsystemName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="dwSubsystemFailureCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Audio/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The Windows Audio Device Graph Isolation process (audiodg.exe) has terminated unexpectedly.
+                    Process Exit Code     : 0x%1 
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwAudioDgTerminationCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Audio/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The Windows Audio Device Graph Isolation process (audiodg.exe) could not be started.
+                    Error Code     : 0x%1 
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwAudioDgStartupFailureCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Audio/CaptureMonitor</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The Capture Monitor has failed to restart the capture monitor between %2 and %3  %1 times.  
+                The capture monitor will no longer attempt to start this monitor.
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwRestartCount" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="szInputEndpointName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="szOutputEndpointName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Audio/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+StreamFlags %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwAudioSrvStreamFlags" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>Performance</Channel>
+                <Level>Information</Level>
+                <Task>AudioPerf_Task_LaunchAudioDG</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Channel>Performance</Channel>
+                <Level>Information</Level>
+                <Task>AudioPerf_Task_LaunchAudioDG</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Channel>Performance</Channel>
+                <Level>Information</Level>
+                <Task>AudioPerf_Task_EndpointVolume</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Channel>Performance</Channel>
+                <Level>Information</Level>
+                <Task>AudioPerf_Task_EndpointVolume</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Channel>Performance</Channel>
+                <Level>Information</Level>
+                <Task>AudioPerf_Task_SessionAPI</Task>
+                <Opcode>Start</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Channel>Performance</Channel>
+                <Level>Information</Level>
+                <Task>AudioPerf_Task_SessionAPI</Task>
+                <Opcode>Stop</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Audio/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Windows Audio Device Graph glitch threshold count exceeded 
+                              Count   : 0x%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwAudioDgTerminationCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

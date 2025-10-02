@@ -1,0 +1,1105 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Security-SPP</Name>
+        <Metadata>
+            <Guid>{E23B33B0-C8C9-472C-A5F9-F2BDFEA0F156}</Guid>
+            <ResourceFilePath>C:\Windows\system32\sppsvc.exe</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\sppsvc.exe</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=sppsvc.exe&amp;FileVer=6.1.7600.16385</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Security-SPP</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Security-SPP/Perf</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>SLSvcInit_PhaseOne</Name>
+                    <Value>301</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>SLSvcInit_PhaseTwo</Name>
+                    <Value>302</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>SLSvcInit_TokenStore</Name>
+                    <Value>303</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>SLSvcInit_ConsumeRight</Name>
+                    <Value>304</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>SLSvcInit_ExternalCallDuringInit</Name>
+                    <Value>305</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>PerfInstrumentation</Name>
+                    <Value>65536</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Classic</Message>
+                    <Name>win:EventlogClassic</Name>
+                    <Value>36028797018963968</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Security-SPP/Perf</Channel>
+                <Level>Information</Level>
+                <Task>SLSvcInit_PhaseOne</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>PerfInstrumentation</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Security-SPP/Perf</Channel>
+                <Level>Information</Level>
+                <Task>SLSvcInit_PhaseOne</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>PerfInstrumentation</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Security-SPP/Perf</Channel>
+                <Level>Information</Level>
+                <Task>SLSvcInit_PhaseTwo</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>PerfInstrumentation</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IsLowPriorityInit" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Security-SPP/Perf</Channel>
+                <Level>Information</Level>
+                <Task>SLSvcInit_PhaseTwo</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>PerfInstrumentation</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Security-SPP/Perf</Channel>
+                <Level>Information</Level>
+                <Task>SLSvcInit_TokenStore</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>PerfInstrumentation</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Security-SPP/Perf</Channel>
+                <Level>Information</Level>
+                <Task>SLSvcInit_TokenStore</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>PerfInstrumentation</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Security-SPP/Perf</Channel>
+                <Level>Information</Level>
+                <Task>SLSvcInit_ConsumeRight</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>PerfInstrumentation</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Security-SPP/Perf</Channel>
+                <Level>Information</Level>
+                <Task>SLSvcInit_ConsumeRight</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>PerfInstrumentation</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Security-SPP/Perf</Channel>
+                <Level>Information</Level>
+                <Task>SLSvcInit_ExternalCallDuringInit</Task>
+                <Keyword>PerfInstrumentation</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073742724</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Software Protection service is starting.
+]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073742725</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Software Protection service is stopping.
+]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073742726</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Software Protection service has started.
+%1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073742727</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Software Protection service has stopped.
+]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226473</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Software Protection service failed to start. %1
+%2]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073742827</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Software Protection service has completed licensing status check.
+Application Id=%1
+Licensing Status=%2]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073742828</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Software Protection service has successfully installed the license.
+License Title=%1
+License Id=%2]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073742829</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The result of Windows Right consumption is: %1
+]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073742830</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The status of binding evaluation is: 
+%1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073742831</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Acquisition of Secure Processor Certificate was successful.
+]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226480</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Acquisition of Secure Processor Certificate failed. %1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073742833</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Acquisition of Rights Account Certificate was successful.
+]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226482</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Acquisition of Rights Account Certificate failed. %1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073742835</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Acquisition of Product Certificate was successful.
+Sku Id=%1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226484</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Acquisition of Product Certificate failed. %1
+Sku Id=%2]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073742837</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Acquisition of End User License was successful.
+Sku Id=%1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226486</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Acquisition of End User License failed. %1
+Sku Id=%2]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147484663</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Detailed HRESULT. Returned hr=%1, Original hr=%2]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073742840</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Proof of Purchase installed successfully. 
+ACID=%1
+PKeyId=%2]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147484665</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Installation of the Proof of Purchase failed. %1
+Partial Pkey=%2
+ACID=%3
+Detailed Error[%4]
+]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073742842</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Proof of Purchase removed successfully. 
+ACID=%1
+PKeyId=%2
+]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147484667</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Removal of the Proof of Purchase failed. %1
+ACID=%2
+PKeyId=%3]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147484668</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Proxy Execution Key has failed to load. %1
+Proxy Execution Policy=%2]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147484669</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+sppuinotify service has failed to start. %1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147484670</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The system has been tampered. %1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147484671</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The RAC or SPC license is invalid. %1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147484672</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The hardware has changed.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073742849</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Grace period has been started. Grace days=%1  Grace type=%2.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226498</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+License missing during right consumption. License Id = %1.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226499</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Information missing during right consumption. %1, License Id = %2, Data name = %3.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226500</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+There are %1 invalid license(s).]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147484677</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unable to get detailed error information during license consumption. Last error %1.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147484678</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The license consumption has failed. %1.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147484679</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Registration of PidConfiguration data failed. %1, OOB License Id=%2.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147484680</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Kernel policy cache update failed. %1.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073742857</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+These policies are being excluded since they are only defined with override-only attribute.
+Policy Names=%1
+App Id=%2
+Sku Id=%3]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073742858</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Duplicate definition of policy found. Policy name=%1  Priority=%2]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073742859</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A higher priority policy without override-only attribute found. Policy name=%1  Current priority=%2  Previous priority=%3]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073742860</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Validity period has been started. Validity minutes=%1  Grace type=%2.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147484685</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Time-based license remaining %1 time %2 minutes.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073742864</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Hardware has changed from previous boot.
+ AppId=%1, SkuId=%2.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226514</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Software Protection service has failed to start.
+%1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226515</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The following error was generated:
+%1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147484692</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The following errors occurred during license evaluation:
+%1
+]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147484694</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Buffer validated. %1
+]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073742871</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Your hardware changed since last license acquisition.
+Following devices were added:
+%1
+]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073742872</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Your hardware changed since last license acquisition.
+Following devices were removed:
+%2
+]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073742873</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Your hardware changed since last license acquisition.
+Following devices were added:
+%1
+Following devices were removed:
+%2
+]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073742874</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Your hardware changed since last license acquisition.
+Following devices were changed:
+%3
+]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073742875</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Your hardware changed since last license acquisition.
+Following devices were added:
+%1
+Following devices were changed:
+%3
+]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073742876</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Your hardware changed since last license acquisition.
+Following devices were removed:
+%2
+Following devices were changed:
+%3
+]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073742877</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Your hardware changed since last license acquisition.
+Following devices were added:
+%1
+Following devices were removed:
+%2
+Following devices were changed:
+%3
+]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147484702</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Component error. %1
+]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147484703</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Proof of Purchase installation succeeded, but generated a warning. 
+%1,%2.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147484704</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Some data has been reset. %1 [%2].]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147484705</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unable to update Windows PID information in the registry: %1
+]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147484706</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+sppuinotify service has failed to stop. %1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147484707</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Add-on policy for base license or family policy for add-on license not allowed. %1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073742884</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Kernel policy cache has not been updated after Windows Right consumption. This is OK in certain situations.
+]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226534</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Deposition of Confirmation ID failed. %1
+Sku Id=%2]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226535</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to collect hardware information. %1
+]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073742888</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Activation is required to recover from tampering of Software Protection service trusted store.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147484713</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+SAM System Id has changed due to changes in the hardware configuration.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073742890</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Initialization status for service objects.
+%1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147484715</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Genuine information set for application. %1, %2, %3.
+]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073742896</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Successfully matched deposited Installation ID with Confirmation ID.
+Sku Id=%1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221233664</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Application failed to launch. %1
+Application name:
+%2]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221233665</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+License Activation Scheduler (sppuinotify.dll) failed with the following error code:
+%1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221233666</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+License Activation Scheduler (sppuinotify.dll) failed with error code:
+%1
+Failure occurred at:
+%2
+Context:
+%3]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221233667</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+License Activation Scheduler (sppuinotify.dll) failed during automatic activation with error code:
+%1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073750020</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+License Activation Scheduler (sppuinotify.dll) was not able to automatically activate.  Error code:
+%1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073750021</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+License Activation Scheduler (sppuinotify.dll) logged the following information:
+%1
+%2]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221233670</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+License Activation (slui.exe) failed with the following error code:
+%1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221233672</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+License acquisition failure details. 
+%1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221233674</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%3 Token Store '%2' failed with error %1.
+]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221233676</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%3 Token Store '%2' failed with error %1.
+Info: %4]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221233677</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Token Store found to be corrupt. Recreating empty Token Store.
+]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073750030</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Token Store not found. Recreating empty Token Store.
+]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221233680</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Acquisition of genuine ticket failed (%1) for template Id %2]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221233681</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Genuine state set to non-genuine (%1) for application Id %2]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221233682</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Update current edition product key id failed with %1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221233683</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Update Windows license and product key tokens failed with %1. 
+%2]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221233684</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Rearm failed for AppId = %2, SkuId = %3 - %4 Rearms Remaining.  Error Code: %1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073754112</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The client has sent an activation request to the key management service machine.
+Info:
+%1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073754113</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The client has processed an activation response from the key management service machine.
+Info:
+%1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073754114</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An activation request has been processed.
+Info:
+%1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073754115</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Key Management Service (KMS) failed to start.
+Info:
+%1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073754116</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Volume-licensed client was unable to initialize the Key Management Service (KMS) renewal timer.
+Info:
+%1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073754117</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Publishing the Key Management Service (KMS) to DNS in the '%2' domain failed.
+Info:
+%1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073754118</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Publishing the Key Management Service (KMS) to DNS in the '%1' domain is successful.
+]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073754128</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Successfully acquired genuine ticket for template Id %1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073754129</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Genuine state set to genuine for application Id %1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073754130</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Rearm successful for AppId = %1, SkuId = %2 - %3 Rearms Remaining.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073754131</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Skipped Rearm for AppId = %1, SkuId = %2.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073754144</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Token-based Activation has succeeded.
+Sku Id=%1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147495969</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+License Activation Scheduler (sppuinotify.dll) was unable to perform silent Token-based Activation.  Error code:
+%1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221237794</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to deposit Token-based Activation response. %1
+Sku Id=%2]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073758208</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Successfully scheduled Software Protection service for re-start at %1. Reason: %2.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221241857</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to schedule Software Protection service for re-start at %2. Error Code: %1.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

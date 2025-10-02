@@ -1,0 +1,648 @@
+<Providers>
+    <Provider>
+        <Name>LsaSrv</Name>
+        <Metadata>
+            <Guid>{199FE037-2B82-40A9-82AC-E1D46C792B99}</Guid>
+            <ResourceFilePath>C:\Windows\System32\lsasrv.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\System32\lsasrv.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7601.17514&amp;FileName=lsasrv.dll&amp;FileVer=6.1.7601.17514</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>0</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Security Package Manager</Message>
+                    <Name>CATEGORY_SPM</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>Locator</Message>
+                    <Name>CATEGORY_LOCATOR</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message>SPNEGO (Negotiator)</Message>
+                    <Name>CATEGORY_NEGOTIATE</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message>Logon Cache</Message>
+                    <Name>CATEGORY_LOGON_CACHE</Name>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message>Max</Message>
+                    <Name>CATEGORY_MAX_CATEGORY</Name>
+                    <Value>5</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>5000</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The security package %1 generated an exception. The exception information is the data.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Package" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Exception" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6025</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Could not upgrade the Trusted domain object for domain %1. Please recreate the trust manually.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Domain" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="status" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6027</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Could not upgrade the global secret %1. Please check the status of all services in the system.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Secret" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="status" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6029</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+LSA could not update domain information in the registry to match the DS. Error=%1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6031</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The database contains invalid information for trusted domain %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Domain" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="status" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6033</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+An anonymous session connected from %1 has attempted to open an LSA policy handle on this machine. The attempt was rejected with STATUS_ACCESS_DENIED to prevent leaking security sensitive information to the anonymous caller.
+ The application that made this attempt needs to be fixed. Please contact the application vendor. As a temporary workaround, this security measure can be disabled by setting the \HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\TurnOffAnonymousBlock DWORD value to 1.
+ This message will be logged at most once a day.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Client" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6034</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The new top level name, %1, has been added to the forest %2. Name suffix routing for this new name is disabled because it is not within any currently routed namespace. Objects can not be resolved from this new namespace until name suffix routing is enabled for the namespace. To enable name suffix routing, open Domains and Trusts and see help under Name Suffix Routing and Forest Trusts.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TopLevelName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Forestname" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6035</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+During a logon attempt, the user's security context accumulated too many security IDs. This is a very unusual situation. Remove the user from some global or local groups to reduce the number of security IDs to incorporate into the security context.
+User's SID is %1
+If this is the Administrator account, logging on in safe mode will enable Administrator to log on by automatically restricting group memberships.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SID" inType="win:SID" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6036</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The program %2, with the assigned Process ID %1, supplied a NULL or empty target name for the pszTargetName parameter when calling the InitializeSecurityContext API to initiate an outbound NTLM security context. This is a security risk when mutual authentication is required.
+ 
+ To help protect against a malicious attack, make your code more secure. To do this, change the program so that it specifies a target name in the pszTargetName parameter field, and then recompile the code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Program" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6037</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The program %2, with the assigned process ID %1, could not authenticate locally by using the target name %3. The target name used is not valid. A target name should refer to one of the local computer names, for example, the DNS host name.
+ 
+ Try a different target name.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Program" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TargetName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>29186</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Moving the existing logon scripts from %1 to %2 failed.  The return code is the data.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="OldScripts" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NewScripts" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>29187</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Running the Security Configuration Editor over the Domain Controller encountered a non-fatal error.  Further details can be obtained by examining the log file %1.  The return code is the data.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Logfile" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>29188</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+An existing, incompatible trust object was found on the parent server for domain %1.  It has been removed and replaced with an updated trust.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DomainName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>29216</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to disable auto logon following the successful upgrade of a domain controller.  Unable to delete registry key %1.  The return code is the data.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>29217</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to set the default logon domain to %1.  The return code is the data.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DomainName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>29221</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+During the demotion operation, the trust object on %1 could not be removed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ParentName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>29222</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+During the demotion operation, the File Replication Service reported a non critical error.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>29223</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+This server is now a Domain Controller.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>29224</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+This server is no longer a Domain Controller.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>29239</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+This server was force demoted.  It is no longer a Domain Controller.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>29240</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The Netlogon service could not be stopped during force demotion.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>29241</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Dcpromo failed to configure the new starttype of %1 for the service %2 during forced demotion.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Flags" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServiceName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>29242</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Dcpromo failed to remove the dependency of %1 on %2 during forced demotion.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ServiceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Dependency" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32768</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The interdomain trust account for the domain %1 could not be deleted. The return code is the data.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Domain" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="status" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32772</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The interdomain trust account for the domain %1 could not be created. The return code is the data.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Domain" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="status" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32773</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+A lookup request was made that required connectivity to a domain controller in domain %1. The LSA was unable to find a domain controller in the domain and thus failed the request. Please check connectivity and secure channel setup from this domain controller to the domain %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Domain" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TargetDomain" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="status" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32774</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+A lookup request was made that required connectivity to the domain controller %1. The local LSA was unable to contact the LSA on the remote domain controller. Please check connectivity and secure channel setup from this domain controller to the domain controller %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Domain" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TargetDomain" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="status" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32775</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+A lookup request was made that required the lookup services on the remote domain controller %1. The remote domain controller failed the request thus the local LSA failed the original lookup request. Please check connectivity and secure channel setup from this domain controller to the domain controller %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Domain" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TargetDomain" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="status" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32776</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+A lookup request was made that required a Global Catalog. The LSA was unable to either contact or authenticate to a Global Catalog and thus failed the lookup request. Please check the connectivity and authentication of this domain controller to a Global Catalog.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32777</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The LSA was unable to register its RPC interface over the TCP/IP interface. Please make sure that the protocol is properly installed.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32778</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The name %1 was translated to SID %2 from the trusted forest %3. The domain portion of the SID is not in the list of acceptable SID's found on the trusted domain object, thus this name to SID translation has been ignored.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SID" inType="win:SID" outType="xs:string"/>
+  <data name="Forest" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="status" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>40960</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The Security System detected an authentication error for the server %1. The failure code from authentication protocol %2 was %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Target" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Protocol" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>40961</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The Security System could not establish a secured connection with the server %1. No authentication protocol was available.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Target" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>40962</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The Security System was unable to authenticate to the server %1 because the server has completed the authentication, but the client authentication protocol %2 has not.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Target" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Protocol" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>40964</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The Security System received an authentication attempt with an unknown authentication protocol. The request has failed.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>40965</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The Security System has selected %2 for the authentication protocol to server %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Target" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Protocol" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>40966</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The Security System has received an authentication attempt, and determined that the protocol %1 preferred by the client is acceptable.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Protocol" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>40967</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The Security System has received an authentication request directly for authentication protocol %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Protocol" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>40968</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The Security System has received an authentication request that could not be decoded. The request has failed.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>40969</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The Security System has received an authentication attempt, and determined that the protocol %1 is the common protocol.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Protocol" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>45056</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Logon cache was disabled. Intermittent authentication failures may result during periods of network latency or interrupts. Please contact your system administrator.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>45057</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A failed logon attempt has caused a logon cache entry for user %1 to be deleted. The authentication package was %2, and the error message was %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Username" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Package" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>45058</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A logon cache entry for user %1 was the oldest entry and was removed. The timestamp of this entry was %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UserName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TimeStamp" inType="win:SYSTEMTIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

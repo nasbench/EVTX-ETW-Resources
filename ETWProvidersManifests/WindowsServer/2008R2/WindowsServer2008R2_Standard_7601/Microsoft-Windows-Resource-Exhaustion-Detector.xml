@@ -1,0 +1,324 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Resource-Exhaustion-Detector</Name>
+        <Metadata>
+            <Guid>{9988748E-C2E8-4054-85F6-0C3E1CAD2470}</Guid>
+            <ResourceFilePath>C:\Windows\system32\radardt.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\radardt.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=radardt.dll&amp;FileVer=6.1.7600.16385</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Resource-Exhaustion-Detector</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>0</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-Resource-Exhaustion-Detector/Operational</Message>
+                    <Path>Microsoft-Windows-Resource-Exhaustion-Detector/Operational</Path>
+                    <Index>1</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Lifecycle Events</Message>
+                    <Name>RDR_DET_TASK_LIFECYCLE</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>Resource Exhaustion Detection Events</Message>
+                    <Name>RDR_DET_TASK_DETECTION</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message>Resource Exhaustion Diagnosis Events</Message>
+                    <Name>RDR_DET_TASK_DIAGNOSIS</Name>
+                    <Value>3</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Events logged when the resource exhaustion detector is started.</Message>
+                    <Name>RDR_DET_OPCODE_LIFECYCLE_START</Name>
+                    <Value>11</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Events logged when the resource exhaustion detector is stopped.</Message>
+                    <Name>RDR_DET_OPCODE_LIFECYCLE_STOP</Name>
+                    <Value>12</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Events logged after a memory allocation.</Message>
+                    <Name>RDR_DET_OPCODE_LIFECYCLE_ALLOC</Name>
+                    <Value>13</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Events logged when exhaustion of a resource is detected.</Message>
+                    <Name>RDR_DET_OPCODE_DETECTION_START</Name>
+                    <Value>21</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Events logged when a problem is detected.</Message>
+                    <Name>RDR_DET_OPCODE_DETECTION_RESULT</Name>
+                    <Value>22</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Events logged when diagnosis is started.</Message>
+                    <Name>RDR_DET_OPCODE_DIAGNOSIS_START</Name>
+                    <Value>23</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Events logged when diagnosis is stopped.</Message>
+                    <Name>RDR_DET_OPCODE_DIAGNOSIS_STOP</Name>
+                    <Value>31</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Events logged during diagnosis.</Message>
+                    <Name>RDR_DET_OPCODE_DIAGNOSIS_PROCESSING</Name>
+                    <Value>32</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Contains the results of the diagnosis.</Message>
+                    <Name>RDR_DET_OPCODE_DIAGNOSIS_RESULT</Name>
+                    <Value>33</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Events related to lifecycle of resource exhaustion detector.</Message>
+                    <Name>RDR_DET_KEYWORD_LIFECYCLE</Name>
+                    <Value>268435456</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Events related to exhaustion of system commit limit (virtual memory).</Message>
+                    <Name>RDR_DET_KEYWORD_MEMORY_EXHAUSTION</Name>
+                    <Value>536870912</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Event generated when heap leak detection is about to be started on a process.</Message>
+                    <Name>RDR_DET_KEYWORD_HEAP_LEAK_DETECTION</Name>
+                    <Value>1073741824</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Resource-Exhaustion-Detector/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Lifecycle Events</Task>
+                <Opcode>Events logged when the resource exhaustion detector is started.</Opcode>
+                <Keyword>Events related to lifecycle of resource exhaustion detector.</Keyword>
+                <Message><![CDATA[
+The Windows Resource Exhaustion Detector started.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Resource-Exhaustion-Detector/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Lifecycle Events</Task>
+                <Opcode>Events logged when the resource exhaustion detector is stopped.</Opcode>
+                <Keyword>Events related to lifecycle of resource exhaustion detector.</Keyword>
+                <Message><![CDATA[
+The Windows Resource Exhaustion Detector stopped.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Resource-Exhaustion-Detector/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Resource Exhaustion Detection Events</Task>
+                <Opcode>Events logged when a problem is detected.</Opcode>
+                <Keyword>Events related to exhaustion of system commit limit (virtual memory).</Keyword>
+                <Message><![CDATA[
+The Windows Resource Exhaustion Detector received a notification that the computer is low on virtual memory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SystemCommitLimit" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="SystemCommitCharge" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Resource-Exhaustion-Detector/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Lifecycle Events</Task>
+                <Opcode>Events logged when the resource exhaustion detector is started.</Opcode>
+                <Keyword>Events related to lifecycle of resource exhaustion detector.</Keyword>
+                <Message><![CDATA[
+The Windows Resource Exhaustion Detector failed to start due to an error.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Resource-Exhaustion-Detector/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Lifecycle Events</Task>
+                <Opcode>Events logged when the resource exhaustion detector is stopped.</Opcode>
+                <Keyword>Events related to lifecycle of resource exhaustion detector.</Keyword>
+                <Message><![CDATA[
+The Windows Resource Exhaustion Detector failed to stop due to an error.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1007</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Resource-Exhaustion-Detector/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Lifecycle Events</Task>
+                <Opcode>Events logged after a memory allocation.</Opcode>
+                <Keyword>Events related to lifecycle of resource exhaustion detector.</Keyword>
+                <Message><![CDATA[
+The Windows Resource Exhaustion Detector experienced a memory allocation failure.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestSize" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1008</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Resource-Exhaustion-Detector/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Resource Exhaustion Diagnosis Events</Task>
+                <Opcode>Contains the results of the diagnosis.</Opcode>
+                <Keyword>Events related to exhaustion of system commit limit (virtual memory).</Keyword>
+                <Message><![CDATA[
+Windows failed to diagnose a low virtual memory condition.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2004</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Task>Resource Exhaustion Diagnosis Events</Task>
+                <Opcode>Contains the results of the diagnosis.</Opcode>
+                <Keyword>Events related to exhaustion of system commit limit (virtual memory).</Keyword>
+                <Message><![CDATA[
+Windows successfully diagnosed a low virtual memory condition. The following programs consumed the most virtual memory: %21 (%22) consumed %24 bytes, %28 (%29) consumed %31 bytes, and %35 (%36) consumed %38 bytes.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SystemCommitLimit" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="SystemCommitCharge" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ProcessCommitCharge" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="PagedPoolUsage" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="PhysicalMemorySize" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="PhysicalMemoryUsage" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="NonPagedPoolUsage" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="TotalProcesses" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PagedPoolTag_1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PagedPoolUsed_1" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="PagedPoolTag_2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PagedPoolUsed_2" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="PagedPoolTag_3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PagedPoolUsed_3" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="NonPagedPoolTag_1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NonPagedPoolUsed_1" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="NonPagedPoolTag_2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NonPagedPoolUsed_2" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="NonPagedPoolTag_3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NonPagedPoolUsed_3" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Process_1_Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Process_1_ID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Process_1_CreationTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="Process_1_CommitCharge" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Process_1_HandleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Process_1_Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Process_1_TypeInfo" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Process_2_Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Process_2_ID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Process_2_CreationTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="Process_2_CommitCharge" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Process_2_HandleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Process_2_Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Process_2_TypeInfo" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Process_3_Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Process_3_ID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Process_3_CreationTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="Process_3_CommitCharge" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Process_3_HandleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Process_3_Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Process_3_TypeInfo" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Process_4_Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Process_4_ID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Process_4_CreationTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="Process_4_CommitCharge" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Process_4_HandleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Process_4_Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Process_4_TypeInfo" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Process_5_Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Process_5_ID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Process_5_CreationTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="Process_5_CommitCharge" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Process_5_HandleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Process_5_Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Process_5_TypeInfo" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Process_6_Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Process_6_ID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Process_6_CreationTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="Process_6_CommitCharge" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Process_6_HandleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Process_6_Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Process_6_TypeInfo" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EventGenerationTime" inType="win:FILETIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,646 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-EnhancedStorage-EhStorCertDrv</Name>
+        <Metadata>
+            <Guid>{BD2D1DAE-D678-4E10-9667-21CBA2AA70C3}</Guid>
+            <ResourceFilePath>C:\Windows\System32\EhStorAuthn.exe</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\System32\EhStorAuthn.exe</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=EhStorAuthn.exe&amp;FileVer=6.1.7600.16385</HelpLink>
+            <PublisherMessage>Microsoft-Windows-EnhancedStorage-EhStorCertDrv</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>0</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>ESCert.Init</Name>
+                    <Guid>{CDEAC622-D984-4E2D-9868-FB0BF0929F99}</Guid>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>ESCert.GP</Name>
+                    <Guid>{A1F71B8F-C8F0-4AAA-BFC8-46239F1563E8}</Guid>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>ESCert.DeviceAuthn</Name>
+                    <Guid>{76311D1B-752A-45E6-8D35-7A56F025D67B}</Guid>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>ESCert.HostAuthn</Name>
+                    <Guid>{2E8F25ED-507D-4BB3-9F00-08C2F0A391A5}</Guid>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>ESCert.AdminAuthn</Name>
+                    <Guid>{29C34B2E-6132-40F3-994E-1A060878ECD4}</Guid>
+                    <Value>5</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>ESCert.General</Name>
+                    <Guid>{CAD37A8D-6124-4957-9726-C5A75E494136}</Guid>
+                    <Value>6</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>ESPwd.PasswordEvent</Name>
+                    <Guid>{3E917692-3F8D-4DA4-98A8-AF94974A43DC}</Guid>
+                    <Value>7</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Device Authentication</Message>
+                    <Name>ESCert.OpDeviceAuthn</Name>
+                    <Value>20</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Host Authentication</Message>
+                    <Name>ESCert.OpHostAuthn</Name>
+                    <Value>21</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Administrator Authentication</Message>
+                    <Name>ESCert.OpAdminAuthn</Name>
+                    <Value>22</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Group Policy</Message>
+                    <Name>ESCert.OpGroupPolicy</Name>
+                    <Value>23</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Initialization</Message>
+                    <Name>ESCert.OpInitialization</Name>
+                    <Value>24</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>General</Message>
+                    <Name>ESCert.OpGeneral</Name>
+                    <Value>25</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Password silo driver event</Message>
+                    <Name>ESPwd.OpPwdEvent</Name>
+                    <Value>26</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>ESCert.Init</Task>
+                <Opcode>Initialization</Opcode>
+                <Message><![CDATA[
+Internal driver error]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hr" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="eventType" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="eventTypeData" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>ESCert.Init</Task>
+                <Opcode>Initialization</Opcode>
+                <Message><![CDATA[
+Device command error]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hr" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="eventType" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="eventTypeData" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>ESCert.Init</Task>
+                <Opcode>Initialization</Opcode>
+                <Message><![CDATA[
+Driver initialization failed due to unsupported device.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hr" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="eventType" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="eventTypeData" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>ESCert.GP</Task>
+                <Opcode>Group Policy</Opcode>
+                <Message><![CDATA[
+Use forbidden by policy setting. Contact your administrator for information on how to resolve this issue.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="policy" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="policyData" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>ESCert.GP</Task>
+                <Opcode>Group Policy</Opcode>
+                <Message><![CDATA[
+Operation forbidden by policy setting. Contact your administrator for information on how to resolve this issue.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="policy" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="policyData" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>ESCert.DeviceAuthn</Task>
+                <Opcode>Device Authentication</Opcode>
+                <Message><![CDATA[
+Invalid data error]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hr" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="eventType" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="eventTypeData" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>31</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>ESCert.DeviceAuthn</Task>
+                <Opcode>Device Authentication</Opcode>
+                <Message><![CDATA[
+Configuration error. Verify the device is configured correctly and the required certificates are available on the system.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hr" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="eventType" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="eventTypeData" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>ESCert.DeviceAuthn</Task>
+                <Opcode>Device Authentication</Opcode>
+                <Message><![CDATA[
+Internal driver error]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hr" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="eventType" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="eventTypeData" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>33</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>ESCert.DeviceAuthn</Task>
+                <Opcode>Device Authentication</Opcode>
+                <Message><![CDATA[
+Invalid device response]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hr" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="eventType" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="eventTypeData" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>34</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>ESCert.DeviceAuthn</Task>
+                <Opcode>Device Authentication</Opcode>
+                <Message><![CDATA[
+Device command error]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hr" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="eventType" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="eventTypeData" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>35</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Task>ESCert.DeviceAuthn</Task>
+                <Opcode>Device Authentication</Opcode>
+                <Message><![CDATA[
+Device authentication successful]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>40</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>ESCert.HostAuthn</Task>
+                <Opcode>Host Authentication</Opcode>
+                <Message><![CDATA[
+Invalid data error]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hr" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="eventType" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="eventTypeData" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>41</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>ESCert.HostAuthn</Task>
+                <Opcode>Host Authentication</Opcode>
+                <Message><![CDATA[
+Configuration error. Verify the device is configured correctly and the required certificates are available on the system.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hr" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="eventType" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="eventTypeData" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>42</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>ESCert.HostAuthn</Task>
+                <Opcode>Host Authentication</Opcode>
+                <Message><![CDATA[
+Internal driver error]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hr" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="eventType" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="eventTypeData" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>43</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>ESCert.HostAuthn</Task>
+                <Opcode>Host Authentication</Opcode>
+                <Message><![CDATA[
+Feature is not supported]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hr" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="eventType" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="eventTypeData" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>44</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>ESCert.HostAuthn</Task>
+                <Opcode>Host Authentication</Opcode>
+                <Message><![CDATA[
+Device command error]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hr" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="eventType" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="eventTypeData" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>45</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>ESCert.HostAuthn</Task>
+                <Opcode>Host Authentication</Opcode>
+                <Message><![CDATA[
+Host authentication is disabled when the system is in the locked state.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hr" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="eventType" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="eventTypeData" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>46</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Task>ESCert.HostAuthn</Task>
+                <Opcode>Host Authentication</Opcode>
+                <Message><![CDATA[
+Host authentication successful]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>50</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>ESCert.AdminAuthn</Task>
+                <Opcode>Administrator Authentication</Opcode>
+                <Message><![CDATA[
+Configuration error. Verify the device is configured correctly and the required certificates are available on the system.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hr" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="eventType" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="eventTypeData" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>ESCert.AdminAuthn</Task>
+                <Opcode>Administrator Authentication</Opcode>
+                <Message><![CDATA[
+Internal driver error]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hr" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="eventType" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="eventTypeData" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>52</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>ESCert.AdminAuthn</Task>
+                <Opcode>Administrator Authentication</Opcode>
+                <Message><![CDATA[
+Feature is not supported]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hr" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="eventType" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="eventTypeData" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>53</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>ESCert.AdminAuthn</Task>
+                <Opcode>Administrator Authentication</Opcode>
+                <Message><![CDATA[
+Device command error]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hr" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="eventType" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="eventTypeData" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>54</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>ESCert.AdminAuthn</Task>
+                <Opcode>Administrator Authentication</Opcode>
+                <Message><![CDATA[
+Invalid device response]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hr" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="eventType" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="eventTypeData" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>55</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Task>ESCert.AdminAuthn</Task>
+                <Opcode>Administrator Authentication</Opcode>
+                <Message><![CDATA[
+Administrator authentication successful]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>60</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Task>ESCert.General</Task>
+                <Opcode>General</Opcode>
+                <Message><![CDATA[
+Device initialize to manufacturer state successful]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>61</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>ESCert.General</Task>
+                <Opcode>General</Opcode>
+                <Message><![CDATA[
+Device initialize to manufacturer state fail]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hr" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="eventType" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="eventTypeData" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>62</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>ESCert.General</Task>
+                <Opcode>General</Opcode>
+                <Message><![CDATA[
+Hardware failure detected. Contact the device manufacturer for more information about the failure.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="responseData" inType="win:HexInt64" outType="win:HexInt64" count="32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>80</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>ESPwd.PasswordEvent</Task>
+                <Opcode>Password silo driver event</Opcode>
+                <Message><![CDATA[
+Password device is not compatible with Windows.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="status" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="eventType" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="eventTypeData" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>81</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>ESPwd.PasswordEvent</Task>
+                <Opcode>Password silo driver event</Opcode>
+                <Message><![CDATA[
+Password silo internal error.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="status" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="eventType" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="eventTypeData" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>82</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>ESPwd.PasswordEvent</Task>
+                <Opcode>Password silo driver event</Opcode>
+                <Message><![CDATA[
+Password silo returned invalid data.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="status" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="eventType" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="eventTypeData" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>83</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>ESPwd.PasswordEvent</Task>
+                <Opcode>Password silo driver event</Opcode>
+                <Message><![CDATA[
+Unexpected password silo authentication state.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="status" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="eventType" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="eventTypeData" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>84</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>ESPwd.PasswordEvent</Task>
+                <Opcode>Password silo driver event</Opcode>
+                <Message><![CDATA[
+Password silo reported an error on a password silo command.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="status" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="eventType" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="eventTypeData" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
