@@ -1,0 +1,58 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-API-Tracing</Name>
+        <Metadata>
+            <Guid>{B98F0DB6-26E2-4A66-89FC-32A9A6A9AF61}</Guid>
+            <ResourceFilePath>C:\Windows\system32\apilogen.dll</ResourceFilePath>
+            <ParameterFilePath>C:\Windows\system32\apilogen.dll</ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\apilogen.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=apilogen.dll&amp;FileVer=6.1.7600.16385</HelpLink>
+            <PublisherMessage>Microsoft-Windows-API-Tracing</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-API-Tracing/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-API-Tracing/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The API Tracing engine discovered a mismatch for a required manifest file. Information about the mismatch is below.
+
+Executable path: %1
+Binary name: %2
+System manifest ID: %3
+Binary manifest ID: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ExecutablePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BinaryName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SystemManifestId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="BinaryManifestId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

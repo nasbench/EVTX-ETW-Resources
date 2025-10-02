@@ -1,0 +1,481 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Dhcp-Nap-Enforcement-Client</Name>
+        <Metadata>
+            <Guid>{F6DA35CE-D312-41C8-9828-5A2E173C91B6}</Guid>
+            <ResourceFilePath>C:\Windows\system32\dhcpqec.dll</ResourceFilePath>
+            <ParameterFilePath>C:\Windows\system32\dhcpqec.dll</ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\dhcpqec.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=dhcpqec.dll&amp;FileVer=6.1.7600.16385</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Dhcp-Nap-Enforcement-Client</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-DHCPNap/Operational</Message>
+                    <Path>Microsoft-Windows-DhcpNap/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-DHCPNap/Admin</Message>
+                    <Path>Microsoft-Windows-DhcpNap/Admin</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>2</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Configuration State Event</Message>
+                    <Name>DHCPQEC_TASK_CONFIGURATION_STATE</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>Notification</Message>
+                    <Name>DHCPQEC_TASK_NOTIFICATION</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message>Service State Event</Message>
+                    <Name>DHCPQEC_TASK_SERVICE_STATE</Name>
+                    <Value>3</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>ErrorDeterminingLANAttributes</Message>
+                    <Name>DHCPQEC_OPCODE_ERROR_DETERMINING_LAN_ATTRIBUTES</Name>
+                    <Value>11</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>ErrorObtainingSOH</Message>
+                    <Name>DHCPQEC_OPCODE_ERROR_OBTAINING_SOH</Name>
+                    <Value>12</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>ErrorRenewingLease</Message>
+                    <Name>DHCPQEC_OPCODE_ERROR_RENEWING_LEASE</Name>
+                    <Value>13</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>ErrorProcessingSOHResponse</Message>
+                    <Name>DHCPQEC_OPCODE_ERROR_PROCESSING_SOH_RESPONSE</Name>
+                    <Value>14</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>ErrorObtainingSOHResponse</Message>
+                    <Name>DHCPQEC_OPCODE_ERROR_OBTAINING_SOH_RESPONSE</Name>
+                    <Value>15</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>ErrorPlumbingSOH</Message>
+                    <Name>DHCPQEC_OPCODE_ERROR_PLUMBING_SOH</Name>
+                    <Value>16</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>ErrorDhcpNapBinding</Message>
+                    <Name>DHCPQEC_OPCODE_ERROR_DHCP_NAP_BINDING</Name>
+                    <Value>17</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>QuarantineConfigurationSet</Message>
+                    <Name>DHCPQEC_OPCODE_QUARANTINE_CONFIGURATION_SET</Name>
+                    <Value>18</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>NonQuarantineConfigurationSet</Message>
+                    <Name>DHCPQEC_OPCODE_NONQUARANTINE_CONFIGURATION_SET</Name>
+                    <Value>19</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>DhcpServiceStopped</Message>
+                    <Name>DHCPQEC_OPCODE_DHCP_SERVICE_STOPPED</Name>
+                    <Value>20</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>DhcpServiceRunning</Message>
+                    <Name>DHCPQEC_OPCODE_DHCP_SERVICE_RUNNING</Name>
+                    <Value>21</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>MediaConnect</Message>
+                    <Name>DHCPQEC_OPCODE_MEDIA_CONNECT</Name>
+                    <Value>22</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>MediaDisconnect</Message>
+                    <Name>DHCPQEC_OPCODE_MEDIA_DISCONNECT</Name>
+                    <Value>23</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>NotificationAckReceived</Message>
+                    <Name>DHCPQEC_OPCODE_NOTIFICATION_ACK_RECEIVED</Name>
+                    <Value>24</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>NotificationNonDhcpAddress</Message>
+                    <Name>DHCPQEC_OPCODE_NOTIFICATION_NON_DHCP_ADDRESS</Name>
+                    <Value>25</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>NotificationSOHChange</Message>
+                    <Name>DHCPQEC_OPCODE_NOTIFICATION_SOH_CHANGE</Name>
+                    <Value>26</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>GetConnectionsCall</Message>
+                    <Name>DHCPQEC_OPCODE_GET_CONNECTIONS_CALL</Name>
+                    <Value>27</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>ServiceStart</Message>
+                    <Name>DHCPQEC_OPCODE_SERVICE_START</Name>
+                    <Value>28</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>ServiceStop</Message>
+                    <Name>DHCPQEC_OPCODE_SERVICE_STOP</Name>
+                    <Value>29</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>ErrorServiceStart</Message>
+                    <Name>DHCPQEC_OPCODE_ERROR_SERVICE_START</Name>
+                    <Value>30</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>52001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCPNap/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Configuration State Event</Task>
+                <Opcode>ErrorDeterminingLANAttributes</Opcode>
+                <Message><![CDATA[
+An error occurred in determining the LAN attributes. Error code is %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StatusCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>52002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCPNap/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Configuration State Event</Task>
+                <Opcode>ErrorObtainingSOH</Opcode>
+                <Message><![CDATA[
+An error occurred in obtaining the SOH. Error code is %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HResult" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>52003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCPNap/Admin</Channel>
+                <Level>Error</Level>
+                <Task>Configuration State Event</Task>
+                <Opcode>ErrorRenewingLease</Opcode>
+                <Message><![CDATA[
+An error occurred when DHPQEC tried to renew DHCP lease in the adapter %1. Error code is %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGUID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StatusCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>52004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCPNap/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Configuration State Event</Task>
+                <Opcode>ErrorProcessingSOHResponse</Opcode>
+                <Message><![CDATA[
+An error occurred in processing the SOH Response. Error code is %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HResult" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>52005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCPNap/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Configuration State Event</Task>
+                <Opcode>ErrorObtainingSOHResponse</Opcode>
+                <Message><![CDATA[
+An error occurred in obtaining the SOH Response in %1. Error code is %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGUID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HResult" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>52006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCPNap/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Configuration State Event</Task>
+                <Opcode>ErrorPlumbingSOH</Opcode>
+                <Message><![CDATA[
+An error occurred plumbing SOH for dhcp in the adapter %1. Error code is %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGUID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HResult" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>52007</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCPNap/Admin</Channel>
+                <Level>Information</Level>
+                <Task>Notification</Task>
+                <Opcode>DhcpServiceStopped</Opcode>
+                <Message><![CDATA[
+DHCP client service state is changed to stopped]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>52008</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCPNap/Admin</Channel>
+                <Level>Information</Level>
+                <Task>Notification</Task>
+                <Opcode>DhcpServiceRunning</Opcode>
+                <Message><![CDATA[
+DHCP client service state is changed to running]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>52009</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCPNap/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Notification</Task>
+                <Opcode>MediaConnect</Opcode>
+                <Message><![CDATA[
+Media Connect happened in the adapter %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGUID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>52010</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCPNap/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Notification</Task>
+                <Opcode>MediaDisconnect</Opcode>
+                <Message><![CDATA[
+Media Disconnect happened in the adapter %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGUID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>52011</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCPNap/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Notification</Task>
+                <Opcode>NotificationAckReceived</Opcode>
+                <Message><![CDATA[
+ACK-message received notification is received for the adapter %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGUID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>52012</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCPNap/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Notification</Task>
+                <Opcode>NotificationNonDhcpAddress</Opcode>
+                <Message><![CDATA[
+Plumbing of Non-Dhcp address notification is received for the adapter %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGUID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>52013</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCPNap/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Notification</Task>
+                <Opcode>NotificationSOHChange</Opcode>
+                <Message><![CDATA[
+NAP agent has notified SOH change]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>52014</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCPNap/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Notification</Task>
+                <Opcode>GetConnectionsCall</Opcode>
+                <Message><![CDATA[
+NAP agent has called GetConnections]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>52015</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCPNap/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Service State Event</Task>
+                <Opcode>ServiceStart</Opcode>
+                <Message><![CDATA[
+The DHCP Quarantine Enforcement Client started succesfully.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>52016</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCPNap/Operational</Channel>
+                <Level>Error</Level>
+                <Task>Service State Event</Task>
+                <Opcode>ErrorServiceStart</Opcode>
+                <Message><![CDATA[
+The DHCP Quarantine Enforcement Client failed to start. The following error occured %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRString" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>52017</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCPNap/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Service State Event</Task>
+                <Opcode>ServiceStop</Opcode>
+                <Message><![CDATA[
+The DHCP Quarantine Enforcement Client stopped succesfully.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>52018</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCPNap/Admin</Channel>
+                <Level>Error</Level>
+                <Task>Configuration State Event</Task>
+                <Opcode>ErrorDhcpNapBinding</Opcode>
+                <Message><![CDATA[
+The DHCP Quarantine Enforcement Client could not bind to the Quarantine Agent. The following error occured %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRString" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>52019</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCPNap/Admin</Channel>
+                <Level>Warning</Level>
+                <Task>Configuration State Event</Task>
+                <Opcode>QuarantineConfigurationSet</Opcode>
+                <Message><![CDATA[
+The network connection corresponding to the Network Card with address %1 was assigned quarantine configuration by the DHCP Quarantine Enforcement Client.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGUID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>52020</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCPNap/Admin</Channel>
+                <Level>Information</Level>
+                <Task>Configuration State Event</Task>
+                <Opcode>NonQuarantineConfigurationSet</Opcode>
+                <Message><![CDATA[
+The network connection corresponding to the Network Card with address %1 was removed from a previously assigned quarantine configuration by the DHCP Quarantine Enforcement Client.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGUID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

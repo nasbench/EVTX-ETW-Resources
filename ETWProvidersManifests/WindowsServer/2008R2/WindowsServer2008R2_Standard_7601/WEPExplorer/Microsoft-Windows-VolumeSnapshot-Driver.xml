@@ -1,0 +1,641 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-VolumeSnapshot-Driver</Name>
+        <Metadata>
+            <Guid>{67FE2216-727A-40CB-94B2-C02211EDB34A}</Guid>
+            <ResourceFilePath>C:\Windows\system32\drivers\volsnap.sys</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\drivers\volsnap.sys</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=volsnap.sys&amp;FileVer=6.1.7600.16385</HelpLink>
+            <PublisherMessage>Microsoft-Windows-VolumeSnapshot-Driver</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-VolumeSnapshot-Driver/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>vs:Prepare</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>vs:PreExposure</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>vs:AdjustBitmap</Name>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>vs:EndCommit</Name>
+                    <Value>6</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>vs:Activate</Name>
+                    <Value>8</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>vs:SetIgnorable</Name>
+                    <Value>10</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>vs:IgnorableProduct</Name>
+                    <Value>12</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>vs:Dismount</Name>
+                    <Value>14</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>vs:Remount</Name>
+                    <Value>16</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>vs:DeleteProcess</Name>
+                    <Value>18</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>vs:Revert</Name>
+                    <Value>20</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>vs:ProtectedBitmap</Name>
+                    <Value>22</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>vs:FlushHoldFs</Name>
+                    <Value>24</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>vs:ActivateLoop</Name>
+                    <Value>26</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>vs:ValidateFiles</Name>
+                    <Value>28</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>vs:VolumeSafe</Name>
+                    <Value>30</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>vs:DiscoverSnapshots</Name>
+                    <Value>32</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>vs:Diagnostic</Name>
+                    <Value>65536</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>0</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Operational</Channel>
+                <Level>Information</Level>
+                <Task>vs:Prepare</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>vs:Diagnostic</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Operational</Channel>
+                <Level>Information</Level>
+                <Task>vs:Prepare</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>vs:Diagnostic</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SnapshotGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Operational</Channel>
+                <Level>Information</Level>
+                <Task>vs:PreExposure</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>vs:Diagnostic</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Operational</Channel>
+                <Level>Information</Level>
+                <Task>vs:PreExposure</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>vs:Diagnostic</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Operational</Channel>
+                <Level>Information</Level>
+                <Task>vs:AdjustBitmap</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>vs:Diagnostic</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SnapshotGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Operational</Channel>
+                <Level>Information</Level>
+                <Task>vs:AdjustBitmap</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>vs:Diagnostic</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SnapshotGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Operational</Channel>
+                <Level>Information</Level>
+                <Task>vs:EndCommit</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>vs:Diagnostic</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Operational</Channel>
+                <Level>Information</Level>
+                <Task>vs:EndCommit</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>vs:Diagnostic</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Operational</Channel>
+                <Level>Information</Level>
+                <Task>vs:Activate</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>vs:Diagnostic</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Operational</Channel>
+                <Level>Information</Level>
+                <Task>vs:Activate</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>vs:Diagnostic</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Operational</Channel>
+                <Level>Information</Level>
+                <Task>vs:SetIgnorable</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>vs:Diagnostic</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SnapshotGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Operational</Channel>
+                <Level>Information</Level>
+                <Task>vs:SetIgnorable</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>vs:Diagnostic</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SnapshotGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Operational</Channel>
+                <Level>Information</Level>
+                <Task>vs:IgnorableProduct</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>vs:Diagnostic</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SnapshotGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Operational</Channel>
+                <Level>Information</Level>
+                <Task>vs:IgnorableProduct</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>vs:Diagnostic</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SnapshotGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Operational</Channel>
+                <Level>Information</Level>
+                <Task>vs:Dismount</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>vs:Diagnostic</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Operational</Channel>
+                <Level>Information</Level>
+                <Task>vs:Dismount</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>vs:Diagnostic</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Operational</Channel>
+                <Level>Information</Level>
+                <Task>vs:Remount</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>vs:Diagnostic</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Operational</Channel>
+                <Level>Information</Level>
+                <Task>vs:Remount</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>vs:Diagnostic</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Operational</Channel>
+                <Level>Information</Level>
+                <Task>vs:DeleteProcess</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>vs:Diagnostic</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Operational</Channel>
+                <Level>Information</Level>
+                <Task>vs:DeleteProcess</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>vs:Diagnostic</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Operational</Channel>
+                <Level>Information</Level>
+                <Task>vs:Revert</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>vs:Diagnostic</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Operational</Channel>
+                <Level>Information</Level>
+                <Task>vs:Revert</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>vs:Diagnostic</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>22</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Operational</Channel>
+                <Level>Information</Level>
+                <Task>vs:ProtectedBitmap</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>vs:Diagnostic</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>23</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Operational</Channel>
+                <Level>Information</Level>
+                <Task>vs:ProtectedBitmap</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>vs:Diagnostic</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>24</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Operational</Channel>
+                <Level>Information</Level>
+                <Task>vs:FlushHoldFs</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>vs:Diagnostic</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Operational</Channel>
+                <Level>Information</Level>
+                <Task>vs:FlushHoldFs</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>vs:Diagnostic</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>26</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Operational</Channel>
+                <Level>Information</Level>
+                <Task>vs:ActivateLoop</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>vs:Diagnostic</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>27</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Operational</Channel>
+                <Level>Information</Level>
+                <Task>vs:ActivateLoop</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>vs:Diagnostic</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>28</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Operational</Channel>
+                <Level>Information</Level>
+                <Task>vs:ValidateFiles</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>vs:Diagnostic</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>29</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Operational</Channel>
+                <Level>Information</Level>
+                <Task>vs:ValidateFiles</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>vs:Diagnostic</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Operational</Channel>
+                <Level>Information</Level>
+                <Task>vs:VolumeSafe</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>vs:Diagnostic</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>31</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Operational</Channel>
+                <Level>Information</Level>
+                <Task>vs:VolumeSafe</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>vs:Diagnostic</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Operational</Channel>
+                <Level>Information</Level>
+                <Task>vs:DiscoverSnapshots</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>vs:Diagnostic</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>33</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-VolumeSnapshot-Driver/Operational</Channel>
+                <Level>Information</Level>
+                <Task>vs:DiscoverSnapshots</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>vs:Diagnostic</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RealThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

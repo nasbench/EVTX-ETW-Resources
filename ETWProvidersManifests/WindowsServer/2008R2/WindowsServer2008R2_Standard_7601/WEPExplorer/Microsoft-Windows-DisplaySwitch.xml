@@ -1,0 +1,209 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-DisplaySwitch</Name>
+        <Metadata>
+            <Guid>{192EDE41-9175-4C86-AC02-9D003C9D43AB}</Guid>
+            <ResourceFilePath>C:\Windows\system32\DisplaySwitch.exe</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\DisplaySwitch.exe</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=DisplaySwitch.exe&amp;FileVer=6.1.7600.16385</HelpLink>
+            <PublisherMessage>Microsoft-Windows-DisplaySwitch</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-DisplaySwitch/Diagnostic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>DisplaySwitch_Application</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>DisplaySwitch_Application_Mode</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>DisplaySwitch_MainWindowShow</Name>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>DisplaySwitch_Selection</Name>
+                    <Value>5</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>DisplaySwitch_CommittingChange</Name>
+                    <Value>6</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>DisplaySwitch_IsLoadingLTRImages</Name>
+                    <Value>8</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>DisplaySwitch_TitleText</Name>
+                    <Value>9</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Default</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Response Time</Message>
+                    <Name>win:ResponseTime</Name>
+                    <Value>281474976710656</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DisplaySwitch/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>DisplaySwitch_Application</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Default</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DisplaySwitch/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>DisplaySwitch_Application</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Default</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DisplaySwitch/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>DisplaySwitch_Application_Mode</Task>
+                <Keyword>Default</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="nMode" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DisplaySwitch/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>DisplaySwitch_MainWindowShow</Task>
+                <Keyword>Default</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DisplaySwitch/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>DisplaySwitch_Selection</Task>
+                <Keyword>Default</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="nMode" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DisplaySwitch/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>DisplaySwitch_CommittingChange</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>Default</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="nMode" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DisplaySwitch/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>DisplaySwitch_CommittingChange</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>Default</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DisplaySwitch/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>DisplaySwitch_IsLoadingLTRImages</Task>
+                <Keyword>Default</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fLTR" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DisplaySwitch/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>DisplaySwitch_TitleText</Task>
+                <Keyword>Default</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="nTextID" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

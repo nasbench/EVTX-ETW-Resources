@@ -1,0 +1,205 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Kernel-Acpi</Name>
+        <Metadata>
+            <Guid>{C514638F-7723-485B-BCFC-96565D735D4A}</Guid>
+            <ResourceFilePath>C:\Windows\system32\advapi32.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\advapi32.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=advapi32.dll&amp;FileVer=6.1.7600.16385</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Kernel-Acpi</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Kernel-Acpi/Diagnostic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>ResourceTranslation</Name>
+                    <Value>100</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>GpeEventHandling</Name>
+                    <Value>101</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>acpi:Diagnostic</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>acpi:Thermal</Name>
+                    <Value>2</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Acpi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>ResourceTranslation</Task>
+                <Keyword>acpi:Diagnostic</Keyword>
+                <Message><![CDATA[
+A memory range descriptor has been marked as reserved.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ResourceFlag" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="GeneralFlag" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="TypeSpecificFlag" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Granularity" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="AddressMin" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="AddressMax" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="AddressTranslation" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="AddressLength" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Acpi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>GpeEventHandling</Task>
+                <Keyword>acpi:Diagnostic</Keyword>
+                <Message><![CDATA[
+Unexpected GPE event was fired on GPE bits that should be disabled.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="GpeRegister" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="UnexpectedEventMap" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Acpi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Keyword>acpi:Thermal</Keyword>
+                <Message><![CDATA[
+A temperature change notification (Notify(thermal_zone, 0x80)) for ACPI thermal zone %2 has been received.             
+_TMP = %3K             
+_PSV = %4K             
+_AC0 = %5K             
+_AC1 = %6K             
+_AC2 = %7K             
+_AC3 = %8K             
+_AC4 = %9K             
+_AC5 = %10K             
+_AC6 = %11K             
+_AC7 = %12K             
+_AC8 = %13K             
+_AC9 = %14K             
+_HOT = %15K             
+_CRT = %16K]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ThermalZoneDeviceInstanceLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ThermalZoneDeviceInstance" inType="win:UnicodeString" outType="xs:string" length="ThermalZoneDeviceInstanceLength"/>
+  <data name="_TMP" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="_PSV" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="_AC0" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="_AC1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="_AC2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="_AC3" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="_AC4" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="_AC5" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="_AC6" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="_AC7" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="_AC8" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="_AC9" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="_HOT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="_CRT" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Acpi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Keyword>acpi:Thermal</Keyword>
+                <Message><![CDATA[
+A trip point change notification (Notify(thermal_zone, 0x81)) for ACPI thermal zone %2 has been received.             
+_TMP = %3K             
+_PSV = %4K             
+_AC0 = %5K             
+_AC1 = %6K             
+_AC2 = %7K             
+_AC3 = %8K             
+_AC4 = %9K             
+_AC5 = %10K             
+_AC6 = %11K             
+_AC7 = %12K             
+_AC8 = %13K             
+_AC9 = %14K             
+_HOT = %15K             
+_CRT = %16K]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ThermalZoneDeviceInstanceLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ThermalZoneDeviceInstance" inType="win:UnicodeString" outType="xs:string" length="ThermalZoneDeviceInstanceLength"/>
+  <data name="_TMP" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="_PSV" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="_AC0" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="_AC1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="_AC2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="_AC3" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="_AC4" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="_AC5" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="_AC6" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="_AC7" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="_AC8" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="_AC9" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="_HOT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="_CRT" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Acpi/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Keyword>acpi:Thermal</Keyword>
+                <Message><![CDATA[
+The active cooling device %6 has been turned %8.             
+Thermal zone device instance: %2             
+Active cooling package: _AC%3             
+Namespace object: _AL%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ThermalZoneDeviceInstanceLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ThermalZoneDeviceInstance" inType="win:UnicodeString" outType="xs:string" length="ThermalZoneDeviceInstanceLength"/>
+  <data name="ActiveCoolingLevel" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ActiveCoolingDeviceIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FanDeviceInstanceLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FanDeviceInstance" inType="win:UnicodeString" outType="xs:string" length="FanDeviceInstanceLength"/>
+  <data name="PowerStateLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PowerState" inType="win:UnicodeString" outType="xs:string" length="PowerStateLength"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

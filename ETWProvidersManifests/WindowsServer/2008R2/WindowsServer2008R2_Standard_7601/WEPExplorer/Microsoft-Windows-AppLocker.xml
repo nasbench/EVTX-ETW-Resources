@@ -1,0 +1,267 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-AppLocker</Name>
+        <Metadata>
+            <Guid>{CBDA4DBF-8D5D-4F69-9578-BE14AA540D22}</Guid>
+            <ResourceFilePath>C:\Windows\system32\appidapi.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\appidapi.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=appidapi.dll&amp;FileVer=6.1.7600.16385</HelpLink>
+            <PublisherMessage>Microsoft-Windows-AppLocker</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-AppLocker/EXE and DLL</Message>
+                    <Path>Microsoft-Windows-AppLocker/EXE and DLL</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-AppLocker/MSI and Script</Message>
+                    <Path>Microsoft-Windows-AppLocker/MSI and Script</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>8000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppLocker/EXE and DLL</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+AppID policy conversion failed. Status %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppLocker/EXE and DLL</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The AppLocker policy was applied successfully to this computer.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppLocker/EXE and DLL</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%11 was allowed to run.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PolicyNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyNameBuffer" inType="win:UnicodeString" outType="xs:string" length="PolicyNameLength"/>
+  <data name="RuleId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="RuleNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="RuleNameBuffer" inType="win:UnicodeString" outType="xs:string" length="RuleNameLength"/>
+  <data name="RuleSddlLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="RuleSddlBuffer" inType="win:UnicodeString" outType="xs:string" length="RuleSddlLength"/>
+  <data name="TargetUser" inType="win:SID" outType="xs:string"/>
+  <data name="TargetProcessId" inType="win:UInt32" outType="win:PID"/>
+  <data name="FilePathLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FilePathBuffer" inType="win:UnicodeString" outType="xs:string" length="FilePathLength"/>
+  <data name="FileHashLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileHash" inType="win:Binary" outType="xs:hexBinary" length="FileHashLength"/>
+  <data name="FqbnLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Fqbn" inType="win:UnicodeString" outType="xs:string" length="FqbnLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppLocker/EXE and DLL</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+%11 was allowed to run but would have been prevented from running if the AppLocker policy were enforced.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PolicyNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyNameBuffer" inType="win:UnicodeString" outType="xs:string" length="PolicyNameLength"/>
+  <data name="RuleId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="RuleNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="RuleNameBuffer" inType="win:UnicodeString" outType="xs:string" length="RuleNameLength"/>
+  <data name="RuleSddlLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="RuleSddlBuffer" inType="win:UnicodeString" outType="xs:string" length="RuleSddlLength"/>
+  <data name="TargetUser" inType="win:SID" outType="xs:string"/>
+  <data name="TargetProcessId" inType="win:UInt32" outType="win:PID"/>
+  <data name="FilePathLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FilePathBuffer" inType="win:UnicodeString" outType="xs:string" length="FilePathLength"/>
+  <data name="FileHashLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileHash" inType="win:Binary" outType="xs:hexBinary" length="FileHashLength"/>
+  <data name="FqbnLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Fqbn" inType="win:UnicodeString" outType="xs:string" length="FqbnLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppLocker/EXE and DLL</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+%11 was prevented from running.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PolicyNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyNameBuffer" inType="win:UnicodeString" outType="xs:string" length="PolicyNameLength"/>
+  <data name="RuleId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="RuleNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="RuleNameBuffer" inType="win:UnicodeString" outType="xs:string" length="RuleNameLength"/>
+  <data name="RuleSddlLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="RuleSddlBuffer" inType="win:UnicodeString" outType="xs:string" length="RuleSddlLength"/>
+  <data name="TargetUser" inType="win:SID" outType="xs:string"/>
+  <data name="TargetProcessId" inType="win:UInt32" outType="win:PID"/>
+  <data name="FilePathLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FilePathBuffer" inType="win:UnicodeString" outType="xs:string" length="FilePathLength"/>
+  <data name="FileHashLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileHash" inType="win:Binary" outType="xs:hexBinary" length="FileHashLength"/>
+  <data name="FqbnLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Fqbn" inType="win:UnicodeString" outType="xs:string" length="FqbnLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppLocker/MSI and Script</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+%11 was allowed to run.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PolicyNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyNameBuffer" inType="win:UnicodeString" outType="xs:string" length="PolicyNameLength"/>
+  <data name="RuleId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="RuleNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="RuleNameBuffer" inType="win:UnicodeString" outType="xs:string" length="RuleNameLength"/>
+  <data name="RuleSddlLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="RuleSddlBuffer" inType="win:UnicodeString" outType="xs:string" length="RuleSddlLength"/>
+  <data name="TargetUser" inType="win:SID" outType="xs:string"/>
+  <data name="TargetProcessId" inType="win:UInt32" outType="win:PID"/>
+  <data name="FilePathLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FilePathBuffer" inType="win:UnicodeString" outType="xs:string" length="FilePathLength"/>
+  <data name="FileHashLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileHash" inType="win:Binary" outType="xs:hexBinary" length="FileHashLength"/>
+  <data name="FqbnLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Fqbn" inType="win:UnicodeString" outType="xs:string" length="FqbnLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppLocker/MSI and Script</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+%11 was allowed to run but would have been prevented from running if the AppLocker policy were enforced.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PolicyNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyNameBuffer" inType="win:UnicodeString" outType="xs:string" length="PolicyNameLength"/>
+  <data name="RuleId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="RuleNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="RuleNameBuffer" inType="win:UnicodeString" outType="xs:string" length="RuleNameLength"/>
+  <data name="RuleSddlLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="RuleSddlBuffer" inType="win:UnicodeString" outType="xs:string" length="RuleSddlLength"/>
+  <data name="TargetUser" inType="win:SID" outType="xs:string"/>
+  <data name="TargetProcessId" inType="win:UInt32" outType="win:PID"/>
+  <data name="FilePathLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FilePathBuffer" inType="win:UnicodeString" outType="xs:string" length="FilePathLength"/>
+  <data name="FileHashLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileHash" inType="win:Binary" outType="xs:hexBinary" length="FileHashLength"/>
+  <data name="FqbnLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Fqbn" inType="win:UnicodeString" outType="xs:string" length="FqbnLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8007</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppLocker/MSI and Script</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+%11 was prevented from running.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PolicyNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyNameBuffer" inType="win:UnicodeString" outType="xs:string" length="PolicyNameLength"/>
+  <data name="RuleId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="RuleNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="RuleNameBuffer" inType="win:UnicodeString" outType="xs:string" length="RuleNameLength"/>
+  <data name="RuleSddlLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="RuleSddlBuffer" inType="win:UnicodeString" outType="xs:string" length="RuleSddlLength"/>
+  <data name="TargetUser" inType="win:SID" outType="xs:string"/>
+  <data name="TargetProcessId" inType="win:UInt32" outType="win:PID"/>
+  <data name="FilePathLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FilePathBuffer" inType="win:UnicodeString" outType="xs:string" length="FilePathLength"/>
+  <data name="FileHashLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileHash" inType="win:Binary" outType="xs:hexBinary" length="FileHashLength"/>
+  <data name="FqbnLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Fqbn" inType="win:UnicodeString" outType="xs:string" length="FqbnLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8008</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppLocker/EXE and DLL</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+%2: AppLocker component not available on this SKU.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FilePathLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FilePathBuffer" inType="win:UnicodeString" outType="xs:string" length="FilePathLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8009</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-AppLocker/MSI and Script</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+%2: AppLocker component not available on this SKU.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FilePathLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FilePathBuffer" inType="win:UnicodeString" outType="xs:string" length="FilePathLength"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

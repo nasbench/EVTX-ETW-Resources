@@ -1,0 +1,583 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-RemoteApp and Desktop Connections</Name>
+        <Metadata>
+            <Guid>{1B8B402D-78DC-46FB-BF71-46E64AEDF165}</Guid>
+            <ResourceFilePath>C:\Windows\system32\TSWorkspace.dll</ResourceFilePath>
+            <ParameterFilePath>C:\Windows\system32\TSWorkspace.dll</ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\TSWorkspace.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=TSWorkspace.dll&amp;FileVer=6.1.7600.16385</HelpLink>
+            <PublisherMessage>Microsoft-Windows-RemoteApp and Desktop Connections</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Application</Message>
+                    <Path>Application</Path>
+                    <Index>0</Index>
+                    <Id>9</Id>
+                    <Imported>true</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-RemoteApp and Desktop Connections/Admin</Path>
+                    <Index>1</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Setup</Message>
+                    <Name>Setup</Name>
+                    <Value>100</Value>
+                </Task>
+                <Task>
+                    <Message>Update</Message>
+                    <Name>Update</Name>
+                    <Value>101</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteApp and Desktop Connections/Admin</Channel>
+                <Level>Error</Level>
+                <Task>Setup</Task>
+                <Message><![CDATA[
+An error occurred. Contact your workplace administrator for assistance.
+
+Connection name: %1
+Connection URL: %2
+Error code: %3, %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FeedURL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ErrorCodeAdditional" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteApp and Desktop Connections/Admin</Channel>
+                <Level>Error</Level>
+                <Task>Update</Task>
+                <Message><![CDATA[
+An error occurred. Contact your workplace administrator for assistance.
+
+Connection name: %1
+Connection URL: %2
+Error code: %3, %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FeedURL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ErrorCodeAdditional" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteApp and Desktop Connections/Admin</Channel>
+                <Level>Error</Level>
+                <Task>Setup</Task>
+                <Message><![CDATA[
+Windows cannot find the remote computer that contains the connection.                         
+
+Make sure that: 
+
+	-    You typed the correct connection URL 
+	-    Your computer can connect to the internet                        
+
+Connection name: %1
+Connection URL: %2
+Error code: %3, %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FeedURL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ErrorCodeAdditional" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteApp and Desktop Connections/Admin</Channel>
+                <Level>Error</Level>
+                <Task>Update</Task>
+                <Message><![CDATA[
+Windows cannot find the remote computer that contains the connection.                         
+
+Make sure that: 
+
+	-    You typed the correct connection URL 
+	-    Your computer can connect to the internet                        
+
+Connection name: %1
+Connection URL: %2
+Error code: %3, %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FeedURL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ErrorCodeAdditional" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteApp and Desktop Connections/Admin</Channel>
+                <Level>Error</Level>
+                <Task>Setup</Task>
+                <Message><![CDATA[
+The URL you typed does not have a connection. 
+
+Make sure that: 
+
+	-    You typed the correct connection URL                        
+
+Connection name: %1
+Connection URL: %2
+Error code: %3, %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FeedURL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ErrorCodeAdditional" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteApp and Desktop Connections/Admin</Channel>
+                <Level>Error</Level>
+                <Task>Update</Task>
+                <Message><![CDATA[
+The URL you typed does not have a connection. 
+
+Make sure that: 
+
+	-    You typed the correct connection URL                        
+
+Connection name: %1
+Connection URL: %2
+Error code: %3, %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FeedURL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ErrorCodeAdditional" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteApp and Desktop Connections/Admin</Channel>
+                <Level>Error</Level>
+                <Task>Setup</Task>
+                <Message><![CDATA[
+The connection update timed out.
+
+Connection name: %1
+Connection URL: %2
+Error code: %3, %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FeedURL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ErrorCodeAdditional" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1007</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteApp and Desktop Connections/Admin</Channel>
+                <Level>Error</Level>
+                <Task>Update</Task>
+                <Message><![CDATA[
+The connection update timed out.
+
+Connection name: %1
+Connection URL: %2
+Error code: %3, %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FeedURL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ErrorCodeAdditional" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1008</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteApp and Desktop Connections/Admin</Channel>
+                <Level>Warning</Level>
+                <Task>Setup</Task>
+                <Message><![CDATA[
+Some available resources could not be downloaded. 
+
+Resources available: %5 
+Resources downloaded: %6 
+Resources not downloaded: %7                         
+
+Contact your workplace administrator for assistance.
+
+Connection name: %1
+Connection URL: %2
+Error code: %3, %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FeedURL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ErrorCodeAdditional" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="NumResourcesAvailable" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NumResourcesDownloaded" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NumResourcesNotDownloaded" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1009</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteApp and Desktop Connections/Admin</Channel>
+                <Level>Warning</Level>
+                <Task>Update</Task>
+                <Message><![CDATA[
+Some available resources could not be downloaded. 
+
+Resources available: %5 
+Resources downloaded: %6 
+Resources not downloaded: %7                         
+
+Contact your workplace administrator for assistance.
+
+Connection name: %1
+Connection URL: %2
+Error code: %3, %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FeedURL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ErrorCodeAdditional" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="NumResourcesAvailable" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NumResourcesDownloaded" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NumResourcesNotDownloaded" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1010</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteApp and Desktop Connections/Admin</Channel>
+                <Level>Warning</Level>
+                <Task>Setup</Task>
+                <Message><![CDATA[
+There are currently no resources available in this connection. 
+
+Your workplace administrator might not have published any programs or desktops for you to access.                        
+
+In the future, use RemoteApp and Desktop Connections in Control Panel to check for updates to this connection.                        
+
+Connection name: %1
+Connection URL: %2
+Error code: %3, %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FeedURL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ErrorCodeAdditional" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1011</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteApp and Desktop Connections/Admin</Channel>
+                <Level>Warning</Level>
+                <Task>Update</Task>
+                <Message><![CDATA[
+There are currently no resources available in this connection. 
+
+Your workplace administrator might not have published any programs or desktops for you to access.                        
+
+In the future, use RemoteApp and Desktop Connections in Control Panel to check for updates to this connection.                        
+
+Connection name: %1
+Connection URL: %2
+Error code: %3, %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FeedURL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ErrorCodeAdditional" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1012</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteApp and Desktop Connections/Admin</Channel>
+                <Level>Error</Level>
+                <Task>Setup</Task>
+                <Message><![CDATA[
+There is a problem with this connection's security certificate. 
+
+The remote computer cannot be authenticated due to problems with its security certificate.                        
+
+Security certificate problems might indicate an attempt to fool you or intercept data you send to the remote computer.                        
+
+Windows cannot continue setting up this connection. Contact your workplace administrator for assistance.                         
+
+Connection name: %1
+Connection URL: %2
+Error code: %3, %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FeedURL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ErrorCodeAdditional" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1013</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteApp and Desktop Connections/Admin</Channel>
+                <Level>Error</Level>
+                <Task>Update</Task>
+                <Message><![CDATA[
+There is a problem with this connection's security certificate. 
+
+The remote computer cannot be authenticated due to problems with its security certificate.                        
+
+Security certificate problems might indicate an attempt to fool you or intercept data you send to the remote computer.                        
+
+Windows cannot continue setting up this connection. Contact your workplace administrator for assistance.                         
+
+Connection name: %1
+Connection URL: %2
+Error code: %3, %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FeedURL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ErrorCodeAdditional" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1014</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteApp and Desktop Connections/Admin</Channel>
+                <Level>Error</Level>
+                <Task>Setup</Task>
+                <Message><![CDATA[
+The credentials that were used to connect to %1 did not work.
+
+Connection name: %1
+Connection URL: %2
+Error code: %3, %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FeedURL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ErrorCodeAdditional" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1015</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteApp and Desktop Connections/Admin</Channel>
+                <Level>Error</Level>
+                <Task>Update</Task>
+                <Message><![CDATA[
+The credentials that were used to connect to %1 did not work.
+
+Connection name: %1
+Connection URL: %2
+Error code: %3, %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FeedURL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ErrorCodeAdditional" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1016</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteApp and Desktop Connections/Admin</Channel>
+                <Level>Error</Level>
+                <Task>Update</Task>
+                <Message><![CDATA[
+An update to this connection is already in progress. Please try again later.
+
+Connection name: %1
+Connection URL: %2
+Error code: %3, %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FeedURL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ErrorCodeAdditional" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1017</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteApp and Desktop Connections/Admin</Channel>
+                <Level>Error</Level>
+                <Task>Setup</Task>
+                <Message><![CDATA[
+The following resource could not be downloaded: 
+
+%5 
+
+Make sure that:                        
+
+	-     The file exists on the remote computer 
+
+	-     Your computer has the client software to use this resource                         
+
+	-     Your computer can connect to the Internet 
+
+	-     You typed the correct connection URL                        
+
+Connection name: %1
+Connection URL: %2
+Error code: %3, %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FeedURL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ErrorCodeAdditional" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ResourceURL" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1018</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteApp and Desktop Connections/Admin</Channel>
+                <Level>Error</Level>
+                <Task>Update</Task>
+                <Message><![CDATA[
+The following resource could not be downloaded: 
+
+%5 
+
+Make sure that:                        
+
+	-     The file exists on the remote computer 
+
+	-     Your computer has the client software to use this resource                         
+
+	-     Your computer can connect to the Internet 
+
+	-     You typed the correct connection URL                        
+
+Connection name: %1
+Connection URL: %2
+Error code: %3, %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FeedURL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ErrorCodeAdditional" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ResourceURL" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1019</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteApp and Desktop Connections/Admin</Channel>
+                <Level>Information</Level>
+                <Task>Setup</Task>
+                <Message><![CDATA[
+You have successfully set up the following connection:
+
+Connection name: %1
+
+Connection URL: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FeedURL" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1020</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-RemoteApp and Desktop Connections/Admin</Channel>
+                <Level>Information</Level>
+                <Task>Setup</Task>
+                <Message><![CDATA[
+The connection has been successfully removed:
+
+Connection name: %1
+
+Connection URL: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FeedURL" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
