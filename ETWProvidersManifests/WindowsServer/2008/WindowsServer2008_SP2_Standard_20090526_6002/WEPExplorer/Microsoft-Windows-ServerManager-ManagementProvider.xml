@@ -1,0 +1,833 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-ServerManager-ManagementProvider</Name>
+        <Metadata>
+            <Guid>{C2E6D0D9-5DF8-4C77-A82B-C96C84579543}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\wbem\MgmtProvider.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\wbem\MgmtProvider.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.2.9200.16398&amp;FileName=MgmtProvider.dll&amp;FileVer=6.2.9200.16398</HelpLink>
+            <PublisherMessage>Microsoft-Windows-ServerManager-ManagementProvider</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Operational</Message>
+                    <Path>Microsoft-Windows-ServerManager-MgmtProvider/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Debug</Message>
+                    <Path>Microsoft-Windows-ServerManager-MgmtProvider/Debug</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Critical</Message>
+                    <Name>win:Critical</Name>
+                    <Value>1</Value>
+                </Level>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Provider initialization</Message>
+                    <Name>ProviderInitialization</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>The error checking task</Message>
+                    <Name>ErrorChecking</Name>
+                    <Value>5</Value>
+                </Task>
+                <Task>
+                    <Message>Get performance collector state task</Message>
+                    <Name>GetPerformanceCollectorState</Name>
+                    <Value>6</Value>
+                </Task>
+                <Task>
+                    <Message>Set performance collector state task</Message>
+                    <Name>SetPerformanceCollectorState</Name>
+                    <Value>7</Value>
+                </Task>
+                <Task>
+                    <Message>Get counter samples in time range task</Message>
+                    <Name>GetCounterSamplesInTimeRange</Name>
+                    <Value>10</Value>
+                </Task>
+                <Task>
+                    <Message>Get counter samples at time task</Message>
+                    <Name>GetCounterSamplesAtTime</Name>
+                    <Value>11</Value>
+                </Task>
+                <Task>
+                    <Message>Get server inventory task</Message>
+                    <Name>GetServerInventory</Name>
+                    <Value>13</Value>
+                </Task>
+                <Task>
+                    <Message>Get server feature task</Message>
+                    <Name>GetServerFeature</Name>
+                    <Value>14</Value>
+                </Task>
+                <Task>
+                    <Message>Get server event detail task</Message>
+                    <Name>GetServerEventDetail</Name>
+                    <Value>15</Value>
+                </Task>
+                <Task>
+                    <Message>Get server bpa result task</Message>
+                    <Name>GetServerBpaResult</Name>
+                    <Value>16</Value>
+                </Task>
+                <Task>
+                    <Message>Get server cluster name task</Message>
+                    <Name>GetServerClusterName</Name>
+                    <Value>17</Value>
+                </Task>
+                <Task>
+                    <Message>Get server service detail task</Message>
+                    <Name>GetServerServiceDetail</Name>
+                    <Value>18</Value>
+                </Task>
+                <Task>
+                    <Message>Remove server performance log task</Message>
+                    <Name>RemoveServerPerformanceLog</Name>
+                    <Value>19</Value>
+                </Task>
+                <Task>
+                    <Message>Elevated Operation</Message>
+                    <Name>ElevatedOperation</Name>
+                    <Value>20</Value>
+                </Task>
+                <Task>
+                    <Message>WMI Operation</Message>
+                    <Name>WmiOperation</Name>
+                    <Value>21</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Provider initialization</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Loading the management provider]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Provider initialization</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Unloading the management provider]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Error</Level>
+                <Task>The error checking task</Task>
+                <Message><![CDATA[
+Condition %1 failed, throwing %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ptzMessage1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ptzMessage2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Get performance collector state task</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Get performance collector state task start.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Get performance collector state task</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Get performance collector state task complete.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Get performance collector state task</Task>
+                <Message><![CDATA[
+Get performance collector state task generated an error (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hResult" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Set performance collector state task</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Set performance collector state task start.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Set performance collector state task</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Set performance collector state task complete.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Set performance collector state task</Task>
+                <Message><![CDATA[
+Set performance collector state task generated an error (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hResult" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>26</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Get counter samples in time range task</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Get counter sample in time range task start.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>27</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Get counter samples in time range task</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Get counter samples in time range task complete.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>28</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Get counter samples in time range task</Task>
+                <Message><![CDATA[
+Get counter samples in time range task generated an error (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hResult" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>29</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Error</Level>
+                <Task>Get counter samples in time range task</Task>
+                <Message><![CDATA[
+Unable to process log file: %1, error: %2, last error: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hResult" inType="win:HexInt32" outType="win:ErrorCode"/>
+  <data name="hLastError" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Get counter samples at time task</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Get counter samples at time task start.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>31</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Get counter samples at time task</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+Get counter samples at time task complete.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Get counter samples at time task</Task>
+                <Message><![CDATA[
+Get counter samples at time task generated an error (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hResult" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>33</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Error</Level>
+                <Task>Get counter samples in time range task</Task>
+                <Message><![CDATA[
+Unable to process log file: %1, error: %2, last error: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hResult" inType="win:HexInt32" outType="win:ErrorCode"/>
+  <data name="hLastError" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>41</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Get server inventory task</Task>
+                <Message><![CDATA[
+Get server inventory task started.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>42</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Get server inventory task</Task>
+                <Message><![CDATA[
+Get server inventory task complete.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>43</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Get server inventory task</Task>
+                <Message><![CDATA[
+Get server inventory task failed.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>44</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Warning</Level>
+                <Task>Get server inventory task</Task>
+                <Message><![CDATA[
+Get server inventory task failed to query information from facility: %1, error code: %2, last error: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="facility" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="error" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="last error" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>45</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Get server inventory task</Task>
+                <Message><![CDATA[
+Failure opening metadata of the owning provider for channel: %1 [hResult = %2, hLastResult = %3].]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hResult" inType="win:HexInt32" outType="win:ErrorCode"/>
+  <data name="hLastError" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>46</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Get server inventory task</Task>
+                <Message><![CDATA[
+Generic failure querying the localized name for channel: %1 [hResult = %2, hLastResult = %3].]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hResult" inType="win:HexInt32" outType="win:ErrorCode"/>
+  <data name="hLastError" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>47</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Get server feature task</Task>
+                <Message><![CDATA[
+Get server feature task started, flags: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="uValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>48</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Get server feature task</Task>
+                <Message><![CDATA[
+Get server feature task complete, total features returned: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="uValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>49</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Get server feature task</Task>
+                <Message><![CDATA[
+Get server feature task failed, error: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hResult" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>50</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Get server feature task</Task>
+                <Message><![CDATA[
+The feature returned by the ceip provider is not found in the static feature information xml. Id: %1, Name: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:Int32" outType="xs:int"/>
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Get server feature task</Task>
+                <Message><![CDATA[
+The feature's parent id returned by the ceip provider is not found in the static feature information xml. Feature Id: %1, Parent Id: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:Int32" outType="xs:int"/>
+  <data name="Parent Id" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>52</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Get server event detail task</Task>
+                <Message><![CDATA[
+Get server event detail task started, number of logs: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="uValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>53</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Get server event detail task</Task>
+                <Message><![CDATA[
+Get server event detail task complete, number of results: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="uValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>54</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Get server event detail task</Task>
+                <Message><![CDATA[
+Get server event detail task failed, error: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hResult" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>55</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>Get server event detail task</Task>
+                <Message><![CDATA[
+Server event detail query: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Query" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>56</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Information</Level>
+                <Task>Get server event detail task</Task>
+                <Message><![CDATA[
+Couldn't find event query file: %1 [hResult: %2, hLastResult: %3].]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hResult" inType="win:HexInt32" outType="win:ErrorCode"/>
+  <data name="hLastError" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>57</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Warning</Level>
+                <Task>Get server event detail task</Task>
+                <Message><![CDATA[
+Server event detail task failed to process the query file: %1, error code: %2, last error: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hResult" inType="win:HexInt32" outType="win:ErrorCode"/>
+  <data name="hLastError" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>58</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Warning</Level>
+                <Task>Get server event detail task</Task>
+                <Message><![CDATA[
+Server event detail task failed to open the provider's metadata, name: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>61</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Warning</Level>
+                <Task>Get server feature task</Task>
+                <Message><![CDATA[
+The Uxd feature enumeration delay value was not found, using default delay.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>62</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Get server bpa result task</Task>
+                <Message><![CDATA[
+Get bpa result task start: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TotalXPaths" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>63</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Get server bpa result task</Task>
+                <Message><![CDATA[
+Get bpa result task complete: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ResultsReturned" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>64</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Get server bpa result task</Task>
+                <Message><![CDATA[
+Get bpa result task generated an error: %1, last error: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:HexInt32" outType="win:ErrorCode"/>
+  <data name="LastError" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>65</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Get server cluster name task</Task>
+                <Message><![CDATA[
+Get cluster name task start.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>66</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Get server cluster name task</Task>
+                <Message><![CDATA[
+Get cluster name task complete.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>67</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Get server cluster name task</Task>
+                <Message><![CDATA[
+Get cluster name task generated an error.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>68</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Get server event detail task</Task>
+                <Message><![CDATA[
+Events were queried from ADAM (ADAM.Events.xml) but the provider was not able to find any instances [hResult = %1, hLastResult = %2].]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:HexInt32" outType="win:ErrorCode"/>
+  <data name="Last Error" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>69</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Get server service detail task</Task>
+                <Message><![CDATA[
+Get server service detail task start. Number of service requested: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="uValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>70</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Information</Level>
+                <Task>Get server service detail task</Task>
+                <Message><![CDATA[
+Get server service detail task complete. Number of services returned: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="uValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>71</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Error</Level>
+                <Task>Get server service detail task</Task>
+                <Message><![CDATA[
+Get server service detail task generated an error [hResult: %1, hLastResult = %2].]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:HexInt32" outType="win:ErrorCode"/>
+  <data name="Last Error" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>72</Id>
+                <Version>0</Version>
+                <Channel>Operational</Channel>
+                <Level>Warning</Level>
+                <Task>Get server service detail task</Task>
+                <Message><![CDATA[
+Couldn't open service: %1 [hResult = %2, hLastResult = %3].]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hResult" inType="win:HexInt32" outType="win:ErrorCode"/>
+  <data name="hLastError" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>73</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Warning</Level>
+                <Task>Get server service detail task</Task>
+                <Message><![CDATA[
+Can't get description of service: %1 [hResult = %2, hLastResult = %3].]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hResult" inType="win:HexInt32" outType="win:ErrorCode"/>
+  <data name="hLastError" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>74</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Warning</Level>
+                <Task>Get server service detail task</Task>
+                <Message><![CDATA[
+Can't get config information of service: %1 [hResult = %2, hLastResult = %3].]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hResult" inType="win:HexInt32" outType="win:ErrorCode"/>
+  <data name="hLastError" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>75</Id>
+                <Version>0</Version>
+                <Channel>Debug</Channel>
+                <Level>Warning</Level>
+                <Task>Get server service detail task</Task>
+                <Message><![CDATA[
+Generic failure querying service details of service: %1 [hResult = %2, hLastResult = %3].]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hResult" inType="win:HexInt32" outType="win:ErrorCode"/>
+  <data name="hLastError" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

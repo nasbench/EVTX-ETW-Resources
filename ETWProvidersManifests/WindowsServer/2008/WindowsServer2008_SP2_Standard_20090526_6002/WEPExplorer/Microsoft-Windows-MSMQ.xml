@@ -1,0 +1,126 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-MSMQ</Name>
+        <Metadata>
+            <Guid>{CE18AF71-5EFD-4F5A-9BD5-635E34632F69}</Guid>
+            <ResourceFilePath>mqutil.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>mqutil.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.0.6000.16386&amp;FileName=mqutil.dll&amp;FileVer=6.0.6000.16386</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Application</Path>
+                    <Index>0</Index>
+                    <Id>9</Id>
+                    <Imported>true</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-MSMQ/End2End</Path>
+                    <Index>1</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message></Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message></Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Tracking MSMQ Messages</Message>
+                    <Name>msmqe2emessage</Name>
+                    <Value>1</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MSMQ/End2End</Channel>
+                <Level>win:Informational</Level>
+                <Keyword>Tracking MSMQ Messages</Keyword>
+                <Message><![CDATA[
+Message with ID %1\%2 was put into queue %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MessageID:GUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="MessageID:Identity" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="QueueName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MSMQ/End2End</Channel>
+                <Level>win:Informational</Level>
+                <Keyword>Tracking MSMQ Messages</Keyword>
+                <Message><![CDATA[
+Message received]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MSMQ/End2End</Channel>
+                <Level>win:Informational</Level>
+                <Keyword>Tracking MSMQ Messages</Keyword>
+                <Message><![CDATA[
+Message sent over network]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MSMQ/End2End</Channel>
+                <Level>win:Informational</Level>
+                <Keyword>Tracking MSMQ Messages</Keyword>
+                <Message><![CDATA[
+Message came over network]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MSMQ/End2End</Channel>
+                <Level>win:Informational</Level>
+                <Keyword>Tracking MSMQ Messages</Keyword>
+                <Message><![CDATA[
+Message with ID %1\%2 was sent to queue %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MessageID:GUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="MessageID:Identity" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="QueueName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

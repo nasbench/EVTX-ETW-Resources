@@ -1,0 +1,222 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-IIS-FTP</Name>
+        <Metadata>
+            <Guid>{AB29F35C-8531-42FF-810D-B8552D23BC92}</Guid>
+            <ResourceFilePath>%windir%\system32\inetsrv\iisres.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\inetsrv\iisres.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Internet%20Information%20Services&amp;ProdVer=7.0.6002.18005&amp;FileName=iisres.dll&amp;FileVer=7.0.6002.18005</HelpLink>
+            <PublisherMessage>Microsoft-Windows-IIS-FTP</PublisherMessage>
+            <Channels>
+            </Channels>
+            <Levels>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>win:EventlogClassic</Name>
+                    <Value>36028797018963968</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>3221487617</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+FTP Server could not initialize its security.  The data is the error.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221487619</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+FTP Server could not initialize the socket library.  The data is the error.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221487620</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+FTP Server was unable to initialize because of a shortage of available memory. The data is the error.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221487621</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+FTP Server could not locate the FTP/TCP service.  The data is the error.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221487622</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+FTP Server could not create the main connection socket.  The data is the error.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221487623</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+FTP Server could not create the main connection thread.  The data is the error.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221487624</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+FTP Server could not create a client worker thread for user at host %1.  The connection to this user is terminated.  The data is the error.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221487625</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A call to a system service failed unexpectedly.  The data is the error.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147745802</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+User %1 at host %2 has timed-out after %3 seconds of inactivity.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="User" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Host" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="InactivtyTime" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1074003979</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Anonymous logon request received from %1 at host %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Client" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Host" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1074003980</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+User logon request received from %1 at host %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Client" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Host" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147745805</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+User %1 failed to log on, could not access the home directory %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="User" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HomeDir" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147745806</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+User %1 denied access to the current directory %2 due to a security change.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="User" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Dir" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221487631</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to read metabase property PassivePortRange under the FTP Service node %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FTPMetabasePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221487632</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The FTP Service configuration property PassivePortRange has invalid value: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InvalidPasvPortRange" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147760193</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The server failed to create a data channel connection to a client on local interface: %1. The FTP data port %2 may be in use by another service or application.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LocalNetworkInterface" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FTPDataPort" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

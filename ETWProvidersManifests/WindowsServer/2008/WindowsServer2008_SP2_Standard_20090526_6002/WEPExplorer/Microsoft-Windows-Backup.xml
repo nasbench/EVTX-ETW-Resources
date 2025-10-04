@@ -1,0 +1,2148 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Backup</Name>
+        <Metadata>
+            <Guid>{1DB28F2E-8F80-4027-8C5A-A11F7F10F62D}</Guid>
+            <ResourceFilePath>%windir%\system32\BlbEvents.dll</ResourceFilePath>
+            <ParameterFilePath>C:\Windows\system32\blbres.dll</ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\BlbEvents.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.0.6001.18000&amp;FileName=BlbEvents.dll&amp;FileVer=6.0.6001.18000</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Backup</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Application</Path>
+                    <Index>0</Index>
+                    <Id>9</Id>
+                    <Imported>true</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-Backup/Operational</Message>
+                    <Path>Microsoft-Windows-Backup</Path>
+                    <Index>1</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message></Message>
+                    <Name>win:Critical</Name>
+                    <Value>1</Value>
+                </Level>
+                <Level>
+                    <Message></Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message></Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message></Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message></Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Opcode>win:Start</Opcode>
+                <Message><![CDATA[
+Backup started.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BackupTemplateID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SystemStateBackup" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Critical</Level>
+                <Message><![CDATA[
+Windows Backup catalog is corrupt. Please recover the catalog from a backup using 'WBADMIN RESTORE CATALOG' or using Windows Backup MMC Snapin.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Backup catalog on selected backup disk '%1' is corrupt. Please choose a different target.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TargetDeviceName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Backup finished successfully.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BackupTemplateID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BackupState" inType="win:Int32" outType="xs:int"/>
+  <data name="BackupTarget" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NumOfVolumes" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BackupTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VolumesInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DetailedHRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SourceSnapStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="SourceSnapEndTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="PrepareBackupStartTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PrepareBackupEndTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BackupWriteStartTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BackupWriteEndTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TargetSnapStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="TargetSnapEndTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="DVDFormatStartTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DVDFormatEndTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MediaVerifyStartTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MediaVerifyEndTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BackupPreviousState" inType="win:Int32" outType="xs:int"/>
+  <data name="ComponentStatus" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SSBEnumerateStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="SSBEnumerateEndTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="SSBVhdCreationStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="SSBVhdCreationEndTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="SSBBackupStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="SSBBackupEndTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="SystemStateBackup" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Backup started at '%6' failed with following error code '%2'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BackupTemplateID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BackupState" inType="win:Int32" outType="xs:int"/>
+  <data name="BackupTarget" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NumOfVolumes" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BackupTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VolumesInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DetailedHRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SourceSnapStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="SourceSnapEndTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="PrepareBackupStartTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PrepareBackupEndTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BackupWriteStartTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BackupWriteEndTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TargetSnapStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="TargetSnapEndTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="DVDFormatStartTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DVDFormatEndTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MediaVerifyStartTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MediaVerifyEndTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BackupPreviousState" inType="win:Int32" outType="xs:int"/>
+  <data name="ComponentStatus" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SSBEnumerateStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="SSBEnumerateEndTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="SSBVhdCreationStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="SSBVhdCreationEndTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="SSBBackupStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="SSBBackupEndTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="SystemStateBackup" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Backup started at '%1' failed as another backup or recovery is in progress.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Backup started at '%6' failed with following error code %7.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BackupTemplateID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BackupState" inType="win:Int32" outType="xs:int"/>
+  <data name="BackupTarget" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NumOfVolumes" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BackupTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VolumesInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DetailedHRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SourceSnapStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="SourceSnapEndTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="PrepareBackupStartTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PrepareBackupEndTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BackupWriteStartTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BackupWriteEndTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TargetSnapStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="TargetSnapEndTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="DVDFormatStartTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DVDFormatEndTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MediaVerifyStartTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MediaVerifyEndTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BackupPreviousState" inType="win:Int32" outType="xs:int"/>
+  <data name="ComponentStatus" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SSBEnumerateStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="SSBEnumerateEndTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="SSBVhdCreationStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="SSBVhdCreationEndTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="SSBBackupStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="SSBBackupEndTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="SystemStateBackup" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Backup cancelled.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BackupTemplateID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BackupState" inType="win:Int32" outType="xs:int"/>
+  <data name="BackupTarget" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NumOfVolumes" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BackupTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VolumesInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DetailedHRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SourceSnapStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="SourceSnapEndTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="PrepareBackupStartTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PrepareBackupEndTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BackupWriteStartTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BackupWriteEndTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TargetSnapStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="TargetSnapEndTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="DVDFormatStartTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DVDFormatEndTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MediaVerifyStartTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MediaVerifyEndTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BackupPreviousState" inType="win:Int32" outType="xs:int"/>
+  <data name="ComponentStatus" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SSBEnumerateStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="SSBEnumerateEndTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="SSBVhdCreationStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="SSBVhdCreationEndTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="SSBBackupStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="SSBBackupEndTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="SystemStateBackup" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Backup started at '%1' failed as Volume Shadow copy operation failed for backup volumes with following error code '%2'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BackupSetId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SppErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Warning</Level>
+                <Message><![CDATA[
+There is no backup available on target '%1' as backup data is corrupted.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Backup of Volume '%2' on target found to be corrupt.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BackupSetId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeFriendlyName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Backup of Volume on target found to have some corrupt application metadata.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BackupSetId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Warning</Level>
+                <Message><![CDATA[
+Backup completed with warning(s) - Volume '%2' has developed new bad clusters. This may be an indication of problems with your hardware. %3 bytes have not been backed up as they could not be read. Please run chkdsk /R on '%2' and rerun the backup.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeFriendlyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BackupSourceNumUnreadableBytes" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Opcode>win:Stop</Opcode>
+                <Message><![CDATA[
+Backup completed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BackupTemplateID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BackupState" inType="win:Int32" outType="xs:int"/>
+  <data name="BackupTarget" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NumOfVolumes" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BackupTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VolumesInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DetailedHRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SourceSnapStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="SourceSnapEndTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="PrepareBackupStartTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PrepareBackupEndTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BackupWriteStartTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BackupWriteEndTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TargetSnapStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="TargetSnapEndTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="DVDFormatStartTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DVDFormatEndTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MediaVerifyStartTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MediaVerifyEndTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BackupPreviousState" inType="win:Int32" outType="xs:int"/>
+  <data name="ComponentStatus" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SSBEnumerateStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="SSBEnumerateEndTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="SSBVhdCreationStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="SSBVhdCreationEndTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="SSBBackupStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="SSBBackupEndTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="SystemStateBackup" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Scheduled backup configuration conflicts with group policy settings, error - '%1'. Failing scheduled backup due to the conflict.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Backup failed as recovery planning is in progress through some other client.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BackupTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="BackupTarget" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BackupTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NumOfVolumes" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VolumeNames" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Backup started at '%1' failed because Windows Backup engine could not be contacted, error code '%2'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BackupTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Scheduled backup started at '%1' failed because the schedule settings was not found.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BackupTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="TemplateId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Backup attempted at '%4' failed to start, error code '%5'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BackupTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="BackupTarget" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BackupTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NumOfVolumes" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VolumeNames" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Backup started at '%2' failed as another backup or recovery is in progress.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BackupTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="BackupTarget" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BackupTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NumOfVolumes" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VolumeNames" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Scheduled backup configuration conflicts with group policy settings, error - '%1'. Failing scheduled backup started at '%2' due to the conflict.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BackupTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="BackupTarget" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BackupTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NumOfVolumes" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VolumeNames" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>22</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Backup started at '%2' failed as recovery planning is in progress through some other client.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BackupTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="BackupTarget" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BackupTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NumOfVolumes" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VolumeNames" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>49</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Backup failed as no target could be found.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>50</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Backup failed as required space was not available on the backup target.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeFriendlyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeAccessPath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Warning</Level>
+                <Message><![CDATA[
+Backup target is running low on free space. Future backups to this target may fail for want of enough space.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeFriendlyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeAccessPath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>52</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Backup task failed as the configured network target is not writeable.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeFriendlyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeAccessPath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>53</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Backup waiting for DVD to be inserted into drive.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>96</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+A scheduled backup task has been configured on this machine.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>97</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+The scheduled backup task configured on this machine has been modified.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>98</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Backup schedule was deleted. Backups would no more run as per schedule.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>99</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+A scheduled backup task has been configured on this machine.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UserName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TemplateGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ScheduleTimesList" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Backup schedule was cancelled. Backups would no more run as per schedule.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>144</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+A new volume '%1' was detected that is not included for backup.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeFriendlyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeAccessPath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>146</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Warning</Level>
+                <Message><![CDATA[
+A volume '%1' included for backup is missing. This could be because the volume is dismounted, reformatted or disk is detached.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeFriendlyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeAccessPath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>160</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+The System Catalog has been recovered from Backup Target '%1'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BackupTarget" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MachineName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>161</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+The System Catalog has been deleted.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>192</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Opcode>win:Start</Opcode>
+                <Message><![CDATA[
+Restore started.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BackupSetId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>193</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Opcode>win:Stop</Opcode>
+                <Message><![CDATA[
+Restore of volume(s) completed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BackupSetId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="BackupSetTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="RestoreEventId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="RestoreState" inType="win:Int32" outType="xs:int"/>
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DetailedHRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BackupTargetFriendlyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NumOfVolumes" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RestoreTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="VolumesInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PrepareRestoreTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="WriteRestoreTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>194</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Restore of volume(s) started at '%9' successfully completed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BackupSetId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="BackupSetTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="RestoreEventId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="RestoreState" inType="win:Int32" outType="xs:int"/>
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DetailedHRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BackupTargetFriendlyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NumOfVolumes" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RestoreTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="VolumesInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PrepareRestoreTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="WriteRestoreTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>195</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Warning</Level>
+                <Message><![CDATA[
+Volume restore completed with errors.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BackupSetId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="BackupSetTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="RestoreEventId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="RestoreState" inType="win:Int32" outType="xs:int"/>
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DetailedHRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BackupTargetFriendlyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NumOfVolumes" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RestoreTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="VolumesInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PrepareRestoreTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="WriteRestoreTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>196</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Restore of volumes failed with errors.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BackupSetId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="BackupSetTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="RestoreEventId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="RestoreState" inType="win:Int32" outType="xs:int"/>
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DetailedHRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BackupTargetFriendlyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NumOfVolumes" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RestoreTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="VolumesInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PrepareRestoreTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="WriteRestoreTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>197</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Restore of volume(s) started at '%9' was cancelled.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BackupSetId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="BackupSetTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="RestoreEventId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="RestoreState" inType="win:Int32" outType="xs:int"/>
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DetailedHRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BackupTargetFriendlyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NumOfVolumes" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RestoreTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="VolumesInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PrepareRestoreTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="WriteRestoreTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>198</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Restore of volume '%1'  failed or cancelled. Volume is now corrupted and will need to be formatted.']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeFriendlyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeAccessPath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>199</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Restore of '%1' failed as restore volume is too small.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeFriendlyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VolumeAccessPath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>208</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Opcode>win:Stop</Opcode>
+                <Message><![CDATA[
+Restore of file(s) completed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BackupSetId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="BackupSetTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="RestoreEventId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FileRestoreTargetPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RestoreState" inType="win:Int32" outType="xs:int"/>
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DetailedHRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NumOfFiles" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FilesInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RestoreTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="FileSuccessLogPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FileFailureLogPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MountVhdTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PreparePassTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="WriteFilesTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>209</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Restore of file(s) started at '%9' completed successfully.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BackupSetId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="BackupSetTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="RestoreEventId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FileRestoreTargetPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RestoreState" inType="win:Int32" outType="xs:int"/>
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DetailedHRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NumOfFiles" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FilesInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RestoreTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="FileSuccessLogPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FileFailureLogPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MountVhdTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PreparePassTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="WriteFilesTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>210</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Warning</Level>
+                <Message><![CDATA[
+File restore completed with errors. One or more files may not have been recovered correctly]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BackupSetId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="BackupSetTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="RestoreEventId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FileRestoreTargetPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RestoreState" inType="win:Int32" outType="xs:int"/>
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DetailedHRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NumOfFiles" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FilesInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RestoreTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="FileSuccessLogPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FileFailureLogPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MountVhdTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PreparePassTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="WriteFilesTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>211</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+File restore failed with errors.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BackupSetId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="BackupSetTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="RestoreEventId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FileRestoreTargetPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RestoreState" inType="win:Int32" outType="xs:int"/>
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DetailedHRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NumOfFiles" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FilesInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RestoreTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="FileSuccessLogPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FileFailureLogPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MountVhdTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PreparePassTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="WriteFilesTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>212</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Restore of file(s) started at '%9' was cancelled.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BackupSetId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="BackupSetTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="RestoreEventId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FileRestoreTargetPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RestoreState" inType="win:Int32" outType="xs:int"/>
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DetailedHRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NumOfFiles" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FilesInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RestoreTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="FileSuccessLogPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FileFailureLogPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MountVhdTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PreparePassTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="WriteFilesTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>213</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Opcode>win:Stop</Opcode>
+                <Message><![CDATA[
+Backup set of volume '%2' on target loaded.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BackupSetId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeToMount" inType="win:GUID" outType="xs:GUID"/>
+  <data name="NeedNetworkShare" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TimeTakenToMount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>214</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Restore of file(s) started at '%10' completed successfully. Log of files successfully restored '%11'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BackupSetId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="BackupSetTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="RestoreEventId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FileRestoreTargetPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RestoreState" inType="win:Int32" outType="xs:int"/>
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DetailedHRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NumOfFiles" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FilesInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RestoreTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="FileSuccessLogPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FileFailureLogPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MountVhdTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PreparePassTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="WriteFilesTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>215</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Warning</Level>
+                <Message><![CDATA[
+File restore completed with errors. One or more files may not have been recovered correctly. Log of files successfully restored '%11'. Log of files not restored successfully '%12'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BackupSetId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="BackupSetTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="RestoreEventId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FileRestoreTargetPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RestoreState" inType="win:Int32" outType="xs:int"/>
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DetailedHRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NumOfFiles" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FilesInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RestoreTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="FileSuccessLogPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FileFailureLogPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MountVhdTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PreparePassTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="WriteFilesTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>216</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+File restore failed with errors. Log of files not restored successfully '%12'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BackupSetId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="BackupSetTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="RestoreEventId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FileRestoreTargetPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RestoreState" inType="win:Int32" outType="xs:int"/>
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DetailedHRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NumOfFiles" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FilesInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RestoreTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="FileSuccessLogPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FileFailureLogPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MountVhdTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PreparePassTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="WriteFilesTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>217</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Restore of file(s) started at '%10' was cancelled.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BackupSetId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="BackupSetTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="RestoreEventId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FileRestoreTargetPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RestoreState" inType="win:Int32" outType="xs:int"/>
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DetailedHRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NumOfFiles" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FilesInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RestoreTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="FileSuccessLogPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FileFailureLogPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MountVhdTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PreparePassTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="WriteFilesTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>224</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Opcode>win:Stop</Opcode>
+                <Message><![CDATA[
+The restore of component(s) has completed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BackupSetId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="BackupSetTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="RestoreEventId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="RecoveryFromSSB" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="BackupTargetPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AppRestoreAlternateTargetPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RestoreState" inType="win:Int32" outType="xs:int"/>
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DetailedHRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RestoreTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="NumOfComponents" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FileSuccessLogPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FileFailureLogPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AppsInfo" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>225</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+The restore of component(s) that started at '%9' completed successfully.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BackupSetId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="BackupSetTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="RestoreEventId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="RecoveryFromSSB" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="BackupTargetPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AppRestoreAlternateTargetPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RestoreState" inType="win:Int32" outType="xs:int"/>
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DetailedHRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RestoreTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="NumOfComponents" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FileSuccessLogPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FileFailureLogPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AppsInfo" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>226</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Warning</Level>
+                <Message><![CDATA[
+The restore of component(s) completed with errors. One or more components may not have been recovered correctly.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BackupSetId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="BackupSetTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="RestoreEventId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="RecoveryFromSSB" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="BackupTargetPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AppRestoreAlternateTargetPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RestoreState" inType="win:Int32" outType="xs:int"/>
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DetailedHRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RestoreTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="NumOfComponents" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FileSuccessLogPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FileFailureLogPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AppsInfo" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>227</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+The restore of component(s) failed with errors.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BackupSetId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="BackupSetTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="RestoreEventId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="RecoveryFromSSB" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="BackupTargetPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AppRestoreAlternateTargetPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RestoreState" inType="win:Int32" outType="xs:int"/>
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DetailedHRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RestoreTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="NumOfComponents" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FileSuccessLogPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FileFailureLogPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AppsInfo" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>228</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+The restore of component(s) that started at '%9' was canceled.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BackupSetId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="BackupSetTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="RestoreEventId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="RecoveryFromSSB" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="BackupTargetPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AppRestoreAlternateTargetPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RestoreState" inType="win:Int32" outType="xs:int"/>
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DetailedHRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RestoreTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="NumOfComponents" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FileSuccessLogPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FileFailureLogPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AppsInfo" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>240</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Opcode>win:Start</Opcode>
+                <Message><![CDATA[
+The System State Restore started at '%1'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RestoreTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="BackupSetID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="BackupSetTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="RestoreType" inType="win:Int32" outType="xs:int"/>
+  <data name="AlternateRestoreTarget" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>241</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Opcode>win:Stop</Opcode>
+                <Message><![CDATA[
+The System State Restore was completed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RestoreTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DetailedHRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RestoreType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SysvolRestoreType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BackupSetID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="BackupSetTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="NumOfVolumes" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VolumesInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NumOfWriters" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="WritersInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NoOfFilesProcessed" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="NoOfFilesFailed" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="NoOfBytesProcessed" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="TotalNumOfBytes" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="EnumerateStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="EnumerateEndTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="RestoreStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="RestoreEndTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="DeleteStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="DeleteEndTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="RestoreSuccessLogPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RestoreFailureLogPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RestoreCLIOutputLogPath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>242</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+The System State Restore that started at '%1' completed successfully. Log of the files successfully restored: '%15']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RestoreTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DetailedHRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RestoreType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SysvolRestoreType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BackupSetID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="BackupSetTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="NumOfVolumes" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VolumesInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NumOfWriters" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="WritersInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NoOfFilesProcessed" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="NoOfFilesFailed" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="NoOfBytesProcessed" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="TotalNumOfBytes" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="EnumerateStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="EnumerateEndTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="RestoreStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="RestoreEndTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="DeleteStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="DeleteEndTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="RestoreSuccessLogPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RestoreFailureLogPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RestoreCLIOutputLogPath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>243</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Warning</Level>
+                <Message><![CDATA[
+System State Restore started at '%1' failed with errors. Log of files successfully restored '%15'. Log of files not restored successfully '%16']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RestoreTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DetailedHRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RestoreType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SysvolRestoreType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BackupSetID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="BackupSetTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="NumOfVolumes" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VolumesInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NumOfWriters" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="WritersInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NoOfFilesProcessed" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="NoOfFilesFailed" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="NoOfBytesProcessed" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="TotalNumOfBytes" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="EnumerateStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="EnumerateEndTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="RestoreStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="RestoreEndTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="DeleteStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="DeleteEndTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="RestoreSuccessLogPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RestoreFailureLogPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RestoreCLIOutputLogPath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>244</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+System State Restore started at '%1' failed with errors. Log of files successfully restored '%15'. Log of files not restored successfully '%16']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RestoreTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DetailedHRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RestoreType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SysvolRestoreType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BackupSetID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="BackupSetTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="NumOfVolumes" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VolumesInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NumOfWriters" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="WritersInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NoOfFilesProcessed" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="NoOfFilesFailed" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="NoOfBytesProcessed" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="TotalNumOfBytes" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="EnumerateStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="EnumerateEndTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="RestoreStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="RestoreEndTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="DeleteStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="DeleteEndTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="RestoreSuccessLogPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RestoreFailureLogPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RestoreCLIOutputLogPath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>245</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Backup/Operational</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+The System State Restore that started at '%1' was canceled.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RestoreTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DetailedHRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RestoreType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SysvolRestoreType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BackupSetID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="BackupSetTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="NumOfVolumes" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VolumesInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NumOfWriters" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="WritersInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NoOfFilesProcessed" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="NoOfFilesFailed" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="NoOfBytesProcessed" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="TotalNumOfBytes" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="EnumerateStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="EnumerateEndTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="RestoreStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="RestoreEndTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="DeleteStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="DeleteEndTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="RestoreSuccessLogPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RestoreFailureLogPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RestoreCLIOutputLogPath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>514</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Critical</Level>
+                <Message><![CDATA[
+Windows Backup catalog is corrupt. Please recover the catalog from a backup using 'WBADMIN RESTORE CATALOG' or using Windows Backup MMC Snapin.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>517</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Backup started at '%1' failed with following error code '%2' (%3). Please rerun backup once issue is resolved.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BackupTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>518</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Backup started at '%1' failed as another backup or recovery is in progress. Please re-run backup.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BackupTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>519</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Backup started at '%1' failed to backup volume(s) '%2' with following error code %3 (%4). Please rerun backup once issue is resolved.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BackupTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="FailedVolumeNames" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>521</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Backup started at '%1' failed as Volume Shadow copy operation failed for backup volumes with following error code '%2'. Please rerun backup once issue is resolved.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BackupTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>522</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Warning</Level>
+                <Message><![CDATA[
+There is no backup available on target '%1' as backup data is corrupted. Please rerun backup to be able to restore from the target.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BackupTargetFriendlyName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>523</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+The System Catalog has been recovered from Backup Target '%1'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BackupTarget" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MachineName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>524</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+The System Catalog has been deleted.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>525</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Warning</Level>
+                <Message><![CDATA[
+Backup completed with warning(s) - Volume '%2' has developed new bad clusters. This may be an indication of problems with your hardware. %3 bytes have not been backed up as they could not be read. Please run chkdsk /R on '%2' and rerun the backup.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeFriendlyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BackupSourceNumUnreadableBytes" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>526</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Scheduled backup configuration conflicts with group policy settings, error - '%1'. Failing scheduled backup due to the conflict. Please modify scheduled backup configuration to avoid the conflict.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BackupTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>527</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Backup started at '%1' failed as recovery planning is in progress through some other client. Please re-run backup.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BackupTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>528</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Scheduled backup configuration conflicts with group policy settings, error - '%2'. Failing scheduled backup started at '%1' due to the conflict. Please modify scheduled backup configuration to avoid the conflict.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BackupTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>544</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Backup started at '%1' failed because Windows Backup engine could not be contacted, error code '%2'. Please check if engine service is installed and enabled.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BackupTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>545</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Scheduled backup started at '%1' failed because the schedule settings was not found. Please re-configure scheduled backup.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BackupTime" inType="win:FILETIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>546</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Backup attempted at '%1' failed to start, error code '%2'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BackupTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>561</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Backup started at '%1' failed as no target could be found. Please attach a backup target and rerun backup.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BackupTime" inType="win:FILETIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>564</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Backup started at '%1' failed as network target '%2' is not writeable. Please ensure user '%3' has write permissions on the target.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BackupTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="BackupTargetFriendlyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BackupUserName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>565</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Consistency check for component '%1'\'%2' failed. Application '%3' will not be avaliable in the backup done at time '%4']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ComponentName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LogicalPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ApplicationId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BackupTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="WriterId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>608</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Backup was scheduled to backup '%1' daily at '%2'.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>609</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Backup schedule was modified to backup '%1' daily at '%2'.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>610</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Backup schedule was deleted. Backups would no more run as per schedule.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>611</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Backup was scheduled to backup '%1' daily at '%2'.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>612</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Backup schedule was cancelled. Backups would no more run as per schedule.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>656</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+A new volume was detected that is not included for backup. Please add it to backup schedule if you wish to protect this volume.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>658</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Warning</Level>
+                <Message><![CDATA[
+A volume '%1' included for backup is missing. This could be because the volume is dismounted, reformatted or disk is detached. Please correct the issue and rerun backup.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BackupTargetFriendlyName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>704</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Informational</Level>
+                <Opcode>win:Start</Opcode>
+                <Message><![CDATA[
+Restore of '%1' was attempted at '%2'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RestoreTargetNameList" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RestoreTime" inType="win:FILETIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>706</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Restore of '%1' successfully completed at '%2'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RestoreTargetNameList" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RestoreTime" inType="win:FILETIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>707</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Warning</Level>
+                <Message><![CDATA[
+Restore of '%1' completed with errors at '%2'. Error reported '%3'(%4). Please rerun recovery once the issue is resolved.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RestoreTargetNameList" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RestoreTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>708</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Restore of '%1' failed with errors at '%2'. Error reported '%3'(%4). Please rerun recovery once the issue is resolved.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RestoreTargetNameList" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RestoreTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>709</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Restore of '%1' cancelled at '%2'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RestoreTargetNameList" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RestoreTime" inType="win:FILETIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>710</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Restore of volume '%1'  failed or cancelled at '%2'. Volume is now corrupted and will need to be formatted.']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RestoreTargetNameList" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RestoreTime" inType="win:FILETIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>711</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Restore of '%1' failed at '%2' as restore volume is too small. Please try restoring to a larger volume.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RestoreTargetNameList" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RestoreTime" inType="win:FILETIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>721</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Restore of '%1' completed successfully at '%2'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RestoreTargetNameList" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RestoreTime" inType="win:FILETIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>722</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Warning</Level>
+                <Message><![CDATA[
+Restore of '%1' completed with errors at '%2'. Please rerun recovery once the issue is resolved.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RestoreTargetNameList" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RestoreTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>723</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Restore of '%1' failed with errors at '%2'. Error reported '%3'(%4). Please rerun recovery once the issue is resolved.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RestoreTargetNameList" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RestoreTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>724</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Restore of '%1' was cancelled at '%2'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RestoreTargetNameList" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RestoreTime" inType="win:FILETIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>737</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+The restore of component(s) '%1' completed successfully at '%2'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RestoreTargetNameList" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RestoreTime" inType="win:FILETIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>738</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Warning</Level>
+                <Message><![CDATA[
+The restore of component(s) '%1' completed with errors at '%2'. Error reported '%3'(%4). Please rerun recovery once the issue is resolved.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RestoreTargetNameList" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RestoreTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>739</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+The restore of component(s) '%1' failed with errors at '%2'. Error reported '%3'(%4). Please rerun recovery once the issue is resolved.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RestoreTargetNameList" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RestoreTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>740</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+The restore of component(s) '%1' was cancelled at '%2'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RestoreTargetNameList" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RestoreTime" inType="win:FILETIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>753</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Informational</Level>
+                <Opcode>win:Start</Opcode>
+                <Message><![CDATA[
+Block level backup engine service successfully started.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>754</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Informational</Level>
+                <Opcode>win:Stop</Opcode>
+                <Message><![CDATA[
+Block level backup engine service has stopped.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>755</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Installing the handler for Block level backup engine service failed with error code '%1'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HandleInstallErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>756</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Warning</Level>
+                <Message><![CDATA[
+Block level backup engine service received an unknown request with code '%1'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UnknownRequestCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>769</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Informational</Level>
+                <Opcode>win:Start</Opcode>
+                <Message><![CDATA[
+The System State Restore started at '%1']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RestoreTime" inType="win:FILETIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>770</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Informational</Level>
+                <Opcode>win:Stop</Opcode>
+                <Message><![CDATA[
+The System State Restore completed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RestoreTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>771</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+The System State Restore started at '%1' completed successfully.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RestoreTime" inType="win:FILETIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>772</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+The System State Restore started at '%1' was cancelled]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RestoreTime" inType="win:FILETIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>773</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Warning</Level>
+                <Opcode>win:Stop</Opcode>
+                <Message><![CDATA[
+The System State Restore started at '%1' completed with errors. Error reported '%2'(%3). Please rerun recovery once the issue is resolved]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RestoreTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>774</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Error</Level>
+                <Opcode>win:Stop</Opcode>
+                <Message><![CDATA[
+The System State Restore started at '%1' failed with errors. Error reported '%2'(%3). Please rerun recovery once the issue is resolved.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RestoreTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,1011 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Windows Defender</Name>
+        <Metadata>
+            <Guid>{11CD958A-C507-4EF3-B3F2-5FD9DFBD2C78}</Guid>
+            <ResourceFilePath>%ProgramFiles%\Windows Defender\MpEvMsg.dll</ResourceFilePath>
+            <ParameterFilePath>C:\Program Files\Windows Defender\MpEvMsg.dll</ParameterFilePath>
+            <MessageFilePath>C:\Program Files\Windows Defender\MpEvMsg.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Windows%20Defender&amp;ProdVer=1.1.1505.0&amp;FileName=MpEvMsg.dll&amp;FileVer=1.1.1505.0</HelpLink>
+            <PublisherMessage>Windows Defender</PublisherMessage>
+            <Channels>
+            </Channels>
+            <Levels>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>win:EventlogClassic</Name>
+                    <Value>36028797018963968</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1000</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 scan has started.
+ 	Scan ID: %3
+ 	Scan Type: %5
+ 	Scan Parameters: %7
+ 	User: %8\%9]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Product Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Product Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Scan ID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Scan Type Index" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Scan Type" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Scan Parameters Index" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Scan Parameters" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Domain" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="User" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 scan has finished.
+ 	Scan ID: %3
+ 	Scan Type: %5
+ 	Scan Parameters: %7
+ 	User: %8\%9
+ 	Scan Time: %11:%12:%13]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Product Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Product Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Scan ID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Scan Type Index" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Scan Type" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Scan Parameters Index" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Scan Parameters" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Domain" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="User" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Scan Time Hours" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Scan Time Minutes" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Scan Time Seconds" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 scan has been stopped before completion.
+ 	Scan ID: %3
+ 	Scan Type: %5
+ 	Scan Parameters: %7
+  	User: %8\%9]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Product Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Product Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Scan ID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Scan Type Index" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Scan Type" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Scan Parameters Index" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Scan Parameters" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Domain" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="User" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 scan has been paused.
+ 	Scan ID: %3
+ 	Scan Type: %5
+ 	Scan Parameters: %7
+ 	User: %8\%9]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Product Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Product Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Scan ID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Scan Type Index" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Scan Type" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Scan Parameters Index" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Scan Parameters" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Domain" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="User" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 scan has resumed.
+ 	Scan ID: %3
+  	Scan Type: %5
+ 	Scan Parameters: %7
+ 	User: %8\%9]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Product Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Product Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Scan ID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Scan Type Index" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Scan Type" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Scan Parameters Index" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Scan Parameters" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Domain" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="User" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 scan has encountered an error and terminated.
+ 	Scan ID: %3
+ 	Scan Type: %5
+ 	Scan Parameters: %7
+ 	User: %8\%9
+ 	Error Code: %11
+ 	Error description: %12]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Product Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Product Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Scan ID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Scan Type Index" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Scan Type" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Scan Parameters Index" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Scan Parameters" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Domain" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="User" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error Code" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error Description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1006</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 scan has detected spyware or other potentially unwanted software.
+ For more information please see the following:
+%15
+ 	Scan ID: %3
+ 	Scan Type: %5
+ 	Scan Parameters: %7
+ 	User: %8\%9
+ 	Name: %11
+ 	ID: %12
+ 	Severity ID: %13
+ 	Category ID: %14
+ 	Path Found: %16
+ 	Detection Type: %22]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Product Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Product Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Scan ID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Scan Type Index" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Scan Type" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Scan Parameters Index" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Scan Parameters" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Domain" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="User" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Threat Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Threat Id" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Threat Severity" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Threat Category" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FWLink" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Path Found" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Unused" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Unused" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Unused" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Unused" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Detection Type Index" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Detection Type" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1007</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 has taken action to protect this machine from spyware or other potentially unwanted software.
+ For more information please see the following:
+%15
+ 	Scan ID: %3
+ 	Scan Type: %5
+ 	User: %8\%9
+ 	Name: %11
+ 	ID: %12
+ 	Severity ID: %13
+ 	Category ID: %14
+ 	Action: %20]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Product Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Product Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Scan ID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Scan Type Index" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Scan Type" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Unused" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Unused" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Domain" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="User" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Threat Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Threat Id" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Threat Severity" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Threat Category" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FWLink" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Unused" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Unused" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Unused" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Action Index" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Action" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1008</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 has encountered an error when taking action on spyware or other potentially unwanted software.
+ For more information please see the following:
+%15
+ 	Scan ID: %3
+  	Scan Type: %5
+ 	User: %8\%9
+ 	Name: %11
+ 	ID: %12
+ 	Severity ID: %13
+ 	Category ID: %14
+ 	Path: %16
+ 	Action: %20
+ 	Error Code: %21
+ 	Error description: %22]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Product Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Product Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Scan ID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Scan Type Index" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Scan Type" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Unused" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Unused" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Domain" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="User" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Threat Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Threat Id" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Threat Severity" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Threat Category" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FWLink" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Unused" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Unused" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Action Index" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Action" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error Code" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error Description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1009</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 has restored an item from quarantine.
+ For more information please see the following:
+%15
+ 	Name: %11
+ 	ID: %12
+ 	Severity ID: %13
+ 	Category ID: %14
+ 	User: %8\%9]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Product Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Product Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Unused" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Unused" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Unused" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Unused" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Unused" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Domain" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="User" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Threat Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Threat Id" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Threat Severity" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Threat Category" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FWLink" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1010</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 has encountered an error trying to restore an item from quarantine.
+ For more information please see the following:
+%15
+ 	Name: %11
+ 	ID: %12
+ 	Severity ID: %13
+ 	Category ID: %14
+ 	User: %8\%9
+ 	Error Code: %3
+ 	Error description: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Product Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Product Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error Code" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error Description" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Unused" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Unused" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Unused" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Domain" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="User" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Threat Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Threat Id" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Threat Severity" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Threat Category" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FWLink" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 has encountered an error trying to update signatures.
+ 	New Signature Version: %3
+ 	Previous Signature Version: %4
+ 	Update Source: %6
+ 	Signature Type: %12
+ 	Update Type: %14
+ 	User: %8\%9
+ 	Current Engine Version: %15
+ 	Previous Engine Version: %16
+ 	Error code: %17
+ 	Error description: %18]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Product Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Product Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Current Signature Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Previous Signature Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Update Source Index" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Update Source" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Unused" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Domain" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="User" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Signature Type Index" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Signature Type" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Update Type Index" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Update Type" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Current Engine Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Previous Engine Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error Code" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error Description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 engine version has been updated.
+ 	Current Engine Version: %3
+ 	Previous Engine Version: %4
+ 	Update Source: %6
+ 	User: %8\%9]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Product Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Product Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Current Engine Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Previous Engine Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Update Source Index" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Update Source" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Unused" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Domain" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="User" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2003</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 has encountered an error trying to update the engine.
+ 	New Engine Version: %3
+ 	Previous Engine Version: %4
+ 	Update Source: %6
+ 	User: %8\%9
+ 	Error Code: %11
+ 	Error description: %12]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Product Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Product Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Current Engine Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Previous Engine Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Update Source Index" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Update Source" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Unused" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Domain" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="User" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error Code" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error Description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2004</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 has encountered an error trying to load signatures and will attempt reverting back to a known-good set of signatures.
+ 	Signatures Attempted: %4
+ 	Error Code: %5
+ 	Error description: %6
+ 	Signatures loading: %8
+ 	Loading signature version: %9
+ 	Loading engine version: %10]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Product Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Product Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Signatures Attempted Index" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Signatures Attempted" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error Code" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error Description" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Signatures loading Index" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Signatures loading:" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Loading signature version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Loading engine version" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3000</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 Real-Time Protection agents have started.
+ 	User: %8\%9]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Product Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Product Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Unused" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Unused" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Unused" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Unused" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Unused" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Domain" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="User" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1Real-Time Protection agents have stopped.
+ 	User: %8\%9]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Product Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Product Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Unused" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Unused" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Unused" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Unused" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Unused" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Domain" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="User" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 Real-Time Protection agent has encountered an error and failed to start.
+ 	User: %8\%9
+ 	Agent: %3
+ 	Error Code: %4
+ 	Error description: %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Product Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Product Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Agent" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error Code" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error Description" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Unused" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Unused" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Domain" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="User" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3003</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 Real-Time Protection checkpoint has encountered an error and failed to start.
+ 	User: %8\%9
+ 	Checkpoint ID: %3
+ 	Error Code: %4
+ 	Error description: %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Product Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Product Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Checkpoint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error Code" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error Description" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Unused" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Unused" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Domain" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="User" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3004</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 Real-Time Protection agent has detected changes. Microsoft recommends you analyze the software that made these changes for potential risks. You can use information about how these programs operate to choose whether to allow them to run or remove them from your computer.  Allow changes only if you trust the program or the software publisher. %1 can't undo changes that you allow.
+ For more information please see the following:
+%15
+ 	Scan ID: %3
+ 	User: %8\%9
+ 	Name: %11
+ 	ID: %12
+ 	Severity ID: %13
+ 	Category ID: %14
+ 	Path Found: %16
+ 	Alert Type: %18
+ 	Detection Type: %22]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Product Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Product Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Scan ID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Unused" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Unused" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Unused" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Unused" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Domain" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="User" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Threat Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Threat Id" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Threat Severity" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Threat Category" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FWLink" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Path Found" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Threat Classification Index" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Threat Classification" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Unused" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Unused" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Detection Type Index" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Detection Type" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3005</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 Real-Time Protection agent has taken action to protect this machine from spyware or other potentially unwanted software.
+ For more information please see the following:
+%15
+ 	Scan ID: %3
+ 	User: %8\%9
+ 	Name: %11
+ 	ID: %12
+ 	Severity ID: %13
+ 	Category ID: %14
+ 	Alert Type: %18
+ 	Action: %20]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Product Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Product Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Scan ID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Unused" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Unused" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Unused" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Unused" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Domain" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="User" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Threat Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Threat Id" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Threat Severity" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Threat Category" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FWLink" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Unused" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Threat Classification Index" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Threat Classification" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Action Index" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Action" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3006</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 Real-Time Protection agent has encountered an error when taking action on spyware or other potentially unwanted software.
+ For more information please see the following:
+%15
+ 	Scan ID: %3
+ 	User: %8\%9
+ 	Name: %11
+ 	ID: %12
+ 	Severity ID: %13
+ 	Category ID: %14
+ 	Path: %16
+ 	Alert Type: %18
+ 	Action: %20
+ 	Error Code: %21
+ 	Error description: %22]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Product Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Product Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Scan ID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Unused" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Unused" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Unused" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Unused" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Domain" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="User" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Threat Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Threat Id" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Threat Severity" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Threat Category" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FWLink" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Threat Classification Index" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Threat Classification" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Action Index" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Action" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error Code" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error Description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4000</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 AV OnAccess Filter has detected spyware or other potentially unwanted software.
+ For more information please see the following:
+%15
+ 	Scan ID: %3
+ 	User: %8\%9
+ 	Name: %11
+ 	ID: %12
+ 	Severity ID: %13
+ 	Category ID: %14
+ 	Path Found: %16
+ 	Local Copy Path: %17
+ 	Process Name: %18
+ 	Detection Type: %22]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Product Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param6" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param7" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param8" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param9" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param10" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param11" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param12" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param13" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param14" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param15" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param16" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param17" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param18" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param19" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param20" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param21" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param22" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 AV OnAccess Filter has taken action to protect this machine from detected spyware or other potentially unwanted software.
+ For more information please see the following:
+%15
+ 	Scan ID: %3
+ 	User: %8\%9
+ 	Name: %11
+ 	ID: %12
+ 	Severity ID: %13
+ 	Category ID: %14
+ 	Action: %20]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param6" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param7" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param8" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param9" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param10" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param11" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param12" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param13" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param14" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param15" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param16" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param17" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param18" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param19" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param20" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4003</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 AV OnAccess Filter has encountered an error when taking action on detected spyware or other potentially unwanted software.
+ For more information please see the following:
+%15
+ 	Scan ID: %3
+ 	User: %8\%9
+ 	Name: %11
+ 	ID: %12
+ 	Severity ID: %13
+ 	Category ID: %14
+ 	Path: %16
+ 	Action: %20
+ 	Error Code: %21
+ 	Error Description: %22]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param6" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param7" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param8" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param9" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param10" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param11" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param12" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param13" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param14" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param15" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param16" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param17" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param18" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param19" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param20" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param21" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param22" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5000</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 Real-time Protection scanning for spyware and other potentially unwanted software was enabled.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Product Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Product Version" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 Real-time Protection scanning for spyware and other potentially unwanted software was disabled.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Product Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Product Version" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 OnAccess scanning for viruses was enabled.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5003</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 OnAccess scanning for viruses was disabled.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5004</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 Real-time Protection agent configuration has changed.
+ 	Agent: %3
+ 	Configuration: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Product Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Product Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Agent" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Configuration" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5005</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 Real-time Protection checkpoint configuration has changed.
+ 	Checkpoint: %3
+ 	Configuration: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Product Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Product Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Checkpoint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Configuration" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5006</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 OnAccess filter seems to be a unloaded - OnAccess scanning is disabled - Please restart the service.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5007</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 Configuration has changed. If this is an unexpected event you should review the settings as this may be the result of malware.
+ 	Old value: %3
+ 	New value: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Product Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Product Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Old value" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="New value" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5008</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 engine has been terminated due to an unexpected error.
+ 	Failure Type: %5
+ 	Exception code: %6
+ 	Resource: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Product Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Product Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Resource" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Failure Type Index" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Failure Type" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Exception code" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5009</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 scanning for spyware and other potentially unwanted software has been enabled.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Product Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Product Version" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5010</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 scanning for spyware and other potentially unwanted software is disabled.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Product Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Product Version" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5011</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 scanning for viruses has been enabled.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Product Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Product Version" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5012</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 scanning for viruses is disabled.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Product Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Product Version" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

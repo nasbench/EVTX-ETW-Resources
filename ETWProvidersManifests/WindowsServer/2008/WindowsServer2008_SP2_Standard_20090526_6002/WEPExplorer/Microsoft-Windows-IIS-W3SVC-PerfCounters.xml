@@ -1,0 +1,66 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-IIS-W3SVC-PerfCounters</Name>
+        <Metadata>
+            <Guid>{90303B54-419D-4081-A683-6DBCB532F261}</Guid>
+            <ResourceFilePath>%windir%\system32\inetsrv\iisres.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\inetsrv\iisres.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Internet%20Information%20Services&amp;ProdVer=7.0.6002.18005&amp;FileName=iisres.dll&amp;FileVer=7.0.6002.18005</HelpLink>
+            <PublisherMessage>Microsoft-Windows-IIS-W3SVC-PerfCounters</PublisherMessage>
+            <Channels>
+            </Channels>
+            <Levels>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>win:EventlogClassic</Name>
+                    <Value>36028797018963968</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>3221227472</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unable to query the W3SVC (HTTP) service performance data. The error code returned by the service is data DWORD 0.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227473</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+It has taken too long to refresh the W3SVC counters, the stale counters are being used instead.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227474</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Setting up Web Service counters failed, please make sure your Web Service counters are registered correctly.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227475</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+It has taken too long to refresh the W3SVC counters, the stale counters are being used instead.  This is the second message within the past %1 (hours, minutes, seconds).  No more stale counter messages will be logged for this client session until the time limit expires. 
+For additional information specific to this message please visit the Microsoft Online Support site located at: http://go.microsoft.com/fwlink?linkid=538.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="timePeriod" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
