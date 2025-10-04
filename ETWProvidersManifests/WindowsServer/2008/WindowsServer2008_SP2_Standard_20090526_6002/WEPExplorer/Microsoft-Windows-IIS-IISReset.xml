@@ -1,0 +1,96 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-IIS-IISReset</Name>
+        <Metadata>
+            <Guid>{DA9A85BB-563D-40FB-A164-8E982EA6844B}</Guid>
+            <ResourceFilePath>%windir%\system32\inetsrv\iisres.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\inetsrv\iisres.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Internet%20Information%20Services&amp;ProdVer=7.0.6002.18005&amp;FileName=iisres.dll&amp;FileVer=7.0.6002.18005</HelpLink>
+            <PublisherMessage>Microsoft-Windows-IIS-IISReset</PublisherMessage>
+            <Channels>
+            </Channels>
+            <Levels>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>win:EventlogClassic</Name>
+                    <Value>36028797018963968</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1073745025</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+IIS start command received from user %1. The logged data is the status code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UserName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073745026</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+IIS stop command received from user %1. The logged data is the status code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UserName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073745027</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+IIS reboot command received from user %1. The logged data is the status code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UserName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073745028</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+IIS kill command received from user %1. The logged data is the status code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UserName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073745029</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Your computer is being shut down by %1. Save any work that may be lost!]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UserName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073745030</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+IIS Reset encountered an error while stopping services, which was requested by %1.  The logged data is the status code.  Since the force option is on, IIS Reset will now terminate the services' processes.  This may cause SCM to report errors about the services exiting.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UserName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

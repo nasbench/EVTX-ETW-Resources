@@ -1,0 +1,423 @@
+<Providers>
+    <Provider>
+        <Name>BITS Server Extensions</Name>
+        <Metadata>
+            <Guid>{38398B57-93F3-4C42-AC26-DB3F5998745B}</Guid>
+            <ResourceFilePath>%systemroot%\system32\bitsmgr.dll</ResourceFilePath>
+            <ParameterFilePath>C:\Windows\system32\bitsmgr.dll</ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\bitsmgr.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=7.0.6001.18000&amp;FileName=bitsmgr.dll&amp;FileVer=7.0.6001.18000</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Application</Path>
+                    <Index>0</Index>
+                    <Id>9</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message></Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message></Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message></Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Cleanup]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+The job %2 was successfully deleted from the virtual directory %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="vdir" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="name" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+An unexpected error %2 occurred while Cleanup was running on the virtual directory %1. Try running Cleanup again later.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hr" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+BITS encountered error %2 while deleting the job %1 from the virtual directory %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hr" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="vdir" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+BITS encountered error %2 while scanning the virtual directory %1. The directory might not be available right now. Try running Cleanup again later.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hr" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+BITS encountered error %2 while deleting the directory %1. Another program might be accessing this directory or there might be network problems. Run Cleanup again later.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hr" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+BITS encountered error %2 while deleting the file %1. Another program might be accessing this file or there might be network problems. Run Cleanup again later.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hr" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Warning</Level>
+                <Message><![CDATA[
+The user %1 could has created %2 upload sessions in virtual directory %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="id" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="count" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="vdir" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Enabling BITS uploads for the virtual directory %3 failed with error %2. The error occurred while creating the directory %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hr" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="vdir" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Disabling BITS uploads for the virtual directory %3 failed with error %2. The error occurred while deleting the directory %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hr" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="vdir" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Enabling BITS uploads for the virtual directory %2 failed with error %1. The error occurred while creating the cleanup task]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hr" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="vdir" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Disabling BITS uploads for the virtual directory %2 failed with error %1. The error occurred while deleting the cleanup task]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hr" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="vdir" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Enabling BITS uploads for the virtual directory %3 failed with error %2. The error occurred while modifying the handler section %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hr" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="vdir" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Disabling BITS uploads for the virtual directory %3 failed with error %2. The error occurred while modifying the handler section %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hr" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="vdir" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Enabling BITS uploads for the virtual directory %3 failed with error %2. The error occurred while reading the metabase property %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hr" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="vdir" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Disabling BITS uploads for the virtual directory %3 failed with error %2. The error occurred while reading the metabase property %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hr" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="vdir" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+An exception occurred while enabling BITS uploads for the virtual directory %3. The exception occurred while creating the directory %1. Exception :%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="trace" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="vdir" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+An exception occurred while disabling BITS uploads for the virtual directory %3. The exception occurred while deleting the directory %1. Exception :%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="trace" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="vdir" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+An exception occurred while enabling BITS uploads for the virtual directory %2. The exception occurred while creating the cleanup task. Exception  :%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="vdir" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="name" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+An exception occurred while disabling BITS uploads for the virtual directory %2. The exception occurred while deleting the cleanup task. Exception  : %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="vdir" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="name" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+An exception occurred while enabling BITS uploads for the virtual directory %3. The exception occurred while modifying the handler section %1. Exception : %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="trace" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="vdir" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>22</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+An exception occurred while disabling BITS uploads for the virtual directory %3. The exception occurred with error while modifying the handler section %1. Exception: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="trace" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="vdir" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>23</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+An exception occurred while enabling BITS uploads for the virtual directory %2. The exception occurred while accessing the metabase. Exception: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="vdir" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="name" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>24</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+An exception occurred while disabling BITS uploads for the virtual directory %2. The exception occurred while accessing the metabase. Exception: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="vdir" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="name" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+An exception occurred while running the cleanup task for the virtual directory %2. Exception: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="trace" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="vdir" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>26</Id>
+                <Version>0</Version>
+                <Channel>Application</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+An exception occurred while running the cleanup task for the virtual directory %2. Exception: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="trace" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="vdir" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

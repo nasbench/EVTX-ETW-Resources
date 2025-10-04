@@ -1,0 +1,128 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Spooler-LPRMON</Name>
+        <Metadata>
+            <Guid>{DC82DA8E-2290-449D-9062-21EF70D36E22}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\lprmon.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\lprmon.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.0.6000.16386&amp;FileName=lprmon.dll&amp;FileVer=6.0.6000.16386</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Spooler-LPRMON</PublisherMessage>
+            <Channels>
+            </Channels>
+            <Levels>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>win:EventlogClassic</Name>
+                    <Value>36028797018963968</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1073743824</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+LPR Print Monitor started successfully.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485649</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Printer %1 on host %2 is unreachable.  The print job has been cancelled.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227474</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An error was reported while attempting to initialize the printer port monitor with the list of port information from the following registry key: SYSTEM\CurrentControlSet\Control\Print\Monitors\LPR Print Monitor. The Line Printer Remote (LPR) service could not read or write registry settings. This is usually a result of a more significant system problem such as running out of memory or not having the appropriate registry permissions. The LPR printer port monitor may not be correctly configured until the problem is resolved.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485651</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An error occurred while de-spooling the file %1.  The print job has been cancelled.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485652</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Line Printer Remote (LPR) service could not submit the print job to the Line Printer Daemon (LPD) printer %1 on host %2 because the LPD service on the remote host or printer is rejecting the print job. This can occur if the LPD service is processing other print jobs. The LPR service will retry printing until the job prints successfully or the user cancels the print job.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227477</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Line Printer Remote (LPR) print monitor failed to open a temporary file while spooling output for port %1. This can occur if the system is low on disk space, if the spool folder is write-protected, or if the LPR service does not have write permissions to the spool folder.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227478</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Line Printer Remote (LPR) service could not delete the LPR port information stored in registry key %1. This is usually the result of a more significant system problem. LPR may not be correctly configured until the problem is resolved.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227479</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Line Printer Remote (LPR) print monitor failed to open the port named %1.  This can occur if the server name for this port is incorrect. Printing to this port will fail until the problem is resolved.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227480</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Line Printer Remote (LPR) print monitor failed to start because it reported an error while attempting to initialize the LPR Helper DLL.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

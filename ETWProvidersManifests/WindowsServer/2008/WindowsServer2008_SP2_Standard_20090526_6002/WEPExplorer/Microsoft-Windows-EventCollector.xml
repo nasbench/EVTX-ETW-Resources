@@ -6,18 +6,18 @@
             <ResourceFilePath>%SystemRoot%\system32\wecsvc.dll</ResourceFilePath>
             <ParameterFilePath></ParameterFilePath>
             <MessageFilePath>C:\Windows\system32\wecsvc.dll</MessageFilePath>
-            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.0.6000.16386&amp;FileName=wecsvc.dll&amp;FileVer=6.0.6000.16386</HelpLink>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.2.9200.16398&amp;FileName=wecsvc.dll&amp;FileVer=6.2.9200.16398</HelpLink>
             <PublisherMessage>Microsoft-Windows-EventCollector</PublisherMessage>
             <Channels>
                 <Channel>
-                    <Message></Message>
+                    <Message>Application</Message>
                     <Path>Application</Path>
                     <Index>0</Index>
                     <Id>9</Id>
                     <Imported>true</Imported>
                 </Channel>
                 <Channel>
-                    <Message></Message>
+                    <Message>System</Message>
                     <Path>System</Path>
                     <Index>1</Index>
                     <Id>8</Id>
@@ -54,12 +54,12 @@
             </Channels>
             <Levels>
                 <Level>
-                    <Message></Message>
+                    <Message>Warning</Message>
                     <Name>win:Warning</Name>
                     <Value>3</Value>
                 </Level>
                 <Level>
-                    <Message></Message>
+                    <Message>Information</Message>
                     <Name>win:Informational</Name>
                     <Value>4</Value>
                 </Level>
@@ -76,7 +76,7 @@
                 <Id>1</Id>
                 <Version>0</Version>
                 <Channel>Operational</Channel>
-                <Level>win:Warning</Level>
+                <Level>Warning</Level>
                 <Message><![CDATA[
 The Subscription %1 could not be activated on target machine %2 due to communication error.  Error Code is %3.  All retries have been performed before reaching this point and so the subscription will remain inactive on this target until subscription is resubmitted / reset. Additional fault message:%4]]></Message>
                 <Template><![CDATA[
@@ -92,7 +92,7 @@ The Subscription %1 could not be activated on target machine %2 due to communica
                 <Id>2</Id>
                 <Version>0</Version>
                 <Channel>Operational</Channel>
-                <Level>win:Warning</Level>
+                <Level>Warning</Level>
                 <Message><![CDATA[
 The Subscription %1 could not be activated on machine %2 due to an error. Error Code is %3. Subscription will remain inactive on this target until subscription is resubmitted / reset.]]></Message>
                 <Template><![CDATA[
@@ -107,7 +107,7 @@ The Subscription %1 could not be activated on machine %2 due to an error. Error 
                 <Id>3</Id>
                 <Version>0</Version>
                 <Channel>Operational</Channel>
-                <Level>win:Informational</Level>
+                <Level>Information</Level>
                 <Message><![CDATA[
 The Subscription %1 has expired and will no longer be serviced.]]></Message>
                 <Template><![CDATA[
@@ -120,7 +120,7 @@ The Subscription %1 has expired and will no longer be serviced.]]></Message>
                 <Id>4</Id>
                 <Version>0</Version>
                 <Channel>Operational</Channel>
-                <Level>win:Warning</Level>
+                <Level>Warning</Level>
                 <Message><![CDATA[
 The Subscription %1 could not be activated on target machine %2 due to communication error.  Error Code is %3.  The subscription will be in retrying state until the subscription becomes active or all retries have been performed. Additional fault message:%4]]></Message>
                 <Template><![CDATA[
@@ -136,7 +136,7 @@ The Subscription %1 could not be activated on target machine %2 due to communica
                 <Id>5</Id>
                 <Version>0</Version>
                 <Channel>Operational</Channel>
-                <Level>win:Informational</Level>
+                <Level>Information</Level>
                 <Message><![CDATA[
 The Subscription %1 was activated successfully on target machine %2.]]></Message>
                 <Template><![CDATA[
@@ -150,7 +150,7 @@ The Subscription %1 was activated successfully on target machine %2.]]></Message
                 <Id>6</Id>
                 <Version>0</Version>
                 <Channel>Operational</Channel>
-                <Level>win:Warning</Level>
+                <Level>Warning</Level>
                 <Message><![CDATA[
 The Subscription %1 could not publisher events from target machine %2 to the log file of this subscription.  Error Code is %3.  All retries have been performed before reaching this point and so the subscription will remain inactive on this target until subscription is resubmitted / reset.]]></Message>
                 <Template><![CDATA[
@@ -165,7 +165,7 @@ The Subscription %1 could not publisher events from target machine %2 to the log
                 <Id>501</Id>
                 <Version>0</Version>
                 <Channel>Operational</Channel>
-                <Level>win:Warning</Level>
+                <Level>Warning</Level>
                 <Message><![CDATA[
 The Subscription %1 has a lost event. An event from target machine %2 is lost and could not be delivered. Error Code is %3. Event data is:%4]]></Message>
                 <Template><![CDATA[
@@ -181,7 +181,7 @@ The Subscription %1 has a lost event. An event from target machine %2 is lost an
                 <Id>502</Id>
                 <Version>0</Version>
                 <Channel>Operational</Channel>
-                <Level>win:Warning</Level>
+                <Level>Warning</Level>
                 <Message><![CDATA[
 The Subscription %1 detects dropped events. Some events are dropped during transmission from target machine %2. The number of dropped events are %3.]]></Message>
                 <Template><![CDATA[

@@ -1,0 +1,875 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-WLAN-AutoConfig</Name>
+        <Metadata>
+            <Guid>{9580D7DD-0379-4658-9870-D5BE7D52D6DE}</Guid>
+            <ResourceFilePath>%windir%\system32\wlansvc.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\wlansvc.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.0.6001.18000&amp;FileName=wlansvc.dll&amp;FileVer=6.0.6001.18000</HelpLink>
+            <PublisherMessage>Microsoft-Windows-WLAN-AutoConfig</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-WLAN-AutoConfig/Operational</Message>
+                    <Path>Microsoft-Windows-WLAN-AutoConfig/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>System</Path>
+                    <Index>1</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message></Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message></Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message></Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message></Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>4000</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Informational</Level>
+                <Opcode>win:Start</Opcode>
+                <Message><![CDATA[
+WLAN AutoConfig service has successfully started.
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4001</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Warning</Level>
+                <Opcode>win:Stop</Opcode>
+                <Message><![CDATA[
+WLAN AutoConfig service has successfully stopped.
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4002</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+WLAN AutoConfig service has failed to start.
+
+Error Code: %1
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-WLAN-AutoConfig/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+WLAN AutoConfig service started a connection to a wireless network.
+
+Network Adapter: %2
+Interface GUID: %1
+Connection Mode: %3
+Profile Name: %4
+SSID: %5
+BSS Type: %6
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="InterfaceDescription" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ConnectionMode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProfileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SSID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BSSType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ConnectionId" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-WLAN-AutoConfig/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+WLAN AutoConfig service has successfully connected to a wireless network.
+
+Network Adapter: %2
+Interface GUID: %1
+Connection Mode: %3
+Profile Name: %4
+SSID: %5
+BSS Type: %6
+BSSID: %7
+PHY Type: %8
+Authentication: %9
+Encryption: %10
+802.1x Enabled: %11
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="InterfaceDescription" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ConnectionMode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProfileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SSID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BSSType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BSSID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PHYType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AuthenticationAlgorithm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CipherAlgorithm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="OnexEnabled" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ConnectionId" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-WLAN-AutoConfig/Operational</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+WLAN AutoConfig service failed to connect to a wireless network.
+
+Network Adapter: %2
+Interface GUID: %1
+Connection Mode: %3
+Profile Name: %4
+SSID: %5
+BSS Type: %6
+Failure Reason:%7
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="InterfaceDescription" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ConnectionMode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProfileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SSID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BSSType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FailureReason" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ConnectionId" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-WLAN-AutoConfig/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+WLAN AutoConfig service has successfully disconnected from a wireless network.
+
+Network Adapter: %2
+Interface GUID: %1
+Connection Mode: %3
+Profile Name: %4
+SSID: %5
+BSS Type: %6
+Reason: %7
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="InterfaceDescription" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ConnectionMode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProfileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SSID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BSSType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Reason" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ConnectionId" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10000</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+WLAN Extensibility Module has failed to start.
+
+Module Path: %1
+Error Code: %2
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ExtensibleModulePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10001</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+WLAN Extensibility Module has successfully started.
+
+Module Path: %1
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ExtensibleModulePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10002</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Warning</Level>
+                <Message><![CDATA[
+WLAN Extensibility Module has stopped.
+
+Module Path: %1
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ExtensibleModulePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10003</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+WLAN Extensibility Module has stopped unexpectedly.
+
+Module Path: %1
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ExtensibleModulePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10004</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Warning</Level>
+                <Message><![CDATA[
+WLAN Extensibility Module has timed out.
+
+Module Path: %1
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ExtensibleModulePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-WLAN-AutoConfig/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Wireless network association started.
+
+Network Adapter: %1
+Interface GUID: %2
+Local MAC Address: %3
+Network SSID: %4
+BSS Type: %5
+Authentication: %6
+Encryption: %7
+802.1X Enabled: %8
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Adapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalMac" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SSID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BSSType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Auth" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Cipher" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="OnexEnabled" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IhvConnectivitySetting" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ConnectionId" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-WLAN-AutoConfig/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Wireless network association succeeded.
+
+Network Adapter: %1
+Interface GUID: %2
+Local MAC Address: %3
+Network SSID: %4
+BSS Type: %5
+Peer MAC Address: %6
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Adapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalMac" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SSID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BSSType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PeerMac" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ConnectionId" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-WLAN-AutoConfig/Operational</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Wireless network association failed.
+
+Network Adapter: %1
+Interface GUID: %2
+Local MAC Address: %3
+Network SSID: %4
+BSS Type: %5
+Failure Reason: %6
+Reason Code: %7
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Adapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalMac" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SSID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BSSType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FailureReason" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ReasonCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ConnectionId" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-WLAN-AutoConfig/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Wireless security started.
+
+Network Adapter: %1
+Interface GUID: %2
+Local MAC Address: %3
+Network SSID: %4
+BSS Type: %5
+Peer MAC Address: %6
+Authentication: %7
+Encryption: %9
+802.1x Enabled: %11
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Adapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalMac" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SSID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BSSType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PeerMac" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Auth" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AuthVal" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Cipher" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CipherVal" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FIPSMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OnexEnabled" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ConnectionId" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-WLAN-AutoConfig/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Wireless security stopped.
+
+Network Adapter: %1
+Interface GUID: %2
+Local MAC Address: %3
+Network SSID: %4
+BSS Type: %5
+Peer MAC Address: %6
+Security Hint: %7
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Adapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalMac" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SSID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BSSType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PeerMac" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SecurityHint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SecurityHintCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ConnectionId" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-WLAN-AutoConfig/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Wireless security succeeded.
+
+Network Adapter: %1
+Interface GUID: %2
+Local MAC Address: %3
+Network SSID: %4
+BSS Type: %5
+Peer MAC Address: %6
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Adapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalMac" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SSID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BSSType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PeerMac" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ConnectionId" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-WLAN-AutoConfig/Operational</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Wireless security failed.
+
+Network Adapter: %1
+Interface GUID: %2
+Local MAC Address: %3
+Network SSID: %4
+BSS Type: %5
+Peer MAC Address: %6
+Reason: %7
+Error: %9
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Adapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalMac" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SSID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BSSType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PeerMac" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ReasonText" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ReasonCode" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ConnectionId" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11007</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-WLAN-AutoConfig/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Wireless IHV security started.
+
+Network Adapter: %1
+Interface GUID: %2
+Local MAC Address: %3
+Network SSID: %4
+BSS Type: %5
+Peer MAC Address: %6
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Adapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalMac" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SSID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BSSType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PeerMac" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IhvSecuritySetting" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ConnectionId" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11008</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-WLAN-AutoConfig/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Wireless IHV security succeeded.
+
+Network Adapter: %1
+Interface GUID: %2
+Local MAC Address: %3
+Network SSID: %4
+BSS Type: %5
+Peer MAC Address: %6
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Adapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalMac" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SSID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BSSType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PeerMac" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ConnectionId" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11009</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-WLAN-AutoConfig/Operational</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Wireless IHV security failed.
+
+Network Adapter: %1
+Interface GUID: %2
+Local MAC Address: %3
+Network SSID: %4
+BSS Type: %5
+Peer MAC Address: %6
+Reason: %7
+Additional Data Length: %8
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Adapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalMac" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SSID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BSSType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PeerMac" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IhvReasonCode" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="IhvDataLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IhvData" inType="win:Binary" outType="xs:hexBinary" length="256"/>
+  <data name="ConnectionId" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11010</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-WLAN-AutoConfig/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Wireless security started.
+
+Network Adapter: %1
+Interface GUID: %2
+Local MAC Address: %3
+Network SSID: %4
+BSS Type: %5
+Peer MAC Address: %6
+Authentication: %7
+Encryption: %9
+FIPS Mode: %11
+802.1x Enabled: %12
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Adapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalMac" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SSID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BSSType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PeerMac" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Auth" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AuthVal" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Cipher" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CipherVal" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FIPSMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OnexEnabled" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ConnectionId" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12011</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-WLAN-AutoConfig/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Wireless 802.1x authentication started.
+
+Network Adapter: %1
+Interface GUID: %2
+Local MAC Address: %3
+Network SSID: %4
+BSS Type: %5
+Peer MAC Address: %6
+Eap Information: Type %7, Vendor ID %8, Vendor Type %9, Author ID %10
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Adapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalMac" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SSID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BSSType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PeerMac" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EapType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VendorID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VendorType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AuthorID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ConnectionId" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12012</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-WLAN-AutoConfig/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Wireless 802.1x authentication succeeded.
+
+Network Adapter: %1
+Interface GUID: %2
+Local MAC Address: %3
+Network SSID: %4
+BSS Type: %5
+Peer MAC Address: %6
+Identity: %7
+User: %8
+Domain: %9
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Adapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalMac" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SSID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BSSType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PeerMac" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Identity" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="User" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Domain" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ConnectionId" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12013</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-WLAN-AutoConfig/Operational</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Wireless 802.1x authentication failed.
+
+Network Adapter: %1
+Interface GUID: %2
+Local MAC Address: %3
+Network SSID: %4
+BSS Type: %5
+Peer MAC Address: %6
+Identity: %7
+User: %8
+Domain: %9
+Reason: %10
+Error: %12
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Adapter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DeviceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalMac" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SSID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BSSType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PeerMac" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Identity" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="User" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Domain" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ReasonText" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ReasonCode" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ConnectionId" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-WLAN-AutoConfig/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+A pre-logon connection was not attempted.
+
+Result: %1
+Reason: %2
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Result" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-WLAN-AutoConfig/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+A pre-logon connection was attempted.
+
+Result: %1
+Interface GUID: %2
+Profile Name: %3
+Requested Fields: %4
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Result" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ProfileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestedFields" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13011</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-WLAN-AutoConfig/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+A post-logon connection was not attempted.
+
+Result: %1
+Reason: %2
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Result" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13012</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-WLAN-AutoConfig/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+A post-logon connection was attempted.
+
+Result: %1
+Interface GUID: %2
+Profile Name: %3
+Requested Fields: %4
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Result" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ProfileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13013</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-WLAN-AutoConfig/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+The post-logon connection attempt is complete.
+
+Network connection attempt result: %1
+Reason: %2
+Interface GUID: %3
+Profile Name: %4
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Result" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ProfileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13014</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-WLAN-AutoConfig/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+A post-logon connection was attempted.
+
+Result: %1
+Interface GUID: %2
+Profile Name: %3
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Result" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ProfileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

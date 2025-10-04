@@ -1,0 +1,311 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-SUA-Psxss</Name>
+        <Metadata>
+            <Guid>{10AB3154-C36A-4F24-9D91-EFB5BCD331EF}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\psxss.exe</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\psxss.exe</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%20Windows%20Subsystem%20for%20UNIX-based%20Applications&amp;ProdVer=6.0.6000.16386&amp;FileName=psxss.exe&amp;FileVer=6.0.6000.16386</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Subsystem for Unix based Applications-Psxss</PublisherMessage>
+            <Channels>
+            </Channels>
+            <Levels>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>win:EventlogClassic</Name>
+                    <Value>36028797018963968</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Subsystem for UNIX-based Applications started.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226474</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Subsystem for UNIX-based Applications status: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226475</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unusable PsxOffset %1 from domain SID %2 with domain name %3. See Knowledge Base article Q306552 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226476</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+PSXSS has encountered a user or group ID with a value that requires careful POSIX offset management.  See Knowledge Base article Q306552 for more information. The internal UID is 0x%1%2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226477</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+PSXSS has encountered a user or group ID with a value too large to convert to a uid_t, and converted it to a reserved UID value. See Knowledge Base article Q306552 for more information. The internal UID is 0x%1%2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073742830</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Domain Cache sweep interval set to %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073742832</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The domain cache is full; recycling older entry. If this event occurs frequently, contact your system administrator; however, occasional occurrences are normal.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073742833</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Synthesized POSIX offset for SID %1, computer %2. For more information about the compatibility of this operation with your configuration, see Knowledge Base article Q306552.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226482</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+There are too many internal POSIX offset values. See Knowledge Base article Q306552 for more information.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226483</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The status value %1 was converted to EACCES.  While this is an informational message only, your system administrator should be informed that this event occurred.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073742836</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Connected to Mapping Server at host %1 (%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226485</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Could not connect to Mapping Server at host %1:while connecting %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226486</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Could not open registry key %1: NtStatus %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226487</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Internal Error: TLS Client not as expected at %1 line %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226488</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unexpected Exception pid=%1 cid=%2.%3 code=%4 fc=%5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226489</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The POSIX offset for domain %1 is %2, which is invalid.  The domain will be ignored and inaccessible. See Knowledge Base article Q306552 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226490</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Subsystem for UNIX-based Applications is unable to load a DLL, pid=%1 cid=%2.%3 code=%4 fc=%5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226491</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Subsystem for UNIX-based Applications detected a hard error. The exception vector contains: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073742844</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Subsystem for UNIX-based Applications has detected that the network or server is operating incorrectly.  Certain functions might not operate correctly until this is corrected.  (This problem might be self-correcting over time.)]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226493</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Connection to port %1 failed; Subsystem for UNIX-based Applications terminated during startup.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226494</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An internal error in the Subsystem for UNIX-based Applications tape drive driver has occurred; you might need to reboot to continue using the tape drive.  Inform your computing support representatives.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226495</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Could not connect to Mapping Server at host  %1:while connecting: Hostname Resolution failed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226496</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A fatal condition has occurred during subsystem startup. The condition is %1 and the status code is %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226497</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The security file was damaged, and has been recreated. This will cause existing device special files to be rejected; these files must be recreated. See the makedev -f command to restore default special files.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226498</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Subsystem for UNIX-based Applications was started in Safe Mode. This functionality in not available in Safe Mode.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226499</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Subsystem for UNIX-based Applications is not available in this edition of Windows..]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

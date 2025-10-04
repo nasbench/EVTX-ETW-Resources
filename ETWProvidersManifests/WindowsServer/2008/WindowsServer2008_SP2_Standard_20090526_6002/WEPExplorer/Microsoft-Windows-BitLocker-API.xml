@@ -1,0 +1,76 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-BitLocker-API</Name>
+        <Metadata>
+            <Guid>{5D674230-CA9F-11DA-A94D-0800200C9A66}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\fveapi.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\fveapi.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.0.6000.16386&amp;FileName=fveapi.dll&amp;FileVer=6.0.6000.16386</HelpLink>
+            <PublisherMessage>Microsoft-Windows-BitLocker-API</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>System</Path>
+                    <Index>0</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message></Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message></Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>513</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+BitLocker Drive Encryption recovery information was backed up successfully to Active Directory Domain Services.
+Protector GUID: %1
+Volume GUID: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProtectorGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeGUID" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>514</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Warning</Level>
+                <Message><![CDATA[
+Failed to backup BitLocker Drive Encryption recovery information to Active Directory Domain Services.
+Errorcode: %2
+Protector GUID: %1
+Volume GUID: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProtectorGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="VolumeGUID" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
