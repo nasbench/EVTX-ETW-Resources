@@ -1,0 +1,122 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-RPC</Name>
+        <Metadata>
+            <Guid>{6AD52B32-D609-4BE9-AE07-CE8DAE937E39}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\rpcrt4.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\rpcrt4.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.0.6001.18000&amp;FileName=rpcrt4.dll&amp;FileVer=6.0.6001.18000</HelpLink>
+            <PublisherMessage>Microsoft-Windows-RPC</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>EEInfo</Message>
+                    <Path>Microsoft-Windows-RPC/EEInfo</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Debug</Message>
+                    <Path>Microsoft-Windows-RPC/Debug</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message></Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message></Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>1</Version>
+                <Channel>EEInfo</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Extended Error Information: 
+	ProcessName: 	%1 
+	ComputerName: 	%2 
+	ProcessId: 	%3 
+	Status: 	%6 
+	DetectionLocation: 	%7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ImageName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ComputerName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessID" inType="win:UInt32" outType="win:PID"/>
+  <data name="TimeStamp" inType="win:SYSTEMTIME" outType="xs:dateTime"/>
+  <data name="GeneratingComponent" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="DetectionLocation" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Flags" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="NumberOfParameters" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <struct name="Params" count="NumberOfParameters">
+    <data name="ParameterType" inType="win:Int32" outType="xs:int"/>
+    <data name="AnsiValue" inType="win:AnsiString" outType="xs:string"/>
+    <data name="UnicodeValue" inType="win:UnicodeString" outType="xs:string"/>
+    <data name="LValue" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="PValue" inType="win:HexInt64" outType="win:HexInt64"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>1</Version>
+                <Channel>Debug</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+An RPC call was blocked by an RPC firewall filter. 
+	ProcessName: 	%1 
+	InterfaceUuid: 	%2 
+	RpcFilterKey:	%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ImangeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="InterfaceUuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FilterKey" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>1</Version>
+                <Channel>Debug</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+An error occured. 
+	ProcessName: 	%1 
+	DetectionLocation: 	%2 
+	Status: 	%3 
+	AdditionaData: 	%4 
+	AddtionalData: 	%5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ImageName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DetectionLocation" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="AdditionalData1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="AdditionalData2" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

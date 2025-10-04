@@ -1,0 +1,630 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Diagnostics-Networking</Name>
+        <Metadata>
+            <Guid>{36C23E18-0E66-11D9-BBEB-505054503030}</Guid>
+            <ResourceFilePath>%windir%\system32\netdiagfx.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\netdiagfx.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.0.6000.16386&amp;FileName=netdiagfx.dll&amp;FileVer=6.0.6000.16386</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Diagnostics-Networking</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-Diagnostics-Networking/Operational</Message>
+                    <Path>Microsoft-Windows-Diagnostics-Networking/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>System</Path>
+                    <Index>1</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-Diagnostics-Networking/Debug</Message>
+                    <Path>Microsoft-Windows-Diagnostics-Networking/Debug</Path>
+                    <Index>2</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message></Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message></Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>NDF.Start</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>NDF.Stop</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>NDF.Fail</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>NDF.DiagSuccess</Name>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>NDF.DiagFail</Name>
+                    <Value>5</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>NDF.ValidationSuccess</Name>
+                    <Value>6</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>NDF.ValidationFail</Name>
+                    <Value>7</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>NDF.RepairOptFail</Name>
+                    <Value>9</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>NDF.RepairFail</Name>
+                    <Value>10</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>NDF.Debug</Name>
+                    <Value>11</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>NDF.HelperClassInfo</Name>
+                    <Value>12</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message></Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>The failure occurred in the Framework code.</Message>
+                    <Name>op_NDFFailInFramework</Name>
+                    <Value>20</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>The failure occurred in the Helper class code.</Message>
+                    <Name>op_NDFFailInHelper</Name>
+                    <Value>21</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ndf:NDFCoreEvents</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ndf:NDFHelperClassEvents</Name>
+                    <Value>2</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnostics-Networking/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Task>NDF.Start</Task>
+                <Opcode>win:Start</Opcode>
+                <Keyword>ndf:NDFCoreEvents</Keyword>
+                <Message><![CDATA[
+Network Diagnostics Framework started because the user requested a diagnostics session. 
+
+Helper Class Name: %1 
+
+Number of parameters: %2 
+
+Attributes passed to helper class: 
+%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HelperClassName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NumberOfAttributes" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HelperClassAttributes" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnostics-Networking/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Task>NDF.Stop</Task>
+                <Opcode>win:Stop</Opcode>
+                <Keyword>ndf:NDFCoreEvents</Keyword>
+                <Message><![CDATA[
+Network Diagnostics Framework stopped because it completed the user initiated diagnostics session. 
+
+Result: Success, no problems found. [%1]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ResultHR" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2100</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnostics-Networking/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Task>NDF.Stop</Task>
+                <Opcode>win:Stop</Opcode>
+                <Keyword>ndf:NDFCoreEvents</Keyword>
+                <Message><![CDATA[
+Network Diagnostics Framework stopped because it completed the user initiated diagnostics session. 
+
+Result: Success, problems repaired. [%1]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ResultHR" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2200</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnostics-Networking/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Task>NDF.Stop</Task>
+                <Opcode>win:Stop</Opcode>
+                <Keyword>ndf:NDFCoreEvents</Keyword>
+                <Message><![CDATA[
+Network Diagnostics Framework stopped because it completed the user initiated diagnostics session. 
+
+Result: Failed during diagnosis. [%1]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ResultHR" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2300</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnostics-Networking/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Task>NDF.Stop</Task>
+                <Opcode>win:Stop</Opcode>
+                <Keyword>ndf:NDFCoreEvents</Keyword>
+                <Message><![CDATA[
+Network Diagnostics Framework stopped because it completed the user initiated diagnostics session. 
+
+Result: Failed during repair. [%1]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ResultHR" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2400</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnostics-Networking/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Task>NDF.Stop</Task>
+                <Opcode>win:Stop</Opcode>
+                <Keyword>ndf:NDFCoreEvents</Keyword>
+                <Message><![CDATA[
+Network Diagnostics Framework stopped because it completed the user initiated diagnostics session. 
+
+Result: Cancelled during diagnosis. [%1]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ResultHR" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2500</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnostics-Networking/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Task>NDF.Stop</Task>
+                <Opcode>win:Stop</Opcode>
+                <Keyword>ndf:NDFCoreEvents</Keyword>
+                <Message><![CDATA[
+Network Diagnostics Framework stopped because it completed the user initiated diagnostics session. 
+
+Result: Cancelled during repair. [%1]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ResultHR" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnostics-Networking/Operational</Channel>
+                <Level>win:Error</Level>
+                <Task>NDF.Fail</Task>
+                <Opcode>The failure occurred in the Framework code.</Opcode>
+                <Keyword>ndf:NDFCoreEvents</Keyword>
+                <Message><![CDATA[
+An error occurred. The Network Diagnostics Framework failed to complete operation. A Windows Error Report was generated. [%1].]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ResultHR" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3100</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnostics-Networking/Operational</Channel>
+                <Level>win:Error</Level>
+                <Task>NDF.Fail</Task>
+                <Opcode>The failure occurred in the Helper class code.</Opcode>
+                <Keyword>ndf:NDFCoreEvents</Keyword>
+                <Message><![CDATA[
+An error occurred. The Network Diagnostics Framework failed to complete operation. A Windows Error Report was generated. [%1].]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ResultHR" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4000</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Informational</Level>
+                <Task>NDF.DiagSuccess</Task>
+                <Keyword>ndf:NDFCoreEvents</Keyword>
+                <Message><![CDATA[
+The Network Diagnostics Framework has completed the diagnosis phase of operation. The following repair option was offered:. 
+
+Repair option: %1 
+
+RepairGuid: %2 
+
+Seconds required for repair: %3 
+
+Security context required for repair: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RepairOption" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RepairGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SecondsRequired" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SIDTypeRequired" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4100</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Informational</Level>
+                <Task>NDF.DiagSuccess</Task>
+                <Keyword>ndf:NDFCoreEvents</Keyword>
+                <Message><![CDATA[
+The Network Diagnostics Framework has completed the diagnosis phase of operation, but no network problem was identified.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4200</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Error</Level>
+                <Task>NDF.DiagFail</Task>
+                <Keyword>ndf:NDFCoreEvents</Keyword>
+                <Message><![CDATA[
+An error occurred. The Network Diagnostics Framework failed to complete the diagnosis phase of operation. A Windows Error Report was generated. [%1]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ResultHR" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5000</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Informational</Level>
+                <Task>NDF.ValidationSuccess</Task>
+                <Keyword>ndf:NDFCoreEvents</Keyword>
+                <Message><![CDATA[
+The Network Diagnostics Framework has completed the repair phase of operation. The following repair option or work-around was executed: 
+
+Helper Class Name: %5 
+
+Repair option: %1 
+
+RepairGuid: %2 
+
+The repair option appears to have successfully fixed the diagnosed problem.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RepairOption" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RepairGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SecondsRequired" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SIDTypeRequired" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HelperClassName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5100</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Informational</Level>
+                <Task>NDF.ValidationFail</Task>
+                <Keyword>ndf:NDFCoreEvents</Keyword>
+                <Message><![CDATA[
+The Network Diagnostics Framework (NDF) has completed the repair phase of operation. The following repair option or work-around was executed: 
+
+Helper Class Name: %5 
+
+Repair option: %1 
+
+RepairGuid: %2 
+
+The repair option appears to have successfully fixed the diagnosed problem. But NDF has detected the existence of other network problems. NDF should be re-run to diagnose these problems.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RepairOption" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RepairGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SecondsRequired" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SIDTypeRequired" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HelperClassName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5200</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Informational</Level>
+                <Task>NDF.RepairOptFail</Task>
+                <Keyword>ndf:NDFCoreEvents</Keyword>
+                <Message><![CDATA[
+The Network Diagnostics Framework failed to execute the following repair: 
+
+Repair option: %1 
+
+RepairGuid: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RepairOption" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RepairGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SecondsRequired" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SIDTypeRequired" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5300</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Error</Level>
+                <Task>NDF.RepairFail</Task>
+                <Keyword>ndf:NDFCoreEvents</Keyword>
+                <Message><![CDATA[
+An error occurred. The Network Diagnostics Framework failed to complete the repair phase of operation. A Windows Error Report was generated. [%1]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ResultHR" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnostics-Networking/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Task>NDF.HelperClassInfo</Task>
+                <Keyword>ndf:NDFHelperClassEvents</Keyword>
+                <Message><![CDATA[
+Helper Class (%1) Event: 
+
+%2
+
+Event Verbosity:%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HelperClassName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EventDescription" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EventVerbosity" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6100</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Informational</Level>
+                <Task>NDF.HelperClassInfo</Task>
+                <Keyword>ndf:NDFHelperClassEvents</Keyword>
+                <Message><![CDATA[
+Helper Class (%1) Event: 
+
+%2
+
+Event Verbosity:%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HelperClassName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EventDescription" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EventVerbosity" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6200</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnostics-Networking/Debug</Channel>
+                <Level>win:Informational</Level>
+                <Task>NDF.HelperClassInfo</Task>
+                <Keyword>ndf:NDFHelperClassEvents</Keyword>
+                <Message><![CDATA[
+Helper Class (%1) Event: 
+
+%2
+
+Event Verbosity:%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HelperClassName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EventDescription" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EventVerbosity" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnostics-Networking/Debug</Channel>
+                <Level>win:Informational</Level>
+                <Task>NDF.Debug</Task>
+                <Keyword>ndf:NDFCoreEvents</Keyword>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DebugMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7010</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnostics-Networking/Debug</Channel>
+                <Level>win:Informational</Level>
+                <Task>NDF.Debug</Task>
+                <Keyword>ndf:NDFCoreEvents</Keyword>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DebugMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7020</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnostics-Networking/Debug</Channel>
+                <Level>win:Informational</Level>
+                <Task>NDF.Debug</Task>
+                <Keyword>ndf:NDFCoreEvents</Keyword>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DebugMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7030</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnostics-Networking/Debug</Channel>
+                <Level>win:Informational</Level>
+                <Task>NDF.Debug</Task>
+                <Keyword>ndf:NDFCoreEvents</Keyword>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DebugMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7040</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnostics-Networking/Debug</Channel>
+                <Level>win:Informational</Level>
+                <Task>NDF.Debug</Task>
+                <Keyword>ndf:NDFCoreEvents</Keyword>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DebugMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7050</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnostics-Networking/Debug</Channel>
+                <Level>win:Informational</Level>
+                <Task>NDF.Debug</Task>
+                <Keyword>ndf:NDFCoreEvents</Keyword>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DebugMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7100</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnostics-Networking/Debug</Channel>
+                <Level>win:Informational</Level>
+                <Task>NDF.Debug</Task>
+                <Keyword>ndf:NDFCoreEvents</Keyword>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DebugMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

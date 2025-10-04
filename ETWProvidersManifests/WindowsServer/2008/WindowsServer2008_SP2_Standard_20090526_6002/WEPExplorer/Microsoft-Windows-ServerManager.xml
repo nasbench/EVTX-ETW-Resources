@@ -1,0 +1,586 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-ServerManager</Name>
+        <Metadata>
+            <Guid>{8C474092-13E4-430E-9F06-5B60A529BF38}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\svrmgrnc.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\svrmgrnc.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.0.6001.18000&amp;FileName=svrmgrnc.dll&amp;FileVer=6.0.6001.18000</HelpLink>
+            <PublisherMessage>Microsoft-Windows-ServerManager</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>System</Path>
+                    <Index>0</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Setup</Path>
+                    <Index>1</Index>
+                    <Id>16</Id>
+                    <Imported>true</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-ServerManager/Analytic</Message>
+                    <Path>Microsoft-Windows-ServerManager/Analytic</Path>
+                    <Index>2</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-ServerManager/Operational</Message>
+                    <Path>Microsoft-Windows-ServerManager/Operational</Path>
+                    <Index>3</Index>
+                    <Id>18</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message></Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message></Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message></Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1600</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ServerManager/Operational</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+An error occurred in Server Manager. %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1601</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ServerManager/Operational</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Could not discover the state of the system. %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1602</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ServerManager/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+ServerManagerCmd.exe %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1610</Id>
+                <Version>0</Version>
+                <Channel>Setup</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Installation succeeded. %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="identifiers" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1611</Id>
+                <Version>0</Version>
+                <Channel>Setup</Channel>
+                <Level>win:Warning</Level>
+                <Message><![CDATA[
+Installation succeeded. A restart is required. %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="identifiers" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1612</Id>
+                <Version>0</Version>
+                <Channel>Setup</Channel>
+                <Level>win:Warning</Level>
+                <Message><![CDATA[
+Installation succeeded with warnings. %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="identifiers" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1613</Id>
+                <Version>0</Version>
+                <Channel>Setup</Channel>
+                <Level>win:Warning</Level>
+                <Message><![CDATA[
+Installation succeeded with warnings. A restart is required. %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="identifiers" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1614</Id>
+                <Version>0</Version>
+                <Channel>Setup</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Installation succeeded with errors. %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="identifiers" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1615</Id>
+                <Version>0</Version>
+                <Channel>Setup</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Installation succeeded with errors. A restart is required. %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="identifiers" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1616</Id>
+                <Version>0</Version>
+                <Channel>Setup</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Installation failed. %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="identifiers" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1617</Id>
+                <Version>0</Version>
+                <Channel>Setup</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Installation failed. A restart is required. %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="identifiers" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1618</Id>
+                <Version>0</Version>
+                <Channel>Setup</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Removal succeeded. %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="identifiers" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1619</Id>
+                <Version>0</Version>
+                <Channel>Setup</Channel>
+                <Level>win:Warning</Level>
+                <Message><![CDATA[
+Removal succeeded. A restart is required. %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="identifiers" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1620</Id>
+                <Version>0</Version>
+                <Channel>Setup</Channel>
+                <Level>win:Warning</Level>
+                <Message><![CDATA[
+Removal succeeded with warnings. %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="identifiers" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1621</Id>
+                <Version>0</Version>
+                <Channel>Setup</Channel>
+                <Level>win:Warning</Level>
+                <Message><![CDATA[
+Removal succeeded with warnings. A restart is required. %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="identifiers" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1622</Id>
+                <Version>0</Version>
+                <Channel>Setup</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Removal succeeded with errors. %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="identifiers" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1623</Id>
+                <Version>0</Version>
+                <Channel>Setup</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Removal succeeded with errors. A restart is required. %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="identifiers" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1624</Id>
+                <Version>0</Version>
+                <Channel>Setup</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Removal failed. %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="identifiers" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1625</Id>
+                <Version>0</Version>
+                <Channel>Setup</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Removal failed. A restart is required. %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="identifiers" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1630</Id>
+                <Version>0</Version>
+                <Channel>Setup</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Installation succeeded. %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="identifiers" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1631</Id>
+                <Version>0</Version>
+                <Channel>Setup</Channel>
+                <Level>win:Warning</Level>
+                <Message><![CDATA[
+Installation succeeded. A restart is required. %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="identifiers" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1632</Id>
+                <Version>0</Version>
+                <Channel>Setup</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Installation failed. %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="identifiers" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1633</Id>
+                <Version>0</Version>
+                <Channel>Setup</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Installation failed. A restart is required. %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="identifiers" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1634</Id>
+                <Version>0</Version>
+                <Channel>Setup</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Removal succeeded. %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="identifiers" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1635</Id>
+                <Version>0</Version>
+                <Channel>Setup</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Removal succeeded. A restart is required. %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="identifiers" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1636</Id>
+                <Version>0</Version>
+                <Channel>Setup</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Removal failed. %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="identifiers" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1637</Id>
+                <Version>0</Version>
+                <Channel>Setup</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Removal failed. A restart is required. %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="identifiers" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1651</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ServerManager/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Task clicked in Initial Configuration Tasks: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1652</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ServerManager/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Task clicked in Initial Configuration Tasks: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1653</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ServerManager/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Task clicked in Initial Configuration Tasks: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1654</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ServerManager/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Task clicked in Initial Configuration Tasks: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1655</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ServerManager/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Task clicked in Initial Configuration Tasks: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1656</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ServerManager/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Task clicked in Initial Configuration Tasks: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1657</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ServerManager/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Task clicked in Initial Configuration Tasks: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1658</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ServerManager/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Task clicked in Initial Configuration Tasks: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1659</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ServerManager/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Task clicked in Initial Configuration Tasks: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1660</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ServerManager/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Task clicked in Initial Configuration Tasks: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1661</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-ServerManager/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Task clicked in Initial Configuration Tasks: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

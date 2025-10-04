@@ -1,0 +1,159 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Kernel-General</Name>
+        <Metadata>
+            <Guid>{A68CA8B7-004F-D7B6-A698-07E2DE0F1F5D}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\advapi32.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\advapi32.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.0.6002.18005&amp;FileName=advapi32.dll&amp;FileVer=6.0.6002.18005</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Kernel-General</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>System</Path>
+                    <Index>0</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message></Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message></Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message></Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message></Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Time</Message>
+                    <Name>KERNEL_GENERAL_KEYWORD_TIME</Name>
+                    <Value>16</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Informational</Level>
+                <Keyword>Time</Keyword>
+                <Message><![CDATA[
+The system time has changed to %1 from %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NewTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="OldTime" inType="win:FILETIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+License policy-cache corruption detected.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+License policy-cache corruption has been fixed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+License policy-cache has been emptied because it was not updated within expected duration.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+{Registry Hive Recovered} Registry hive (file): '%3' was corrupted and it has been recovered. Some data might have been lost.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FinalStatus" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ExtraStringLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ExtraString" inType="win:UnicodeString" outType="xs:string" length="ExtraStringLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+An I/O operation initiated by the Registry failed unrecoverably.The Registry could not flush hive (file): '%3'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FinalStatus" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ExtraStringLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ExtraString" inType="win:UnicodeString" outType="xs:string" length="ExtraStringLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Warning</Level>
+                <Message><![CDATA[
+The system failed to open transaction log %4 for hive %2. Some transactional consistency might have been lost. (Failure status %7, TM: %5, RM: %6, InternalCode: %8)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HivePathLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="HivePath" inType="win:UnicodeString" outType="xs:string" length="HivePathLength"/>
+  <data name="LogFileLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="LogFile" inType="win:UnicodeString" outType="xs:string" length="LogFileLength"/>
+  <data name="TmId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="RmId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="InternalCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

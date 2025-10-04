@@ -1,0 +1,1412 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-WHEA-Logger</Name>
+        <Metadata>
+            <Guid>{C26C4F3C-3F66-4E99-8F8A-39405CFED220}</Guid>
+            <ResourceFilePath>%systemroot%\system32\whealogr.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\whealogr.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.0.6002.18005&amp;FileName=whealogr.dll&amp;FileVer=6.0.6002.18005</HelpLink>
+            <PublisherMessage>Microsoft-Windows-WHEA-Logger</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>System</Path>
+                    <Index>0</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message></Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message></Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message></Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>WHEA Logging Service Initialization</Message>
+                    <Name>Init</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>WHEA Error Event Logs</Message>
+                    <Name>Errlog</Name>
+                    <Value>2</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Error</Level>
+                <Keyword>WHEA Error Event Logs</Keyword>
+                <Message><![CDATA[
+An uncorrected hardware error occurred. A record describing the condition is contained in the data section of this event.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Warning</Level>
+                <Keyword>WHEA Error Event Logs</Keyword>
+                <Message><![CDATA[
+A corrected hardware error occurred. A record describing the condition is contained in the data section of this event.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Informational</Level>
+                <Keyword>WHEA Error Event Logs</Keyword>
+                <Message><![CDATA[
+A hardware event occurred. An informational record describing the condition is contained in the data section of this event.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+An Uncorrected Hardware Error Occurred
+
+Error Source: Machine Check Exception
+
+Error Type: Memory Hierarchy Error.
+
+Processor Information:
+   Local APIC Id: %7
+   CPUID: %8
+   Brand String: %9
+
+Error Details:
+   Bank: %10
+   Status: %11
+   Address: %12
+   Misc: %13
+   Trasaction Type: %1
+   Memory Hierarchy Level: %5
+   Request Type: %3
+   Address: %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApicIdValid" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ApicId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MCABank" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MciStat" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MciAddr" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MciMisc" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ErrorType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TransactionType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Participation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MemorIO" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MemHierarchyLvl" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Timeout" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Warning</Level>
+                <Message><![CDATA[
+A Corrected Hardware Error Occurred
+
+Error Source: Corrected Machine Check
+
+ Error Type: Memory hierarchy error.
+
+Processor Information:
+   Local APIC Id: %7
+   CPUID: %8
+   Brand String: %9
+
+Error Details:
+   Bank: %10
+   Status: %11
+   Address: %12
+   Misc: %13
+   Trasaction Type: %1
+   Memory Hierarchy Level: %5
+   Request Type: %3
+   Address: %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApicIdValid" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ApicId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MCABank" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MciStat" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MciAddr" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MciMisc" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ErrorType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TransactionType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Participation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MemorIO" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MemHierarchyLvl" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Timeout" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+An Uncorrected Hardware Error Occurred
+
+Error Source: Machine Check Exception
+
+Error Type: TLB error.
+
+Processor Information:
+   Local APIC Id: %7
+   CPUID: %8
+   Brand String: %9
+
+Error Details:
+   Bank: %10
+   Status: %11
+   Address: %12
+   Misc: %13
+   Transaction Type: %1
+   Memory Hierarchy Level: %5
+   Address: %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApicIdValid" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ApicId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MCABank" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MciStat" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MciAddr" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MciMisc" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ErrorType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TransactionType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Participation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MemorIO" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MemHierarchyLvl" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Timeout" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Warning</Level>
+                <Message><![CDATA[
+A Corrected Hardware Error Occurred
+
+Error Source: Corrected Machine Check
+
+ Error Type: TLB error.
+
+Processor Information:
+   Local APIC Id: %7
+   CPUID: %8
+   Brand String: %9
+
+Error Details:
+   Bank: %10
+   Status: %11
+   Address: %12
+   Misc: %13
+   Transaction Type: %1
+   Memory Hierarchy Level: %5
+   Address: %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApicIdValid" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ApicId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MCABank" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MciStat" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MciAddr" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MciMisc" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ErrorType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TransactionType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Participation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MemorIO" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MemHierarchyLvl" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Timeout" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+An Uncorrected Hardware Error Occurred
+
+Error Source: Machine Check Exception
+
+Error Type: Bus or Interconnect error.
+
+Processor Information:
+   Local APIC Id: %7
+   CPUID: %8
+   Brand String: %9
+
+Error Details:
+   Bank: %10
+   Status: %11
+   Address: %12
+   Misc: %13
+   Memory Hierarchy Level: %5
+   Participation: %2
+   Request Type: %3
+   Memory/IO: %4
+   Address: %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApicIdValid" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ApicId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MCABank" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MciStat" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MciAddr" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MciMisc" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ErrorType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TransactionType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Participation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MemorIO" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MemHierarchyLvl" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Timeout" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Warning</Level>
+                <Message><![CDATA[
+A Corrected Hardware Error Occurred
+
+Error Source: Corrected Machine Check
+
+ Error Type: Bus or Interconnect error.
+
+Processor Information:
+   Local APIC Id: %7
+   CPUID: %8
+   Brand String: %9
+
+Error Details:
+   Bank: %10
+   Status: %11
+   Address: %12
+   Misc: %13
+   Memory Hierarchy Level: %5
+   Participation: %2
+   Request Type: %3
+   Memory/IO: %4
+   Address: %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApicIdValid" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ApicId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MCABank" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MciStat" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MciAddr" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MciMisc" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ErrorType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TransactionType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Participation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MemorIO" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MemHierarchyLvl" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Timeout" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+An Uncorrected Hardware Error Occurred
+
+Error Source: Machine Check Exception
+
+Error Type: Bus or Interconnect timeout error.
+
+Processor Information:
+   Local APIC Id: %7
+   CPUID: %8
+   Brand String: %9
+
+Error Details:
+   Bank: %10
+   Status: %11
+   Address: %12
+   Misc: %13
+   Memory Hierarchy Level: %5
+   Participation: %2
+   Request Type: %3
+   Memory/IO: %4
+   Address: %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApicIdValid" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ApicId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MCABank" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MciStat" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MciAddr" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MciMisc" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ErrorType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TransactionType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Participation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MemorIO" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MemHierarchyLvl" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Timeout" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Warning</Level>
+                <Message><![CDATA[
+A Corrected Hardware Error Occurred
+
+Error Source: Corrected Machine Check
+
+ Error Type: Bus or Interconnect timeout error.
+
+Processor Information:
+   Local APIC Id: %7
+   CPUID: %8
+   Brand String: %9
+
+Error Details:
+   Bank: %10
+   Status: %11
+   Address: %12
+   Misc: %13
+   Memory Hierarchy Level: %5
+   Participation: %2
+   Request Type: %3
+   Memory/IO: %4
+   Address: %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApicIdValid" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ApicId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MCABank" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MciStat" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MciAddr" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MciMisc" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ErrorType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TransactionType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Participation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MemorIO" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MemHierarchyLvl" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Timeout" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+An Uncorrected Hardware Error Occurred
+
+Error Source: Machine Check Exception
+
+Error Type: Internal watchdog timer error
+
+Processor Information:
+   Local APIC Id: %7
+   CPUID: %8
+   Brand String: %9
+
+Error Details:
+   Bank: %10
+   Status: %11
+   Address: %12
+   Misc: %13]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApicIdValid" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ApicId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MCABank" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MciStat" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MciAddr" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MciMisc" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ErrorType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TransactionType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Participation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MemorIO" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MemHierarchyLvl" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Timeout" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+An Uncorrected Hardware Error Occurred
+
+Error Source: Machine Check Exception
+
+Error Type: ROM parity error
+
+Processor Information:
+   Local APIC Id: %7
+   CPUID: %8
+   Brand String: %9
+
+Error Details:
+   Bank: %10
+   Status: %11
+   Address: %12
+   Misc: %13]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApicIdValid" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ApicId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MCABank" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MciStat" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MciAddr" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MciMisc" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ErrorType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TransactionType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Participation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MemorIO" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MemHierarchyLvl" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Timeout" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+An Uncorrected Hardware Error Occurred
+
+Error Source: Machine Check Exception
+
+Error Type: Internal processor error
+
+Processor Information:
+   Local APIC Id: %7
+   CPUID: %8
+   Brand String: %9
+
+Error Details:
+   Bank: %10
+   Status: %11
+   Address: %12
+   Misc: %13]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApicIdValid" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ApicId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MCABank" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MciStat" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MciAddr" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MciMisc" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ErrorType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TransactionType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Participation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MemorIO" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MemHierarchyLvl" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Timeout" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+An Uncorrected Hardware Error Occurred
+
+Error Source: Machine Check Exception
+
+Error Type: Processor functional redundancy check error
+
+Processor Information:
+   Local APIC Id: %7
+   CPUID: %8
+   Brand String: %9
+
+Error Details:
+   Bank: %10
+   Status: %11
+   Address: %12
+   Misc: %13]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApicIdValid" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ApicId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MCABank" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MciStat" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MciAddr" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MciMisc" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ErrorType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TransactionType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Participation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MemorIO" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MemHierarchyLvl" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Timeout" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+An Uncorrected Hardware Error Occurred
+
+Error Source: PCI Express
+
+Port Type: %3
+
+Device Information:
+   Bus/Device/Function: %8/%9/%10
+   VEN/DEV: %14/%15
+   Class Code: %16
+
+Additional information is contained in this entry's details.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FRUId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FRUText" inType="win:AnsiString" outType="xs:string" length="20"/>
+  <data name="ValidBits" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="PortType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Version" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Command" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Bus" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Device" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Function" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Segment" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SecondaryBus" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Slot" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="VendorID" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="DeviceID" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ClassCode" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="DeviceSerialNumber" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="BridgeControl" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="BridgeStatus" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="UncorrectableErrorStatus" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="CorrectableErrorStatus" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="HeaderLog" inType="win:Binary" outType="xs:hexBinary" length="16"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Warning</Level>
+                <Message><![CDATA[
+A Corrected Hardware Error Occurred
+
+Error Source: PCI Express
+
+Port Type: %3
+
+Device Information:
+   Bus/Device/Function: %8/%9/%10
+   VEN/DEV: %14/%15
+   Class Code: %16
+
+Additional information is contained in this entry's details.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FRUId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FRUText" inType="win:AnsiString" outType="xs:string" length="20"/>
+  <data name="ValidBits" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="PortType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Version" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Command" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Bus" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Device" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Function" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Segment" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SecondaryBus" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Slot" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="VendorID" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="DeviceID" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ClassCode" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="DeviceSerialNumber" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="BridgeControl" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="BridgeStatus" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="UncorrectableErrorStatus" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="CorrectableErrorStatus" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="HeaderLog" inType="win:Binary" outType="xs:hexBinary" length="16"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+A fatal hardware error occurred
+
+Error Source: Machine Check
+
+Error Type: %7
+
+Processor ID Valid: %1
+Processor ID: %2
+Bank Number: %3
+Transaction Type: %8
+Processor Participation: %9
+Request Type: %10
+Memory/Io: %11
+Memory Hierarchy Level: %12
+Timeout: %13]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApicIdValid" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ApicId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MCABank" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MciStat" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MciAddr" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MciMisc" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ErrorType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TransactionType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Participation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MemorIO" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MemHierarchyLvl" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Timeout" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Warning</Level>
+                <Message><![CDATA[
+A corrected hardware error occurred.  
+
+Error Source: Corrected Machine Check
+
+Error Type: %7
+
+Processor ID Valid: %1
+Processor ID: %2
+Bank Number: %3
+Transaction Type: %8
+Processor Participation: %9
+Request Type: %10
+Memory/Io: %11
+Memory Hierarchy Level: %12
+Timeout: %13]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApicIdValid" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ApicId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MCABank" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MciStat" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MciAddr" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MciMisc" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ErrorType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TransactionType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Participation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MemorIO" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MemHierarchyLvl" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Timeout" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+A fatal hardware error occurred
+
+Error Source: Machine Check
+
+Error Type: %7
+
+Processor ID Valid: %1
+Processor ID: %2
+Bank Number: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApicIdValid" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ApicId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MCABank" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MciStat" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MciAddr" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MciMisc" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ErrorType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Warning</Level>
+                <Message><![CDATA[
+A corrected hardware error occurred.  
+
+Error Source: Corrected Machine Check
+
+Error Type: %7
+
+Processor ID Valid: %1
+Processor ID: %2
+Bank Number: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApicIdValid" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ApicId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MCABank" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MciStat" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MciAddr" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MciMisc" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ErrorType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>22</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+An uncorrected hardware error occurred
+
+Error Source: Platform Memory
+
+Error Type: %18
+
+FRU Id: %1
+FRU Text: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FRUId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FRUText" inType="win:AnsiString" outType="xs:string" length="20"/>
+  <data name="ValidBits" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ErrorStatus" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="PhysicalAddress" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="PhysicalAddressMask" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Node" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Card" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Module" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Bank" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Device" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Row" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Column" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="BitPosition" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="RequesterId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ResponderId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TargetId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ErrorType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>23</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Warning</Level>
+                <Message><![CDATA[
+A corrected hardware error occurred.  
+
+Error Source: Platform Memory
+
+Error Type: %18
+
+FRU Id: %1
+FRU Text: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FRUId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FRUText" inType="win:AnsiString" outType="xs:string" length="20"/>
+  <data name="ValidBits" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ErrorStatus" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="PhysicalAddress" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="PhysicalAddressMask" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Node" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Card" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Module" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Bank" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Device" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Row" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Column" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="BitPosition" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="RequesterId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ResponderId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TargetId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ErrorType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>24</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+An Uncorrected Hardware Error Occurred
+
+Error Source: PCI/PCI-X Bus
+
+Device Information:
+   Bus: %5 Segment: %6
+
+Additional information is contained in this entry's details.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FRUId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FRUText" inType="win:AnsiString" outType="xs:string" length="20"/>
+  <data name="ValidBits" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ErrorType" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="BusNumber" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="BusSegment" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="BusAddress" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="BusData" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Command" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="PCIXCommand" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="RequesterId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="CompleterId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TargetId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Warning</Level>
+                <Message><![CDATA[
+A Corrected Hardware Error Occurred
+
+Error Source: PCI/PCI-X Bus
+
+Device Information:
+   Bus: %5 Segment: %6
+
+Additional information is contained in this entry's details.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FRUId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FRUText" inType="win:AnsiString" outType="xs:string" length="20"/>
+  <data name="ValidBits" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ErrorType" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="BusNumber" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="BusSegment" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="BusAddress" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="BusData" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Command" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="PCIXCommand" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="RequesterId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="CompleterId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TargetId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>26</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+An Uncorrected Hardware Error Occurred
+
+Error Source: PCI/PCI-X Device
+
+Device Information:
+   Bus/Device/Function: %10/%9/%8
+   Class Code: %7
+   VEN/DEV: %5/%6
+
+Error Type: %4
+
+Additional information is contained in this entry's details.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FRUId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FRUText" inType="win:AnsiString" outType="xs:string" length="20"/>
+  <data name="ValidBits" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ErrorType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="VendorId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="DeviceId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ClassCode" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="FunctionNumber" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="DeviceNumber" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="BusNumber" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SegmentNumber" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>27</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Warning</Level>
+                <Message><![CDATA[
+A Corrected Hardware Error Occurred
+
+Error Source: PCI/PCI-X Device
+
+Device Information:
+   Bus/Device/Function: %10/%9/%8
+   Class Code: %7
+   VEN/DEV: %5/%6
+
+Error Type: %4
+
+Additional information is contained in this entry's details.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FRUId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FRUText" inType="win:AnsiString" outType="xs:string" length="20"/>
+  <data name="ValidBits" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ErrorType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="VendorId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="DeviceId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ClassCode" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="FunctionNumber" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="DeviceNumber" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="BusNumber" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SegmentNumber" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>28</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+A fatal Hardware Error Occurred
+
+Error Source: Machine Check
+Error Type: Cache Error
+CPU APIC ID: %7
+
+Additional information is contained in this entry's details.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApicIdValid" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="TargetIdValid" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="RequesterIdValid" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ResponderIdValid" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="InstructionPointerValid" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="CheckInfoValid" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ApicId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="CheckInfo" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TargetId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="RequesterId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ResponderId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="InstructionPointer" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>29</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Warning</Level>
+                <Message><![CDATA[
+A corrected Hardware Error Occurred
+
+Error Source: Machine Check
+Error Type: Cache Error
+CPU APIC ID: %7
+
+Additional information is contained in this entry's details.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApicIdValid" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="TargetIdValid" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="RequesterIdValid" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ResponderIdValid" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="InstructionPointerValid" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="CheckInfoValid" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ApicId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="CheckInfo" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TargetId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="RequesterId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ResponderId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="InstructionPointer" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+A fatal Hardware Error Occurred
+
+Error Source: Machine Check
+Error Type: Translation Buffer Error
+CPU APIC ID: %7
+
+Additional information is contained in this entry's details.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApicIdValid" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="TargetIdValid" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="RequesterIdValid" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ResponderIdValid" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="InstructionPointerValid" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="CheckInfoValid" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ApicId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="CheckInfo" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TargetId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="RequesterId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ResponderId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="InstructionPointer" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>31</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Warning</Level>
+                <Message><![CDATA[
+A corrected Hardware Error Occurred
+
+Error Source: Machine Check
+Error Type: Translation Buffer Error
+CPU APIC ID: %7
+
+Additional information is contained in this entry's details.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApicIdValid" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="TargetIdValid" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="RequesterIdValid" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ResponderIdValid" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="InstructionPointerValid" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="CheckInfoValid" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ApicId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="CheckInfo" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TargetId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="RequesterId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ResponderId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="InstructionPointer" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+A fatal Hardware Error Occurred
+
+Error Source: Machine Check
+Error Type: External/Internal Bus Error
+CPU APIC ID: %7
+
+Additional information is contained in this entry's details.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApicIdValid" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="TargetIdValid" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="RequesterIdValid" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ResponderIdValid" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="InstructionPointerValid" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="CheckInfoValid" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ApicId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="CheckInfo" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TargetId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="RequesterId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ResponderId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="InstructionPointer" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>33</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Warning</Level>
+                <Message><![CDATA[
+A corrected Hardware Error Occurred
+
+Error Source: Machine Check
+Error Type: External/Internal Bus Error
+CPU APIC ID: %7
+
+Additional information is contained in this entry's details.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApicIdValid" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="TargetIdValid" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="RequesterIdValid" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ResponderIdValid" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="InstructionPointerValid" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="CheckInfoValid" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ApicId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="CheckInfo" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TargetId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="RequesterId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ResponderId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="InstructionPointer" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>34</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+A fatal Hardware Error Occurred
+
+Error Source: Machine Check
+nError Type: Internal CPU Register Access Error
+CPU APIC ID: %7
+
+Additional information is contained in this entry's details.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApicIdValid" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="TargetIdValid" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="RequesterIdValid" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ResponderIdValid" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="InstructionPointerValid" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="CheckInfoValid" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ApicId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="CheckInfo" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TargetId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="RequesterId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ResponderId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="InstructionPointer" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>35</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Warning</Level>
+                <Message><![CDATA[
+A corrected Hardware Error Occurred
+
+Error Source: Machine Check
+nError Type: Internal CPU Register Access Error
+CPU APIC ID: %7
+
+Additional information is contained in this entry's details.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApicIdValid" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="TargetIdValid" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="RequesterIdValid" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ResponderIdValid" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="InstructionPointerValid" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="CheckInfoValid" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ApicId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="CheckInfo" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TargetId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="RequesterId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ResponderId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="InstructionPointer" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>36</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+A fatal Hardware Error Occurred
+
+Error Source: Machine Check
+Error Type: Micro Architecture Structure Error
+CPU APIC ID: %7
+
+Additional information is contained in this entry's details.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApicIdValid" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="TargetIdValid" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="RequesterIdValid" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ResponderIdValid" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="InstructionPointerValid" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="CheckInfoValid" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ApicId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="CheckInfo" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TargetId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="RequesterId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ResponderId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="InstructionPointer" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>37</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Warning</Level>
+                <Message><![CDATA[
+A corrected Hardware Error Occurred
+
+Error Source: Machine Check
+Error Type: Micro Architecture Structure Error
+CPU APIC ID: %7
+
+Additional information is contained in this entry's details.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApicIdValid" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="TargetIdValid" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="RequesterIdValid" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ResponderIdValid" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="InstructionPointerValid" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="CheckInfoValid" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ApicId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="CheckInfo" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TargetId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="RequesterId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ResponderId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="InstructionPointer" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RawData" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

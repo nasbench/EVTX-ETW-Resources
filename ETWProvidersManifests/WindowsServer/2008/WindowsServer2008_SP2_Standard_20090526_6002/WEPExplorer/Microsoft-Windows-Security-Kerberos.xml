@@ -1,0 +1,450 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Security-Kerberos</Name>
+        <Metadata>
+            <Guid>{98E6CFCB-EE0A-41E0-A57B-622D4E1B30B1}</Guid>
+            <ResourceFilePath>%SystemRoot%\System32\kerberos.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\System32\kerberos.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.0.6000.16386&amp;FileName=kerberos.dll&amp;FileVer=6.0.6000.16386</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Security-Kerberos</PublisherMessage>
+            <Channels>
+            </Channels>
+            <Levels>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Kerberos</Message>
+                    <Name>CATEGORY_KERBEROS</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>Max</Message>
+                    <Name>CATEGORY_MAX_CATEGORY</Name>
+                    <Value>2</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>win:EventlogClassic</Name>
+                    <Value>36028797018963968</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>2147483651</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A Kerberos Error Message was received:
+ on logon session %1
+ Client Time: %2
+ Server Time: %3
+ Error Code: %4 %5
+ Extended Error: %6
+ Client Realm: %7
+ Client Name: %8
+ Server Realm: %9
+ Server Name: %10
+ Target Name: %11
+ Error Text: %12
+ File: %13
+ Line: %14
+ Error Data is in record data.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LogonSession" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServerTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ExtendedError" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientRealm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServerRealm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServerName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TargetName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorText" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="File" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Line" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073741828</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Kerberos client received a KRB_AP_ERR_MODIFIED error from the server %1. The target name used was %3. This indicates that the target server failed to decrypt the ticket provided by the client. This can occur when the target server principal name (SPN) is registered on an account other than the account the target service is using. Please ensure that the target SPN is registered on, and only registered on, the account used by the server. This error can also happen when the target service is using a different password for the target service account than what the Kerberos Key Distribution Center (KDC) has for the target service account. Please ensure that the service on the server and the KDC are both updated to use the current password. If the server name is not fully qualified, and the target domain (%2) is different from the client domain (%4), check if there are identically named server accounts in these two domains, or use the fully-qualified name to identify the server.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Server" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TargetRealm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Targetname" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientRealm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073741829</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The kerberos client received a KRB_AP_ERR_TKT_NYV error from the server %1. This indicates that the ticket used against that server is not yet valid (in relationship to that server time).  Contact your system administrator to make sure the client and server times are in sync, and that the KDC in realm %2 is in sync with the KDC in the client realm.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Server" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="KDCRealm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>65541</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An error occurred while retrieving a digital certificate from the inserted smart card. %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483654</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The kerberos SSPI package generated an output token of size %1 bytes, which was too large to fit in the token buffer of size %2 bytes, provided by process id %3.
+ 
+ The output SSPI token being too large is probably the result of the user %4 being a member of a large number of groups.
+ 
+ It is recommended to minimize the number of groups a user belongs to. If the problem can not be corrected by reduction of the group memberships of this user, please contact your system administrator to increase the maximum token size, which in term is configured machine-wide via the following registry value: HKLM\SYSTEM\CurrentControlSet\Control\Lsa\Kerberos\Parameters\MaxTokenSize.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NeededSize" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ActualSize" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientProcessID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>65542</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An error occurred in while attempting to verify the inserted smart card: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225479</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The digitally signed Privilege Attribute Certificate (PAC) that contains the authorization information for client %1 in realm %2 could not be validated.
+ 
+ This error is usually caused by domain trust failures; please contact your system administrator.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Realm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>65543</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An error occurred while signing a message using the inserted smart card: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225480</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Domain Controller rejected the client certificate of user %2, used for smartcard logon. The following error was returned from the certificate validation process: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>65544</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An error occurred while verifying a signed message using the inserted smart card: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225481</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The client has failed to validate the Domain Controller certificate for %2. The following error was returned from the certificate validation process: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>65545</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An error occurred while verifying the digital certificate retrieved from the inserted smart card: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483658</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The kerberos subsystem is having problems fetching tickets from your domain controller using the UDP network protocol. This is typically due to network problems. Please contact your system administrator.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>65546</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An error occurred while encrypting a message using the inserted smart card: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225483</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Distinguished Name in the subject field of your smartcard logon certificate does not contain enough information to locate the appropriate domain on an unjoined machine. Please contact your system administrator.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>65547</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An error occurred while decrypting a message using the inserted smart card: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483660</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+While using your smartcard over a VPN connection, the Kerberos subsystem encountered an error. Typically, this indicates the card has been pulled from the reader during the VPN session. One possible solution is to close the VPN connection, reinsert the card, and restablish the connection.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>65548</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An error occurred while building a certificate context: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An error occurred while initializing the smart card logon library: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483661</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+While using your smartcard for the Credential Manager the Kerberos subsystem encountered an error that appears to be from a missing or incorrect smartcard PIN. To remedy, launch the Stored User Names and Passwords control panel applet, and reenter the pin for the credential for %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Username" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483662</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+There were password errors using the Credential Manager. To remedy, launch the Stored User Names and Passwords control panel applet, and reenter the password for the credential %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Username" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>65550</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An error occurred while signing a message: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483663</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The kerberos SSPI package generated an output token of size %1 bytes, which was too large to fit in the token buffer of size %2 bytes, provided by process id %3.
+ 
+ The application needs to be fixed to supply a token buffer of size at least %4 bytes.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NeededSize" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ActualSize" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientProcessID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequiredSize" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>65551</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An error occurred while verifying a signed message: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225488</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The kerberos SSPI package failed to find the smartcard certificate in the certificate store. To remedy, logon as user %1 and insert the smartcard into your smartcard reader, then use the Certificates snap-in to verify that the smartcard certificate is in the user's personal certificate store.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Username" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>65552</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An error occurred while encrypting a message: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>65553</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An error occurred while decrypting a message: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>65554</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An error occurred while getting some provider parameter: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>65555</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An error occurred while generating a random number: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

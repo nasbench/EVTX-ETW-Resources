@@ -1,0 +1,2290 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-PrintSpooler</Name>
+        <Metadata>
+            <Guid>{E4C60DFA-ECC5-4889-B406-E9DDD38463C8}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\ntprint.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\ntprint.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.0.6001.18000&amp;FileName=ntprint.dll&amp;FileVer=6.0.6001.18000</HelpLink>
+            <PublisherMessage>Microsoft-Windows-PrintSpooler</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-PrintSpooler/Core-Analytic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-PrintSpooler/Core-Debug</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-PrintSpooler/Aux-Analytic</Path>
+                    <Index>2</Index>
+                    <Id>18</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-PrintSpooler/ISV-Analytic</Path>
+                    <Index>3</Index>
+                    <Id>19</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message></Message>
+                    <Name>win:Critical</Name>
+                    <Value>1</Value>
+                </Level>
+                <Level>
+                    <Message></Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message></Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message></Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Initializing Print Providor</Message>
+                    <Name>SPOOLER_TASK_INITIALIZEPRINTPROVIDOR</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>Opening a printer handle</Message>
+                    <Name>SPOOLER_TASK_OPENPRINTER</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message>Closing a printer handle</Message>
+                    <Name>SPOOLER_TASK_CLOSEPRINTER</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message>Adding printer</Message>
+                    <Name>SPOOLER_TASK_ADDPRINTER</Name>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message>Deleting printer</Message>
+                    <Name>SPOOLER_TASK_DELETEPRINTER</Name>
+                    <Value>5</Value>
+                </Task>
+                <Task>
+                    <Message>Adding printer connection</Message>
+                    <Name>SPOOLER_TASK_ADDCONNECTION</Name>
+                    <Value>6</Value>
+                </Task>
+                <Task>
+                    <Message>Deleting printer connection</Message>
+                    <Name>SPOOLER_TASK_DELETECONNECTION</Name>
+                    <Value>7</Value>
+                </Task>
+                <Task>
+                    <Message>Adding printer driver</Message>
+                    <Name>SPOOLER_TASK_ADDDRIVER</Name>
+                    <Value>8</Value>
+                </Task>
+                <Task>
+                    <Message>Delete printer driver</Message>
+                    <Name>SPOOLER_TASK_DELETEDRIVER</Name>
+                    <Value>9</Value>
+                </Task>
+                <Task>
+                    <Message>Adding a print job</Message>
+                    <Name>SPOOLER_TASK_ADDJOB</Name>
+                    <Value>10</Value>
+                </Task>
+                <Task>
+                    <Message>Starting a document to print job</Message>
+                    <Name>SPOOLER_TASK_STARTDOCPRINTER</Name>
+                    <Value>11</Value>
+                </Task>
+                <Task>
+                    <Message>Ending a document</Message>
+                    <Name>SPOOLER_TASK_ENDDOCPRINTER</Name>
+                    <Value>12</Value>
+                </Task>
+                <Task>
+                    <Message>Calling write on a handle</Message>
+                    <Name>SPOOLER_TASK_WRITEPRINTER</Name>
+                    <Value>13</Value>
+                </Task>
+                <Task>
+                    <Message>Starting a new page on document</Message>
+                    <Name>SPOOLER_TASK_STARTPAGE</Name>
+                    <Value>14</Value>
+                </Task>
+                <Task>
+                    <Message>Ending a page on document</Message>
+                    <Name>SPOOLER_TASK_ENDPAGE</Name>
+                    <Value>15</Value>
+                </Task>
+                <Task>
+                    <Message>Seeking location in document</Message>
+                    <Name>SPOOLER_TASK_SEEKPRINTER</Name>
+                    <Value>16</Value>
+                </Task>
+                <Task>
+                    <Message>Setting Printer configuration</Message>
+                    <Name>SPOOLER_TASK_SETPRINTER</Name>
+                    <Value>17</Value>
+                </Task>
+                <Task>
+                    <Message>Parsing Printer Inf</Message>
+                    <Name>SPOOLER_TASK_PARSEINF</Name>
+                    <Value>18</Value>
+                </Task>
+                <Task>
+                    <Message>Installing Printer Driver</Message>
+                    <Name>SPOOLER_TASK_INSTALL_PRINTER_DRIVER</Name>
+                    <Value>19</Value>
+                </Task>
+                <Task>
+                    <Message>Copying Printer Driver Package</Message>
+                    <Name>SPOOLER_TASK_COPY_PRINTER_DRIVER_PACKAGE</Name>
+                    <Value>20</Value>
+                </Task>
+                <Task>
+                    <Message>Enumerating Printers</Message>
+                    <Name>SPOOLER_TASK_ENUMPRINTERS</Name>
+                    <Value>21</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Operation started</Message>
+                    <Name>SPOOLER_OPCODE_START</Name>
+                    <Value>10</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Operation succeeded</Message>
+                    <Name>SPOOLER_OPCODE_SUCCEEDED</Name>
+                    <Value>11</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Operation failed</Message>
+                    <Name>SPOOLER_OPCODE_FAILED</Name>
+                    <Value>12</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Local spooler events</Message>
+                    <Name>SPOOLER_KEYWORD_LOCALSPL</Name>
+                    <Value>16</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Remote spooler events</Message>
+                    <Name>SPOOLER_KEYWORD_WIN32SPL</Name>
+                    <Value>32</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>SPOOLER_KEYWORD_PRINTER</Name>
+                    <Value>512</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>SPOOLER_KEYWORD_JOB</Name>
+                    <Value>1024</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Event related to connection</Message>
+                    <Name>SPOOLER_KEYWORD_CONNECTION</Name>
+                    <Value>2048</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Event related to Driver</Message>
+                    <Name>SPOOLER_KEYWORD_DRIVER</Name>
+                    <Value>16384</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Printer Setup events</Message>
+                    <Name>SPOOLER_KEYWORD_SETUP</Name>
+                    <Value>32768</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>win:EventlogClassic</Name>
+                    <Value>36028797018963968</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>2147483650</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Printer %1 was created. No user action is required.
+To stop logging information events for the print spooler, in Control Panel, open Printers, right-click a blank area of the window, click Run as Administrator, click Server Properties, click the Advanced tab, and then clear the Log spooler information events check box.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483651</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Printer %1 was deleted, and users will no longer be able to print to this printer. No user action is required.
+To stop logging information events for the print spooler, in Control Panel, open Printers, right-click a blank area of the window, click Run as Administrator, click Server Properties, click the Advanced tab, and then clear the Log spooler information events check box.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483652</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Printer %1 will be deleted. No user action is required.
+To stop logging warning events for the print spooler, in Control Panel, open Printers, right-click a blank area of the window, click Run as Administrator, click Server Properties, click the Advanced tab, and then clear the Log spooler warning events check box.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483654</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Printer %1 was paused. No user action is required.
+To stop logging warning events for the print spooler, in Control Panel, open Printers, right-click a blank area of the window, click Run as Administrator, click Server Properties, click the Advanced tab, and then clear the Log spooler warning events check box.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483655</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Printer %1 was resumed. No user action is required.
+To stop logging warning events for the print spooler, in Control Panel, open Printers, right-click a blank area of the window, click Run as Administrator, click Server Properties, click the Advanced tab, and then clear the Log spooler warning events check box.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483656</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The jobs in the print queue for printer %1 were deleted. No user action is required.
+To stop logging warning events for the print spooler, in Control Panel, open Printers, right-click a blank area of the window, click Run as Administrator, click Server Properties, click the Advanced tab, and then clear the Log spooler warning events check box.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483657</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Settings for printer %1 were changed. No user action is required.
+To stop logging warning events for the print spooler, in Control Panel, open Printers, right-click a blank area of the window, click Run as Administrator, click Server Properties, click the Advanced tab, and then clear the Log spooler warning events check box.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073741834</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Document %1, %2 owned by %3 was printed on %4 through port %5.  Size in bytes: %6. Pages printed: %7. No user action is required.
+To stop logging information events for the print spooler, in Control Panel, open Printers, right-click a blank area of the window, click Run as Administrator, click Server Properties, click the Advanced tab, and then clear the Log spooler information events check box.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param6" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param7" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073741835</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Document %1, %2 owned by %3 was paused on %4. This document will not print until the document owner resumes the print job. No user action is required.
+To stop logging information events for the print spooler, in Control Panel, open Printers, right-click a blank area of the window, click Run as Administrator, click Server Properties, click the Advanced tab, and then clear the Log spooler information events check box.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073741836</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Document %1, %2 owned by %3 was resumed on %4. No user action is required.
+To stop logging information events for the print spooler, in Control Panel, open Printers, right-click a blank area of the window, click Run as Administrator, click Server Properties, click the Advanced tab, and then clear the Log spooler information events check box.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073741837</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Document %1, %2 owned by %3 was deleted on %4. No user action is required.
+To stop logging information events for the print spooler, in Control Panel, open Printers, right-click a blank area of the window, click Run as Administrator, click Server Properties, click the Advanced tab, and then clear the Log spooler information events check box.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073741838</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An administrator moved document %1, %2 owned by %3 to position %4 on %5. This changes when the document will print. No user action is required.
+To stop logging information events for the print spooler, in Control Panel, open Printers, right-click a blank area of the window, click Run as Administrator, click Server Properties, click the Advanced tab, and then clear the Log spooler information events check box.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073741839</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Form %1 was added. No user action is required.
+To stop logging information events for the print spooler, in Control Panel, open Printers, right-click a blank area of the window, click Run as Administrator, click Server Properties, click the Advanced tab, and then clear the Log spooler information events check box.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073741840</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Form %1 was removed. No user action is required.
+To stop logging information events for the print spooler, in Control Panel, open Printers, right-click a blank area of the window, click Run as Administrator, click Server Properties, click the Advanced tab, and then clear the Log spooler information events check box.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483666</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Document %1, %2 owned by %3 timed out while printing on %4. The spooler waited for %5 milliseconds and no data was received.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225491</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The print spooler failed to share printer %2 with shared resource name %3. Error %1. The printer cannot be used by others on the network.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483668</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Printer driver %1 for %2 %3 was added or updated. Files:- %4. No user action is required.
+To stop logging warning events for the print spooler, in Control Panel, open Printers, right-click a blank area of the window, click Run as Administrator, click Server Properties, click the Advanced tab, and then clear the Log spooler warning events check box.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483669</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Printer driver %1 was deleted. No user action is required.
+To stop logging warning events for the print spooler, in Control Panel, open Printers, right-click a blank area of the window, click Run as Administrator, click Server Properties, click the Advanced tab, and then clear the Log spooler warning events check box.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225494</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to upgrade printer settings for printer %1 driver %2. Error: %3. The device settings for the printer are set to those configured by the manufacturer.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225495</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Printer %1 failed to initialize because a suitable %2 driver could not be found. The new printer settings that you specified have not taken effect. Install or reinstall the printer driver. You might need to contact the vendor for an updated driver.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483672</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Printer %1 failed to initialize because none of its ports (%2) could be found. This can occur if the ports were deleted or the port information is invalid.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483673</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+File(s) %1 associated with printer %2 were added or updated. No user action is required.
+To stop logging warning events for the print spooler, in Control Panel, open Printers, right-click a blank area of the window, click Run as Administrator, click Server Properties, click the Advanced tab, and then clear the Log spooler warning events check box.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483674</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+While attempting to publish the printer to the Active Directory directory service, Windows failed to publish property %1 at %2.  Error: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225499</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+While attempting to publish the printer to the Active Directory directory service, the print spooler could not create or update the print queue because Windows failed to bind to container: %1.  Error: %2. The printer is not published in Active Directory and cannot be located by searching Active Directory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225500</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+While attempting to publish the printer to the Active Directory directory service, Windows failed to write an access control list (ACL) on directory service object %1.  Error: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225501</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+While attempting to remove the printer from the Active Directory directory service, Windows failed to delete print queue %1 at %2.  Error: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225502</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+While attempting to publish the printer to the Active Directory directory service, the print spooler could not create or update the print queue under container %1.  Error: %2. The printer is not published in Active Directory and cannot be located by searching Active Directory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225503</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+While attempting to publish the printer to the Active Directory directory service, the print spooler could not create print queue %1 under container %2 because Mandatory properties could not be set.  Error: %3. The printer is not published in Active Directory and cannot be located by searching Active Directory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225504</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+While attempting to publish the printer to the Active Directory directory service, the print spooler could not find the appropriate print queue container because the primary domain query failed. Error: %1. This can occur if Domain Name System (DNS) cannot resolve the domain controller IP address, or if the domain controller or directory service is not functioning correctly. The printer is not published in Active Directory and cannot be located by searching Active Directory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225505</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+While attempting to publish the printer to the Active Directory directory service, the print spooler could not find the appropriate print queue container because the Domain Name System (DNS) domain name could not be retrieved. Error: %1. This can occur if DNS cannot resolve the domain controller IP address, or if the domain controller or directory service is not functioning correctly. The printer is not published in Active Directory and cannot be located by searching Active Directory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225506</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+While attempting to publish the printer to the Active Directory directory service, the print spooler could not find the appropriate print queue container because the binding to domain %1 failed.  Error: %2. The printer is not published in Active Directory and cannot be located by searching Active Directory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225507</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+While attempting to publish the printer to the Active Directory directory service, the print spooler could not find the appropriate print queue container on domain %1.  Error: %2. The printer is not published in Active Directory and cannot be located by searching Active Directory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073741860</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The printer was successfully published to the Active Directory directory service. The print queue %1 was successfully created in container %2. No user action is required.
+To stop logging information events for the print spooler, in Control Panel, open Printers, right-click a blank area of the window, click Run as Administrator, click Server Properties, click the Advanced tab, and then clear the Log spooler information events check box.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225509</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+While attempting to publish the printer to the Active Directory directory service, the print spooler failed to create or update print queue %1 in container %2.  Error: %3. The printer is not published in Active Directory and cannot be located by searching Active Directory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073741862</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The printer was successfully removed from the Active Directory directory service. Print queue %1 was successfully deleted from container %2. The printer can no longer be located by searching Active Directory. No user action is required.
+To stop logging information events for the print spooler, in Control Panel, open Printers, right-click a blank area of the window, click Run as Administrator, click Server Properties, click the Advanced tab, and then clear the Log spooler information events check box.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225511</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+While attempting to remove the printer from the Active Directory directory service, the print spooler failed to delete print queue %1 from container %2.  Error: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073741864</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Print queue %1 was successfully updated in the Active Directory directory service container %2. No user action is required.
+To stop logging information events for the print spooler, in Control Panel, open Printers, right-click a blank area of the window, click Run as Administrator, click Server Properties, click the Advanced tab, and then clear the Log spooler information events check box.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483689</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The print queue could not be found on domain %1.  It may have been deleted from the Active Directory directory service. Windows will attempt to republish the print queue.  Error: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073741866</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Printer %1 was successfully removed from the Active Directory directory service. The printer can no longer be located by searching Active Directory. No user action is required.
+To stop logging information events for the print spooler, in Control Panel, open Printers, right-click a blank area of the window, click Run as Administrator, click Server Properties, click the Advanced tab, and then clear the Log spooler information events check box.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225515</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+While attempting to publish the printer to the Active Directory directory service, the print spooler could not find the print queue container because the directory service is unreachable. The printer is not published in Active Directory and cannot be located by searching Active Directory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225516</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The print spooler could not find the print queue container because the Domain Name System (DNS) server name could not be retrieved.  Error: %1. This might be because DNS cannot resolve the server IP address, or because the domain controller or directory service is not functioning correctly. The printer is not published in the Active Directory directory service and cannot be located by searching Active Directory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225517</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The document failed to print because of a Graphical Device Interface (GDI) error or a driver error in rendering the print job. Try printing the document again.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073741870</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The print spooler removed print queue %1 from the Active Directory directory service because it does not have a Universal Naming Convention (UNC) name or server name listed. No user action is required.
+To stop logging information events for the print spooler, in Control Panel, open Printers, right-click a blank area of the window, click Run as Administrator, click Server Properties, click the Advanced tab, and then clear the Log spooler information events check box.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073741871</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The print spooler was unable to connect to print queue %1 based on the information published in the Active Directory. Error %2. No user action is required.
+  If this print queue continues to be unreachable it may be removed from Active Directory. To stop logging information events for the print spooler, clear the Log spooler information events check box in Server properties.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073741872</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The print spooler removed print queue %1 from the Active Directory directory service. No user action is required.
+To stop logging information events for the print spooler, in Control Panel, open Printers, right-click a blank area of the window, click Run as Administrator, click Server Properties, click the Advanced tab, and then clear the Log spooler information events check box.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073741873</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The print spooler removed print queue %1 from the Active Directory directory service because it is a duplicate of another print queue. No user action is required.
+To stop logging information events for the print spooler, in Control Panel, open Printers, right-click a blank area of the window, click Run as Administrator, click Server Properties, click the Advanced tab, and then clear the Log spooler information events check box.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073741874</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The print spooler removed print queue %1 from the Active Directory directory service. No user action is required.
+To stop logging information events for the print spooler, in Control Panel, open Printers, right-click a blank area of the window, click Run as Administrator, click Server Properties, click the Advanced tab, and then clear the Log spooler information events check box.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225523</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Print queue %1 could not be deleted (pruned) from the Active Directory directory service.  Error: %2. The spooler will periodically try to remove the entry until it is successful. Continued failures may indicate an Active Directory problem, a basic network problem, or a communication problem between the domain controller and the print server.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225524</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+This version of %1 is incompatible with this version of Windows. Please obtain and install a new version of the driver from the manufacturer (if available), or choose an alternate driver that works with this print device.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225525</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The print spooler failed to create a symbolic link between HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\Print\\Printers and HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Print\\Printers. Error %1. This only affects older applications, but is probably a sign that the system itself is in a poor condition or that the print spooler does not have the proper registry permissions.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225526</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Document %1 failed to print and was deleted because of corruption in the spooled file. The associated driver is: %2. Try printing the document again.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225527</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The attempt for %1 to use a Windows NT 4.0 (kernel mode) driver failed because this version of Windows does not support Windows NT 4.0 printer drivers. Please obtain and install a new version of the driver from the manufacturer (if available), or choose an alternate driver that works with this print device.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073741880</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The priority of document %1, %2 owned by %3 was changed to %4 on %5. Windows prints the document with the highest priority number before other print jobs with lower priority numbers. Documents that are currently printing are unaffected by changes in priority. No user action is required.
+To stop logging information events for the print spooler, in Control Panel, open Printers, right-click a blank area of the window, click Run as Administrator, click Server Properties, click the Advanced tab, and then clear the Log spooler information events check box.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225529</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The document failed to print because the user did not have the necessary privileges.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225530</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 initialization failed at %2. Error: %3. This can occur because of system instability or a lack of system resources.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225531</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The print spooler was not able to add print queue %1 under container %2 in the Active Directory directory service because the cluster access control entry (ACE) could not be added to the print queue security descriptor.  Error: %3. The printer is not published in Active Directory and cannot be located by searching Active Directory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225532</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to install or update driver %1 on cluster spooler resource %2. Win32 error: %3. The printer driver is different from the driver in use on other computers (nodes) in the cluster. This can occur because of a transient failure in replication between nodes, or if the nodes are running Windows 2000 (which does not automatically replicate drivers).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225533</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The document %1 owned by %2 failed to print on printer %3. Win32 error code returned by the print processor: %4. %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225534</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+This version of Windows does not support Windows NT 4.0 (kernel mode) printer drivers and cannot accept the %2 driver from the remote server %1. Please obtain and install a new version of the driver from the manufacturer (if available), or choose an alternate driver that works with this print device.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225536</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The attempt to install printer %1 into an offline operating system image failed with Win32 error code %2. This can occur if the printer driver requires user input or displays a user interface (UI) during installation.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483713</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Updating the color profile failed for printer %1 with Win32 error code %2. The colors printed may not be correctly matched to the colors in the document being printed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225538</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Printer %1 failed to initialize its ports. Win32 error: %2. This error usually occurs because of a problem with the port monitor. Try recreating the port using a standard TCP/IP printer port, if possible. This problem does not affect other printers.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225539</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The print spooler failed to cache print connection %1. This can occur because there are insufficient system resources. No user action is required.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225540</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The print spooler %1 failed to start. To determine the cause of this error, examine the preceding events in the Event Log.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225541</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Windows could not load print processor %1 because EnumDatatypes did not return any data. Module: %2. Please obtain and install a new version of the driver from the manufacturer (if available), or choose an alternate driver that works with this print device.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225542</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Windows could not load print processor %1 because EnumDatatypes failed. Error code %2. Module: %3. Please obtain and install a new version of the driver from the manufacturer (if available), or choose an alternate driver that works with this print device.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225543</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The print server security descriptor for %1 is invalid. The default print server security descriptor will be used.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225544</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Windows could not initialize printer %1 because the print processor %2 could not be found. Please obtain and install a new version of the driver from the manufacturer (if available), or choose an alternate driver that works with this print device.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225545</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The print spooler failed to verify printer driver package %1 for environment %2. Win32 system error code %3. This can occur after an operating system upgrade or because of data loss on the hard drive. The print spooler will try to regenerate the driver information from the driver store, which is where drivers are saved before they are installed. No user action is required.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225546</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The print spooler failed to verify printer driver package for environment %1. Win32 system error code %2. This can occur because of insufficient memory or other system failures. No user action is required.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225547</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The print spooler failed to regenerate the printer driver information for driver %1 for environment %2. Win32 system error code %3. This can occur after an operating system upgrade or because of data loss on the hard drive.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225548</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The print spooler failed to unshare printer %2 which is shared as %3. Error %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>98</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PrintSpooler/Core-Analytic</Channel>
+                <Level>win:Critical</Level>
+                <Opcode>Operation failed</Opcode>
+                <Message><![CDATA[
+A Fatal Exception occurred in a spooler module]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FaultingModule" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>99</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PrintSpooler/Core-Debug</Channel>
+                <Level>win:Verbose</Level>
+                <Message><![CDATA[
+Spooler Old Debug Message]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DebugLevel" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PrintSpooler/Core-Analytic</Channel>
+                <Level>win:Informational</Level>
+                <Task>Adding printer</Task>
+                <Opcode>Operation succeeded</Opcode>
+                <Keyword>Local spooler events SPOOLER_KEYWORD_PRINTER</Keyword>
+                <Message><![CDATA[
+Add Printer Succeeded]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Label" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="PrinterName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PrintSpooler/Core-Analytic</Channel>
+                <Level>win:Error</Level>
+                <Task>Adding printer</Task>
+                <Opcode>Operation failed</Opcode>
+                <Keyword>Local spooler events SPOOLER_KEYWORD_PRINTER</Keyword>
+                <Message><![CDATA[
+Add Printer Failed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Label" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="PrinterName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PrintSpooler/Core-Debug</Channel>
+                <Level>win:Informational</Level>
+                <Task>Adding printer</Task>
+                <Opcode>Operation failed</Opcode>
+                <Keyword>Local spooler events SPOOLER_KEYWORD_PRINTER</Keyword>
+                <Message><![CDATA[
+Add Printer Checkpoint Succeeded]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Label" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="PrinterName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>103</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PrintSpooler/Core-Debug</Channel>
+                <Level>win:Error</Level>
+                <Task>Adding printer</Task>
+                <Opcode>Operation succeeded</Opcode>
+                <Keyword>Local spooler events SPOOLER_KEYWORD_PRINTER</Keyword>
+                <Message><![CDATA[
+Add Printer Checkpoint Failed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Label" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="PrinterName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>104</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PrintSpooler/Core-Analytic</Channel>
+                <Level>win:Informational</Level>
+                <Task>Deleting printer</Task>
+                <Opcode>Operation succeeded</Opcode>
+                <Keyword>Local spooler events SPOOLER_KEYWORD_PRINTER</Keyword>
+                <Message><![CDATA[
+Delete printer succeeded]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Label" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="PrinterName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>105</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PrintSpooler/Core-Analytic</Channel>
+                <Level>win:Error</Level>
+                <Task>Deleting printer</Task>
+                <Opcode>Operation failed</Opcode>
+                <Keyword>Local spooler events SPOOLER_KEYWORD_PRINTER</Keyword>
+                <Message><![CDATA[
+Local Delete Printer Failed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Label" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="PrinterName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>106</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PrintSpooler/Core-Analytic</Channel>
+                <Level>win:Informational</Level>
+                <Task>Starting a document to print job</Task>
+                <Opcode>Operation succeeded</Opcode>
+                <Keyword>Local spooler events SPOOLER_KEYWORD_JOB</Keyword>
+                <Message><![CDATA[
+Start Doc Printer succeeded]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Label" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="JobID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PrinterName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>107</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PrintSpooler/Core-Analytic</Channel>
+                <Level>win:Error</Level>
+                <Task>Starting a document to print job</Task>
+                <Opcode>Operation failed</Opcode>
+                <Keyword>Local spooler events SPOOLER_KEYWORD_JOB</Keyword>
+                <Message><![CDATA[
+Start Doc Printer failed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Label" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="JobID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PrinterName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>108</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PrintSpooler/Core-Debug</Channel>
+                <Level>win:Error</Level>
+                <Task>Starting a document to print job</Task>
+                <Opcode>Operation failed</Opcode>
+                <Keyword>Local spooler events SPOOLER_KEYWORD_JOB</Keyword>
+                <Message><![CDATA[
+Start Doc Checkpoint succeeded]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Label" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="JobID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PrinterName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>109</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PrintSpooler/Core-Debug</Channel>
+                <Level>win:Error</Level>
+                <Task>Starting a document to print job</Task>
+                <Opcode>Operation failed</Opcode>
+                <Keyword>Local spooler events SPOOLER_KEYWORD_JOB</Keyword>
+                <Message><![CDATA[
+Start Doc Checkpoint failed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Label" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="JobID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PrinterName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>110</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PrintSpooler/Core-Analytic</Channel>
+                <Level>win:Informational</Level>
+                <Task>Ending a document</Task>
+                <Opcode>Operation succeeded</Opcode>
+                <Keyword>Local spooler events SPOOLER_KEYWORD_JOB</Keyword>
+                <Message><![CDATA[
+End Doc Printer Succeeded]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Label" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="JobID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PrinterName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>111</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PrintSpooler/Core-Analytic</Channel>
+                <Level>win:Error</Level>
+                <Task>Ending a document</Task>
+                <Opcode>Operation failed</Opcode>
+                <Keyword>Local spooler events SPOOLER_KEYWORD_JOB</Keyword>
+                <Message><![CDATA[
+End Doc Printer Failed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Label" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="JobID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PrinterName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>112</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PrintSpooler/Core-Debug</Channel>
+                <Level>win:Informational</Level>
+                <Task>Ending a document</Task>
+                <Opcode>Operation failed</Opcode>
+                <Keyword>Local spooler events SPOOLER_KEYWORD_JOB</Keyword>
+                <Message><![CDATA[
+End Doc Printer Checkpoint Succeeded]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Label" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="JobID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PrinterName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>113</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PrintSpooler/Core-Debug</Channel>
+                <Level>win:Error</Level>
+                <Task>Ending a document</Task>
+                <Opcode>Operation failed</Opcode>
+                <Keyword>Local spooler events SPOOLER_KEYWORD_JOB</Keyword>
+                <Message><![CDATA[
+End Doc Printer Checkpoint Failed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Label" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="JobID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PrinterName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>114</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PrintSpooler/Core-Analytic</Channel>
+                <Level>win:Informational</Level>
+                <Task>Adding printer driver</Task>
+                <Opcode>Operation succeeded</Opcode>
+                <Keyword>Local spooler events Event related to Driver</Keyword>
+                <Message><![CDATA[
+Add Printer Driver Succeeded]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Label" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ObjectName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>115</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PrintSpooler/Core-Analytic</Channel>
+                <Level>win:Error</Level>
+                <Task>Adding printer driver</Task>
+                <Opcode>Operation failed</Opcode>
+                <Keyword>Local spooler events Event related to Driver</Keyword>
+                <Message><![CDATA[
+Add Printer Driver Failed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Label" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ObjectName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>116</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PrintSpooler/Core-Debug</Channel>
+                <Level>win:Informational</Level>
+                <Task>Adding printer driver</Task>
+                <Opcode>Operation succeeded</Opcode>
+                <Keyword>Local spooler events Event related to Driver</Keyword>
+                <Message><![CDATA[
+Add Printer Driver Checkpoint Succeeded]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Label" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ObjectName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>117</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PrintSpooler/Core-Debug</Channel>
+                <Level>win:Error</Level>
+                <Task>Adding printer driver</Task>
+                <Opcode>Operation failed</Opcode>
+                <Keyword>Local spooler events Event related to Driver</Keyword>
+                <Message><![CDATA[
+Add Printer Driver Checkpoint Failed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Label" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ObjectName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>118</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PrintSpooler/Core-Analytic</Channel>
+                <Level>win:Informational</Level>
+                <Task>Opening a printer handle</Task>
+                <Opcode>Operation succeeded</Opcode>
+                <Keyword>Local spooler events</Keyword>
+                <Message><![CDATA[
+Open Printer Succeeded]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Label" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ObjectName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>119</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PrintSpooler/Core-Analytic</Channel>
+                <Level>win:Error</Level>
+                <Task>Opening a printer handle</Task>
+                <Opcode>Operation failed</Opcode>
+                <Keyword>Local spooler events</Keyword>
+                <Message><![CDATA[
+Open Printer Failed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Label" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ObjectName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>120</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PrintSpooler/Core-Debug</Channel>
+                <Level>win:Informational</Level>
+                <Task>Opening a printer handle</Task>
+                <Opcode>Operation succeeded</Opcode>
+                <Keyword>Local spooler events</Keyword>
+                <Message><![CDATA[
+Open Printer Checkpoint Succeeded]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Label" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ObjectName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>121</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PrintSpooler/Core-Debug</Channel>
+                <Level>win:Error</Level>
+                <Task>Opening a printer handle</Task>
+                <Opcode>Operation failed</Opcode>
+                <Keyword>Local spooler events</Keyword>
+                <Message><![CDATA[
+Open Printer Checkpoint Failed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Label" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ObjectName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>122</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PrintSpooler/Core-Analytic</Channel>
+                <Level>win:Informational</Level>
+                <Task>Starting a new page on document</Task>
+                <Opcode>Operation succeeded</Opcode>
+                <Keyword>Local spooler events SPOOLER_KEYWORD_JOB</Keyword>
+                <Message><![CDATA[
+Start Page Printer Succeeded]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Label" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="JobID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PrinterName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>123</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PrintSpooler/Core-Analytic</Channel>
+                <Level>win:Error</Level>
+                <Task>Starting a new page on document</Task>
+                <Opcode>Operation failed</Opcode>
+                <Keyword>Local spooler events SPOOLER_KEYWORD_JOB</Keyword>
+                <Message><![CDATA[
+Local Start Page Failed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Label" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ObjectName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>124</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PrintSpooler/Core-Analytic</Channel>
+                <Level>win:Informational</Level>
+                <Task>Ending a page on document</Task>
+                <Opcode>Operation succeeded</Opcode>
+                <Keyword>Local spooler events SPOOLER_KEYWORD_JOB</Keyword>
+                <Message><![CDATA[
+Local End Page Succeeded]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Label" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="JobID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PrinterName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>125</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PrintSpooler/Core-Analytic</Channel>
+                <Level>win:Error</Level>
+                <Task>Ending a page on document</Task>
+                <Opcode>Operation failed</Opcode>
+                <Keyword>Local spooler events SPOOLER_KEYWORD_JOB</Keyword>
+                <Message><![CDATA[
+Local End Page Failed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Label" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="JobID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PrinterName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>126</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PrintSpooler/Core-Analytic</Channel>
+                <Level>win:Informational</Level>
+                <Task>Seeking location in document</Task>
+                <Opcode>Operation succeeded</Opcode>
+                <Keyword>Local spooler events SPOOLER_KEYWORD_JOB</Keyword>
+                <Message><![CDATA[
+Local Seek Printer Succeeded]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Label" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="JobID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PrinterName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>127</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PrintSpooler/Core-Analytic</Channel>
+                <Level>win:Error</Level>
+                <Task>Seeking location in document</Task>
+                <Opcode>Operation failed</Opcode>
+                <Keyword>Local spooler events SPOOLER_KEYWORD_JOB</Keyword>
+                <Message><![CDATA[
+Seek Printer Failed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Label" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="JobID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PrinterName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>128</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PrintSpooler/Core-Debug</Channel>
+                <Level>win:Informational</Level>
+                <Task>Seeking location in document</Task>
+                <Opcode>Operation succeeded</Opcode>
+                <Keyword>Local spooler events SPOOLER_KEYWORD_JOB</Keyword>
+                <Message><![CDATA[
+Local Seek Printer Checkpoint Succeeded]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Label" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="JobID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PrinterName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>129</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PrintSpooler/Core-Debug</Channel>
+                <Level>win:Error</Level>
+                <Task>Seeking location in document</Task>
+                <Opcode>Operation failed</Opcode>
+                <Keyword>Local spooler events SPOOLER_KEYWORD_JOB</Keyword>
+                <Message><![CDATA[
+Local Seek Printer Checkpoint Failed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Label" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="JobID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PrinterName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>130</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PrintSpooler/Core-Analytic</Channel>
+                <Level>win:Informational</Level>
+                <Task>Setting Printer configuration</Task>
+                <Opcode>Operation succeeded</Opcode>
+                <Keyword>Local spooler events SPOOLER_KEYWORD_PRINTER</Keyword>
+                <Message><![CDATA[
+Local Set Printer Succeeded]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Label" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="PrinterName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>131</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PrintSpooler/Core-Analytic</Channel>
+                <Level>win:Error</Level>
+                <Task>Setting Printer configuration</Task>
+                <Opcode>Operation failed</Opcode>
+                <Keyword>Local spooler events SPOOLER_KEYWORD_PRINTER</Keyword>
+                <Message><![CDATA[
+Local Set Printer Failed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Label" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="PrinterName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>132</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PrintSpooler/Core-Debug</Channel>
+                <Level>win:Informational</Level>
+                <Task>Setting Printer configuration</Task>
+                <Opcode>Operation failed</Opcode>
+                <Keyword>Local spooler events SPOOLER_KEYWORD_PRINTER</Keyword>
+                <Message><![CDATA[
+Local Set Printer Checkpoint Succeeded]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Label" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="PrinterName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>133</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PrintSpooler/Core-Debug</Channel>
+                <Level>win:Error</Level>
+                <Task>Setting Printer configuration</Task>
+                <Opcode>Operation failed</Opcode>
+                <Keyword>Local spooler events SPOOLER_KEYWORD_PRINTER</Keyword>
+                <Message><![CDATA[
+Local Set Printer Checkpoint Failed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Label" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="PrinterName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>200</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PrintSpooler/Core-Analytic</Channel>
+                <Level>win:Informational</Level>
+                <Task>Adding printer connection</Task>
+                <Opcode>Operation succeeded</Opcode>
+                <Keyword>Remote spooler events Event related to connection</Keyword>
+                <Message><![CDATA[
+Add Printer Connection Succeeded]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Label" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ObjectName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>201</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PrintSpooler/Core-Analytic</Channel>
+                <Level>win:Error</Level>
+                <Task>Adding printer connection</Task>
+                <Opcode>Operation failed</Opcode>
+                <Keyword>Remote spooler events Event related to connection</Keyword>
+                <Message><![CDATA[
+Add Printer Connection Failed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Label" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ObjectName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>202</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PrintSpooler/Core-Debug</Channel>
+                <Level>win:Informational</Level>
+                <Task>Adding printer connection</Task>
+                <Opcode>Operation succeeded</Opcode>
+                <Keyword>Remote spooler events Event related to connection</Keyword>
+                <Message><![CDATA[
+Add Printer Connection Checkpoint Succeeded]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Label" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ObjectName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>203</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PrintSpooler/Core-Debug</Channel>
+                <Level>win:Error</Level>
+                <Task>Adding printer connection</Task>
+                <Opcode>Operation failed</Opcode>
+                <Keyword>Remote spooler events Event related to connection</Keyword>
+                <Message><![CDATA[
+Add Printer Connection Checkpoint Failed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Label" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ObjectName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>204</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PrintSpooler/Core-Analytic</Channel>
+                <Level>win:Informational</Level>
+                <Task>Deleting printer connection</Task>
+                <Opcode>Operation succeeded</Opcode>
+                <Keyword>Remote spooler events Event related to connection</Keyword>
+                <Message><![CDATA[
+Delete Printer Connection Succeeded]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Label" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ObjectName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>205</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PrintSpooler/Core-Analytic</Channel>
+                <Level>win:Error</Level>
+                <Task>Deleting printer connection</Task>
+                <Opcode>Operation failed</Opcode>
+                <Keyword>Remote spooler events Event related to connection</Keyword>
+                <Message><![CDATA[
+Delete Printer Connection Failed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Label" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ObjectName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>206</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PrintSpooler/Core-Analytic</Channel>
+                <Level>win:Informational</Level>
+                <Task>Opening a printer handle</Task>
+                <Opcode>Operation succeeded</Opcode>
+                <Keyword>Remote spooler events</Keyword>
+                <Message><![CDATA[
+CSR Open Printer Succeeded]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Label" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ObjectName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>207</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PrintSpooler/Core-Analytic</Channel>
+                <Level>win:Error</Level>
+                <Task>Opening a printer handle</Task>
+                <Opcode>Operation failed</Opcode>
+                <Keyword>Remote spooler events</Keyword>
+                <Message><![CDATA[
+CSR Open Printer Failed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Label" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ObjectName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>208</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PrintSpooler/Core-Debug</Channel>
+                <Level>win:Informational</Level>
+                <Task>Opening a printer handle</Task>
+                <Opcode>Operation succeeded</Opcode>
+                <Keyword>Remote spooler events</Keyword>
+                <Message><![CDATA[
+CSR Open Printer Checkpoint Succeeded]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Label" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ObjectName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>209</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PrintSpooler/Core-Debug</Channel>
+                <Level>win:Error</Level>
+                <Task>Opening a printer handle</Task>
+                <Opcode>Operation succeeded</Opcode>
+                <Keyword>Remote spooler events</Keyword>
+                <Message><![CDATA[
+CSR Open Printer Checkpoint Failed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Label" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ObjectName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>210</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PrintSpooler/Core-Analytic</Channel>
+                <Level>win:Informational</Level>
+                <Task>Closing a printer handle</Task>
+                <Opcode>Operation succeeded</Opcode>
+                <Keyword>Remote spooler events</Keyword>
+                <Message><![CDATA[
+CSR Close Printer Succeeded]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Label" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ObjectName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>211</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PrintSpooler/Core-Analytic</Channel>
+                <Level>win:Error</Level>
+                <Task>Closing a printer handle</Task>
+                <Opcode>Operation failed</Opcode>
+                <Keyword>Remote spooler events</Keyword>
+                <Message><![CDATA[
+CSR Close Printer Failed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Label" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ObjectName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>212</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PrintSpooler/Core-Debug</Channel>
+                <Level>win:Informational</Level>
+                <Task>Parsing Printer Inf</Task>
+                <Opcode>Operation succeeded</Opcode>
+                <Keyword>SPOOLER_KEYWORD_PRINTER Printer Setup events</Keyword>
+                <Message><![CDATA[
+Parse Printer Inf Succeeded]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Label" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AdditionalInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="InfPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DriverName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="InstallSection" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessorArchitecture" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LastError" inType="win:UInt32" outType="win:Xml"/>
+  <data name="HResult" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>213</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PrintSpooler/Core-Analytic</Channel>
+                <Level>win:Error</Level>
+                <Task>Parsing Printer Inf</Task>
+                <Opcode>Operation failed</Opcode>
+                <Keyword>SPOOLER_KEYWORD_PRINTER Printer Setup events</Keyword>
+                <Message><![CDATA[
+Parse Printer Inf Failed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Label" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AdditionalInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="InfPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DriverName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="InstallSection" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessorArchitecture" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LastError" inType="win:UInt32" outType="win:Xml"/>
+  <data name="HResult" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>214</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PrintSpooler/Core-Debug</Channel>
+                <Level>win:Informational</Level>
+                <Task>Installing Printer Driver</Task>
+                <Opcode>Operation succeeded</Opcode>
+                <Keyword>SPOOLER_KEYWORD_PRINTER Printer Setup events</Keyword>
+                <Message><![CDATA[
+Install Printer Driver Succeeded]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Label" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AdditionalInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="InfPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DriverName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="InstallSection" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessorArchitecture" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PackageAware" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CoreDriverDependencies" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LastError" inType="win:UInt32" outType="win:Xml"/>
+  <data name="HResult" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>215</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PrintSpooler/Core-Analytic</Channel>
+                <Level>win:Error</Level>
+                <Task>Installing Printer Driver</Task>
+                <Opcode>Operation failed</Opcode>
+                <Keyword>SPOOLER_KEYWORD_PRINTER Printer Setup events</Keyword>
+                <Message><![CDATA[
+Install Printer Driver Failed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Label" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AdditionalInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="InfPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DriverName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="InstallSection" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessorArchitecture" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PackageAware" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CoreDriverDependencies" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LastError" inType="win:UInt32" outType="win:Xml"/>
+  <data name="HResult" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>216</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PrintSpooler/Core-Debug</Channel>
+                <Level>win:Informational</Level>
+                <Task>Installing Printer Driver</Task>
+                <Opcode>Operation succeeded</Opcode>
+                <Keyword>SPOOLER_KEYWORD_PRINTER Printer Setup events</Keyword>
+                <Message><![CDATA[
+Install Printer Driver Succeeded]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Label" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AdditionalInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessorArchitecture" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LastError" inType="win:UInt32" outType="win:Xml"/>
+  <data name="HResult" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>217</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PrintSpooler/Core-Analytic</Channel>
+                <Level>win:Error</Level>
+                <Task>Installing Printer Driver</Task>
+                <Opcode>Operation failed</Opcode>
+                <Keyword>SPOOLER_KEYWORD_PRINTER Printer Setup events</Keyword>
+                <Message><![CDATA[
+Install Printer Driver Failed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Label" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AdditionalInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessorArchitecture" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LastError" inType="win:UInt32" outType="win:Xml"/>
+  <data name="HResult" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>218</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PrintSpooler/Core-Debug</Channel>
+                <Level>win:Informational</Level>
+                <Task>Copying Printer Driver Package</Task>
+                <Opcode>Operation succeeded</Opcode>
+                <Keyword>SPOOLER_KEYWORD_PRINTER Printer Setup events</Keyword>
+                <Message><![CDATA[
+Install Printer Driver Succeeded]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Label" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AdditionalInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Server" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="InfPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DestInfPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessorArchitecture" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LastError" inType="win:UInt32" outType="win:Xml"/>
+  <data name="HResult" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>219</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PrintSpooler/Core-Analytic</Channel>
+                <Level>win:Error</Level>
+                <Task>Copying Printer Driver Package</Task>
+                <Opcode>Operation failed</Opcode>
+                <Keyword>SPOOLER_KEYWORD_PRINTER Printer Setup events</Keyword>
+                <Message><![CDATA[
+Install Printer Driver Failed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Label" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AdditionalInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Server" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="InfPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DestInfPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessorArchitecture" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LastError" inType="win:UInt32" outType="win:Xml"/>
+  <data name="HResult" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>220</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PrintSpooler/Core-Debug</Channel>
+                <Level>win:Informational</Level>
+                <Task>Enumerating Printers</Task>
+                <Opcode>Operation succeeded</Opcode>
+                <Keyword>Remote spooler events SPOOLER_KEYWORD_PRINTER</Keyword>
+                <Message><![CDATA[
+CSR Retrieve Cache Info Succeeded]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Label" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ObjectName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>221</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-PrintSpooler/Core-Analytic</Channel>
+                <Level>win:Error</Level>
+                <Task>Enumerating Printers</Task>
+                <Opcode>Operation failed</Opcode>
+                <Keyword>Remote spooler events SPOOLER_KEYWORD_PRINTER</Keyword>
+                <Message><![CDATA[
+CSR Retrieve Cache Info Failed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Label" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ObjectName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221231633</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The document %1, owned by %2, failed to print on printer %3. Try to print the document again, or restart the print spooler. 
+Data type: %4. Size of the spool file in bytes: %5. Number of bytes printed: %6. Total number of pages in the document: %7. Number of pages printed: %8. Client computer: %9. Win32 error code returned by the print processor: %10. %11]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param6" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param7" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param8" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param9" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param10" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param11" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221231634</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The spooler has detected that a component has an unusually large number of open Graphical Device Interface (GDI) objects. As a result, some enhanced metafile (EMF) print jobs might not print until the spooler is restarted.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

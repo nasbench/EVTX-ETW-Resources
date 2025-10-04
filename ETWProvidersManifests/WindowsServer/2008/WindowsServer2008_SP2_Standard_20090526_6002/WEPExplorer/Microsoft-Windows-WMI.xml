@@ -1,0 +1,214 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-WMI</Name>
+        <Metadata>
+            <Guid>{1EDEEE53-0AFE-4609-B846-D8C0B2075B1F}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\wbem\WinMgmtR.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\wbem\WinMgmtR.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.0.6000.16386&amp;FileName=WinMgmtR.dll&amp;FileVer=6.0.6000.16386</HelpLink>
+            <PublisherMessage>Microsoft-Windows-WMI</PublisherMessage>
+            <Channels>
+            </Channels>
+            <Levels>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>win:EventlogClassic</Name>
+                    <Value>36028797018963968</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>3221225476</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Error %1 encountered when trying to load MOF %2 while recovering .MOF file marked with autorecover.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225482</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Event filter with query "%2" could not be reactivated in namespace "%1" because of error %3. Events cannot be delivered through this filter until the problem is corrected.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225493</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Event provider %1 attempted to register a syntactically invalid query "%2". The query will be ignored. The query can be corrected by examining the WMI repository with CIM studio and updating the permanent subscriptions for the listed provider and query. If the permanent subscription is created with MOF file coming with an installed product, the application vendor must be contacted to correct the faulty registration.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225494</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Event provider %1 attempted to register an intrinsic event query "%2" in %3 namespace for which the set of target object classes could not be determined. The query will be ignored.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225495</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Event provider %1 attempted to register query "%2" in %3 namespace which is too broad.  Event providers cannot provide events that are provided by the system. The query will be ignored. Contact the application vendor.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225496</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Event provider %1 attempted to register query "%2" whose target class "%3" in %4 namespace does not exist. The query will be ignored.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225497</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Event provider %1 attempted to register query "%2" whose target class "%3" is not an event class. The query will be ignored. Contact the application vendor.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225500</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to Initialize WMI Core or Provider SubSystem or Event SubSystem with error number %1. This could be due to a badly installed version of WMI, WMI repository upgrade failure, insufficient disk space or insufficient memory.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225501</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Error number %1 was returned in trying to initialize Windows Management Instrumentation Service. This could be due to a badly installed version of WMI, WMI repository upgrade failure, insufficient disk space or insufficient memory.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225515</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Windows Management Instrumentation ADAP failed to connect to namespace %1 with the following error %2]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225520</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Windows Management Instrumentation ADAP was unable to save object %1 in namespace %2 because of the following error %3]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225530</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Windows Management Instrumentation ADAP was unable to create the Win32_Perf base class in %1:Result=%2]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225531</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Windows Management Instrumentation ADAP was unable to create the Win32_PerfRawData base class %1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483711</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A provider, %1, has been registered in the Windows Management Instrumentation namespace %2 to use the LocalSystem account. This account is privileged and the provider may cause a security violation if it does not correctly impersonate user requests.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073747424</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Windows Management Instrumentation Service detected an inconsistency with the WMI repository in the directory %windir%\system32\wbem\repository and was not able to recover it.  The WMI repository will now be deleted, A new repository will be created based on the auto-recovery mechanism.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221231073</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Windows Management Instrumentation Service failed to load the repository files under the directory %windir%\system32\wbem\repository.  This can be caused by a corruption in the repository files, security settings on this directory, lack of disk space, or other system resource issues like lack of memory.  If this error happens every time the machine is rebooted then the administrator on this machine may need to stop WMI Service, review the security setting on this folder and files under this folder, and run WMIDiag to validate the health of Windows Management Instrumentation]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221231077</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Access to the %1 namespace was denied because the namespace is marked with RequiresEncryption but the script or application attempted to connect to this namespace with an authentication level below Pkt_Privacy. Change the authentication level to Pkt_Privacy and run the script or application again.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221231078</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Windows Management Instrumentation Service could not deliver results asynchronously for %1 namespace.  The namespace is marked with RequiresEncryption but WinMgmt could not establish a secure connection back to the client computer.  Ensure there is a trust relationship between the client and server computers so that the client recognizes the server computer account.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221231084</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Windows Management Instrumentation has stopped WMIPRVSE.EXE because a quota reached a warning value. Quota: %1  Value: %2 Maximum value: %3 WMIPRVSE PID: %4]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221231086</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+During the service startup, the Windows Management Instrumentation service was unable to locate the repository files. A new repository will be created based on the auto-recovery mechanism.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221231087</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Windows Management Instrumentation Service started sucessfully]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221231088</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Windows Management Instrumentation Repository successfully recreated using Autorecovery mechanism.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221231089</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Windows Management Instrumentation Service subsystems initialized successfully]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

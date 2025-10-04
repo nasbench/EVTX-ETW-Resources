@@ -1,0 +1,475 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-CodeIntegrity</Name>
+        <Metadata>
+            <Guid>{4EE76BD8-3CF4-44A0-A0AC-3937643E37A3}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\ci.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\ci.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.0.6000.16386&amp;FileName=ci.dll&amp;FileVer=6.0.6000.16386</HelpLink>
+            <PublisherMessage>Microsoft-Windows-CodeIntegrity</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-CodeIntegrity/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-CodeIntegrity/Verbose</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message></Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message></Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message></Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message></Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>CreateSection</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>LoadCatalog</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>ReloadCatalogs</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>ValidateFileHash</Name>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>ValidatePageHash</Name>
+                    <Value>5</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>PageHashFoundInCatalog</Name>
+                    <Value>6</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>PageHashFoundInImageCertificate</Name>
+                    <Value>7</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>FileHashFoundInCatalog</Name>
+                    <Value>8</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>FileHashFoundInImageCertificate</Name>
+                    <Value>9</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>LoadCatalogCache</Name>
+                    <Value>10</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message></Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>Failed</Name>
+                    <Value>100</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>UnsignedDriverLoaded</Name>
+                    <Value>101</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>PageHashNotFound</Name>
+                    <Value>102</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>PageHashNotFound_DbgAttached</Name>
+                    <Value>103</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>FileHashNotFound</Name>
+                    <Value>104</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>FileHashNotFound_DbgAttached</Name>
+                    <Value>105</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>3001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CodeIntegrity/Operational</Channel>
+                <Level>win:Warning</Level>
+                <Task>CreateSection</Task>
+                <Opcode>UnsignedDriverLoaded</Opcode>
+                <Message><![CDATA[
+Code Integrity determined an unsigned kernel module %2 is loaded into the system. Check with the publisher to see if a signed version of the kernel module is available.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CodeIntegrity/Operational</Channel>
+                <Level>win:Error</Level>
+                <Task>CreateSection</Task>
+                <Opcode>PageHashNotFound</Opcode>
+                <Message><![CDATA[
+Code Integrity is unable to verify the image integrity of the file %2 because the set of per-page image hashes could not be found on the system.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CodeIntegrity/Operational</Channel>
+                <Level>win:Warning</Level>
+                <Task>CreateSection</Task>
+                <Opcode>PageHashNotFound_DbgAttached</Opcode>
+                <Message><![CDATA[
+Code Integrity is unable to verify the image integrity of the file %2 because the set of per-page image hashes could not be found on the system. The image is allowed to load because kernel mode debugger is attached.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CodeIntegrity/Operational</Channel>
+                <Level>win:Error</Level>
+                <Task>CreateSection</Task>
+                <Opcode>FileHashNotFound</Opcode>
+                <Message><![CDATA[
+Windows is unable to verify the image integrity of the file %2 because file hash could not be found on the system. A recent hardware or software change might have installed a file that is signed incorrectly or damaged, or that might be malicious software from an unknown source.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CodeIntegrity/Operational</Channel>
+                <Level>win:Warning</Level>
+                <Task>CreateSection</Task>
+                <Opcode>FileHashNotFound_DbgAttached</Opcode>
+                <Message><![CDATA[
+Code Integrity is unable to verify the image integrity of the file %2 because a file hash could not be found on the system. The image is allowed to load because kernel mode debugger is attached.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CodeIntegrity/Verbose</Channel>
+                <Level>win:Informational</Level>
+                <Task>PageHashFoundInCatalog</Task>
+                <Message><![CDATA[
+Code Integrity found a set of per-page image hashes for the file %2 in a catalog %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="CatalogNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="CatalogNameBuffer" inType="win:UnicodeString" outType="xs:string" length="CatalogNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3007</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CodeIntegrity/Verbose</Channel>
+                <Level>win:Informational</Level>
+                <Task>PageHashFoundInImageCertificate</Task>
+                <Message><![CDATA[
+Code Integrity found a set of per-page image hashes for the file %2 in the image embedded certificate.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3008</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CodeIntegrity/Verbose</Channel>
+                <Level>win:Informational</Level>
+                <Task>FileHashFoundInCatalog</Task>
+                <Message><![CDATA[
+Code Integrity found a file hash for the file %2 in a catalog %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="CatalogNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="CatalogNameBuffer" inType="win:UnicodeString" outType="xs:string" length="CatalogNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3009</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CodeIntegrity/Verbose</Channel>
+                <Level>win:Informational</Level>
+                <Task>FileHashFoundInImageCertificate</Task>
+                <Message><![CDATA[
+Code Integrity found a file hash for the file %2 in the image embedded certificate.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3010</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CodeIntegrity/Operational</Channel>
+                <Level>win:Warning</Level>
+                <Task>LoadCatalog</Task>
+                <Opcode>Failed</Opcode>
+                <Message><![CDATA[
+Code Integrity was unable to load the %2 catalog.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3011</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CodeIntegrity/Verbose</Channel>
+                <Level>win:Informational</Level>
+                <Task>LoadCatalog</Task>
+                <Opcode>win:Stop</Opcode>
+                <Message><![CDATA[
+Code Integrity successfully loaded the %2 catalog.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3012</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CodeIntegrity/Verbose</Channel>
+                <Level>win:Informational</Level>
+                <Task>LoadCatalog</Task>
+                <Opcode>win:Start</Opcode>
+                <Message><![CDATA[
+Code Integrity started loading the %2 catalog.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3013</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CodeIntegrity/Verbose</Channel>
+                <Level>win:Informational</Level>
+                <Task>ReloadCatalogs</Task>
+                <Opcode>win:Start</Opcode>
+                <Message><![CDATA[
+Code Integrity started reloading catalogs.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3014</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CodeIntegrity/Verbose</Channel>
+                <Level>win:Informational</Level>
+                <Task>ReloadCatalogs</Task>
+                <Opcode>win:Stop</Opcode>
+                <Message><![CDATA[
+Code Integrity completed reloading catalogs. Status %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3015</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CodeIntegrity/Verbose</Channel>
+                <Level>win:Verbose</Level>
+                <Task>ValidateFileHash</Task>
+                <Opcode>win:Start</Opcode>
+                <Message><![CDATA[
+Code Integrity started validating file hash of %2 file.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3016</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CodeIntegrity/Verbose</Channel>
+                <Level>win:Verbose</Level>
+                <Task>ValidateFileHash</Task>
+                <Opcode>win:Stop</Opcode>
+                <Message><![CDATA[
+Code Integrity completed validating file hash. Status %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3017</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CodeIntegrity/Verbose</Channel>
+                <Level>win:Verbose</Level>
+                <Task>ValidatePageHash</Task>
+                <Opcode>win:Start</Opcode>
+                <Message><![CDATA[
+Code Integrity started validating page hashes of %2 file.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3018</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CodeIntegrity/Verbose</Channel>
+                <Level>win:Verbose</Level>
+                <Task>ValidatePageHash</Task>
+                <Opcode>win:Stop</Opcode>
+                <Message><![CDATA[
+Code Integrity completed validating page hashes. Status %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3019</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CodeIntegrity/Verbose</Channel>
+                <Level>win:Verbose</Level>
+                <Task>LoadCatalogCache</Task>
+                <Opcode>win:Start</Opcode>
+                <Message><![CDATA[
+Code Integrity started loading catalog cache from %2 file.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3020</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-CodeIntegrity/Verbose</Channel>
+                <Level>win:Verbose</Level>
+                <Task>LoadCatalogCache</Task>
+                <Opcode>win:Stop</Opcode>
+                <Message><![CDATA[
+Code Integrity completed loading catalog cache. Status %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

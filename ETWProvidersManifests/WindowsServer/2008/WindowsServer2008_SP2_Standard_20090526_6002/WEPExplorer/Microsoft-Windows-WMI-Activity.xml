@@ -1,0 +1,86 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-WMI-Activity</Name>
+        <Metadata>
+            <Guid>{1418EF04-B0B4-4623-BF7E-D74AB47BBDAA}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\wbem\WinMgmtR.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\wbem\WinMgmtR.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.0.6000.16386&amp;FileName=WinMgmtR.dll&amp;FileVer=6.0.6000.16386</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-WMI-Activity/Trace</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message></Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-WMI-Activity/Trace</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+GroupOperationId = %1; OperationId = %2; Operation = %3; ClientMachine = %4; User = %5; ClientProcessId = %6; NamespaceName = %7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="GroupOperationId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OperationId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Operation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientMachine" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="User" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NamespaceName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-WMI-Activity/Trace</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+ProviderInfo for GroupOperationId = %1; Operation = %2; ProviderName = %3; ProviderGuid = %4; Path = %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="GroupOperationId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Operation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProviderName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProviderGuid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-WMI-Activity/Trace</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Stop OperationId = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="OperationId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

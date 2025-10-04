@@ -1,0 +1,134 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Services</Name>
+        <Metadata>
+            <Guid>{0063715B-EEDA-4007-9429-AD526F62696E}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\services.exe</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\services.exe</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.0.6000.16386&amp;FileName=services.exe&amp;FileVer=6.0.6000.16386</HelpLink>
+            <PublisherMessage>Microsoft Windows Services Performance Diagnostic Provider</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Services/Diagnostic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message></Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>Autostart</Name>
+                    <Value>101</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>StartingGroup</Name>
+                    <Value>103</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>ServiceStatusChange</Name>
+                    <Value>105</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message></Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>StatusChange</Name>
+                    <Value>101</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Services/Diagnostic</Channel>
+                <Level>win:Informational</Level>
+                <Task>Autostart</Task>
+                <Opcode>win:Start</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Services/Diagnostic</Channel>
+                <Level>win:Informational</Level>
+                <Task>Autostart</Task>
+                <Opcode>win:Stop</Opcode>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>103</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Services/Diagnostic</Channel>
+                <Level>win:Informational</Level>
+                <Task>StartingGroup</Task>
+                <Opcode>win:Start</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="GroupName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>104</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Services/Diagnostic</Channel>
+                <Level>win:Informational</Level>
+                <Task>StartingGroup</Task>
+                <Opcode>win:Stop</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="GroupName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>105</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Services/Diagnostic</Channel>
+                <Level>win:Informational</Level>
+                <Task>ServiceStatusChange</Task>
+                <Opcode>StatusChange</Opcode>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ExecutionPhase" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CurrentState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StartType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ServiceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ImageName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
