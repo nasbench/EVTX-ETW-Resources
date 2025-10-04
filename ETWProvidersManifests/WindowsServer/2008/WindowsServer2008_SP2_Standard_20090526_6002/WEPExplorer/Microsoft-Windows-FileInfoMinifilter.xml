@@ -1,0 +1,118 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-FileInfoMinifilter</Name>
+        <Metadata>
+            <Guid>{A319D300-015C-48BE-ACDB-47746E154751}</Guid>
+            <ResourceFilePath>%windir%\system32\drivers\fileinfo.sys</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\drivers\fileinfo.sys</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.0.6001.18000&amp;FileName=fileinfo.sys&amp;FileVer=6.0.6001.18000</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-FileInfoMinifilter/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message></Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>fi:FileNameCreate</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>fi:FileNameRundown</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>fi:FileNameDelete</Name>
+                    <Value>3</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message></Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>fi:FileNameCreate</Name>
+                    <Value>65536</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>fi:FileNameRundown</Name>
+                    <Value>131072</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>fi:FileNameDelete</Name>
+                    <Value>262144</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-FileInfoMinifilter/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Task>fi:FileNameCreate</Task>
+                <Keyword>fi:FileNameCreate</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="PathLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Path" inType="win:UnicodeString" outType="xs:string" length="PathLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-FileInfoMinifilter/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Task>fi:FileNameRundown</Task>
+                <Keyword>fi:FileNameRundown</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="PathLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Path" inType="win:UnicodeString" outType="xs:string" length="PathLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-FileInfoMinifilter/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Task>fi:FileNameDelete</Task>
+                <Keyword>fi:FileNameDelete</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="PathLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Path" inType="win:UnicodeString" outType="xs:string" length="PathLength"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

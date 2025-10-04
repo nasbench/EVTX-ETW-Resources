@@ -1,0 +1,151 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-IPBusEnum</Name>
+        <Metadata>
+            <Guid>{CD032E15-15AD-4DA4-AFC6-03BF83516195}</Guid>
+            <ResourceFilePath>%systemroot%\system32\ipbusenum.dll</ResourceFilePath>
+            <ParameterFilePath>C:\Windows\system32\ipbusenum.dll</ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\ipbusenum.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.0.6000.16386&amp;FileName=ipbusenum.dll&amp;FileVer=6.0.6000.16386</HelpLink>
+            <PublisherMessage>PnP-X IP Bus Enumerator Service</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>System</Path>
+                    <Index>0</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message></Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message></Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message></Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>IPBusEnum Event</Message>
+                    <Name>IPBusEnum</Name>
+                    <Value>16</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1000</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Informational</Level>
+                <Keyword>IPBusEnum Event</Keyword>
+                <Message><![CDATA[
+The network device %1 was successfully added to this computer.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Device" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Informational</Level>
+                <Keyword>IPBusEnum Event</Keyword>
+                <Message><![CDATA[
+The network device %1 was successfully removed from this computer.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Device" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Informational</Level>
+                <Keyword>IPBusEnum Event</Keyword>
+                <Message><![CDATA[
+The parent network device %1 was successfully added to this computer.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Device" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Informational</Level>
+                <Keyword>IPBusEnum Event</Keyword>
+                <Message><![CDATA[
+The child network device %1 was successfully added to this computer.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Device" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Informational</Level>
+                <Keyword>IPBusEnum Event</Keyword>
+                <Message><![CDATA[
+The parent network device %1 was successfully removed from this computer.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Device" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Error</Level>
+                <Keyword>IPBusEnum Event</Keyword>
+                <Message><![CDATA[
+Network device %1 was not successfully added to the system. The system limit of %2 Physical Device Objects has been reached for this bus enumerator. No additional devices can be installed on the system.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Device" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1006</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>win:Error</Level>
+                <Keyword>IPBusEnum Event</Keyword>
+                <Message><![CDATA[
+Network device %1 was not successfully added to the system. The system limit of %2 child Physical Device Objects has been reached for this device. No additional child devices can be installed for this device.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Device" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

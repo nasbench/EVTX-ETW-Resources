@@ -1,0 +1,385 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Folder Redirection</Name>
+        <Metadata>
+            <Guid>{7D7B0C39-93F6-4100-BD96-4DDA859652C5}</Guid>
+            <ResourceFilePath>%SystemRoot%\System32\fdeploy.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\System32\fdeploy.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.0.6000.16386&amp;FileName=fdeploy.dll&amp;FileVer=6.0.6000.16386</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Folder Redirection</PublisherMessage>
+            <Channels>
+            </Channels>
+            <Levels>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>win:EventlogClassic</Name>
+                    <Value>36028797018963968</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>501</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Successfully applied policy and redirected folder "%1" to "%2".
+ Redirection options=%3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FromFolder" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ToFolder" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Options" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225974</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to apply policy and redirect folder "%1" to "%2".
+ Redirection options=%3.
+ The following error occurred: "%4".
+ Error details: "%5".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FromFolder" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ToFolder" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Options" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorDetails" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225975</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to create KnownFolderManager. Folder redirection can not be performed.
+ Error details: "%1".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorDetails" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225977</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to get destination path on policy removal for folder "%1".
+ The folder redirection can not be removed.
+ Error details: "%2".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Folder" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorDetails" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225978</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to update policy state for folder "%1".
+ Error details: "%2".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Folder" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorDetails" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225979</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to delete policy state for folder "%1".
+ Error details: "%2".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Folder" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorDetails" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225980</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to resolve path for folder "%1".
+ Folder configuration is invalid or folder is configured to follow parent and the parent folder is not redirected. Folder can not be redirected.
+ Error details: "%2".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Folder" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorDetails" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225981</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to expand path for folder "%1" path "%2".
+ The folder can not be redirected.
+ Error details: "%3".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Folder" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorDetails" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147484158</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Folder redirection policy application has been delayed until the next logon because the group policy logon optimization is in effect.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225983</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to process policy info.
+ Error details: "%1".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorDetails" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>512</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Successfully removed policy and redirected folder "%1" to "%2".
+ Removal options=%3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FromFolder" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ToFolder" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Options" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225985</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to remove policy and redirect folder "%1" to "%2".
+ Removal options=%3.
+ The following error occurred: "%4".
+ Error details: "%5".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FromFolder" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ToFolder" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Options" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorDetails" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>514</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Successfully removed policy for folder "%1".
+ Removal options=%2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Folder" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Options" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225987</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to remove policy for folder "%1".
+ Removal options=%2.
+ The following error occurred: "%3".
+ Error details: "%4".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Folder" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Options" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorDetails" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>516</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Successfully applied policy to keep folder "%1" at the same location.
+ Redirection options=%2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Folder" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Options" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225989</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to apply policy to keep folder "%1" at the same location.
+ Redirection options=%2.
+ The following error occurred: "%3".
+ Error details: "%4".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Folder" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Options" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorDetails" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073742824</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Folder Redirection Group Policy extension started.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073742825</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Folder Redirection Group Policy extension finished.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073742826</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Group Policy flags=%1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="GPFlags" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073742827</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Start Processing Group Policy Objects ...]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073742828</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Processing configuration file "%1" ...]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ConfigurationFile" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073742829</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Folder "%1" was previously redirected.
+ Redirection options were = %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Folder" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Options" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073742830</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Folder "%1" has to be redirected.
+ Redirection options = %2.
+ Parent folder = "%3".
+ Path = "%4".
+ Group = %5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Folder" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Options" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ParentFolder" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Group" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073742831</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+No Folders were previously redirected.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073742832</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+No Folders have to be redirected.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

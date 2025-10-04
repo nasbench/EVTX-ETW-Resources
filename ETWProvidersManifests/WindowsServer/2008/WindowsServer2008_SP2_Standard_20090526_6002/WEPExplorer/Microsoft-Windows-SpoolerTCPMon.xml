@@ -1,0 +1,61 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-SpoolerTCPMon</Name>
+        <Metadata>
+            <Guid>{CAD2D809-03D9-4F46-9CF4-72AA4F04B6B9}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\tcpmon.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\tcpmon.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.0.6000.16386&amp;FileName=tcpmon.dll&amp;FileVer=6.0.6000.16386</HelpLink>
+            <PublisherMessage>Microsoft-Windows-SpoolerTCPMon</PublisherMessage>
+            <Channels>
+            </Channels>
+            <Levels>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>win:EventlogClassic</Name>
+                    <Value>36028797018963968</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>3221225574</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The standard TCP/IP printer port monitor (TCPMon.dll) failed to cleanup the sockets it was using. The WSACleanup function in WS2_32.DLL returned an error. This can occur if there is a serious failure of the network subsystem, the network interface, or the local network itself.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483852</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unable to initialize standard TCP/IP printer port %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225974</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The standard TCP/IP printer port monitor (TCPMon.dll) ran out of disk space while printing. Free up disk space on the volume where the spooler folder is located.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

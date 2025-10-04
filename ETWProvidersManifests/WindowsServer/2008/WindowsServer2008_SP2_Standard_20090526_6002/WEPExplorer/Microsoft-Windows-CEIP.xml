@@ -1,0 +1,93 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-CEIP</Name>
+        <Metadata>
+            <Guid>{A402FE09-DA6E-45F2-82AF-3CB37170EE0C}</Guid>
+            <ResourceFilePath>%SystemRoot%\System32\wsqmcons.exe</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\System32\wsqmcons.exe</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.0.6000.16386&amp;FileName=wsqmcons.exe&amp;FileVer=6.0.6000.16386</HelpLink>
+            <PublisherMessage>Customer Experience Improvement Program</PublisherMessage>
+            <Channels>
+            </Channels>
+            <Levels>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>win:EventlogClassic</Name>
+                    <Value>36028797018963968</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1073742829</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Customer Experience Improvement Program data was successfully consolidated into files that will be sent to Microsoft for analysis. These files will be sent only if the user has opted to join the Windows Customer Experience Improvement Program.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226478</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A problem prevented Customer Experience Improvement Program data from being consolidated into files that can be sent to Microsoft, (Error %1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073742831</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Customer Experience Improvement Program data was successfully sent to Microsoft.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226480</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A problem prevented Customer Experience Improvement Program data from being sent to Microsoft, (Error %1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073742833</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Customer Experience Improvement Program Opt-in notification was displayed to the user.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226482</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A problem prevented the Customer Experience Improvement Program Opt-in notification from being displayed. (Error %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

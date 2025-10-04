@@ -1,0 +1,198 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Kernel-Process</Name>
+        <Metadata>
+            <Guid>{22FB2CD6-0E7B-422B-A0C7-2FAD1FD0E716}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\advapi32.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\advapi32.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.0.6002.18005&amp;FileName=advapi32.dll&amp;FileVer=6.0.6002.18005</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Kernel-Process</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Kernel-Process/Analytic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message></Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message></Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message></Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>WINEVENT_KEYWORD_PROCESS</Name>
+                    <Value>16</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>WINEVENT_KEYWORD_THREAD</Name>
+                    <Value>32</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>WINEVENT_KEYWORD_IMAGE</Name>
+                    <Value>64</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Process/Analytic</Channel>
+                <Level>win:Informational</Level>
+                <Opcode>win:Start</Opcode>
+                <Keyword>WINEVENT_KEYWORD_PROCESS</Keyword>
+                <Message><![CDATA[
+Process %1 started at time %2 by parent %3 running in session %4 with name %5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessID" inType="win:UInt32" outType="win:PID"/>
+  <data name="CreateTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="ParentProcessID" inType="win:UInt32" outType="win:PID"/>
+  <data name="SessionID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ImageName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Process/Analytic</Channel>
+                <Level>win:Informational</Level>
+                <Opcode>win:Stop</Opcode>
+                <Keyword>WINEVENT_KEYWORD_PROCESS</Keyword>
+                <Message><![CDATA[
+Process %1 (which started at time %2) stopped at time %3 with exit code %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessID" inType="win:UInt32" outType="win:PID"/>
+  <data name="CreateTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="ExitTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="ExitCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TokenElevationType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HandleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CommitCharge" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="CommitPeak" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ImageName" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Process/Analytic</Channel>
+                <Level>win:Informational</Level>
+                <Opcode>win:Start</Opcode>
+                <Keyword>WINEVENT_KEYWORD_THREAD</Keyword>
+                <Message><![CDATA[
+Thread %2 (in Process %1) started.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessID" inType="win:UInt32" outType="win:PID"/>
+  <data name="ThreadID" inType="win:UInt32" outType="win:TID"/>
+  <data name="StackBase" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StackLimit" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="UserStackBase" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="UserStackLimit" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StartAddr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Win32StartAddr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="TebBase" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Process/Analytic</Channel>
+                <Level>win:Informational</Level>
+                <Opcode>win:Stop</Opcode>
+                <Keyword>WINEVENT_KEYWORD_THREAD</Keyword>
+                <Message><![CDATA[
+Thread %2 (in Process %1) stopped.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessID" inType="win:UInt32" outType="win:PID"/>
+  <data name="ThreadID" inType="win:UInt32" outType="win:TID"/>
+  <data name="StackBase" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StackLimit" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="UserStackBase" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="UserStackLimit" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StartAddr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Win32StartAddr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="TebBase" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Process/Analytic</Channel>
+                <Level>win:Informational</Level>
+                <Keyword>WINEVENT_KEYWORD_IMAGE</Keyword>
+                <Message><![CDATA[
+Process %3 had an image loaded with name %7.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ImageBase" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ImageSize" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ProcessID" inType="win:UInt32" outType="win:PID"/>
+  <data name="ImageCheckSum" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TimeDateStamp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DefaultBase" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ImageName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Process/Analytic</Channel>
+                <Level>win:Informational</Level>
+                <Keyword>WINEVENT_KEYWORD_IMAGE</Keyword>
+                <Message><![CDATA[
+Process %3 had an image unloaded with name %7.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ImageBase" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ImageSize" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ProcessID" inType="win:UInt32" outType="win:PID"/>
+  <data name="ImageCheckSum" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TimeDateStamp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DefaultBase" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ImageName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

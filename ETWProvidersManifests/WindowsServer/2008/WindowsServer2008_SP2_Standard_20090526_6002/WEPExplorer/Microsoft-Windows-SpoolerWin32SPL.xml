@@ -1,0 +1,90 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-SpoolerWin32SPL</Name>
+        <Metadata>
+            <Guid>{13E8B4F7-4D1C-4F65-95A2-39C6B26A3012}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\win32spl.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\win32spl.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.0.6000.16386&amp;FileName=win32spl.dll&amp;FileVer=6.0.6000.16386</HelpLink>
+            <PublisherMessage>Microsoft-Windows-SpoolerWin32SPL</PublisherMessage>
+            <Channels>
+            </Channels>
+            <Levels>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>win:EventlogClassic</Name>
+                    <Value>36028797018963968</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>3221225473</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The print spooler failed to import the printer driver that was downloaded from %1 into the driver store for driver %2. Error code= %3. This can occur if there is a problem with the driver or the digital signature of the driver.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225474</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The print spooler failed to download and import the printer driver from %1 into the driver store for driver %2. Error code= %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225475</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The print spooler failed to reopen an existing printer connection because it could not read the configuration information from the registry key %1\%2. This can occur if the key name or values are malformed or missing.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225476</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The print spooler failed to reopen an existing printer connection because it could not read the configuration information from the registry key %1. The print spooler could not open the registry key. This can occur if the registry key is corrupt or missing, or if the registry recently became unavailable.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225477</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The print spooler encountered an unknown driver type while saving %1 cache information. This can occur because of a protocol or network error.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

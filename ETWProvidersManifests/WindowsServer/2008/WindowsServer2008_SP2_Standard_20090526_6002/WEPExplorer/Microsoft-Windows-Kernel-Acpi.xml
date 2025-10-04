@@ -1,0 +1,90 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Kernel-Acpi</Name>
+        <Metadata>
+            <Guid>{C514638F-7723-485B-BCFC-96565D735D4A}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\advapi32.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\advapi32.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.0.6002.18005&amp;FileName=advapi32.dll&amp;FileVer=6.0.6002.18005</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Kernel-Acpi</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Kernel-Acpi/Diagnostic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message></Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>ResourceTranslation</Name>
+                    <Value>100</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>GpeEventHandling</Name>
+                    <Value>101</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>acpi:Diagnostic</Name>
+                    <Value>1</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Acpi/Diagnostic</Channel>
+                <Level>win:Informational</Level>
+                <Task>ResourceTranslation</Task>
+                <Keyword>acpi:Diagnostic</Keyword>
+                <Message><![CDATA[
+A memory range descriptor has been marked as reserved.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ResourceFlag" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="GeneralFlag" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="TypeSpecificFlag" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Granularity" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="AddressMin" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="AddressMax" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="AddressTranslation" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="AddressLength" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kernel-Acpi/Diagnostic</Channel>
+                <Level>win:Informational</Level>
+                <Task>GpeEventHandling</Task>
+                <Keyword>acpi:Diagnostic</Keyword>
+                <Message><![CDATA[
+Unexpected GPE event was fired on GPE bits that should be disabled.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="GpeRegister" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="UnexpectedEventMap" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

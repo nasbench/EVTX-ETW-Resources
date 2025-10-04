@@ -1,0 +1,1148 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Diagnosis-MSDT</Name>
+        <Metadata>
+            <Guid>{2129B945-09ED-4965-820E-032243A31578}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\msdt.exe</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\msdt.exe</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.0.6000.16386&amp;FileName=msdt.exe&amp;FileVer=6.0.6000.16386</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Diagnosis-MSDT</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Diagnosis-MSDT/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Diagnosis-MSDT/Debug</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message></Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message></Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message></Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>2000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Started manifest download from %1 to %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="From" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="To" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Finished manifest download from %1 to %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="From" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="To" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Started parsing manifest at %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Finished parsing manifest at %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Operational</Channel>
+                <Level>win:Warning</Level>
+                <Message><![CDATA[
+Finished parsing manifest at %1 with %2 non-fatal errors.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2010</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Debug</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Conditional evaluation Type=%1, Left=%2, Left (evaluated)=%3, Right=%4, Op=%5, Result=%6, ExecuteAs=%7.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Type" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LeftValue" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EvalValue" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RightValue" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Operator" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Result" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ExecuteAs" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2020</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Debug</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Widget %1 parsed with action %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WidgetID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="WidgetAction" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2030</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Started tool download for widget %1, from %2 to %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Widget" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="From" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="To" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2031</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Finished tool download for widget %1, from %2 to %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Widget" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="From" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="To" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2032</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Group policy was configured to skip tool download.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2040</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Debug</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Tool signature check succeeded for widget %1 at %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Widget" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2050</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Debug</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Substituting user arguments for widget %1 succeeded; old string is %2, new string is %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WidgetID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="From" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="To" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2051</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Debug</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+User responded to widget %1; variable %2, response %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WidgetID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="From" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="To" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2060</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Started data upload from %1 to %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="From" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="To" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2061</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Finished data upload from %1 to %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="From" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="To" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2070</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Completed manifest upload notification to %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2080</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Completed upload file copy from %1 to %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="From" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="To" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2081</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Completed remote executable copy from %1 to %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="From" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="To" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2090</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+The user chose to manually cancel data collection.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2100</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Debug</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Widget %1 with action %2 has entered %3 state.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Widget" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Action" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2120</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Remote package succesfully created at %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2130</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Started tool (widget %1); path "%2", parameters "%3", context %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WidgetID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CommandLine" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CommandParam" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ExecuteAs" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2131</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Finished tool (widget %1); path "%2", parameters "%3", context %4; return code %5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WidgetID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CommandLine" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CommandParam" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ExecuteAs" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2144</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Debug</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Data collector set %2 (widget %1) started successfully.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WidgetID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Collector" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ExecuteAs" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2145</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Debug</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Data collector set %2 (widget %1) began compiling.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WidgetID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Collector" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ExecuteAs" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2146</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Debug</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Data collector set %2 (widget %1) stopped successfully.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WidgetID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Collector" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ExecuteAs" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Debug</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Data collector %2 (widget %1) finished successfully.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WidgetID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Collector" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ExecuteAs" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2148</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Debug</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Data collector set %2 (widget %1) in context %3 succeeded.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WidgetID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Collector" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ExecuteAs" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2150</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Debug</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Data collector set %2 in context %3 added for non-PLA type widgets.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WidgetID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Collector" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ExecuteAs" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2151</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Debug</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Data collector set %2 in context %3 added for PLA widget %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WidgetID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Collector" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ExecuteAs" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2152</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Debug</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Data collector set %2 (widget %1) in context %3 enqueued to be stopped.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WidgetID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Collector" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ExecuteAs" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2153</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Debug</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Data Collector %2 added for non-limited non-PLA type widgets.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WidgetID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Collector" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ExecuteAs" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2154</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Debug</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Data Collector %2 added for limited non-PLA type widgets.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WidgetID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Collector" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ExecuteAs" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2155</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Debug</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Widget %1 added to data collector %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WidgetID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Collector" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ExecuteAs" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2157</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Widget %1 in data collector set %2 finished successfully.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WidgetID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Collector" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ExecuteAs" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2158</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Debug</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Query %2 added for Widget %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WidgetID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Collector" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ExecuteAs" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2170</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Debug</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Data collector set %2 (widget %1) was terminated before DCS start.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WidgetID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Collector" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ExecuteAs" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2171</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Debug</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Data collector set %2 (widget %1) was terminated during DCS compiling.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WidgetID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Collector" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ExecuteAs" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2172</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Debug</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Data collector set %2 (widget %1) was terminated at DCS compiling.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WidgetID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Collector" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ExecuteAs" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2173</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Debug</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Data collector set %2 (widget %1) was terminated while waiting for stop.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WidgetID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Collector" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ExecuteAs" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2174</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Debug</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Data collector set %2 (widget %1) was started without a corresponding stop.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WidgetID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Collector" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ExecuteAs" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2200</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Debug</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+HTTP success %2 on proxy type %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProxyType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Code" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2500</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Operational</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Manifest download from %1 to %2 failed; error code %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="From" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="To" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2501</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Operational</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Parsing manifest at %1 failed; error code %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2510</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Debug</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Conditional evaluation Type=%1, Left=%2, Left (evaluated)=%3, Right=%4, Op=%5, Result=%6, ExecuteAs=%7, ErrorCode %8.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Type" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LeftValue" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EvalValue" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RightValue" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Operator" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Result" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ExecuteAs" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2520</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Debug</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Failed parsing widget %1 with action %2; error code %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WidgetID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="WidgetAction" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2530</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Operational</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Tool download for widget %1, from %2 to %3, failed; error code %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Widget" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="From" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="To" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2540</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Operational</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Tool signature check failed for widget %1 at %2; error code %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Widget" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2550</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Operational</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Substituting user arguments for widget %1 failed; error code is %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WidgetID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="From" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="To" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2560</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Operational</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Data upload from %1 to %2 failed; error code %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="From" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="To" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2570</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Operational</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Manifest upload notification to %1 failed; error code %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2580</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Operational</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Upload copy from %1 to %2 failed; error code %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="From" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="To" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2581</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Operational</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Remote executable copy from %1 to %2 failed; error code %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="From" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="To" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2600</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Operational</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Remote package cannot be created at %1; error code %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2610</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Operational</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Failure running tool (widget %1); path "%2", parameters "%3", context %4; error code %5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WidgetID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CommandLine" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CommandParam" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ExecuteAs" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2624</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Debug</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Data collector set %2 (widget %1) failed to start; error code %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WidgetID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Collector" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ExecuteAs" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2626</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Debug</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Data collector set %2 (widget %1) stopped in error; error code %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WidgetID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Collector" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ExecuteAs" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2627</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Debug</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Data collector %2 (widget %1) finished, but an error occurred in processing; error code %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WidgetID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Collector" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ExecuteAs" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2628</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Debug</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Data collector set %2 (widget %1) in context %3 failed; error code %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WidgetID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Collector" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ExecuteAs" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2629</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Operational</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Data collection in %3 context failed; error code %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WidgetID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Collector" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ExecuteAs" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2630</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Debug</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Data collector set %2 in context %3 failed to be added for non-PLA type widgets; error code %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WidgetID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Collector" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ExecuteAs" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2631</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Debug</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Data collector set %2 in context %3 failed to be added for PLA widget %1; error code %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WidgetID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Collector" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ExecuteAs" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2632</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Debug</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Data collector set %2 (widget %1) in context %3 failed to be enqueued to be stopped; error code %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WidgetID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Collector" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ExecuteAs" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2633</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Debug</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Data collector %2 failed to be added for non-limited non-PLA type widgets; error code %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WidgetID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Collector" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ExecuteAs" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2634</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Debug</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Data collector %2 failed to be added for limited non-PLA type widgets; error code %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WidgetID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Collector" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ExecuteAs" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2635</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Debug</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Widget %1 failed to be added to data collector %2; error code %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WidgetID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Collector" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ExecuteAs" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2637</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Operational</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Widget %1 in data collector set %2 failed to finish; error code %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WidgetID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Collector" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ExecuteAs" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2700</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Debug</Channel>
+                <Level>win:Warning</Level>
+                <Message><![CDATA[
+HTTP error %2 on proxy type %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProxyType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Code" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Debug</Channel>
+                <Level>win:Warning</Level>
+                <Message><![CDATA[
+Non-fatal error %1 returned to client.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3500</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Operational</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Fatal error %1 returned to client.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Debug</Channel>
+                <Level>win:Error</Level>
+                <Message><![CDATA[
+Error %1 in function %2; line %3, file %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Code" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Function" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Line" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="File" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Debug</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Entering function %2 with code %1; line %3, file %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Code" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Function" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Line" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="File" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Diagnosis-MSDT/Debug</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+Exiting function %2 with return code %1; line %3, file %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Code" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Function" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Line" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="File" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

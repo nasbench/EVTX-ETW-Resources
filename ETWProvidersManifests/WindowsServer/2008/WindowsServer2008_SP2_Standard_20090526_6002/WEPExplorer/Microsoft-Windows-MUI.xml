@@ -1,0 +1,171 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-MUI</Name>
+        <Metadata>
+            <Guid>{A8A1F2F6-A13A-45E9-B1FE-3419569E5EF2}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\advapi32.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\advapi32.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.0.6002.18005&amp;FileName=advapi32.dll&amp;FileVer=6.0.6002.18005</HelpLink>
+            <PublisherMessage>Microsoft-Windows-MUI</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-MUI/Operational</Message>
+                    <Path>Microsoft-Windows-MUI/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message></Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message></Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>MUI NotifyUILanguageChange task</Message>
+                    <Name>NotifyLanguageChange</Name>
+                    <Value>30</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>MUI notify initialization</Message>
+                    <Name>Initialize</Name>
+                    <Value>30</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>MUI notify operation</Message>
+                    <Name>Operation</Name>
+                    <Value>31</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>2000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MUI/Operational</Channel>
+                <Level>win:Error</Level>
+                <Task>MUI NotifyUILanguageChange task</Task>
+                <Opcode>MUI notify operation</Opcode>
+                <Message><![CDATA[
+MUI notify operation failed with status code %1. No callbacks were invoked.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MUI/Operational</Channel>
+                <Level>win:Error</Level>
+                <Task>MUI NotifyUILanguageChange task</Task>
+                <Opcode>MUI notify operation</Opcode>
+                <Message><![CDATA[
+MUI Callback failed for file %1 because it can not be loaded. To correct this error, replace this file or repair your Windows installation.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MUI/Operational</Channel>
+                <Level>win:Error</Level>
+                <Task>MUI NotifyUILanguageChange task</Task>
+                <Opcode>MUI notify operation</Opcode>
+                <Message><![CDATA[
+MUI Callback failed for file %1 registered as type %2 because the function %3 does not exist in the dll. To correct this error, replace the file or fix the registry entry.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MUI/Operational</Channel>
+                <Level>win:Error</Level>
+                <Task>MUI NotifyUILanguageChange task</Task>
+                <Opcode>MUI notify operation</Opcode>
+                <Message><![CDATA[
+MUI Callback failed for file %1 because it is not signed. To correct this error, replace with a signed file.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MUI/Operational</Channel>
+                <Level>win:Error</Level>
+                <Task>MUI NotifyUILanguageChange task</Task>
+                <Opcode>MUI notify operation</Opcode>
+                <Message><![CDATA[
+MUI Callback file %1 cannot be found. To correct this error, repair the registry or copy the file to the specified location.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MUI/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Task>MUI NotifyUILanguageChange task</Task>
+                <Opcode>MUI notify operation</Opcode>
+                <Message><![CDATA[
+MUI notification for UI Language change has been invoked with flags set to %1 and the new languages set to %2 and the previous languages set to %3. The extended flags is set to %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewLanguage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PrevLanguage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ExtendedFlag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MUI/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Task>MUI NotifyUILanguageChange task</Task>
+                <Opcode>MUI notify operation</Opcode>
+                <Message><![CDATA[
+MUI notification callback API %2 in %1 returned with code %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FunctionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ReturnValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

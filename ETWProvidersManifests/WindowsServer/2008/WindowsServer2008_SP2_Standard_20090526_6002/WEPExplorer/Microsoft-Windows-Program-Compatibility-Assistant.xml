@@ -1,0 +1,114 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Program-Compatibility-Assistant</Name>
+        <Metadata>
+            <Guid>{4CB314DF-C11F-47D7-9C04-65FB0051561B}</Guid>
+            <ResourceFilePath>%SystemRoot%\System32\pcaui.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\System32\pcaui.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.0.6000.16386&amp;FileName=pcaui.dll&amp;FileVer=6.0.6000.16386</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Program-Compatibility-Assistant</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Program-Compatibility-Assistant/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message></Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>30</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Program-Compatibility-Assistant/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+The Program Compatibility Assistant was invoked to correct a compatibility problem. Information about the application is below.
+
+Application name: %1
+Application version: %2
+Executable path: %3
+Scenario ID: %4
+User action: %5
+Compatibility layer: %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApplicationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ApplicationVersion" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ExecutablePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ScenarioId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UserAction" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CompatibilityLayer" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>31</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Program-Compatibility-Assistant/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+The Program Compatibility Assistant was invoked to correct a compatibility problem. Information about the application is below.
+
+Application name: %1
+Application version: %2
+Executable path: %3
+Scenario ID: %4
+User action: %5
+Compatibility layer: %6
+Deprecated component: %7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApplicationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ApplicationVersion" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ExecutablePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ScenarioId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UserAction" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CompatibilityLayer" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DeprecatedComponent" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Program-Compatibility-Assistant/Operational</Channel>
+                <Level>win:Informational</Level>
+                <Message><![CDATA[
+The Program Compatibility Assistant was invoked due to an unsigned driver install. This version of Windows requires all drivers to have a valid digital signature. Information about the driver is below.
+
+Driver: %1
+Service: %2
+Publisher: %3
+Location: %4
+Version: %5
+
+This driver is unavailable and the program that uses this driver might not work correctly.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DriverName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServiceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PublisherName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DriverPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DriverVersion" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
