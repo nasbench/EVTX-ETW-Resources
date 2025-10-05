@@ -1,0 +1,1381 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-MSMQ</Name>
+        <Metadata>
+            <Guid>{CE18AF71-5EFD-4F5A-9BD5-635E34632F69}</Guid>
+            <ResourceFilePath>C:\Windows\system32\mqutil.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\mqutil.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=mqutil.dll&amp;FileVer=6.1.7600.16385</HelpLink>
+            <PublisherMessage>Microsoft-Windows-MSMQ</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Application</Message>
+                    <Path>Application</Path>
+                    <Index>0</Index>
+                    <Id>9</Id>
+                    <Imported>true</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-MSMQ/End2End</Message>
+                    <Path>Microsoft-Windows-MSMQ/End2End</Path>
+                    <Index>1</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Tracking MSMQ Messages</Message>
+                    <Name>msmqe2emessage</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Classic</Message>
+                    <Name>win:EventlogClassic</Name>
+                    <Value>36028797018963968</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MSMQ/End2End</Channel>
+                <Level>Information</Level>
+                <Keyword>Tracking MSMQ Messages</Keyword>
+                <Message><![CDATA[
+Message with ID %1\%2 was put into queue %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MessageID:GUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="MessageID:Identity" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="QueueName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MSMQ/End2End</Channel>
+                <Level>Information</Level>
+                <Keyword>Tracking MSMQ Messages</Keyword>
+                <Message><![CDATA[
+Message received]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MSMQ/End2End</Channel>
+                <Level>Information</Level>
+                <Keyword>Tracking MSMQ Messages</Keyword>
+                <Message><![CDATA[
+Message sent over network]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MSMQ/End2End</Channel>
+                <Level>Information</Level>
+                <Keyword>Tracking MSMQ Messages</Keyword>
+                <Message><![CDATA[
+Message came over network]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-MSMQ/End2End</Channel>
+                <Level>Information</Level>
+                <Keyword>Tracking MSMQ Messages</Keyword>
+                <Message><![CDATA[
+Message with ID %1\%2 was sent to queue %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MessageID:GUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="MessageID:Identity" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="QueueName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227472</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Message Queuing service cannot start. The registry value '\HKLM\SOFTWARE\Microsoft\MSMQ\Parameters\%3' cannot be retrieved from the local Windows Registry. Error %1: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227473</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Message Queuing service cannot start. The registry value '\HKLM\SOFTWARE\Microsoft\MSMQ\Parameters\%3' cannot be written to the local Windows Registry. Error %1: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227487</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Message Queuing service is not online with Active Directory Domain Services. The MSMQ Configuration object (msmq) ID stored in the registry value '\HKLM\SOFTWARE\Microsoft\MSMQ\Parameters\MachineCache\QMId' was found under the computer name '%1' in Active Directory Domain Services. Please relocate this MSMQ Configuration object under the local computer name in Active Directory Domain Services. The service attempts to locate a matching MSMQ Configuration object every few minutes.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227488</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Message Queuing service is not online with Active Directory Domain Services, since the service properties cannot be retrieved or set. The service will attempt to retrieve and set its properties in a few minutes. Error %1: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227492</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Message Queuing service cannot start. The internal private queue '%3' cannot be initialized. If the problem persists, reinstall Message Queuing. Error %1: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227495</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Message Queuing service cannot start. The message store cannot be reloaded. Error %1: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073743848</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Message Queuing serivce performance counter data are not available. The performance counter module failed to initialize. Please run 'lodctr.exe mqperf.ini' from the command console and restart the service, or contact Microsoft support. Error %1: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073743852</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Message Queuing service started.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227507</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Message Queuing service cannot start. The Active Directory Domain Services interface cannot be initialized. Error %1: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485691</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Message Queuing service deleted message '%1'. The message cannot be restored because the queue '%2' does not exist.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485692</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Message Queuing service has insufficient privileges to create audit log messages.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485693</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Message Queuing down-level client support service has insufficient privileges to create audit log messages.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227519</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Message Queuing service cannot start. A connection with the Distributed Transaction Coordinator cannot be established. Error %1: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227520</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The server cannot support the automatic recognition of sites and connected networks for down-level clients.  The problem might be caused by Active Directory Domain Services replication delay. Please restart MQDS service after replication completed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227525</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The incoming sequences checkpoint file failed to initialize. The file MQInSeqs.lg1 or MQInSeqs.lg2 in the Msmq\Storage folder is corrupted or absent. Error %1: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485707</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Message Queuing service cannot communicate with other computers, because the RPC interface cannot use the TCP/IP protocol. Error %1: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073743884</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Message Queuing service is online with Active Directory Domain Services and fully operational.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227533</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Message Queuing service cannot start. The local RPC interface cannot be initialized. Error %1: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227536</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The transactions checkpoint file failed to initialize. The file MQTrans.lg1 or MQTrans.lg2 in the Msmq\Storage folder are corrupted or absent. Error %1: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227540</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The list of Message Queuing servers with directory service functionality in the Windows registry is empty.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227548</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The logger files cannot be initialized. The file QMLog in the Msmq\Storage folder is corrupted or absent. Error %1: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227550</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Message Queuing service cannot start. The checkpoint files cannot be recovered. To start the Message Queuing service without losing consistency, you must correct or recover corrupted checkpoint and log files. To start the service for emergency use (with a potential loss of data consistency), delete the files QMLog, MQTrans.lg1, MQTrans.lg2, MQInSeqs.lg1, and MQInSeqs.lg2 from the Msmq\Storage folder and add the DWORD registry key HKLM\Software\Microsoft\MSMQ\Parameters\LogDataCreated with a value of 0. Error %1: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227551</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Message Queuing service cannot start. The log file cannot be recovered. To start the Message Queuing service without losing consistency, you must correct or recover corrupted checkpoint and log files. To start the service for emergency use (with a potential loss of data consistency), delete the files QMLog, MQTrans.lg1, MQTrans.lg2, MQInSeqs.lg1, and MQInSeqs.lg2 from the Msmq\Storage folder and add the DWORD registry key HKLM\Software\Microsoft\MSMQ\Parameters\LogDataCreated with a value of 0. Error %1: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227555</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Message Queuing service cannot start. The message file '%3' and the log file '%4' cannot be reloaded. Error %1: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227556</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Message Queuing service cannot start because a queue is in an inconsistent state. For more information, see Microsoft Knowledge Base article 827493 at support.microsoft.com.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227557</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The message file '%1' cannot be created. There is insufficient disk space or memory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073743910</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The message file '%1' was successfully created.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485735</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Client Access License (CAL) limit was reached. This server is unable to serve more clients. This may lead to messaging performance degradation. See the Windows documentation for information on how to increase your client license limit. This event is logged no more than once per %1 seconds.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227567</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Since an MSMQ 1.0 primary site controller owns the queue, you must manually delete the queue from the MSMQ 1.0 site (use MSMQ Explorer running on an applicable the site controller).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227568</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Message Queuing folder cannot be created.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227569</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Message Queuing registry values cannot be read (the registry is probably corrupted).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227588</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Message Queuing was unable to create the msmq (MSMQ Configuration) object in Active Directory Domain Services. Error %1: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227589</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Message Queuing was unable to load Mqupgrd.dll. Error %1: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227590</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Message Queuing was unable to find the address of MqCreateMsmqObj in Mqupgrd.dll. Error %1: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227591</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Message Queuing Setup cannot be completed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227592</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Message Queuing service was unable to obtain the properties of the msmq (MSMQ Configuration) object from Active Directory Domain Services. This may be caused by an Active Directory Domain Services replication delay. Please wait several minutes and then restart the Message Queuing service. Error %1: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227594</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+This domain controller is not trusted for delegation. Therefore, the Message Queuing server cannot run. See Help and Support Center for information about how to enable the "This computer is trusted for delegation" property.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485771</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Message Queuing server cannot determine if the local domain controller is trusted for delegation. This may indicate a serious problem. For more information, see Help and Support Center.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227596</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Message Queuing service failed to join the computer's domain '%3'. Error %1: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073743949</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Message Queuing service successfully joined the computer's domain '%1'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073743950</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Message Queuing left the domain and is now operating in workgroup mode.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227599</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Message Queuing objects cannot move automatically between domains (%1). You must either run the MoveTree utility or first uninstall Message Queuing and then reinstall it in the new domain.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073743958</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Message Queuing successfully moved to the %1 domain.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073743959</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The computer belongs to the %1 domain. It is recommended that you use the MoveTree utility to move the msmq (MSMQ Configuration) object of this computer from the %2 domain (its previous domain) to the current domain.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485787</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Message Queuing detected a problem with the local domain controller. Until the problem is resolved, Message Queuing will function unpredictably. Using Event Viewer, inspect the directory service, File Replication Service, and system logs to help identify the problem.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485788</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+This server was unable to resolve the IP addresses of other routing servers. Please check that all computers are registered in DNS.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227613</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The properties of the queue %3 cannot be set. Copying the queue file %4 to the temporary file %5 returned error %1: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227614</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The properties of the queue %3 cannot be set. Replacing the queue file %4 with the temporary file %5 returned error %1: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227615</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Microsoft Distributed Transaction Coordinator (DTC) failed. The Message Queuing service cannot continue. Please restart the DTC and the Message Queuing service.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485792</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+There is an inconsistency between the actual network addresses and the addresses that are listed on other Message Queuing servers for this computer. If this computer belongs to an MSMQ 1.0 site, you should use MSMQ Explorer on the local primary site controller (PSC) to manually update the addresses listed for this computer.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227617</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The computer object for this computer was not found in Active Directory Domain Services, possibly because of Active Directory Domain Services replication delays.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227619</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The service cannot start due to insufficient disk space or memory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227620</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The service cannot start due to its failure to connect to its device driver.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227621</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Message Queuing directory service failed to update the directory service flag in Active Directory Domain Services at the end of the domain controller demotion process.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227622</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Message Queuing directory service failed to update the directory service flag in Active Directory Domain Services during the domain controller promotion process.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227623</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Obsolete, kept for backward compatibility]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485800</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Message Queuing directory service is not running as a local system. To get the directory service functionality, you need to run as a local system.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485801</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Message Queuing Down-level Client Support cannot start. This service can operate only on a domain controller. The service can be disabled by using Computer Management to change its startup type in the Properties dialog box from Automatic to Manual or Disabled.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227626</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A multicast listener initialization failed. The file '%3' may be corrupted. Error %1: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227627</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Message Queuing service stopped monitoring the mapping folder %3. Error %1: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227628</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The mapping file %3 was ignored. Its content cannot be read. Error %1: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485805</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The mapping of the URL %1 to the queue %2 was ignored. This URL is already mapped to another queue.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227630</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The mapping file %1 was ignored because it was improperly formatted.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073743983</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Message Queuing Down-level Client Support started.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227632</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The queue cannot listen/bind to the multicast address %3. Error %1: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485809</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The mapping of the URL %1 to the queue %2 is ignored. This queue name is not a valid URL-style queue name.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485810</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Message Queuing Down-level Client Support failed to create the MSMQ Configuration (msmq) object with a given GUID for computer %1. Creating MSMQ Configuration objects with given GUIDs may be required for Message Queuing clients during the setup of Windows NT 4.0 or Windows 9x computers and when a Windows 2000 computer joins a Windows Server 2003 (or later) domain. By default, an Active Directory Domain Services forest does not support adding an object with a supplied GUID. You can solve this problem by upgrading Message Queuing on the client computer to a version that does not require creating an object with a given GUID. There are also alternative solutions.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073743987</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Message Queuing service stopped.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227636</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Message Queuing service will not join the %1 domain. An MSMQ Configuration (msmq) object exists in the new domain with an ID differing from the service ID. Please delete the MSMQ Configuration object in the new domain, restart the Message Queuing service, and log on again.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485813</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The sites where the computer resides cannot be resolved. Check that the subnets in your network are configured correctly in Active Directory Domain Services and that each site is configured with the appropriate subnet.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227638</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Message Queuing service cannot join the '%1' Windows NT 4.0 domain. The Active Directory Domain Services Integration subcomponent was therefore removed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073743991</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Message Queuing is operating in Hardened mode.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227640</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Message Queuing service resource cannot bind to the cluster IP address. This prevents the Message Queuing resource from coming online on this node. One possible reason is that the Message Queuing service running on the physical node was started before the computer became a member of the server cluster. As a result, the Message Queuing service running on the physical node listens on all IP addresses of the computer and prevents the Message Queuing resource from listening on the cluster IP address. To solve this problem, restart the Message Queuing service on the physical node. Error %1: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227641</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The local computer is a Message Queuing routing server that formerly belonged to the '%1' domain and is now operating in workgroup mode. Other Message Queuing clients still regard this computer as a routing server and will try to route messages through this computer. To solve this problem, you need to manually delete the Message Queuing objects for this computer in Active Directory Domain Services. Please delete the following two objects: 1) The msmq object under the computer object of this computer in the Computers container in the Active Directory Users and Computers snap-in: 'CN=msmq,CN=%2,CN=computers,DC=%1,DC=...' 2) The MSMQ Settings object under the server object for this computer in the Active Directory Sites and Services snap-in: 'CN=MSMQ Settings,CN=%2,CN=Servers,CN=<SiteName>,CN=Sites,CN=Configuration,DC=...' You also need to uninstall Routing Support and Down-level Client Support by using Server Role Manager.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227642</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Message Queuing failed to bind to port 1801. The port may already be bound to another process. Make sure that the port is free and try to start Message Queuing again. If this problem arises during setup, you must free the port and run setup again.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485819</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Message Queuing cannot bind to UDP port 3527. Message Queuing's internal ping mechanism uses this port to establish network connections. Another process may be using this port. Message Queuing can continue to operate without using this port, but connection times will not be optimal. To optimize the establishment of connections, free this port and restart Message Queuing.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073743996</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The MsmqServices object is configured with weakened security to support MSMQ 1.0 clients. With weakened security, the Message Queuing Down-level Client Support service will use its own rights (under the LocalSystem account on a domain controller) to view object properties, but it will not bypass the security restrictions on creating Message Queuing objects and setting their properties.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073743997</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The MsmqServices object is configured with default security. MSMQ 1.0 clients will not be able to query Active Directory Domain Services in this configuration.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227646</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Message Queuing Down-level Client Support cannot operate in mixed mode. Mixed mode is a transient mode in which Message Queuing deployment is in the middle of migration from MQIS (for MSMQ 1.0) to Active Directory Domain Services. In this mode, some sites are still Windows NT 4.0 sites and are mastered by the PEC and PSCs. Mixed mode might require creating/deleting/updating objects that belong to Windows NT 4.0 sites. These operations are not supported by Message Queuing Down-level Client Support. After completing the migration of all Windows NT 4.0 sites to Active Directory Domain Services (migration of the PEC and all PSCs in Windows NT 4.0 sites), Message Queuing will no longer be in mixed mode.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485823</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Message Queuing will use an encryption key with an effective length of 40 bits when sending messages encrypted with the RC2 encryption algorithm. To restore strong encryption, remove the registry value HKLM\Software\Microsoft\MSMQ\Parameters\Security\SendEnhRC2With40.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073744000</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Message Queuing found multiple IP addresses for the local computer. Message Queuing will use the default IP address determined by the PGM driver for multicast messages. To use a different IP address, set the \HKLM\Software\Microsoft\MSMQ\Parameters\%1 registry value to one of the following valid IP addresses: %2!S!.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227649</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Message Queuing service rejects incoming messages when it is unable to check whether the sender is allowed access to the queue for sending messages. In this case, the queue affected is %1, but note that an event might not be issued every time this problem occurs.
+ To perform this access check, Message Queuing needs access to the TokenGroupsGlobalAndUniversal attribute of the sender's user object. Only users with domain administration permissions can add members to the Windows Authorization Access Group, which is allowed access to the TokenGroupsGlobalAndUniversal attribute, in one of two ways:
+ 1) For best security practice, add only the computer accounts that need access to the TokenGroupsGlobalAndUniversal attribute to the Windows Authorization Access Group. The domain administrator will repeat this operation for other Message Queuing computers that require the permission, manually adding the relevant accounts to the Windows Authorization Access Group.
+ 2) As a less secure practice, add the Authenticated Users group to the Windows Authorization Access group. This grants every authenticated user, including the Message Queuing service on any computer, access to the TokenGroupsGlobalAndUniversal attribute for all users, and requires no further manual administration.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485829</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Message Queuing cannot establish new connections to this computer because connection limit was reached.  There are too many computers attempting to send messages to or receive from this computer. This event is logged at most once per %1 seconds. To change this setting, set \HKLM\Software\Microsoft\MSMQ\Parameters\Event2181 registry value to desired time in seconds.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485830</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Storage quota exceeded for MSMQ queue %1. No more messages can be stored in the queue.  You can increase a queue's storage quota by editing queue properties in Computer Management console. This event is logged at most once per %2 seconds. To change this setting, set \HKLM\Software\Microsoft\MSMQ\Parameters\Event2182 registry value to desired time in seconds.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485831</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Machine MSMQ storage quota was exceeded or there is insufficient disk space. No more messages can be stored in user queues.  You can increase Message Queuing storage quota or purge unneeded messages by using Computer Management console. This event is logged at most once per %1 seconds. To change this setting, set \HKLM\Software\Microsoft\MSMQ\Parameters\Event2183 registry value to desired time in seconds.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485832</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Message Queuing could not resolve the name '%1' to an IP address. Try to ping the recipient computer, and check this computer's DNS settings.  This event is logged at most once per %2 seconds. To change this setting, set \HKLM\Software\Microsoft\MSMQ\Parameters\Event2184 registry value to desired time in seconds.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485833</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A socket operation failed with error %1. Next hop address is %2!S!. Message Queuing cannot send the message now, but it will retry to send the message. This event is logged at most once per %3 seconds. To change this setting, set \HKLM\Software\Microsoft\MSMQ\Parameters\Event2185 registry value to desired time in seconds.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485834</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Message Queuing could not establish connection to %1, because the connection limit for this computer was reached. There too many computers trying to send to or receive messages from this computer. This event is logged at most once per %2 seconds. To change this setting, set \HKLM\Software\Microsoft\MSMQ\Parameters\Event2186 registry value to desired time in seconds.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485835</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Message Queuing could not establish connection to %1, because connection was refused by the recipient computer.  It is possible that Client Access Licenses (CALs) are exhausted (if the recipient is a Windows Server), or connection limit has been reached (if the recipient is a Windows workstation). This event is logged at most once per %2 seconds. To change this setting, set \HKLM\Software\Microsoft\MSMQ\Parameters\Event2187 registry value to desired time in seconds.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485836</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Message Queuing could not access Active Directory Domain Services and failed to compute routing path for messages sent to queue %3. Messages will wait in the outgoing queue until connection with Active Directory Domain Services is restored.  This event is logged at most once per %4 seconds. To change this setting, set \HKLM\Software\Microsoft\MSMQ\Parameters\Event2188 registry value to desired time in seconds. Error %1: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485837</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Message Queuing failed to send a message due to low memory. Message Queuing will retry to send the message. This event is logged at most once per %1 seconds. To change this setting, set \HKLM\Software\Microsoft\MSMQ\Parameters\Event2189 registry value to desired time in seconds.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485838</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Message Queuing could not complete SSL negotiation with the remote computer. It is possible that the server certificate is not properly installed, or that remote computer is not listening on port 443 (SSL). This event is logged at most once per %1 seconds. To change this setting, set \HKLM\Software\Microsoft\MSMQ\Parameters\Event2190 registry value to desired time in seconds.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485839</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Message Queuing could not validate server certificate in HTTPS scenario because the certificate was found in disallowed store. This means the certificate cannot be trusted. This event is logged at most once per %1 seconds. To change this setting, set \HKLM\Software\Microsoft\MSMQ\Parameters\Event2191 registry value to desired time in seconds.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485840</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Message Queuing could not establish SSL connection with the recipient computer because a trust chain from the server certificate to a trusted Certificate Authority certificate could not be established. This event is logged at most once per %3 seconds. To change this setting, set \HKLM\Software\Microsoft\MSMQ\Parameters\Event2192 registry value to desired time in seconds. Error %1: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485841</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Message Queuing could not establish SSL connection with the recipient computer because the computer name specified in the HTTP queue format name does not match the name of the recipient server certificate. This event is logged at most once per %1 seconds. To change this setting, set \HKLM\Software\Microsoft\MSMQ\Parameters\Event2193 registry value to desired time in seconds.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227666</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Message Queuing service cannot communicate with other computers, because the select API for socket failed. Error %1: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485843</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Message Queuing could not authenticate a message sent to queue %1. The message was rejected because the queue only accepts authenticated messages. It is possible that sender did not sign the message, or signed it with a self-signed certificate. A negative arrival acknowledgement will be sent if requested by the sender. This event is logged at most once per %2 seconds. To change this setting, set \HKLM\Software\Microsoft\MSMQ\Parameters\Event2195 registry value to desired time in seconds.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485844</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Message Queuing failed to verify digital signature of a message sent to queue %1. The message was rejected. A negative arrival acknowledgement will be sent if requested by the sender. This event is logged at most once per %2 seconds. To change this setting, set \HKLM\Software\Microsoft\MSMQ\Parameters\Event2196 registry value to desired time in seconds.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485845</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Message Queuing failed to listen on the IPv6 protocol. Messages will not be accepted on IPv6.  If you want Message Queuing to accept messages on IPv6 protocol, please verify that the IPv6 protocol is installed and operational (Restarting the machine is required). Error %1: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485846</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Message Queuing failed to listen on the IPv4 protocol. Messages will not be accepted on IPv4.  If you want Message Queuing to accept messages on IPv4 protocol, please verify that the IPv4 protocol is installed and operational (Restarting the machine is required). Error %1: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227671</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Message Queuing Service failed to listen on both IPv4 and IPv6 protocol. Messages will not be accepted from the network through TCP/IP protocols.  Messages addressed to this machine using TCP/IP protocols will not arrive but will accumulate in sender's outgoing queues.   Please fix the TCP/IP protocols issue and restart the computer.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227692</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The IP address %1 specified in the \HKLM\Software\Microsoft\MSMQ\Parameters\%2 registry value is not a valid IP address for this computer. The Message Queuing service will use the IP address %3!S! instead. Please remove this registry value or set it to one of the following valid IP addresses: %4!S!.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073744045</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Message Queuing will use the IP address %1. To use a different IP address, set the \HKLM\Software\Microsoft\MSMQ\Parameters\%2 registry value to one of the following valid IP addresses: %3!S!.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485898</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Message Queuing will not be able to accept messages temporarily because system paged pool is low. During this period, machine quota will be set to 0. No manual intervention is required at this stage. Once memory utilization has normalized, Message Queuing will automatically resume accepting messages.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485899</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Message Queuing will not be able to accept messages temporarily because system commit is low. During this period, machine quota will be set to 0. No manual intervention is required at this stage. Once memory utilization has normalized, Message Queuing will automatically resume accepting messages.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073744076</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Message Queuing is resuming accepting messages because the system memory usage has normalized.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485901</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The message could not be moved to deadletter queue %3. Check that queue exists and users have permissions to send. The message was moved to the system transactional dead letter queue. This event is logged at most once per %4 seconds. To change this setting, set \HKLM\Software\Microsoft\MSMQ\Parameters\Event2253 registry value to desired time in seconds. Error %1: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485902</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The message could not be moved to deadletter queue %1. The deadletter queue is authenticated and the authenticity of the message could not be verified. The message will be moved to the system transactional dead letter queue. This event is logged at most once per %2 seconds. To change this setting, set \HKLM\Software\Microsoft\MSMQ\Parameters\Event2254 registry value to desired time in seconds.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485903</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The message could not be moved to deadletter queue %1. Deadletter queues should not require privacy of messages. The message will be moved to the system transactional dead letter queue. This event is logged at most once per %2 seconds. To change this setting, set \HKLM\Software\Microsoft\MSMQ\Parameters\Event2255 registry value to desired time in seconds.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485904</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The message could not be moved to deadletter queue %1. The deadletter queue needs to be transactional. The message will be moved to the system transactional dead letter queue. This event is logged at most once per %2 seconds. To change this setting, set \HKLM\Software\Microsoft\MSMQ\Parameters\Event2256 registry value to desired time in seconds.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

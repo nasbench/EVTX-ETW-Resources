@@ -1,0 +1,71 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-WSRM-Service</Name>
+        <Metadata>
+            <Guid>{626E37A7-85C1-4DD3-A8DC-1CB0296DE10C}</Guid>
+            <ResourceFilePath>C:\Windows\system32\Windows System Resource Manager\bin\wsrmeventlog.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\Windows System Resource Manager\bin\wsrmeventlog.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=wsrmeventlog.dll&amp;FileVer=6.1.7600.16385</HelpLink>
+            <PublisherMessage>Microsoft-Windows-WSRM-Service</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Admin</Message>
+                    <Path>Microsoft-Windows-WSRM-Service/Admin</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Analytic</Message>
+                    <Path>Microsoft-Windows-WSRM-Service/Analytic</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Operational</Message>
+                    <Path>Microsoft-Windows-WSRM-Service/Operational</Path>
+                    <Index>2</Index>
+                    <Id>18</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Debug</Message>
+                    <Path>Microsoft-Windows-WSRM-Service/Debug</Path>
+                    <Index>3</Index>
+                    <Id>19</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Admin</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+To apply changes to the Windows System Resource Manager policy, you must restart the server.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="message" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,399 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-IIS-IisMetabaseAudit</Name>
+        <Metadata>
+            <Guid>{BBB924B8-F415-4F57-AA45-1007F704C9B1}</Guid>
+            <ResourceFilePath>C:\Windows\system32\inetsrv\iisres.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\inetsrv\iisres.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Internet%20Information%20Services&amp;ProdVer=7.5.7600.16385&amp;FileName=iisres.dll&amp;FileVer=7.5.7600.16385</HelpLink>
+            <PublisherMessage>Microsoft-Windows-IIS-IisMetabaseAudit</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>System</Path>
+                    <Index>4294967295</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Classic</Message>
+                    <Name>win:EventlogClassic</Name>
+                    <Value>36028797018963968</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>4500</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Metabase Add Key.
+ 
+ Primary User Name: %1
+ Primary User Domain: %2
+ Primary Logon ID: %3
+ Path: %4
+ Caller PID: %5
+ Caller Image Path: %6
+ Result: %7
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UserName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Domain" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LogonID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MetabasePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CallerPID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CallerImagePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Result" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4501</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Metabase Delete Key.
+ 
+ Primary User Name: %1
+ Primary User Domain: %2
+ Primary Logon ID: %3
+ Path: %4
+ Caller PID: %5
+ Caller Image Path: %6
+ Result: %7
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UserName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Domain" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LogonID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MetabasePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CallerPID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CallerImagePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Result" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4502</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Metabase Delete Child Keys.
+ 
+ Primary User Name: %1
+ Primary User Domain: %2
+ Primary Logon ID: %3
+ Path: %4
+ Caller PID: %5
+ Caller Image Path: %6
+ Result: %7
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UserName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Domain" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LogonID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MetabasePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CallerPID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CallerImagePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Result" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4503</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Metabase Copy Key.
+ 
+ Primary User Name: %1
+ Primary User Domain: %2
+ Primary Logon ID: %3
+ Source Path: %4
+ Destination Path: %5
+ Caller PID: %6
+ Caller Image Path: %7
+ Result: %8
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UserName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Domain" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LogonID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MetabaseSourcePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MetabaseDestinationPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CallerPID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CallerImagePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Result" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4504</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Metabase Rename Key.
+ 
+ Primary User Name: %1
+ Primary User Domain: %2
+ Primary Logon ID: %3
+ Source Path: %4
+ New Key Name: %5
+ Caller PID: %6
+ Caller Image Path: %7
+ Result: %8
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UserName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Domain" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LogonID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MetabaseSourcePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NewKeyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CallerPID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CallerImagePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Result" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4505</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Metabase Set Data.
+ 
+ Primary User Name: %1
+ Primary User Domain: %2
+ Primary Logon ID: %3
+ Path: %4
+ Property ID: %5
+ Property Name: %6
+ Old Value: %7
+ New Value: %8
+ Caller PID: %9
+ Caller Image Path: %10
+ Result: %11
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UserName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Domain" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LogonID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MetabasePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PropertyID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PropertyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="OldValue" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NewValue" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CallerPID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CallerImagePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Result" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4506</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Metabase Delete Data.
+ 
+ Primary User Name: %1
+ Primary User Domain: %2
+ Primary Logon ID: %3
+ Path: %4
+ Property ID: %5
+ Property Name: %6
+ Old Value: %7
+ Caller PID: %8
+ Caller Image Path: %9
+ Result: %10
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UserName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Domain" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LogonID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MetabasePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PropertyID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PropertyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="OldValue" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CallerPID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CallerImagePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Result" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4507</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Metabase Delete All Data.
+ 
+ Primary User Name: %1
+ Primary User Domain: %2
+ Primary Logon ID: %3
+ Path: %4
+ Caller PID: %5
+ Caller Image Path: %6
+ Result: %7
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UserName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Domain" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LogonID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MetabasePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CallerPID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CallerImagePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Result" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4508</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Metabase Copy Data.
+ 
+ Primary User Name: %1
+ Primary User Domain: %2
+ Primary Logon ID: %3
+ Source Path: %4
+ Destination Path: %5
+ Caller PID: %6
+ Caller Image Path: %7
+ Result: %8
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UserName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Domain" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LogonID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MetabaseSourcePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MetabaseDestinationPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CallerPID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CallerImagePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Result" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4509</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Metabase Set Last Change Time.
+ 
+ Primary User Name: %1
+ Primary User Domain: %2
+ Primary Logon ID: %3
+ Path: %4
+ Caller PID: %5
+ Caller Image Path: %6
+ Result: %7
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UserName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Domain" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LogonID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MetabasePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CallerPID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CallerImagePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Result" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4510</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Metabase Restore.
+ 
+ Primary User Name: %1
+ Primary User Domain: %2
+ Primary Logon ID: %3
+ Name of Backup: %4
+ Caller PID: %5
+ Caller Image Path: %6
+ Result: %7
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UserName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Domain" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LogonID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BackupName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CallerPID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CallerImagePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Result" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4511</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Metabase Delete Backup.
+ 
+ Primary User Name: %1
+ Primary User Domain: %2
+ Primary Logon ID: %3
+ Name of Backup: %4
+ Caller PID: %5
+ Caller Image Path: %6
+ Result: %7
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UserName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Domain" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LogonID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BackupName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CallerPID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CallerImagePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Result" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4512</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Metabase Import.
+ 
+ Primary User Name: %1
+ Primary User Domain: %2
+ Primary Logon ID: %3
+ Source Path: %4
+ Destination Path: %5
+ Filename: %6
+ Caller PID: %7
+ Caller Image Path: %8
+ Result: %9
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UserName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Domain" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LogonID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MetabaseSourcePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MetabaseDestinationPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ImportFileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CallerPID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CallerImagePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Result" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,2117 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-DHCP-Server</Name>
+        <Metadata>
+            <Guid>{6D64F02C-A125-4DAC-9A01-F0555B41CA84}</Guid>
+            <ResourceFilePath>C:\Windows\System32\dhcpssvc.dll</ResourceFilePath>
+            <ParameterFilePath>C:\Windows\System32\dhcpssvc.dll</ParameterFilePath>
+            <MessageFilePath>C:\Windows\System32\dhcpssvc.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=dhcpssvc.dll&amp;FileVer=6.1.7600.16385</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-DHCP Server Events/Operational</Message>
+                    <Path>Microsoft-Windows-Dhcp-Server/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-DHCP Server Events/FilterNotifications</Message>
+                    <Path>Microsoft-Windows-Dhcp-Server/FilterNotifications</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>2</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Classic</Message>
+                    <Name>win:EventlogClassic</Name>
+                    <Value>36028797018963968</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>70</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Scope: %1 for IPv4 is Configured by %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IP_ScopeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>71</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Scope: %1 for IPv4 is Modified by %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IP_ScopeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>72</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Scope: %1 for IPv4 is Deleted by %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IP_ScopeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>73</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Scope: %1 for IPv4 is Activated by %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IP_ScopeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>74</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Scope: %1 for IPv4 is DeActivated by %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IP_ScopeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>75</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Scope: %1 for IPv4 is Updated with Lease Duration: %2 seconds by %3. The previous configured Lease Duration was: %4 seconds.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IP_ScopeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ModifiedDuration" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="OriginalDuration" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>76</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Scope: %1 for IPv4 is Updated with Option Settings: %2 by %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IP_ScopeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="OptionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>77</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Scope: %1 for IPv4 is Enabled for DNS Dynamic updates by %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IP_ScopeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>78</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Scope: %1 for IPv4 is Disabled for DNS Dynamic updates by %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IP_ScopeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>79</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Scope: %1 for IPv4 is Updated with DNS Settings by %2: to dynamically update DNS A and PTR records on request by the DHCP Clients .]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IP_ScopeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>80</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Scope: %1 for IPv4 is Updated with DNS Settings by %2: to always dynamically update DNS A and PTR records.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IP_ScopeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>81</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Scope: %1 for IPv4 is Enabled for DNS Settings by %2: to discard DNS A and PTR records when lease is deleted.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IP_ScopeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>82</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Scope: %1 for IPv4 is Disabled for DNS Settings by %2: to discard DNS A and PTR records when lease is deleted.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IP_ScopeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>83</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Scope: %1 for IPv4 is Enabled for DNS Settings by %2: to dynamically update DNS A and PTR records for DHCP Clients that do not request updates.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IP_ScopeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>84</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Scope: %1 for IPv4 is Disabled for DNS Settings by %2: to dynamically update DNS A and PTR records for DHCP Clients that do not request updates.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IP_ScopeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>87</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Name Protection setting is Enabled on Scope: %1 for IPv4 by %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IP_Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>88</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Name Protection setting is Disabled on Scope: %1 for IPv4 by %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IP_Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>89</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Scope: %1 for IPv4 is Updated with support type: %2 by %3. The previous configured state was: %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IP_Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ModifiedSupportType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="OriginalSupportType" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>90</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NAP Enforcement is Enabled on Scope: %1 for IPv4 by %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IP_ScopeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>91</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NAP Enforcement is Disabled on Scope: %1 for IPv4 by %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IP_ScopeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>92</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NAP Profile is configured on Scope: %1  for IPv4 with the following NAP Profile: %2 by %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IP_ScopeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NAP_ProfileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>93</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NAP Profile is Updated on Scope: %1 for IPv4 with the following NAP Profile: %2 by %3. The previous configured NAP Profile was: %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IP_ScopeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NAP_ModifiedProfileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NAP_OriginalProfileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>94</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The following NAP Profile: %1 is deleted on Scope: %2 by %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IP_ScopeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NAP_ProfileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>95</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Scope: %1 for Multicast IPv4 is Configured by %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IP_MulticastScopeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>96</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Scope: %1 for Multicast IPv4 is Deleted by %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IP_MulticastScopeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>97</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Scope: %1 for IPv4 is Added in Superscope: %2 by %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IP_ScopeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IP_SuperScopeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>98</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+SuperScope: %1 for IPv4 is Configured by %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IP_MulticastScopeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>99</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+SuperScope: %1 for IPv4 is Deleted by %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IP_MulticastScopeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Scope: %1 within SuperScope: %2 for IPv4 is Activated by %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IP_ScopeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IP_SuperScopeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Scope: %1 within SuperScope: %2 for IPv4 is DeActivated by %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IP_ScopeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IP_SuperScopeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Scope: %1 for IPv4 is Removed in Superscope: %2 by %3. However, the Scope exists outside the Superscope.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IP_ScopeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IP_SuperScopeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>103</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Scope: %1 for IPv4 is Deleted in Superscope: %2 as well as Deleted permanently by %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IP_ScopeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IP_SuperScopeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>104</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Delay Time: %1 milliseconds for the OFFER message sent by Secondary Servers is Updated on Scope: %2 for IPv4 by %4. The previous configured Delay Time was: %3 milliseconds.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UpdatedVal" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IP_Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="OriginalVal" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>106</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Reservation: %1 for IPv4 is Configured under Scope %2 by %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ReservationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IP_Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>107</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Reservation: %1 for IPv4 is Deleted under Scope %2 by %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ReservationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IP_Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>108</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Reservation: %1 for IPv4 under Scope: %2 is Enabled for DNS Dynamic updates by %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ReservationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IP_Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>109</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Reservation: %1 for IPv4 under Scope: %2 is Disabled for DNS Dynamic updates by %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ReservationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IP_Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>110</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Reservation: %1 for IPv4 under Scope: %2  is Updated with DNS Settings by %3: to dynamically update DNS A and PTR records on request by the DHCP Clients.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ReservationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IP_Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>111</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Reservation: %1 for IPv4 under Scope: %2 is Updated with DNS Settings by %3: to always dynamically update DNS A and PTR records.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ReservationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IP_Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>112</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Reservation: %1 for IPv4 under Scope: %2 is Enabled for DNS Settings by %3: to discard DNS A and PTR records when lease is deleted.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ReservationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IP_Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>113</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Reservation: %1 for IPv4 under Scope: %2 is Disabled for DNS Settings by %3: to discard DNS A and PTR records when lease is deleted.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ReservationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IP_Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>114</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Reservation: %1 for IPv4 under Scope: %2 is Enabled for DNS Settings by %3: to dynamically update DNS A and PTR records for DHCP Clients that do not request updates.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ReservationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IP_Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>115</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Reservation: %1 for IPv4 under Scope: %2 is Disabled for DNS Settings by %3: to dynamically update DNS A and PTR records for DHCP Clients that do not request updates.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ReservationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IP_Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>116</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Reservation: %1 for IPv4 under Scope: %2 is Updated with Option Setting: %3 by %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ReservationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IP_Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="OptionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>119</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Added exclusion IP Address range %1 in the Address Pool for IPv4 under Scope: %2 by %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ExclusionRange" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IP_Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>120</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Deleted exclusion IP Address range %1 in the Address Pool for IPv4 under Scope: %2 by %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ExclusionRange" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IP_Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>121</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Link Layer based filtering is Enabled in the Allow List of the IPv4 by %1 ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>122</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Link Layer based filtering is Disabled in the Allow List of the IPv4 by %1 ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>123</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Filter for physical address: %1, hardware type: %3 added to the IPv4 Allow List by %2. ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PhysicalAddress" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HWType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>124</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Filter for physical address: %1, hardware type: %3 removed from the IPv4 Allow List by %2. ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PhysicalAddress" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HWType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>125</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Link Layer based filtering is Enabled in the Deny List of the IPv4 by %1 ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>126</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Link Layer based filtering is Disabled in the Deny List of the IPv4 by %1 ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>127</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Filter for physical address: %1, hardware type: %3 added to the IPv4 Deny List by %2. ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PhysicalAddress" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HWType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>128</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Filter for physical address: %1, hardware type: %3 removed from the IPv4 Deny List by %2. ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PhysicalAddress" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HWType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>129</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Scope: %1 for IPv6 is Configured by %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IP_ScopeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>130</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Scope: %1 for IPv6 is Deleted by %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IP_ScopeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>131</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Scope: %1 for IPv6 is Activated by %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IP_ScopeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>132</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Scope: %1 for IPv6 is DeActivated by %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IP_ScopeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>133</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Scope: %1 for IPv6 is Updated with Lease Preferred Lifetime:  %2 by %3. The previous configured Lease Preferred Lifetime was: %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IP_ScopeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ModifiedDuration" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="OriginalDuration" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>134</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Scope: %1 for IPv6 is Updated with Lease Valid Lifetime: %2 by %3. The previous configured Lease Valid Lifetime was: %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IP_ScopeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ModifiedDuration" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="OriginalDuration" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>135</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Scope: %1 for IPv6 is Updated with Option Setting: %2 by %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IP_ScopeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="OptionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>136</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Scope: %1 for IPv6 is Enabled for DNS Dynamic updates by %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IP_ScopeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>137</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Scope: %1 for IPv6 is Disabled for DNS Dynamic updates by %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IP_ScopeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>138</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Scope: %1 for IPv6 is Updated with DNS Settings by %2: to dynamically update DNS AAAA and PTR records on request by the DHCP Clients.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IP_ScopeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>139</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Scope: %1 for IPv6 is Updated with DNS Settings by %2: to always dynamically update DNS AAAA and PTR records.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IP_ScopeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>140</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Scope: %1 for IPv6 is Enabled for DNS Settings by %2: to discard DNS AAAA and PTR records when lease is deleted.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IP_ScopeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>141</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Scope: %1 for IPv6 is Disabled for DNS Settings by %2: to discard DNS AAAA and PTR records when lease is deleted.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IP_ScopeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>142</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Name Protection setting is Enabled on Scope: %1 for IPv6 by %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IP_Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>143</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Name Protection setting is Disabled on Scope: %1 for IPv6 by %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IP_Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>145</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Reservation: %1 for IPv6 is Configured under Scope %2 by %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ReservationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IP_Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>147</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Reservation: %1 for IPv6 is Deleted under Scope %2 by %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ReservationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IP_Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>148</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Reservation: %1 for IPv6 under Scope: %2 is Enabled for DNS Dynamic updates by %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ReservationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IP_Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>149</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Reservation: %1 for IPv6 under Scope: %2 is Disabled for DNS Dynamic updates by %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ReservationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IP_Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>150</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Reservation: %1 for IPv6 under Scope: %2  is Updated with DNS Settings by %3: to dynamically update DNS AAAA and PTR records on request by the DHCP Clients.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ReservationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IP_Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>151</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Reservation: %1 for IPv6 under Scope: %2 is Updated with DNS Settings by %3: to always dynamically update DNS AAAA and PTR records.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ReservationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IP_Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>152</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Reservation: %1 for IPv6 under Scope: %2 is Enabled for DNS Settings by %3: to discard DNS AAAA and PTR records when lease is deleted.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ReservationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IP_Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>153</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Reservation: %1 for IPv6 under Scope: %2 is Disabled for DNS Settings by %3: to discard DNS AAAA and PTR records when lease is deleted.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ReservationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IP_Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>154</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Reservation: %1 for IPv6 under Scope: %2 is Updated with Option Setting: %3 by %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ReservationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IP_Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="OptionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>155</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Added exclusion IP Address range %1 in the Address Pool for IPv6 under Scope: %2 by %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ExclusionRange" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IP_Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>156</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Deleted exclusion IP Address range %1 in the Address Pool for IPv6 under Scope: %2 by %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ExclusionRange" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IP_Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>157</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Scope: %1 for IPv6 is Modified by %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IP_ScopeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1000</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP service received the unknown option %1, with a length of %2. The raw option data is given below.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP service failed to register with Service Controller. The following error occurred: 
+%1.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP service failed to initialize its global parameters. The following error occurred: 
+%1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP service failed to initialize its registry parameters. The following error occurred: 
+%1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP service failed to initialize the database. The following error occurred: 
+%1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP service failed to initialize Winsock startup. The following error occurred: 
+%1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1006</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP service failed to start as a RPC server. The following error occurred : 
+%1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1007</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP service failed to initialize Winsock data. The following error occurred: 
+%1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1008</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP service is shutting down due to the following error: 
+%1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1009</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP service encountered the following error while cleaning up the pending client records: 
+%1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1010</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP service encountered the following error while cleaning up the database: 
+%1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1011</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP service issued a NACK (negative acknowledgement message) to the client, %2, for the address, %1.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1012</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP client, %2, declined the address %1.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1013</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP Client, %2, released the address %1.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1016</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP service encountered the following error when backing up the database: 
+%1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1017</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP service encountered the following error when backing up the registry configuration: 
+%1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1018</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP service failed to restore the database. The following error occurred: 
+%1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1019</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP service failed to restore the DHCP registry configuration. The following error occurred: 
+%1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1020</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Scope, %1, is %2 percent full with only %3 IP addresses remaining.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1021</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP service could not load the JET database library successfully.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1022</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP service could not use the database. If this service was started for the first time after the upgrade from NT 3.51 or earlier, you need to run the utility, upg351db.exe, on the DHCP database to convert it to the new JET database format. Restart the DHCP service after you have upgraded the database.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1023</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP service will now terminate because the existing database needs conversion to Windows 2000 format.  The conversion via the jetconv process, has initiated.  Do not reboot or stop the jetconv process.  The conversion may take up to 10 minutes depending on the size of the database.  Terminate DHCP now by clicking OK. This is required for the database conversion to succeed.  NOTE: The DHCP service will be restarted automatically when the conversion is completed.  To check conversion status, look at the Application event log for the jetconv process.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1024</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP service has initialized and is ready]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1025</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP service was unable to read the BOOTP file table from the registry.  The DHCP service will be unable to respond to BOOTP requests that specify the boot file name.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1026</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP service was unable to read the global BOOTP file name from the registry.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1027</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The audit log file cannot be appended.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1028</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP service failed to initialize the audit log. The following error occurred: 
+%1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1029</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP service was unable to ping for a new IP address. The address was leased to the client.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1030</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The audit log file could not be backed up.  The following error occurred: 
+%1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1031</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The installed server callout .dll file has caused an exception. The exception was: 
+%1.  The server has ignored this exception. All further exceptions will be ignored.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1032</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The installed server callout .dll file has caused an exception. The exception was: 
+%1.  The server has ignored this exception and the .dll file could not be loaded.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1033</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP service has successfully loaded one or more callout DLLs.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1034</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP service has failed to load one or more callout DLLs. The following error occured: 
+%1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1035</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP service was unable to create or lookup the DHCP Users local group on this computer.  The error code is in the data.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1036</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP server was unable to create or lookup the DHCP Administrators local group on this computer.  The error code is in the data.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1037</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP service has started to clean up the database.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1038</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP service has cleaned up the database for unicast IP addresses -- %1 leases have been recovered and %2 records have been removed from the database.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1039</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP service has cleaned up the database for multicast IP addresses -- %1 leases have expired (been marked for deletion) and %2 records have been removed from the database.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1040</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP service successfully restored the database.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1041</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP service is not servicing any DHCPv4 clients because none of the active network interfaces have statically configured IPv4 addresses, or there are no active interfaces.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1042</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP/BINL service running on this machine has detected a server on the network. If the server does not belong to any domain, the domain is listed as empty.  The IP address of the server is listed in parentheses.  %1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1043</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP/BINL service on the local machine has determined that it is authorized to start.  It is servicing clients now.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1044</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP/BINL service on the local machine, belonging to the Windows Administrative domain %2, has determined that it is authorized to start. It is servicing clients now.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1045</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP/BINL service on the local machine has determined that it is not authorized to start.  It has stopped servicing clients.  The following are some possible reasons for this: 
+	This machine belongs to a workgroup and has encountered another DHCP Server (belonging to a Windows Administrative Domain) servicing the same network. 
+
+	An unexpected network error occurred.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1046</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP/BINL service on the local machine, belonging to the Windows Administrative domain %2, has determined that it is not authorized to start.  It has stopped servicing clients.  The following are some possible reasons for this: 
+	This machine is part of a directory service enterprise and is not authorized in the same domain.  (See help on the DHCP Service Management Tool for additional information). 
+
+	This machine cannot reach its directory service enterprise and it has encountered another DHCP service on the network belonging to a directory service enterprise on which the local machine is not authorized. 
+
+	Some unexpected network error occurred.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1047</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP/BINL service on the local machine has determined that it is authorized to start.  It is servicing clients now. 
+The DHCP/BINL service has determined that the machine was recently upgraded.  If the machine is intended to belong to a directory service enterprise, the DHCP service must be authorized in the directory service for it to start servicing clients.  (See help on DHCP Service Management Tool for authorizing the server).]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1048</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP/BINL Service on the local machine, belonging to Windows Domain %2, has determined that it is authorized to start.  It is servicing clients now.  It has determined that the computer was recently upgraded.  It has also determined that either there is no directory service enterprise for the domain or that the computer is not authorized in the directory service.  All DHCP services that belong to a directory service enterprise should be authorized in the directory service to service clients.   (See help on the DHCP Service Management Tool for authorizing a DHCP service in the directory service).]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1049</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP/BINL service on the local machine encountered an error while trying to find the domain of the local machine.  The error was: %3.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1050</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP/BINL service on the local machine encountered a network error. The error was: %3.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1051</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP/BINL service has determined that it is not authorized to service clients on this network for the Windows domain: %2.  All DHCP services that belong to a directory service enterprise must be authorized in the directory service to service clients.   (See help on the DHCP Service Management Tool for authorizing a DHCP server in the directory service).]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1052</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP/BINL service on this workgroup server has encountered another server with IP Address, %1, belonging to the domain %2.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1053</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP/BINL service has encountered another server on this network with IP Address, %1, belonging to the domain: %2.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1054</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP/BINL service on this computer is shutting down. See the previous event log messages for reasons.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1055</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP service was unable to impersonate the credentials necessary for DNS registrations: 
+%1.  The local system credentials is being used.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1056</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP service has detected that it is running on a DC and has no credentials configured for use with Dynamic DNS registrations initiated by the DHCP service.   This is not a recommended security configuration.  Credentials for Dynamic DNS registrations may be configured using the command line "netsh dhcp server set dnscredentials" or via the DHCP Administrative tool.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1057</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP service was unable to convert the temporary database to ESE format: 
+%1.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1058</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP service failed to initialize its configuration parameters. The following error occurred: 
+%1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1059</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP service failed to see a directory server for authorization.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1060</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP service was unable to access path specified for the audit log.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1061</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP service was unable to access path specified for the database backups.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1062</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP service was unable to access path specified for the database]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1063</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+There are no IP addresses available for lease in the scope or superscope "%1".]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1064</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+There are no IP addresses available for BOOTP clients in the scope or superscope "%1".]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1065</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+There were some orphaned entries deleted in the configuration due to the deletion of a class or an option definition. Please recheck the server configuration.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1144</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+This computer has at least one dynamically assigned IP address. For reliable DHCP Server operation, you should use only static IP addresses.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1338</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The number of pending DHCPOFFER messages for delayed transmission to the client has exceeded the server's capacity of 1000 pending messages. The DHCP server will drop all subsequent DHCPDISCOVER messages for which the DHCPOFFER message response needs to be delayed as per the server configuration. The DHCP server will continue to process DHCPDISCOVER messages for which the DHCPOFFER message responses do not need to be delayed. The DHCP server will resume processing all DHCPDISCOVER messages once the number of pending DHCPOFFER messages for delayed transmission to the client is below the server's capacity.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1339</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The number pending DHCPOFFER messages for delayed transmission to the client is now below the server's capacity of 1000. The DHCP server will now resume processing all DHCPDISCOVER messages.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1340</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS registration for DHCPv4 Client IP address %1 , FQDN %2 and DHCID %3 has been denied as there is probably an existing client with same FQDN already registered with DNS.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1344</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS IP Address %1 is not a valid DNS Server Address.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10000</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DHCPv6 confirmation has been declined because the address was not appropriate to the link or DHCPv6 renew request has a Zero lifetime for Client Address %1.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Renew, rebind or confirm received for IPv6 addresses %1 for which there are no active lease available]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DHCPv6 service received the unknown option %1, with a length of %2. The raw option data is given below.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10003</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+There are no IPv6 addresses available to lease in the scope serving the network with Prefix %1.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10004</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCPv6 client, %2, declined the address %1.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10005</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DHCPv6 Scope serving the network with prefix %1, is %2 percent full with only %3 IP addresses remaining.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10006</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A DHCPV6 client %1 has been deleted from DHCPV6 database.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10007</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A DHCPV6 message that was in the queue for more than 30 seconds has been dropped because it is too old to process.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10008</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An invalid DHCPV6 message has been dropped.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10009</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A DHCPV6 message that was not meant for this server has been dropped.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10010</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DHCV6 message has been dropped because it was received on a Uni-cast address and unicast support is disabled on the server.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10011</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DHCPV6 audit log file cannot be appended, Error Code returned %1.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10012</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A DHCPV6 message has been dropped because the server is not authorized to process the message.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10013</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCPv6 service failed to initialize the audit log. The following error occurred: 
+%1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10014</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DHCPv6 audit log file could not be backed up.  Error code %1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10015</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AThe DHCPv6 service was unable to access path specified for the audit log.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10016</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCPv6 service failed to initialize Winsock startup. The following error occurred %1.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10017</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCPv6 service has detected that it is running on a DC and has no credentials configured for use with Dynamic DNS registrations initiated by the DHCPv6 service.   This is not a recommended security configuration.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10018</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCPv6 Server failed to receive a notification of interface list changes.  Some of the interfaces will not be enabled in the DHCPv6 service.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10019</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCPv6 service failed to initialize its configuration parameters. The following error occurred: 
+%1.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10020</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+This computer has at least one dynamically assigned IPv6 address.For reliable DHCPv6 server operation, you should use only static IPv6 addresses.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10021</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DHCPv6 service failed to initialize the database. The following error occurred: 
+%1.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10022</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCPv6 service has initialized and is ready to serve.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10023</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DHCPv6 Server is unable to bind to UDP port number %1 as it is used by another application. This port must be made available to DHCPv6 Server to start servicing the clients.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10024</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ERROR_LAST_DHCPV6_SERVER_ERROR]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10025</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS registration for DHCPv6 Client IPv6 address %1 , FQDN %2 and DHCID %3 has been denied as there is probably an existing client with same FQDN already registered with DNS.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20035</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCP Server failed to receive a notification of interface list changes.  Some of the interfaces will not be enabled in the DHCP service.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20090</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DHCP Server is unable to bind to UDP port number %1 as it is used by another application. This port must be made available to DHCP Server to start servicing the clients.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20096</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/FilterNotifications</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+DHCP Services were denied to machine with hardware address %1, hardware type %4 and FQDN/Hostname %2 because it matched entry %3 in the Deny List.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MACAddress" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HostName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DenyFilter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HWType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20097</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/FilterNotifications</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+DHCP Services were denied to machine with hardware address %1, hardware type %3 and FQDN/Hostname %2 because it did not match any entry in the Allow List.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MACAddress" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HostName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HWType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20098</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+No DHCP clients are being served,  as the Allow list is empty and the server was configured to provide DHCP services, to clients whose hardware addresses are present in the Allow List.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20099</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/FilterNotifications</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+DHCP Services were denied to machine with hardware address %1, hardware type %4 and unspecified FQDN/Hostname%2 because it matched entry %3 in the Deny List.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MACAddress" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HostName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DenyFilter" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HWType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20100</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DHCP Server Events/FilterNotifications</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+DHCP Services were denied to machine with hardware address %1, hardware type %3 and unspecified FQDN/Hostname%2 because it did not match any entry in the Allow List.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MACAddress" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HostName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HWType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

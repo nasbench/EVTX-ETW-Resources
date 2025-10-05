@@ -1,0 +1,199 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-SmbHashGeneration</Name>
+        <Metadata>
+            <Guid>{8085CB91-900E-4D15-A7D1-921DDCE641D8}</Guid>
+            <ResourceFilePath>C:\Windows\System32\SmbHash.exe</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\System32\SmbHash.exe</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=SmbHash.exe&amp;FileVer=6.1.7600.16385</HelpLink>
+            <PublisherMessage>Microsoft-Windows-SMBHashGeneration</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-SMBHashGeneration/Operational</Message>
+                    <Path>Microsoft-Windows-SMBHashGeneration/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-SMBHashGeneration/Analytic</Message>
+                    <Path>Microsoft-Windows-SMBHashGeneration/Analytic</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>SMB Hash Generation</Message>
+                    <Name>SMBHashEvtKeywd</Name>
+                    <Value>1</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SMBHashGeneration/Operational</Channel>
+                <Level>Error</Level>
+                <Keyword>SMB Hash Generation</Keyword>
+                <Message><![CDATA[
+Service initialization failed with error %1. 
+%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ResultCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Result" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SMBHashGeneration/Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>SMB Hash Generation</Keyword>
+                <Message><![CDATA[
+Hash generation for file %1 failed with error %2. 
+%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ResultCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Result" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SMBHashGeneration/Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>SMB Hash Generation</Keyword>
+                <Message><![CDATA[
+Hash deletion for file %1 failed with error %2. 
+%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ResultCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Result" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SMBHashGeneration/Operational</Channel>
+                <Level>Information</Level>
+                <Keyword>SMB Hash Generation</Keyword>
+                <Message><![CDATA[
+The hash for the file with object ID %2 on volume %1 could not be deleted to free volume space due to error %3. 
+%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Volume" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Hash" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ResultCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Result" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SMBHashGeneration/Analytic</Channel>
+                <Level>Information</Level>
+                <Keyword>SMB Hash Generation</Keyword>
+                <Message><![CDATA[
+The SMB server has requested hash generation for file %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SMBHashGeneration/Analytic</Channel>
+                <Level>Information</Level>
+                <Keyword>SMB Hash Generation</Keyword>
+                <Message><![CDATA[
+The SMB server has retrieved the hash for file %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SMBHashGeneration/Analytic</Channel>
+                <Level>Information</Level>
+                <Keyword>SMB Hash Generation</Keyword>
+                <Message><![CDATA[
+Hash generated for file %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SMBHashGeneration/Analytic</Channel>
+                <Level>Information</Level>
+                <Keyword>SMB Hash Generation</Keyword>
+                <Message><![CDATA[
+Hash deleted for file %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SMBHashGeneration/Analytic</Channel>
+                <Level>Information</Level>
+                <Keyword>SMB Hash Generation</Keyword>
+                <Message><![CDATA[
+The hash for the file with object ID %2 on volume %1 was deleted to free volume space. The file associated with this hash may no longer exist.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Volume" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Hash" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

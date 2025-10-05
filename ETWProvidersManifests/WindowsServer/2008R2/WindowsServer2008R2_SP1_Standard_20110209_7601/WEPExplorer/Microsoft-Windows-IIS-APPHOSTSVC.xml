@@ -1,0 +1,184 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-IIS-APPHOSTSVC</Name>
+        <Metadata>
+            <Guid>{CAC10856-9223-48FE-96BA-2A772274FB53}</Guid>
+            <ResourceFilePath>C:\Windows\system32\inetsrv\iisres.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\inetsrv\iisres.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Internet%20Information%20Services&amp;ProdVer=7.5.7600.16385&amp;FileName=iisres.dll&amp;FileVer=7.5.7600.16385</HelpLink>
+            <PublisherMessage>Microsoft-Windows-IIS-APPHOSTSVC</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>System</Path>
+                    <Index>4294967295</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Classic</Message>
+                    <Name>win:EventlogClassic</Name>
+                    <Value>36028797018963968</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>3221234472</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Application Host Helper Service encountered an error while reading the data for SID mapping.  Please ensure that the application pool name data is correct in the configuration file.  To resolve this issue, please recommit the changes or restart this service.  The data field contains the error number.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221234473</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Application Host Helper Service encountered an error while adding the mapping for the application pool name '%1' to its SID.  That particular SID is already mapped to another application pool name, causing a conflict.  To resolve this issue, please change the name of this application pool.  The data field contains the error number.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApplicationPoolName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221234474</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Application Host Helper Service encountered an error while mapping the application pool names to their respective SIDs.  Some app pool SIDs will not be resolved properly under the 'IIS APPPOOL' namespace.  To resolve this issue, please recommit the changes or restart the service.  The data field contains the error number.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221234475</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Application Host Helper Service encountered an error while removing the mapping for the application pool name '%1' to its SID.  To resolve this issue, please recommit the changes or restart the service.  The data field contains the error number.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApplicationPoolName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221234476</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Application Host Helper Service encountered an error while adding multiple mappings for application pool names to their SIDs.  To resolve this issue, please recommit the changes and restart the service.  The data field contains the error number.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221234477</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Application Host Helper Service encountered an error while adding the mapping for the application pool name '%1' to its SID.  To resolve this issue, please recommit the changes or restart the service.  The data field contains the error number.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApplicationPoolName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221234478</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Application Host Helper Service encountered an error trying to process the configuration data for config history.  The feature will be disabled.  To resolve this issue, please confirm that the configuration file is correct, has correct attribute values for config history and recommit the changes.  The feature will be enabled again if the configuration is correct.  The data field contains the error number.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221234479</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Application Host Helper Service encountered an error trying to read configuration data from file '%1', line number '%2'.  The error message is: '%3'.  The feature will be disabled.  To resolve this issue, please fix the configuration file and recommit the changes.  The feature will be enabled again if the configuration is correct.  The data field contains the error number.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="File" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221234480</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Application Host Helper Service encountered an error trying to read the property '%1' from configuration data from file '%2', line number '%3'. The feature will be disabled.  To resolve this issue, please fix the property in the file and recommit the changes.  The feature will be enabled again if the configuration is correct.  The data field contains the error number.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Property" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="File" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147492657</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Application Host Helper Service encountered an error trying to delete the history directory '%1'.  The directory will be skipped and ignored.  Note that the directory may still get deleted in the future if the service restarts.  The data field contains the error number.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221234482</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Application Host Helper Service encountered an error trying to access the root history directory '%1'.  The directory either doesn't exist or the permissions on it don't allow the history service to access it. The config history feature is disabled for now and will be re-enabled after the issue is resolved. To resolve this issue, please ensure that the directory exists and that the Administrators group have read and write access to it.  The data field contains the error number.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221234483</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The directory specified for the root history directory is a UNC path, which is not allowed.  The feature will be disabled.  To resolve this issue, please set it to a local directory.  The feature will be enabled again if the configuration is correct. The data field contains the error number.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221234484</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Application Host Helper Service has detected that %1 file doesn't contain valid configuration. Config history backup feature has been disabled. It will be re-enabled automatically once the configuration file is fixed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

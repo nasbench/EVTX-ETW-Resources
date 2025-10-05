@@ -1,0 +1,728 @@
+<Providers>
+    <Provider>
+        <Name>DFSN-Service</Name>
+        <Metadata>
+            <Guid>{CDF88924-B703-4F63-B720-8D5525E71BB1}</Guid>
+            <ResourceFilePath>C:\Windows\system32\dfssvc.exe</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\dfssvc.exe</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=dfssvc.exe&amp;FileVer=6.1.7600.16385</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>0</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-DFSN-ServerService/Analytic</Message>
+                    <Path>Microsoft-Windows-DFSN-ServerService/Analytic</Path>
+                    <Index>1</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Referral</Message>
+                    <Name>SERVICE_TASK_REFERRAL</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>NetrDfs</Message>
+                    <Name>SERVICE_TASK_NET_DFS_API</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message>Lock</Message>
+                    <Name>SERVICE_TASK_LOCK</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message>Lookup</Message>
+                    <Name>SERVICE_TASK_LOOKUP</Name>
+                    <Value>4</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>RequestReceived</Message>
+                    <Name>SERVICE_OPCODE_REFERRAL_REQUEST_RECEIVED</Name>
+                    <Value>10</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>DcRequestProcessed</Message>
+                    <Name>SERVICE_OPCODE_REFERRAL_DC_REQUEST_PROCESSED</Name>
+                    <Value>15</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>RootRequestProcessed</Message>
+                    <Name>SERVICE_OPCODE_REFERRAL_ROOT_REQUEST_PROCESSED</Name>
+                    <Value>16</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>NormalRequestProcessed</Message>
+                    <Name>SERVICE_OPCODE_REFERRAL_NORMAL_REQUEST_PROCESSED</Name>
+                    <Value>17</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>ResponseGenerated</Message>
+                    <Name>SERVICE_OPCODE_REFERRAL_RESPONSE_GENERATED</Name>
+                    <Value>18</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>ResponsePosted</Message>
+                    <Name>SERVICE_OPCODE_REFERRAL_RESPONSE_POSTED</Name>
+                    <Value>19</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>AddArrived</Message>
+                    <Name>SERVICE_OPCODE_NETR_DFS_ADD_ARRIVED</Name>
+                    <Value>20</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>AddEnteredCriticalSection</Message>
+                    <Name>SERVICE_OPCODE_NETR_DFS_ADD_ENTERED_CS</Name>
+                    <Value>21</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>RemoveArrived</Message>
+                    <Name>SERVICE_OPCODE_NETR_DFS_REMOVE_ARRIVED</Name>
+                    <Value>22</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>RemoveEnteredCriticalSection</Message>
+                    <Name>SERVICE_OPCODE_NETR_DFS_REMOVE_ENTERED_CS</Name>
+                    <Value>23</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>SetInfoArrived</Message>
+                    <Name>SERVICE_OPCODE_NETR_DFS_SETINFO_ARRIVED</Name>
+                    <Value>24</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>SetInfoEnteredCriticalSection</Message>
+                    <Name>SERVICE_OPCODE_NETR_DFS_SETINFO_ENTERED_CS</Name>
+                    <Value>25</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>GetInfoArrived</Message>
+                    <Name>SERVICE_OPCODE_NETR_DFS_GETINFO_ARRIVED</Name>
+                    <Value>26</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>GetInfoEnteredCriticalSection</Message>
+                    <Name>SERVICE_OPCODE_NETR_DFS_GETINFO_ENTERED_CS</Name>
+                    <Value>27</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>EnumArrived</Message>
+                    <Name>SERVICE_OPCODE_NETR_DFS_ENUM_ARRIVED</Name>
+                    <Value>28</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>EnumEnteredCriticalSection</Message>
+                    <Name>SERVICE_OPCODE_NETR_DFS_ENUM_ENTERED_CS</Name>
+                    <Value>29</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>MoveArrived</Message>
+                    <Name>SERVICE_OPCODE_NETR_DFS_MOVE_ARRIVED</Name>
+                    <Value>30</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>MoveEnteredCriticalSection</Message>
+                    <Name>SERVICE_OPCODE_NETR_DFS_MOVE_ENTERED_CS</Name>
+                    <Value>31</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>AddFtRootArrived</Message>
+                    <Name>SERVICE_OPCODE_NETR_DFS_ADDFTROOT_ARRIVED</Name>
+                    <Value>32</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>AddFtRootEnteredCriticalSection</Message>
+                    <Name>SERVICE_OPCODE_NETR_DFS_ADDFTROOT_ENTERED_CS</Name>
+                    <Value>33</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>RemoveFtRootArrived</Message>
+                    <Name>SERVICE_OPCODE_NETR_DFS_REMOVEFTROOT_ARRIVED</Name>
+                    <Value>34</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>RemoveFtRootEnteredCriticalSection</Message>
+                    <Name>SERVICE_OPCODE_NETR_DFS_REMOVEFTROOT_ENTERED_CS</Name>
+                    <Value>35</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>AddStdRootArrived</Message>
+                    <Name>SERVICE_OPCODE_NETR_DFS_ADDSTDROOT_ARRIVED</Name>
+                    <Value>36</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>AddStdRootEnteredCriticalSection</Message>
+                    <Name>SERVICE_OPCODE_NETR_DFS_ADDSTDROOT_ENTERED_CS</Name>
+                    <Value>37</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>RemoveStdRootArrived</Message>
+                    <Name>SERVICE_OPCODE_NETR_DFS_REMOVESTDROOT_ARRIVED</Name>
+                    <Value>38</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>RemoveStdRootEnteredCriticalSection</Message>
+                    <Name>SERVICE_OPCODE_NETR_DFS_REMOVESTDROOT_ENTERED_CS</Name>
+                    <Value>39</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>ApiLeftCS</Message>
+                    <Name>SERVICE_OPCODE_NETR_DFS_API_LEFT_CS</Name>
+                    <Value>40</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>LockAcquiredDomainInfo</Message>
+                    <Name>SERVICE_OPCODE_LOCK_ACQUIRED_DOMAININFO</Name>
+                    <Value>100</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>LookupRootFolderDone</Message>
+                    <Name>SERVICE_OPCODE_LOOKUP_ROOTFOLDER_DONE</Name>
+                    <Value>110</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>LookupLinkFolderDone</Message>
+                    <Name>SERVICE_OPCODE_LOOKUP_LINKFOLDER_DONE</Name>
+                    <Value>120</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Referral</Message>
+                    <Name>SERVICE_KEYWORD_REFERRAL</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>NetDfsAPI</Message>
+                    <Name>SERVICE_KEYWORD_NET_DFS_API</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>LOCK</Message>
+                    <Name>SERVICE_KEYWORD_LOCK</Name>
+                    <Value>4</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Lookup</Message>
+                    <Name>SERVICE_KEYWORD_LOOKUP</Name>
+                    <Value>8</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DFSN-ServerService/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Referral</Task>
+                <Opcode>RequestReceived</Opcode>
+                <Keyword>Referral</Keyword>
+                <Message><![CDATA[
+A referral request has been received.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestBuffer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="RequestBufferLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DFSN-ServerService/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Referral</Task>
+                <Opcode>DcRequestProcessed</Opcode>
+                <Keyword>Referral</Keyword>
+                <Message><![CDATA[
+A DC referral request has been processed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DFSN-ServerService/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Referral</Task>
+                <Opcode>RootRequestProcessed</Opcode>
+                <Keyword>Referral</Keyword>
+                <Message><![CDATA[
+A root referral request has been processed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DFSN-ServerService/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Referral</Task>
+                <Opcode>NormalRequestProcessed</Opcode>
+                <Keyword>Referral</Keyword>
+                <Message><![CDATA[
+A normal referral request has been processed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DFSN-ServerService/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Referral</Task>
+                <Opcode>ResponseGenerated</Opcode>
+                <Keyword>Referral</Keyword>
+                <Message><![CDATA[
+A referral response has been generated.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Request" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Response" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ResponseLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DFSN-ServerService/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Referral</Task>
+                <Opcode>ResponsePosted</Opcode>
+                <Keyword>Referral</Keyword>
+                <Message><![CDATA[
+A referral response has been posted.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Response" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DFSN-ServerService/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>NetrDfs</Task>
+                <Opcode>AddArrived</Opcode>
+                <Keyword>NetDfsAPI</Keyword>
+                <Message><![CDATA[
+NetrDfsAdd arrived.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DFSN-ServerService/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>NetrDfs</Task>
+                <Opcode>AddEnteredCriticalSection</Opcode>
+                <Keyword>NetDfsAPI</Keyword>
+                <Message><![CDATA[
+NetrDfsAdd entered CriticalSection.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DFSN-ServerService/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>NetrDfs</Task>
+                <Opcode>RemoveArrived</Opcode>
+                <Keyword>NetDfsAPI</Keyword>
+                <Message><![CDATA[
+NetrDfsRemove arrived.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>22</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DFSN-ServerService/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>NetrDfs</Task>
+                <Opcode>RemoveEnteredCriticalSection</Opcode>
+                <Keyword>NetDfsAPI</Keyword>
+                <Message><![CDATA[
+NetrDfsRemove entered CriticalSection.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>31</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DFSN-ServerService/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>NetrDfs</Task>
+                <Opcode>SetInfoArrived</Opcode>
+                <Keyword>NetDfsAPI</Keyword>
+                <Message><![CDATA[
+NetrDfsSetInfo arrived.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DFSN-ServerService/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>NetrDfs</Task>
+                <Opcode>SetInfoEnteredCriticalSection</Opcode>
+                <Keyword>NetDfsAPI</Keyword>
+                <Message><![CDATA[
+NetrDfsSetInfo entered CriticalSection.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>41</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DFSN-ServerService/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>NetrDfs</Task>
+                <Opcode>GetInfoArrived</Opcode>
+                <Keyword>NetDfsAPI</Keyword>
+                <Message><![CDATA[
+NetrDfsGetInfo arrived.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>42</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DFSN-ServerService/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>NetrDfs</Task>
+                <Opcode>GetInfoEnteredCriticalSection</Opcode>
+                <Keyword>NetDfsAPI</Keyword>
+                <Message><![CDATA[
+NetrDfsGetInfo entered CriticalSection.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DFSN-ServerService/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>NetrDfs</Task>
+                <Opcode>EnumArrived</Opcode>
+                <Keyword>NetDfsAPI</Keyword>
+                <Message><![CDATA[
+NetrDfsEnum arrived.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>52</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DFSN-ServerService/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>NetrDfs</Task>
+                <Opcode>EnumEnteredCriticalSection</Opcode>
+                <Keyword>NetDfsAPI</Keyword>
+                <Message><![CDATA[
+NetrDfsEnum entered CriticalSection.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>61</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DFSN-ServerService/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>NetrDfs</Task>
+                <Opcode>MoveArrived</Opcode>
+                <Keyword>NetDfsAPI</Keyword>
+                <Message><![CDATA[
+NetrDfsMove arrived.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>62</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DFSN-ServerService/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>NetrDfs</Task>
+                <Opcode>MoveEnteredCriticalSection</Opcode>
+                <Keyword>NetDfsAPI</Keyword>
+                <Message><![CDATA[
+NetrDfsMove entered CriticalSection.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>71</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DFSN-ServerService/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>NetrDfs</Task>
+                <Opcode>AddFtRootArrived</Opcode>
+                <Keyword>NetDfsAPI</Keyword>
+                <Message><![CDATA[
+NetrDfsAddFtRoot arrived.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>72</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DFSN-ServerService/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>NetrDfs</Task>
+                <Opcode>AddFtRootEnteredCriticalSection</Opcode>
+                <Keyword>NetDfsAPI</Keyword>
+                <Message><![CDATA[
+NetrDfsAddFtRoot entered CriticalSection.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>81</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DFSN-ServerService/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>NetrDfs</Task>
+                <Opcode>RemoveFtRootArrived</Opcode>
+                <Keyword>NetDfsAPI</Keyword>
+                <Message><![CDATA[
+NetrDfsRemoveFtRoot arrived.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>82</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DFSN-ServerService/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>NetrDfs</Task>
+                <Opcode>RemoveFtRootEnteredCriticalSection</Opcode>
+                <Keyword>NetDfsAPI</Keyword>
+                <Message><![CDATA[
+NetrRemoveFtRoot entered CriticalSection.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>91</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DFSN-ServerService/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>NetrDfs</Task>
+                <Opcode>AddStdRootArrived</Opcode>
+                <Keyword>NetDfsAPI</Keyword>
+                <Message><![CDATA[
+NetrDfsAddStdRoot arrived.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>92</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DFSN-ServerService/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>NetrDfs</Task>
+                <Opcode>AddStdRootEnteredCriticalSection</Opcode>
+                <Keyword>NetDfsAPI</Keyword>
+                <Message><![CDATA[
+NetrAddStdRoot entered CriticalSection.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DFSN-ServerService/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>NetrDfs</Task>
+                <Opcode>RemoveStdRootArrived</Opcode>
+                <Keyword>NetDfsAPI</Keyword>
+                <Message><![CDATA[
+NetrDfsRemoveStdRoot arrived.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DFSN-ServerService/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>NetrDfs</Task>
+                <Opcode>RemoveStdRootEnteredCriticalSection</Opcode>
+                <Keyword>NetDfsAPI</Keyword>
+                <Message><![CDATA[
+NetrRemoveStdRoot entered CriticalSection.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>111</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DFSN-ServerService/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>NetrDfs</Task>
+                <Opcode>ApiLeftCS</Opcode>
+                <Keyword>NetDfsAPI</Keyword>
+                <Message><![CDATA[
+NetrDfsApi left CriticalSection.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>112</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DFSN-ServerService/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Lock</Task>
+                <Opcode>LockAcquiredDomainInfo</Opcode>
+                <Keyword>LOCK</Keyword>
+                <Message><![CDATA[
+LockAcquiredDomainInfo.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>121</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DFSN-ServerService/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Lookup</Task>
+                <Opcode>LookupRootFolderDone</Opcode>
+                <Keyword>Lookup</Keyword>
+                <Message><![CDATA[
+LookupRootFolderDone.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>131</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DFSN-ServerService/Analytic</Channel>
+                <Level>Information</Level>
+                <Task>Lookup</Task>
+                <Opcode>LookupLinkFolderDone</Opcode>
+                <Keyword>Lookup</Keyword>
+                <Message><![CDATA[
+LookupLinkFolderDone.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,843 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Deployment-Services-Diagnostics</Name>
+        <Metadata>
+            <Guid>{22B7D623-566B-47B6-9BA0-BC9DA3C9D646}</Guid>
+            <ResourceFilePath>C:\Windows\system32\WdsDiag.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\WdsDiag.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=WdsDiag.dll&amp;FileVer=6.1.7600.16385</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Deployment-Services-Diagnostics</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-Deployment-Services-Diagnostics/Operational</Message>
+                    <Path>Microsoft-Windows-Deployment-Services-Diagnostics/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-Deployment-Services-Diagnostics/Admin</Message>
+                    <Path>Microsoft-Windows-Deployment-Services-Diagnostics/Admin</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>4096</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Deployment-Services-Diagnostics/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The Following Client PXE Booted: 
+
+MAC: %1
+IP: %2
+Guid: %3
+Arch: %4
+Prestaged: %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ClientMAC" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientIP" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ClientArch" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ClientPrestaged" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4099</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Deployment-Services-Diagnostics/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The Following Client started TFTP Download: 
+
+IP: %1
+Filename: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ClientIP" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4100</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Deployment-Services-Diagnostics/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The Following Client completed TFTP Download: 
+
+IP: %1
+Filename: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ClientIP" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4101</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Deployment-Services-Diagnostics/Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The Following Client failed TFTP Download: 
+
+IP: %1
+Filename: %2
+ErrorCode: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ClientIP" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4102</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Deployment-Services-Diagnostics/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The following WDS Client has started: 
+
+SessionGuid: %1
+MAC: %2
+IP: %3
+ClientGuid: %4
+Arch: %5
+ClientVer: %6
+WinPEVer: %7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SessionGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ClientMAC" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientIP" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ClientArch" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ClientVersion" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="WinPEVersion" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4103</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Deployment-Services-Diagnostics/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The following WDS Client has processed unattend mode: 
+
+SessionGuid: %1
+MAC: %2
+IP: %3
+ClientGuid: %4
+Arch: %5
+UnattendMode: %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SessionGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ClientMAC" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientIP" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ClientArch" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UnattendMode" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4104</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Deployment-Services-Diagnostics/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The following WDS Client has selected Image: 
+
+SessionGuid: %1
+MAC: %2
+IP: %3
+ClientGuid: %4
+Arch: %5
+ImageGroup: %6
+ImageName: %7
+FullUserName: %8]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SessionGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ClientMAC" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientIP" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ClientArch" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ImageGroup" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ImageName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FullUserName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4105</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Deployment-Services-Diagnostics/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The following WDS Client has started Image Transfer: 
+
+SessionGuid: %1
+MAC: %2
+IP: %3
+ClientGuid: %4
+Arch: %5
+ImageGroup: %6
+ImageName: %7
+MulticastNamespace: %8]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SessionGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ClientMAC" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientIP" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ClientArch" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ImageGroup" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ImageName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MulticastNamespace" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4106</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Deployment-Services-Diagnostics/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The following WDS Client has ended Image Transfer: 
+
+SessionGuid: %1
+MAC: %2
+IP: %3
+ClientGuid: %4
+Arch: %5
+ImageGroup: %6
+ImageName: %7
+MulticastNamespace: %8]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SessionGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ClientMAC" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientIP" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ClientArch" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ImageGroup" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ImageName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MulticastNamespace" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4107</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Deployment-Services-Diagnostics/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The following WDS Client has downgraded Image Transfer: 
+
+SessionGuid: %1
+MAC: %2
+IP: %3
+ClientGuid: %4
+Arch: %5
+ImageGroup: %6
+ImageName: %7
+MulticastNamespace: %8]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SessionGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ClientMAC" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientIP" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ClientArch" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ImageGroup" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ImageName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MulticastNamespace" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4108</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Deployment-Services-Diagnostics/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The following WDS Client has started Image Apply: 
+
+SessionGuid: %1
+MAC: %2
+IP: %3
+ClientGuid: %4
+Arch: %5
+ImageGroup: %6
+ImageName: %7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SessionGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ClientMAC" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientIP" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ClientArch" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ImageGroup" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ImageName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4109</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Deployment-Services-Diagnostics/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The following WDS Client has ended Image Apply: 
+
+SessionGuid: %1
+MAC: %2
+IP: %3
+ClientGuid: %4
+Arch: %5
+
+ImageGroup: %6
+ImageName: %7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SessionGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ClientMAC" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientIP" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ClientArch" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ImageGroup" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ImageName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4110</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Deployment-Services-Diagnostics/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The following WDS Client has started Post Apply Actions: 
+
+SessionGuid: %1
+MAC: %2
+IP: %3
+ClientGuid: %4
+Arch: %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SessionGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ClientMAC" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientIP" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ClientArch" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4111</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Deployment-Services-Diagnostics/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The following WDS Client has ended Post Apply Actions: 
+
+SessionGuid: %1
+MAC: %2
+IP: %3
+ClientGuid: %4
+Arch: %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SessionGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ClientMAC" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientIP" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ClientArch" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4112</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Deployment-Services-Diagnostics/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The following WDS Client has ended: 
+
+SessionGuid: %1
+MAC: %2
+IP: %3
+ClientGuid: %4
+Arch: %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SessionGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ClientMAC" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientIP" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ClientArch" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4113</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Deployment-Services-Diagnostics/Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The following WDS Client has encountered Domain Join Error: 
+
+SessionGuid: %1
+MAC: %2
+IP: %3
+ClientGuid: %4
+Arch: %5
+MachineName: %6
+MachineOU: %7
+ErrorCode: %8]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SessionGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ClientMAC" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientIP" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ClientArch" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MachineName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MachineOU" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4114</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Deployment-Services-Diagnostics/Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The following WDS Client has encountered Fatal Error: 
+
+SessionGuid: %1
+MAC: %2
+IP: %3
+ClientGuid: %4
+Arch: %5
+ErrorMessage: %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SessionGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ClientMAC" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientIP" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ClientArch" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4115</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Deployment-Services-Diagnostics/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The following WDS Client has this message: 
+
+SessionGuid: %1
+MAC: %2
+IP: %3
+ClientGuid: %4
+Arch: %5
+Message: %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SessionGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ClientMAC" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientIP" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ClientArch" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4116</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Deployment-Services-Diagnostics/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Namespace Registered: 
+
+NamespaceName: %1
+ContentProvider: %2
+NamespaceType: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NamespaceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ContenProvider" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MulticastType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4117</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Deployment-Services-Diagnostics/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Namespace Unregistered: 
+
+NamespaceName: %1
+ContentProvider: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NamespaceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ContenProvider" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4118</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Deployment-Services-Diagnostics/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Multicast Session Started: 
+
+NamespaceName: %1
+ObjectName: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NamespaceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ObjectName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4119</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Deployment-Services-Diagnostics/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Multicast Session Ended: 
+
+NamespaceName: %1
+ObjectName: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NamespaceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ObjectName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4120</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Deployment-Services-Diagnostics/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Client joined Multicast Session: 
+
+ClientMAC: %1
+ClientIP: %2
+NamespaceName: %3
+ObjectName: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ClientMAC" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientIP" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NamespaceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ObjectName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4121</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Deployment-Services-Diagnostics/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Client exited Multicast Session: 
+
+ClientMAC: %1
+ClientIP: %2
+NamespaceName: %3
+ObjectName: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ClientMAC" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientIP" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NamespaceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ObjectName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4122</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Deployment-Services-Diagnostics/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Client forced out of Multicast Session: 
+
+ClientMAC: %1
+ClientIP: %2
+NamespaceName: %3
+ObjectName: %4
+Reason: %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ClientMAC" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientIP" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NamespaceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ObjectName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4123</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Deployment-Services-Diagnostics/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The following WDS Client has encountered an inaccessible driver package: 
+
+SessionGuid: %1
+MAC: %2
+IP: %3
+ClientGuid: %4
+Arch: %5
+DriverPackage: %6
+ErrorCode: %7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SessionGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ClientMAC" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientIP" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ClientArch" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DriverPackageName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4124</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Deployment-Services-Diagnostics/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The following WDS Client has started offline driver injection: 
+
+SessionGuid: %1
+MAC: %2
+IP: %3
+ClientGuid: %4
+Arch: %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SessionGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ClientMAC" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientIP" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ClientArch" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4125</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Deployment-Services-Diagnostics/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The following WDS Client has ended offline driver injection: 
+
+SessionGuid: %1
+MAC: %2
+IP: %3
+ClientGuid: %4
+Arch: %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SessionGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ClientMAC" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientIP" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ClientArch" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4126</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Deployment-Services-Diagnostics/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The following WDS Client has encountered a failure while performing offline driver injection: 
+
+SessionGuid: %1
+MAC: %2
+IP: %3
+ClientGuid: %4
+Arch: %5
+DriverPackage: %6
+ErrorCode: %7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SessionGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ClientMAC" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientIP" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ClientArch" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DriverPackageName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4127</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Deployment-Services-Diagnostics/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Ddp request received for the following client: 
+
+MAC: %1
+IP: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ClientMAC" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientIP" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4128</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Deployment-Services-Diagnostics/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Ddp request failed for the following client: 
+
+MAC: %1
+IP: %2
+ErrorCode: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ClientMAC" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientIP" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4129</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Deployment-Services-Diagnostics/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Ddp request successfully completed for the following client: 
+
+MAC: %1
+IP: %2
+NumDriverPackages: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ClientMAC" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientIP" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NumDriverPackages" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4130</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Deployment-Services-Diagnostics/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Client demoted to slower Multicast Session: 
+
+ClientMAC: %1
+ClientIP: %2
+NamespaceName: %3
+ObjectName: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ClientMAC" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientIP" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NamespaceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ObjectName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4131</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Deployment-Services-Diagnostics/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The following WDS Client has selected Image: 
+
+SessionGuid: %1
+MAC: %2
+IP: %3
+ClientGuid: %4
+Arch: %5
+ImageGroup: %6
+ImageName: %7
+ImageLanguage: %8
+FullUserName: %9]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SessionGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ClientMAC" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientIP" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ClientArch" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ImageGroup" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ImageName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ImageLanguage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FullUserName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,310 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-CertificationAuthority-EnterprisePolicy</Name>
+        <Metadata>
+            <Guid>{A7FB5B34-C0A5-4247-A1F6-300E40ECE26B}</Guid>
+            <ResourceFilePath>C:\Windows\system32\certpdef.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\certpdef.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=certpdef.dll&amp;FileVer=6.1.7600.16385</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Application</Path>
+                    <Index>4294967295</Index>
+                    <Id>9</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Classic</Message>
+                    <Name>win:EventlogClassic</Name>
+                    <Value>36028797018963968</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>3260743684</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services could not find required Active Directory information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2187001861</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Active Directory Certificate Services Policy contains no valid Certificate Templates.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2187067399</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Enrollee (%1) has no DNS name registered in the Active Directory. The certificate cannot be generated.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EnrolleeName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2187067400</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Enrollee (%1) has no E-Mail name registered in the Active Directory.  The E-Mail name will not be included in the certificate.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EnrolleeName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260809225</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Enrollee was not able to successfully authenticate to the Certificate Service.  Please check your security settings.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260809226</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The request was for a certificate template that is not supported by the Active Directory Certificate Services policy: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CertificateTemplateName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260809227</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The request does not contain a certificate template extension or the %1 request attribute.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestAttributeName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260743692</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Active Directory containing the Certification Authority could not be contacted.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2187067405</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The %1 Certificate Template could not be loaded.  %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CertificateTemplateName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260809230</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The request specifies conflicting certificate templates: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TemplateNames" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260809231</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Active Directory connection to %1 has been reestablished to %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="OldDSHostName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NewDSHostName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1113325584</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The %1 Certificate Template was loaded.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CertificateTemplateName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1113325585</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The %1 Certificate Template requires %2 signatures, but only %3 were accepted.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CertificateTemplateName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequiredSignatureCount" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AccepedSignatureCount" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260809234</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The %1 Certificate Template requires the following issuance policies that signing certificates did not include: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CertificateTemplateName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MissingIssuancePolicyOIDsInSigningCertificate" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2187067411</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The certificate validity period will be shorter than the %1 Certificate Template specifies, because the template validity period is longer than the maximum certificate validity period allowed by the CA.  Consider renewing the CA certificate, reducing the template validity period, or increasing the registry validity period.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CertificateTemplateName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260809236</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Renewing a certificate with the %1 Certificate Template failed because the renewal overlap period is longer than the certificate validity period.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CertificateTemplateName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260743701</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Initialization failure loading information from the Active Directory containing the Certification Authority.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260809238</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The requester's Active Directory object is not in the current forest.  Cross forest enrollment is not enabled.  %1  %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequesterName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260809239</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The requester's Active Directory object could not be retrieved.  %1  %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequesterName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260809240</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services could not connect to the global catalog server.  %1  %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequesterName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260743705</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The requested validity period is invalid. Confirm that the validity period or expiration date and time specified in the request does not extend beyond the validity period of the CA certificate, the certificate template, and the CA. The validity period of the CA can be verified by running the following commands: certutil -getreg ca\validityPeriod & certutil -getreg ca\ValdityPeriodUnits.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2187001882</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services detected that LDAP referrals are enabled. The current license of Windows does not allow LDAP referrals for Active Directory Certificate Services and this setting will be ignored. To disable LDAP referrals, open a command prompt window, type: certutil -setreg policy\EditFlags -EDITF_ENABLELDAPREFERRALS and press Enter and restart the CA.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1113260059</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services is configured to use LDAP referrals to request user data from the Active Directory directory service.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260809244</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An invalid OID has been detected in the EKUOIDsForVolatileRequests configuration setting. To resolve, run: "certutil -getreg policy\EKUOIDsForVolatileRequests" to identify the invalid OID and correct it.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260743709</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The key archival request specified that it should not be persisted in the database. Key Archival requests must always be persisted.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
