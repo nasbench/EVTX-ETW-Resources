@@ -1,0 +1,334 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Bits-CompactServer</Name>
+        <Metadata>
+            <Guid>{C07ED46C-F60B-479A-8DF9-AC892A6CFC70}</Guid>
+            <ResourceFilePath>C:\Windows\system32\lightweightserver.dll</ResourceFilePath>
+            <ParameterFilePath>C:\Windows\system32\lightweightserver.dll</ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\lightweightserver.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=lightweightserver.dll&amp;FileVer=6.1.7600.16385</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Bits-CompactServer</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>0</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-Bits-CompactServer/Operational</Message>
+                    <Path>Microsoft-Windows-Bits-CompactServer/Operational</Path>
+                    <Index>1</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-Bits-CompactServer/Analytic</Message>
+                    <Path>Microsoft-Windows-Bits-CompactServer/Analytic</Path>
+                    <Index>2</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-CompactServer/Operational</Channel>
+                <Level>Information</Level>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+BITS Compact Server successfully created the following URL group: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hr" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-CompactServer/Operational</Channel>
+                <Level>Error</Level>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+BITS Compact Server encountered error %2 when it tried to create the following URL group:%1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hr" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-CompactServer/Operational</Channel>
+                <Level>Information</Level>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+BITS Compact Server successfully deleted the following URL group: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hr" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-CompactServer/Operational</Channel>
+                <Level>Error</Level>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+BITS Compact Server encountered error %2 when it tried to delete the following URL group: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hr" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-CompactServer/Operational</Channel>
+                <Level>Information</Level>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+BITS Compact Server successfully added the %2 URL, which points to the %3 file.
+This URL is in the following URL group: %1.
+The permissions on the URL are set to %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="urlgroup" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="suffix" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="filepath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="sddl" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hr" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>31</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-CompactServer/Operational</Channel>
+                <Level>Error</Level>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+BITS Compact Server encountered error %5 when it tried to add the %2 URL to the following URL group: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="urlgroup" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="suffix" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="filepath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="sddl" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hr" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-CompactServer/Operational</Channel>
+                <Level>Information</Level>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+BITS Compact Server successfully deleted the following URL from the %1 URL group: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="urlgroup" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="suffix" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="filepath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="sddl" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hr" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>33</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-CompactServer/Operational</Channel>
+                <Level>Error</Level>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+BITS Compact Server encountered error %5 when it tried to delete the %2 URL from the following URL group: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="urlgroup" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="suffix" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="filepath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="sddl" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hr" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>50</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-CompactServer/Analytic</Channel>
+                <Level>Warning</Level>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+BITS Compact Server cannot process the request for the following URL in the %1 URL group: %2. The request failed in step %3 with the following error: %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="urlgroup" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="urlsuffix" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCause" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hr" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-CompactServer/Analytic</Channel>
+                <Level>Warning</Level>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+BITS Compact Server cannot process the request for the following URL: %1. The request failed with a status of %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="url" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hr" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>60</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-CompactServer/Operational</Channel>
+                <Level>Warning</Level>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Authentication is not enabled for the following URL group: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NegotiateAuthSchemeEnabled" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NtlmAuthSchemeEnabled" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CertificateAuthSchemeEnabled" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="hr" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>61</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-CompactServer/Operational</Channel>
+                <Level>Warning</Level>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+NTLM authentication is enabled for the following URL group: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NegotiateAuthSchemeEnabled" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NtlmAuthSchemeEnabled" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CertificateAuthSchemeEnabled" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="hr" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>62</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-CompactServer/Operational</Channel>
+                <Level>Information</Level>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+Authentication is enabled for the following URL group: %1.
+Negotiate authentication is set to %2. 
+NTLM authentication is set to %3. 
+The certificate authentication flag is set to %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NegotiateAuthSchemeEnabled" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NtlmAuthSchemeEnabled" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CertificateAuthSchemeEnabled" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="hr" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>63</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-CompactServer/Operational</Channel>
+                <Level>Error</Level>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+BITS Compact Server encountered the error %5 when it tried to enable authentication for the following URL group: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NegotiateAuthSchemeEnabled" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NtlmAuthSchemeEnabled" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CertificateAuthSchemeEnabled" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="hr" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>300</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-CompactServer/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The BITSCompactServer service shut down successfully, but it was delayed for %1 seconds.  This might cause delays when you turn off your computer.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="number" inType="win:Double" outType="xs:double"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>301</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Bits-CompactServer/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The BITSCompactServer service has detected an exception. Error code: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hr" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

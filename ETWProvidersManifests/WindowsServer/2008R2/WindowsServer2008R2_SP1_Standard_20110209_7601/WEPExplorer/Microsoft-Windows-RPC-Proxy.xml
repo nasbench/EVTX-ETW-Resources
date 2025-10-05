@@ -1,0 +1,115 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-RPC-Proxy</Name>
+        <Metadata>
+            <Guid>{879B2576-39D1-4C0F-80A4-CC086E02548C}</Guid>
+            <ResourceFilePath>C:\Windows\system32\rpcproxy\rpcproxy.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\rpcproxy\rpcproxy.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=rpcproxy.dll&amp;FileVer=6.1.7600.16385</HelpLink>
+            <PublisherMessage>Microsoft-Windows-RPC-Proxy</PublisherMessage>
+            <Channels>
+            </Channels>
+            <Levels>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>RpcProxy startup</Message>
+                    <Name>RPCPROXY_EVENTLOG_STARTUP_CATEGORY</Name>
+                    <Value>1</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Classic</Message>
+                    <Name>win:EventlogClassic</Name>
+                    <Value>36028797018963968</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>3221225474</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The following ValidPorts registry key could not be parsed: %1. The RPC Proxy cannot load. The ValidPorts registry key might have been configured incorrectly.  User Action Verify that the ValidPorts registry value is set correctly. If the value is not correct, edit the registry key to reflect the correct value.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073741827</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+RPC Proxy successfully loaded in Internet Information Services (IIS) mode %1.0.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073741828</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+RPC Proxy successfully loaded in Internet Information Services (IIS).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073741829</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+RPC Proxy load balancing module (PID: %1) successfully loaded configuration information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225478</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+RPC Proxy load balancing module (PID: %1) cannot process registry key %2 as a valid UUID.  User Action Verify that the registry key is a correctly formatted UUID. If the value is not correct, edit the registry key to reflect the correct value.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225479</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+RPC Proxy load balancing module (PID: %1) does not recognize configuration type for key %2.  User Action Verify that the registry key has configuration type that RPC Proxy load balancing module can recognize. If the value is not correct, edit the registry key to reflect the correct value.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225480</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+RPC Proxy load balancing module (PID: %1) cannot process configuration entry for resource UUID %2: ServerFarm is %3.  User Action  Verify that the registry key for this resource UUID has correctly formatted ServerFarm string. If the value is not correct, edit the registry key to reflect the correct value.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

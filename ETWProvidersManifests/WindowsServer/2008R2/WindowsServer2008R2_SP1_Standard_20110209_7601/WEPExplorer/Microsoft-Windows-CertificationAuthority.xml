@@ -1,0 +1,1418 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-CertificationAuthority</Name>
+        <Metadata>
+            <Guid>{6A71D062-9AFE-4F35-AD08-52134F85DFB9}</Guid>
+            <ResourceFilePath>C:\Windows\system32\certsrv.exe</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\certsrv.exe</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=certsrv.exe&amp;FileVer=6.1.7600.16385</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Application</Path>
+                    <Index>4294967295</Index>
+                    <Id>9</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Classic</Message>
+                    <Name>win:EventlogClassic</Name>
+                    <Value>36028797018963968</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>2186805251</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Request failed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678149</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services could not find required registry information.  The Active Directory Certificate Services may need to be reinstalled.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1113194502</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services issued a certificate for request %1 for %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SubjectName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936327</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services denied request %1 because %2.  The request was for %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Reason" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SubjectName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1113194504</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services left request %1 pending in the queue for %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SubjectName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678153</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Active Directory Certificate Services did not start: Unable to load an external policy module.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678154</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services were unable to build a new certificate or certificate chain: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678159</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services did not start: Version does not match certif.dll.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678160</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services did not start: Unable to initialize OLE: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678161</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services did not start: Unable to initialize the database connection for %1.  %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CACommonName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678163</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services did not start: The Subject Name Template string in the registry value HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\CertSvc\Configuration\%1\SubjectTemplate is invalid.  An example of a valid string is: CommonName OrganizationalUnit Organization Locality State Country]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CACommonName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678164</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services did not start: The Certificate Date Validity Period string in the registry value HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\CertSvc\Configuration\%1\ValidityPeriod is invalid.  Valid strings are "Seconds", "Minutes", "Hours", "Days", "Weeks", "Months" and "Years".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CACommonName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678165</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services could not process request %1 due to an error: %2.  The request was for %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SubjectName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678166</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services could not process request %1 due to an error: %2.  The request was for %3.  Additional information: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SubjectName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AdditionalInformation" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678167</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services could not process request %1 due to an error: %2.  The request was for %3.  The certificate would contain an encoded length that is potentially incompatible with older enrollment software.  Submit a new request using different length input data for the following field: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SubjectName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Field" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1113194521</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services revoked the certificate for request %1 for %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SubjectName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1113194522</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services for %1 was started.%2%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CACommonName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DCSpecifier" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DCName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678171</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services did not start: Hierarchical setup is incomplete.  Use the request file in %1.req to obtain a certificate for this Certificate Server, and use the Certification Authority administration tool to install the new certificate and complete the installation.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestFileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678172</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services did not start: The Certificate Revocation List Period string is invalid in the registry value HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\CertSvc\Configuration\%1\CRLPeriod.  Valid strings are "Seconds", "Minutes", "Hours", "Days", "Weeks", "Months" and "Years".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CACommonName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1113194525</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services issued a new Certificate Revocation List for %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678177</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services did not start: Could not create the Certificate Server service thread for %1.  %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CACommonName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678178</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services did not start: Could not initialize RPC for %1.  %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CACommonName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678179</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services did not start: Could not initialize OLE for %1.  %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CACommonName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1113194534</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services for %1 was stopped.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CACommonName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678183</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services did not start: The Certification Authority DCOM class for %1 could not be registered.  %2.  Use the services administration tool to change the Certification Authority logon context.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CACommonName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678184</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services did not start: Could not initialize DCOM class factories for %1.  %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CACommonName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678185</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services did not start: Could not initialize DCOM Security Context for %1.  %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CACommonName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678186</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Could not build a certificate chain for CA certificate %3 for %1.  %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CACommonName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CACertIdentifier" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678187</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The "%1" Policy Module "%2" method caused an exception at address %4.  The exception code is %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PolicyModuleDescription" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MethodName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ExceptionCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ExceptionAddress" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678188</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The "%1" Policy Module "%2" method returned an error. %5 The returned status code is %3.  %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PolicyModuleDescription" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MethodName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorString" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678189</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The "%1" Exit Module "%2" method caused an exception at address %4.  The exception code is %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ExitModuleDescription" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MethodName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ExceptionCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ExceptionAddress" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678190</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The "%1" Exit Module "%2" method returned an error. %5 The returned status code is %3.  %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ExitModuleDescription" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MethodName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorString" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936368</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Revocation status for a certificate in the chain for CA certificate %3 for %1 could not be verified because a server is currently unavailable.  %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CACommonName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CACertIdentifier" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936369</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A certificate in the chain for CA certificate %3 for %1 could not be verified because no information is available describing how to check the revocation status.  %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CACommonName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CACertIdentifier" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678195</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A certificate in the chain for CA certificate %3 for %1 has been revoked.  %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CACommonName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CACertIdentifier" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1113194548</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services issued a certificate for request %1 for %2.  Additional information: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SubjectName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AdditionalInformation" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936373</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services denied request %1 because %2.  The request was for %3.  Additional information: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Reason" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SubjectName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AdditionalInformation" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1113194550</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services left request %1 pending in the queue for %2.  Additional information: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SubjectName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AdditionalInformation" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1113194551</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services unrevoked the certificate for request %1 for %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SubjectName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1113194552</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services denied request %1.  The request was for %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SubjectName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1113194553</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services denied request %1.  The request was for %2.  Additional information: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SubjectName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AdditionalInformation" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678202</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A certificate in the chain for CA certificate %3 for %1 has expired.  %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CACommonName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CACertIdentifier" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678203</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services did not start: Could not connect to the Active Directory for %1.  %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CACommonName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678204</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services refused to process an extremely long request from %1. This may indicate a denial-of-service attack. If the request was rejected in error, modify the MaxIncomingMessageSize registry parameter via 
+certutil -setreg CA\MaxIncomingMessageSize <bytes>.
+
+Unless verbose logging is enabled, this error will not be logged again for 20 minutes.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SubjectName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936382</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services had problems loading valid CRL publication values and has reset the CRL publication to its default settings.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678207</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services did not start: %1 %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CACommonName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678208</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services cannot publish enrollment access changes to Active Directory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678209</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services could not publish a Base CRL for key %1 to the following location: %2.  %3.%5%6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CAKeyIdentifier" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="URL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorMessageText" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AdditionalErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678210</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services could not publish a Delta CRL for key %1 to the following location: %2.  %3.%5%6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CAKeyIdentifier" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="URL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorMessageText" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AdditionalErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678211</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services made %1 attempts to publish a CRL and will stop publishing attempts until the next CRL is generated.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NumberOfAttempts" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1113194564</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services successfully published Base CRL(s).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1113194565</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services successfully published Delta CRL(s).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1113194566</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services successfully published Base and Delta CRL(s).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1113194567</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services successfully published Base CRL(s) to server %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HostName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1113194568</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services successfully published Delta CRL(s) to server %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HostName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1113194569</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services successfully published Base and Delta CRL(s) to server %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HostName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678218</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services could not publish a Base CRL for key %1 to the following location on server %4: %2.  %3.%5%6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CAKeyIdentifier" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="URL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorMessageText" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HostName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AdditionalErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678219</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services could not publish a Delta CRL for key %1 to the following location on server %4: %2.  %3.%5%6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CAKeyIdentifier" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="URL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorMessageText" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HostName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AdditionalErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1113194572</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The "%1" Policy Module logged the following information: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PolicyModuleDescription" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="InformationMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936397</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The "%1" Policy Module logged the following warning: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PolicyModuleDescription" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="WarningMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678222</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The "%1" Policy Module logged the following error: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PolicyModuleDescription" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936399</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services could not publish a Certificate for request %1 to the following location: %2.  %3.%5%6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DN" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorMessageText" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AdditionalErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936400</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services could not publish a Certificate for request %1 to the following location on server %4: %2.  %3.%5%6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DN" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorMessageText" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HostName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AdditionalErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678225</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services key archival is only supported on Advanced Server.  %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678226</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services could only verify %1 of %2 key recovery certificates required to enable private key archival.  Requests to archive private keys will not be accepted.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NumberOfValidKRACerts" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequiredNumberOfValidKRACerts" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678227</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services encountered an error loading key recovery certificates.  Requests to archive private keys will not be accepted.  %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678228</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services will not use key recovery certificate %1 because it could not be verified for use as a Key Recovery Agent.  %2  %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="KRACertIndex" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="KRACertSubjectName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678229</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services ignored key recovery certificate %1 because it could not be loaded.  %2  %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="KRACertIndex" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="KRACertSubjectName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936406</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services could not use the provider specified in the registry for encryption keys.  %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678231</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services could not use the default provider for encryption keys.  %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936408</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services switched to the default provider for encryption keys. %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DefaultProviderName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678234</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1: Active Directory Certificate Services detected an exception at address %2.  Flags = %3.  The exception is %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ExceptionLocation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ExceptionAddress" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ExceptionFlags" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678235</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Could not connect to the Active Directory.  Active Directory Certificate Services will retry when processing requires Active Directory access.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678236</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services could not update security permissions. %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936413</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The certificate (#%1) of Active Directory Certificate Services %2 does not exist in the certificate store at CN=NTAuthCertificates,CN=Public Key Services,CN=Services in the Active Directory's configuration container.  The directory replication may not be completed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CACertIdentifier" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CACommonName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936414</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services %1 can not open the certificate store at CN=NTAuthCertificates,CN=Public Key Services,CN=Services in the Active Directory's configuration container.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CACommonName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678239</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Security permissions are corrupted or missing.  The Active Directory Certificate Services may need to be reinstalled.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678240</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services could not create an encryption certificate.  %1.  %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Disposition" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936417</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services %1 will reduce the maximum lifetime of the issued certificate for request %2 because the CA certificate lifetime is shorter than the registry validity period.  Consider renewing the CA certificate or reducing the registry validity period.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CACommonName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678242</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services encountered errors validating configured key recovery certificates.  Requests to archive private keys will no longer be accepted.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678243</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services could not create cross certificate %1 to certify its own root certificates.  %2.  %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Disposition" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678244</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services did not start: Could not load or verify the current CA certificate.  %1 %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CACommonName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1113194597</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services created CA cross certificate %2 for %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CACommonName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Version" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678246</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services could not create cross certificate %1 to certify its own root certificates.  The %2 extension is inconsistent.  %3.  %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ExtensionOid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Disposition" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936423</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services added the root certificate of certificate chain %1 to the downloaded Trusted Root Certification Authorities Enterprise store on the CA computer. This store will be updated from the Certification Authorities container in Active Directory the next time Group Policy is applied. To verify that the CA certificate is published correctly in Active Directory, run the following command: certutil -viewstore "%2" (you must include the quotation marks when you run this command). If the root CA certificate is not present, use the Certificates console on the root CA computer to export the certificate to a file, and then run the following command to publish it to Active Directory: Certutil -dspublish %certificatefilename% Root.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CACertIdentifier" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LDAPPath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936424</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services published certificate %1 to %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CACertIdentifier" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DN" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936425</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services deleted invalid certificate %1 from %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CACertIdentifier" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DN" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678250</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services cannot add certificate %1 to %2.  %3.  %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CACertIdentifier" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DN" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DSErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AdditionalErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678251</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services cannot delete invalid certificate %1 from %2.  %3.  %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CACertIdentifier" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DN" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DSErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AdditionalErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936428</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services could not delete a Certificate for request %1 from the following location: %2.  %3.%5%6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DN" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorMessageText" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AdditionalErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936429</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services could not delete a Certificate for request %1 from the following location on server %4: %2.  %3.%5%6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DN" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorMessageText" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HostName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AdditionalErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936430</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services could not initialize the performance counters.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678255</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services upgrade failed because the upgrade path could not be determined. %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678256</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services upgrade failed because information required for the upgrade was unavailable. %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936433</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A portion of the Active Directory Certificate Services upgrade failed: Could not create CertEnroll folder and/or shared folder with proper permissions. %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936434</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A portion of the Active Directory Certificate Services upgrade failed: Could not create virtual roots. %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936435</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A portion of the Active Directory Certificate Services upgrade failed: Could not update server registry entries. %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936436</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A portion of the Active Directory Certificate Services upgrade failed: Could not create web configuration file. %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936437</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A portion of the Active Directory Certificate Services upgrade failed: Could not create revocation page. %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936438</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A portion of the Active Directory Certificate Services upgrade failed: Could not upgrade key containers. %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936439</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A portion of the Active Directory Certificate Services upgrade failed: Could not register CertSrv request. %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936440</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A portion of the Active Directory Certificate Services upgrade failed: Could not register CertSrv admin. %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936441</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A portion of the Active Directory Certificate Services upgrade failed: Could not install new templates. %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936442</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A portion of the Active Directory Certificate Services upgrade failed: Could not update service description. %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936443</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A portion of the Active Directory Certificate Services upgrade failed: Could not update security settings. %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1113194620</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services upgrade succeeded. Active Directory Certificate Services settings have been upgraded successfully.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678269</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services upgrade failed. Active Directory Certificate Services settings have not been upgraded. %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678270</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Current information about advanced features supported by this Certification Authority is not available from the domain controller. Stop and restart Certificate Services in order to update this information. %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936447</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Key recovery certificate %1 is about to expire soon and will not be used upon expiration. Contact your adminstrator to renew this certificate.  %2  %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="KRACertIndex" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="KRACertSubjectName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936448</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An Authority Key Identifier was passed as part of the certificate request %1. This feature has not been enabled. To enable specifying a CA key for certificate signing, run: "certutil -setreg ca\UseDefinedCACertInRequest 1" and then restart the service.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936449</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An invalid OID has been detected in the EnabledEKUForDefinedCACert configuration setting. To resolve, run: "certutil -getreg ca\EnabledEKUForDefinedCACert" to identify the invalid OID and correct it. The default OID ("1.3.6.1.5.5.7.3.9") will be used.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678274</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Active Directory Certificate Services could not create a certificate revocation list. %1.  This may cause applications that need to check the revocation status of certificates issued by this CA to fail. You can recreate the certificate revocation list manually by running the following command: "certutil -CRL". If the problem persists, restart Certificate Services.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorMessageText" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2186936451</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An invalid OID has been detected in the EKUOIDsForPublishExpiredCertInCRL configuration setting. To resolve, run: "certutil -getreg ca\EKUOIDsForPublishExpiredCertInCRL" to identify the invalid OID and correct it. The default OIDs ("1.3.6.1.5.5.7.3.3" and "1.3.6.1.4.1.311.61.1.1") will be used.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678276</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The certification authority (CA) was unable to perform a decryption operation.  This error can occur when an advanced encryption algorithm such as Advanced Encryption Standard (AES) is used and the CA has not been configured to use a CryptoAPI Next Generation (CNG) key storage provider. If this error occurred during certificate enrollment, check the certificate template to ensure that advanced encryption for key archival is not enabled.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3260678277</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The certification authority (CA) failed to encode a server extension required to validate a certificate or certification revocation list (CRL). The CA will not issue any certificates or CRLs that do not contain this extension. To correct this problem, use the Certification Authority snap-in to remove any Unicode characters in the URLs for the AIA, CDP, and IDP extensions, then restart the CA.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,449 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-FTPSVC</Name>
+        <Metadata>
+            <Guid>{DE0D3420-9914-43DB-8917-7E0C98465891}</Guid>
+            <ResourceFilePath>C:\Windows\system32\inetsrv\ftpres.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\inetsrv\ftpres.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=FTP%20Service%207.5%20for%20IIS%207.0&amp;ProdVer=7.5.7600.14294&amp;FileName=ftpres.dll&amp;FileVer=7.5.7600.14294</HelpLink>
+            <PublisherMessage>Microsoft-Windows-FTPSVC</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>System</Path>
+                    <Index>4294967295</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Classic</Message>
+                    <Name>win:EventlogClassic</Name>
+                    <Value>36028797018963968</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>2147483649</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The server did not create a data channel connection to a client on local interface: %1. The FTP data port %2 may be in use by another service or application.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LocalNetworkInterface" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FTPDataPort" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225474</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The FTP Service configuration for the passive port range is invalid. The range is set to: %1-%2. A subset of 1025-65535 range or 0-0 is expected. Check the 'lowDataChannelPort' and 'highDataChannelPort' attributes under the 'system.ftpServer\firewallSupport' section in configuration file '%3' around line '%4'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LowPort" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HighPort" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ConfigFile" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SitesSectionLineNumber" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483651</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The server certificate for instance '%1' has expired or is not yet valid.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Instance" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483652</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The server certificate for instance '%1' has been revoked.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Instance" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483653</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The server certificate chain does not include a trusted root certificate.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Instance" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483654</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A certificate in the server certificate chain has an invalid signature.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Instance" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483655</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The FTP Service did not retrieve the server certificate for instance '%1' because the certificate could not be found in a certificate store. The error is '%2'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Instance" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483656</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The FTP Service did not create logging directory '%3'. No logs will be generated until this condition is corrected. The problem occurred at least %1 times in the last %2 minutes. The data field contains the error number.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Occurence" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Interval" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Directory" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483657</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Virtual site '%1' is configured to truncate its log every '%2' bytes. Since this value must be at least 1048576 bytes ( 1 megabyte ), 1048576 bytes will be used.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SiteID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LogFileTruncateBytes" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483658</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The '%1' '%2' failed range validation for property '%3'.  The configured value '%4' is outside of the range '%5' to '%6'.  The value will default to '%7'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Property" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RangeLow" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RangeHigh" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DefaultValue" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483659</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The virtual site '%3' is invalid because the site binding '%4' could not be configured. The problem occurred at least %1 times in the last %2 minutes. The data field contains the error number.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Occurence" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Interval" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Site" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Binding" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483660</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The FTP Service did not create or write to the log file '%3'. The problem occurred at least %1 times in the last %2 minutes. The data field contains the error number.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Occurence" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Interval" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="File" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483661</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The virtual site '%3' is invalid because the site binding '%4' is already being used by another virtual site. The problem occurred at least %1 times in the last %2 minutes. The data field contains the error number.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Occurence" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Interval" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Site" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Binding" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225495</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The FTP Service received a change notification, but was unable to process it correctly.  The data field contains the error number.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483672</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Centralized logging is configured to truncate its log every '%1' bytes. Since this value must be at least 1048576 bytes ( 1 megabyte ), 1048576 bytes will be used.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Bytes" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225497</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The FTP Service encountered an error attempting to configure centralized logging. It is not configured as expected. The data field contains the error number.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483674</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The FTP Service property '%1' failed range validation. The configured value, '%2' is outside of the range '%3' to '%4'. The default value, '%5', will be used.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Property" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RangeLow" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RangeHigh" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DefaultValue" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225499</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+FTP Service  did not create site %1. The data field contains the error number.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SiteID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225500</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The FTP Publishing Service did not delete site '%1'.  The data field contains the error number.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SiteID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225501</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The FTP Service did not modify site '%1'.  The data field contains the error number.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SiteID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225502</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The FTP Service encountered an error trying to read configuration data from file %3, line number %4. The error message is: %5. The problem occurred at least %1 times in the last %2 minutes. The data field contains the error number.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Occurence" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Interval" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="File" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225503</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The FTP Service encountered an error trying to read configuration data for config section '%1' from file '%2', line number '%3'.  The error message is: '%4'.  The data field contains the error number.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ConfigSection" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="File" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225504</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The '%1' '%2' has an invalid value for property '%3'.  The configured value '%4' is invalid.  The value will default to '%5'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Property" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DefaultValue" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225505</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The config node '%1' has an invalid value for property '%2'.  The configured value '%3' is invalid.  The value will default to '%4'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ConfigNode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Property" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DefaultValue" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225506</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The config node '%1' has an invalid value for property '%2'.  The configured value '%3' is invalid.  The value will default to '%4'.  Valid values are: '%5'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ConfigNode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Property" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DefaultValue" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ValidValues" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483683</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The FTP Service did not configure logging for site %1. The data field contains the error number.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SiteID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225508</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The COM Application '%1' at '%2' did not activate out of process.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ComPlusApplication" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483685</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ETW Tracing support did not intialize. Execution of IIS will continue although ETW Tracing support (or parts of it) will not be available. The data field contains the error number.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225510</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The FTP service requires that the Configuration APIs from the Windows Process Activation Service feature be installed on this server. Open Server Manager and install the Windows Process Activation Service feature.The data field contains the error number.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225511</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Configuration APIs required by FTP Service did not intialize. The data field contains the error number.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,2785 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-DNS-Server-Service</Name>
+        <Metadata>
+            <Guid>{71A551F5-C893-4849-886B-B5EC8502641E}</Guid>
+            <ResourceFilePath>C:\Windows\system32\dns.exe</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\dns.exe</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=dns.exe&amp;FileVer=6.1.7600.16385</HelpLink>
+            <PublisherMessage>Microsoft-Windows-DNS-Server-Service</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>DNS Server</Path>
+                    <Index>4294967295</Index>
+                    <Id>16</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Classic</Message>
+                    <Name>win:EventlogClassic</Name>
+                    <Value>36028797018963968</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1073741826</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server has started.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073741827</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server has shut down.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073741828</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server has finished the background loading of zones. All zones are now available for DNS updates and zone transfers, as allowed by their individual zone configuration.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225482</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server could not start because it is dependent on the NTDS service which is not started.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225583</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server could not create a thread.  System may be out of resources. You might close applications not in use, restart the DNS server or reboot your computer.  The event data is the error code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225603</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server failed to initialize NetBIOS lookups to support WINSR for reverse lookup zones.  The server will continue to run but will not attempt to perform WINS reverse lookups.  This may be due to an incorrect configuration.  If WINSR lookups are not required, remove WINSR records from zone data files and reload modified zones or restart the DNS server.  If the DNS server should support WINSR reverse lookup, restart the server computer and verify that the WINS/NetBT configuration for TCP/IP client properties on the computer are correctly set.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225612</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server could not initialize the remote procedure call (RPC) service. If it is not running, start the RPC service or reboot the computer. The event data is the error code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225622</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server could not load or initialize the plug-in DLL %1. The event data is the error code returned by the plug-in DLL load or initialization attempt. Please correct the plug-in error that is causing this condition or remove the plug-in from the DNS server configuration.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225875</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server could not create a Transmission Control Protocol (TCP) socket. Restart the DNS server or reboot the computer. The event data is the error code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225876</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server could not bind a Transmission Control Protocol (TCP) socket to address %1.  The event data is the error code.  An IP address of 0.0.0.0 can indicate a valid "any address" configuration in which all configured IP addresses on the computer are available for use. 
+Restart the DNS server or reboot the computer.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225877</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server could not listen on Transmission Control Protocol (TCP) socket for address %1. The event data is the error code.  An IP address of 0.0.0.0 can indicate a valid "any address" configuration in which all configured IP addresses on the computer are available for use. 
+Restart the DNS server or reboot the computer.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225878</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server could not create a User Datagram Protocol (UDP) socket. The event data is the error code. Restart the DNS server or reboot your computer.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225879</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server could not bind a User Datagram Protocol (UDP) socket to %1. The event data is the error code. Restart the DNS server or reboot your computer.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225880</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server could not open socket for address %1. 
+Verify that this is a valid IP address for the server computer.  If it is NOT valid use the Interfaces dialog under Server Properties in the DNS Manager to remove it from the list of IP interfaces.  Then stop and restart the DNS server. (If this was the only IP interface on this machine and the DNS server may not have started as a result of this error.  In that case remove the DNS\Parameters\ ListenAddress value in the services section of the registry and restart.) 
+ 
+If this is a valid IP address for this machine, make sure that no other application (e.g. another DNS server) is running that would attempt to use the DNS port. 
+ 
+For more information, see "DNS server log reference" in the online Help.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147484057</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server list of restricted interfaces contains IP addresses that are not configured for use at the server computer. 
+ 
+Use the DNS manager server properties, interfaces dialog, to verify and reset the IP addresses the DNS server should listen on.  For more information, see "To restrict a DNS server to listen only on selected addresses" in the online Help.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225882</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server list of restricted interfaces does not contain a valid IP address for the server computer. The DNS server will use all IP interfaces on the machine. 
+ 
+Use the DNS manager server properties, interfaces dialog, to verify and reset the IP addresses the DNS server should listen on.  For more information, see "To restrict a DNS server to listen only on selected addresses" in the online Help.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147484059</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server has bound one or more socket pool sockets to port numbers from port exclusion range %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147484062</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server computer currently does not have a DNS domain name.  Its DNS name is a single-label host name with no domain (for example:  "host" rather than "host.microsoft.com"). 
+ 
+You might have forgotten to configure a primary DNS domain for the server computer. 
+ 
+Because the DNS server has only a single-label name, all zones created will have default records (SOA and NS) created using only this single-label name for the server's host name.  This can lead to incorrect and failed referrals when clients and other DNS servers use these records to locate this server by name. 
+ 
+To correct this problem: 
+  1) Click Start, and then click Control Panel.
+  2) Open System and Maintenance , and then open System. 
+  3) Click Change Settings, and then click Change.  4) Click either Domain or Workgroup, and then type the name of the domain or  workgroup you want the computer to join; the domain or workgroup name will be used as your DNS domain name. 
+  5) When prompted, restart the computer.
+ 
+After the computer restarts, the DNS server will attempt to fix up default records, substituting the new DNS name of this server for the old single-label name.  However, you should review the zone's SOA and NS records to ensure that they now use the correct domain name of this server.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225972</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server has detected that the zone %1 has invalid or corrupted registry data.  To correct the problem, you can delete the applicable zone subkey, located under DNS server parameters in the registry. You can then recreate the zone using the DNS console.  For more information, see "Tuning advanced server parameters" and "Add and Remove Zones" in the online Help.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225973</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server has detected that the zone %1 has a missing or corrupted zone type in registry data.  To correct the problem, you can delete the applicable zone subkey, located under DNS server parameters in the registry.   You can then recreate the zone using the DNS console.  For more information, see "Tuning advanced server parameters" and "Add and Remove Zones" in the online Help.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225974</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server has detected that for the primary zone %1 its has no zone file name stored in registry data.  You can either update the zone file name or delete the zone and recreate it using the DNS console.  To delete the applicable zone from the registry, locate its subkey under DNS server parameters in the registry.  You can then recreate the zone using the DNS console.  For more information, see "To change a zone file name", "Tuning advanced server parameters" and "Add and Remove Zones" in the online Help.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225975</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server has detected that the secondary zone %1 has no master IP addresses in registry data.  Secondary zones require at least one master server to act as a source.  You can add or update the IP address for the master server for this zone using the DNS console.  For more information, see "To update the master server for a secondary zone" in the online Help.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225976</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server could not create zone %1 from registry data.  One or more of the zone registry key values could be corrupted or the zone file is missing. Use the DNS console to replace or repair any corrupted registry key values or confirm that the zone database is available.  For more information, see "Configure zone properties" in the online Help.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225977</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server zone %1 has invalid or corrupted registry data for %2. Use the DNS console to replace or repair any corrupted registry key values or confirm that the zone database is available.  For more information, see the online Help.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225978</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server has invalid or corrupted registry parameter %1.  To correct the problem, you can delete the applicable registry value, located under DNS server parameters in the registry.  You can then recreate it using the DNS console.  For more information, see the online Help.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225979</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server encountered invalid or corrupted forwarder parameters in registry data. 
+ 
+To fix the forwarders: 
+	 - connect to or open this server in DNS Manager 
+	 - bring up server properties 
+	 - open "Forwarders" tab 
+	 - reset forwarders information to desired values 
+	 - click OK 
+ 
+For more information, see the online Help.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147484354</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server does not have a cache or other database entry for root name servers. 
+Either the root hints file, cache.dns, or Active Directory must have at least one name server (NS) resource record, indicating a root DNS server and a corresponding host (A) resource record for that root DNS server.  Otherwise, the DNS server will be unable to contact the root DNS server on startup and will be unable to answer queries for names outside of its own authoritative zones.  To correct this problem, use the DNS console to update the server root hints.  For more information, see the online Help.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226179</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server is not root authoritative and no root hints were specified in the cache.dns file. 
+Where the server is not a root server, this file must specify root hints in the form of at least one name server (NS) resource record, indicating a root DNS server and a corresponding host (A) resource record for that root DNS server.  Otherwise, the DNS server will be unable to contact the root DNS server on startup and will be unable to answer queries for names outside of its own authoritative zones.  To correct this problem, use the DNS console to update the server root hints.  For more information, see the online Help.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073742532</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server did not detect any zones of either primary or secondary type during initialization. It will not be authoritative for any zones, and it will run as a caching-only server until a zone is loaded manually or by Active Directory replication. For more information, see the online Help.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073742533</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server has moved the AD-integrated root hint data for all DNS servers in this domain to the %1 directory partition.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073742534</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An administrator has changed the type and zone storage options of zone %1. The zone is now type %2. The zone will be stored in the zone file %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073742535</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An administrator has changed the type and/or Active Directory location of zone %1. The zone is now type %2. The zone will be stored in Active Directory at %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073742536</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An administrator has changed the zone storage options for zone %1. The zone will now be stored in the zone file %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073742537</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An administrator has moved the zone %1 to a new location in Active Directory. The zone will be stored in Active Directory at %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073742624</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The zone %1 is configured to accept updates but the A record for the primary server in the zone's SOA record is not available on this DNS server. This may indicate a configuration problem. If the address of the primary server for the zone cannot  be resolved DNS clients will be unable to locate a server to accept updates for this zone. This will cause DNS clients to be unable to perform DNS updates.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226472</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server could not open the file %1.  Check that the file exists in the %SystemRoot%\System32\Dns directory and that it contains valid data. The event data is the error code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226473</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server could not map file %1 to memory.  Either close other applications that are not in use or reboot the computer to reclaim additional memory for the server to use.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226475</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server could not find or open the root hints file, Cache.dns, in the %SystemRoot%\System32\Dns directory.  Verify that this file is located in this directory and that it contains at least one name server (NS) resource record, indicating a root DNS server and a corresponding host (A) resource record for that server.  For more information, see the online Help.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226476</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server could not find or open zone file %1.  in the %SystemRoot%\System32\Dns directory.  Verify that the zone file is located in this directory and that it contains valid data.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226480</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server was unable to create the path for file %1 in directory %2. The specified path is too long.  Choose a different path.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226672</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server could not find or open boot file %1.  This file should be called 'Boot' and be located in the %SystemRoot%\System32\Dns directory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226673</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server could not create zone %1 specified in file %2 at line %3.  Check that the zone file is located in the %SystemRoot%\System32\Dns directory and that it contains valid data.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147484850</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server encountered an unsupported 'directory' directive in the server boot file %1 at line %2. 
+All database files must be located in the "%SystemRoot%\system32\dns" directory. The directory directive is ignored.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226675</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server encountered a 'forwarders' directive in with no forwarding addresses in file %1 at line %2.  Although the DNS server will continue running it will not be able to forward unresolved queries to the forwarders.  To correct the problem, in the DNS console select the server in the console tree, then from the Action menu, click Properties and click the Forwarders tab.  Add IP addresses for forwarders.  For more information, see "Using forwarders" in the online Help.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226677</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server encountered an unknown boot option %1 in file %2 at line %3. The option is ignored.  You may want to remove it the option from the boot file which is located in the %SystemRoot%\System32\Dns directory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226678</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DNS server encountered missing database directory name, in file %1, line %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226973</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server could not parse zone file %1 for zone %2.  Check that the zone file is located in the %SystemRoot%\System32\Dns directory and that it contains valid data.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226974</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server could not parse the token "%1" in zone file %2 at line %3. Although the DNS server will continue to load, ignoring this token, it is recommended that you either correct the token or remove this resource record from the zone file.  The zone file is located in the %SystemRoot%\System32\Dns directory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226975</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server could not parse the zone file %1 at line %2.  Although the DNS server continues to load, ignoring this line, it is recommended that you either correct the line or remove it from the zone file.  The zone file is located in the %SystemRoot%\System32\Dns directory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226976</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server could not parse an unexpected token "%1" in zone file %2 at line %3.  Although the DNS server continues to load, ignoring this token, it is recommended that you either correct the token or remove the resource record from the zone file, which is located in the %SystemRoot%\System32\Dns directory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226977</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server unexpected end of line, in zone file %1 at line %2.  To correct the problem, fix this line in the zone file, which is located in the %SystemRoot%\System32\Dns directory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226978</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server encountered invalid token "%1" in zone file %2 at line %3. Although the DNS server continues to load, ignoring this token, it is recommended that you either correct the token or remove this resource record from the zone file.  The zone file is located in the %SystemRoot%\System32\Dns directory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226979</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server encountered invalid class token "%1" in zone file %2 at line %3.  Although the DNS server continues to load, ignoring this resource record (RR), it is recommended that you either correct the class of the RR to use the Internet (IN) class or remove the resource record from the zone file. The DNS server supports only the Internet (IN) class in RRs.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226980</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server is ignoring an invalid resource record in zone file %1 at line %2. 
+See the previously logged event for a description of the error. 
+Although the DNS server continues to load, ignoring this RR, it is recommended that you investigate the error associated with this record and either correct it or remove it from the zone file.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485168</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server encountered the unknown directive '%1' in file %2 at line %3. The directive was ignored.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485169</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server encountered the unsupported directive '%1' in file %2 at line %3. The directive was ignored.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485170</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server encountered the obsolete directive '%1' in file %2 at line %3. The directive was ignored.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485171</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server encountered the directive '%1' in file %2 at line %3. The directive is not yet supported and was ignored.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226996</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DNSSEC signatures with key tag %1, associated with records in  zone %2, have expired.  Name resolution will fail for resolvers that require validation until new signatures are created.  To create new signatures, re-sign the zone.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485173</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DNSSEC signatures with key tag %1, associated with records in zone %2, will expire on %3 (UTC time). Once the signatures expire, name resolution will fail for resolvers that require validation  until new signatures are created.  To create new signatures, re-sign the zone.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227012</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server unable to create domain node.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227013</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server encountered invalid domain name "%1" in zone file %2 at line %3. Although the DNS server continues to load, ignoring this name, it is strongly recommended that you either correct the name or remove the resource record from the zone file, which is located in the %SystemRoot%\System32\Dns directory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227014</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server encountered invalid domain name "%1".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227015</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server encountered domain name "%1" exceeding maximum length. Although the DNS server continues to load, ignoring this name, it is recommended that you either correct the name or remove the resource record from the zone file, which is located in the %SystemRoot%\System32\Dns directory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227016</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server encountered an invalid "@" token "%1" in zone file %2 at line %3.  Although the DNS server continues to load, ignoring this token, it is recommended that you either correct the token or remove the resource record from the zone file.  The zone file is located in the %SystemRoot%\System32\Dns directory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227017</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server encountered a name outside of the specified zone in zone file %1 at line %2.  Although the DNS server continues to load, ignoring this resource record (RR), it is recommended that you either correct the RR or remove it from the zone file, which is located in the %SystemRoot%\System32\Dns directory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227018</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server encountered an invalid name server (NS) resource record in zone file %1 at line %2.  The use of NS resource records (RR) must be at either the zone root node or be placed at at the sub-zone context within the zone for a domain being delegated away from this zone. Although the DNS server continues to load, ignoring this RR, it is recommended that you either correct the RR or remove it from the zone file.  The zone file is located in the %SystemRoot%\System32\Dns directory.  For more information, see "Delegating zones" in the online Help.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227019</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server encountered an invalid host (A) resource record in zone file %1 at line %2.  The use of A resource records (RRs) must be at a domain name within the zone, with the exception of glue A RRs which are used to resolve the host name specified in an NS RR also contained at the same domain node and used for a zone delegation.  Although the DNS server continues to load, ignoring this RR, it is strongly recommended that you either correct this RR or remove it from the zone file.  The zone file is located in the %SystemRoot%\System32\Dns directory.  For more information, see "Delegating zones" in the online Help.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227072</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server encountered an unknown or unsupported resource record (RR) type %1 in zone file %2 at line %3.  Although the DNS server continues to load, ignoring this RR, it is recommended that you either correct the record type or remove this RR from the zone file.  The zone file is located in the %SystemRoot%\System32\Dns directory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485249</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DNS server encountered the obsolete record type %1 in database file %2, line %3. 
+The record was ignored. 
+ 
+MD or MF record types are obsolete.  They should be converted to MX record type which has the format:   MX <preference value> <mail server domain name> 
+Example: 
+	microsoft.com   MX 10 mai1.microsoft.com. 
+ 
+For more information, see the "Resource records reference" in the online Help.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227074</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server encountered an invalid SOA (Start Of Authority) resource record (RR) in file %1 at line %2. 
+An SOA record is required in every zone files and must satify the following conditions: 
+ 1)  The SOA record must be the first record in the zone file. 
+ 2)  The SOA record must belong to the root of the zone ("@" in zone file). 
+ 3)  Only one SOA is allowed in the zone. 
+ 4)  SOA records are NOT valid in root-hints (cache.dns) file. 
+ 
+To correct the problem modify or repair the SOA RR in zone file %1, which can be found in the %SystemRoot%\System32\Dns directory. For more information, see the "Resource records reference" in the online Help.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227082</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server encountered a resource record (RR) in the zone file %1 at line %2 for a domain name with an existing CNAME (alias) RR.  Where used, CNAME RRs must be the only RR for the domain name they are used to provide an alias for.  Either this RR, or the CNAME RR it conflicts with, needs to be deleted from zone file %1, which can be found in the %SystemRoot%\System32\Dns directory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227083</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server encountered a CNAME (alias) resource record (RR) in zone file %1 at line %2 for a domain name with existing RRs.  Where used, CNAME RRs must be the only RR for the domain name they are used to provide an alias for.  Either this CNAME RR, or the one it conflicts with, needs to be deleted from zone file %1, which can be found in the %SystemRoot%\System32\Dns directory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227084</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server encountered an alias (CNAME or DNAME) resource record (RR) in zone file %1 at line %2 that forms an alias loop with another alias RR in the zone.  One of the alias RRs forming the loop must be removed from the zone file.  The zone file is located in the %SystemRoot%\System32\Dns directory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227085</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server encountered an invalid preference value "%1" in zone file %2 at line %3.  The preference must be a valid 16-bit unsigned integer. To correct the problem, modify the preference field to a valid value. The zone file %2 is located in the %SystemRoot%\System32\Dns directory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227086</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server encountered a token "%1" of the wrong format in zone file %2 at line %3.  Although the DNS server continues to load, ignoring this resource record (RR), it is recommended that you either correct this RR or remove it from zone file %2, located in the %SystemRoot%\System32\Dns directory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227088</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server encountered a text string "%1" in zone file %2 at line %3 that exceeds the maximum permissible length.  Although the DNS server continues to load, ignoring this resource record (RR), it is strongly recommended that you either correct this RR or remove it from the zone file.  The zone file is located in the %SystemRoot%\System32\Dns directory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227089</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server encountered an invalid IP address "%1" in zone file %2 at line %3.  Although the DNS server continues to load, ignoring this resource record (RR), it is recommended that you either correct this RR or remove it from the zone file.  The zone file is located in the %SystemRoot%\System32\Dns directory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227090</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server encountered an invalid IPv6 address "%1" in zone file %2 at line %3.  Although the DNS server continues to load, ignoring this resource record (RR), it is recommended that you either correct this RR or remove it from the zone file.  The zone file is located in the %SystemRoot%\System32\Dns directory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227091</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server could not find protocol "%1" specified for the well known service (WKS) resource record (RR) in zone file %2 at line %3.  Although the DNS server continues to load, ignoring this RR, it is strongly recommended that you either correct this WKS RR or remove it from the zone file.  The zone file is located in the %SystemRoot%\System32\Dns directory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227092</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server could not find the service "%1" specified for the well known service (WKS) resource record (RR) in zone file %2 at line %3. Although the DNS server continues to load, ignoring this RR, it is recommended that you either correct this WKS RR or remove it from the zone file.  The zone file is located in the %SystemRoot%\System32\Dns directory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227093</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server encountered the port "%1" specified for the well known service (WKS) resource record (RR) in zone file %2 at line %3. This port exceeds the maximum port supported for the WKS RR.  Although the DNS server continues to load, ignoring this RR, it is strongly recommended that you either correct this WKS RR or remove it from the zone file.  The zone file is located in the %SystemRoot%\System32\Dns directory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227122</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server encountered invalid WINS record in file %1, line %2. 
+ 
+WINS records are subject to the following conditions: 
+  1) WINS record must be in forward lookup zone (not in in-addr.arpa domain). 
+  2) Only one WINS record may be specified in a zone file. 
+  3) WINS record must belong to the zone root (the WINS record name must be the origin of the zone).  If WINS lookup is desired for names in a sub-domain of the zone, then the sub-domain must be split into its own zone. 
+  4) WINS record must specify at least one WINS server. 
+ 
+The format of a WINS record: 
+WINS [LOCAL] [L<lookup timeout>] [C<cache timeout>] <WINS IP> [WINS IPs...] 
+ 
+Examples (zone root assumed to be current origin): 
+@ IN       WINS LOCAL L1 C10 10.10.10.1 10.10.10.2 10.10.10.3 
+@ IN       WINS 10.10.10.1 
+ 
+For more information, see "Using WINS lookup" in the online Help.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227123</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server encountered an invalid WINS reverse lookup (WINSR) resource record (RR) in file %1 at line %2. 
+ 
+WINSR records are subject to the following conditions: 
+  1) WINSR record must be in reverse lookup zone (under in-addr.arpa domain). 
+  2) Only one WINSR record may be specified in a zone file. 
+  3) WINSR record must belong to the zone root (the WINS record name must be the origin of the zone). 
+  4) WINSR record must specify at domain for the resulting name. 
+ 
+The format of a WINSR record: 
+WINSR [LOCAL] [L<lookup timeout>] [C<cache timeout>] <result domain> 
+ 
+Examples (zone root assumed to be current origin): 
+@ IN       WINSR LOCAL L1 C10 microsoft.com. 
+@ IN       WINSR wins.microsoft.com. 
+ 
+For more information, see "Using WINS lookup" in the online Help.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227126</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server encountered an unknown WINS-to-DNS mapping flag %1 in file %2 at line %3.  Although the DNS server continues to load, ignoring this flag, it is recommended that you either correct the associated resource record or remove it from the zone file.  The zone file is located in the %SystemRoot%\System32\Dns directory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227128</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server encountered a WINS reverse lookup (WINSR) resource record (RR) without a domain specified for resulting names in zone file %1 at line %2.  This field is required for mapping names that are found in WINS reverse lookup to fully-qualfied DNS domain names.  It is appended to the NetBIOS computer names resolved by NetBIOS adapter status queries. Although the DNS server will continue to load, ignoring this RR, it is recommended that you either correct the WINSR RR or disable WINS reverse lookup and/or remove the RR from the zone file. The zone file is located in the %SystemRoot%\System32\Dns directory. For more information, see "Using WINS lookup" in the online Help.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server is now booting from the registry or directory. The existing server boot file will no longer be read by the DNS server at startup. For any new zones that you add or for changes you make to zone information, you must make them using the DNS console. 
+The previous DNS server boot file has been moved to the %SystemRoot%\System32\Dns\backup directory. 
+To return to using a boot file, use the DNS console and reconfigure the boot method for the server.  For more information, see "To change the boot method used by the DNS server" in the online Help.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073743826</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server has written a new version of the boot file.  Either new zones or changes to existing zone information were made through the DNS console that required the DNS server to update the information in this file.  A copy of the previous boot file has been moved to the %SystemRoot%\System32\Dns\backup directory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227475</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server encountered an error writing current configuration back to boot file. Verify that the current boot file contains all of the desired information. The Boot file is located in the %SystemRoot%\System32\Dns directory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073743829</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server has been reconfigured to boot from a boot file.  Current server and zone configuration information has been written to this file. 
+To return to booting from the registry or Active Directory, use the DNS console and reconfigure the boot method for the server.  For more information, see "To change the boot method used by the DNS server" in the online Help.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227672</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server could not open a registry key.  Reinstall the DNS server if it was not able to be started.  If the DNS server started, but couldn't load a zone, reload the zone or restart the DNS server.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227674</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server could not write a registry key.  The server disk could be full or corrupted or the maximum permissible size for the server registry has been reached.  The DNS server will not be able to save server or zone configuration parameters to in the registry unless the problem is fixed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227675</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server could not delete a registry key.  The registry is likely corrupted.  The DNS server will not be able to save DNS server or zone configuration parameters in the registry unless the problem is fixed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227676</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The registry value HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DNS\Parameters\%1 contains an invalid value or could not be read. The DNS server cannot start. You must change this value to valid data or delete it and then attempt to restart the DNS service.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073744325</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server has completed a scavenging cycle: 
+Visited Zones     = %1, 
+Visited Nodes     = %2, 
+Scavenged Nodes   = %3, 
+Scavenged Records = %4. 
+ 
+This cycle took %5 seconds. 
+ 
+The next scavenging cycle is scheduled to run in %6 hours. 
+ 
+The event data will contain the error code if there was an error during the scavenging cycle.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param6" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073744326</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server has completed a scavenging cycle but no nodes were visited. Possible causes of this condition include: 
+ 
+  1) No zones are configured for scavenging by this server. 
+  2) A scavenging cycle was performed within the last %1 minutes. 
+  3) An error occurred during scavenging. 
+ 
+The next scavenging cycle is scheduled to run in %2 hours. 
+ 
+The event data will contain the error code if there was an error during the scavenging cycle.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147486278</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server could not configure the network connections of this computer with the local computer's IP address as the preferred DNS server, because this computer is connected to networks with different or invalid DNS namespaces. Manual configuration of the local DNS server to perform name resolution on one or more of the namespaces is required before the preferred DNS servers of this computer should be modified. 
+ 
+If the network connections of this computer are not configured with the local computer's IP address as the preferred DNS server, this computer may not be able to dynamically register DC locator records in DNS. Absence of these records may prevent other Active Directory domain controllers and domain members from locating this domain controller. 
+ 
+User Action: 
+ 
+Ensure that DC locator DNS records enumerated in the file %SystemRoot%\system32\config\netlogon.dns are registered on the local DNS server. If these records are not registered in DNS: 
+a) Add a delegation to this DNS server to parent DNS zone matching the name of the Active Directory domain OR 
+b) Configure the local DNS server with appropriate root hints and forwarders (if necessary) and configure the network connections of this computer with the local computer's IP address as the preferred DNS server. Note that other computers using other DNS servers as their preferred or alternate DNS servers may not be able to locate this domain controller, unless the DNS infrastructure is properly configured.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073744455</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server successfully autoconfigured: 
+	%1 
+	%2 
+	%3 
+	%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073744974</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server wrote version %1 of zone %2 to file %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221228623</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server unable to write zone file %1 for zone %2.  Most likely the server disk is full.  Free some disk space and re-initiate zone write.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221228624</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server was unable to open file %1 for write.  Most likely the file is a zone file that is already open.  Close the zone file and re-initiate zone write.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221228625</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server encountered an error writing to file.  Most likely the server disk is full.  Free some disk space at the server and re-initiate zone write. The event data is the error code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221228632</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server encountered an non-writeable or unknown resource record (RR) type when writing the zone database to file. The event data is applicable RR type.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221228634</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server encountered an unknown protocol writing a well known service (WKS) resource record to the zone file. The event data is applicable the protocol number.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221228635</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+While writing a well known service (WKS) record to the zone file, the DNS server encountered a port number that is not associated with a known service. The event data is the port number of the unknown service.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229472</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server was unable to open Active Directory.  This DNS server is configured to obtain and use information from the directory for this zone and is unable to load the zone without it.  Check that the Active Directory is functioning properly and reload the zone. The event data is the error code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229473</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server was unable to open zone %1 in the Active Directory. This DNS server is configured to obtain and use information from the directory for this zone and is unable to load the zone without it. Check that the Active Directory is functioning properly and reload the zone. The event data is the error code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229474</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server was unable to add zone %1 to the Active Directory.  Check that the Active Directory is available.  Note that the zone will not be be added to and written to the directory unless you re-attempt adding the zone using the DNS console.  The event data contains the error. For more information see "Add and Remove Zones" in the online Help.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229475</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server was unable to delete zone %1 in the Active Directory.  Check that the Active Directory is functioning properly.  Note that this zone will not be removed from the directory unless you retry deleting of the zone using the DNS console. The event data contains the error. For more information see "Add and Remove Zones" in the online Help.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229476</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server was unable to complete directory service enumeration of zone %1.  This DNS server is configured to use information obtained from Active Directory for this zone and is unable to load the zone without it.  Check that the Active Directory is functioning properly and repeat enumeration of the zone. The extended error debug information (which may be empty) is "%2". The event data contains the error.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073745829</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server received indication that zone %1 was deleted from the Active Directory.  Since this zone was an Active Directory integrated zone, it has been deleted from the DNS server.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229478</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server could not load the records for the DNS name %1 found in the Active Directory integrated zone %2. A possible cause is that this DNS name contains character(s) not permitted by the name-checking setting on this DNS server. 
+ 
+To allow these records to be loaded choose the appropriate name-checking  setting on the DNS server. 
+ 
+To delete these records from the Active Directory, first allow the DNS server to load them by changing the name-checking setting on this DNS server to allow all names. Then restart the DNS server service to cause the records to be loaded. The records will now appear in the DNS Manager and may be deleted. When the records have been deleted, restore the DNS server name-checking setting to the preferred value.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229479</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server was unable to open zone %1 in the Active Directory from the application directory partition %2. This DNS server is configured to obtain and use information from the directory for this zone and is unable to load the zone without it. Check that the Active Directory is functioning properly and reload the zone. The event data is the error code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229482</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server was unable to create a resource record for  %1 in zone %2. The Active Directory definition of this resource record is corrupt or contains an invalid DNS name. The event data contains the error.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229483</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server was unable to add or write an update of domain name %1 in zone %2 to the Active Directory.  Check that the Active Directory is functioning properly and add or update this domain name using the DNS console. The extended error debug information (which may be empty) is "%3". The event data contains the error.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229484</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server timed out attempting to write resource records to the Active Directory at %1.  Check that the directory is functioning properly and add or update the records using the DNS console. The event data contains the error.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147487661</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server is waiting for Active Directory Domain Services (AD DS) to signal that the initial synchronization of the directory has been completed. The DNS server service cannot start until the initial synchronization is complete because critical DNS data might not yet be replicated onto this domain controller. If events in the AD DS event log indicate that there is a problem with DNS name resolution, consider adding the IP address of another DNS server for this domain to the DNS server list in the Internet Protocol properties of this computer. This event will be logged every two minutes until AD DS has signaled that the initial synchronization has successfully completed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229486</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server was unable to initialize Active Directory security interfaces. Check that the Active Directory is functioning properly and restart the DNS server. The event data contains the error.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229487</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server has encountered a critical error from the Active Directory. Check that the Active Directory is functioning properly. The extended error debug information (which may be empty) is "%1". The event data contains the error.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229488</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server timed out attempting an Active Directory service operation on %1.  Check Active Directory to see that it is functioning properly. The event data contains the error.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147487665</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server was unable to load or create the DnsAdmins group. The most likely cause is that the Group Name has been changed. The DNS server will continue but for full functionality the DnsAdmins group should be repaired. The event data contains the error.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147487666</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server was unable to begin background loading of Active Directory-integrated zones. There may be a system resource problem. The DNS server service will now terminate. The event data contains the error.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147487667</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server attempted to load the Active Directory-integrated zone %1 in the background but there was an error during load. This zone will now be shut down. Correct the error and restart the DNS server service. The event data contains the error.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073745844</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server is now starting to load zone %1 in the background. While the zone is being loaded all DNS updates and zone transfer requests will be refused.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073745845</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server has completed background loading of zone %1. The zone is now available for updates and zone transfers if allowed by the zone's configuration. It took %2 seconds to load the zone.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147488048</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server is experiencing high SOA query load. This may be caused by a large number of local client machines performing updates. Single object replication of DNS records corresponding to SOA queries is being throttled. This may delay replication of updates to this RODC DNS server, however scheduled replication will not be affected.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073746324</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS Application Directory Partition %1 was created. The distinguished name of the root of this Directory Partition is %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073746325</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS Application Directory Partition %1 was deleted. The distinguished name of the root of this Directory Partition was %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073746326</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS added the local Active Directory to the replication scope of Application  Directory Partition %1. The distinguished name of the root of this Directory Partition is %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073746327</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS removed the local Active Directory from the replication scope of Application  Directory Partition %1. The distinguished name of the root of this Directory Partition is %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147488158</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server was unable to connect to the domain naming FSMO %1. No modifications to Directory Partitions are possible until the FSMO server is available for LDAP connections. The event data contains the error code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229983</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The zone %1 was not successfully saved to the new directory partition as %2 due to an error deleting the zone from the old directory partition as %3.  The DNS Server has attempted to undo the changes, but manual cleanup of the zone may be required. The event data contains the error code.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147488160</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server was unable to create the built-in directory partition %1. The error was %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073746337</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server detected that it is not enlisted in the replication scope of the directory partition %1. This prevents the zones that should be replicated to all DNS servers in the %2 forest from replicating to this DNS server. 
+ 
+To create or repair the forest-wide DNS directory partition, open the the DNS  console. Right-click the applicable DNS server, and then click 'Create Default Application Directory Partitions'. Follow the instructions to create the default DNS application directory partitions. For more information, see 'To create the default DNS application directory partitions' in Help and Support. 
+ 
+The error was %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073746338</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server detected that it is not enlisted in the replication scope of the  directory partition %1. This prevents the zones that should be replicated to all DNS servers in the %2 domain from replicating to this DNS server. For information on how to add a DNS server to the replication scope of an application directory partition, please see Help and Support. 
+ 
+To create or repair the domain-wide DNS directory partition, open the the DNS  console. Right-click the applicable DNS server, and then click 'Create Default Application Directory Partitions'. Follow the instructions to create the default DNS application directory partitions. For more information, see 'To create the default DNS application directory partitions' in Help and Support. 
+ The error was %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147488163</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The zone %1 was previously loaded from the directory partition %2 but another copy of the zone has been found in directory partition %3. The DNS Server will ignore this new copy of the zone. Please resolve this conflict as soon as possible. 
+ 
+If an administrator has moved this zone from one directory partition to another this may be a harmless transient condition. In this case, no action is necessary. The deletion of the original copy of the zone should soon replicate to this server. 
+ 
+If there are two copies of this zone in two different directory partitions but this is not a transient caused by a zone move operation then one of these copies should be deleted as soon as possible to resolve this conflict. 
+ 
+To change the replication scope of an application directory partition containing DNS zones and for more details on storing DNS zones in the application directory partitions, please see Help and Support.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147488168</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server encountered error %1 building the zone list from Active Directory. The DNS server will sleep for %2 seconds and try again. This can be caused by high Active Directory load and may be a transient condition.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147488169</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server encountered error %1 attempting to load zone %2 from Active Directory. The DNS server will attempt to load this zone again on the next timeout cycle. This can be caused by high Active Directory load and may be a transient condition.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147488170</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server has deleted all records for a corrupt DNS node from Active Directory. The DNS node's distinguished name was %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073746347</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server has detected that the application directory partition %1 is replicating onto this domain controller. DNS data will not be loaded from this new directory partition until initial replication has completed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073746348</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server has detected that the application directory partition %1 has finished replicating onto this domain controller. DNS data will now be loaded from this directory partition.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147488699</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server is using a large amount of memory.  The data is the current memory allocated.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221230577</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server attempted to cache an CNAME (alias) resource record for the domain node.  The operation failed, since the CNAME RR must be the only RR for its domain name.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221230578</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server attempted to cache an CNAME (alias) resource record (RR) for a domain name with existing RRs.  The CNAME RR is ignored, since it must be the only RR for its domain name.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221230579</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server created CNAME (alias) loop caching CNAME resource records (RRs).  The record is ignored, since CNAME loops are not allowed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221230580</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server created an CNAME (alias) loop loading CNAME at %1. One link in CNAME loop:  DNS name %2 is an alias for CNAME %3. See adjoining messages for other links in the CNAME loop.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073747324</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server received a bad DNS query from %1.  The query was rejected or ignored. The event data contains the DNS packet.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073747325</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server encountered a bad packet from %1.  Packet processing leads beyond packet length. The event data contains the DNS packet.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073747326</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server received a bad TCP-based DNS message from %1.  The packet was rejected or ignored. The event data contains the DNS packet.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073747328</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server encountered an invalid domain name in a packet from %1. The packet will be rejected. The event data contains the DNS packet.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073747329</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server encountered a domain name exceeding the maximum length in the packet from %1. The event data contains the DNS packet.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073747330</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server encountered an invalid domain name offset in a packet from %1. The event data contains the DNS packet.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073747331</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server encountered a name offset exceeding the packet length from %1. The event data contains the DNS packet.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073747332</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server encountered a packet name exceeding the maximum label count from %1. The event data contains the DNS packet.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073747333</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server encountered an invalid DNS update message from %1.  The packet was rejected. The event data contains the DNS packet.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073747334</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server encountered an invalid response message from %1.  The packet was rejected. The event data contains the DNS packet.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073747335</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server encountered a name with a label whose length exceeds the maximum  of 63 bytes from %1. The event data contains the DNS packet.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073747824</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server started transfer of version %1 of zone %2 to the DNS server at %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073747825</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server successfully completed transfer of version %1 of zone %2 to the DNS server at %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073747826</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The transfer of version %1 of zone %2 by the DNS server was aborted by the server at %3. To restart the transfer of the zone, you must initiate transfer at the secondary server.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147489651</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server received a request from %1 for a UDP-based transfer of the entire zone.  The request was ignored because full zone transfers must be made using TCP.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147489652</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server received a zone transfer request from %1 for a non-existent or non-authoritative zone %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073748344</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Zone %1 was updated to version %2 of the zone as provided from the master server at %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073748345</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Zone %1 is synchronized with version %2 of the zone as provided from the master server at %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073748346</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A more recent version, version %1 of zone %2 was found at the DNS server at %3. Zone transfer is in progress.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147490171</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Zone %1 failed zone refresh check.  Unable to connect to master DNS server at %2 to receive zone transfer.  Check that the zone contains correct IP address for the master server or if network failure has occurred.  For more information, see "To update the master server for a secondary zone" in the online Help.  If available, you can specify more than one master server in the list for this zone.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221231996</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Invalid response from master DNS server at %2 during attempted zone transfer of zone %1.  Check the DNS server at %2 and ensure that it is authoritative for this zone.  This can be done by viewing or updating the list of authoritative servers for the zone.  When using the DNS console, select zone %1 Properties at server %2 and click the Name Servers tab.  If needed, you can add or update this server in the list there.  As an alternative solution, you could also modify settings in the Zone Transfer tab to allow transfer of the zone to this and other DNS servers.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221231997</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A zone transfer request for the secondary zone %1 was refused by the master DNS server at %2. Check the zone at the master server %2 to verify that zone transfer is enabled to this server.  To do so, use the DNS console, and select master server %2 as the applicable server, then in secondary zone %1 Properties, view the settings on the Zone Transfers tab.  Based on the settings you choose, make any configuration adjustments there (or possibly in the Name Servers tab) so that a zone transfer can be made to this server.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147490174</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Zone %1 version %2 is newer than version %3 on DNS server at %4.  The zone was not updated. 
+DNS servers supplying zones for transfer must have the most recent version of the zone, based on the primary zone.  If zone on remote server %4, is in fact the most recent version of the zone, do the following at that server: 
+ (1) stop the DNS server, 
+ (2) delete the zone file (not the zone itself) and 
+ (3) restart the DNS server 
+The DNS server will transfer the new version and write its zone file. 
+When deleting the zone file at server %4, locate the file named %1.dns in the %SystemRoot%\System32\Dns directory and delete it. An alternative solution is to delete and recreate the secondary zone at server %4.  This could be preferred if this server hosts large zones and restarting it at this time would be a consuming or costly operation.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221231999</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Zone %1 expired before it could obtain a successful zone transfer or update from a master server acting as its source for the zone.  The zone has been shut down.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221232002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+During transfer of zone %1 from master at %2, the DNS server received a resource record (RR) for domain node %3 at which an CNAME (alias) RR was already received.  When used, the CNAME RR must be the only record for its domain name.  The CNAME RR for %3 will be ignored.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221232003</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+During transfer of zone %1 from master at %2, the DNS server received a CNAME (alias) resource record (RR) for domain node %3 for which other records of that name were already received.  When used, the CNAME RR must be the only record for its domain name.  The CNAME RR for %3 will be ignored.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221232004</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+During transfer of zone %1 from master at %2, the DNS server received a CNAME (alias) resource record (RR) for domain node %3 which would form an CNAME loop if accepted and used.  The CNAME RR for %3 is being ignored.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221232005</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server could not create a zone transfer thread.  The system may be out of resources.  Close any applications not in use or reboot the computer to free memory. The event data contains the error.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221232006</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed transfer of zone %1 from DNS server at %2.  The DNS server at %2 aborted or failed to complete transfer of the zone.  Check the DNS server at %2 and ensure it is properly functioning and authoritative for zone %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147490183</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The master DNS server at %2 responded to IXFR (Incremental Zone Transfer) request for zone %1 with an invalid (FORMAT ERROR) response.  DNS server performance and network bandwidth will both be improved by upgrading the DNS server at %2 to a run as either a Windows 2000 or later Microsoft DNS server or another IXFR-compatible DNS server implementation.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221232008</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Invalid IXFR (Incremental Zone Transfer) response from master DNS server at %2 during attempted incremental transfer of zone %1.  Check the DNS server at %2, and verify its is running as a Windows 2000 or later Microsoft DNS server or  another IXFR-compatible DNS server implementation.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221232174</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DNS server has updated its own host (A) records.  In order to ensure that its DS-integrated peer DNS servers are able to replicate with this server, an attempt was made to update them with the new records through dynamic update.  An error was encountered during this update, the record data is the error code. 
+ 
+If this DNS server does not have any DS-integrated peers, then this error 
+should be ignored. 
+ 
+If this DNS server's Active Directory replication partners do not have the correct IP address(es) for this server, they will be unable to replicate with it. 
+ 
+To ensure proper replication: 
+1) Find this server's Active Directory replication partners that run the DNS server. 
+2) Open DnsManager and connect in turn to each of the replication partners. 
+3) On each server, check the host (A record) registration for THIS server. 
+4) Delete any A records that do NOT correspond to IP addresses of this server. 
+5) If there are no A records for this server, add at least one A record corresponding to an address on this server, that the replication partner can contact.  (In other words, if there multiple IP addresses for this DNS server, add at least one that is on the same network as the Active Directory DNS server you are updating.) 
+6) Note, that is not necessary to update EVERY replication partner.  It is only necessary that the records are fixed up on enough replication partners so that every server that replicates with this server will receive (through replication) the new data.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221232522</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server recv() function failed. The event data contains the error.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221232523</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server recvfrom() function failed. The event data contains the error.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221232524</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server send() function failed. The event data contains the error.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221232525</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server sendto() function failed. The event data contains the error.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221232526</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server select() function failed. The event data contains the error.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221232527</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server accept() function failed. The event data contains the error.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221232528</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server GetQueuedCompletionStatus() function failed. The event data contains the error.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147490708</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server could not connect to DNS server at %1. The event data contains the error.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147490710</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server encountered a packet addressed to itself on IP address %1. The packet is for the DNS name "%2". The packet will be discarded. This condition usually indicates a configuration error. 
+ 
+Check the following areas for possible self-send configuration errors: 
+  1) Forwarders list. (DNS servers should not forward to themselves). 
+  2) Master lists of secondary zones. 
+  3) Notify lists of primary zones. 
+  4) Delegations of subzones.  Must not contain NS record for this DNS server unless subzone is also on this server. 
+  5) Root hints. 
+ 
+Example of self-delegation: 
+  -> This DNS server dns1.example.microsoft.com is the primary for the zone example.microsoft.com. 
+  -> The example.microsoft.com zone contains a delegation of bar.example.microsoft.com to dns1.example.microsoft.com, 
+  (bar.example.microsoft.com NS dns1.example.microsoft.com) 
+  -> BUT the bar.example.microsoft.com zone is NOT on this server. 
+ 
+Note, you should make this delegation check (with nslookup or DNS manager) both on this DNS server and on the server(s) you delegated the subzone to. It is possible that the delegation was done correctly, but that the primary DNS for the subzone, has any incorrect NS record pointing back at this server. If this incorrect NS record is cached at this server, then the self-send could result.  If found, the subzone DNS server admin should remove the offending NS record. 
+ 
+You can use the DNS server debug logging facility to track down the cause of this problem.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147491148</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server failed to process a packet from %1.  The packet was discarded.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221232974</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server was unable to service a client request due a shortage of available memory.  Close any applications not in use or reboot the computer to free memory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221232975</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server could not allocate memory for resource record %1. Close any applications not in use or reboot the computer to free memory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221232976</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DNS server could not allocate memory for the node of domain name %1. Close any applications not in use or reboot the computer to free memory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147491248</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The global query block list is a feature that prevents attacks on your network by blocking DNS queries for specific host names. This feature has caused the DNS server to fail a query with error code NAME ERROR for %1 even though data for this DNS name exists in the DNS database. Other queries in all locally authoritative zones for other names that begin with labels in the block list will also fail, but no event will be logged when further queries are blocked until the DNS server service on this computer is restarted. See product documentation for information about this feature and instructions on how to configure it.
+ 
+Below is the current global query block list (this list may be truncated in this event if it is too long):
+%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147491264</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The TrustAnchors zone could not be loaded:
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

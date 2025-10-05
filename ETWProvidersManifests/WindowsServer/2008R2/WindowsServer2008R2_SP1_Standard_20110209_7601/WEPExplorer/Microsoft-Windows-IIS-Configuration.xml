@@ -1,0 +1,920 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-IIS-Configuration</Name>
+        <Metadata>
+            <Guid>{DC0B8E51-4863-407A-BC3C-1B479B2978AC}</Guid>
+            <ResourceFilePath>C:\Windows\system32\inetsrv\iisres.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\inetsrv\iisres.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Internet%20Information%20Services&amp;ProdVer=7.5.7600.16385&amp;FileName=iisres.dll&amp;FileVer=7.5.7600.16385</HelpLink>
+            <PublisherMessage>Microsoft-Windows-IIS-Configuration</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-IIS-Configuration/Administrative</Message>
+                    <Path>Microsoft-IIS-Configuration/Administrative</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-IIS-Configuration/Operational</Message>
+                    <Path>Microsoft-IIS-Configuration/Operational</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-IIS-Configuration/Analytic</Message>
+                    <Path>Microsoft-IIS-Configuration/Analytic</Path>
+                    <Index>2</Index>
+                    <Id>18</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-IIS-Configuration/Debug</Message>
+                    <Path>Microsoft-IIS-Configuration/Debug</Path>
+                    <Index>3</Index>
+                    <Id>19</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Read</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Write</Name>
+                    <Value>2</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IIS-Configuration/Debug</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+A cache node for '%3' has been added to cache.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Address" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ConfigCacheAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ConfigPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FileChangeNotificationMonitorAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ConfigFileAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="PhysicalPath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IIS-Configuration/Analytic</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+Configuration cache is handling change notification for '%1'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ConfigPath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IIS-Configuration/Analytic</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+Configuration cache is polling for changes at '%1'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ConfigPath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IIS-Configuration/Debug</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+Configuration cache is discarding all config files whose configuration path is equal to or a subpath of '%1'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ConfigPath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IIS-Configuration/Administrative</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+An error has occured: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="PhysicalPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PreviousLine" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorLine" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NextLine" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IIS-Configuration/Administrative</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Unable to find schema for config section '%4'. This section will be ignored.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PhysicalPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FileConfigPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EffectiveLocationPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SectionPath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IIS-Configuration/Analytic</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+Parsing config file '%2'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ConfigFileObjectAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="PhysicalPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ConfigPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CryptoImpersonationToken" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileImpersonationToken" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="LastModifiedTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="FileSize" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IIS-Configuration/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+MACHINE/WEBROOT/APPHOST configuration redirection has been enabled. The redirected physical path is '%1'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RedirectionPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Username" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Password" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IIS-Configuration/Debug</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+Attempting to open file or directory '%2'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CallSite" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="lpFileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="dwDesiredAccess" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="dwShareMode" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="dwCreationDisposition" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="dwFlagsAndAttributes" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="IsTransacted" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="Handle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="GetLastError" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IIS-Configuration/Debug</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+An impersonation token with handle '%4' for the credentials of '%1\%2' has been created.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Domain" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="User" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Password" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TokenHandle" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IIS-Configuration/Debug</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+File change notification monitor that watches for changes in '%3' has been created.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Address" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ConfigPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Directory" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="File" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="WatchSubPaths" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="IsPollingMonitor" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="IsSchemaFileMonitor" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IIS-Configuration/Debug</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+File change notification monitor that watches for changes in '%3' has blocked waiting for file changes.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Address" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ConfigPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Directory" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="File" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="WatchSubPaths" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="IsPollingMonitor" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="IsSchemaFileMonitor" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IIS-Configuration/Debug</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+File change notification monitor that watches for changes in '%3' received a change notification.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Address" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ConfigPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Directory" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="File" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="WatchSubPaths" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="IsPollingMonitor" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="IsSchemaFileMonitor" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IIS-Configuration/Analytic</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+File change notification monitor that watches for changes in '%3' is processing notified changes.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Address" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ConfigPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Directory" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="File" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="WatchSubPaths" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="IsPollingMonitor" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="IsSchemaFileMonitor" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IIS-Configuration/Debug</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+File change notification monitor that watches for changes in '%3' has been destroyed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Address" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ConfigPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Directory" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="File" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="WatchSubPaths" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="IsPollingMonitor" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="IsSchemaFileMonitor" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>23</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IIS-Configuration/Debug</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+A change listener of type '%2' is being informed about a configuration change at '%3'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TargetAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="TargetType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ConfigPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsGranular" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="IsApplicationSpecific" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="IsLocationTag" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>24</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IIS-Configuration/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+During schema file enumeration, the file '%1' was detected in the schema directory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PhysicalPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LastModifiedTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="FileSize" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IIS-Configuration/Analytic</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+The virtual path '%1' has been mapped to the physical path '%2'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ConfigPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PhysicalPath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>27</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IIS-Configuration/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The '%6' metadata of a configuration system object was set to '%7'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileConfigPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EffectiveLocationPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CallSite" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Address" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="TargetName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MetadataName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>28</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IIS-Configuration/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Thread is impersonating an access token belonging to handle '%2'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="OriginalImpersonationTokenHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ImpersonationTokenHandle" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>29</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IIS-Configuration/Operational</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+Changes to '%4' at '%2' have successfully been committed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PhysicalPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ConfigPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EffectiveLocationPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Configuration" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EditOperationType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OldValue" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NewValue" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IIS-Configuration/Administrative</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to commit changes to '%4' at '%2'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PhysicalPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ConfigPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EffectiveLocationPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Configuration" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EditOperationType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OldValue" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NewValue" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>33</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IIS-Configuration/Administrative</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Unable to locate IIS_Schema.xml in '%1'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PhysicalPath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>36</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IIS-Configuration/Debug</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+Handle '%2' duplicated to '%3']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CallSite" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hSourceHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hTargetHandle" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>37</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IIS-Configuration/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Unable to locate a site with SiteName '%1'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SiteName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>38</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IIS-Configuration/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Unable to locate a site with SiteId '%1'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>39</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IIS-Configuration/Administrative</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The SiteId '%1' has been assigned to more than one site. Please change your configuration such that each site is assigned a unique SiteId.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>40</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IIS-Configuration/Administrative</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The SiteName '%1' has been assigned to more than one site. Please change your configuration such that each site is assigned a unique SiteName.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SiteName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>41</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IIS-Configuration/Administrative</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to instantiate '%3' when attempting to populate dynamic configuration for '%1'. This COM component may not be registered.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Configuration" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CLSID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ProgId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>42</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IIS-Configuration/Administrative</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to initialize the '%3' encryption provider in '%1'. Please check your configuration.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PhysicalPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FileConfigPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProviderName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProviderType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Blob" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>43</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IIS-Configuration/Administrative</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to encrypt attribute '%4'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PhysicalPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FileConfigPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProviderName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProviderType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Blob" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>44</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IIS-Configuration/Administrative</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to decrypt attribute '%4'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PhysicalPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FileConfigPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProviderName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProviderType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Blob" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>45</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IIS-Configuration/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Unable to map '%1' to the subpath of any known virtual directory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ConfigPath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>46</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IIS-Configuration/Analytic</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+Virtual directory mapping from '%4' to '%5' created.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SiteName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ApplicationPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VirtualDirectoryPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RelativeVirtualPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PhysicalPath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>47</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IIS-Configuration/Analytic</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+The location of the configuration file whose config path is '%1' was mapped to '%2'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ConfigPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Directory" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Filename" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ImpersonationToken" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="IsCustomMapping" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>49</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IIS-Configuration/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Config/child source file for configuration '%6' specified in '%2' is being loaded.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CallSite" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PhysicalPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FileConfigPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EffectiveLocationPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ConfigurationElementName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ConfigSourceFilePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LastModifiedTime" inType="win:FILETIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>50</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IIS-Configuration/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Changes have successfully been committed to '%1'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ConfigPath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IIS-Configuration/Administrative</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to commit changes to '%2' because file on the disk has been changed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ConfigPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PhysicalPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FileExistsInMemory" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="FileLastModifiedTimeInMemory" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="FileSizeInMemory" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="FileExistsOnDisk" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="FileLastModifiedTimeOnDisk" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="FileSizeOnDisk" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="IsInMemoryViewOfFileRecent" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>52</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IIS-Configuration/Analytic</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+Checking whether file '%2' has changed on the disk returned '%9'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ConfigPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PhysicalPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FileExistsInMemory" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="FileLastModifiedTimeInMemory" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="FileSizeInMemory" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="FileExistsOnDisk" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="FileLastModifiedTimeOnDisk" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="FileSizeOnDisk" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="IsInMemoryViewOfFileRecent" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>53</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IIS-Configuration/Administrative</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Unable to create a path mapping for the virtual directory, /system.applicationHost/sites/site[@name='%1']/application[@path='%2']/virtualDirectory[@path='%3'] because the mapping with the relative virtual path, '%5' was already created for another virtual directory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SiteName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ApplicationPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VirtualDirectoryPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RelativeVirtualPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PhysicalPath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>54</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IIS-Configuration/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A commit operation has been initiated.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>55</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IIS-Configuration/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A commit operation has completed. The status code is: '%1'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>56</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IIS-Configuration/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A kernel transaction for a commit operation has been created.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Handle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>57</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IIS-Configuration/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Failed to create a kernel transaction for the commit operation. The commit operation will proceed without a kernel transaction.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>58</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IIS-Configuration/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Changes have successfully been committed with a kernel transaction.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Handle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>59</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IIS-Configuration/Analytic</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Failed to commit the changes with a kernel transaction. The changes will be reverted.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Handle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>60</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IIS-Configuration/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A file write operation in a commit operation has been initiated.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>61</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IIS-Configuration/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The contents of the file '%2' could not be erased. The operation will be tried '%4' more time(s).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Handle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="PhysicalPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ConfigPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RemainingRetryCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>62</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IIS-Configuration/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The contents of the file '%2' have successfully been erased. The size of the file is now zero.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Handle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="PhysicalPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ConfigPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>63</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IIS-Configuration/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The new contents of the file '%2' could not be written to.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Handle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="PhysicalPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ConfigPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SizeInBytes" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>64</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IIS-Configuration/Debug</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A file write operation in a commit operation has completed. The status code is: '%1'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>65</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-IIS-Configuration/Debug</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+A change listener of type '%2' has been informed about a configuration change at '%3'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TargetAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="TargetType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ConfigPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsGranular" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="IsApplicationSpecific" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="IsLocationTag" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

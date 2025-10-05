@@ -1,0 +1,499 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-HCAP</Name>
+        <Metadata>
+            <Guid>{C3B28DC5-2C35-4C7F-9505-10F246D99A4D}</Guid>
+            <ResourceFilePath>C:\Windows\system32\hcap\hcapext.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\hcap\hcapext.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=hcapext.dll&amp;FileVer=6.1.7600.16385</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>0</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The HCAP Server started successfully.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The HCAP Server stopped successfully.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The HCAP Server failed to start.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The HCAP Server failed to stop.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The HCAP Server cannot contact the NPS Server.
+
+HCAP client host name: %1
+HCAP client IP address: %2
+Request ID: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HostName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HostIP" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The NPS server rejected the connection request.
+
+HCAP client host name: %1
+HCAP client IP address: %2
+Request ID: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HostName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HostIP" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The HCAP Request is malformed.
+
+HCAP client host name: %1
+HCAP client IP address: %2
+Request ID: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HostName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HostIP" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The HCAP Request code %1 is unknown.
+
+HCAP client host name: %2
+HCAP client IP address: %3
+Request ID: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HostName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HostIP" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The HCAP Request type %1 is unknown.
+
+HCAP client host name: %2
+HCAP client IP address: %3
+Request ID: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HostName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HostIP" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The HCAP Request version %1 is not supported.
+
+HCAP client host name: %2
+HCAP client IP address: %3
+Request ID: %4
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HostName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HostIP" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The HCAP Request had no TLVs when at least one was expected.
+
+HCAP client host name: %1
+HCAP client IP address: %2
+Request ID: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HostName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HostIP" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The HCAP Request TLV %1 is malformed.
+
+HCAP client host name: %2
+HCAP client IP address: %3
+Request ID: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MalformedTLV" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HostName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HostIP" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The HCAP Request TLV type is not supported.
+
+Unsupported TLVs: %1
+HCAP client host name: %2
+HCAP client IP address: %3
+Request ID: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TLVs" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HostName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HostIP" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The HCAP Request did not have SOH TLV.
+
+HCAP client host name: %1
+HCAP client IP address: %2
+Request ID: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HostName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HostIP" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The HCAP server could not match the HCAP Request against any Network Policy.
+
+HCAP client host name: %1
+HCAP client IP address: %2
+Request ID: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HostName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HostIP" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The HCAP server did not get a response from Network Policy Server.
+
+HCAP client host name: %1
+HCAP client IP address: %2
+Request ID: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HostName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HostIP" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The HCAP server encountered a general failure.
+
+HCAP client host name: %1
+HCAP client IP address: %2
+Request ID: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HostName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HostIP" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The NPS server encountered a general failure.
+
+HCAP client host name: %1
+HCAP client IP address: %2
+Request ID: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HostName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HostIP" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The HCAP server encountered an internal error.
+
+HCAP client host name: %1
+HCAP client IP address: %2
+Request ID: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HostName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HostIP" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>22</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Successful HCAP Response was returned.
+
+HCAP client host name: %1
+HCAP client IP address: %2
+Request ID: %3
+Version: %4
+User Name: %5
+User Groups: %6
+Endpoint ID: %7
+Endpoint Location: %8
+Endpoint IPv4 Address: %9
+Endpoint IPv6 Address: %10
+Posture State returned: %11
+Extended State returned: %12]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HostName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HostIP" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UserName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UserGroup" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EndpointID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EndpointLocation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EndpointIPv4Address" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EndpointIPv6Address" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PostureState" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ExtendedPostureState" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>23</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Failure HCAP Response was returned with result code %1
+
+HCAP client host name: %2
+HCAP client IP address: %3
+Request ID: %4
+Version: %5
+User Name: %6
+User Groups: %7
+Endpoint ID: %8
+Endpoint Location: %9
+Endpoint IPv4 Address: %10
+Endpoint IPv6 Address: %11
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ResultCode" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HostName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HostIP" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UserName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UserGroup" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EndpointID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EndpointLocation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EndpointIPv4Address" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EndpointIPv6Address" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>24</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+A failure response was sent.  The HCAP Server sent Negatively Acknowledgment (NAK) for unsupported mandatory TLVs. 
+
+HCAP client host name: %1
+HCAP client IP address: %2
+Request ID: %3
+Version: %4
+User Name: %5
+User Groups: %6
+Endpoint ID: %7
+Endpoint Location: %8
+Endpoint IPv4 Address: %9
+Endpoint IPv6 Address: %10
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HostName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HostIP" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UserName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UserGroup" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EndpointID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EndpointLocation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EndpointIPv4Address" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EndpointIPv6Address" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

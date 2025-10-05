@@ -1,0 +1,2014 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-NLB</Name>
+        <Metadata>
+            <Guid>{F22AF71F-C4C3-425D-9653-B2F47B85DD30}</Guid>
+            <ResourceFilePath>C:\Windows\System32\wlbsctrl.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\System32\wlbsctrl.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=wlbsctrl.dll&amp;FileVer=6.1.7600.16385</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>0</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Classic</Message>
+                    <Name>win:EventlogClassic</Name>
+                    <Value>36028797018963968</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: This host is an active member of the NLB cluster. The host priority (unique host identifier) is %5. It will start load balancing traffic as soon as it converges with the rest of the cluster hosts.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: This host is no longer an active member of the NLB cluster.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: The NLB driver failed to bind to the adapter because the medium type is unsupported. Please confirm that you are trying to bind NLB to an Ethernet network adapter.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: The NLB driver could not allocate enough memory resources to perform driver operations. Close all programs on this cluster host that might be consuming memory and rebind NLB to the adapters. If this problem persists, you might need to add additional memory (RAM) to this host.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: The NLB driver failed to initialize because the cluster network address %3 is invalid. Please check that the network address property of the NLB cluster is specified in a valid MAC address format.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: The dedicated IP (DIP) address %3 is invalid. The cluster will converge and operate normally without this DIP. However, if this DIP is required for remote cluster management, make sure that the DIP is specified in a valid IPv4 or IPv6 address format.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: The NLB driver failed to initialize because the cluster IP address %3 is invalid. Please check that the network IP address is specified in a valid IPv4 or IPv6 address format.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: NLB detected a duplicate host priority %5 that is shared between cluster hosts. Each host in the NLB cluster must have a unique host priority. Please check the NLB configuration of all hosts and make sure that each has a unique host priority (a number between 1 and 32).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: NLB detected duplicate cluster subnets. This may be due to network partitioning, which prevents NLB heartbeats of one or more hosts from reaching the other cluster hosts. Although NLB operations have resumed properly, please investigate the cause of the network partitioning.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: The maximum number of actively serviced connections that could be tracked by NLB is reached. Although NLB will still accept new connections, it will not track the connection state until other connections are closed. This might result in breaking the affinity maintained by the driver during the connection. To resolve this issue, add more hosts to the cluster and/or increase the %3 value under the HKLM\SYSTEM\CurrentControlSet\Services\WLBS\Parameters\Interface\{GUID} key in the registry.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: NLB failed to converge due to port rules with a duplicate single host priority %5 in the cluster. Each single host port rule in the NLB cluster must have a unique priority. Please check the NLB configuration of all port rules and make sure that each has a unique host priority (a number between 1 and 32).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: NLB failed to converge due to inconsistencies in the port rules between this host and cluster host %5. This will occur if the number of port rules or the type of port rules are different between hosts. Please make sure that the port rules are consistent on all cluster hosts.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>22</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: The NLB driver failed to initialize because the number of port rules must be between 0 and %5. It is currently specified as %6 in the registry. Please check the NLB configuration to ensure that you are using the proper number of rules.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>23</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: This host will start handling new load balanced traffic for rule containing port %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>24</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: This host will stop handling new load balanced traffic for rule containing port %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: A port rule operation on port %3 was issued but there is no port rule that contains this port. Please confirm that the intended port number is correct, or configure a port rule for this port number.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>26</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: A port rule operation was issued while the host was in the stopped state. Such operations can only be performed on a running cluster host. Please ensure that the cluster host is an active member before issuing port rule operations.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>28</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: Host %5 converged with host(s)%3. It is now an active member of the NLB cluster and will start load balancing traffic.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>29</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: Host %5 converged with host(s)%3. It is now an active member of the NLB cluster and will start load balancing traffic as the default host. The default host is the host with the lowest host priority. It handles all traffic that isn't covered by any of the defined port rules.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: The dedicated network mask %3 is invalid. The cluster will converge and operate normally without this dedicated IP (DIP) address. However, if this DIP is required for remote cluster management, make sure that the dedicated network mask for the DIP is specified in a valid format.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>31</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: The NLB driver failed to initialize because the cluster network mask %3 is invalid. Please check that the network mask is specified in a valid format.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: NLB detected an unequal number of dedicated IP (DIP) addresses and network masks. For all DIP's listed for use, an equal number of network masks must be specified. The NLB cluster will continue to operate, but the DIP that has no corresponding network mask will be ignored. To use this DIP, make sure that the number of addresses and network masks are the same.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>34</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: NLB failed to query parameters from the registry key HKLM\SYSTEM\CurrentControlSet\Services\WLBS\Parameters\Interface\%3. This might be due to an improper configuration. Please use Network Load Balancing Manager to configure NLB. Once the configuration is fixed, you should run the PowerShell cmdlet 'Set-NlbClusterNode -Reload' followed by 'Start-NlbClusterNode'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>35</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: NLB failed to verify its parameters. This might be due to an improper configuration. Please use Network Load Balancing Manager to configure NLB. Once the configuration is fixed, you should run the PowerShell cmdlet 'Set-NlbClusterNode -Reload' followed by 'Start-NlbClusterNode'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>36</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: Registry parameters successfully reloaded.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>37</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: Version mismatch between the driver and control programs. Please make sure that you are running the same version of all NLB components.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>39</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: This host has drained all connections for port rule containing port %3. It will not handle any new load balanced traffic for this port rule.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>41</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: This host has drained all connections for all port rules. It will not handle any new load balanced traffic for all ports rules.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>42</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: This host will start handling new load balanced traffic for all port rules.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>43</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: This host will stop handling new load balanced traffic for all port rules.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>44</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: This host has started draining all connections for all port rules. It will not handle any new load balanced traffic for all ports rules.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>45</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: This host has stopped draining all connections. This may be due to a stop/suspend operation on the host.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>47</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: This host has resumed cluster operations. Once it is started, this host will be an active member of the cluster.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>48</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: This host has suspended cluster operations. Until it is resumed, this host will not be an active member of the cluster.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>50</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: NLB failed to add a multicast MAC address to the network adapter it is bound to. This happened because the maximum number of multicast MAC addresses that can be assigned to this network adapter has been exhausted. Use a network adapter that supports more multicast MAC addresses or operate NLB in unicast mode.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>52</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: Registry parameters successfully reloaded without resetting the driver.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>53</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: NLB will not attach to adapter '%3' because it does not support dynamic changing of its MAC address. Replace the network adapter with one which supports that capability.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>55</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: An inconsistent teaming configuration was detected for bi-directional affinity (BDA) on host %5. BDA configuration must be identical on all cluster hosts. The team in which this cluster participates will be marked inactive and this cluster will remain in the converging state until consistent teaming configuration is detected.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>56</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: Invalid bi-directional affinity (BDA) team ID detected. Team IDs must be a GUID of the form {xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}. To add this cluster to a team, correct the team ID and run the PowerShell cmdlet 'Set-NlbClusterNode -Reload' followed by 'Start-NlbClusterNode'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>57</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: Invalid bi-directional affinity (BDA) teaming port rules detected. Each member of a BDA team may have no more than one port rule, and its affinity must be single or class C if multiple host filtering is specified. To add this cluster to a team, correct the port rules and run the PowerShell cmdlet 'Set-NlbClusterNode -Reload' followed by 'Start-NlbClusterNode'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>58</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: Consistent bi-directional affinity (BDA) teaming configuration detected again. The team in which this cluster participates has been re-activated.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>59</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: The bi-directional affinity (BDA) team which this cluster has attempted to join already has a designated master. This cluster will not join the team and will remain in the stopped state until the parameter errors are corrected and the cluster is restarted by running the PowerShell cmdlet 'Set-NlbClusterNode -Reload' followed by 'Start-NlbClusterNode'. %3 %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>60</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: The bi-directional affinity (BDA) team in which this cluster participates has no designated master. The team is inactive and will remain inactive until a master for the team is designated and consistent BDA teaming configuration is detected.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>61</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: This cluster has joined a bi-directional affinity (BDA) team as the designated master. If the rest of the team has been consistently configured, the team will be activated.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>62</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: This cluster has left a bi-directional affinity (BDA) team in which it was the designated master. If other adapters are still participating in the team, the team will be marked inactive and will remain inactive until a master for the team is designated and consistent BDA teaming configuration is detected.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>63</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: NLB is initiating convergence on host %5 because host %6 is joining the cluster.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>64</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: NLB is initiating convergence on host %5 because host %6 has a configuration that conflicts with other hosts.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>65</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: NLB is initiating convergence on host %5 because host %6 is converging for an unknown reason.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>66</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: NLB is initiating convergence on host %5 because host %6 is configured with the same host priority.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>67</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: NLB is initiating convergence on host %5 because host %6 is configured with a conflicting number of port rules.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>68</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: NLB is initiating convergence on host %5 because host %6 has changed its port rule configuration.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>69</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: NLB is initiating convergence on host %5 because host %6 is leaving the cluster.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>73</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: The NLB cluster IGMP multicast IP address %3 is invalid. Please check the NLB configuration and make sure that the cluster IGMP multicast IP address is in a valid format.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>74</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: NLB failed to update the NLB host state in the registry. This will affect the ability of NLB to persist the current state after the system restarts, if NLB has been configured to do so. To predict the state of NLB at the next restart, please delete the HKLM\SYSTEM\CurrentControlSet\Services\WLBS\Parameters\Interface\{GUID}\%3 registry value, which will cause the state at the next system restart to revert to the user-specified preferred initial host state.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>75</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: The NLB host state was successfully updated in the registry. Current state will persist after the system restarts, if NLB has been configured to do so.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>76</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: Last known NLB host state was not found in the registry. The state of this host will revert to the user-specified preferred initial host state.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>77</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: This host is configured to persist 'Started' after the system restarts. Because the last known state of this host was started, the host will be restarted regardless of the user-specified preferred initial host state. To stop the host, use NLB Manager or use the PowerShell cmdlet 'Stop-NlbClusterNode' or 'Suspend-NlbClusterNode'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>78</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: This host is configured to persist 'Stopped' after the system restarts. Because the last known state of this host was stopped, the host will remain stopped regardless of the user-specified preferred initial host state. To start the host, use NLB Manager or use the PowerShell cmdlet 'Start-NlbClusterNode'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>79</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: This host is configured to persist 'Suspended' after the system restarts. Because the last known state of this host was suspended, the host will remain suspended regardless of the user-specified preferred initial host state. To start the host, use NLB Manager or use the PowerShell cmdlet 'Resume-NlbClusterNode' followed by 'Start-NlbClusterNode'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>81</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: NLB can't track TCP connections because it was unable to open the TCP connection callback object. Although NLB will still accept new connections, it will not track the connection state until this is resolved. This might result in breaking the affinity maintained by the driver during the connection. To resolve this issue, try to unbind then rebind NLB to the adapters.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>83</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: Duplicate dedicated IP (DIP) address %3 was detected on the network. Please check that each of the cluster hosts is configured with a unique DIP.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>85</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: The NLB driver failed to register with the Network Driver Interface Specification (NDIS) with error code %5. As a result, this host will not be an active member of the cluster. Using Control Panel or Device Manager, disable and re-enable the network adapter before attempting to bind NLB to the adapter.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>86</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: Host %5 converged with legacy host(s)%3. This is expected during rolling upgrades. Until all hosts are upgraded to the latest version, newer NLB features will not be available for use. Please upgrade all hosts to the latest OS version.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>87</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: A load distribution error was detected during convergence. This might result in client traffic not being handled, general traffic errors, or connections being reset. To fix the error, restart the cluster by running the PowerShell cmdlet 'Set-NlbClusterNode -Reload' followed by 'Start-NlbClusterNode'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>88</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: The NLB driver failed to register the device object. The cluster will converge and operate normally but controlling the cluster might not work properly. To fix this, disable all network adapters with NLB bound on this host and then re-enable the adapters.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>89</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: The NLB driver failed to attach a network adapter due to error %5. As a result, this host will not be an active member of the cluster. Using Control Panel or Device Manager, disable and re-enable the network adapter before attempting to bind NLB to the adapter.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>90</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: The NLB driver failed to bind to the adapter because the maximum transfer unit (MTU) reported by the adapter is too small to contain an NLB heartbeat message. Ensure that the MTU of all hosts in the cluster is set to the default value.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>91</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: NLB received a heartbeat from a host with an invalid ID %5. Please check the NLB configuration of all hosts and make sure that each has a unique host priority (a number between 1 and 32).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>92</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: A SYN attack has been detected. During the attack, some connections might fail. If this attack recurs frequently, analyze the threat and take appropriate measures. An informational event log entry will be logged when the attack has subsided.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>93</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: A SYN attack has subsided.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>94</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: NLB failed to update the adapter multicast list. The cluster will converge and operate normally but some client traffic might not be handled. To attempt to update the adapter multicast list again, run the PowerShell cmdlet 'Set-NlbClusterNode -Reload' followed by 'Start-NlbClusterNode'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>95</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: The NLB driver has detected one or more %3 sessions corresponding to a port rule that is improperly configured. To handle VPN traffic properly, the port rule must be configured with single or network affinity and the port range must include TCP port 1723 for PPTP/GRE and UDP ports 500/4500 for IPSec/L2TP.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>96</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: The NLB driver failed to register/unregister the hook interface. The cluster will converge and operate normally but no hook decisions will be left for the registering application. Please check with the application using NLB and make sure it is registering the hooks properly.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>97</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: An unsupported legacy host %3 was discovered on the network. The OS version on this host is no longer supported in a mixed cluster configuration. The cluster will remain in the converging state until all deprecated legacy hosts are removed. Please remove the desprecated hosts from the cluster.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>98</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: The NLB driver failed to attach to adapter '%3' due to error %5. As a result, this host will not be an active member of the cluster. Using Control Panel or Device Manager, disable and re-enable the network adapter before attempting to bind NLB to the adapter.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>99</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: The NLB driver failed to open the SYN attack callback object. A SYN attack is a type of denial of service attack which happens when a malicious user sends many open many TCP connections to the server exhausting system resources. Although NLB will still accept new connections, it may not perform optimally in the event of a SYN attack.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: The NLB driver successfully attached (bound) to adapter '%3'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: The NLB driver successfully detached (unbound) from adapter '%3'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: The NLB driver failed to register for notifications with the IPv4 NSI provider. NLB will continue to operate but may not handle auto-configured IPv4 addresses correctly. Please make sure that IPv4 is installed and working on this machine.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>103</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: The NLB driver failed to register for notifications with the IPv6 NSI provider. NLB will continue to operate but may not handle auto-configured IPv6 addresses correctly. Please make sure that IPv6 is installed and working on this machine.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>104</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: The NLB driver failed to open the timer starvation callback object. Although it will continue to operate, NLB may not perform optimally in the event of timer starvation (usually caused by denial of service attacks).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>105</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: Timer starvation has been detected. This might be due to a denial of service attack or a very high server load. During this period, some connections might fail. If this problem recurs frequently, analyze the threat and take appropriate measures and/or add more servers to the cluster. An informational event log entry will be logged when the attack has subsided.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>106</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: Timer starvation has subsided.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>107</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: NLB failed to add all the dedicated IP (DIP) addresses to this host. This happened because the maximum number (%5) of DIP's that can be added to this network adapter has been exhausted. The NLB cluster will continue to operate but all additional DIP's will be ignored.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>108</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: The virtual IP (VIP) address %3 is invalid. The cluster will converge and operate normally without this VIP. Make sure that the VIP is specified in a valid IPv4 or IPv6 address format.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>109</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: The virtual network mask %3 is invalid. The cluster will converge and operate normally without this virtual IP (VIP) address. Make sure that the virtual network mask for the VIP is specified in a valid format.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>110</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: NLB detected an unequal number of virtual IP (VIP) addresses and network masks. For all VIP's listed for use, an equal number of network masks must be specified. The NLB cluster will continue to operate but the VIP with no corresponding network mask will be ignored. To use this VIP, make sure that the number of addresses and network masks are the same.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>111</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: The virtual IP (VIP) address in a port rule is invalid. The cluster will converge and operate normally but this port rule will be ignored. Make sure that the VIP is specified in a valid IPv4 or IPv6 address format.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>112</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: The NLB driver failed to register for notifications with the IPv4 NSI provider. NLB will continue to operate but may not handle IPv4 addresses that are moved between nodes correctly. Please make sure that IPv4 is installed and working on this machine.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>113</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: NLB is initiating convergence on host %5 because host %6 is an unsupported legacy host.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>114</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: NLB failed to initialize bi-directional affinity (BDA) teaming on adapter '%3'. The BDA team in which this cluster participates will be marked inactive and this cluster will remain in the converging state until this is resolved. Using Control Panel or Device Manager, disable and re-enable the network adapter before attempting to bind NLB to the adapter.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>115</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: NLB failed to register as a WMI provider. As a result, it will not be able to notify applications that are listening for WMI events of any changes in the NLB driver. Using Control Panel or Device Manager, disable and re-enable the network adapter before attempting to bind NLB to the adapter.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>116</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: NLB is initiating convergence on host %5 to synchronize the Extended Affinity configuration between all cluster hosts after the initial attempt failed with error code %6.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>117</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: The maximum number of actively serviced Extended Affinity connections that could be tracked by NLB is reached. Although NLB will still accept new connections, it will not track the connection state until other connections are closed. This might result in breaking the affinity maintained by the driver during the connection. To resolve this issue, add more hosts to the cluster and/or increase the %3 value under the HKLM\SYSTEM\CurrentControlSet\Services\WLBS\Parameters\Interface\{GUID} key in the registry.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>118</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: The NLB driver has detected an inconsistency in the Extended Affinity configuration on cluster host %5. The host received an invalid entry from another cluster host. This might be due to an improper configuration. Please use Network Load Balancing Manager to configure NLB. Once the configuration is fixed, you should run the PowerShell cmdlet 'Set-NlbClusterNode -Reload' followed by 'Start-NlbClusterNode'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>119</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+NLB cluster [%2]: The NLB driver has detected an inconsistency in the Extended Affinity configuration between cluster host %5 and cluster host %6. A client IP address is on the Extended Affinity exception list on both hosts. You should run the PowerShell cmdlet 'Set-NlbClusterNode -Reload' followed by 'Start-NlbClusterNode'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param6" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param7" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="param8" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147946496</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Configuration completed. Microsoft Cluster Service is also installed on this machine, and this may prevent the proper operation of both.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1074212864</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Configuration update %2 started by %1 on adapter %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1074212865</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Configuration update %2 completed with status %1 on adapter %3. Information log contains:
+%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

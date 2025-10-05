@@ -1,0 +1,139 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Spooler-LPDSVC</Name>
+        <Metadata>
+            <Guid>{9F44821F-1FD9-46BF-A09A-C7F751159AAF}</Guid>
+            <ResourceFilePath>C:\Windows\system32\lpdsvc.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\lpdsvc.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=lpdsvc.dll&amp;FileVer=6.1.7600.16385</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Spooler-LPDSVC</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>0</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Classic</Message>
+                    <Name>win:EventlogClassic</Name>
+                    <Value>36028797018963968</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>2147487650</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 successfully resumed printer %2. No user action is required.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229475</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Line Printer Daemon (LPD) service failed to start. This can occur if the LPD service cannot gain access to system resources such as memory or the registry. Check the windows error returned by this event to determine the cause and then restart the LPD service.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229476</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Line Printer Daemon (LPD) service refused a request from a client because the system is out of resources. This can occur if the LPD service cannot gain access to system resources such as memory or the registry.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229477</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Line Printer Daemon (LPD) service received an improper sequence of commands from %1 and refused the print job.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229478</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Line Printer Daemon (LPD) service received a print job from %1 in an unsupported print format. This can occur if the printer driver on the client is configured to use a print data type that is unsupported by this printer. The document may not print correctly as a result.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229479</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 on %2 could not remove the print job submitted by %3 on %4 because the user does not have the Manage Documents permission.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229480</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Line Printer Daemon (LPD) service received commands in an invalid format from %1 and refused the print job. This can occur if the Line Printer Remote (LPR) client is incompatible with the Windows LPD service and Request for Comments (RFC) 1179. Try printing using a different LPR client.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229481</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Line Printer Daemon (LPD) service refused a print job from %2 for printer %1 because the specified printer does not exist on this computer. Retry printing from the client using the correct printer name.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221229482</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Line Printer Daemon (LPD) service could not satisfy the request from %1, most likely because of network problems. Check network connectivity between the two computers.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

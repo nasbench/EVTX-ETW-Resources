@@ -1,0 +1,288 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-MSMQTriggers</Name>
+        <Metadata>
+            <Guid>{2787CC62-2654-4227-9B35-B53F838507AE}</Guid>
+            <ResourceFilePath>C:\Windows\system32\mqutil.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\mqutil.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7600.16385&amp;FileName=mqutil.dll&amp;FileVer=6.1.7600.16385</HelpLink>
+            <PublisherMessage>Microsoft-Windows-MSMQTriggers</PublisherMessage>
+            <Channels>
+            </Channels>
+            <Levels>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Classic</Message>
+                    <Name>win:EventlogClassic</Name>
+                    <Value>36028797018963968</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1073744024</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Message Queuing Triggers started successfully.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227673</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Message Queuing Triggers initialization failed. Error %1: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227674</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Message Queuing Triggers failed to create an instance of the Triggers Transactional object. As a result, no transactional retrieval triggers can be invoked. Mqgentr.dll may not be registered or may not exist in the %SystemRoot%\System32 folder. Error %1: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227675</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The trigger information cannot be retrieved from the trigger store in registry. At least one trigger is nonfunctional.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227676</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The information for the attached rule cannot be retrieved from the trigger store for trigger %1 (Trigger Name: %2). The trigger is nonfunctional.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227677</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Opening the queue %3 for peeking at or retrieving messages failed. Local users may not have been granted the Peek Message or Receive Message permission for this queue. The trigger %4 is nonfunctional. Error %1: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227678</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Opening an internal queue needed by the Triggers service failed. The account under which the Triggers service is running may not have permissions to open this queue, or the queue may have been deleted. To solve this problem, uninstall and reinstall the Triggers service. Error %1: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227679</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An instance of a rule handler for the rule %3 with the ID %4 was not created. The rule cannot be evaluated and executed. The MSMQTriggerObjects.MSMQRuleHandler class may not be registered, or your System folder does not contain mqtrig.dll. Error %1: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227680</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The action or a condition parameter for the rule %3 with the ID %4 was not parsed. The rule cannot be evaluated and executed. You can remove the rule entry from the Triggers registry and recreate it using local computer management. Error %1: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227681</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The action defined by the rule %3 with the ID %4 was not invoked. The COM object may not be registered, or the executable file may not exist in your path. Error %1: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227682</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Rule evaluation or execution failed for the transactional trigger %3 with the ID %4. A rule condition or action parameter may be invalid, or the COM object invoked may not be registered correctly. Error %1: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073744035</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Message Queuing Triggers service stopped.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227684</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The queue %1 was not found. It may have been deleted. The trigger %2 associated with this queue is nonfunctional. Please use Computer Management to remove this trigger.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227685</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+At least one of the required dependencies was not found. Please verify that MSMQ Triggers resources are dependent on Message Queue resources.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227686</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unable to update EventLog information in registry for '%1'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227687</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Triggers transactional component could not be registered in COM+. Error %1: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227688</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Retrieving messages from a queue located on a remote pre-Windows XP computer is not supported. All triggers associated with the queue %1 are nonfunctional.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073744041</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The parameters of the rule %1 with the ID %2 are now valid. The rule was evaluated successfully, and the action defined by it was executed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073744042</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The rules attached to the trigger %1 with the ID %2 are now valid. All the rules were evaluated successfully, and the actions defined by them were executed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073744043</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Triggers service has been set to run under the Network Service account, but this setting will take effect only after the Triggers service is restarted.  If you want the Triggers service to continue to run under the Local Service account (the default for the previous version of Triggers), modify the logon settings  for the Triggers service in Computer Management.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147485870</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The change for the Triggers service to run under the Network Service account will not take effect as long as the "Allow service to interact with desktop" check box is selected.  To allow this change to take effect, clear the "Allow service to interact with desktop" check box on the Log On page of the Properties dialog box for Message Queuing Triggers in Computer Management and restart the service.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221227695</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Message Queuing Triggers initialization failed to complete in the configured timeout..]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

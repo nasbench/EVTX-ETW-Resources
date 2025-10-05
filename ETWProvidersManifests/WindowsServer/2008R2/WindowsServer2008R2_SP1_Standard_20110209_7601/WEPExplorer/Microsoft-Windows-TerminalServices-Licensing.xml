@@ -1,0 +1,1073 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-TerminalServices-Licensing</Name>
+        <Metadata>
+            <Guid>{4D99F017-0EB1-4B52-8419-14AEBD13D770}</Guid>
+            <ResourceFilePath>C:\Windows\system32\lserver.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\lserver.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=6.1.7601.17514&amp;FileName=lserver.dll&amp;FileVer=6.1.7601.17514</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>0</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-TerminalServices-Licensing/Admin</Path>
+                    <Index>1</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-TerminalServices-Licensing/Analytic</Path>
+                    <Index>2</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-TerminalServices-Licensing/Operational</Path>
+                    <Index>3</Index>
+                    <Id>18</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-TerminalServices-Licensing/Debug</Path>
+                    <Index>4</Index>
+                    <Id>19</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Classic</Message>
+                    <Name>win:EventlogClassic</Name>
+                    <Value>36028797018963968</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>0</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Remote Desktop Licensing service has started.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Remote Desktop Licensing service has paused.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Remote Desktop Licensing service has resumed running.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Remote Desktop Licensing service has stopped.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Remote Desktop Licensing service has been activated]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+This Remote Desktop license server is too busy to notify other Remote Desktop license servers about the number of licenses that it has in its database. It will attempt to notify other Remote Desktop license servers later. If the problem persists, free up available memory if memory is low on the Remote Desktop license server, and identify and resolve any issues with network connectivity, specifically with firewall configuration. Problems with remote procedure calls (RPCs) might also cause this issue.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+This Remote Desktop license server cannot communicate with other Remote Desktop license servers about the number of licenses that it has in its database. The license server will attempt to communicate with other Remote Desktop license servers later.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The RD Licensing database file is not valid. This file has been renamed to "%1", and the license server will start up with an empty database file. To resolve this issue, ensure that the required groups are granted the correct permissions to the LServer directory, and then reinstall the licenses. If the problem persists, rebuild the RD Licensing database and call the Microsoft Clearinghouse. When you call the Clearinghouse, ensure that your License Purchase Agreement information is readily available.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+All requests for licenses will be denied due to an initialization error in policy module "%1".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The default policy module for RD Licensing (Tls236.dll) will be used for all license requests to the policy module "%1".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Remote Desktop license server cannot detect locally installed licenses or communicate with other Remote Desktop license servers. To resolve this issue, identify and resolve any network connectivity issues. If the problem persists, restore the licensing database from backups or contact the Microsoft Clearinghouse.
+The following error occurred: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+This Remote Desktop license server could not notify other Remote Desktop license servers that new licenses have been installed and added to its licensing database. If the problem persists, free up available memory if memory is low on the Remote Desktop license server, and identify and resolve any network connectivity issues, specifically with firewall configuration. Problems with remote procedure calls (RPCs) might also cause this issue.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Remote Desktop license server could not return an expired license to the available pool of licenses because of following error: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+One or more of the RD Licensing certificates on the Remote Desktop license server "%1" are corrupted. Therefore, the Remote Desktop license server will only issue temporary licenses until it is reactivated.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Remote Desktop license server "%1" has not been activated and therefore will only issue temporary licenses. To issue permanent licenses, the Remote Desktop license server must be activated.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+One or more RD Licensing certificates on the Remote Desktop license server "%1" are corrupted. The Remote Desktop license server is switching to a backup certificate.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Remote Desktop license server "%1" does not have a sufficient number of permanent licenses for product "%3". Only %2 permanent licenses remain. To resolve this problem, purchase and install additional licenses as needed for this license server.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Remote Desktop license server "%1" does not have any remaining permanent licenses of the type "%2". As a result, the Remote Desktop license server cannot issue licenses of the type "%2" to the Remote Desktop Session Host or Remote Desktop Virtualization Host server "%3". To resolve this problem, verify that the Remote Desktop licensing mode configured on the RDSH or RDVH server matches the type of licenses installed on the Remote Desktop license server. If required, purchase and install additional licenses as needed for this Remote Desktop license server.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>22</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Remote Desktop license server "%1" does not have any licenses installed and registered with the Microsoft Clearinghouse for product "%2". Therefore, the Remote Desktop license server cannot issue licenses of the type "%2" to the Remote Desktop Session Host or Remote Desktop Virtualization Host server "%3". To resolve this problem, install additional licenses as required.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>24</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The RD Licensing database is not consistent. All licenses will be removed. To resolve this issue, rebuild the RD Licensing database and call the Microsoft Clearinghouse. When you call the Clearinghouse, ensure that your License Purchase Agreement information is readily available.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The RD Licensing database does not belong to this Remote Desktop license server. The Remote Desktop license server will update the database table to take ownership of the database and all licenses will be removed.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>26</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+All available "%1" licenses for product "%2" on Remote Desktop license server "%3" have been removed. Use RD Licensing Manager to re-register the licenses.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>27</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Remote Desktop Licensing service is unable to connect to the Service Control Manager.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>28</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Remote Desktop Licensing service is unable to report status to the Service Control Manager.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Remote Desktop Licensing service could not create the service initialization thread.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>36</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Remote Desktop Licensing service could not start due to a lack of system resources.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>37</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Remote Desktop Licensing service cannot start. The following error occurred: %1
+
+To resolve this issue, ensure that required groups are granted the correct permissions to the TermServLicensing registry key and that the value of the DBPath registry key matches the location of the LServer directory. If the problem persists, shut down and then restart the Remote Desktop license server.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>38</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Remote Desktop license server cannot issue a license to the client because of following error: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>39</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+New public/private keys could not be generated because of following error: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>40</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A certificate could not be installed for this server because of following error: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>41</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The policy module could not be initialized because of the following error: 1!s!.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>42</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An error occurred in policy module "%1".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>44</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The following general database error has occurred: "%1"]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>45</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Remote Desktop license server cannot communicate with another Remote Desktop license server because of the following error: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>47</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The RD Licensing database is corrupt. RD Licensing could not rename the RD Licensing database file "%1" to create a backup. Rename the file manually and restart the Remote Desktop Licensing service. To reinstall the licenses, you will need to call the Microsoft Clearinghouse. When you call the Clearinghouse, ensure that your License Purchase Agreement information is readily available.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>48</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Remote Desktop Licensing service is starting up with a restored database file.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>49</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The restored RD Licensing database file "%1" cannot be moved to the database directory. The Remote Desktop license server will use an empty database file. Ensure that the required groups are granted the correct permissions to the LServer directory. Rebuild the RD Licensing database and call the Microsoft Clearinghouse. When you call the Clearinghouse, ensure that your License Purchase Agreement information is readily available.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A backup copy of the RD Licensing database cannot be created and the restored database file will be ignored. The Remote Desktop license server will start up with the existing database file.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>52</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The existing RD Licensing database file has been saved as "%1". The Remote Desktop Licensing service has started with the restored database file.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>55</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The existing RD Licensing database cannot be restored from its backup copy. To resolve this issue, ensure that the required groups are granted the correct permissions to the LServer directory, and then reinstall the licenses. If the problem persists, rebuild the RD Licensing database and call the Microsoft Clearinghouse. When you call the Clearinghouse, ensure that your License Purchase Agreement information is readily available.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>56</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Key-pack decryption failed with Win32 error code %1. Use the Telephone method to install the licenses.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>57</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The certificate chain verification failed with Win32 error code %1. Use the Telephone method to install the licenses.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>58</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The key-pack hash validation failed with error %1. Please use Telephone method for license installation.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>64</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Remote Desktop license server has been published in Active Directory Domain Services.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>66</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Remote Desktop license server has been unpublished from Active Directory Domain Services.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>68</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Remote Desktop license server role has been successfully changed.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>70</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Terminal Server Computers local group has been created.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>71</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Terminal Server Computers local group cannot be created.
+Win32 error code: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>72</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Terminal Server Computers local group has been deleted.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>73</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Terminal Server Computers local group cannot be deleted.
+Win32 error code: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>74</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The computer account for this Remote Desktop license server or Network Service account has been added to the Terminal Server License Servers group in Active Directory Domain Services.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>76</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The computer account for the Remote Desktop license server has been removed from the Terminal Server License Servers group in Active Directory Domain Services.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>80</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+One license of product "%1" issued to computer "%2" has been successfully revoked.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>81</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The license issued to "%1" could not be revoked because the revocation limit for the product "%2" is reached. %3 of the installed %4 licenses are already revoked. The license revocation of this product type will be allowed after %5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>82</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The "%1"  %2 belonging to computer "%3" has been upgraded to "%4" %5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param5" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>83</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-Licensing/Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The Remote Desktop license server has been registered as a service connection point in Active Directory Domain Services.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>84</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-Licensing/Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The Remote Desktop license server has been removed as a service connection point in Active Directory Domain Services.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>85</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-Licensing/Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The Remote Desktop license server could not be registered as a service connection point in Active Directory Domain Services (AD DS). Ensure that there is network connectivity between the license server and AD DS. To register the license server as a service connection point in AD DS, use Review Configuration in the RD Licensing Manager tool.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>86</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-Licensing/Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The Remote Desktop license server could not be removed as a service connection point in Active Directory Domain Services.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>87</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-Licensing/Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The licenses have been successfully installed onto the Remote Desktop license server.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>88</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-Licensing/Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The RD Licensing database has been successfully rebuilt.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>89</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-Licensing/Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The licenses have been successfully removed from the source Remote Desktop license server %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>90</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-Licensing/Admin</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The licenses on the source Remote Desktop license server %1 could not be removed during the migration. Use WMI to manually delete the licenses from %1 or ensure that %1 is no longer used as a license server with the same licenses that were migrated.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>91</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-Licensing/Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The migration of licenses has completed. Because the source Remote Desktop license server %1 is running an operating system that does not support the deletion of licenses, ensure that %1 is no longer used as a license server with the same licenses that were migrated.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>92</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-Licensing/Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The migration of licenses has completed. Because the source Remote Desktop license server %1 was not available on the network during the migration, you will either have to delete the licenses from %1 by using WMI (if %1 is running at least Windows Server 2008 R2) or you need to ensure that %1 is no longer used as a license server with the same licenses that were migrated.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>93</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-Licensing/Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The migration of licenses has completed. During the migration, the source Remote Desktop license server was specified as no longer functioning. Ensure that it is no longer used as a license server with the same licenses that were migrated.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221295104</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Internal Error in server.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221295105</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An error occurred during the Remote Desktop license server initialization phase.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221295107</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The license server was unable to enumerate the existing reports.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3222278148</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The RD Licensing database might be corrupted. To resolve this issue, ensure that the required groups are granted the correct permissions to the LServer directory. If the problem persists, rebuild the RD Licensing database and call the Microsoft Clearinghouse. When you call the Clearinghouse, ensure that your License Purchase Agreement information is readily available.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3222343687</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The certificate cannot be installed on the Remote Desktop license server. This issue might be due to a problem connecting to the Microsoft Clearinghouse over HTTPS. To resolve this issue, try reactivating the Remote Desktop license server. If the problem persists, identify and resolve any possible network connectivity issues.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221491720</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The remote procedure call (RPC) port is not listening.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3372224521</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Remote Desktop license server cannot update the license attributes for user "%1" in the Active Directory Domain "%2". Ensure that the computer account for the license server is a member of Terminal Server License Servers group in Active Directory domain "%2".
+If the license server is installed on a domain controller, the Network Service account also needs to be a member of the Terminal Server License Servers group.
+If the license server is installed on a domain controller, after you have added the appropriate accounts to the Terminal Server License Servers group, you must restart the Remote Desktop Licensing service to track or report the usage of RDS Per User CALs.
+Win32 error code: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3372224522</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+CAL reporting: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3372224523</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Remote Desktop license server failed to query Active Directory Domain Services for user information.
+Win32 error code: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3372224524</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Remote Desktop license server failed to generate the report.
+Win32 error code: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221295123</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+RD Licensing has experienced a general initialization failure.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221295125</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+RD Licensing is unable to allocate the required system memory to perform the operation.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3222343704</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A backup copy of the certificate for this Remote Desktop license server could not be created.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221295145</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Local Security Authority (LSA) has returned an invalid data version.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221295148</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Terminal Server Computers group is required, but this group has not been created on the Remote Desktop license server. To resolve this issue, create the Terminal Server Computers group.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221295149</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A license could not be issued to "%1" because it is not a member of the Terminal Server Computers group.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221295150</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A security descriptor cannot be set. As a result, Remote Desktop Session Host or Remote Desktop Virtualization Host servers might not be able to connect to Remote Desktop license servers. Restart the Remote Desktop Licensing service.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4143</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-Licensing/Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The Remote Desktop license server has successfully issued a %1 to user %2 in the domain %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4144</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-Licensing/Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The Remote Desktop license server has successfully upgraded the %1 to a %2 for user  %3 in the domain %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param4" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4145</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-Licensing/Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The %1 for user %2 in the domain %3 has been renewed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4146</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-Licensing/Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The %1 for computer %2 has been renewed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4147</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-Licensing/Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The Remote Desktop license server has successfully issued a %1 to computer %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4148</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-Licensing/Admin</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The Remote Desktop license server has issued a %1 to computer %2 while accessing Virtual Desktop Infrastructure. Please refer %3 to know about the different licenses that can be used to access the Virtual Desktop Infrastructure.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8193</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Remote Desktop license server could not be published in Active Directory Domain Services during the installation of RD Licensing. The action failed with Win32 error code %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8194</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Remote Desktop license server was successfully published in Active Directory Domain Services during the installation of RD Licensing.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8195</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The computer account for the Remote Desktop license server could not be added to the Terminal Server License Servers group in Active Directory Domain Services during the installation of RD Licensing. The action failed with Win32 error code %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8196</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The computer account for the Remote Desktop license server was successfully added to the Terminal Server License Servers group in Active Directory Domain Services during the installation of RD Licensing.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8197</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The RD Licensing database path could not be set to "%1" during the installation of RD Licensing.
+Win32 error code: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="param2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8198</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The RD Licensing database path was successfully set during the installation of RD Licensing.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8199</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-TerminalServices-Licensing/Admin</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The Remote Desktop license server is not installed on a Domain Controller and hence would not be auto-discoverable by down-level Remote Desktop Session Host servers.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

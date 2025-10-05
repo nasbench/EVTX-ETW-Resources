@@ -1,0 +1,2453 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-IIS</Name>
+        <Metadata>
+            <Guid>{DE4649C9-15E8-4FEA-9D85-1CDDA520C334}</Guid>
+            <ResourceFilePath>C:\Windows\system32\inetsrv\iisetw.dll</ResourceFilePath>
+            <ParameterFilePath>C:\Windows\system32\inetsrv\iisetw.dll</ParameterFilePath>
+            <MessageFilePath>C:\Windows\system32\inetsrv\iisetw.dll</MessageFilePath>
+            <HelpLink>http://go.microsoft.com/fwlink/events.asp</HelpLink>
+            <PublisherMessage>Microsoft-Windows-IIS</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>IIS Diagnostics Channel</Message>
+                    <Path>Microsoft-Windows-IIS/Diagnostic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Log Always</Message>
+                    <Name>win:LogAlways</Name>
+                    <Value>0</Value>
+                </Level>
+                <Level>
+                    <Message>Critical</Message>
+                    <Name>win:Critical</Name>
+                    <Value>1</Value>
+                </Level>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Allow tracing only selected requests</Message>
+                    <Name>UseUrlFilter</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>IIS authentication events</Message>
+                    <Name>IISAuthentication</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>IIS security events</Message>
+                    <Name>IISSecurity</Name>
+                    <Value>4</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>IIS filter events</Message>
+                    <Name>IISFilter</Name>
+                    <Value>8</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>IIS static file events</Message>
+                    <Name>IISStaticFile</Name>
+                    <Value>16</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>IIS CGI events</Message>
+                    <Name>IISCGI</Name>
+                    <Value>32</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>IIS compression events</Message>
+                    <Name>IISCompression</Name>
+                    <Value>64</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>IIS cache events</Message>
+                    <Name>IISCache</Name>
+                    <Value>128</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>IIS request notifications events</Message>
+                    <Name>IISRequestNotification</Name>
+                    <Value>256</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>IIS module events</Message>
+                    <Name>IISModule</Name>
+                    <Value>512</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>IIS FastCGI events</Message>
+                    <Name>IISFastCGI</Name>
+                    <Value>4096</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>IIS ISAPI events</Message>
+                    <Name>IISISAPI</Name>
+                    <Value>8192</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Message><![CDATA[
+GENERAL_REQUEST_START: SiteId='%2',AppPoolId='%3',ConnId='%4',RawConnId='%5',RequestURL='%6',RequestVerb='%7']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SiteId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AppPoolId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ConnId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="RawConnId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="RequestURL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestVerb" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Message><![CDATA[
+GENERAL_REQUEST_END: BytesSent='%2',BytesReceived='%3',HttpStatus='%4',HttpSubStatus='%5']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="BytesSent" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BytesReceived" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HttpStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HttpSubStatus" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Message><![CDATA[
+GENERAL_STATIC_FILE_HANDLER: FileName='%2']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Message><![CDATA[
+GENERAL_CGI_HANDLER]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Message><![CDATA[
+GENERAL_ISAPI_HANDLER]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Message><![CDATA[
+GENERAL_OOP_ISAPI_HANDLER: ProcessId='%2',TotalReqs='%3',CurrentReqs='%4']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TotalReqs" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CurrentReqs" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Message><![CDATA[
+GENERAL_REDIRECTION_HANDLER: RedirectedURL='%2']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="RedirectedURL" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Message><![CDATA[
+GENERAL_DAV_HANDLER: FileName='%2']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Message><![CDATA[
+GENERAL_OPTIONS_HANDLER]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Message><![CDATA[
+GENERAL_TRACE_HANDLER]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+GENERAL_GET_URL_METADATA: PhysicalPath='%2',AccessPerms='%3']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="PhysicalPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AccessPerms" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>31</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Message><![CDATA[
+GENERAL_CHILD_REQUEST_START: SiteId='%2',RequestURL='%3',RequestVerb='%4',RecursiveLevel='%5']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SiteId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestURL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestVerb" inType="win:AnsiString" outType="xs:string"/>
+  <data name="RecursiveLevel" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Message><![CDATA[
+GENERAL_CHILD_REQUEST_END: BytesSent='%2',HttpStatus='%3',HttpSubStatus='%4']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="BytesSent" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HttpStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HttpSubStatus" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>33</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Message><![CDATA[
+GENERAL_SEND_CUSTOM_ERROR: HttpStatus='%2',HttpSubStatus='%3',FileNameOrURL='%4']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="HttpStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HttpSubStatus" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameOrURL" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>34</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Message><![CDATA[
+GENERAL_MAP_HANDLER]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>35</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+GENERAL_FLUSH_RESPONSE_START]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>36</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+GENERAL_FLUSH_RESPONSE_END: BytesSent='%2',ErrorCode='%3']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="BytesSent" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>37</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+GENERAL_READ_ENTITY_START]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>38</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+GENERAL_READ_ENTITY_END: BytesReceived='%2',ErrorCode='%3']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="BytesReceived" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>39</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+FILE_CHANGE_NOTIFICATION: FilePath='%2']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FilePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>40</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+CONFIG_CHANGE_NOTIFICATION: ConfigPath='%2']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ConfigPath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>41</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+VIRTUAL_MODULE_UNRESOLVED: Name='%2',Type='%3']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Type" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>42</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+URL_CHANGED: OldUrl='%2',NewUrl='%3']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OldUrl" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NewUrl" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>43</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+HANDLER_CHANGED: OldHandlerName='%2',NewHandlerName='%3',NewHandlerModules='%4',NewHandlerScriptProcessor='%5',NewHandlerType='%6']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OldHandlerName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NewHandlerName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NewHandlerModules" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NewHandlerScriptProcessor" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NewHandlerType" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>44</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+USER_SET: AuthType='%2',UserName='%3',SupportsIsInRole='%4']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="AuthType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UserName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SupportsIsInRole" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>45</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+MODULE_PRECONDITION_NOT_MATCH: Name='%2',Precondition='%3']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Precondition" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>46</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+HANDLER_PRECONDITION_NOT_MATCH: Name='%2',Precondition='%3']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Precondition" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>47</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+GENERAL_RESPONSE_HEADERS: Headers='%2']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Headers" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>48</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+GENERAL_RESPONSE_ENTITY_FILE: FileName='%2',Offset='%3',Size='%4']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Offset" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Size" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>49</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+GENERAL_RESPONSE_ENTITY_BUFFER: Buffer='%2']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Buffer" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>50</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+GENERAL_REQUEST_HEADERS: Headers='%2']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Headers" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+GENERAL_REQUEST_ENTITY: Buffer='%2']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Buffer" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>52</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+GENERAL_NOT_SEND_CUSTOM_ERROR: Reason='%2']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>53</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Verbose</Level>
+                <Message><![CDATA[
+GENERAL_SET_REQUEST_HEADER: HeaderName='%2',HeaderValue='%3',Replace='%4']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="HeaderName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="HeaderValue" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Replace" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>54</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+GENERAL_MODULE_FACTORY_FAILED: ModuleName='%2',ErrorCode='%3']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ModuleName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>55</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+GENERAL_ENDPOINT_INFORMATION: RemoteAddress='%2',RemotePort='%3',LocalAddress='%4',LocalPort='%5']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="RemoteAddress" inType="win:AnsiString" outType="xs:string"/>
+  <data name="RemotePort" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LocalAddress" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LocalPort" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>522</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>IIS authentication events</Keyword>
+                <Message><![CDATA[
+AUTH_START: AuthTypeSupported='%2']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="AuthTypeSupported" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>523</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>IIS authentication events</Keyword>
+                <Message><![CDATA[
+AUTH_SUCCEEDED: AuthType='%2',NTLMUsed='%3',RemoteUserName='%4',AuthUserName='%5',TokenImpersonationLevel='%6']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="AuthType" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="NTLMUsed" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="RemoteUserName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AuthUserName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TokenImpersonationLevel" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>524</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Warning</Level>
+                <Keyword>IIS authentication events</Keyword>
+                <Message><![CDATA[
+AUTH_TYPE_NOT_SUPPORTED]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>525</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Error</Level>
+                <Keyword>IIS authentication events</Keyword>
+                <Message><![CDATA[
+AUTH_INVALID_ANON_ACCOUNT: ErrorCode='%2']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>526</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Warning</Level>
+                <Keyword>IIS authentication events</Keyword>
+                <Message><![CDATA[
+AUTH_PASSWD_CHANGE_NEEDED]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>527</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Warning</Level>
+                <Keyword>IIS authentication events</Keyword>
+                <Message><![CDATA[
+AUTH_PASSWD_CHANGE_DISABLED]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>528</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Warning</Level>
+                <Keyword>IIS authentication events</Keyword>
+                <Message><![CDATA[
+AUTH_BAD_BASIC_HEADER]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>529</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Warning</Level>
+                <Keyword>IIS authentication events</Keyword>
+                <Message><![CDATA[
+AUTH_BASIC_LOGON_FAILED: ErrorCode='%2']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>530</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Warning</Level>
+                <Keyword>IIS authentication events</Keyword>
+                <Message><![CDATA[
+AUTH_WDIGEST_LOGON_FAILED: ErrorCode='%2']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>531</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Warning</Level>
+                <Keyword>IIS authentication events</Keyword>
+                <Message><![CDATA[
+AUTH_IISDIGEST_LOGON_FAILED: ErrorCode='%2']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>532</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Warning</Level>
+                <Keyword>IIS authentication events</Keyword>
+                <Message><![CDATA[
+AUTH_PASSPORT_LOGON_FAILED: ErrorCode='%2']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>533</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Warning</Level>
+                <Keyword>IIS authentication events</Keyword>
+                <Message><![CDATA[
+AUTH_SSPI_LOGON_FAILED: ErrorCode='%2']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>534</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Warning</Level>
+                <Keyword>IIS authentication events</Keyword>
+                <Message><![CDATA[
+AUTH_NTLM_NULL_SESSION]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>535</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>IIS authentication events</Keyword>
+                <Message><![CDATA[
+AUTH_SSPI_CONTINUE_NEEDED: PackageName='%2']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="PackageName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>536</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Error</Level>
+                <Keyword>IIS authentication events</Keyword>
+                <Message><![CDATA[
+AUTH_ANON_PASSWD_CHANGE_NEEDED]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>539</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>IIS authentication events</Keyword>
+                <Message><![CDATA[
+AUTH_REQUEST_AUTH_TYPE: RequestAuthType='%2']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="RequestAuthType" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>540</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>IIS authentication events</Keyword>
+                <Message><![CDATA[
+AUTH_END]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>567</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Warning</Level>
+                <Keyword>IIS authentication events</Keyword>
+                <Message><![CDATA[
+AUTH_KERBEROS_FAILED: KMUsed='%2',APUserName='%3',SPNName='%4',ADConfigIsOK='%5',KerberosInfo='%6']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="KMUsed" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="APUserName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SPNName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ADConfigIsOK" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="KerberosInfo" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>778</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Warning</Level>
+                <Keyword>IIS security events</Keyword>
+                <Message><![CDATA[
+SECURITY_ILLEGAL_SHORT_FILENAME: FileName='%2']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>779</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Warning</Level>
+                <Keyword>IIS security events</Keyword>
+                <Message><![CDATA[
+SECURITY_REJECTED_IP: IPAddress='%2']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="IPAddress" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>780</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Warning</Level>
+                <Keyword>IIS security events</Keyword>
+                <Message><![CDATA[
+SECURITY_REJECTED_HOSTNAME: HostName='%2']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="HostName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>781</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Warning</Level>
+                <Keyword>IIS security events</Keyword>
+                <Message><![CDATA[
+SECURITY_REJECTED_REQUIRE_SSL_128]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>782</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Warning</Level>
+                <Keyword>IIS security events</Keyword>
+                <Message><![CDATA[
+SECURITY_FILE_ACCESS_DENIED: FileName='%2',AccountName='%3',DomainName='%4']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AccountName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DomainName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>783</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Warning</Level>
+                <Keyword>IIS security events</Keyword>
+                <Message><![CDATA[
+SECURITY_DENIED_BY_MIMEMAP: FileName='%2']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>784</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Warning</Level>
+                <Keyword>IIS security events</Keyword>
+                <Message><![CDATA[
+SECURITY_DENIED_BY_ISAPI_RESTRICTION: ImageName='%2']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ImageName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>785</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Warning</Level>
+                <Keyword>IIS security events</Keyword>
+                <Message><![CDATA[
+SECURITY_DENIED_BY_CGI_RESTRICTION: ImageName='%2']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ImageName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>786</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Warning</Level>
+                <Keyword>IIS security events</Keyword>
+                <Message><![CDATA[
+SECURITY_DENIED_BY_ACCESS_FLAGS: CurrentFlags='%2',NeededFlags='%3']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="CurrentFlags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="NeededFlags" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1025</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Keyword>IIS filter events</Keyword>
+                <Message><![CDATA[
+FILTER_START: FilterName='%2']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FilterName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1026</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Keyword>IIS filter events</Keyword>
+                <Message><![CDATA[
+FILTER_END: NotificationStatus='%2']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="NotificationStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1036</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Error</Level>
+                <Keyword>IIS filter events</Keyword>
+                <Message><![CDATA[
+FILTER_ERROR: ErrorCode='%2']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1037</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>IIS filter events</Keyword>
+                <Message><![CDATA[
+FILTER_PREPROC_HEADERS_START]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1038</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>IIS filter events</Keyword>
+                <Message><![CDATA[
+FILTER_PREPROC_HEADERS_END]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1039</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>IIS filter events</Keyword>
+                <Message><![CDATA[
+FILTER_URL_MAP_START: OrigURL='%2',OrigPath='%3',AccessPerms='%4',MatchingPath='%5',MatchingURL='%6',ScriptMapEntry='%7']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OrigURL" inType="win:AnsiString" outType="xs:string"/>
+  <data name="OrigPath" inType="win:AnsiString" outType="xs:string"/>
+  <data name="AccessPerms" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MatchingPath" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MatchingURL" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ScriptMapEntry" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1040</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>IIS filter events</Keyword>
+                <Message><![CDATA[
+FILTER_URL_MAP_END: FinalURL='%2',FinalPath='%3',AccessPerms='%4',MatchingPath='%5',MatchingURL='%6',ScriptMapEntry='%7']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FinalURL" inType="win:AnsiString" outType="xs:string"/>
+  <data name="FinalPath" inType="win:AnsiString" outType="xs:string"/>
+  <data name="AccessPerms" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MatchingPath" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MatchingURL" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ScriptMapEntry" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1041</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>IIS filter events</Keyword>
+                <Message><![CDATA[
+FILTER_AUTHENTICATION_START: OrigUserName='%2']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OrigUserName" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1042</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>IIS filter events</Keyword>
+                <Message><![CDATA[
+FILTER_AUTHENTICATION_END: FinalUserName='%2',PasswordChanged='%3']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FinalUserName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="PasswordChanged" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1043</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>IIS filter events</Keyword>
+                <Message><![CDATA[
+FILTER_AUTH_COMPLETE_START]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1044</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>IIS filter events</Keyword>
+                <Message><![CDATA[
+FILTER_AUTH_COMPLETE_END]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1045</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>IIS filter events</Keyword>
+                <Message><![CDATA[
+FILTER_SEND_RESPONSE_START: HttpStatus='%2']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="HttpStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1046</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>IIS filter events</Keyword>
+                <Message><![CDATA[
+FILTER_SEND_RESPONSE_END]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1047</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>IIS filter events</Keyword>
+                <Message><![CDATA[
+FILTER_END_OF_REQUEST_START]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1048</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>IIS filter events</Keyword>
+                <Message><![CDATA[
+FILTER_END_OF_REQUEST_END]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1049</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>IIS filter events</Keyword>
+                <Message><![CDATA[
+FILTER_LOG_START: OrigClientHostName='%2',OrigClientUserName='%3',OrigServerName='%4',OrigOperation='%5',OrigTarget='%6',OrigParameters='%7',OrigHttpStatus='%8',OrigWin32Status='%9']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OrigClientHostName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="OrigClientUserName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="OrigServerName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="OrigOperation" inType="win:AnsiString" outType="xs:string"/>
+  <data name="OrigTarget" inType="win:AnsiString" outType="xs:string"/>
+  <data name="OrigParameters" inType="win:AnsiString" outType="xs:string"/>
+  <data name="OrigHttpStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OrigWin32Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1050</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>IIS filter events</Keyword>
+                <Message><![CDATA[
+FILTER_LOG_END: FinalClientHostName='%2',FinalClientUserName='%3',FinalServerName='%4',FinalOperation='%5',FinalTarget='%6',FinalParameters='%7',FinalHttpStatus='%8',FinalWin32Status='%9']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FinalClientHostName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="FinalClientUserName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="FinalServerName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="FinalOperation" inType="win:AnsiString" outType="xs:string"/>
+  <data name="FinalTarget" inType="win:AnsiString" outType="xs:string"/>
+  <data name="FinalParameters" inType="win:AnsiString" outType="xs:string"/>
+  <data name="FinalHttpStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FinalWin32Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1051</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>IIS filter events</Keyword>
+                <Message><![CDATA[
+FILTER_SEND_RAW_DATA_START]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1052</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>IIS filter events</Keyword>
+                <Message><![CDATA[
+FILTER_SEND_RAW_DATA_END]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1053</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>IIS filter events</Keyword>
+                <Message><![CDATA[
+FILTER_ACCESS_DENIED_START: RequestedURL='%2',PhysicalPath='%3',DenialReason='%4']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="RequestedURL" inType="win:AnsiString" outType="xs:string"/>
+  <data name="PhysicalPath" inType="win:AnsiString" outType="xs:string"/>
+  <data name="DenialReason" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1054</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>IIS filter events</Keyword>
+                <Message><![CDATA[
+FILTER_ACCESS_DENIED_END]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1055</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>IIS filter events</Keyword>
+                <Message><![CDATA[
+FILTER_SET_REQ_HEADER: HeaderName='%2',HeaderValue='%3']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="HeaderName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="HeaderValue" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1056</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>IIS filter events</Keyword>
+                <Message><![CDATA[
+FILTER_ADD_REQ_HEADER: HeaderName='%2',HeaderValue='%3']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="HeaderName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="HeaderValue" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1057</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>IIS filter events</Keyword>
+                <Message><![CDATA[
+FILTER_SET_RESP_HEADER: HeaderName='%2',HeaderValue='%3']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="HeaderName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="HeaderValue" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1058</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>IIS filter events</Keyword>
+                <Message><![CDATA[
+FILTER_ADD_RESP_HEADER: HeaderName='%2',HeaderValue='%3']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="HeaderName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="HeaderValue" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1537</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Keyword>IIS CGI events</Keyword>
+                <Message><![CDATA[
+CGI_START]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1538</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Keyword>IIS CGI events</Keyword>
+                <Message><![CDATA[
+CGI_END]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1539</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>IIS CGI events</Keyword>
+                <Message><![CDATA[
+CGI_LAUNCH: CommandLine='%2',ErrorCode='%3',ProcessId='%4']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="CommandLine" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1540</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>IIS CGI events</Keyword>
+                <Message><![CDATA[
+CGI_TIMEOUT: Headers='%2']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Headers" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1541</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>IIS CGI events</Keyword>
+                <Message><![CDATA[
+CGI_PREMATURE_TERMINATION: Headers='%2']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Headers" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1542</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>IIS CGI events</Keyword>
+                <Message><![CDATA[
+CGI_REQUEST_ENTITY_SENT]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1543</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>IIS CGI events</Keyword>
+                <Message><![CDATA[
+CGI_HEADERS_RECEIVED]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1793</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>IIS compression events</Keyword>
+                <Message><![CDATA[
+STATIC_COMPRESSION_START]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1794</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>IIS compression events</Keyword>
+                <Message><![CDATA[
+STATIC_COMPRESSION_SUCCESS]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1795</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>IIS compression events</Keyword>
+                <Message><![CDATA[
+STATIC_COMPRESSION_NOT_SUCCESS: Reason='%2']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1796</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>IIS compression events</Keyword>
+                <Message><![CDATA[
+STATIC_COMPRESSION_CREATE_START: OriginalFileName='%2']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OriginalFileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1797</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>IIS compression events</Keyword>
+                <Message><![CDATA[
+STATIC_COMPRESSION_CREATE_END: ErrorCode='%2',OriginalFileName='%3',OriginalFileSize='%4',CompressedFileName='%5',CompressedFileSize='%6']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="OriginalFileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="OriginalFileSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CompressedFileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CompressedFileSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1798</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>IIS compression events</Keyword>
+                <Message><![CDATA[
+DYNAMIC_COMPRESSION_START]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1799</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>IIS compression events</Keyword>
+                <Message><![CDATA[
+DYNAMIC_COMPRESSION_SUCCESS]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1800</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>IIS compression events</Keyword>
+                <Message><![CDATA[
+DYNAMIC_COMPRESSION_NOT_SUCCESS: Reason='%2']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1801</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>IIS compression events</Keyword>
+                <Message><![CDATA[
+DYNAMIC_COMPRESSION_DO: OriginalSize='%2',CompressedSize='%3']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OriginalSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CompressedSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1802</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>IIS compression events</Keyword>
+                <Message><![CDATA[
+DYNAMIC_COMPRESSION_END]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1803</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>IIS compression events</Keyword>
+                <Message><![CDATA[
+STATIC_COMPRESSION_END]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2058</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>IIS cache events</Keyword>
+                <Message><![CDATA[
+FILE_CACHE_ACCESS_START: FileName='%2',UserName='%3',DomainName='%4']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UserName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DomainName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2059</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>IIS cache events</Keyword>
+                <Message><![CDATA[
+FILE_CACHE_ACCESS_END: Successful='%2',FileFromCache='%3',FileAddedToCache='%4',FileDirmoned='%5',LastModCheckErrorIgnored='%6',ErrorCode='%7',LastModifiedTime='%8']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Successful" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="FileFromCache" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="FileAddedToCache" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="FileDirmoned" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="LastModCheckErrorIgnored" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="LastModifiedTime" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2060</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>IIS cache events</Keyword>
+                <Message><![CDATA[
+URL_CACHE_ACCESS_START: RequestURL='%2']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="RequestURL" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2061</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>IIS cache events</Keyword>
+                <Message><![CDATA[
+URL_CACHE_ACCESS_END: PhysicalPath='%2',URLInfoFromCache='%3',URLInfoAddedToCache='%4',ErrorCode='%5']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="PhysicalPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="URLInfoFromCache" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="URLInfoAddedToCache" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2062</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>IIS cache events</Keyword>
+                <Message><![CDATA[
+HTTPSYS_CACHEABLE: HttpsysCacheable='%2',Reason='%3',CachePolicy='%4',TimeToLive='%5']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="HttpsysCacheable" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CachePolicy" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TimeToLive" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2063</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>IIS cache events</Keyword>
+                <Message><![CDATA[
+OUTPUT_CACHE_LOOKUP_START]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2064</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>IIS cache events</Keyword>
+                <Message><![CDATA[
+OUTPUT_CACHE_LOOKUP_END: Result='%2']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Result" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2065</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>IIS cache events</Keyword>
+                <Message><![CDATA[
+OUTPUT_CACHE_UPDATE_START: CachePolicy='%2',TimeToLive='%3']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="CachePolicy" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TimeToLive" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2066</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>IIS cache events</Keyword>
+                <Message><![CDATA[
+OUTPUT_CACHE_UPDATE_END: Result='%2']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Result" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2067</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>IIS cache events</Keyword>
+                <Message><![CDATA[
+OUTPUT_CACHE_DISABLED]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2305</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>IIS request notifications events</Keyword>
+                <Message><![CDATA[
+NOTIFY_MODULE_START: ModuleName='%2',Notification='%3',fIsPostNotification='%4']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ModuleName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Notification" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="fIsPostNotification" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2306</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>IIS request notifications events</Keyword>
+                <Message><![CDATA[
+NOTIFY_MODULE_END: ModuleName='%2',Notification='%3',fIsPostNotificationEvent='%4',NotificationStatus='%5']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ModuleName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Notification" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="fIsPostNotificationEvent" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="NotificationStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2307</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>IIS request notifications events</Keyword>
+                <Message><![CDATA[
+NOTIFY_MODULE_COMPLETION: ModuleName='%2',Notification='%3',fIsPostNotificationEvent='%4',CompletionBytes='%5',ErrorCode='%6']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ModuleName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Notification" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="fIsPostNotificationEvent" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="CompletionBytes" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2308</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>IIS request notifications events</Keyword>
+                <Message><![CDATA[
+PRE_BEGIN_REQUEST_START: ModuleName='%2']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ModuleName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2309</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>IIS request notifications events</Keyword>
+                <Message><![CDATA[
+PRE_BEGIN_REQUEST_END: ModuleName='%2',NotificationStatus='%3']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ModuleName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NotificationStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2319</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Error</Level>
+                <Keyword>IIS request notifications events</Keyword>
+                <Message><![CDATA[
+REQUEST_PROCESSING_ERROR: ModuleName='%2',Notification='%3',ErrorCode='%4']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ModuleName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Notification" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2320</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Warning</Level>
+                <Keyword>IIS request notifications events</Keyword>
+                <Message><![CDATA[
+MODULE_SET_RESPONSE_ERROR_STATUS: ModuleName='%2',Notification='%3',HttpStatus='%4',HttpReason='%5',HttpSubStatus='%6',ErrorCode='%7',ConfigExceptionInfo='%8']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ModuleName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Notification" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HttpStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HttpReason" inType="win:AnsiString" outType="xs:string"/>
+  <data name="HttpSubStatus" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ConfigExceptionInfo" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2321</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>IIS request notifications events</Keyword>
+                <Message><![CDATA[
+MODULE_SET_RESPONSE_SUCCESS_STATUS: ModuleName='%2',Notification='%3',HttpStatus='%4',HttpReason='%5']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ModuleName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Notification" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HttpStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HttpReason" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2322</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Warning</Level>
+                <Keyword>IIS request notifications events</Keyword>
+                <Message><![CDATA[
+SET_RESPONSE_ERROR_DESCRIPTION: ErrorDescription='%2']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ErrorDescription" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2561</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>IIS module events</Keyword>
+                <Message><![CDATA[
+MODULE_START: ModuleName='%2',Data1='%3',Data2='%4',ErrorCode='%5']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ModuleName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Data1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Data2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2562</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>IIS module events</Keyword>
+                <Message><![CDATA[
+MODULE_END: ModuleName='%2',Data1='%3',Data2='%4',ErrorCode='%5']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ModuleName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Data1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Data2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2563</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Critical</Level>
+                <Keyword>IIS module events</Keyword>
+                <Message><![CDATA[
+MODULE_CRITICAL_ERROR: ModuleName='%2',Data1='%3',Data2='%4',ErrorCode='%5']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ModuleName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Data1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Data2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2564</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Error</Level>
+                <Keyword>IIS module events</Keyword>
+                <Message><![CDATA[
+MODULE_ERROR: ModuleName='%2',Data1='%3',Data2='%4',ErrorCode='%5']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ModuleName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Data1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Data2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2565</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Warning</Level>
+                <Keyword>IIS module events</Keyword>
+                <Message><![CDATA[
+MODULE_WARNING: ModuleName='%2',Data1='%3',Data2='%4',ErrorCode='%5']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ModuleName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Data1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Data2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2566</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>IIS module events</Keyword>
+                <Message><![CDATA[
+MODULE_INFORMATION: ModuleName='%2',Data1='%3',Data2='%4',ErrorCode='%5']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ModuleName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Data1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Data2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2567</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>IIS module events</Keyword>
+                <Message><![CDATA[
+MODULE_VERBOSE: ModuleName='%2',Data1='%3',Data2='%4',ErrorCode='%5']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ModuleName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Data1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Data2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3329</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Error</Level>
+                <Keyword>IIS FastCGI events</Keyword>
+                <Message><![CDATA[
+FASTCGI_ACTIVITY_TIMEOUT]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3330</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Error</Level>
+                <Keyword>IIS FastCGI events</Keyword>
+                <Message><![CDATA[
+FASTCGI_REQUEST_TIMEOUT]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3331</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Error</Level>
+                <Keyword>IIS FastCGI events</Keyword>
+                <Message><![CDATA[
+FASTCGI_UNEXPECTED_EXIT]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3332</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Error</Level>
+                <Keyword>IIS FastCGI events</Keyword>
+                <Message><![CDATA[
+FASTCGI_RAPID_FAILURE_PROTECTION]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3333</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Error</Level>
+                <Keyword>IIS FastCGI events</Keyword>
+                <Message><![CDATA[
+FASTCGI_PATH_NOT_FOUND]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3334</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Error</Level>
+                <Keyword>IIS FastCGI events</Keyword>
+                <Message><![CDATA[
+FASTCGI_SCRIPT_PROCESSOR_MISSING]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3335</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Error</Level>
+                <Keyword>IIS FastCGI events</Keyword>
+                <Message><![CDATA[
+FASTCGI_ADD_JOBOBJECT_FAIL]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3336</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Error</Level>
+                <Keyword>IIS FastCGI events</Keyword>
+                <Message><![CDATA[
+FASTCGI_APPLICATION_MANAGER_SHUTDOWN]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3337</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Error</Level>
+                <Keyword>IIS FastCGI events</Keyword>
+                <Message><![CDATA[
+FASTCGI_QUEUE_FULL]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3338</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Error</Level>
+                <Keyword>IIS FastCGI events</Keyword>
+                <Message><![CDATA[
+FASTCGI_UNKNOWN_ERROR: ErrorCode='%2']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3339</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Information</Level>
+                <Keyword>IIS FastCGI events</Keyword>
+                <Message><![CDATA[
+FASTCGI_RESPONSE_WRITTEN]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3340</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>IIS FastCGI events</Keyword>
+                <Message><![CDATA[
+FASTCGI_WAITING_FOR_RESPONSE]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3341</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Error</Level>
+                <Keyword>IIS FastCGI events</Keyword>
+                <Message><![CDATA[
+FASTCGI_STDERR_TRACE_ERROR: Message='%2']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3342</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Warning</Level>
+                <Keyword>IIS FastCGI events</Keyword>
+                <Message><![CDATA[
+FASTCGI_STDERR_TRACE_WARNING: Message='%2']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3343</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Level>Verbose</Level>
+                <Keyword>IIS FastCGI events</Keyword>
+                <Message><![CDATA[
+FASTCGI_STDERR_TRACE_INFO: Message='%2']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3344</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Keyword>IIS FastCGI events</Keyword>
+                <Message><![CDATA[
+FASTCGI_QUEUE_REQUEST: PositionInQueue='%2',MaxInstances='%3']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="PositionInQueue" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxInstances" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3345</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Keyword>IIS FastCGI events</Keyword>
+                <Message><![CDATA[
+FASTCGI_ASSIGN_PROCESS: CommandLine='%2',IsNewProcess='%3',ProcessId='%4',RequestNumber='%5']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="CommandLine" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsNewProcess" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3346</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Keyword>IIS FastCGI events</Keyword>
+                <Message><![CDATA[
+FASTCGI_START]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3347</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Keyword>IIS FastCGI events</Keyword>
+                <Message><![CDATA[
+FASTCGI_END]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3585</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Keyword>IIS ISAPI events</Keyword>
+                <Message><![CDATA[
+ISAPI_START]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3586</Id>
+                <Version>1</Version>
+                <Channel>IIS Diagnostics Channel</Channel>
+                <Keyword>IIS ISAPI events</Keyword>
+                <Message><![CDATA[
+ISAPI_END]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
