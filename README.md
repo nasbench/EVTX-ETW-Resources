@@ -77,6 +77,7 @@ The following is a list of tools that can let us interact with the different ETW
 - [**ETW Explorer**](https://github.com/zodiacon/EtwExplorer/)
 - [**WEPExplorer**](https://github.com/lallousx86/WinTools/tree/master/WEPExplorer)
 - [**PerfView**](https://github.com/microsoft/perfview)
+- [**ETDucky.ProviderExplorer**](https://github.com/trucule/ETDucky.ProviderExplorer)
 
 ### Scripting w/ ETW (Detection, Digital Forensics)
 
@@ -85,6 +86,7 @@ The following is a list of tools that can let us interact with the different ETW
 - [**PyWintrace**](https://github.com/fireeye/pywintrace)
 - [**SilkETW**](https://github.com/fireeye/SilkETW)
 - [**KrabsETW**](https://github.com/microsoft/krabsetw/)
+- [**ETDucky.NetPath**](https://github.com/trucule/ETDucky.NetPath)
 
 ## Online Resources
 
