@@ -1,0 +1,248 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-UserSettingsBackup-EarlyDownloader</Name>
+        <Metadata>
+            <Guid>{C675305E-51BD-5DA6-08B4-D4CB88D198F0}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\Windows.CloudStore.EarlyDownloader.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\system32\Windows.CloudStore.EarlyDownloader.dll</MessageFilePath>
+            <HelpLink></HelpLink>
+            <PublisherMessage>Microsoft-Windows-UserSettingsBackup-EarlyDownloader</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-UserSettingsBackup-EarlyDownloader/Operational</Message>
+                    <Path>Microsoft-Windows-UserSettingsBackup-EarlyDownloader/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-UserSettingsBackup-EarlyDownloader/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Error %2 occurred. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="File" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-UserSettingsBackup-EarlyDownloader/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+An operation did not complete as expected. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="File" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-UserSettingsBackup-EarlyDownloader/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="File" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-UserSettingsBackup-EarlyDownloader/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Preparations to download units failed. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextTag" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-UserSettingsBackup-EarlyDownloader/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A download operation was canceled.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-UserSettingsBackup-EarlyDownloader/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A download all operation completed. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="OverallResult" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-UserSettingsBackup-EarlyDownloader/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A download operation has started. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DownloadUnitIdTypeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DownloadUnitIdCollectionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DownloadUnitIdIsPerDevice" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="CorrelationVector" inType="win:AnsiString" outType="xs:string"/>
+  <data name="DownloadRequestUri" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-UserSettingsBackup-EarlyDownloader/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A download asset operation has started. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DownloadAssetIdName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DownloadAssetUriName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CorrelationVector" inType="win:AnsiString" outType="xs:string"/>
+  <data name="DownloadRequestUri" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-UserSettingsBackup-EarlyDownloader/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+A download operation has failed. See event details for more information. ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Uri" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CorrelationVector" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Response" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>105</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-UserSettingsBackup-EarlyDownloader/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A download file has been saved. See event details for more information. ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ActivityId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FilePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Version" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Size" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>107</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-UserSettingsBackup-EarlyDownloader/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A download asset file has been saved. See event details for more information. ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DownloadAssetIdName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DownloadAssetUriName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FilePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>109</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-UserSettingsBackup-EarlyDownloader/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+A process response operation  failed. See event details for more information. ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Uri" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CorrelationVector" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Response" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>111</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-UserSettingsBackup-EarlyDownloader/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A profile data web request failed. See event details for more information. ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Partition" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Type" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Collection" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Instance" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CorrelationVector" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Encoding" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

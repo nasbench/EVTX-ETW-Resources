@@ -1,0 +1,204 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-DisplayColorCalibration</Name>
+        <Metadata>
+            <Guid>{3239EB6F-C7FC-4953-AA15-646829A4CA4C}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\dccw.exe</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\system32\dccw.exe</MessageFilePath>
+            <HelpLink></HelpLink>
+            <PublisherMessage>Microsoft-Windows-DisplayColorCalibration</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-DisplayColorCalibration/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-DisplayColorCalibration/Debug</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Display Color Calibration</Message>
+                    <Name>DISPLAY_COLOR_CALIBRATION</Name>
+                    <Value>1</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DisplayColorCalibration/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Display Color Calibration</Task>
+                <Message><![CDATA[
+Display color calibration started for device %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Device" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DisplayColorCalibration/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Display Color Calibration</Task>
+                <Message><![CDATA[
+Display color calibration canceled for device %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Device" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DisplayColorCalibration/Operational</Channel>
+                <Level>Information</Level>
+                <Task>Display Color Calibration</Task>
+                <Message><![CDATA[
+Display color calibration finished for device %1. Color profile %2 created.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Device" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Profile" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DisplayColorCalibration/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Display Color Calibration</Task>
+                <Message><![CDATA[
+%1 has been manually adjusted.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Setting" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DisplayColorCalibration/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Display Color Calibration</Task>
+                <Message><![CDATA[
+%1 has been adjusted from %2 to %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Setting" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="OldValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DisplayColorCalibration/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Display Color Calibration</Task>
+                <Message><![CDATA[
+%1 has been adjusted from %2 to %3 with gamma LUTs. See Details pane for new gamma LUT contents.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Setting" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="OldValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RedLuts" inType="win:UInt16" outType="win:HexInt16" count="256"/>
+  <data name="GreenLuts" inType="win:UInt16" outType="win:HexInt16" count="256"/>
+  <data name="BlueLuts" inType="win:UInt16" outType="win:HexInt16" count="256"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DisplayColorCalibration/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Display Color Calibration</Task>
+                <Message><![CDATA[
+%1 has been adjusted. Adjusted red gain from %2 to %3, green gain from %4 to %5, and blue gain from %6 to %7.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Setting" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="OldRedGain" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewRedGain" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OldGreenGain" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewGreenGain" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OldBlueGain" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewBlueGain" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DisplayColorCalibration/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Display Color Calibration</Task>
+                <Message><![CDATA[
+%1 has been adjusted with gamma LUTs. Adjusted red gain from %2 to %3, green gain from %4 to %5, and blue gain from %6 to %7. See Details pane for new gamma LUT contents.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Setting" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="OldRedGain" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewRedGain" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OldGreenGain" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewGreenGain" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OldBlueGain" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewBlueGain" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RedLuts" inType="win:UInt16" outType="win:HexInt16" count="256"/>
+  <data name="GreenLuts" inType="win:UInt16" outType="win:HexInt16" count="256"/>
+  <data name="BlueLuts" inType="win:UInt16" outType="win:HexInt16" count="256"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DisplayColorCalibration/Debug</Channel>
+                <Level>Information</Level>
+                <Task>Display Color Calibration</Task>
+                <Message><![CDATA[
+Error: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

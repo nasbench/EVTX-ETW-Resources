@@ -1,0 +1,347 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-UserSettingsBackup-Orchestrator</Name>
+        <Metadata>
+            <Guid>{47AE8351-B61A-51D1-0AD0-9D870C38F53A}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\Windows.CloudStore.Schema.DesktopShell.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\system32\Windows.CloudStore.Schema.DesktopShell.dll</MessageFilePath>
+            <HelpLink></HelpLink>
+            <PublisherMessage>Microsoft-Windows-UserSettingsBackup-Orchestrator</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-UserSettingsBackup-Orchestrator/Operational</Message>
+                    <Path>Microsoft-Windows-UserSettingsBackup-Orchestrator/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-UserSettingsBackup-Orchestrator/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Error %2 occurred. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="File" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-UserSettingsBackup-Orchestrator/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+An operation did not complete as expected. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="File" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-UserSettingsBackup-Orchestrator/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="File" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-UserSettingsBackup-Orchestrator/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Backing up a collection of settings was skipped. Collection id: (%1, %2, %3). See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ManifestId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Scope" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Reason" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-UserSettingsBackup-Orchestrator/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Backing up a collection of settings completed. Collection id: (%1, %2, %3). See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ManifestId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Scope" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-UserSettingsBackup-Orchestrator/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Backing up a collection of settings failed. Collection id: (%1, %2, %3). See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ManifestId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Scope" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-UserSettingsBackup-Orchestrator/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+A settings backup operation was canceled.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-UserSettingsBackup-Orchestrator/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to clean up a collection of previously backed up settings. Collection id: (%1, %2, %3).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ManifestId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Scope" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-UserSettingsBackup-Orchestrator/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Preparing to backup %1 collections of settings.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UnitCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-UserSettingsBackup-Orchestrator/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A settings backup operation completed. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="OverallResult" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-UserSettingsBackup-Orchestrator/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Restoring a collection of settings was skipped. Collection id: (%1, %2, %3). See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ManifestId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Scope" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Reason" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-UserSettingsBackup-Orchestrator/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Restoring a collection of settings completed. Collection id: (%1, %2, %3). See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ManifestId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Scope" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-UserSettingsBackup-Orchestrator/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Restoring a collection of settings failed. Collection id: (%1, %2, %3). See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ManifestId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Scope" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-UserSettingsBackup-Orchestrator/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+A settings restore operation was canceled.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-UserSettingsBackup-Orchestrator/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Preparing to restore %1 collections of settings.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UnitCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-UserSettingsBackup-Orchestrator/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A settings restore operation completed. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="OverallResult" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-UserSettingsBackup-Orchestrator/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Preparations to backup settings failed. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextTag" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-UserSettingsBackup-Orchestrator/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Preparations to restore settings failed. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextTag" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-UserSettingsBackup-Orchestrator/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Preparations to download units failed. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextTag" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-UserSettingsBackup-Orchestrator/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A download operation was canceled.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>22</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-UserSettingsBackup-Orchestrator/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A download operation completed. See event details for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="OverallResult" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

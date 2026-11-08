@@ -1,0 +1,688 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Wininit</Name>
+        <Metadata>
+            <Guid>{206F6DEA-D3C5-4D10-BC72-989F03C8B84B}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\wininit.exe</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\system32\wininit.exe</MessageFilePath>
+            <HelpLink></HelpLink>
+            <PublisherMessage>Microsoft-Windows-Wininit</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Wininit/Diagnostic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>1</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>WaitForWinstationShutdown</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>PreShutdownNotification</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>WaitForSystemProcesses</Name>
+                    <Value>5</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>ShutdownSystemRestore</Name>
+                    <Value>7</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>ShutdownWindows</Name>
+                    <Value>9</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>NtShutdownSystem</Name>
+                    <Value>51</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>SentLogoffRequest</Name>
+                    <Value>53</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>ReceivedShutdownRequest</Name>
+                    <Value>55</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>ShutdownDiagnostics</Name>
+                    <Value>6001</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>PerfTrackFullShutdown</Name>
+                    <Value>6002</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>PerfInstrumentation</Name>
+                    <Value>65536</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>PerfDiagnostics</Name>
+                    <Value>131072</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Classic</Message>
+                    <Name>win:EventlogClassic</Name>
+                    <Value>36028797018963968</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Wininit/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>WaitForWinstationShutdown</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>PerfInstrumentation</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Wininit/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>WaitForWinstationShutdown</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>PerfInstrumentation</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Wininit/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>PreShutdownNotification</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>PerfInstrumentation</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Wininit/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>PreShutdownNotification</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>PerfInstrumentation</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Wininit/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>WaitForSystemProcesses</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>PerfInstrumentation</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Wininit/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>WaitForSystemProcesses</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>PerfInstrumentation</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Wininit/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>ShutdownSystemRestore</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>PerfInstrumentation</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Wininit/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>ShutdownSystemRestore</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>PerfInstrumentation</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Wininit/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>ShutdownWindows</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>PerfInstrumentation</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Wininit/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>ShutdownWindows</Task>
+                <Opcode>Stop</Opcode>
+                <Keyword>PerfInstrumentation</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Win32Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Custom dynamic link libraries are being loaded for every application. The system administrator should review the list of libraries to ensure they are related to trusted applications. Please visit http://support.microsoft.com/kb/197571 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StringCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="String" inType="win:UnicodeString" outType="xs:string" count="StringCount"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+LSASS.exe was started as a protected process with level: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Level" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Credential Guard was started and will protect LSA credentials.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Credential Guard configuration:
+
+Registry Configuration: %1
+Test Configuration: %2
+Auto Enablement: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Config" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="IsTestConfig" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsAutoEnabled" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Credential Guard and/or VBS Key Isolation are configured but the secure kernel is not running; continuing without them.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+LsaIso.exe, the host process for Credential Guard and VBS Key Isolation, failed to launch: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Level" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Error reading Credential Guard (LsaIso.exe) UEFI configuration: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Level" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+VBS Key Isolation was started and will protect VSM-isolated keys.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Virtualization Based Security new timer creation status
+
+HRESULT: %1
+New latch timer needed: %2
+New latch timer waiting for system update completion: %3
+Previous latch timer exists but disabled by registry: %4
+Policy file exists: %5
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:Int32" outType="win:Hresult"/>
+  <data name="NewLatchTimerNeeded" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="NewLatchTimerWaitingSystemUpdateCompletion" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="PreviousLatchTimerExistsButDisabled" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="PolicyFileExists" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Virtualization Based Security master key timer start status
+
+Win32Error: %1
+Start time: %2
+Grace period: %3
+Due time: %4
+Policy version: %5
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="win32Error" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ftStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="ullDelay" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ftDueTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="PolicyVersion" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Virtualization Based Security previous timer resume status
+
+HRESULT: %1
+Previous timer present: %2
+Start time: %3
+Grace period: %4
+Policy version: %5
+Attempted recovery increment succeeded: %6
+Previous timer invalid: %7
+Unlatched policy file exists: %8
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:Int32" outType="win:Hresult"/>
+  <data name="PreviousTimerPresent" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ftStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="ullDelay" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="PolicyVersion" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="fAttemptedRecoveryIncrementCounterSucceeded" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="fPreviousLatchTimerInvalid" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="fPolicyFileExists" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>22</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Virtualization Based Security latch policy status
+
+HRESULT: %1
+TPM counter value: %2
+Expected TPM counter value: %3
+Policy version: %4
+Incremented: %5
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:Int32" outType="win:Hresult"/>
+  <data name="Counter" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="PendingLKeyPkgId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="PendingPolicyVersion" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="CounterIncremented" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>23</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Boot App Anti-Rollback: Initialize Completed with status:
+HRESULT: %1
+New timer needed: %2
+New timer waiting for system update completion: %3
+Previous latch timer exists but disabled by registry: %4
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:Int32" outType="win:Hresult"/>
+  <data name="NewTimerNeeded" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="NewTimerWaitingUpdateCompletion" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="PreviousTimerExistsButDisabled" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>24</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Boot App Anti-Rollback: Timer start completed with status:
+
+Win32Error: %1
+Start time: %2
+Grace period: %3
+Due time: %4
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="win32Error" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FileStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="GracePeriod" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="DueTime" inType="win:FILETIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Boot App Anti-Rollback: Previous timer resumed with status:
+
+HRESULT: %1
+Previous timer present: %2
+Start time: %3
+Grace period: %4
+Attempted recovery enforcement succeeded: %5
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:Int32" outType="win:Hresult"/>
+  <data name="PreviousTimerExists" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="PreviousTimerStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="GracePeriod" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="AttemptedRecoveryEnforcementSucceeded" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>26</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Boot App Anti-Rollback: Boot.stl Enforcement completed with status:
+
+HRESULT: %1
+Boot Stl Enforced Successfully: %2
+WNF Published with result: %3
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:Int32" outType="win:Hresult"/>
+  <data name="BootStlEnforced" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="LocalStatus" inType="win:HexInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Wininit/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>NtShutdownSystem</Task>
+                <Keyword>PerfInstrumentation</Keyword>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>53</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Wininit/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>SentLogoffRequest</Task>
+                <Keyword>PerfInstrumentation</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SessionId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>55</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Wininit/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>ReceivedShutdownRequest</Task>
+                <Keyword>PerfInstrumentation</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SessionId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsRemote" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="GracePeriod" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Hybrid shutdown has been overridden by a disk check request. The system will perform a full shutdown instead.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1073742825</Id>
+                <Version>0</Version>
+                <Keyword>Classic</Keyword>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221226487</Id>
+                <Version>0</Version>
+                <Keyword>Classic</Keyword>
+                <Message><![CDATA[
+A critical system process, %1, failed with status code %2.  The machine must now be restarted.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221228474</Id>
+                <Version>0</Version>
+                <Keyword>Classic</Keyword>
+                <Message><![CDATA[
+Windows start-up process has unexpectedly terminated.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147486651</Id>
+                <Version>0</Version>
+                <Keyword>Classic</Keyword>
+                <Message><![CDATA[
+Windows start-up process has failed to start the remote shutdown server.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147486652</Id>
+                <Version>0</Version>
+                <Keyword>Classic</Keyword>
+                <Message><![CDATA[
+Windows start-up process has failed to synchronize with the local security subsystem during setup.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221228477</Id>
+                <Version>0</Version>
+                <Keyword>Classic</Keyword>
+                <Message><![CDATA[
+Windows start-up process has failed to terminate system processes.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221228478</Id>
+                <Version>0</Version>
+                <Keyword>Classic</Keyword>
+                <Message><![CDATA[
+Windows shudown failed with error code %1 in phase: %2.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Wininit/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>ShutdownDiagnostics</Task>
+                <Opcode>Start</Opcode>
+                <Keyword>PerfDiagnostics PerfInstrumentation</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6002</Id>
+                <Version>1</Version>
+                <Channel>Microsoft-Windows-Wininit/Diagnostic</Channel>
+                <Level>Information</Level>
+                <Task>PerfTrackFullShutdown</Task>
+                <Keyword>PerfInstrumentation</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ShutdownFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SystemShutdownDuration" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="SkuHasLogoff" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

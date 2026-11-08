@@ -1,0 +1,192 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-W3LOGSVC</Name>
+        <Metadata>
+            <Guid>{FF6656CF-35A8-4194-A817-F79C7FDEF697}</Guid>
+            <ResourceFilePath>%windir%\system32\inetsrv\iisres.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%windir%\system32\inetsrv\iisres.dll</MessageFilePath>
+            <HelpLink></HelpLink>
+            <PublisherMessage>Microsoft-Windows-IIS-W3LOGSVC</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>System</Path>
+                    <Index>4294967295</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Classic</Message>
+                    <Name>win:EventlogClassic</Name>
+                    <Value>36028797018963968</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>3221231473</Id>
+                <Version>0</Version>
+                <Keyword>Classic</Keyword>
+                <Message><![CDATA[
+W3C Logging Service failed to start.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221231474</Id>
+                <Version>0</Version>
+                <Keyword>Classic</Keyword>
+                <Message><![CDATA[
+W3C Logging Service failed to create the log file directory '%2' for site id '%1'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SiteID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LogDirectoryName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221231475</Id>
+                <Version>0</Version>
+                <Keyword>Classic</Keyword>
+                <Message><![CDATA[
+W3C Logging Service failed to create log file '%2' for site id '%1'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SiteID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LogFileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221231476</Id>
+                <Version>0</Version>
+                <Keyword>Classic</Keyword>
+                <Message><![CDATA[
+W3C Logging Service failed to write to the log file '%2' for site id '%1'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SiteID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LogFileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221231477</Id>
+                <Version>0</Version>
+                <Keyword>Classic</Keyword>
+                <Message><![CDATA[
+W3C Logging Service failed to connect to the pipe server in the worker process with pipe name '%1'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PipeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221231478</Id>
+                <Version>0</Version>
+                <Keyword>Classic</Keyword>
+                <Message><![CDATA[
+W3C Logging Service failed to write message to the pipe server in the worker process with id '%1'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221231479</Id>
+                <Version>0</Version>
+                <Keyword>Classic</Keyword>
+                <Message><![CDATA[
+W3C Logging Service failed to stop.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221231480</Id>
+                <Version>0</Version>
+                <Keyword>Classic</Keyword>
+                <Message><![CDATA[
+W3C Logging Service is stopping because it encountered an error. The data field contains the error number.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221231481</Id>
+                <Version>0</Version>
+                <Keyword>Classic</Keyword>
+                <Message><![CDATA[
+Owner of log file or directory '%2' for site id '%1' is invalid.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SiteID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LogFileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221231482</Id>
+                <Version>0</Version>
+                <Keyword>Classic</Keyword>
+                <Message><![CDATA[
+W3C Logging Service failed to read config for site id '%1'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SiteID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221231483</Id>
+                <Version>0</Version>
+                <Keyword>Classic</Keyword>
+                <Message><![CDATA[
+'%1' ETW session events to W3C Logging Service were dropped. You will not find some entries in the log file.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DroppedEvents" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

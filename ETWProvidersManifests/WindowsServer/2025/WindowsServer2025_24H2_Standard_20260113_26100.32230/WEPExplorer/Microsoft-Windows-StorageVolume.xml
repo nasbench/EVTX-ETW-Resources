@@ -1,0 +1,125 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-StorageVolume</Name>
+        <Metadata>
+            <Guid>{C8127B86-E611-5638-63F4-AE37539084D2}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\drivers\volmgr.sys</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\system32\drivers\volmgr.sys</MessageFilePath>
+            <HelpLink></HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-StorageVolume/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-StorageVolume/Diagnostic</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageVolume/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Volume arrived: volume %1 disk %3 offset %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DiskInstancePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DiskNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PartitionOffset" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageVolume/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Volume removed: volume %1 disk %3 offset %4 deleted %5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DiskInstancePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DiskNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PartitionOffset" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Deleted" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageVolume/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Spaces conversion started: volume %1 disk %3 offset %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DiskInstancePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DiskNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PartitionOffset" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageVolume/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Spaces conversion cancelled: volume %1 disk %3 offset %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DiskInstancePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DiskNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PartitionOffset" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-StorageVolume/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Spaces conversion complete: volume %1 disk %3 offset %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DiskInstancePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DiskNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PartitionOffset" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
