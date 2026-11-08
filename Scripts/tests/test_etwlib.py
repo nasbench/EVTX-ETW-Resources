@@ -105,3 +105,27 @@ def test_parse_etw_xml_reports_malformed_manifest(tmp_path):
     assert parse_etw_xml(str(path)) == EMPTY_PROVIDER
     assert len(etwlib.ERRORS) == 1
     etwlib.ERRORS.clear()
+
+
+def test_md_table_matches_csvtomd():
+    # Expected text generated with csvtomd.md_table(table, padding=2)
+    table = [["ETW Provider", "Number Of Events"], ["Microsoft-Windows-Kernel-Process", "73"], ["A", "5"], ["Jagged"]]
+    assert etwlib.md_table(table, padding=2) == 'ETW Provider                      |  Number Of Events\n----------------------------------|------------------\nMicrosoft-Windows-Kernel-Process  |  73\nA                                 |  5\nJagged                            |'
+
+
+def test_parse_build_folder():
+    assert etwlib.parse_build_folder("WindowsServer2025_24H2_Standard_20260113_26100.32230") == {
+        "windows": "Windows Server 2025",
+        "version": "24H2",
+        "edition": "Standard",
+        "date": "2026/01/13",
+        "build": "26100.32230",
+    }
+    assert etwlib.parse_build_folder("W11_22H2_Pro_20221018_22621.674")["windows"] == "Windows 11"
+
+
+def test_build_sort_key_compares_numbers():
+    builds = ["26100.2", "26100.1742", "26100.32230", "19045"]
+    assert sorted(builds, key=etwlib.build_sort_key, reverse=True) == ["26100.32230", "26100.1742", "26100.2", "19045"]
+    # as floats 26100.2 would sort above 26100.1742
+    assert float("26100.2") > float("26100.1742")

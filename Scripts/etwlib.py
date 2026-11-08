@@ -98,3 +98,62 @@ def parse_etw_xml(file_path):
         events.append(parsed)
 
     return {"provider_name": provider.findtext("Name", ""), "events": events}
+
+
+def md_table(table, padding=2):
+    """Render rows (the first one is the header) as a Markdown table.
+
+    Cells are padded to the width of their column, like the csvtomd package
+    this replaces.
+    """
+    columns = max(len(row) for row in table)
+    rows = [list(row) + [""] * (columns - len(row)) for row in table]
+    widths = [max(len(row[i]) for row in rows) for i in range(columns)]
+    pad = " " * padding
+
+    def line(cells):
+        return (pad + "|" + pad).join(cell.ljust(width) for cell, width in zip(cells, widths)).rstrip()
+
+    divider = ("-" * padding + "|" + "-" * padding).join("-" * width for width in widths)
+    return "\n".join([line(rows[0]), divider] + [line(row) for row in rows[1:]])
+
+
+def parse_build_folder(name):
+    """Split a build folder name into its parts.
+
+    "WindowsServer2025_24H2_Standard_20260113_26100.32230" gives the
+    Windows name ("Windows Server 2025"), version ("24H2"), edition
+    ("Standard"), date ("2026/01/13") and build ("26100.32230").
+    """
+    parts = name.split("_")
+    head = parts[0]
+    if head.startswith("WindowsServer"):
+        windows = "Windows Server " + head[len("WindowsServer"):]
+    else:
+        windows = "Windows " + head[1:]
+    date = ""
+    if len(parts) > 3:
+        date = parts[3][0:4] + "/" + parts[3][4:6] + "/" + parts[3][6:8]
+    return {
+        "windows": windows,
+        "version": parts[1],
+        "edition": parts[2],
+        "date": date,
+        "build": parts[4] if len(parts) > 4 else "",
+    }
+
+
+def _number(text):
+    try:
+        return int(text)
+    except ValueError:
+        return 0
+
+
+def build_sort_key(build):
+    """Sort key of a "26100.32230" build: compare the parts as numbers.
+
+    Parsing the build as a float ("26100.2" > "26100.1742") sorts the update
+    revision wrongly.
+    """
+    return tuple(_number(part) for part in build.split("."))

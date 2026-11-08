@@ -33,10 +33,9 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-          cache: pip
-          cache-dependency-path: Scripts/requirements.txt
-      - name: Install dependencies
-        run: python -m pip install -r Scripts/requirements.txt -r Scripts/requirements-dev.txt
+      # The converters only use the standard library; pytest is for the tests
+      - name: Install test dependencies
+        run: python -m pip install -r Scripts/requirements-dev.txt
       - name: Run the unit tests
         run: python -m pytest Scripts/tests
       - name: Delete previous CSV entries
