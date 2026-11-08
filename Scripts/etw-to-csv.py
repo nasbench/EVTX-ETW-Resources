@@ -215,7 +215,8 @@ def generateStats():
 
 def converterStart(parsed_provider, folderToCreate, csvDir):
     header = "Provider,Level,Event ID,Version,Channel,Task,Opcode,Keyword,Message"
-    with open(csvDir + folderToCreate + "/Providers/" + parsed_provider["provider_name"] + ".csv", "w+") as f:
+    # Provider names are used as file names: "TCP/IP" cannot be one
+    with open(csvDir + folderToCreate + "/Providers/" + parsed_provider["provider_name"].replace("/", "_") + ".csv", "w+") as f:
         f.seek(0)
         f.write(header)
         f.write("\n")
