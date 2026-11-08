@@ -36,7 +36,9 @@ jobs:
           cache: pip
           cache-dependency-path: Scripts/requirements.txt
       - name: Install dependencies
-        run: python -m pip install -r Scripts/requirements.txt
+        run: python -m pip install -r Scripts/requirements.txt -r Scripts/requirements-dev.txt
+      - name: Run the unit tests
+        run: python -m pytest Scripts/tests
       - name: Delete previous CSV entries
         run: rm -rf ETWEventsList/
       - name: Run the etw-to-csv converter
