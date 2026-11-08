@@ -1,0 +1,795 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-SMBDirect</Name>
+        <Metadata>
+            <Guid>{DB66EA65-B7BB-4CA9-8748-334CB5C32400}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\drivers\smbdirect.sys</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\system32\drivers\smbdirect.sys</MessageFilePath>
+            <HelpLink></HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-SMBDirect/Operational</Message>
+                    <Path>Microsoft-Windows-SMBDirect/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-SMBDirect/Connectivity</Message>
+                    <Path>Microsoft-Windows-SMBDirect/Connectivity</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Critical</Message>
+                    <Name>win:Critical</Name>
+                    <Value>1</Value>
+                </Level>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>0</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+SMB Direct is starting.
+
+Version: %1.%2.%3.%4
+
+Guidance:
+
+This event is informational. No action is required.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BuildMajor" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BuildMinor" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProductMajor" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProductMinor" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+SMB Direct has started.
+
+Version: %1.%2.%3.%4
+
+Guidance:
+
+This event is informational. No action is required.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BuildMajor" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BuildMinor" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProductMajor" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProductMinor" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+SMB Direct is stopping.
+
+Version: %1.%2.%3.%4
+
+Guidance:
+
+This event is informational. No action is required.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BuildMajor" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BuildMinor" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProductMajor" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProductMinor" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+SMB Direct has stopped.
+
+Version: %1.%2.%3.%4
+
+Guidance:
+
+This event is informational. No action is required.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BuildMajor" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BuildMinor" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProductMajor" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProductMinor" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to load a configuration parameter from the registry.
+
+Registry key: %1
+Parameter name: %2
+Status: %3
+
+Guidance:
+
+Verify that the parameter's registry value type is correct and that the value is in the parameter's range of accepted values. SMB Direct will use the parameter's default value until this issue is corrected. SMB Direct must be restarted to read updated configuration parameter values from the registry.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RegistryKeyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ParamName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A configuration parameter value has been updated.
+
+Name: %1
+Value: %2
+Default: %3
+
+Guidance:
+
+This event is informational. No action is required.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Value" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="IsDefault" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A configuration parameter value has been updated.
+
+Name: %1
+Value: %3
+Default: %4
+
+Guidance:
+
+This event is informational. No action is required.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ValueSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Value" inType="win:Binary" outType="xs:hexBinary" length="ValueSize"/>
+  <data name="IsDefault" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>150</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+A socket configuration parameter value is not supported.
+
+Adapter interface index: %1
+Socket ID: %2
+Parameter name: %3
+Configured value: %4
+Minimum supported value: %5
+Maximum supported value: %6
+Selected value: %7
+
+Guidance:
+
+A socket configuration parameter value is not supported by the socket's RDMA network adapter or is incompatible with one or more of the socket's other configuration parameter values. The selected value will be used until this issue is corrected.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AdapterIfIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SocketId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ParamName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ConfiguredValue" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="MinSupportedValue" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="MaxSupportedValue" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="SelectedValue" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>200</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+Identified a set of completion queue processors.
+
+Node number: %1
+Group number: %2
+Processor mask: %3
+First processor number: %4
+Last processor number: %5
+
+Guidance:
+
+This event is informational. No action is required.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NodeNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="GroupNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProcessorMask" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="FirstProcessorNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LastProcessorNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>201</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+A NUMA node has too few completion queue processors for optimal performance.
+
+Node number: %1
+Base affinity node: %2
+Max affinity node: %3
+Base affinity processor: %4
+Max affinity processor: %5
+Processor affinity mask: %7
+
+Guidance:
+
+The configuration parameters BaseAffinityNode, MaxAffinityNode, BaseAffinityProcessor, MaxAffinityProcessor, and ProcessorAffinityMask specify the set of processors that SMB Direct may use for its completion queues. The current configuration values allow only one processor in the specified NUMA node to be used (non-NUMA systems are treated as NUMA systems with one node). This configuration will degrade the performance of any SMB Direct connection that is affinitized to this NUMA node. To correct this issue, increase the number of completion queue processors in this NUMA node to a multiple of two. SMB Direct must be restarted to read updated configuration parameter values from the registry.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NodeNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BaseAffinityNode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxAffinityNode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BaseAffinityProcessor" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxAffinityProcessor" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProcessorAffinityMaskSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProcessorAffinityMask" inType="win:Binary" outType="xs:hexBinary" length="ProcessorAffinityMaskSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>202</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to identify any completion queue processors.
+
+Base affinity node: %1
+Max affinity node: %2
+Base affinity processor: %3
+Max affinity processor: %4
+Processor affinity mask: %6
+
+Guidance:
+
+The configuration parameters BaseAffinityNode, MaxAffinityNode, BaseAffinityProcessor, MaxAffinityProcessor, and ProcessorAffinityMask specify the set of processors that SMB Direct may use for its completion queues. The current configuration values exclude all processors from being used. This configuration is invalid. SMB Direct will use all processors until this issue is corrected. SMB Direct must be restarted to read updated configuration parameter values from the registry.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BaseAffinityNode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxAffinityNode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BaseAffinityProcessor" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxAffinityProcessor" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProcessorAffinityMaskSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProcessorAffinityMask" inType="win:Binary" outType="xs:hexBinary" length="ProcessorAffinityMaskSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>300</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Operational</Channel>
+                <Level>Critical</Level>
+                <Message><![CDATA[
+An RDMA network adapter's NDKPI version is no longer supported.
+
+Adapter interface index: %1
+NDKPI version: %2.%3
+Minimum supported NDKPI version: %4.%5
+
+Guidance:
+
+The Network Direct Kernel Provider Interface (NDKPI) is the API through which SMB Direct interacts with RDMA network adapters. This adapter's NDKPI version is no longer supported by SMB Direct. Check for newer drivers and/or firmware from the network adapter's manufacturer.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AdapterIfIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AdapterNdkVersionMajor" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="AdapterNdkVersionMinor" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="MinSupportedNdkVersionMajor" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="MinSupportedNdkVersionMinor" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>301</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Operational</Channel>
+                <Level>Critical</Level>
+                <Message><![CDATA[
+An RDMA network adapter's NDKPI limit does not meet SMB Direct's minimum requirements.
+
+Adapter interface index: %1
+NDKPI limit name: %2
+NDKPI limit value: %3
+Minimum supported NDKPI limit value: %4
+
+Guidance:
+
+The Network Direct Kernel Provider Interface (NDKPI) is the API through which SMB Direct interacts with RDMA network adapters. This adapter advertises an NDKPI limit that is incompatible with SMB Direct requirements. Contact the network adapter's manufacturer to determine if the limit can be increased.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AdapterIfIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NdkLimitName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NdkLimitValue" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="MinSupportedNdkLimitValue" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>302</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Failed to allocate an RDMA network adapter resource.
+
+Adapter interface index: %1
+Socket ID: %2
+RDMA resource type: %3
+
+Guidance:
+
+This event may indicate that the demand for SMB Direct sockets exceeds one or more of the RDMA network adapter's limits.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AdapterIfIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SocketId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="RdmaObjectType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>303</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Operational</Channel>
+                <Level>Critical</Level>
+                <Message><![CDATA[
+An RDMA network adapter's completion queue has experienced a catastrophic failure and is no longer operational.
+
+Adapter interface index: %1
+Socket ID: %2
+Status: %3
+
+Guidance:
+
+RDMA capable network adapters use completion queues to notify SMB Direct that operations such as sending or receiving data have completed. The catastrophic failure of a completion queue will result in an unusable SMB Direct connection. Verify that the latest version of the network adapter's driver and/or firmware are installed. Contact the network adapter's manufacturer if the issue persists.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AdapterIfIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SocketId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>304</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Allocating an RDMA network adapter resource took too long.
+
+Adapter interface index: %1
+Socket ID: %2
+Elapsed microseconds: %3
+Slow API: %4
+Status: %5
+
+Guidance:
+
+This event may indicate that the demand for SMB Direct sockets exceeds one or more of the RDMA network adapter's limits.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AdapterIfIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SocketId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ElapsedUsecs" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ApiName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Connectivity</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+An RDMA network adapter has been opened.
+
+Adapter interface index: %1
+NDK version: %2.%3
+Effective NDK version: %4.%5
+Vendor ID: %6
+Device ID: %7
+Max registration size: %8
+Max window size: %9
+FRMR page count: %10
+Max initiator request SGEs: %11
+Max effective initiator request SGEs: %12
+Max receive request SGEs: %13
+Max effective receive request SGEs: %14
+Max read request SGEs: %15
+Max effective read request SGEs: %16
+Max transfer length: %17
+Max effective send size: %18
+Max effective receive size: %19
+Max inline data size: %20
+Max inbound read limit: %21
+Max outbound read limit: %22
+Max receive queue depth: %23
+Max effective receive queue depth: %24
+Max initiator queue depth: %25
+Max effective initiator queue depth: %26
+Max SRQ depth: %27
+Max CQ depth: %28
+Large request threshold: %29
+Max caller data: %30
+Max callee data: %31
+Adapter flags: %32
+In order DMA: %33
+Read sink required: %34
+CQ interrupt moderation: %35
+Multi-engine: %36
+Read local invalidate: %37
+CQ resize: %38
+Loopback connections: %39
+
+Guidance:
+
+This event is informational. No action is required.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AdapterIfIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NdkMajorVer" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="NdkMinorVer" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="EffectiveNdkMajorVer" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="EffectiveNdkMinorVer" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VendorId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="DeviceId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="MaxRegistrationSize" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="MaxWindowSize" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="FrmrPageCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxInitiatorRequestSge" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxEffectiveInitiatorRequestSge" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxReceiveRequestSge" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxEffectiveReceiveRequestSge" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxReadRequestSge" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxEffectiveReadRequestSge" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxTransferLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxEffectiveSendSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxEffectiveReceiveSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxInlineDataSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxInboundReadLimit" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxOutboundReadLimit" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxReceiveQueueDepth" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxEffectiveReceiveQueueDepth" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxInitiatorQueueDepth" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxEffectiveInitiatorQueueDepth" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxSrqDepth" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxCqDepth" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LargeRequestThreshold" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxCallerData" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxCalleeData" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AdapterFlags" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="InOrderDma" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="RdmaReadSinkRequired" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="CqInterruptModeration" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="MultiEngine" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ReadLocalInvalidate" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="CqResize" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="LoopbackConnections" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Connectivity</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A socket has disconnected.
+
+Adapter interface index: %1
+Socket ID: %2
+Local network address: %4
+Remote network address: %6
+Application initiated: %7
+Timed out: %8
+
+Guidance:
+
+This event is informational. No action is required.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AdapterIfIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SocketId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalNetAddressSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalNetAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalNetAddressSize"/>
+  <data name="RemoteNetAddressSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteNetAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteNetAddressSize"/>
+  <data name="ApplicationInitiated" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="TimedOut" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Connectivity</Channel>
+                <Level>Critical</Level>
+                <Message><![CDATA[
+A network protocol violation has been detected.
+
+Adapter interface index: %1
+Socket ID: %2
+Local network address: %4
+Remote network address: %6
+Violation type: %7
+
+Guidance:
+
+The SMB Direct subsystem has detected a violation of the SMB Direct network protocol on one of its connections. Possible causes include, but are not limited to, defects in the connection's remote peer or corruption of SMB Direct messages in transit on the network.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AdapterIfIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SocketId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalNetworkAddressSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalNetAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalNetworkAddressSize"/>
+  <data name="RemoteNetworkAddressSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteNetAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteNetworkAddressSize"/>
+  <data name="ViolationType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Connectivity</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to establish an outbound connection.
+
+Adapter interface index: %1
+Socket ID: %2
+Local network address: %4
+Remote network address: %6
+NdkConnect status: %7
+NdkCompleteConnect status: %8
+NdkReceive status: %9
+NdkSend status: %10
+Negotiate status: %11
+Timed out: %12
+RDMA resource failure type: %13
+Status: %14
+
+Guidance:
+
+This event is informational. No action is required.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AdapterIfIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SocketId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalNetAddressSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalNetAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalNetAddressSize"/>
+  <data name="RemoteNetAddressSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteNetAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteNetAddressSize"/>
+  <data name="NdkConnectStatus" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="NdkCompleteConnectStatus" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="NdkReceiveStatus" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="NdkSendStatus" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="NegotiateStatus" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="TimedOut" inType="win:UInt8" outType="xs:boolean"/>
+  <data name="RdmaObjectCreationFailureType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Connectivity</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Failed to accept an inbound connection.
+
+Adapter interface index: %1
+Socket ID: %2
+Local network address: %4
+Remote network address: %6
+NdkAccept status: %7
+NdkReceive status: %8
+NdkSend status: %9
+Negotiate status: %10
+Timed out: %11
+Refusal reason: %12
+RDMA resource failure type: %13
+Status: %14
+
+Guidance:
+
+This event is informational. No action is required.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AdapterIfIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SocketId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalNetAddressSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalNetAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalNetAddressSize"/>
+  <data name="RemoteNetAddressSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteNetAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteNetAddressSize"/>
+  <data name="NdkAcceptStatus" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="NdkReceiveStatus" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="NdkSendStatus" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="NegotiateStatus" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="TimedOut" inType="win:UInt8" outType="xs:boolean"/>
+  <data name="RefusalReason" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RdmaObjectCreationFailureType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Connectivity</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+A socket has been disconnected after the remote peer failed to respond to a keepalive request.
+
+Adapter interface index: %1
+Socket ID: %2
+Local Address: %4
+Remote Address: %6
+Deadline (ms): %7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AdapterIfIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SocketId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalNetAddressSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalNetAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalNetAddressSize"/>
+  <data name="RemoteNetAddressSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteNetAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteNetAddressSize"/>
+  <data name="DeadlineInMs" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5007</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Connectivity</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+A socket has been disconnected after the remote peer failed to grant send credits.
+
+Adapter interface index: %1
+Socket ID: %2
+Local Address: %4
+Remote Address: %6
+Deadline (ms): %7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AdapterIfIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SocketId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalNetAddressSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalNetAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalNetAddressSize"/>
+  <data name="RemoteNetAddressSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteNetAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteNetAddressSize"/>
+  <data name="DeadlineInMs" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5008</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+A request to rundown a socket exceeded the completion deadline.
+
+Adapter interface index: %1
+Socket ID: %2
+Local Address: %4
+Remote Address: %6
+Deadline (ms): %7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AdapterIfIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SocketId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalNetAddressSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalNetAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalNetAddressSize"/>
+  <data name="RemoteNetAddressSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteNetAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteNetAddressSize"/>
+  <data name="DeadlineInMs" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5009</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-SMBDirect/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+A request to close a socket exceeded the completion deadline.
+
+Adapter interface index: %1
+Socket ID: %2
+Local Address: %4
+Remote Address: %6
+Deadline (ms): %7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AdapterIfIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SocketId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LocalNetAddressSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalNetAddress" inType="win:Binary" outType="win:SocketAddress" length="LocalNetAddressSize"/>
+  <data name="RemoteNetAddressSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteNetAddress" inType="win:Binary" outType="win:SocketAddress" length="RemoteNetAddressSize"/>
+  <data name="DeadlineInMs" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

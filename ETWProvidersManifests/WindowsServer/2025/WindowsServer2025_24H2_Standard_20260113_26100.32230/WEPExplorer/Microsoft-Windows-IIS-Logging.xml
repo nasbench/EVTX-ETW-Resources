@@ -1,0 +1,73 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-IIS-Logging</Name>
+        <Metadata>
+            <Guid>{7E8AD27F-B271-4EA2-A783-A47BDE29143B}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\inetsrv\iisres.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\system32\inetsrv\iisres.dll</MessageFilePath>
+            <HelpLink></HelpLink>
+            <PublisherMessage>Microsoft-Windows-IIS-Logging</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-IIS-Logging/Logs</Message>
+                    <Path>Microsoft-IIS-Logging/Logs</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>6200</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-IIS-Logging/Logs</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+date %2 time %3 s-sitename %6 s-computername %7 s-ip %8 cs-method %9 cs-uri-stem %10 cs-uri-query %11 s-port %17 cs-username %5 c-ip %4 cs-version %21 cs(User-Agent) %18 cs(Cookie) %19 cs(Referer) %20 cs-host %22 sc-status %12 sc-substatus %23 sc-win32-status %13 sc-bytes %14 cs-bytes %15 time-taken %16 %24]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EnabledFieldsFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="date" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="time" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="c-ip" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="cs-username" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="s-sitename" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="s-computername" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="s-ip" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="cs-method" inType="win:AnsiString" outType="xs:string"/>
+  <data name="cs-uri-stem" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="cs-uri-query" inType="win:AnsiString" outType="xs:string"/>
+  <data name="sc-status" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="sc-win32-status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="sc-bytes" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="cs-bytes" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="time-taken" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="s-port" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="csUser-Agent" inType="win:AnsiString" outType="xs:string"/>
+  <data name="csCookie" inType="win:AnsiString" outType="xs:string"/>
+  <data name="csReferer" inType="win:AnsiString" outType="xs:string"/>
+  <data name="cs-version" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="cs-host" inType="win:AnsiString" outType="xs:string"/>
+  <data name="sc-substatus" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="CustomFields" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

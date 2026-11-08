@@ -1,0 +1,110 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Rdp-Graphics-RdpLite</Name>
+        <Metadata>
+            <Guid>{54DE4FB6-64D0-5710-3C14-13E4456119CE}</Guid>
+            <ResourceFilePath>%SystemRoot%\System32\RdpLite.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\System32\RdpLite.dll</MessageFilePath>
+            <HelpLink></HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-Rdp-Graphics-RdpLite/Admin</Message>
+                    <Path>Microsoft-Windows-Rdp-Graphics-RdpLite/Admin</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-Rdp-Graphics-RdpLite/Operational</Message>
+                    <Path>Microsoft-Windows-Rdp-Graphics-RdpLite/Operational</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-Rdp-Graphics-RdpLite/Debug</Message>
+                    <Path>Microsoft-Windows-Rdp-Graphics-RdpLite/Debug</Path>
+                    <Index>2</Index>
+                    <Id>18</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Critical</Message>
+                    <Name>win:Critical</Name>
+                    <Value>1</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Common</Message>
+                    <Name>Common</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>Graphics pipeline</Message>
+                    <Name>Grfx</Name>
+                    <Value>2</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Initialize</Message>
+                    <Name>Initialize</Name>
+                    <Value>11</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Terminate</Message>
+                    <Name>Terminate</Name>
+                    <Value>12</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Runtime</Message>
+                    <Name>Runtime</Name>
+                    <Value>13</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Rdp-Graphics-RdpLite/Admin</Channel>
+                <Level>Critical</Level>
+                <Task>Common</Task>
+                <Opcode>Runtime</Opcode>
+                <Message><![CDATA[
+Critical encoder error. Source=%1 HR=0x%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorSource" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HResult" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Rdp-Graphics-RdpLite/Admin</Channel>
+                <Level>Critical</Level>
+                <Task>Common</Task>
+                <Opcode>Runtime</Opcode>
+                <Message><![CDATA[
+Falling back to legacy Rdp stack. HR=0x%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HResult" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

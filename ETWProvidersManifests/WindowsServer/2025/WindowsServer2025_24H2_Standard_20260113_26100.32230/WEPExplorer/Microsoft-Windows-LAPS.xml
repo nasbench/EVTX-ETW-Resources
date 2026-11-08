@@ -1,0 +1,2111 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-LAPS</Name>
+        <Metadata>
+            <Guid>{4FCC72A9-D7CA-5DD2-8D34-6F41A0CDB7E0}</Guid>
+            <ResourceFilePath>%SystemRoot%\System32\laps.dll</ResourceFilePath>
+            <ParameterFilePath>%SystemRoot%\System32\laps.dll</ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\System32\laps.dll</MessageFilePath>
+            <HelpLink></HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-LAPS/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>10000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The Local Administrator Password feature was successfully loaded and initialized.
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10001</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The Local Administrator Password dll failed to initialize.
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10002</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The Local Administrator Password dll was unloaded.
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10003</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+LAPS policy processing is now starting.
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10004</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+LAPS policy processing succeeded.
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10005</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+LAPS policy processing failed with the error code below.
+ 
+ Error code: %1
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data1" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10006</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+LAPS password encryption is required but the Active Directory domain is not yet at 2016 domain functional level. The password was not updated and no changes will be made until this is corrected.
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10007</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+LAPS is not currently configured to manage any account.
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10008</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+LAPS policy is currently not supported on domain controllers.
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10009</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+LAPS is configured to backup passwords to Active Directory.
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10010</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+LAPS is configured to backup passwords to Azure Active Directory.
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10011</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+LAPS failed when querying Active Directory for the current computer state.
+ 
+ Error code: %1
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data1" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10012</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The Active Directory schema has not been updated with the necessary LAPS attributes.
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10013</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+LAPS failed to find the currently configured local administrator account.
+ 
+ Account name: %1
+ Error code: %2
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Data2" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10014</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+LAPS is updating the managed account password due to an Administrator-initiated request.
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10015</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The managed account password needs to be updated due to one or more reasons (%1):
+ 
+ %2
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Data2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10016</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The managed account password does not need to be updated at this time.
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10017</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+LAPS failed to update Active Directory with the new password. The current password has not been modified.
+ 
+ Error code: %1
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data1" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10018</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+LAPS successfully updated Active Directory with the new password.
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10019</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+LAPS failed to update the local admin account with the new password.
+ 
+ Account name: %1
+ Account RID: %2
+ Error code: %3
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Data2" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Data3" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10020</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+LAPS successfully updated the local admin account with the new password.
+ 
+ Account name: %1
+ Account RID: %2
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Data2" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10021</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The current LAPS policy is configured as follows:
+ 
+ Policy source: %1
+ Backup directory: %2
+ Local administrator account name: %3
+ Password age in days: %4
+ Password complexity: %5
+ Password length: %6
+ Password expiration protection enabled: %7
+ Password encryption enabled: %8
+ Password encryption target principal: %9
+ Password encrypted history size: %10
+ Backup DSRM password on domain controllers: %11
+ Post authentication grace period (hours): %12
+ Post authentication actions: %13
+ Automatic account management enabled: %14
+ Automatic account management: Target: %15
+ Automatic account management: Name or name prefix: %16
+ Automatic account management: Account enabled: %17
+ Automatic account management: Randomize name: %18
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PolicySource" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BackupDirectory" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AdminAccountName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PasswordAgeDays" inType="win:Int32" outType="xs:int"/>
+  <data name="PasswordComplexity" inType="win:Int32" outType="xs:int"/>
+  <data name="PasswordLength" inType="win:Int32" outType="xs:int"/>
+  <data name="PasswordExpirationProtectionEnabled" inType="win:Int32" outType="xs:int"/>
+  <data name="PasswordEncryptionEnabled" inType="win:Int32" outType="xs:int"/>
+  <data name="PasswordEncryptionTargetPrincipal" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PasswordEncryptionHistorySize" inType="win:Int32" outType="xs:int"/>
+  <data name="BackupDSRMPassword" inType="win:Int32" outType="xs:int"/>
+  <data name="PostAuthResetDelay" inType="win:Int32" outType="xs:int"/>
+  <data name="PostAuthActions" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="AutomaticAccountManagementEnabled" inType="win:Int32" outType="xs:int"/>
+  <data name="AutomaticAccountManagementTarget" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AutomaticAccountManagementNameOrPrefix" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AutomaticAccountManagementEnableAccount" inType="win:Int32" outType="xs:int"/>
+  <data name="AutomaticAccountManagementRandomizeName" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10022</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The current LAPS policy is configured as follows:
+ 
+ Policy source: %1
+ Backup directory: %2
+ Local administrator account name: %3
+ Password age in days: %4
+ Password complexity: %5
+ Password length: %6
+ Post authentication grace period (hours): %7
+ Post authentication actions: %8
+ Automatic account management enabled: %9
+ Automatic account management: Target: %10
+ Automatic account management: Name or name prefix: %11
+ Automatic account management: Account enabled: %12
+ Automatic account management: Randomize name: %13
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PolicySource" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BackupDirectory" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AdminAccountName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PasswordAgeDays" inType="win:Int32" outType="xs:int"/>
+  <data name="PasswordComplexity" inType="win:Int32" outType="xs:int"/>
+  <data name="PasswordLength" inType="win:Int32" outType="xs:int"/>
+  <data name="PostAuthResetDelay" inType="win:Int32" outType="xs:int"/>
+  <data name="PostAuthActions" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="AutomaticAccountManagementEnabled" inType="win:Int32" outType="xs:int"/>
+  <data name="AutomaticAccountManagementTarget" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AutomaticAccountManagementNameOrPrefix" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AutomaticAccountManagementEnableAccount" inType="win:Int32" outType="xs:int"/>
+  <data name="AutomaticAccountManagementRandomizeName" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10023</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The current LAPS policy is configured as follows:
+ 
+ Policy source: %1
+ Backup directory: %2
+ Local administrator account name: %3
+ Password age in days: %4
+ Password complexity: %5
+ Password length: %6
+ Password expiration protection enabled: %7
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PolicySource" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BackupDirectory" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AdminAccountName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PasswordAgeDays" inType="win:Int32" outType="xs:int"/>
+  <data name="PasswordComplexity" inType="win:Int32" outType="xs:int"/>
+  <data name="PasswordLength" inType="win:Int32" outType="xs:int"/>
+  <data name="PasswordExpirationProtectionEnabled" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10024</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+LAPS policy is configured as disabled.
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10025</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Azure discovery failed.
+ 
+ Error code: %1
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data1" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10026</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+LAPS was unable to authenticate to Azure using the device identity.
+ 
+ Error code: %1
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data1" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10027</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+LAPS was unable to create an acceptable new password. Please verify that the LAPS password length and complexity policy is compatible with the domain and local password policy settings.
+ 
+ Error code: %1
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data1" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10028</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+LAPS failed to update Azure Active Directory with the new password.
+ 
+ Error code: %1
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data1" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10029</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+LAPS successfully updated Azure Active Directory with the new password.
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10030</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+LAPS is sending a message to the following endpoint.
+ 
+ %1
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10031</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+LAPS blocked an external request that tried to modify the password of the current managed account.
+ 
+ Account name: %1
+ Account RID: %2
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Data2" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10032</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+LAPS was unable to authenticate to Azure using the device identity.
+ 
+ Web status: %1(%2)
+ Error code: %3
+ Hresult: %4
+ Error msg: %5
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Data2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Data3" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Data4" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Data5" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10033</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The machine is configured with legacy LAPS policy settings but a legacy LAPS product appears to be installed. The configured account's password will not be managed by Windows until the legacy product is uninstalled. Alternatively you may consider configuring the newer LAPS policy settings.
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10034</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The configured encryption principal is an isolated (ambiguous) name. This must be corrected before the configured account's password can be managed. Please specify the name in either user@domain.com or domain\user format.
+ 
+ Encryption principal name: %1
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10035</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The configured encryption principal name could not be mapped to a known account. This must be corrected before the configured account's password can be managed. 
+ 
+ Encryption principal name: %1
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10036</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The SID for the configured encryption principal could not be mapped to a known account. This must be corrected before the configured account's password can be managed. 
+ 
+ Encryption principal SID: %1
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10037</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The DSRM account cannot be managed because password encryption is disabled. Please enable password encryption in the LAPS policy settings in order to enable DSRM account password management.
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10038</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+LAPS failed to update the DSRM administrator account with the new password.
+ 
+ DSRM account name: %1
+ DSRM account RID: %2
+ Error code: %3
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Data2" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Data3" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10039</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+LAPS successfully updated the DSRM administrator account with the new password.
+ 
+ DSRM account name: %1
+ DSRM account RID: %2
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Data2" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10040</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+LAPS blocked an external request that tried to modify the password of the currently managed DSRM account.
+ 
+ Account RID: %1
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data1" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10041</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+LAPS detected a successful authentication for the currently managed account. A background task has been scheduled to execute the configured post-authentication actions after the configured grace period has expired.
+ 
+ Account name: %1
+ Account RID: %2
+ Password reset timer deadline: %3
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Data2" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Data3" inType="win:FILETIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10042</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The post-authentication grace period has expired per policy. The configured post-authentication actions will now be executed.
+ 
+ Account name: %1
+ Account RID: %2
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Data2" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10043</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+LAPS failed to reset the password for the currently managed account. The password is considered expired due to an authentication event. LAPS will continue retrying the password reset operation until it succeeds.
+ 
+ Account name: %1
+ Account RID: %2
+ Password reset retry count: %3
+ Error code: %4
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Data2" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Data3" inType="win:Int32" outType="xs:int"/>
+  <data name="Data4" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10044</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+LAPS successfully reset the password for the currently managed account after the expiration of the post-authentication grace period.
+ 
+ Account name: %1
+ Account RID: %2
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Data2" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10045</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+LAPS successfully reset the password for the currently managed account. One or more configured post-authentication actions failed. The operations will not be retried.
+ 
+ Account name: %1
+ Account RID: %2
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Data2" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10046</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+LAPS was scheduled to reset the password for the currently managed account after expiration of the grace period after a previous authentication event. However a password reset has already occurred so it will not be reset again. Remaining post-authentication actions will still be executed.
+ 
+ Account name: %1
+ Account RID: %2
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Data2" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10047</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A pending post-authentication reset timer has been rescheduled after a reboot.
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10048</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The currently pending post-authentication reset timer has been retried the maximum allowed number attempts and will no longer be scheduled.
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10049</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+LAPS attempted to reboot the machine as a post-authentication action but the operation failed.
+ 
+ Error code: %1
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data1" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10050</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+LAPS is updating the managed account password due to an Azure-initiated request.
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10051</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+LAPS is updating the managed account password in response to a post-authentication action.
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10052</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+LAPS is processing the current policy per normal background scheduling.
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10053</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+LAPS is processing the current policy in response to an Administrator request.
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10054</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+LAPS is processing the current policy in response to a Group Policy change notification.
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10055</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+LAPS is using the following domain controller:
+ 
+ DCName: %1
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10056</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+LAPS failed to locate a writable domain controller.
+ 
+ Error code: %1
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data1" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10057</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+LAPS was unable to bind over LDAP to the domain controller:
+ % DCName: %1
+ Error code: %2
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Data2" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10058</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The current policy is configured to backup the password to Azure Active Directory, but has a configured PasswordAgeDays value that is less than the required minimum:
+ 
+ Configured value: %1
+ Minimum value: %2
+ 
+ The configured value will be ignored and the minimum value will be used instead.
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data1" inType="win:Int32" outType="xs:int"/>
+  <data name="Data2" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10059</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Azure returned a failure code.
+ 
+ HTTP status code: %1
+ 
+ Response text:
+ %2
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data1" inType="win:Int32" outType="xs:int"/>
+  <data name="Data2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10060</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The current policy is configured to backup the password to Azure Active Directory, but the machine is only joined to Active Directory. Please configure the policy to backup the password to Active Directory. No action will be taken until this is corrected.
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10061</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The current policy is configured to backup the password to Azure Active Directory, but the machine is workplace-joined. LAPS does not support workplace-joined machines for any scenario.
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10062</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The current policy is configured to backup the password to Active Directory, but the machine is only joined to Azure Active Directory. Please configure the policy to backup the password to Azure Active Directory. No action will be taken until this is corrected.
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10063</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The current policy is configured to backup the password to Active Directory, but the machine is workplace-joined. LAPS does not support workplace-joined machines for any scenario.
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10064</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The current policy is configured to backup the DSRM account password to Active Directory, but password encryption is not enabled. Please configure the policy to enable password encryption. No action will be taken until this is corrected.
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10065</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+LAPS received an LDAP_INSUFFICIENT_RIGHTS error trying to update the password using the legacy LAPS password attribute. You should update the permissions on this computer's container using the Update-AdmPwdComputerSelfPermission cmdlet, for example:
+ 
+ Update-AdmPwdComputerSelfPermission -Identity '%1' 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10066</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+LAPS received an LDAP_INSUFFICIENT_RIGHTS error trying to update the password using the LAPS password attribute. You should update the permissions on this computer's container using the Set-LapsADComputerSelfPermission cmdlet, for example:
+ 
+ Set-LapsADComputerSelfPermission -Identity '%1' 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10067</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The configured local account is currently disabled. The account must be enabled before it can be used.
+ 
+ Account name: %1
+ Account RID: %2
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Data2" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10068</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+This device has been joined to Azure AD. This message is informational only and no action is necessary.
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10069</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+This device has been unjoined from Azure AD. This message is informational only and no action is necessary.
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10070</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+This device has been joined to Active Directory. This message is informational only and no action is necessary.
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10071</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+This device has been unjoined from Active Directory. This message is informational only and no action is necessary.
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10072</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Encryption of the new password failed.
+ 
+ Error code: %1
+ 
+ This problem may occur if a KDS root key is not available. Verify that a KDS root key is available by running the Get-KdsRootKey PowerShell cmdlet, and also verify that the root key's EffectiveTime field is valid right now.
+ 
+ If a KDS root key is not present, you must add one by running the Add-KdsRootKey PowerShell cmdlet with the -EffectiveImmediately parameter. Allow sufficient time for the new key to replicate around your forest.
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data1" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10073</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+LAPS is now executing the configured post-authentication actions for the target account.
+ 
+ Account name: %1
+ Account sid: %2
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Data2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10074</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+LAPS has successfully completed all configured post-authentication actions for the LAPS-managed account identity.
+ Account name: %1
+ Account sid: %2
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Data2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10075</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+LAPS has completed all configured post-authentication actions for the LAPS-managed account identity. One or more of these actions encountered a failure. See the other intervening event log messages for more details.
+ 
+ Account name: %1
+ Account sid: %2
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Data2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10076</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+A post-authentication action was pending for the account below, but the current policy is now targeting a different account. No post-authentication actions for the original account will be executed.
+ 
+ Original account sid: %1
+ Current account sid: %2
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Data2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10077</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+LAPS found %1 interactive logon sessions using the managed account.
+ 
+ Account name: %2
+ Account sid: %3
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data1" inType="win:Int32" outType="xs:int"/>
+  <data name="Data2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Data3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10078</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+LAPS successfully notified the following session that a logoff is pending shortly.
+ 
+ ExecEnvId: %1
+ State: %2
+ SessionId: %3
+ Session name: %4
+ Host name: %5
+ User name: %6
+ Domain name: %7
+ Farm name: %8
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ExecEnvId" inType="win:Int32" outType="xs:int"/>
+  <data name="State" inType="win:Int32" outType="xs:int"/>
+  <data name="SessionId" inType="win:Int32" outType="xs:int"/>
+  <data name="SessionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HostName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UserName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DomainName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FarmName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10079</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+LAPS failed to notify the following session that a logoff is pending shortly. The logoff action will proceed regardless.
+ 
+ ExecEnvId: %1
+ State: %2
+ SessionId: %3
+ Session name: %4
+ Host name: %5
+ User name: %6
+ Domain name: %7
+ Farm name: %8
+ 
+ Error: %9
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ExecEnvId" inType="win:Int32" outType="xs:int"/>
+  <data name="State" inType="win:Int32" outType="xs:int"/>
+  <data name="SessionId" inType="win:Int32" outType="xs:int"/>
+  <data name="SessionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HostName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UserName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DomainName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FarmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10080</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+LAPS is now pausing for %1 seconds to give the notified sessions time to logoff.
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data1" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10081</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+LAPS is now logging off all notified sessions.
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10082</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+LAPS successfully logged off the following session.
+ 
+ ExecEnvId: %1
+ State: %2
+ SessionId: %3
+ Session name: %4
+ Host name: %5
+ User name: %6
+ Domain name: %7
+ Farm name: %8
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ExecEnvId" inType="win:Int32" outType="xs:int"/>
+  <data name="State" inType="win:Int32" outType="xs:int"/>
+  <data name="SessionId" inType="win:Int32" outType="xs:int"/>
+  <data name="SessionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HostName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UserName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DomainName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FarmName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10083</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+LAPS received an error trying to log off the following session. This action will not be retried.
+ 
+ ExecEnvId: %1
+ State: %2
+ SessionId: %3
+ Session name: %4
+ Host name: %5
+ User name: %6
+ Domain name: %7
+ Farm name: %8
+ 
+ Error: %9
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ExecEnvId" inType="win:Int32" outType="xs:int"/>
+  <data name="State" inType="win:Int32" outType="xs:int"/>
+  <data name="SessionId" inType="win:Int32" outType="xs:int"/>
+  <data name="SessionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HostName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UserName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DomainName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FarmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10084</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+LAPS found %1 file share sessions using the managed account.
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data1" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10085</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+LAPS successfully deleted the following file share session.
+ 
+ SessionId: %1
+ ClientComputerName: %2
+ ClientUserName: %3
+ NumOpens: %4
+ SecondsIdle: %5
+ SecondsExisted: %6
+ ServerName: %7
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SessionId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ClientComputerName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientUserName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NumOpens" inType="win:Int64" outType="xs:long"/>
+  <data name="SecondsIdle" inType="win:Int32" outType="xs:int"/>
+  <data name="SecondsExisted" inType="win:Int32" outType="xs:int"/>
+  <data name="ServerName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10086</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+LAPS failed to disconnect the following file share session. This action will not be retried.
+ 
+ SessionId: %1
+ ClientComputerName: %2
+ ClientUserName: %3
+ NumOpens: %4
+ SecondsIdle: %5
+ SecondsExisted: %6
+ ServerName: %7
+ 
+ Error: %8
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SessionId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ClientComputerName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientUserName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NumOpens" inType="win:Int64" outType="xs:long"/>
+  <data name="SecondsIdle" inType="win:Int32" outType="xs:int"/>
+  <data name="SecondsExisted" inType="win:Int32" outType="xs:int"/>
+  <data name="ServerName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10087</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+LAPS found %1 processes using the managed account.
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data1" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10088</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+LAPS successfully terminated the following process.
+ 
+ Path: %1
+ Process id: %2
+ Account name: %3
+ Account sid: %4
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Data2" inType="win:Int32" outType="xs:int"/>
+  <data name="Data3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Data4" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10089</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+LAPS failed to terminate the following process. This action will not be retried.
+ 
+ Path: %1
+ Process id: %2
+ Account name: %3
+ Account sid: %4
+ Error: %5
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Data2" inType="win:Int32" outType="xs:int"/>
+  <data name="Data3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Data4" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Data5" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10090</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The LAPS managed account was enabled.
+ 
+ Account name: %1
+ Account sid: %2
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Data2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10091</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The LAPS managed account was disabled.
+ 
+ Account name: %1
+ Account sid: %2
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Data2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10092</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The LAPS policy is configured for automatic account management mode, but the account name or prefix is too long and will be truncated. The maximum allowable length is 20 characters when account name randomization is disabled, or 14 characters when account name randomization is enabled.
+ 
+ Configured account name or prefix: %1
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10093</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The current automatically LAPS managed account was renamed.
+ 
+ Previous account name: %1
+ New account name: %2
+ Account sid: %3
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Data2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Data3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10094</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+LAPS failed to rename the managed account.
+ 
+ Account name: %1
+ Account sid: %2
+ Intended new account name: %3
+ Error: %4
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Data2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Data3" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Data4" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10095</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+LAPS failed to enable the managed account.
+ 
+ Account name: %1
+ Account sid: %2
+ Error: %3
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Data2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Data3" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10096</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+LAPS failed to disable the managed account.
+ 
+ Account name: %1
+ Account sid: %2
+ Error: %3
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Data2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Data3" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10097</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+LAPS deleted the previously managed account.
+ 
+ Account name: %1
+ Account sid: %2
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Data2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10098</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+LAPS failed to delete the previously managed account.
+ 
+ Account name: %1
+ Account sid: %2
+ Error: %3
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Data2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Data3" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10099</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+LAPS renamed and disabled the previously managed builtin administrator account.
+ 
+ Previous account name: %1
+ New account name: %2
+ Account sid: %3
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Data2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Data3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10100</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+LAPS failed to rename and disable the previously managed builtin administrator account.
+ 
+ Account sid: %1
+ Error: %2
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Data2" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10101</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+LAPS blocked an external request that attempted to modify the current automatically managed account.
+ 
+ Account name: %1
+ Account sid: %2
+ Client name: %3
+ Client address: %4
+ Client process ID: %5
+ Client process exe: %6
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LAPSManagedAccountName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LAPSManagedAccountSid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientAddress" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientProcessID" inType="win:Int32" outType="xs:int"/>
+  <data name="ClientProcessExe" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10102</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+LAPS blocked an external request that attempted to delete the current automatically managed account.
+ 
+ Account name: %1
+ Account sid: %2
+ Client name: %3
+ Client address: %4
+ Client process ID: %5
+ Client process exe: %6
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LAPSManagedAccountName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LAPSManagedAccountSid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientAddress" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientProcessID" inType="win:Int32" outType="xs:int"/>
+  <data name="ClientProcessExe" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10103</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+LAPS blocked an external request that attempted to modify the security descriptor of the current automatically managed account.
+ 
+ Account name: %1
+ Account sid: %2
+ Client name: %3
+ Client address: %4
+ Client process ID: %5
+ Client process exe: %6
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LAPSManagedAccountName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LAPSManagedAccountSid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientAddress" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientProcessID" inType="win:Int32" outType="xs:int"/>
+  <data name="ClientProcessExe" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10104</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+LAPS blocked an external request that attempted to remove the current automatically managed account from the local administrators group.
+ 
+ Account name: %1
+ Account sid: %2
+ Client name: %3
+ Client address: %4
+ Client process ID: %5
+ Client process exe: %6
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LAPSManagedAccountName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LAPSManagedAccountSid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientAddress" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientProcessID" inType="win:Int32" outType="xs:int"/>
+  <data name="ClientProcessExe" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10105</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+LAPS failed to update its local registry state.
+ 
+ Error: %1
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data1" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10106</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+LAPS has successfully completed all sysprep cleanup operations.
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10107</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+LAPS failed to complete one or more sysprep cleanup operations.
+ 
+ Error: %1
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data1" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10108</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+The msLAPSCurrentPasswordVersion attribute has not been added to the Active Directory schema. This attribute is used to detect torn state conditions caused by OS image rollback scenarios. All primary scenarios will function without this attribute however it is recommended that administrator fix this by re-running the latest Update-LapsADSchema cmdlet.
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20000</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-LAPS/Operational</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+One or more Local Administrator Password Solution (LAPS) MDM policy values were blocked from being set because the current machine is joined to neither Azure Active Directory or Active Directory.
+ 
+ This message may be safely ignored but is likely to re-occur periodically. To stop further instances of this warning, please reconfigure your MDM policy so that no LAPS policy settings are applied to this machine.
+ 
+ See https://go.microsoft.com/fwlink/?linkid=2220550 for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

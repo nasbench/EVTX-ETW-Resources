@@ -1,0 +1,90 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-RPC-Audit</Name>
+        <Metadata>
+            <Guid>{3C578D57-F85A-5FC9-DEA0-8C663CCFF942}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\rpcrt4.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\system32\rpcrt4.dll</MessageFilePath>
+            <HelpLink></HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Success</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Fail</Name>
+                    <Value>2</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>Success</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceUuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OpNum" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="SubjectUserSid" inType="win:SID" outType="xs:string"/>
+  <data name="SubjectLogonId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="LocalIpAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalIpAddress" inType="win:Binary" outType="xs:hexBinary" length="LocalIpAddressLength"/>
+  <data name="RemoteIpAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteIpAddress" inType="win:Binary" outType="xs:hexBinary" length="RemoteIpAddressLength"/>
+  <data name="ProtocolSequence" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AuthenticationService" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AuthenticationLevel" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Endpoint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RemoteHost" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BufferSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Buffer" inType="win:Binary" outType="xs:hexBinary" length="BufferSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Keyword>Fail</Keyword>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceUuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OpNum" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="SubjectUserSid" inType="win:SID" outType="xs:string"/>
+  <data name="SubjectLogonId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="LocalIpAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalIpAddress" inType="win:Binary" outType="xs:hexBinary" length="LocalIpAddressLength"/>
+  <data name="RemoteIpAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteIpAddress" inType="win:Binary" outType="xs:hexBinary" length="RemoteIpAddressLength"/>
+  <data name="ProtocolSequence" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AuthenticationService" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AuthenticationLevel" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Endpoint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RemoteHost" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsBlockedByWFP" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

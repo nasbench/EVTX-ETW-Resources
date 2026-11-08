@@ -1,0 +1,106 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Hotpatch-Monitor</Name>
+        <Metadata>
+            <Guid>{57EAF242-3772-533C-9FD2-29ED95606D14}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\hpatchmon.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\system32\hpatchmon.dll</MessageFilePath>
+            <HelpLink></HelpLink>
+            <PublisherMessage>Provider Name: Microsoft-Windows-Hotpatch-Monitor</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>0</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>106</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+[RealTime][Info] Event with EventName: %2 and EventProperties: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EventName_Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EventName" inType="win:UnicodeString" outType="xs:string" length="EventName_Length"/>
+  <data name="EventProperties_Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EventProperties" inType="win:UnicodeString" outType="xs:string" length="EventProperties_Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>107</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+[RealTime][Error] Event with EventName: %2 and EventProperties: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EventName_Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EventName" inType="win:UnicodeString" outType="xs:string" length="EventName_Length"/>
+  <data name="EventProperties_Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EventProperties" inType="win:UnicodeString" outType="xs:string" length="EventProperties_Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>108</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+[AutoLogger][Info] Event with EventName: %2 and EventProperties: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EventName_Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EventName" inType="win:UnicodeString" outType="xs:string" length="EventName_Length"/>
+  <data name="EventProperties_Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EventProperties" inType="win:UnicodeString" outType="xs:string" length="EventProperties_Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>109</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+[AutoLogger][Error] Event with EventName: %2 and EventProperties: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EventName_Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EventName" inType="win:UnicodeString" outType="xs:string" length="EventName_Length"/>
+  <data name="EventProperties_Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EventProperties" inType="win:UnicodeString" outType="xs:string" length="EventProperties_Length"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

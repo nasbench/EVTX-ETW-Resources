@@ -1,0 +1,115 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Rdp-Graphics-RdpAvenc</Name>
+        <Metadata>
+            <Guid>{EC7B8A8B-1432-58B3-6025-BE73D4EA28ED}</Guid>
+            <ResourceFilePath>%SystemRoot%\System32\RdpAvenc.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\System32\RdpAvenc.dll</MessageFilePath>
+            <HelpLink></HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-Rdp-Graphics-RdpAvenc/Admin</Message>
+                    <Path>Microsoft-Windows-Rdp-Graphics-RdpAvenc/Admin</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-Rdp-Graphics-RdpAvenc/Operational</Message>
+                    <Path>Microsoft-Windows-Rdp-Graphics-RdpAvenc/Operational</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-Rdp-Graphics-RdpAvenc/Debug</Message>
+                    <Path>Microsoft-Windows-Rdp-Graphics-RdpAvenc/Debug</Path>
+                    <Index>2</Index>
+                    <Id>18</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Critical</Message>
+                    <Name>win:Critical</Name>
+                    <Value>1</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Common</Message>
+                    <Name>Common</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>Umrdp processor</Message>
+                    <Name>Umrdp</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message>SinkWriter processor</Message>
+                    <Name>SinkWriter</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message>IC3 processor</Message>
+                    <Name>Ic3</Name>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message>YUV processor</Message>
+                    <Name>Yuv</Name>
+                    <Value>5</Value>
+                </Task>
+                <Task>
+                    <Message>Raw processor</Message>
+                    <Name>Raw</Name>
+                    <Value>6</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Initialize</Message>
+                    <Name>Initialize</Name>
+                    <Value>11</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Terminate</Message>
+                    <Name>Terminate</Name>
+                    <Value>12</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Runtime</Message>
+                    <Name>Runtime</Name>
+                    <Value>13</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Rdp-Graphics-RdpAvenc/Admin</Channel>
+                <Level>Critical</Level>
+                <Task>Common</Task>
+                <Opcode>Runtime</Opcode>
+                <Message><![CDATA[
+Critical encoder error. Source=%1 HR=0x%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorSource" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HResult" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,66 @@
+<Providers>
+    <Provider>
+        <Name>winsrvext</Name>
+        <Metadata>
+            <Guid>{2B9537F0-4A90-557B-1313-D0CE2827A94A}</Guid>
+            <ResourceFilePath>%SystemRoot%\system32\winsrvext.dll</ResourceFilePath>
+            <ParameterFilePath>%SystemRoot%\system32\winsrvext.dll</ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\system32\winsrvext.dll</MessageFilePath>
+            <HelpLink></HelpLink>
+            <PublisherMessage>WinSrvExt</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>0</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Process %1 is delaying system shutdown after %2 milliseconds.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessImageFileNameWin32" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ShutdownDuration" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Message><![CDATA[
+Process %1 from package %2 is delaying system shutdown after %3 milliseconds.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessImageFileNameWin32" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PackageFullName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ShutdownDuration" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
