@@ -139,7 +139,23 @@ The following are blogs and articles published by the wider security community d
 
 ## Contributing
 
-If you want to contribute to this project simply follow these steps:
+To add a new Windows build, dump its ETW provider manifests and open a PR with the files. Do not commit the CSVs under `ETWEventsList/` or `ETWProvidersCSVs/`: the [converter workflow](.github/workflows/main.yml) regenerates them after the merge, and runs on pull requests as a dry run to check that your manifests convert.
+
+### 1. Dump the manifests
+
+Pick one of the two ways.
+
+**With a script (no GUI, no extra tool)**
+
+Run [`Scripts/Export-EtwProviders.ps1`](Scripts/Export-EtwProviders.ps1) from an elevated PowerShell prompt on the machine you want to dump. It writes the folder with the right name and layout:
+
+```powershell
+.\Export-EtwProviders.ps1 -ReleaseDate 20260113 -OutDir C:\dumps
+```
+
+`-ReleaseDate` is the release date of the cumulative update matching the build (see the Microsoft release health page for the OS).
+
+**With WEPExplorer**
 
 1. Download the latest version of [WEPExplorer](https://github.com/lallousx86/WinTools/tree/master/WEPExplorer)
 2. Download the latest version of [Auto Keyboard Presser](https://www.autosofted.com/auto_keyboard_presser/)
@@ -147,5 +163,18 @@ If you want to contribute to this project simply follow these steps:
 
 ![MUCHGIF](https://user-images.githubusercontent.com/8741929/138963332-9d59bbfa-09b4-43c4-8958-4c4f98b1a2ca.gif)
 
-4. Fork the repo and upload your files
-5. Make a PR and receive our eternal thanks
+### 2. Name the folder
+
+`ETWProvidersManifests/<Windows10|Windows11|WindowsServer>/<version>/<name>/WEPExplorer/`, where `<name>` is:
+
+```
+<OS>_<version>_<edition>_<release date>_<build>.<UBR>
+WindowsServer2025_24H2_Standard_20260113_26100.32230
+W11_22H2_Pro_20221018_22621.674
+```
+
+The converter reads the Windows name, version, edition, date and build from this folder name, so keep it to these five `_`-separated parts.
+
+### 3. Open the PR
+
+Fork the repo, add the folder, and make a PR. For a machine with extra roles or features installed, add their providers in a separate PR (see [#62](https://github.com/nasbench/EVTX-ETW-Resources/pull/62)). Receive our eternal thanks.
