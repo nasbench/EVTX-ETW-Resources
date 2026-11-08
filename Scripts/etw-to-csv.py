@@ -1,5 +1,7 @@
+import argparse
 import csv
 import os
+import shutil
 import sys
 from collections import Counter
 
@@ -38,7 +40,8 @@ def merge_csv(folderToCreate, csvDir):
 
     folderName = folderToCreate[:-1]
     folderName = folderName[folderName.rfind("/"):].replace("/", "")
-    with open(csvDir + folderToCreate + "!All_" + folderName + "_ETW_Events.csv", "w", newline="", encoding="utf-8") as mergeall:
+    mergedCsv = csvDir + folderToCreate + "!All_" + folderName + "_ETW_Events.csv"
+    with open(mergedCsv, "w", newline="", encoding="utf-8") as mergeall:
         writer = csv.writer(mergeall, lineterminator="\n")
         writer.writerow(HEADER)
         for providerCsv in listOfCsvs:
@@ -46,6 +49,7 @@ def merge_csv(folderToCreate, csvDir):
                 reader = csv.reader(f)
                 next(reader, None)
                 writer.writerows(reader)
+    return mergedCsv
 
 
 def build_stats(allEventsCsv):
@@ -89,6 +93,28 @@ def write_global_stats(rows):
         f.write(md_table([STATS_HEADER] + rows, padding=2))
 
 
+def load_global_stats():
+    """Rows of the existing global stats, or None if there are none in the current format."""
+    try:
+        with open(STATS_CSV, "r", newline="", encoding="utf-8") as f:
+            rows = list(csv.reader(f))
+    except OSError:
+        return None
+    if not rows or rows[0] != STATS_HEADER:
+        return None
+    return rows[1:]
+
+
+def updateStats(changedAllEventsCsvs):
+    """Refresh the stats of the builds that were converted and keep the others."""
+    rows = load_global_stats()
+    if rows is None:
+        return generateStats()
+    updated = [build_stats(path) for path in changedAllEventsCsvs]
+    replaced = {tuple(row[:5]) for row in updated}
+    write_global_stats([row for row in rows if tuple(row[:5]) not in replaced] + updated)
+
+
 def generateStats():
     listOfAllFiles = []
     for (dirpath, dirnames, filenames) in os.walk(CSV_DIR):
@@ -116,6 +142,14 @@ def converterStart(parsed_provider, folderToCreate, csvDir, usedNames):
 
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Convert the ETW provider manifests to CSV.")
+    parser.add_argument(
+        "--changed-since", metavar="REV",
+        help="only convert the builds whose manifests changed between the git revision REV and HEAD "
+             "(without it, every build is converted)",
+    )
+    args = parser.parse_args()
+
     manifestsDir = "ETWProvidersManifests"
     etwdir = []
 
@@ -123,7 +157,12 @@ if __name__ == "__main__":
     for subdir, dirs, files in os.walk(manifestsDir):
         if "WEPExplorer" in str(subdir):
             etwdir.append(subdir)
+    if args.changed_since:
+        changed = etwlib.changed_build_dirs(args.changed_since)
+        etwdir = [i for i in etwdir if i.replace("\\", "/") in changed]
+        print(f"{len(etwdir)} build(s) changed since {args.changed_since}")
 
+    mergedCsvs = []
     for i in sorted(etwdir):
         # This will get the name of the folder/subfolders to create in order to replicate the same structure as the XML's
         folderToCreate = i[i.find("ETWProvidersManifests") + len("ETWProvidersManifests") + 1:].replace("WEPExplorer", "").replace("\\", "/")
@@ -137,18 +176,24 @@ if __name__ == "__main__":
             if parsed != EMPTY_PROVIDER:
                 listOfParsedProviders.append(parsed)
 
-        # Create directories
+        # Create directories. A build that is converted again starts from scratch, so that providers
+        # that are gone from the manifests do not linger
         if os.path.exists(CSV_DIR + folderToCreate):
             print(CSV_DIR + folderToCreate + " - Already exists")
+            if args.changed_since:
+                shutil.rmtree(CSV_DIR + folderToCreate)
         os.makedirs(CSV_DIR + folderToCreate + "Providers", exist_ok=True)
 
         # We then start to generate the CSV files
         usedNames = set()
         for p in listOfParsedProviders:
             converterStart(p, folderToCreate, CSV_DIR, usedNames)
-        merge_csv(folderToCreate, CSV_DIR)
+        mergedCsvs.append(merge_csv(folderToCreate, CSV_DIR))
 
-    generateStats()
+    if args.changed_since:
+        updateStats(mergedCsvs)
+    else:
+        generateStats()
 
     if etwlib.ERRORS:
         print(f"{len(etwlib.ERRORS)} manifest(s) could not be read:", file=sys.stderr)

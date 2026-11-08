@@ -1,3 +1,5 @@
+import subprocess
+
 import pytest
 
 import etwlib
@@ -129,3 +131,30 @@ def test_build_sort_key_compares_numbers():
     assert sorted(builds, key=etwlib.build_sort_key, reverse=True) == ["26100.32230", "26100.1742", "26100.2", "19045"]
     # as floats 26100.2 would sort above 26100.1742
     assert float("26100.2") > float("26100.1742")
+
+
+def _git(cwd, *args):
+    subprocess.run(
+        ["git", "-c", "user.name=t", "-c", "user.email=t@t", "-c", "commit.gpgsign=false", *args],
+        cwd=cwd, check=True, capture_output=True,
+    )
+
+
+def test_changed_build_dirs_and_providers(tmp_path, monkeypatch):
+    build = "ETWProvidersManifests/WindowsServer/2025/WindowsServer2025_24H2_Standard_20260113_26100.32230/WEPExplorer"
+    other = "ETWProvidersManifests/Windows11/24H2/W11_24H2_Pro_20241022_26100.2033/WEPExplorer"
+    for folder in (build, other):
+        (tmp_path / folder).mkdir(parents=True)
+        (tmp_path / folder / "Old.xml").write_text("<Providers/>", encoding="utf-8")
+    _git(tmp_path, "init", "-q")
+    _git(tmp_path, "add", "-A")
+    _git(tmp_path, "commit", "-q", "-m", "base")
+    (tmp_path / build / "New.xml").write_text("<Providers/>", encoding="utf-8")
+    (tmp_path / build / "All.xml").write_text("<Providers/>", encoding="utf-8")
+    (tmp_path / "README.md").write_text("not a manifest", encoding="utf-8")
+    _git(tmp_path, "add", "-A")
+    _git(tmp_path, "commit", "-q", "-m", "change")
+
+    monkeypatch.chdir(tmp_path)
+    assert etwlib.changed_build_dirs("HEAD~1") == {build}
+    assert etwlib.changed_provider_names("HEAD~1") == {"New"}

@@ -29,6 +29,9 @@ jobs:
     steps:
       - name: Checkout repo content
         uses: actions/checkout@v4
+        with:
+          # The converters diff against the previous commit to find what changed
+          fetch-depth: 0
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -38,14 +41,40 @@ jobs:
         run: python -m pip install -r Scripts/requirements-dev.txt
       - name: Run the unit tests
         run: python -m pytest Scripts/tests
+      - name: Decide what to regenerate
+        id: scope
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          BEFORE: ${{ github.event.before }}
+          BASE_REF: ${{ github.base_ref }}
+        run: |
+          # Only the builds and providers that changed are regenerated, unless the
+          # scripts or the workflow changed, the previous commit is unknown (new
+          # branch, forced push) or the run was started by hand
+          base=""
+          if [ "$EVENT_NAME" = "push" ]; then base="$BEFORE"; fi
+          if [ "$EVENT_NAME" = "pull_request" ]; then base="origin/$BASE_REF"; fi
+          if [ -n "$base" ] && git cat-file -e "$base^{commit}" 2>/dev/null \
+             && git diff --quiet "$base" HEAD -- Scripts .github; then
+            echo "changed_since=$base" >> "$GITHUB_OUTPUT"
+            echo "Incremental run, changes since $base"
+          else
+            echo "changed_since=" >> "$GITHUB_OUTPUT"
+            echo "Full run"
+          fi
       - name: Delete previous CSV entries
-        run: rm -rf ETWEventsList/
+        if: steps.scope.outputs.changed_since == ''
+        run: |
+          rm -rf ETWEventsList/
+          find ETWProvidersCSVs -type f -name '*.csv' -exec rm -f {} \;
       - name: Run the etw-to-csv converter
-        run: python Scripts/etw-to-csv.py
-      - name: Delete previous CSV entries for Stats Providers
-        run: find ETWProvidersCSVs -type f -name '*.csv' -exec rm -f {} \;
+        env:
+          CHANGED_SINCE: ${{ steps.scope.outputs.changed_since }}
+        run: python Scripts/etw-to-csv.py ${CHANGED_SINCE:+--changed-since "$CHANGED_SINCE"}
       - name: Run the stats generator
-        run: python Scripts/stats.py
+        env:
+          CHANGED_SINCE: ${{ steps.scope.outputs.changed_since }}
+        run: python Scripts/stats.py ${CHANGED_SINCE:+--changed-since "$CHANGED_SINCE"}
       - name: Commit generated data
         if: github.event_name != 'pull_request'
         run: |

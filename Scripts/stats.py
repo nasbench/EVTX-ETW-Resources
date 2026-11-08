@@ -1,3 +1,4 @@
+import argparse
 import csv
 import os
 import re
@@ -74,6 +75,14 @@ def createProvidersCSV(provider_dict, csvFolderName):
 
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Generate the CSV of every ETW provider, over all Windows builds.")
+    parser.add_argument(
+        "--changed-since", metavar="REV",
+        help="only generate the CSVs of the providers whose manifests changed between the git revision REV "
+             "and HEAD (without it, every provider is generated)",
+    )
+    args = parser.parse_args()
+
     manifestsDir = "ETWProvidersManifests"
     etwdir, thirdParty_etwdir = [], []
 
@@ -89,6 +98,12 @@ if __name__ == "__main__":
     print("Internal Providers Dict READY")
     thrid_party_provider_dict = getProvidersPaths(thirdParty_etwdir)
     print("Third Party Providers Dict READY")
+    if args.changed_since:
+        # A provider CSV covers every build, so a changed manifest means that provider is generated again
+        changed = etwlib.changed_provider_names(args.changed_since)
+        provider_dict = {name: paths for name, paths in provider_dict.items() if name in changed}
+        thrid_party_provider_dict = {name: paths for name, paths in thrid_party_provider_dict.items() if name in changed}
+        print(f"{len(provider_dict) + len(thrid_party_provider_dict)} provider(s) changed since {args.changed_since}")
 
     # Now let's make a CSV per provider like this
     #---> Provider

@@ -1,5 +1,7 @@
 """Helpers shared by etw-to-csv.py and stats.py."""
+import os
 import re
+import subprocess
 import sys
 import xml.etree.ElementTree as ET
 
@@ -157,3 +159,23 @@ def build_sort_key(build):
     revision wrongly.
     """
     return tuple(_number(part) for part in build.split("."))
+
+
+def changed_manifests(base):
+    """Manifests added or modified between the git revision `base` and HEAD."""
+    result = subprocess.run(
+        ["git", "diff", "--name-only", "-z", "--diff-filter=ACMR", base, "HEAD", "--", "ETWProvidersManifests"],
+        capture_output=True, text=True, encoding="utf-8", check=True,
+    )
+    return [path for path in result.stdout.split("\0") if path.endswith(".xml") and os.path.isfile(path)]
+
+
+def changed_build_dirs(base):
+    """The WEPExplorer folders that contain a manifest changed since `base`."""
+    marker = "/WEPExplorer/"
+    return {path[: path.index(marker) + len(marker) - 1] for path in changed_manifests(base) if marker in path}
+
+
+def changed_provider_names(base):
+    """File names (without .xml) of the manifests changed since `base`."""
+    return {os.path.splitext(os.path.basename(path))[0] for path in changed_manifests(base) if os.path.basename(path) != "All.xml"}
