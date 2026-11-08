@@ -1,0 +1,2029 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Kerberos-Key-Distribution-Center</Name>
+        <Metadata>
+            <Guid>{3FD9DA1A-5A54-46C5-9A26-9BD7C0685056}</Guid>
+            <ResourceFilePath>%SystemRoot%\System32\kdcsvc.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\System32\kdcsvc.dll</MessageFilePath>
+            <HelpLink></HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Operational</Message>
+                    <Path>Microsoft-Windows-Kerberos-Key-Distribution-Center/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Performance Channel</Message>
+                    <Path>Microsoft-Windows-Kerberos-Key-Distribution-Center/Performance</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Authentication/ProtectedUserFailures-DomainController</Path>
+                    <Index>2</Index>
+                    <Id>18</Id>
+                    <Imported>true</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Authentication/ProtectedUserSuccesses-DomainController</Path>
+                    <Index>3</Index>
+                    <Id>19</Id>
+                    <Imported>true</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Authentication/AuthenticationPolicyFailures-DomainController</Path>
+                    <Index>4</Index>
+                    <Id>20</Id>
+                    <Imported>true</Imported>
+                </Channel>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>5</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>KDC</Message>
+                    <Name>CATEGORY_KDC</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>KDC Performance</Message>
+                    <Name>CATEGORY_PERF</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message>Max</Message>
+                    <Name>CATEGORY_MAX_CATEGORY</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message>KDC Extended Audit</Message>
+                    <Name>CATEGORY_EXTENDED_AUDIT</Name>
+                    <Value>4</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Classic</Message>
+                    <Name>win:EventlogClassic</Name>
+                    <Value>36028797018963968</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>2147483651</Id>
+                <Version>0</Version>
+                <Keyword>Classic</Keyword>
+                <Message><![CDATA[
+Could not find principal %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Principal" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483652</Id>
+                <Version>0</Version>
+                <Keyword>Classic</Keyword>
+                <Message><![CDATA[
+Domain %1 propagated to us but did not authenticate.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Domain" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225477</Id>
+                <Version>0</Version>
+                <Keyword>Classic</Keyword>
+                <Message><![CDATA[
+The KDC failed to update policy class %1. The error is in the data.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Class" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225478</Id>
+                <Version>0</Version>
+                <Keyword>Classic</Keyword>
+                <Message><![CDATA[
+The KDC failed to update the trusted domain list. The error is in the data.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225479</Id>
+                <Version>0</Version>
+                <Keyword>Classic</Keyword>
+                <Message><![CDATA[
+The Security Account Manager failed a KDC request in an unexpected way. The error is in the data field. The account name was %1 and lookup type %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AccountName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LookupType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225480</Id>
+                <Version>0</Version>
+                <Keyword>Classic</Keyword>
+                <Message><![CDATA[
+The account %1 did not have a suitable key for generating a Kerberos ticket. If the encryption type is supported, changing or setting the password will generate a proper key.  The missing key type may be in the data field.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AccountName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Keyword>Classic</Keyword>
+                <Message><![CDATA[
+The password on the KRBTGT account was changed.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225482</Id>
+                <Version>0</Version>
+                <Keyword>Classic</Keyword>
+                <Message><![CDATA[
+The attempt to change the password on the KRBTGT account failed. The error code is in the data field]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225483</Id>
+                <Version>0</Version>
+                <Keyword>Classic</Keyword>
+                <Message><![CDATA[
+The KDC encountered duplicate names while processing a Kerberos authentication request. The duplicate name is %1 (of type %2). This may result in authentication failures or downgrades to NTLM. In order to prevent this from occurring remove the duplicate entries for %1 in Active Directory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Type" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483660</Id>
+                <Version>0</Version>
+                <Keyword>Classic</Keyword>
+                <Message><![CDATA[
+A request failed from client realm %1 for a ticket in realm %2. This failed because a trust link between the realms is non transitive.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ClientRealm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Realm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225485</Id>
+                <Version>0</Version>
+                <Keyword>Classic</Keyword>
+                <Message><![CDATA[
+The account for %1 has corrupt keys stored in the DS. Changing or setting the password should restore correct keys.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225486</Id>
+                <Version>0</Version>
+                <Keyword>Classic</Keyword>
+                <Message><![CDATA[
+While processing an AS request for target service %1, the account %2 did not have a suitable key for generating a Kerberos ticket (the missing key has an ID of %3). The requested etypes : %4. The accounts available etypes : %5. Changing or resetting the password of %6 will generate a proper key.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Target" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Account" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestedEtypes" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AvailableEtypes" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AccountToReset" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225487</Id>
+                <Version>0</Version>
+                <Keyword>Classic</Keyword>
+                <Message><![CDATA[
+The request for an AS ticket for client %1 was forwarded to the PDC. An invalid response to this forwarded request was detected and could indicate an attempt to spoof your PDC. There may be additional information in the data field.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Client" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225488</Id>
+                <Version>0</Version>
+                <Keyword>Classic</Keyword>
+                <Message><![CDATA[
+While processing a TGS request for the target server %1, the account %2 did not have a suitable key for generating a Kerberos ticket (the missing key has an ID of %3). The requested etypes were %4. The accounts available etypes were %5. Changing or resetting the password of %6 will generate a proper key.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Target" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Account" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestedEtypes" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AvailableEtypes" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AccountToReset" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225489</Id>
+                <Version>0</Version>
+                <Keyword>Classic</Keyword>
+                <Message><![CDATA[
+When updating policy class %1, the KDC encountered invalid policy data and has failed to update the policy.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Class" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225490</Id>
+                <Version>0</Version>
+                <Keyword>Classic</Keyword>
+                <Message><![CDATA[
+During TGS processing, the KDC was unable to verify the signature on the PAC from %1. This indicates the PAC was modified.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483667</Id>
+                <Version>0</Version>
+                <Keyword>Classic</Keyword>
+                <Message><![CDATA[
+This event indicates an attempt was made to use smartcard logon, but the KDC is unable to use the PKINIT protocol because it is missing a suitable certificate.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483668</Id>
+                <Version>0</Version>
+                <Keyword>Classic</Keyword>
+                <Message><![CDATA[
+The currently selected KDC certificate was once valid, but now is invalid and no suitable replacement was found. Smartcard logon may not function correctly if this problem is not remedied. Have the system administrator check on the state of the domain's public key infrastructure. The chain status is in the error data.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483669</Id>
+                <Version>0</Version>
+                <Keyword>Classic</Keyword>
+                <Message><![CDATA[
+The client certificate for the user %1\%2 is not valid, and resulted in a failed smartcard logon. Please contact the user for more information about the certificate they're attempting to use for smartcard logon. The chain status was : %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Domain" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Username" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483670</Id>
+                <Version>0</Version>
+                <Keyword>Classic</Keyword>
+                <Message><![CDATA[
+The KDC encountered a trust loop when building a list of trusted domains. This indicates that the route to the domain %1 from this KDC has more than one possible trust path.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Domain" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483671</Id>
+                <Version>0</Version>
+                <Keyword>Classic</Keyword>
+                <Message><![CDATA[
+The KDC received invalid messages of type %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Type" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483672</Id>
+                <Version>0</Version>
+                <Keyword>Classic</Keyword>
+                <Message><![CDATA[
+A service ticket request by client %1 for %2 was rejected because User2User was required. The KDC responds with this error when a client requests a service ticket for a user principal (a security risk). The client must support User2User in order to obtain a service ticket for the requested service principal]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Client" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Server" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483673</Id>
+                <Version>0</Version>
+                <Keyword>Classic</Keyword>
+                <Message><![CDATA[
+The account %1 from domain %2 is attempting to use S4USelf for the target client %3, but is not allowed to perform group expansion on this client's user object. It may be necessary to adjust the ACL on the TokenGroupsGlobalAndUniversal attribute on the target client's user object to allow S4USelf to function correctly. This can also be accomplished by adding %1 to the Windows Authorization Access Group.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Domain" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Target" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225498</Id>
+                <Version>0</Version>
+                <Keyword>Classic</Keyword>
+                <Message><![CDATA[
+While processing an AS request for target service %1, the account %2 did not have a suitable key for generating a Kerberos ticket (the missing key has an ID of %3). The requested etypes were %4. The accounts available etypes were %5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Target" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestedEtypes" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AvailableETypes" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225499</Id>
+                <Version>0</Version>
+                <Keyword>Classic</Keyword>
+                <Message><![CDATA[
+While processing a TGS request for the target server %1, the account %2 did not have a suitable key for generating a Kerberos ticket (the missing key has an ID of %3). The requested etypes were %4. The accounts available etypes were %5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Target" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestedEtypes" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AvailableETypes" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483676</Id>
+                <Version>0</Version>
+                <Keyword>Classic</Keyword>
+                <Message><![CDATA[
+When generating a cross realm referral from domain %1 the KDC was not able to find the suitable key to verify the ticket. The ticket key version in the request was %2 and the available key version was %3. This most common reason for this error is a delay in replicating the keys. In order to remove this problem try forcing replication or wait for the replication of keys to occur.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Domain" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestedKeyVersion" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AvailableKeyVersion" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483677</Id>
+                <Version>0</Version>
+                <Keyword>Classic</Keyword>
+                <Message><![CDATA[
+The Key Distribution Center (KDC) cannot find a suitable certificate to use for smart card logons, or the KDC certificate could not be verified. Smart card logon may not function correctly if this problem is not resolved. To correct this problem, either verify the existing KDC certificate using certutil.exe or enroll for a new KDC certificate.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483678</Id>
+                <Version>0</Version>
+                <Keyword>Classic</Keyword>
+                <Message><![CDATA[
+The Kerberos Key Distribution Center failed to locate the forest or domain %1 to search.  Please ensure that the forest search order policy is correctly configured, and that this forest or domain is available.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Forest" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483679</Id>
+                <Version>0</Version>
+                <Keyword>Classic</Keyword>
+                <Message><![CDATA[
+A ticket to the service %2 is issued for account %1. The size of the encrypted part of this ticket is %3 bytes, which is close or greater than the configured ticket size threshold (%4 bytes). This ticket or any additional tickets issued from this ticket might result in authentication failures if the client or server application allocates SSPI token buffers bounded by a value that is close to the threshold value.
+The size of ticket is largely determined by the size of authorization data it carries. The size of authorization data is determined by the groups the account is member of, the claims data the account is setup for, and the resource groups resolved in the resource domain.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Account" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Server" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EncryptedTicketSize" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TicketSizeThreshold" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483680</Id>
+                <Version>0</Version>
+                <Keyword>Classic</Keyword>
+                <Message><![CDATA[
+The Key Distribution Center (KDC) uses a certificate without KDC Extended Key Usage (EKU) which can result in authentication failures for device certificate logon and smart card logon from non-domain-joined devices. Enrollment of a KDC certificate with KDC EKU (Kerberos Authentication template) is required to remove this warning.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483681</Id>
+                <Version>0</Version>
+                <Keyword>Classic</Keyword>
+                <Message><![CDATA[
+The Key Distribution Center (KDC) encountered failures when updating the krbtgt account for the Dynamic Access Control and Kerberos armoring policy capability for the domain. This update was performed so that all the domain controllers including read-only domain controllers (RODCs) in this domain could advertise support for Dynamic Access Control and Kerberos armoring. This failure indicates that there could be domain controllers that have not received updated krbtgt account values. If the update to the krbtgt account is in transit, then you can run Gpupdate /force as a possible workaround to this failure. More information about this update:
+
+  Object Rid: %1
+  Update bits: %2
+  Bitmask: %3
+  Error Code: %4
+]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483682</Id>
+                <Version>0</Version>
+                <Keyword>Classic</Keyword>
+                <Message><![CDATA[
+The Key Distribution Center (KDC) has the Dynamic Access Control and Kerberos armoring policy configured for a level which requires a higher domain functional level. Until the domain functional level is raised, the KDC will only support the level configured as Supported.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483683</Id>
+                <Version>0</Version>
+                <Keyword>Classic</Keyword>
+                <Message><![CDATA[
+The Key Distribution Center (KDC) encountered a ticket-granting-ticket (TGT) from another KDC (%1) that did not contain a PAC attributes field. See https://go.microsoft.com/fwlink/?linkid=2173051 to learn more.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IssuingKDC" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483684</Id>
+                <Version>0</Version>
+                <Keyword>Classic</Keyword>
+                <Message><![CDATA[
+The Key Distribution Center (KDC) encountered a ticket that did not contain a PAC while processing a request for another ticket. This prevented security checks from running and could open security vulnerabilities. See https://go.microsoft.com/fwlink/?linkid=2173051 to learn more.
+
+  Client: %1\\%2
+  Ticket for: %3
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ClientRealm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServerName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483685</Id>
+                <Version>0</Version>
+                <Keyword>Classic</Keyword>
+                <Message><![CDATA[
+The Key Distribution Center (KDC) encountered a ticket that did not contain information about the account that requested the ticket while processing a request for another ticket. This prevented security checks from running and could open security vulnerabilities. See https://go.microsoft.com/fwlink/?linkid=2173051 to learn more.
+
+  Ticket PAC constructed by: %1
+  Client: %2\\%3
+  Ticket for: %4
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IssuingKDC" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientRealm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServerName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483686</Id>
+                <Version>0</Version>
+                <Keyword>Classic</Keyword>
+                <Message><![CDATA[
+The Key Distribution Center (KDC) encountered a ticket that contained inconsistent information about the account that requested the ticket. This could mean that the account has been renamed since the ticket was issued, which may have been part of an attempted exploit. See https://go.microsoft.com/fwlink/?linkid=2173051 to learn more.
+
+  Ticket PAC constructed by: %1
+  Client: %2\\%3
+  Ticket for: %4
+  Requesting Account SID from Active Directory: %5
+  Requesting Account SID from Ticket: %6
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IssuingKDC" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientRealm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServerName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ActiveDirectorySID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TicketSID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483687</Id>
+                <Version>0</Version>
+                <Keyword>Classic</Keyword>
+                <Message><![CDATA[
+The Key Distribution Center (KDC) encountered a user certificate that was valid but could not be mapped to a user in a secure way (such as via explicit mapping, key trust mapping, or a SID). Such certificates should either be replaced or mapped directly to the user via explicit mapping. See https://go.microsoft.com/fwlink/?linkid=2189925 to learn more.
+
+  User: %1
+  Certificate Subject: %2
+  Certificate Issuer: %3
+  Certificate Serial Number: %4
+  Certificate Thumbprint: %5
+  Certificate Issuance Policies: %6
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AccountName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Subject" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Issuer" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SerialNumber" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Thumbprint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IssuancePolicies" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483688</Id>
+                <Version>0</Version>
+                <Keyword>Classic</Keyword>
+                <Message><![CDATA[
+The Key Distribution Center (KDC) encountered a user certificate that was valid but could not be mapped to a user in a secure way (such as via explicit mapping, key trust mapping, or a SID). The certificate also predated the user it mapped to, so it was rejected. See https://go.microsoft.com/fwlink/?linkid=2189925 to learn more.
+
+  User: %1
+  Certificate Subject: %2
+  Certificate Issuer: %3
+  Certificate Serial Number: %4
+  Certificate Thumbprint: %5
+  Certificate Issuance Policies: %6
+  Certificate Issuance Time: %7
+  Account Creation Time: %8
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AccountName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Subject" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Issuer" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SerialNumber" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Thumbprint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IssuancePolicies" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IssuanceTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AccountCreationTime" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483689</Id>
+                <Version>0</Version>
+                <Keyword>Classic</Keyword>
+                <Message><![CDATA[
+The Key Distribution Center (KDC) encountered a user certificate that was valid but contained a different SID than the user to which it mapped. As a result, the request involving the certificate failed. See https://go.microsoft.com/fwlink/?linkid=2189925 to learn more.
+
+  User: %1
+ User SID: %2
+ Certificate Subject: %3
+  Certificate Issuer: %4
+  Certificate Serial Number: %5
+  Certificate Thumbprint: %6
+  Certificate Issuance Policies: %7
+  Certificate SID: %8
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AccountName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AccountSid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Subject" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Issuer" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SerialNumber" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Thumbprint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IssuancePolicies" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CertificateSid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483690</Id>
+                <Version>0</Version>
+                <Keyword>Classic</Keyword>
+                <Message><![CDATA[
+The Kerberos Key Distribution Center lacks strong keys for account %1.
+
+You must update the password of this account to prevent use of insecure cryptography. 
+
+See https://go.microsoft.com/fwlink/?linkid=2210019 to learn more.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AccountName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483691</Id>
+                <Version>0</Version>
+                <Keyword>Classic</Keyword>
+                <Message><![CDATA[
+The Key Distribution Center (KDC) encountered a ticket that it could not validate the full PAC Signature. See https://go.microsoft.com/fwlink/?linkid=2210019 to learn more.
+
+  Client: %1\\%2
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Client Realm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Client Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483692</Id>
+                <Version>0</Version>
+                <Keyword>Classic</Keyword>
+                <Message><![CDATA[
+The Key Distribution Center (KDC) encountered a ticket that did not contained the full PAC Signature. See https://go.microsoft.com/fwlink/?linkid=2210019 to learn more.
+
+  Client: %1\\%2
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Client Realm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Client Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2147483693</Id>
+                <Version>0</Version>
+                <Keyword>Classic</Keyword>
+                <Message><![CDATA[
+The Key Distribution Center (KDC) encountered a client certificate that was valid but did not chain to a root in the NTAuth store. Support for certificates that do not chain to the NTAuth store is deprecated. See https://go.microsoft.com/fwlink/?linkid=2300705 to learn more.
+
+  User: %1
+  Certificate Subject: %2
+  Certificate Issuer: %3
+  Certificate Serial Number: %4
+  Certificate Thumbprint: %5
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AccountName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Subject" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Issuer" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SerialNumber" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Thumbprint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="__binLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="binary" inType="win:Binary" outType="xs:hexBinary" length="__binLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kerberos-Key-Distribution-Center/Performance</Channel>
+                <Level>Information</Level>
+                <Task>KDC Performance</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+AS exchange performance: AS-REQ processing begins]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kerberos-Key-Distribution-Center/Performance</Channel>
+                <Level>Information</Level>
+                <Task>KDC Performance</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+AS exchange performance: AS-REP or KRB-ERROR returned:
+
+    client domain: %1
+    client name: %2
+    server domain: %3
+    server name: %4
+    ErrorCode: %5
+    elapse: %6 milliseconds]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ClientDomain" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServerDomain" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServerName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+  <data name="TimeSpent" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kerberos-Key-Distribution-Center/Performance</Channel>
+                <Level>Information</Level>
+                <Task>KDC Performance</Task>
+                <Opcode>Start</Opcode>
+                <Message><![CDATA[
+TGS exchange performance: TGS-REQ processing begins]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>103</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kerberos-Key-Distribution-Center/Performance</Channel>
+                <Level>Information</Level>
+                <Task>KDC Performance</Task>
+                <Opcode>Stop</Opcode>
+                <Message><![CDATA[
+TGS exchange performance: TGS-REQ or KRB-ERROR returned:
+
+    client domain: %1
+    client name: %2
+    server domain: %3
+    server name: %4
+    ErrorCode: %5
+    elapse: %6 milliseconds]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ClientDomain" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServerDomain" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServerName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+  <data name="TimeSpent" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>104</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Authentication/ProtectedUserFailures-DomainController</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+Kerberos preauthentication by using DES or RC4 failed because the account was a member of the Protected User group.
+
+Account Information:
+	Security ID:		%2
+	Account Name:		%1
+
+Service Information:
+	Service Name:		%3
+
+Network Information:
+	Client Address:		%7
+	Client Port:		%8
+
+Additional Information:
+	Ticket Options:		%4
+	Failure Code:		%5
+	Pre-Authentication Type:	%6
+
+Certificate Information:
+	Certificate Issuer Name:		%9
+	Certificate Serial Number:		%10
+	Certificate Thumbprint:		%11
+
+Certificate information is only provided if a certificate was used for pre-authentication.
+
+Pre-authentication types, ticket options and failure codes are defined in RFC 4120.
+
+If the ticket was malformed or damaged during transit and could not be decrypted, then many fields in this event might not be present.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TargetUserName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TargetSid" inType="win:SID" outType="xs:string"/>
+  <data name="ServiceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TicketOptions" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="PreAuthType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IpAddress" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IpPort" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CertIssuerName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CertSerialNumber" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CertThumbprint" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>105</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Authentication/AuthenticationPolicyFailures-DomainController</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+A Kerberos Ticket-granting-ticket (TGT) was denied because the device does not meet the access control restrictions.
+
+Account Information:
+	Account Name:		%1
+	Supplied Realm Name:	%2
+	User ID:			%3
+
+Authentication Policy Information:
+	Silo Name:		%16
+	Policy Name:		%17
+	TGT Lifetime:		%18
+
+Device Information:
+	Device Name:		%4
+
+Service Information:
+	Service Name:		%5
+	Service ID:		%6
+
+Network Information:
+	Client Address:		%11
+	Client Port:		%12
+
+Additional Information:
+	Ticket Options:		%7
+	Result Code:		%8
+	Ticket Encryption Type:	%9
+	Pre-Authentication Type:	%10
+
+Certificate Information:
+	Certificate Issuer Name:		%13
+	Certificate Serial Number:		%14
+	Certificate Thumbprint:		%15
+
+Certificate information is only provided if a certificate was used for pre-authentication.
+
+Pre-authentication types, ticket options, encryption types and result codes are defined in RFC 4120.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TargetUserName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TargetDomainName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TargetSid" inType="win:SID" outType="xs:string"/>
+  <data name="DeviceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServiceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServiceSid" inType="win:SID" outType="xs:string"/>
+  <data name="TicketOptions" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="TicketEncryptionType" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="PreAuthType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IpAddress" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IpPort" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CertIssuerName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CertSerialNumber" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CertThumbprint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SiloName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TGT Lifetime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>106</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Authentication/AuthenticationPolicyFailures-DomainController</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+A Kerberos service ticket was denied because the user, device, or both does not meet the access control restrictions.
+
+Account Information:
+	Account Name:		%1
+	Account Domain:		%2
+	Logon GUID:		%11
+
+Authentication Policy Information:
+	Silo Name:		%13
+	Policy Name:		%14
+
+Device Information:
+	Device Name:		%3
+
+Service Information:
+	Service Name:		%4
+	Service ID:		%5
+
+Network Information:
+	Client Address:		%8
+	Client Port:		%9
+
+Additional Information:
+	Ticket Options:		%6
+	Ticket Encryption Type:	%7
+	Failure Code:		%10
+	Transited Services:	%12
+
+This event is generated every time access is requested to a resource such as a computer or a Windows service.  The service name indicates the resource to which access was requested.
+
+This event can be correlated with Windows logon events by comparing the Logon GUID fields in each event.  The logon event occurs on the machine that was accessed, which is often a different machine than the domain controller which issued the service ticket.
+
+Ticket options, encryption types, and failure codes are defined in RFC 4120.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TargetUserName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TargetDomainName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DeviceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServiceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServiceSid" inType="win:SID" outType="xs:string"/>
+  <data name="TicketOptions" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="TicketEncryptionType" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="IpAddress" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IpPort" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="LogonGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="TransitedServices" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SiloName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>120</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kerberos-Key-Distribution-Center/Operational</Channel>
+                <Level>Error</Level>
+                <Task>KDC</Task>
+                <Message><![CDATA[
+The Key Distribution Center (KDC) failed to validate its current KDC certificate. This KDC might not be enabled for smart card or certificate authentication.
+
+Kdc Certificate Information:
+  Issuer Name: %1
+  Serial Number: %2
+  Thumbprint: %3
+  Template: %4
+  Kerberos Error: %5
+  Validation Error: %6
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Issuer" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SerialNumber" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Thumbprint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Template" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="KerbErr" inType="win:UInt32" outType="win:ErrorCode"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>200</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kerberos-Key-Distribution-Center/Operational</Channel>
+                <Level>Warning</Level>
+                <Task>KDC</Task>
+                <Message><![CDATA[
+The Key Distribution Center (KDC) cannot find a suitable certificate to use. This KDC is not enabled for smart card or certificate authentication.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>201</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Task>KDC Extended Audit</Task>
+                <Message><![CDATA[
+The Key Distribution Center (KDC) detected %15 usage that will be unsupported because service msds-SupportedEncryptionTypes is not defined and the client only supports insecure encryption types. 
+
+Account Information
+	Account Name: %1 
+	Supplied Realm Name: %2 
+	msds-SupportedEncryptionTypes: %3 
+	Available Keys: %4 
+  
+Service Information: 
+	Service Name: %5 
+	Service ID: %6 
+	msds-SupportedEncryptionTypes: %7 
+	Available Keys: %8 
+
+Domain Controller Information: 
+	msds-SupportedEncryptionTypes: %9 
+	DefaultDomainSupportedEncTypes: %10 
+	Available Keys: %11 
+
+Network Information: 
+	Client Address: %12 
+	Client Port: %13 
+	Advertized Etypes: %14 
+
+See https://go.microsoft.com/fwlink/?linkid=2344614 to learn more.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AccountName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SuppliedRealm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AccountSET" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AccountKeys" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServiceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServiceID" inType="win:SID" outType="xs:string"/>
+  <data name="ServiceSET" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServiceKeys" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DCSET" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DDSET" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DCKeys" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IpAddress" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Port" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="AdvertizedEtypes" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Cipher" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>202</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Task>KDC Extended Audit</Task>
+                <Message><![CDATA[
+The Key Distribution Center (KDC) detected %15 usage that will be unsupported because the service msds-SupportedEncryptionTypes is not defined and the service account only has insecure keys.   
+
+Account Information  
+	Account Name: %1 
+	Supplied Realm Name: %2 
+	msds-SupportedEncryptionTypes: %3 
+	Available Keys: %4 
+
+Service Information:  
+	Service Name: %5 
+	Service ID: %6 
+	msds-SupportedEncryptionTypes: %7 
+	Available Keys: %8 
+
+Domain Controller Information:  
+	msds-SupportedEncryptionTypes: %9 
+	DefaultDomainSupportedEncTypes: %10 
+	Available Keys: %11 
+
+Network Information:  
+	Client Address: %12 
+	Client Port: %13 
+	Advertized Etypes: %14 
+
+See https://go.microsoft.com/fwlink/?linkid=2344614 to learn more.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AccountName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SuppliedRealm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AccountSET" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AccountKeys" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServiceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServiceID" inType="win:SID" outType="xs:string"/>
+  <data name="ServiceSET" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServiceKeys" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DCSET" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DDSET" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DCKeys" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IpAddress" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Port" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="AdvertizedEtypes" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Cipher" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>203</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>KDC Extended Audit</Task>
+                <Message><![CDATA[
+The Key Distribution Center (KDC) blocked cipher usage because service msds-SupportedEncryptionTypes is not defined and the client only supports insecure encryption types. 
+
+Account Information  
+	Account Name: %1 
+	Supplied Realm Name: %2 
+	msds-SupportedEncryptionTypes: %3 
+	Available Keys: %4 
+
+Service Information:  
+	Service Name: %5 
+	Service ID: %6 
+	msds-SupportedEncryptionTypes: %7 
+	Available Keys: %8 
+
+Domain Controller Information:  
+	msds-SupportedEncryptionTypes: %9 
+	DefaultDomainSupportedEncTypes: %10 
+	Available Keys: %11 
+
+Network Information:  
+	Client Address: %12 
+	Client Port: %13 
+	Advertized Etypes: %14 
+
+See https://go.microsoft.com/fwlink/?linkid=2344614 to learn more.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AccountName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SuppliedRealm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AccountSET" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AccountKeys" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServiceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServiceID" inType="win:SID" outType="xs:string"/>
+  <data name="ServiceSET" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServiceKeys" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DCSET" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DDSET" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DCKeys" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IpAddress" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Port" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="AdvertizedEtypes" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>204</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Error</Level>
+                <Task>KDC Extended Audit</Task>
+                <Message><![CDATA[
+The Key Distribution Center (KDC) blocked cipher usage because the service msds-SupportedEncryptionTypes is not defined and the service account only has insecure keys.
+
+Account Information
+	Account Name: %1
+	Supplied Realm Name: %2
+	msds-SupportedEncryptionTypes: %3
+	Available Keys: %4
+
+Service Information:
+	Service Name: %5
+	Service ID: %6
+	msds-SupportedEncryptionTypes: %7
+	Available Keys: %8
+
+Domain Controller Information:
+	msds-SupportedEncryptionTypes: %9
+	DefaultDomainSupportedEncTypes: %10
+	Available Keys: %11
+
+Network Information:
+	Client Address: %12
+	Client Port: %13
+	Advertized Etypes: %14
+
+See https://go.microsoft.com/fwlink/?linkid=2344614 to learn more.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AccountName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SuppliedRealm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AccountSET" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AccountKeys" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServiceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServiceID" inType="win:SID" outType="xs:string"/>
+  <data name="ServiceSET" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServiceKeys" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DCSET" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DDSET" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DCKeys" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IpAddress" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Port" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="AdvertizedEtypes" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>205</Id>
+                <Version>0</Version>
+                <Channel>System</Channel>
+                <Level>Warning</Level>
+                <Task>KDC Extended Audit</Task>
+                <Message><![CDATA[
+The Key Distribution Center (KDC) detected explicit insecure cipher enablement in the Default Domain Supported Encryption Types policy configuration.
+
+Cipher(s): %1
+DefaultDomainSupportedEncTypes: %2
+
+See https://go.microsoft.com/fwlink/?linkid=2344614 to learn more.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CipherName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DDSET" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>300</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kerberos-Key-Distribution-Center/Operational</Channel>
+                <Level>Information</Level>
+                <Task>KDC</Task>
+                <Message><![CDATA[
+The Key Distribution Center (KDC) is being started.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>301</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kerberos-Key-Distribution-Center/Operational</Channel>
+                <Level>Information</Level>
+                <Task>KDC</Task>
+                <Message><![CDATA[
+The Key Distribution Center (KDC) has stopped with error code: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>302</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kerberos-Key-Distribution-Center/Operational</Channel>
+                <Level>Information</Level>
+                <Task>KDC</Task>
+                <Message><![CDATA[
+The Key Distribution Center (KDC) uses the below KDC certificate for smart card or certificate authentication.
+
+Kdc Certificate Information:
+  Issuer Name: %1
+  Serial Number: %2
+  Thumbprint: %3
+  Template: %4
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Issuer" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SerialNumber" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Thumbprint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Template" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>303</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Authentication/ProtectedUserSuccesses-DomainController</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A Kerberos ticket-granting-ticket (TGT) was issued for a member of the Protected User group.
+
+Account Information:
+	Account Name:		%1
+	Supplied Realm Name:	%2
+	User ID:			%3
+
+Authentication Policy Information:
+	Silo Name:		%16
+	Policy Name:		%17
+	TGT Lifetime:		%18
+
+Device Information:
+	Device Name:		%4
+
+Service Information:
+	Service Name:		%5
+	Service ID:		%6
+
+Network Information:
+	Client Address:		%11
+	Client Port:		%12
+
+Additional Information:
+	Ticket Options:		%7
+	Result Code:		%8
+	Ticket Encryption Type:	%9
+	Pre-Authentication Type:	%10
+
+Certificate Information:
+	Certificate Issuer Name:		%13
+	Certificate Serial Number:		%14
+	Certificate Thumbprint:		%15
+
+Certificate information is only provided if a certificate was used for pre-authentication.
+
+Pre-authentication types, ticket options, encryption types and result codes are defined in RFC 4120.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TargetUserName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TargetDomainName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TargetSid" inType="win:SID" outType="xs:string"/>
+  <data name="DeviceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServiceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServiceSid" inType="win:SID" outType="xs:string"/>
+  <data name="TicketOptions" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="TicketEncryptionType" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="PreAuthType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IpAddress" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IpPort" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CertIssuerName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CertSerialNumber" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CertThumbprint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SiloName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TGT Lifetime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>304</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Authentication/ProtectedUserSuccesses-DomainController</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A Kerberos service ticket was issued for a member of the Protected User group.
+
+Account Information:
+	Account Name:		%1
+	Account Domain:		%2
+	Logon GUID:		%11
+
+Authentication Policy Information:
+	Silo Name:		%13
+	Policy Name:		%14
+
+Device Information:
+	Device Name:		%3
+
+Service Information:
+	Service Name:		%4
+	Service ID:		%5
+
+Network Information:
+	Client Address:		%8
+	Client Port:		%9
+
+Additional Information:
+	Ticket Options:		%6
+	Ticket Encryption Type:	%7
+	Failure Code:		%10
+	Transited Services:	%12
+
+This event is generated every time access is requested to a resource such as a computer or a Windows service.  The service name indicates the resource to which access was requested.
+
+This event can be correlated with Windows logon events by comparing the Logon GUID fields in each event.  The logon event occurs on the machine that was accessed, which is often a different machine than the domain controller which issued the service ticket.
+
+Ticket options, encryption types, and failure codes are defined in RFC 4120.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TargetUserName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TargetDomainName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DeviceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServiceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServiceSid" inType="win:SID" outType="xs:string"/>
+  <data name="TicketOptions" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="TicketEncryptionType" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="IpAddress" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IpPort" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="LogonGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="TransitedServices" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SiloName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>305</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Authentication/AuthenticationPolicyFailures-DomainController</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A Kerberos ticket-granting-ticket (TGT) was issued, but it will be denied when Authentication Policy is enforced because the device does not meet the access control restrictions.
+
+Account Information:
+	Account Name:		%1
+	Supplied Realm Name:	%2
+	User ID:			%3
+
+Authentication Policy Information:
+	Silo Name:		%16
+	Policy Name:		%17
+	TGT Lifetime:		%18
+
+Device Information:
+	Device Name:		%4
+
+Service Information:
+	Service Name:		%5
+	Service ID:		%6
+
+Network Information:
+	Client Address:		%11
+	Client Port:		%12
+
+Additional Information:
+	Ticket Options:		%7
+	Result Code:		%8
+	Ticket Encryption Type:	%9
+	Pre-Authentication Type:	%10
+
+Certificate Information:
+	Certificate Issuer Name:		%13
+	Certificate Serial Number:		%14
+	Certificate Thumbprint:		%15
+
+Certificate information is only provided if a certificate was used for pre-authentication.
+
+Pre-authentication types, ticket options, encryption types and result codes are defined in RFC 4120.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TargetUserName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TargetDomainName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TargetSid" inType="win:SID" outType="xs:string"/>
+  <data name="DeviceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServiceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServiceSid" inType="win:SID" outType="xs:string"/>
+  <data name="TicketOptions" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="TicketEncryptionType" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="PreAuthType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IpAddress" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IpPort" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CertIssuerName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CertSerialNumber" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CertThumbprint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SiloName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TGT Lifetime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>306</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Authentication/AuthenticationPolicyFailures-DomainController</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A Kerberos service ticket was issued, but it will be denied when Authentication Policy is enforced for a member of the Protected User group because the user, device, or both does not meet the access control restrictions.
+
+Account Information:
+	Account Name:		%1
+	Account Domain:		%2
+	Logon GUID:		%11
+
+Authentication Policy Information:
+	Silo Name:		%13
+	Policy Name:		%14
+
+Device Information:
+	Device Name:		%3
+
+Service Information:
+	Service Name:		%4
+	Service ID:		%5
+
+Network Information:
+	Client Address:		%8
+	Client Port:		%9
+
+Additional Information:
+	Ticket Options:		%6
+	Ticket Encryption Type:	%7
+	Failure Code:		%10
+	Transited Services:	%12
+
+This event is generated every time access is requested to a resource such as a computer or a Windows service.  The service name indicates the resource to which access was requested.
+
+This event can be correlated with Windows logon events by comparing the Logon GUID fields in each event.  The logon event occurs on the machine that was accessed, which is often a different machine than the domain controller which issued the service ticket.
+
+Ticket options, encryption types, and failure codes are defined in RFC 4120.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TargetUserName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TargetDomainName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DeviceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServiceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServiceSid" inType="win:SID" outType="xs:string"/>
+  <data name="TicketOptions" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="TicketEncryptionType" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="IpAddress" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IpPort" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="LogonGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="TransitedServices" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SiloName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>307</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kerberos-Key-Distribution-Center/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The Key Distribution Center (KDC) used the PKINIT protocol with encryption mode for the client %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>308</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kerberos-Key-Distribution-Center/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The Key Distribution Center (KDC) is unable to use the PKINIT protocol because the client %1 requested encryption mode and the KDC does not support it.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>309</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kerberos-Key-Distribution-Center/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+The kerberos client used a hash algorithm for the PKINIT protocol that is being audited: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Algorithm" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>310</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kerberos-Key-Distribution-Center/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The kerberos client used a hash algorithm for the PKINIT protocol that is not suppported: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Algorithm" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>311</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kerberos-Key-Distribution-Center/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The Kerberos client did not supply a supported encryption type for use with the PKINIT protocol using encryption mode.
+ Client Principal Name: %1
+ Client IP Address: %2
+ Client Supplied NetBIOS Name: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ClientName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IPAddress" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientNetBIOSName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>312</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kerberos-Key-Distribution-Center/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The Key Distribution Center (KDC) has an invalid hash algorithm configuration for PKINIT. This might result in PKINIT failures.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>313</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kerberos-Key-Distribution-Center/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+The Key Distribution Center (KDC) encountered invalid certificate strong name match policy.
+
+ Faulting line: %1
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EntryNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>314</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kerberos-Key-Distribution-Center/Operational</Channel>
+                <Level>Error</Level>
+                <Message><![CDATA[
+An unauthorized Kerberos client attempted to fetch DMSA keys.
+
+Error code: %1
+Machine: %2
+DMSA: %3
+Migration State: %4
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="KerbErr" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Machine" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DMSA" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MigrationState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>315</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-Kerberos-Key-Distribution-Center/Operational</Channel>
+                <Level>Information</Level>
+                <Message><![CDATA[
+A Kerberos client attempted to fetch DMSA keys.
+
+DMSA: %1
+Machine: %2
+Error Code: %3
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DMSA" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Machine" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="KerbErr" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>400</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>KDC Extended Audit</Task>
+                <Message><![CDATA[
+A Kerberos authentication ticket (TGT) was requested.
+
+Account Information:
+	Account Name:		%1
+	Supplied Realm Name:	%2
+	User ID:			%3
+
+Service Information:
+	Service Name:		%4
+	Service ID:		%5
+
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TargetUserName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TargetDomainName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TargetSid" inType="win:SID" outType="xs:string"/>
+  <data name="ServiceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServiceSid" inType="win:SID" outType="xs:string"/>
+  <data name="TicketOptions" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TicketEncryptionType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PreAuthType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IpAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IpAddress" inType="win:Binary" outType="win:SocketAddress" length="IpAddressLength"/>
+  <data name="CertIssuerName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CertSerialNumber" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CertThumbprint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ResponseTicket" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientNetbiosName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ResponseExtendedNtStatusCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ResponseTicketLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ResponseTicketStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="ResponseTicketEndTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="RequestSupportedEncryptionTypes" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestFullServiceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestFullServiceNameType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestClientName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestClientNameType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestRealm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ResponseTicketFullServiceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ResponseTicketFullServiceNameType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ResponseTicketRealm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ResponseTicketKeyVersion" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ResponseEncryptedDataEncryptionType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ArmorKeyEncryptionType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ClientPreAuthEncryptionType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PacRequestType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CertNotBefore" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="CertNotAfter" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="CertSubjectName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PreAuthNonce" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LogonStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PreAuthSupportedEncryptionTypes" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientCertificateContextLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ClientCertificateContext" inType="win:Binary" outType="xs:hexBinary" length="ClientCertificateContextLength"/>
+  <data name="UsedOldPassword" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="UserObjectGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>401</Id>
+                <Version>0</Version>
+                <Level>Information</Level>
+                <Task>KDC Extended Audit</Task>
+                <Message><![CDATA[
+A Kerberos service ticket was requested.
+
+Account Information:
+	Account Name:		%1
+	Account Domain:		%2
+	Logon GUID:		%10
+
+Service Information:
+	Service Name:		%3
+	Service ID:		%4
+
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TargetUserName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TargetDomainName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServiceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServiceSid" inType="win:SID" outType="xs:string"/>
+  <data name="TicketOptions" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TicketEncryptionType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IpAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IpAddress" inType="win:Binary" outType="win:SocketAddress" length="IpAddressLength"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LogonGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="TransmittedServices" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestTicketHash" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ResponseTicketHash" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientNetbiosName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ResponseExtendedNtStatusCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PacOptions" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestTicketLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ResponseTicketLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ResponseTicketStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="ResponseTicketEndTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="RequestSupportedEncryptionTypes" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestAuthDataEncryptionType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestAuthDataLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestNonce" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestFullServiceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestFullServiceNameType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestRealm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestTicketFullServiceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestTicketFullServiceNameType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestTicketRealm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ResponseTicketFullServiceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ResponseTicketFullServiceNameType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ResponseTicketRealm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestTicketKeyVersion" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ResponseTicketKeyVersion" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestTicketEncryptionType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ArmorKeyEncryptionType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="U2UTgtAccountName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="U2UTgtCRealm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="U2UTgtCName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="U2UTicketLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="U2UTicketEncryptionType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="U2UTicketHash" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="U2UTicketKeyVersion" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="U2UTicketFullServiceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="U2UTicketFullServiceNameType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="S4UAccountName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="S4UPACClientName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="S4UPACClientRealm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="S4UTargetName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="S4UNonce" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="S4URequestorSid" inType="win:SID" outType="xs:string"/>
+  <data name="S4UAdditionalTicketKeyVersion" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="S4URequestorServiceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="S4URequestorServiceRealm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="S4UAdditionalTicketLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="S4UAdditionalTicketEncryptionType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="S4UAdditionalTicketHash" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="S4UAdditionalTicketFullServiceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="S4UAdditionalTicketFullServiceNameType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ServiceObjectGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>401</Id>
+                <Version>1</Version>
+                <Level>Information</Level>
+                <Task>KDC Extended Audit</Task>
+                <Message><![CDATA[
+A Kerberos service ticket was requested.
+
+Account Information:
+	Account Name:		%1
+	Account Domain:		%2
+	Logon GUID:		%10
+
+Service Information:
+	Service Name:		%3
+	Service ID:		%4
+
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TargetUserName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TargetDomainName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServiceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServiceSid" inType="win:SID" outType="xs:string"/>
+  <data name="TicketOptions" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TicketEncryptionType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IpAddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IpAddress" inType="win:Binary" outType="win:SocketAddress" length="IpAddressLength"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LogonGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="TransmittedServices" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestTicketHash" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ResponseTicketHash" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientNetbiosName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ResponseExtendedNtStatusCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PacOptions" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestTicketLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ResponseTicketLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestTicketAuthTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="RequestTicketFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestTicketRenewUntil" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="RequestTicketStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="RequestTicketEndTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="ResponseTicketStartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="ResponseTicketEndTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="RequestSupportedEncryptionTypes" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestAuthDataEncryptionType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestAuthDataLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestNonce" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestFullServiceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestFullServiceNameType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestRealm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestTicketFullServiceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestTicketFullServiceNameType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestTicketRealm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestTicketClientName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestTicketClientNameType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestTicketClientRealm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ResponseTicketFullServiceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ResponseTicketFullServiceNameType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ResponseTicketRealm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestTicketKeyVersion" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ResponseTicketKeyVersion" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestTicketEncryptionType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ArmorKeyEncryptionType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="U2UTgtAccountName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="U2UTgtCRealm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="U2UTgtCName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="U2UTicketLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="U2UTicketEncryptionType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="U2UTicketHash" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="U2UTicketKeyVersion" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="U2UTicketFullServiceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="U2UTicketFullServiceNameType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="S4UAccountName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="S4UPACClientName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="S4UPACClientRealm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="S4UTargetName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="S4UNonce" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="S4URequestorSid" inType="win:SID" outType="xs:string"/>
+  <data name="S4UAdditionalTicketKeyVersion" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="S4URequestorServiceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="S4URequestorServiceRealm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="S4UAdditionalTicketLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="S4UAdditionalTicketEncryptionType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="S4UAdditionalTicketHash" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="S4UAdditionalTicketFullServiceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="S4UAdditionalTicketFullServiceNameType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ServiceObjectGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="RequestTicketPacLogonInfoLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestTicketPacLogonInfo" inType="win:Binary" outType="xs:hexBinary" length="RequestTicketPacLogonInfoLength"/>
+  <data name="RequestTicketPacUpnDnsInfoLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestTicketPacUpnDnsInfo" inType="win:Binary" outType="xs:hexBinary" length="RequestTicketPacUpnDnsInfoLength"/>
+  <data name="RequestTicketPacRequestorSid" inType="win:SID" outType="xs:string"/>
+  <data name="RequestTicketPacLogonServer" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestTicketPacLogonDomainName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestTicketPacFullName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestTicketPacHomeDirectory" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestTicketPacGroupIds" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RequestTicketPacUserId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestTicketPacPrimaryGroupId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestTicketPacGroupCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestTicketPacBadPasswordCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestTicketPacLogonCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestTicketPacUserAccountControlFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestTicketPacUserFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestTicketPacLogonTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="RequestTicketPacLogoffTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="RequestTicketPacKickOffTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="RequestTicketPacPasswordLastSet" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="RequestTicketPacLastSuccessfulLogon" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="RequestTicketPacLastFailedLogon" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="RequestTicketPacFailedAttemptCountSinceSuccessfulLogon" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

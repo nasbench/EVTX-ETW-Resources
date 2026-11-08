@@ -1,0 +1,2948 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-DNSServer</Name>
+        <Metadata>
+            <Guid>{EB79061A-A566-4698-9119-3ED2807060E7}</Guid>
+            <ResourceFilePath>%SystemRoot%\System32\dns.exe</ResourceFilePath>
+            <ParameterFilePath>%systemroot%\system32\dns.exe</ParameterFilePath>
+            <MessageFilePath>%SystemRoot%\System32\dns.exe</MessageFilePath>
+            <HelpLink></HelpLink>
+            <PublisherMessage>Microsoft-Windows-DNS-Server</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-DNS-Server/Analytical</Message>
+                    <Path>Microsoft-Windows-DNSServer/Analytical</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-DNS-Server/Audit</Message>
+                    <Path>Microsoft-Windows-DNSServer/Audit</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>LOOK_UP</Message>
+                    <Name>LOOK_UP</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>RECURSE_QUERY</Message>
+                    <Name>RECURSE_QUERY</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message>DYNAMIC_UPDATE</Message>
+                    <Name>DYNAMIC_UPDATE</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message>ZONE_XFR</Message>
+                    <Name>ZONE_XFR</Name>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message>ZONE_OP</Message>
+                    <Name>ZONE_OP</Name>
+                    <Value>5</Value>
+                </Task>
+                <Task>
+                    <Message>AGEING</Message>
+                    <Name>AGEING</Name>
+                    <Value>6</Value>
+                </Task>
+                <Task>
+                    <Message>OnlineSigning</Message>
+                    <Name>OnlineSigning</Name>
+                    <Value>7</Value>
+                </Task>
+                <Task>
+                    <Message>DNSSEC_OP</Message>
+                    <Name>DNSSEC_OP</Name>
+                    <Value>8</Value>
+                </Task>
+                <Task>
+                    <Message>CACHE_OP</Message>
+                    <Name>CACHE_OP</Name>
+                    <Value>9</Value>
+                </Task>
+                <Task>
+                    <Message>Configuration</Message>
+                    <Name>Configuration</Name>
+                    <Value>10</Value>
+                </Task>
+                <Task>
+                    <Message>SERVER_OP</Message>
+                    <Name>SERVER_OP</Name>
+                    <Value>11</Value>
+                </Task>
+                <Task>
+                    <Message>DEBUG</Message>
+                    <Name>DEBUG</Name>
+                    <Value>12</Value>
+                </Task>
+                <Task>
+                    <Message>POLICY_OP</Message>
+                    <Name>POLICY_OP</Name>
+                    <Value>13</Value>
+                </Task>
+                <Task>
+                    <Message>RRL</Message>
+                    <Name>RRL_ACTION</Name>
+                    <Value>14</Value>
+                </Task>
+                <Task>
+                    <Message>RRL_OP</Message>
+                    <Name>RRL_OP</Name>
+                    <Value>15</Value>
+                </Task>
+                <Task>
+                    <Message>VIRTUALIZATION_OP</Message>
+                    <Name>VIRTUALIZATION_OP</Name>
+                    <Value>16</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>QUERY_RECEIVED</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>RESPONSE_SUCCESS</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>RESPONSE_FAILURE</Name>
+                    <Value>4</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>IGNORED_QUERY</Name>
+                    <Value>8</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>RECURSE_QUERY_OUT</Name>
+                    <Value>16</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>RECURSE_RESPONSE_IN</Name>
+                    <Value>32</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>RECURSE_QUERY_DROP</Name>
+                    <Value>64</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>DYN_UPDATE_RECV</Name>
+                    <Value>128</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>DYN_UPDATE_RESPONSE</Name>
+                    <Value>256</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>IXFR_REQ_OUT</Name>
+                    <Value>512</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>IXFR_REQ_RECV</Name>
+                    <Value>1024</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>IXFR_RESP_OUT</Name>
+                    <Value>2048</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>IXFR_RESP_RECV</Name>
+                    <Value>4096</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>AXFR_REQ_OUT</Name>
+                    <Value>8192</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>AXFR_REQ_RECV</Name>
+                    <Value>16384</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>AXFR_RESP_OUT</Name>
+                    <Value>32768</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>AXFR_RESP_RECV</Name>
+                    <Value>65536</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>XFR_NOTIFY_IN</Name>
+                    <Value>131072</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>XFR_NOTIFY_OUT</Name>
+                    <Value>262144</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>AUDIT_ZONES</Name>
+                    <Value>524288</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>AUDIT_REC_ADMIN</Name>
+                    <Value>1048576</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>AUDIT_ZONESCOPE</Name>
+                    <Value>2097152</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>AUDIT_ZONE_SIGN</Name>
+                    <Value>4194304</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>AUDIT_ROLLOVER</Name>
+                    <Value>8388608</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>AUDIT_FORWARDER</Name>
+                    <Value>16777216</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>AUDIT_REC_DYN_UPDATE</Name>
+                    <Value>33554432</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>AUDIT_ROOTHINTS</Name>
+                    <Value>67108864</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>AUDIT_SERVER_CONFIG</Name>
+                    <Value>134217728</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>AUDIT_RECURSIONSCOPE</Name>
+                    <Value>268435456</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>AUDIT_EXPORT_IMPORT</Name>
+                    <Value>536870912</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>AUDIT_REC_SCAVENGER</Name>
+                    <Value>1073741824</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>AUDIT_CACHE</Name>
+                    <Value>2147483648</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>AUDIT_TRUST_ANCHOR</Name>
+                    <Value>4294967296</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>XFR_NOTIFY_ACK_IN</Name>
+                    <Value>8589934592</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>DYN_UPDATE_FORWARD</Name>
+                    <Value>17179869184</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>INTERNAL_LOOKUP_CNAME</Name>
+                    <Value>34359738368</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>INTERNAL_LOOKUP_ADDITIONAL</Name>
+                    <Value>68719476736</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>AUDIT_SERVER_ADMIN</Name>
+                    <Value>137438953472</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>AUDIT_SERVER</Name>
+                    <Value>274877906944</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>DYN_UPDATE_RESPONSE_IN</Name>
+                    <Value>549755813888</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>XFR_NOTIFY_ACK_OUT</Name>
+                    <Value>1099511627776</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>AUDIT_POLICY</Name>
+                    <Value>2199023255552</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>RRL_TO_BE_DROPPED_RESPONSE</Name>
+                    <Value>4398046511104</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>RRL_TO_BE_TRUNCATED_RESPONSE</Name>
+                    <Value>8796093022208</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>RRL_TO_BE_LEAKED_RESPONSE</Name>
+                    <Value>17592186044416</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>AUDIT_RRL</Name>
+                    <Value>35184372088832</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>AUDIT_TENANT</Name>
+                    <Value>70368744177664</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>RECURSE_ALIAS_FAILURE</Name>
+                    <Value>140737488355328</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>256</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Analytical</Channel>
+                <Level>Information</Level>
+                <Task>LOOK_UP</Task>
+                <Keyword>QUERY_RECEIVED</Keyword>
+                <Message><![CDATA[
+QUERY_RECEIVED: TCP=%1; InterfaceIP=%2; Source=%3; RD=%4; QNAME=%5; QTYPE=%6; XID=%7; Port=%8; Flags=%9; PacketData=%11; AdditionalInfo = VirtualizationInstanceOptionValue: %12; GUID=%13]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TCP" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="InterfaceIP" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Source" inType="win:AnsiString" outType="xs:string"/>
+  <data name="RD" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="QNAME" inType="win:AnsiString" outType="xs:string"/>
+  <data name="QTYPE" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="XID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Port" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BufferSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PacketData" inType="win:Binary" outType="xs:hexBinary" length="BufferSize"/>
+  <data name="AdditionalInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="GUID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>257</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Analytical</Channel>
+                <Level>Information</Level>
+                <Task>LOOK_UP</Task>
+                <Keyword>RESPONSE_SUCCESS</Keyword>
+                <Message><![CDATA[
+RESPONSE_SUCCESS: TCP=%1; InterfaceIP=%2; Destination=%3; AA=%4; AD=%5; QNAME=%6; QTYPE=%7; XID=%8; DNSSEC=%9; RCODE=%10; Port=%11; Flags=%12; Scope=%13; Zone=%14; PolicyName=%15; PacketData=%17; AdditionalInfo= %18; ElapsedTime=%19; GUID=%20 %21]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TCP" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="InterfaceIP" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Destination" inType="win:AnsiString" outType="xs:string"/>
+  <data name="AA" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="AD" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="QNAME" inType="win:AnsiString" outType="xs:string"/>
+  <data name="QTYPE" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="XID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DNSSEC" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="RCODE" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Port" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Scope" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Zone" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BufferSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PacketData" inType="win:Binary" outType="xs:hexBinary" length="BufferSize"/>
+  <data name="AdditionalInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ElapsedTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="GUID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StaleRecordsPresent" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>258</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Analytical</Channel>
+                <Level>Error</Level>
+                <Task>LOOK_UP</Task>
+                <Keyword>RESPONSE_FAILURE</Keyword>
+                <Message><![CDATA[
+RESPONSE_FAILURE: TCP=%1; InterfaceIP=%2; Reason=%3; Destination=%4; QNAME=%5; QTYPE=%6; XID=%7; RCODE=%8; Port=%9; Flags=%10; Zone=%11; PolicyName=%12; PacketData=%14; AdditionalInfo = VirtualizationInstance: %13; ElapsedTime=%16; GUID=%17]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TCP" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="InterfaceIP" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Reason" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Destination" inType="win:AnsiString" outType="xs:string"/>
+  <data name="QNAME" inType="win:AnsiString" outType="xs:string"/>
+  <data name="QTYPE" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="XID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RCODE" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Port" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Zone" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BufferSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PacketData" inType="win:Binary" outType="xs:hexBinary" length="BufferSize"/>
+  <data name="AdditionalInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ElapsedTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="GUID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>259</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Analytical</Channel>
+                <Level>Error</Level>
+                <Task>LOOK_UP</Task>
+                <Keyword>IGNORED_QUERY</Keyword>
+                <Message><![CDATA[
+IGNORED_QUERY: TCP=%1; InterfaceIP=%2; Source=%3; Reason=%4; QNAME=%5; QTYPE=%6; XID=%7; Zone=%8; PolicyName=%9; AdditionalInfo = VirtualizationInstance: %10]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TCP" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="InterfaceIP" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Source" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Reason" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="QNAME" inType="win:AnsiString" outType="xs:string"/>
+  <data name="QTYPE" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="XID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Zone" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AdditionalInfo" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>260</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Analytical</Channel>
+                <Level>Information</Level>
+                <Task>RECURSE_QUERY</Task>
+                <Keyword>RECURSE_QUERY_OUT</Keyword>
+                <Message><![CDATA[
+RECURSE_QUERY_OUT: TCP=%1; Destination=%2; InterfaceIP=%3; RD=%4; QNAME=%5; QTYPE=%6; QXID=%7; XID=%8; Port=%9; Flags=%10; RecursionScope=%11; CacheScope=%12; PolicyName=%13; PacketData=%15; AdditionalInfo = VirtualizationInstance: %16; GUID=%17]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TCP" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Destination" inType="win:AnsiString" outType="xs:string"/>
+  <data name="InterfaceIP" inType="win:AnsiString" outType="xs:string"/>
+  <data name="RD" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="QNAME" inType="win:AnsiString" outType="xs:string"/>
+  <data name="QTYPE" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="QXID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="XID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Port" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RecursionScope" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CacheScope" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BufferSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PacketData" inType="win:Binary" outType="xs:hexBinary" length="BufferSize"/>
+  <data name="AdditionalInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="GUID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>261</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Analytical</Channel>
+                <Level>Information</Level>
+                <Task>RECURSE_QUERY</Task>
+                <Keyword>RECURSE_RESPONSE_IN</Keyword>
+                <Message><![CDATA[
+RECURSE_RESPONSE_IN: TCP=%1; Source=%2; InterfaceIP=%3; AA=%4; AD=%5; QNAME=%6; QTYPE=%7; XID=%8; RemoteQueriesSent=%9; Port=%10; Flags=%11; RecursionScope=%12; CacheScope=%13; PacketData=%15; AdditionalInfo = VirtualizationInstance: %16; GUID=%17; QueriesAttached=%18]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TCP" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Source" inType="win:AnsiString" outType="xs:string"/>
+  <data name="InterfaceIP" inType="win:AnsiString" outType="xs:string"/>
+  <data name="AA" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="AD" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="QNAME" inType="win:AnsiString" outType="xs:string"/>
+  <data name="QTYPE" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="XID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RecursionDepth" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Port" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RecursionScope" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CacheScope" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BufferSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PacketData" inType="win:Binary" outType="xs:hexBinary" length="BufferSize"/>
+  <data name="AdditionalInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="GUID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="QueriesAttached" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>262</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Analytical</Channel>
+                <Level>Error</Level>
+                <Task>RECURSE_QUERY</Task>
+                <Keyword>RECURSE_QUERY_DROP</Keyword>
+                <Message><![CDATA[
+RECURSE_QUERY_TIMEOUT: TCP=%1; InterfaceIP=%2; Destination=%3; QNAME=%4; QTYPE=%5; QXID=%6; XID=%7; Port=%8; Flags=%9; RecursionScope=%10; CacheScope=%11; AdditionalInfo = VirtualizationInstance: %12; GUID=%13]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TCP" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="InterfaceIP" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Destination" inType="win:AnsiString" outType="xs:string"/>
+  <data name="QNAME" inType="win:AnsiString" outType="xs:string"/>
+  <data name="QTYPE" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="QXID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="XID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Port" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RecursionScope" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CacheScope" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AdditionalInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="GUID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>263</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Analytical</Channel>
+                <Level>Information</Level>
+                <Task>DYNAMIC_UPDATE</Task>
+                <Keyword>DYN_UPDATE_RECV</Keyword>
+                <Message><![CDATA[
+DYN_UPDATE_RECV: TCP=%1; InterfaceIP=%2; Source=%3; QNAME=%4; XID=%5; Port=%6; Flags=%7; SECURE=%8; PacketData=%10]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TCP" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="InterfaceIP" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Source" inType="win:AnsiString" outType="xs:string"/>
+  <data name="QNAME" inType="win:AnsiString" outType="xs:string"/>
+  <data name="XID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Port" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Secure" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="BufferSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PacketData" inType="win:Binary" outType="xs:hexBinary" length="BufferSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>264</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Analytical</Channel>
+                <Level>Information</Level>
+                <Task>DYNAMIC_UPDATE</Task>
+                <Keyword>DYN_UPDATE_RESPONSE</Keyword>
+                <Message><![CDATA[
+DYN_UPDATE_RESPONSE: TCP=%1; InterfaceIP=%2; Destination=%3; QNAME=%4; XID=%5; ZoneScope=%6; Zone=%7; RCODE=%8; PolicyName=%9; PacketData=%11]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TCP" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="InterfaceIP" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Destination" inType="win:AnsiString" outType="xs:string"/>
+  <data name="QNAME" inType="win:AnsiString" outType="xs:string"/>
+  <data name="XID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ZoneScope" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Zone" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RCODE" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BufferSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PacketData" inType="win:Binary" outType="xs:hexBinary" length="BufferSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>265</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Analytical</Channel>
+                <Level>Information</Level>
+                <Task>ZONE_XFR</Task>
+                <Keyword>IXFR_REQ_OUT</Keyword>
+                <Message><![CDATA[
+IXFR_REQ_OUT: TCP=%1; InterfaceIP=%2; Source=%3; QNAME=%4; XID=%5; ZoneScope=%6; Zone=%7; PacketData=%9]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TCP" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="InterfaceIP" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Source" inType="win:AnsiString" outType="xs:string"/>
+  <data name="QNAME" inType="win:AnsiString" outType="xs:string"/>
+  <data name="XID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ZoneScope" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Zone" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BufferSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PacketData" inType="win:Binary" outType="xs:hexBinary" length="BufferSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>266</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Analytical</Channel>
+                <Level>Information</Level>
+                <Task>ZONE_XFR</Task>
+                <Keyword>IXFR_REQ_RECV</Keyword>
+                <Message><![CDATA[
+IXFR_REQ_RECV: TCP=%1; InterfaceIP=%2; Source=%3; QNAME=%4; XID=%5; ZoneScope=%6; Zone=%7; PacketData=%9]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TCP" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="InterfaceIP" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Source" inType="win:AnsiString" outType="xs:string"/>
+  <data name="QNAME" inType="win:AnsiString" outType="xs:string"/>
+  <data name="XID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ZoneScope" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Zone" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BufferSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PacketData" inType="win:Binary" outType="xs:hexBinary" length="BufferSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>267</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Analytical</Channel>
+                <Level>Information</Level>
+                <Task>ZONE_XFR</Task>
+                <Keyword>IXFR_RESP_OUT</Keyword>
+                <Message><![CDATA[
+IXFR_RESP_OUT: TCP=%1; InterfaceIP=%2; Destination=%3; QNAME=%4; XID=%5; ZoneScope=%6; Zone=%7; RCODE=%8; PacketData=%10]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TCP" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="InterfaceIP" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Destination" inType="win:AnsiString" outType="xs:string"/>
+  <data name="QNAME" inType="win:AnsiString" outType="xs:string"/>
+  <data name="XID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ZoneScope" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Zone" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RCODE" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BufferSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PacketData" inType="win:Binary" outType="xs:hexBinary" length="BufferSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>268</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Analytical</Channel>
+                <Level>Information</Level>
+                <Task>ZONE_XFR</Task>
+                <Keyword>IXFR_RESP_RECV</Keyword>
+                <Message><![CDATA[
+IXFR_RESP_RECV: TCP=%1; InterfaceIP=%2; Destination=%3; QNAME=%4; XID=%5; ZoneScope=%6; Zone=%7; RCODE=%8; PacketData=%10]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TCP" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="InterfaceIP" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Destination" inType="win:AnsiString" outType="xs:string"/>
+  <data name="QNAME" inType="win:AnsiString" outType="xs:string"/>
+  <data name="XID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ZoneScope" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Zone" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RCODE" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BufferSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PacketData" inType="win:Binary" outType="xs:hexBinary" length="BufferSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>269</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Analytical</Channel>
+                <Level>Information</Level>
+                <Task>ZONE_XFR</Task>
+                <Keyword>AXFR_REQ_OUT</Keyword>
+                <Message><![CDATA[
+AXFR_REQ_OUT: TCP=%1; Source=%2; InterfaceIP=%3; QNAME=%4; XID=%5; ZoneScope=%6; Zone=%7; PacketData=%9]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TCP" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Source" inType="win:AnsiString" outType="xs:string"/>
+  <data name="InterfaceIP" inType="win:AnsiString" outType="xs:string"/>
+  <data name="QNAME" inType="win:AnsiString" outType="xs:string"/>
+  <data name="XID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ZoneScope" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Zone" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BufferSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PacketData" inType="win:Binary" outType="xs:hexBinary" length="BufferSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>270</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Analytical</Channel>
+                <Level>Information</Level>
+                <Task>ZONE_XFR</Task>
+                <Keyword>AXFR_REQ_RECV</Keyword>
+                <Message><![CDATA[
+AXFR_REQ_RECV: TCP=%1; Source=%2; InterfaceIP=%3; QNAME=%4; XID=%5; ZoneScope=%6; Zone=%7; PacketData=%9]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TCP" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Source" inType="win:AnsiString" outType="xs:string"/>
+  <data name="InterfaceIP" inType="win:AnsiString" outType="xs:string"/>
+  <data name="QNAME" inType="win:AnsiString" outType="xs:string"/>
+  <data name="XID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ZoneScope" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Zone" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BufferSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PacketData" inType="win:Binary" outType="xs:hexBinary" length="BufferSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>271</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Analytical</Channel>
+                <Level>Information</Level>
+                <Task>ZONE_XFR</Task>
+                <Keyword>AXFR_RESP_OUT</Keyword>
+                <Message><![CDATA[
+AXFR_RESP_OUT: TCP=%1; InterfaceIP=%2; Destination=%3; QNAME=%4; XID=%5; ZoneScope=%6; Zone=%7; RCODE=%8]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TCP" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="InterfaceIP" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Destination" inType="win:AnsiString" outType="xs:string"/>
+  <data name="QNAME" inType="win:AnsiString" outType="xs:string"/>
+  <data name="XID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ZoneScope" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Zone" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RCODE" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>272</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Analytical</Channel>
+                <Level>Information</Level>
+                <Task>ZONE_XFR</Task>
+                <Keyword>AXFR_RESP_RECV</Keyword>
+                <Message><![CDATA[
+AXFR_RESP_RECV: TCP=%1; InterfaceIP=%2; Destination=%3; QNAME=%4; XID=%5; ZoneScope=%6; Zone=%7; RCODE=%8]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TCP" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="InterfaceIP" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Destination" inType="win:AnsiString" outType="xs:string"/>
+  <data name="QNAME" inType="win:AnsiString" outType="xs:string"/>
+  <data name="XID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ZoneScope" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Zone" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RCODE" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>273</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Analytical</Channel>
+                <Level>Information</Level>
+                <Task>ZONE_XFR</Task>
+                <Keyword>XFR_NOTIFY_IN</Keyword>
+                <Message><![CDATA[
+XFR_NOTIFY_RECV: Source=%1; InterfaceIP=%2; QNAME=%3; ZoneScope=%4; Zone=%5; PacketData=%7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Source" inType="win:AnsiString" outType="xs:string"/>
+  <data name="InterfaceIP" inType="win:AnsiString" outType="xs:string"/>
+  <data name="QNAME" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ZoneScope" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Zone" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BufferSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PacketData" inType="win:Binary" outType="xs:hexBinary" length="BufferSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>274</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Analytical</Channel>
+                <Level>Information</Level>
+                <Task>ZONE_XFR</Task>
+                <Keyword>XFR_NOTIFY_OUT</Keyword>
+                <Message><![CDATA[
+XFR_NOTIFY_OUT: Destination=%1; InterfaceIP=%2; QNAME=%3; ZoneScope=%4; Zone=%5; PacketData=%7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Source" inType="win:AnsiString" outType="xs:string"/>
+  <data name="InterfaceIP" inType="win:AnsiString" outType="xs:string"/>
+  <data name="QNAME" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ZoneScope" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Zone" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BufferSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PacketData" inType="win:Binary" outType="xs:hexBinary" length="BufferSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>275</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Analytical</Channel>
+                <Level>Information</Level>
+                <Task>ZONE_XFR</Task>
+                <Keyword>XFR_NOTIFY_ACK_IN</Keyword>
+                <Message><![CDATA[
+XFR_NOTIFY_ACK_IN: Source=%1; InterfaceIP=%2; PacketData=%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Source" inType="win:AnsiString" outType="xs:string"/>
+  <data name="InterfaceIP" inType="win:AnsiString" outType="xs:string"/>
+  <data name="BufferSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PacketData" inType="win:Binary" outType="xs:hexBinary" length="BufferSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>276</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Analytical</Channel>
+                <Level>Information</Level>
+                <Task>ZONE_XFR</Task>
+                <Keyword>XFR_NOTIFY_ACK_OUT</Keyword>
+                <Message><![CDATA[
+XFR_NOTIFY_ACK_OUT: Destination=%1; InterfaceIP=%2; Zone=%3; PacketData=%5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Destination" inType="win:AnsiString" outType="xs:string"/>
+  <data name="InterfaceIP" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Zone" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BufferSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PacketData" inType="win:Binary" outType="xs:hexBinary" length="BufferSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>277</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Analytical</Channel>
+                <Level>Information</Level>
+                <Task>DYNAMIC_UPDATE</Task>
+                <Keyword>DYN_UPDATE_FORWARD</Keyword>
+                <Message><![CDATA[
+DYN_UPDATE_FORWARD: TCP=%1; ForwardInterfaceIP=%2; Destination=%3; QNAME=%4; XID=%5; ZoneScope=%6; Zone=%7; RCODE=%8; PacketData=%10]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TCP" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ForwardInterfaceIP" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Destination" inType="win:AnsiString" outType="xs:string"/>
+  <data name="QNAME" inType="win:AnsiString" outType="xs:string"/>
+  <data name="XID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ZoneScope" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Zone" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RCODE" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BufferSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PacketData" inType="win:Binary" outType="xs:hexBinary" length="BufferSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>278</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Analytical</Channel>
+                <Level>Information</Level>
+                <Task>DYNAMIC_UPDATE</Task>
+                <Keyword>DYN_UPDATE_RESPONSE_IN</Keyword>
+                <Message><![CDATA[
+DYN_UPDATE_RESPONSE_IN: TCP=%1; InterfaceIP=%2; Source=%3; QNAME=%4; XID=%5; ZoneScope=%6; Zone=%7; RCODE=%8; PacketData=%10]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TCP" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="InterfaceIP" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Destination" inType="win:AnsiString" outType="xs:string"/>
+  <data name="QNAME" inType="win:AnsiString" outType="xs:string"/>
+  <data name="XID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ZoneScope" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Zone" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RCODE" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BufferSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PacketData" inType="win:Binary" outType="xs:hexBinary" length="BufferSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>279</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Analytical</Channel>
+                <Level>Information</Level>
+                <Task>LOOK_UP</Task>
+                <Keyword>INTERNAL_LOOKUP_CNAME</Keyword>
+                <Message><![CDATA[
+INTERNAL_LOOKUP_CNAME: TCP=%1; InterfaceIP=%2; Source=%3; RD=%4; QNAME=%5; QTYPE=%6; Port=%7; Flags=%8; XID=%9; PacketData=%11; GUID=%12]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TCP" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="InterfaceIP" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Source" inType="win:AnsiString" outType="xs:string"/>
+  <data name="RD" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="QNAME" inType="win:AnsiString" outType="xs:string"/>
+  <data name="QTYPE" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Port" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="XID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BufferSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PacketData" inType="win:Binary" outType="xs:hexBinary" length="BufferSize"/>
+  <data name="GUID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>280</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Analytical</Channel>
+                <Level>Information</Level>
+                <Task>LOOK_UP</Task>
+                <Keyword>INTERNAL_LOOKUP_ADDITIONAL</Keyword>
+                <Message><![CDATA[
+INTERNAL_LOOKUP_ADDITIONAL: TCP=%1; InterfaceIP=%2; Source=%3; RD=%4; QNAME=%5; QTYPE=%6; Port=%7; Flags=%8; XID=%9; PacketData=%11; GUID=%12]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TCP" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="InterfaceIP" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Source" inType="win:AnsiString" outType="xs:string"/>
+  <data name="RD" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="QNAME" inType="win:AnsiString" outType="xs:string"/>
+  <data name="QTYPE" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Port" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="XID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BufferSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PacketData" inType="win:Binary" outType="xs:hexBinary" length="BufferSize"/>
+  <data name="GUID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>281</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Analytical</Channel>
+                <Level>Information</Level>
+                <Task>RRL</Task>
+                <Keyword>RRL_TO_BE_DROPPED_RESPONSE</Keyword>
+                <Message><![CDATA[
+RRL_TO_BE_DROPPED_RESPONSE: InterfaceIP=%1; Destination=%2; QNAME=%3; QTYPE=%4; XID=%5; RCODE=%6; Port=%7; PacketData=%9]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceIP" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Destination" inType="win:AnsiString" outType="xs:string"/>
+  <data name="QNAME" inType="win:AnsiString" outType="xs:string"/>
+  <data name="QTYPE" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="XID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RCODE" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Port" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BufferSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PacketData" inType="win:Binary" outType="xs:hexBinary" length="BufferSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>282</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Analytical</Channel>
+                <Level>Information</Level>
+                <Task>RRL</Task>
+                <Keyword>RRL_TO_BE_TRUNCATED_RESPONSE</Keyword>
+                <Message><![CDATA[
+RRL_TO_BE_TRUNCATED_RESPONSE: InterfaceIP=%1; Destination=%2; QNAME=%3; QTYPE=%4; XID=%5; RCODE=%6; Port=%7; PacketData=%9]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceIP" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Destination" inType="win:AnsiString" outType="xs:string"/>
+  <data name="QNAME" inType="win:AnsiString" outType="xs:string"/>
+  <data name="QTYPE" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="XID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RCODE" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Port" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BufferSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PacketData" inType="win:Binary" outType="xs:hexBinary" length="BufferSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>283</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Analytical</Channel>
+                <Level>Information</Level>
+                <Task>RRL</Task>
+                <Keyword>RRL_TO_BE_LEAKED_RESPONSE</Keyword>
+                <Message><![CDATA[
+RRL_TO_BE_LEAKED_RESPONSE: InterfaceIP=%1; Destination=%2; QNAME=%3; QTYPE=%4; XID=%5; RCODE=%6; Port=%7; PacketData=%9]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceIP" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Destination" inType="win:AnsiString" outType="xs:string"/>
+  <data name="QNAME" inType="win:AnsiString" outType="xs:string"/>
+  <data name="QTYPE" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="XID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RCODE" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Port" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BufferSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PacketData" inType="win:Binary" outType="xs:hexBinary" length="BufferSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>284</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Analytical</Channel>
+                <Level>Information</Level>
+                <Task>LOOK_UP</Task>
+                <Keyword>RESPONSE_SUCCESS</Keyword>
+                <Message><![CDATA[
+RESPONSE_SUCCESS: TCP=%1; InterfaceIP=%2; Destination=%3; AA=%4; AD=%5; QNAME=%6; QTYPE=%7; XID=%8; DNSSEC=%9; RCODE=%10; Port=%11; Flags=%12; Scope=%13; Zone=%14; PolicyName=%15; PacketData=%17; AdditionalInfo= %18; DataTag=%19; ElapsedTime=%20; GUID=%21; EDNSCorrelationTag=%22; EDNSScopeName=%23; %24]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TCP" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="InterfaceIP" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Destination" inType="win:AnsiString" outType="xs:string"/>
+  <data name="AA" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="AD" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="QNAME" inType="win:AnsiString" outType="xs:string"/>
+  <data name="QTYPE" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="XID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DNSSEC" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="RCODE" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Port" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Scope" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Zone" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BufferSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PacketData" inType="win:Binary" outType="xs:hexBinary" length="BufferSize"/>
+  <data name="AdditionalInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DataTag" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ElapsedTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="GUID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EDNSCorrelationTag" inType="win:GUID" outType="xs:GUID"/>
+  <data name="EDNSScopeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StaleRecordsPresent" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>285</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Analytical</Channel>
+                <Level>Error</Level>
+                <Task>LOOK_UP</Task>
+                <Keyword>RESPONSE_FAILURE</Keyword>
+                <Message><![CDATA[
+RESPONSE_FAILURE: TCP=%1; InterfaceIP=%2; Reason=%3; Destination=%4; QNAME=%5; QTYPE=%6; XID=%7; RCODE=%8; Port=%9; Flags=%10; Zone=%11; PolicyName=%12; PacketData=%14; AdditionalInfo = VirtualizationInstance: %13; ElapsedTime=%16; GUID=%17; EDNSCorrelationTag=%18; EDNSScopeName=%19]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TCP" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="InterfaceIP" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Reason" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Destination" inType="win:AnsiString" outType="xs:string"/>
+  <data name="QNAME" inType="win:AnsiString" outType="xs:string"/>
+  <data name="QTYPE" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="XID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RCODE" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Port" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Zone" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BufferSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PacketData" inType="win:Binary" outType="xs:hexBinary" length="BufferSize"/>
+  <data name="AdditionalInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ElapsedTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="GUID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EDNSCorrelationTag" inType="win:GUID" outType="xs:GUID"/>
+  <data name="EDNSScopeName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>286</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Analytical</Channel>
+                <Level>Information</Level>
+                <Task>RECURSE_QUERY</Task>
+                <Keyword>RECURSE_ALIAS_FAILURE</Keyword>
+                <Message><![CDATA[
+RECURSE_ALIAS_FAILURE: TCP=%1; Source=%2; InterfaceIP=%3; AA=%4; AD=%5; QNAME=%6; QTYPE=%7; XID=%8; Port=%9; Flags=%10; ServerScope=%11; CacheScope=%12; PacketData=%14; AdditionalInfo = VirtualizationInstance %15; AliasFailureReason=%16]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TCP" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Source" inType="win:AnsiString" outType="xs:string"/>
+  <data name="InterfaceIP" inType="win:AnsiString" outType="xs:string"/>
+  <data name="AA" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="AD" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="QNAME" inType="win:AnsiString" outType="xs:string"/>
+  <data name="QTYPE" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="XID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Port" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ServerScope" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CacheScope" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BufferSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PacketData" inType="win:Binary" outType="xs:hexBinary" length="BufferSize"/>
+  <data name="AdditionalInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AliasFailureReason" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>287</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Analytical</Channel>
+                <Level>Information</Level>
+                <Task>LOOK_UP</Task>
+                <Keyword>QUERY_RECEIVED</Keyword>
+                <Message><![CDATA[
+QUERY_RECEIVED: TCP=%1; InterfaceIP=%2; Source=%3; RD=%4; QNAME=%5; QTYPE=%6; XID=%7; Port=%8; Flags=%9; PacketData=%11; GUID=%12; EDNSExtendedRCodeBits=%13; EDNSFlags=%14; EDNSUdpPayloadSize=%15; EDNSScopeName=%16; EDNSVirtualizationInstance=%17; EDNSDataTag=%18; EDNSCorrelationTag=%19]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TCP" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="InterfaceIP" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Source" inType="win:AnsiString" outType="xs:string"/>
+  <data name="RD" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="QNAME" inType="win:AnsiString" outType="xs:string"/>
+  <data name="QTYPE" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="XID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Port" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BufferSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PacketData" inType="win:Binary" outType="xs:hexBinary" length="BufferSize"/>
+  <data name="GUID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EDNSExtendedRCodeBits" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="EDNSFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EDNSUdpPayloadSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EDNSScopeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EDNSVirtualizationInstance" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EDNSDataTag" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="EDNSCorrelationTag" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>288</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Analytical</Channel>
+                <Level>Error</Level>
+                <Task>DNSSEC_OP</Task>
+                <Keyword>RESPONSE_FAILURE</Keyword>
+                <Message><![CDATA[
+DNSSEC_VALIDATION_FAILURE: QNAME=%1; RRTYPE=%2; QueryGUID=%3; QXID=%4; XID=%5; CacheNodeName=%6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="QNAME" inType="win:AnsiString" outType="xs:string"/>
+  <data name="RRTYPE" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="QueryGUID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="QXID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="XID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CacheNodeName" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>289</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Analytical</Channel>
+                <Level>Information</Level>
+                <Task>RECURSE_QUERY</Task>
+                <Keyword>RECURSE_QUERY_OUT</Keyword>
+                <Message><![CDATA[
+RECURSE_QUERY_OUT: TCP=%1; Destination=%2; InterfaceIP=%3; RD=%4; QNAME=%5; QTYPE=%6; QXID=%7; XID=%8; Port=%9; Flags=%10; RecursionScope=%11; CacheScope=%12; PolicyName=%13; PacketData=%15; AdditionalInfo = VirtualizationInstance: %16; GUID=%17; EDNSScopeName=%18; EDNSCorrelationTag=%19]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TCP" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Destination" inType="win:AnsiString" outType="xs:string"/>
+  <data name="InterfaceIP" inType="win:AnsiString" outType="xs:string"/>
+  <data name="RD" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="QNAME" inType="win:AnsiString" outType="xs:string"/>
+  <data name="QTYPE" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="QXID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="XID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Port" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RecursionScope" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CacheScope" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BufferSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PacketData" inType="win:Binary" outType="xs:hexBinary" length="BufferSize"/>
+  <data name="AdditionalInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="GUID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EDNSScopeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EDNSCorrelationTag" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>290</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Analytical</Channel>
+                <Level>Information</Level>
+                <Task>RECURSE_QUERY</Task>
+                <Keyword>RECURSE_RESPONSE_IN</Keyword>
+                <Message><![CDATA[
+RECURSE_RESPONSE_IN: TCP=%1; Source=%2; InterfaceIP=%3; AA=%4; AD=%5; QNAME=%6; QTYPE=%7; XID=%8; RemoteQueriesSent=%9; Port=%10; Flags=%11; RecursionScope=%12; CacheScope=%13; PacketData=%15; AdditionalInfo = VirtualizationInstance: %16; GUID=%17; QueriesAttached=%18; EDNSScopeName=%19; EDNSCorrelationTag=%20]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TCP" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Source" inType="win:AnsiString" outType="xs:string"/>
+  <data name="InterfaceIP" inType="win:AnsiString" outType="xs:string"/>
+  <data name="AA" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="AD" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="QNAME" inType="win:AnsiString" outType="xs:string"/>
+  <data name="QTYPE" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="XID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RecursionDepth" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Port" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RecursionScope" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CacheScope" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BufferSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PacketData" inType="win:Binary" outType="xs:hexBinary" length="BufferSize"/>
+  <data name="AdditionalInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="GUID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="QueriesAttached" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EDNSScopeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EDNSCorrelationTag" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>291</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Analytical</Channel>
+                <Level>Error</Level>
+                <Task>RECURSE_QUERY</Task>
+                <Keyword>RECURSE_QUERY_DROP</Keyword>
+                <Message><![CDATA[
+RECURSE_QUERY_TIMEOUT: TCP=%1; InterfaceIP=%2; Destination=%3; QNAME=%4; QTYPE=%5; QXID=%6; XID=%7; Port=%8; Flags=%9; RecursionScope=%10; CacheScope=%11; AdditionalInfo = VirtualizationInstance: %12; GUID=%13; EDNSScopeName=%14; EDNSCorrelationTag=%15]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TCP" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="InterfaceIP" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Destination" inType="win:AnsiString" outType="xs:string"/>
+  <data name="QNAME" inType="win:AnsiString" outType="xs:string"/>
+  <data name="QTYPE" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="QXID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="XID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Port" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RecursionScope" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CacheScope" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AdditionalInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="GUID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EDNSScopeName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EDNSCorrelationTag" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>512</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>ZONE_OP</Task>
+                <Keyword>AUDIT_ZONES</Keyword>
+                <Message><![CDATA[
+The zone %1 was created with settings: Type=%2; Lookup=%3; ReplicationScope=%4; ZoneFile=%5; [virtualization instance %6].]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Type" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Lookup" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ReplicationScope" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ZoneFile" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VirtualizationID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>513</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>ZONE_OP</Task>
+                <Keyword>AUDIT_ZONES</Keyword>
+                <Message><![CDATA[
+The zone %1 was deleted. [virtualization instance: %2].]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Zone" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VirtualizationID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>514</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>ZONE_OP</Task>
+                <Keyword>AUDIT_ZONES</Keyword>
+                <Message><![CDATA[
+The zone %1 was updated. The %2 setting has been set to %3. [virtualization instance: %4].]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Zone" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PropertyKey" inType="win:AnsiString" outType="xs:string"/>
+  <data name="NewValue" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VirtualizationID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>515</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>ZONE_OP</Task>
+                <Keyword>AUDIT_REC_ADMIN</Keyword>
+                <Message><![CDATA[
+A resource record of type %1, name %2, TTL %3 and RDATA %5 was created in scope %7 of zone %6. [virtualization instance: %8].]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NAME" inType="win:AnsiString" outType="xs:string"/>
+  <data name="TTL" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BufferSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RDATA" inType="win:Binary" outType="xs:hexBinary" length="BufferSize"/>
+  <data name="Zone" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ZoneScope" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VirtualizationID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>516</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>ZONE_OP</Task>
+                <Keyword>AUDIT_REC_ADMIN</Keyword>
+                <Message><![CDATA[
+A resource record of type %1, name %2 and RDATA %5 was deleted from scope %7 of zone %6.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NAME" inType="win:AnsiString" outType="xs:string"/>
+  <data name="TTL" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BufferSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RDATA" inType="win:Binary" outType="xs:hexBinary" length="BufferSize"/>
+  <data name="Zone" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ZoneScope" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VirtualizationID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>517</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>ZONE_OP</Task>
+                <Keyword>AUDIT_REC_ADMIN</Keyword>
+                <Message><![CDATA[
+All resource records of type %1, name %2 were deleted from scope %4 of zone %3. [virtualization instance: %5].]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NAME" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Zone" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ZoneScope" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VirtualizationID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>518</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>ZONE_OP</Task>
+                <Keyword>AUDIT_REC_ADMIN</Keyword>
+                <Message><![CDATA[
+All resource records at Node name %1 were deleted from scope %3 of zone %2. [virtualization instance: %4].]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NAME" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Zone" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ZoneScope" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VirtualizationID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>519</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>DYNAMIC_UPDATE</Task>
+                <Keyword>AUDIT_REC_DYN_UPDATE</Keyword>
+                <Message><![CDATA[
+A resource record of type %1, name %2, TTL %3 and RDATA %5 was created in scope %7 of zone %6 via dynamic update from IP Address %8.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NAME" inType="win:AnsiString" outType="xs:string"/>
+  <data name="TTL" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BufferSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RDATA" inType="win:Binary" outType="xs:hexBinary" length="BufferSize"/>
+  <data name="Zone" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ZoneScope" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Source" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>520</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>DYNAMIC_UPDATE</Task>
+                <Keyword>AUDIT_REC_DYN_UPDATE</Keyword>
+                <Message><![CDATA[
+A resource record of type %1, name %2 and RDATA %5 was deleted from scope %7 of zone %6 via dynamic update from IP Address %8.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NAME" inType="win:AnsiString" outType="xs:string"/>
+  <data name="TTL" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BufferSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RDATA" inType="win:Binary" outType="xs:hexBinary" length="BufferSize"/>
+  <data name="Zone" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ZoneScope" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Source" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>521</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>AGEING</Task>
+                <Keyword>AUDIT_REC_SCAVENGER</Keyword>
+                <Message><![CDATA[
+A resource record of type %1, name %2, TTL %3 and RDATA %5 was scavenged from scope %7 of zone %6.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NAME" inType="win:AnsiString" outType="xs:string"/>
+  <data name="TTL" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BufferSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RDATA" inType="win:Binary" outType="xs:hexBinary" length="BufferSize"/>
+  <data name="Zone" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ZoneScope" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VirtualizationID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>522</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>ZONE_OP</Task>
+                <Keyword>AUDIT_ZONESCOPE</Keyword>
+                <Message><![CDATA[
+The scope %1 was created in zone %2. [virtualization instance: %3].]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ZoneScope" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Zone" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VirtualizationID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>523</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>ZONE_OP</Task>
+                <Keyword>AUDIT_ZONESCOPE</Keyword>
+                <Message><![CDATA[
+The scope %1 was deleted in zone %2. [virtualization instance: %3].]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ZoneScope" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Zone" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VirtualizationID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>525</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>OnlineSigning</Task>
+                <Keyword>AUDIT_ZONE_SIGN</Keyword>
+                <Message><![CDATA[
+The zone %1 was signed with following properties: DenialOfExistence=%2; DistributeTrustAnchor=%3; DnsKeyRecordSetTtl=%4; DSRecordGenerationAlgorithm=%5; DSRecordSetTtl=%6; EnableRfc5011KeyRollover=%7; IsKeyMasterServer=%8; KeyMasterServer=%9; NSec3HashAlgorithm=%10; NSec3Iterations=%11; NSec3OptOut=%12; NSec3RandomSaltLength=%13; NSec3UserSalt=%14; ParentHasSecureDelegation=%15; PropagationTime=%16; SecureDelegationPollingPeriod=%17; SignatureInceptionOffset=%18.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ZoneName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DenialOfExistence" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DistributeTrustAnchor" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DnsKeyRecordSetTtl" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DSRecordGenerationAlgorithm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DSRecordSetTtl" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EnableRfc5011KeyRollover" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsKeyMasterServer" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="KeyMasterServer" inType="win:AnsiString" outType="xs:string"/>
+  <data name="NSec3HashAlgorithm" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NSec3Iterations" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NSec3OptOut" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NSec3RandomSaltLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NSec3UserSalt" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ParentHasSecureDelegation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PropagationTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SecureDelegationPollingPeriod" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SignatureInceptionOffset" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>526</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>OnlineSigning</Task>
+                <Keyword>AUDIT_ZONE_SIGN</Keyword>
+                <Message><![CDATA[
+The zone %1 was unsigned.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Zone" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>527</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>OnlineSigning</Task>
+                <Keyword>AUDIT_ZONE_SIGN</Keyword>
+                <Message><![CDATA[
+The zone %1 was re-signed with following properties: DenialOfExistence=%2; DistributeTrustAnchor=%3; DnsKeyRecordSetTtl=%4; DSRecordGenerationAlgorithm=%5; DSRecordSetTtl=%6; EnableRfc5011KeyRollover=%7; IsKeyMasterServer=%8; KeyMasterServer=%9; NSec3HashAlgorithm=%10; NSec3Iterations=%11; NSec3OptOut=%12; NSec3RandomSaltLength=%13; NSec3UserSalt=%14; ParentHasSecureDelegation=%15; PropagationTime=%16; SecureDelegationPollingPeriod=%17; SignatureInceptionOffset=%18.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ZoneName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DenialOfExistence" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DistributeTrustAnchor" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DnsKeyRecordSetTtl" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DSRecordGenerationAlgorithm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DSRecordSetTtl" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EnableRfc5011KeyRollover" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsKeyMasterServer" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="KeyMasterServer" inType="win:AnsiString" outType="xs:string"/>
+  <data name="NSec3HashAlgorithm" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NSec3Iterations" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NSec3OptOut" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NSec3RandomSaltLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NSec3UserSalt" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ParentHasSecureDelegation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PropagationTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SecureDelegationPollingPeriod" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SignatureInceptionOffset" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>528</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>DNSSEC_OP</Task>
+                <Keyword>AUDIT_ROLLOVER</Keyword>
+                <Message><![CDATA[
+Rollover was started on the type %1 with GUID %2 of zone %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Type" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="GUID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Zone" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>529</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>DNSSEC_OP</Task>
+                <Keyword>AUDIT_ROLLOVER</Keyword>
+                <Message><![CDATA[
+Rollover was completed on the type %1 with GUID %2 of zone %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Type" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="GUID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Zone" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>530</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>DNSSEC_OP</Task>
+                <Keyword>AUDIT_ROLLOVER</Keyword>
+                <Message><![CDATA[
+The type %1 with GUID %2 of zone %3 was marked for retiral. The key will be removed after the rollover completion.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Type" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="GUID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Zone" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>531</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>DNSSEC_OP</Task>
+                <Keyword>AUDIT_ROLLOVER</Keyword>
+                <Message><![CDATA[
+Manual rollover was triggered on the type %1 with GUID %2 of zone %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Type" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="GUID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Zone" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>533</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Warning</Level>
+                <Task>DNSSEC_OP</Task>
+                <Keyword>AUDIT_ROLLOVER</Keyword>
+                <Message><![CDATA[
+The keys signing key with GUID %1 on zone %2 that was waiting for a Delegation Signer(DS) update on the parent has been forced to move to rollover completion.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="GUID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Zone" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>534</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>DNSSEC_OP</Task>
+                <Keyword>AUDIT_EXPORT_IMPORT</Keyword>
+                <Message><![CDATA[
+DNSSEC setting metadata was exported %1 key signing key metadata from zone %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WithWithout" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Zone" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>535</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>DNSSEC_OP</Task>
+                <Keyword>AUDIT_EXPORT_IMPORT</Keyword>
+                <Message><![CDATA[
+DNSSEC setting metadata was imported on zone %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Zone" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>536</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>CACHE_OP</Task>
+                <Keyword>AUDIT_CACHE</Keyword>
+                <Message><![CDATA[
+A record of type %1, QNAME %2 was purged from scope %3 in cache.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="QTYPE" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="QNAME" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Scope" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>537</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>Configuration</Task>
+                <Keyword>AUDIT_FORWARDER</Keyword>
+                <Message><![CDATA[
+The forwarder list on scope %2 has been reset to %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Forwarders" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Scope" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>540</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>Configuration</Task>
+                <Keyword>AUDIT_ROOTHINTS</Keyword>
+                <Message><![CDATA[
+The root hints have been modified.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>541</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>Configuration</Task>
+                <Keyword>AUDIT_SERVER_CONFIG</Keyword>
+                <Message><![CDATA[
+The setting %1 on scope %2 has been set to %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Setting" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Scope" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NewValue" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>542</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>Configuration</Task>
+                <Keyword>AUDIT_RECURSIONSCOPE</Keyword>
+                <Message><![CDATA[
+The scope %1 of DNS server was created.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RecursionScope" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>543</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>Configuration</Task>
+                <Keyword>AUDIT_RECURSIONSCOPE</Keyword>
+                <Message><![CDATA[
+The scope %1 of DNS server was deleted.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RecursionScope" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>544</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>DNSSEC_OP</Task>
+                <Keyword>AUDIT_TRUST_ANCHOR</Keyword>
+                <Message><![CDATA[
+The DNSKEY with Key Protocol %2, Base64 Data %4 and Crypto Algorithm %5 has been added at the trust point %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:AnsiString" outType="xs:string"/>
+  <data name="KeyProtocol" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BufferSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Base64Data" inType="win:Binary" outType="xs:hexBinary" length="BufferSize"/>
+  <data name="CryptoAlgorithm" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>545</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>DNSSEC_OP</Task>
+                <Keyword>AUDIT_TRUST_ANCHOR</Keyword>
+                <Message><![CDATA[
+The DS with Key Tag: %2, Digest Type: %3, Digest: %5 and Crypto Algorithm: %6 has been added at the trust point %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:AnsiString" outType="xs:string"/>
+  <data name="KeyTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DigestType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BufferSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Digest" inType="win:Binary" outType="xs:hexBinary" length="BufferSize"/>
+  <data name="CryptoAlgorithm" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>546</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>DNSSEC_OP</Task>
+                <Keyword>AUDIT_TRUST_ANCHOR</Keyword>
+                <Message><![CDATA[
+The trust point at %1 of type %2 has been removed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Type" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>547</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>DNSSEC_OP</Task>
+                <Keyword>AUDIT_TRUST_ANCHOR</Keyword>
+                <Message><![CDATA[
+The trust anchor for the root zone has been added.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>548</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>SERVER_OP</Task>
+                <Keyword>AUDIT_SERVER_ADMIN</Keyword>
+                <Message><![CDATA[
+A request to restart the DNS server service has been received.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>549</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>SERVER_OP</Task>
+                <Keyword>AUDIT_SERVER_ADMIN</Keyword>
+                <Message><![CDATA[
+The debug logs have been cleared from %1 on DNS server.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FilePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>550</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>SERVER_OP</Task>
+                <Keyword>AUDIT_SERVER_ADMIN</Keyword>
+                <Message><![CDATA[
+The in-memory contents of all the zones on DNS server have been flushed to their respective files.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>551</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>SERVER_OP</Task>
+                <Keyword>AUDIT_SERVER_ADMIN</Keyword>
+                <Message><![CDATA[
+All the statistical data for the DNS server has been cleared.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>552</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>SERVER_OP</Task>
+                <Keyword>AUDIT_SERVER_ADMIN</Keyword>
+                <Message><![CDATA[
+A resource record scavenging cycle has been started on the DNS Server.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>553</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>SERVER_OP</Task>
+                <Keyword>AUDIT_SERVER_ADMIN</Keyword>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EventString" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>554</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>SERVER_OP</Task>
+                <Keyword>AUDIT_SERVER_ADMIN</Keyword>
+                <Message><![CDATA[
+The resource record scavenging cycle has been terminated on the DNS Server.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>555</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>SERVER_OP</Task>
+                <Keyword>AUDIT_SERVER_ADMIN</Keyword>
+                <Message><![CDATA[
+The DNS server has been prepared for demotion by removing references to it from all zones stored in the Active Directory.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>556</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>SERVER_OP</Task>
+                <Keyword>AUDIT_ROOTHINTS</Keyword>
+                <Message><![CDATA[
+The information about the root hints on the DNS server has been written back to the persistent storage.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>557</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>SERVER_OP</Task>
+                <Keyword>AUDIT_SERVER_ADMIN</Keyword>
+                <Message><![CDATA[
+The addresses on which DNS server will listen has been changed to %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ListenAddresses" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>558</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>DNSSEC_OP</Task>
+                <Keyword>AUDIT_TRUST_ANCHOR</Keyword>
+                <Message><![CDATA[
+An immediate RFC 5011 active refresh has been scheduled for all trust points.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>559</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>ZONE_OP</Task>
+                <Keyword>AUDIT_ZONES</Keyword>
+                <Message><![CDATA[
+The zone %1 is paused. [virtualization instance: %2].]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Zone" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VirtualizationID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>560</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>ZONE_OP</Task>
+                <Keyword>AUDIT_ZONES</Keyword>
+                <Message><![CDATA[
+The zone %1 is resumed. [virtualization instance: %2].]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Zone" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VirtualizationID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>561</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>ZONE_OP</Task>
+                <Keyword>AUDIT_ZONES</Keyword>
+                <Message><![CDATA[
+The data for zone %1 has been reloaded from %2. [virtualization instance: %3].]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Zone" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FilePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VirtualizationID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>562</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>ZONE_OP</Task>
+                <Keyword>AUDIT_ZONES</Keyword>
+                <Message><![CDATA[
+The data for zone %1 has been refreshed from the master server %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Zone" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MasterServer" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>563</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>ZONE_OP</Task>
+                <Keyword>AUDIT_ZONES</Keyword>
+                <Message><![CDATA[
+The secondary zone %1 has been expired and new data has been requested from the master server %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Zone" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MasterServer" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>564</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>ZONE_OP</Task>
+                <Keyword>AUDIT_ZONES</Keyword>
+                <Message><![CDATA[
+The zone %1 has been reloaded from the Active Directory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Zone" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VirtualizationID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>565</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>ZONE_OP</Task>
+                <Keyword>AUDIT_ZONES</Keyword>
+                <Message><![CDATA[
+The content of the zone %1 has been written to the disk and the notification has been sent to all the notify servers. [virtualization instance: %2].]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Zone" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VirtualizationID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>566</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>ZONE_OP</Task>
+                <Keyword>AUDIT_ZONES</Keyword>
+                <Message><![CDATA[
+All DNS records at the node %1 in the zone %2 will have their aging time stamp set to the current time.%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NodeName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Zone" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SubTreeAging" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>567</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>ZONE_OP</Task>
+                <Keyword>AUDIT_ZONES</Keyword>
+                <Message><![CDATA[
+The Active Directory-integrated zone %1 has been updated. Only %2 can run scavenging.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Zone" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ScavengeServers" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>568</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>DNSSEC_OP</Task>
+                <Keyword>AUDIT_ZONE_SIGN</Keyword>
+                <Message><![CDATA[
+The key master role for zone %1 has been %2.%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Zone" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SeizedOrTransfered" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="WithNewKeys" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>569</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>DNSSEC_OP</Task>
+                <Keyword>AUDIT_ZONE_SIGN</Keyword>
+                <Message><![CDATA[
+A %1 signing key (%2) descriptor has been added on the zone %3 with following properties: KeyId=%4; KeyType=%5; CurrentState=%6; KeyStorageProvider=%7; StoreKeysInAD=%8; CryptoAlgorithm=%9; KeyLength=%10; DnsKeySignatureValidityPeriod=%11; DSSignatureValidityPeriod=%12; ZoneSignatureValidityPeriod=%13; InitialRolloverOffset=%14; RolloverPeriod=%15; RolloverType=%16; NextRolloverAction=%17; LastRolloverTime=%18; NextRolloverTime=%19; CurrentRolloverStatus=%20; ActiveKey=%21; StandbyKey=%22; NextKey=%23. The zone will be resigned with the %2 generated with these properties.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="KeyOrZone" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="KskOrZsk" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Zone" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="KeyId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="KeyType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CurrentState" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="KeyStorageProvider" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StoreKeysInAD" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="CryptoAlgorithm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="KeyLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DnsKeySignatureValidityPeriod" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DSSignatureValidityPeriod" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ZoneSignatureValidityPeriod" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InitialRolloverOffset" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RolloverPeriod" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RolloverType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NextRolloverAction" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LastRolloverTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="NextRolloverTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="CurrentRolloverStatus" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ActiveKey" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StandbyKey" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NextKey" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>570</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>DNSSEC_OP</Task>
+                <Keyword>AUDIT_ZONE_SIGN</Keyword>
+                <Message><![CDATA[
+A %1 signing key (%2) descriptor with GUID %3 has been updated on the zone %4. The properties of this %2 descriptor have been set to: KeyId=%5; KeyType=%6; CurrentState=%7; KeyStorageProvider=%8; StoreKeysInAD=%9; CryptoAlgorithm=%10; KeyLength=%11; DnsKeySignatureValidityPeriod=%12; DSSignatureValidityPeriod=%13; ZoneSignatureValidityPeriod=%14; InitialRolloverOffset=%15; RolloverPeriod=%16; RolloverType=%17; NextRolloverAction=%18; LastRolloverTime=%19; NextRolloverTime=%20; CurrentRolloverStatus=%21; ActiveKey=%22; StandbyKey=%23; NextKey=%24. The zone will be resigned with the %2 generated with these properties.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="KeyOrZone" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="KskOrZsk" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="GUID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Zone" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="KeyId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="KeyType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CurrentState" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="KeyStorageProvider" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StoreKeysInAD" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="CryptoAlgorithm" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="KeyLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DnsKeySignatureValidityPeriod" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DSSignatureValidityPeriod" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ZoneSignatureValidityPeriod" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InitialRolloverOffset" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RolloverPeriod" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RolloverType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NextRolloverAction" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LastRolloverTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="NextRolloverTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="CurrentRolloverStatus" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ActiveKey" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StandbyKey" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NextKey" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>571</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>DNSSEC_OP</Task>
+                <Keyword>AUDIT_ZONE_SIGN</Keyword>
+                <Message><![CDATA[
+A %1 signing key (%2) descriptor %4 has been removed from the zone %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="KeyOrZone" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="KskOrZsk" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Zone" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="GUID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>572</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>DNSSEC_OP</Task>
+                <Keyword>AUDIT_ZONE_SIGN</Keyword>
+                <Message><![CDATA[
+The state of the %1 signing key (%2) %3 has been modified on zone %4. The new active key is %5, standby key is %6 and next key is %7.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="KeyOrZone" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="KskOrZsk" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="GUID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Zone" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ActiveKey" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StandbyKey" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NextKey" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>573</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>ZONE_OP</Task>
+                <Keyword>AUDIT_ZONES</Keyword>
+                <Message><![CDATA[
+A delegation for %1 in the scope %2 of zone %3 with the name server %4 has been added. [virtualization instance: %5].]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ChildZone" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Scope" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Zone" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NameServer" inType="win:AnsiString" outType="xs:string"/>
+  <data name="VirtualizationID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>574</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>POLICY_OP</Task>
+                <Keyword>AUDIT_POLICY</Keyword>
+                <Message><![CDATA[
+The client subnet with name %1, and value %2 has been added to the DNS server.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ClientSubnetRecord" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientSubnetList" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>575</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>POLICY_OP</Task>
+                <Keyword>AUDIT_POLICY</Keyword>
+                <Message><![CDATA[
+The client subnet with name %1 has been deleted from the DNS server.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ClientSubnetRecord" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>576</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>POLICY_OP</Task>
+                <Keyword>AUDIT_POLICY</Keyword>
+                <Message><![CDATA[
+The client subnet with name %1 has been updated on the DNS server. The new IP subnets that it refers to are %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ClientSubnetRecord" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClientSubnetList" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>577</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>POLICY_OP</Task>
+                <Keyword>AUDIT_POLICY</Keyword>
+                <Message><![CDATA[
+A server level policy %6 for %1  has been created on server %2 with following properties: Processing order:%3; Criteria:%4; Action:%5; Condition:%7; IsEnabled:%8.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Type" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServerName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ProcessingOrder" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Criteria" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Action" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Policy" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Condition" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsEnabled" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>578</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>POLICY_OP</Task>
+                <Keyword>AUDIT_POLICY</Keyword>
+                <Message><![CDATA[
+A zone level policy %8 for %1  has been created on zone %6 on server %2 with following properties: Processing order:%3; Criteria:%4; Action:%5; Scopes:%7; Condition:%9; IsEnabled:%10.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Type" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServerName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ProcessingOrder" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Criteria" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Action" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ZoneName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Scopes" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Policy" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Condition" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsEnabled" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>579</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>POLICY_OP</Task>
+                <Keyword>AUDIT_POLICY</Keyword>
+                <Message><![CDATA[
+A policy %6 to control recursion settings has been created on server %2 with following properties: Processing order:%3; Criteria:%4; Action:%5; Scope:%1; Condition:%7; IsEnabled:%8.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RecursionScope" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServerName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ProcessingOrder" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Criteria" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Action" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Policy" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Condition" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsEnabled" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>580</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>POLICY_OP</Task>
+                <Keyword>AUDIT_POLICY</Keyword>
+                <Message><![CDATA[
+The server level policy %1 has been deleted from server %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Policy" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServerName" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>581</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>POLICY_OP</Task>
+                <Keyword>AUDIT_POLICY</Keyword>
+                <Message><![CDATA[
+The zone level policy %1 has been deleted from zone %3 on server %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Policy" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServerName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Zone" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>582</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>POLICY_OP</Task>
+                <Keyword>AUDIT_POLICY</Keyword>
+                <Message><![CDATA[
+The policy %1 to control recursion settings has been deleted from server %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Policy" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServerName" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>583</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>POLICY_OP</Task>
+                <Keyword>AUDIT_POLICY</Keyword>
+                <Message><![CDATA[
+The server level policy %1 has been updated on server %2. The properties %3 have been updated to %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Policy" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServerName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="OldPropertyValues" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NewPropertyValues" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>584</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>POLICY_OP</Task>
+                <Keyword>AUDIT_POLICY</Keyword>
+                <Message><![CDATA[
+The zone level policy %1 has been updated on zone %3 of server %2. The properties %4 have been updated to %5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Policy" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServerName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Zone" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="OldPropertyValues" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NewPropertyValues" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>585</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>POLICY_OP</Task>
+                <Keyword>AUDIT_POLICY</Keyword>
+                <Message><![CDATA[
+The server level policy %1 for recursion has been updated on server %2. The properties %3 have been updated to %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Policy" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServerName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="OldPropertyValues" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NewPropertyValues" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>586</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>POLICY_OP</Task>
+                <Keyword>AUDIT_POLICY</Keyword>
+                <Message><![CDATA[
+The zone level policy %1 has been updated on zone %4 of server %2. The policy does not use scope %3 for query resolution.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Policy" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServerName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Scope" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Zone" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>587</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>POLICY_OP</Task>
+                <Keyword>AUDIT_POLICY</Keyword>
+                <Message><![CDATA[
+The zone level policy %1 has been updated on zone %5 of server %2. The policy will use scope %3 for query resolution with weight %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Policy" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServerName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Scope" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ScopeWeight" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Zone" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>588</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>POLICY_OP</Task>
+                <Keyword>AUDIT_POLICY</Keyword>
+                <Message><![CDATA[
+The zone level policy %1 has been updated on zone %6 of server %2. The weight assigned to scope %3 has been updated from %5 to %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Policy" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServerName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Scope" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ScopeWeightNew" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ScopeWeightOld" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Zone" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>589</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>POLICY_OP</Task>
+                <Keyword>AUDIT_POLICY</Keyword>
+                <Message><![CDATA[
+The server level policy %1 for recursion has been updated on server %2. The policy will use recursion scope %3 instead of %4 for query resolution.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Policy" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServerName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="NewScope" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="OldScope" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>590</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>RRL_OP</Task>
+                <Keyword>AUDIT_RRL</Keyword>
+                <Message><![CDATA[
+The Response Rate Limiting is configured on the DNS server  %1. The RRL settings are ResponsesPerSecond: %2, ErrorsPerSecond: %3, LeakRate: %4, TCRate: %5, Window: %6, MaximumResponsesInWindow: %7, IPv4PrefixLength: %8, IPv6PrefixLength: %9, Mode: %10.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ServerName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ResponsePerSecond" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorsPerSecond" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LeakRate" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TCRate" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="WindowSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TotalResponsesInWindow" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IPv4PrefixLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IPv6PrefixLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Mode" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>591</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>RRL_OP</Task>
+                <Keyword>AUDIT_RRL</Keyword>
+                <Message><![CDATA[
+A exceptionlist %1 against response rate limiting has been added on the DNS server %2 with following settings: %3; Condition:%4. The queries that fall under this exceptionlist shall be exempt from response rate limiting.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RRLExceptionlist" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServerName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Criteria" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Condition" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>592</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>RRL_OP</Task>
+                <Keyword>AUDIT_RRL</Keyword>
+                <Message><![CDATA[
+A exceptionlist %1 against response rate limiting has been deleted from server %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RRLExceptionlist" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServerName" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>593</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>RRL_OP</Task>
+                <Keyword>AUDIT_RRL</Keyword>
+                <Message><![CDATA[
+A exceptionlist %1 against response rate limiting has been updated on server %2. The properties %3 have been updated to %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RRLExceptionlist" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServerName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="OldPropertyValues" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NewPropertyValues" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>594</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>VIRTUALIZATION_OP</Task>
+                <Keyword>AUDIT_TENANT</Keyword>
+                <Message><![CDATA[
+The virtualization instance %1 with friendly name %2 was created.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VirtualizationID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FriendlyName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>595</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>VIRTUALIZATION_OP</Task>
+                <Keyword>AUDIT_TENANT</Keyword>
+                <Message><![CDATA[
+The virtualization instance %1 was removed. The zones hosted in this virtualization instance were automatically removed as a part of this.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VirtualizationID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>596</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Audit</Channel>
+                <Level>Information</Level>
+                <Task>VIRTUALIZATION_OP</Task>
+                <Keyword>AUDIT_TENANT</Keyword>
+                <Message><![CDATA[
+The virtualization instance %1 was updated. The %2 setting has been set to %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VirtualizationID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="OldFriendlyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NewFriendlyName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>597</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Analytical</Channel>
+                <Level>Information</Level>
+                <Task>LOOK_UP</Task>
+                <Keyword>QUERY_RECEIVED</Keyword>
+                <Message><![CDATA[
+QUERY_RECEIVED: Channel=%1; %2; InterfaceIP=%3; Source=%4; RD=%5; QNAME=%6; QTYPE=%7; XID=%8; Port=%9; Flags=%10; PacketData=%12; AdditionalInfo = VirtualizationInstanceOptionValue: %13; GUID=%14; %15]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Channel" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ChannelInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="InterfaceIP" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Source" inType="win:AnsiString" outType="xs:string"/>
+  <data name="RD" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="QNAME" inType="win:AnsiString" outType="xs:string"/>
+  <data name="QTYPE" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="XID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Port" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BufferSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PacketData" inType="win:Binary" outType="xs:hexBinary" length="BufferSize"/>
+  <data name="AdditionalInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="GUID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EdnsInfo" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>598</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Analytical</Channel>
+                <Level>Information</Level>
+                <Task>LOOK_UP</Task>
+                <Keyword>RESPONSE_SUCCESS</Keyword>
+                <Message><![CDATA[
+RESPONSE_SUCCESS: Channel=%1; %2; InterfaceIP=%3; Destination=%4; AA=%5; AD=%6; QNAME=%7; QTYPE=%8; XID=%9; DNSSEC=%10; RCODE=%11; Port=%12; Flags=%13; Scope=%14; Zone=%15; PolicyName=%16; PacketData=%18; AdditionalInfo= %19; DataTag=%20; ElapsedTime=%21; GUID=%22; %23; %24;]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Channel" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ChannelInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="InterfaceIP" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Destination" inType="win:AnsiString" outType="xs:string"/>
+  <data name="AA" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="AD" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="QNAME" inType="win:AnsiString" outType="xs:string"/>
+  <data name="QTYPE" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="XID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DNSSEC" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="RCODE" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Port" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Scope" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Zone" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BufferSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PacketData" inType="win:Binary" outType="xs:hexBinary" length="BufferSize"/>
+  <data name="AdditionalInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DataTag" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ElapsedTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="GUID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EdnsInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StaleRecordsPresent" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>599</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Analytical</Channel>
+                <Level>Error</Level>
+                <Task>LOOK_UP</Task>
+                <Keyword>RESPONSE_FAILURE</Keyword>
+                <Message><![CDATA[
+RESPONSE_FAILURE: Channel=%1; %2; InterfaceIP=%3; Reason=%4; Destination=%5; QNAME=%6; QTYPE=%7; XID=%8; RCODE=%9; Port=%10; Flags=%11; Zone=%12; PolicyName=%13; PacketData=%15; AdditionalInfo = VirtualizationInstance: %14; ElapsedTime=%17; GUID=%18; %19]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Channel" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ChannelInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="InterfaceIP" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Reason" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Destination" inType="win:AnsiString" outType="xs:string"/>
+  <data name="QNAME" inType="win:AnsiString" outType="xs:string"/>
+  <data name="QTYPE" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="XID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RCODE" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Port" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Zone" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BufferSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PacketData" inType="win:Binary" outType="xs:hexBinary" length="BufferSize"/>
+  <data name="AdditionalInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ElapsedTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="GUID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EdnsInfo" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>600</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Analytical</Channel>
+                <Level>Error</Level>
+                <Task>LOOK_UP</Task>
+                <Keyword>IGNORED_QUERY</Keyword>
+                <Message><![CDATA[
+IGNORED_QUERY: Channel=%1; %2; InterfaceIP=%3; Source=%4; Reason=%5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Channel" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ChannelInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="InterfaceIP" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Source" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Reason" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>601</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Analytical</Channel>
+                <Level>Error</Level>
+                <Task>LOOK_UP</Task>
+                <Keyword>IGNORED_QUERY</Keyword>
+                <Message><![CDATA[
+IGNORED_QUERY: Channel=%1; %2; InterfaceIP=%3; Source=%4; Reason=%5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Channel" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ChannelInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="InterfaceIP" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Source" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Reason" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>602</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Analytical</Channel>
+                <Level>Information</Level>
+                <Task>DYNAMIC_UPDATE</Task>
+                <Keyword>DYN_UPDATE_RECV</Keyword>
+                <Message><![CDATA[
+DYN_UPDATE_RECV: Channel=%1; %2; InterfaceIP=%3; Source=%4; QNAME=%5; XID=%6; Port=%7; Flags=%8; SECURE=%9; PacketData=%11]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Channel" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ChannelInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="InterfaceIP" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Source" inType="win:AnsiString" outType="xs:string"/>
+  <data name="QNAME" inType="win:AnsiString" outType="xs:string"/>
+  <data name="XID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Port" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Secure" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="BufferSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PacketData" inType="win:Binary" outType="xs:hexBinary" length="BufferSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>603</Id>
+                <Version>0</Version>
+                <Channel>Microsoft-Windows-DNSServer/Analytical</Channel>
+                <Level>Information</Level>
+                <Task>DYNAMIC_UPDATE</Task>
+                <Keyword>DYN_UPDATE_RESPONSE</Keyword>
+                <Message><![CDATA[
+DYN_UPDATE_RESPONSE: Channel=%1; %2; InterfaceIP=%3; Destination=%4; QNAME=%5; XID=%6; ZoneScope=%7; Zone=%8; RCODE=%9; PolicyName=%10; PacketData=%12]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Channel" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ChannelInfo" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="InterfaceIP" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Destination" inType="win:AnsiString" outType="xs:string"/>
+  <data name="QNAME" inType="win:AnsiString" outType="xs:string"/>
+  <data name="XID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ZoneScope" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Zone" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RCODE" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BufferSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PacketData" inType="win:Binary" outType="xs:hexBinary" length="BufferSize"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
