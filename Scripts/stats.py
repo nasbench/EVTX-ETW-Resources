@@ -1,9 +1,12 @@
-import os
 import csv
+import os
 import re
+import sys
+
 import pandas as pd
 
-from etwlib import fixMessage, parse_etw_xml
+import etwlib
+from etwlib import EMPTY_PROVIDER, fixMessage, parse_etw_xml, safe_filename
 
 def getAllProvidersNameAvailable(etwdir_list):
     # We loop through each folder and collect the name and append it to the list
@@ -33,13 +36,13 @@ def searchProviderName(providerName, etwdir_list_fullpath):
 def createProvidersCSV(provider_dict, csvFolderName):
     for providerName, providersPaths in provider_dict.items():
         print("Creating file for provider: " + str(providerName))
-        unsortedFileName = "ETWProvidersCSVs/"+ csvFolderName + "/" + providerName + "_unsorted.csv"
-        with open(unsortedFileName, "w") as f:
-            # CSV HEADER
-            f.write("Event ID,Event Version,Level,Channel,Task,Opcode,Keyword,Windows,Version,Edition,Date,Build,Event Message,Event Fields\n")
+        unsortedFileName = "ETWProvidersCSVs/"+ csvFolderName + "/" + safe_filename(providerName) + "_unsorted.csv"
+        with open(unsortedFileName, "w", newline="", encoding="utf-8") as f:
+            writer = csv.writer(f, lineterminator="\n")
+            writer.writerow(["Event ID", "Event Version", "Level", "Channel", "Task", "Opcode", "Keyword", "Windows", "Version", "Edition", "Date", "Build", "Event Message", "Event Fields"])
             for provider in providersPaths:
                 parsedProvider = parse_etw_xml(provider)
-                if parsedProvider != "Empty Provider":
+                if parsedProvider != EMPTY_PROVIDER:
                     # We will extract windows infom from the path for the "Internal" providers case
                     if csvFolderName == "Internal":
                         if os.name == 'nt':
@@ -77,7 +80,8 @@ def createProvidersCSV(provider_dict, csvFolderName):
 
 
                     for eventInfo in parsedProvider["events"]:
-                        fixed_message = ""
+                        # Events without data fields have no template and no "%N" arguments
+                        fixed_message = eventInfo['message']
                         if eventInfo['template'] != "":
                             fixed_message = fixMessage(eventInfo['message'], eventInfo['template'])
                         
@@ -89,24 +93,13 @@ def createProvidersCSV(provider_dict, csvFolderName):
                         eventOpcode     = eventInfo["opcode"]
                         eventKeyword    = eventInfo["keyword"]
                         eventMessage    = fixed_message
-                        eventFields     = " | ".join(re.findall("{[a-zA-z0-9]*}",fixed_message))
+                        eventFields     = " | ".join(re.findall(r"\{[A-Za-z0-9_]+\}", fixed_message))
 
-                        f.write(
-                            eventID + "," + 
-                            eventVersion + "," + 
-                            eventLevel + "," + 
-                            eventChannel + "," +
-                            eventTask + "," +  
-                            eventOpcode + "," + 
-                            eventKeyword + "," + 
-                            windowsMajorVersion + "," + 
-                            windowsMinorVersion + "," + 
-                            windowsEdition + "," + 
-                            windowsDate + "," + 
-                            windowsBuild + "," + 
-                            eventMessage + "," + 
-                            eventFields + "\n"
-                        )
+                        writer.writerow([
+                            eventID, eventVersion, eventLevel, eventChannel, eventTask, eventOpcode, eventKeyword,
+                            windowsMajorVersion, windowsMinorVersion, windowsEdition, windowsDate, windowsBuild,
+                            eventMessage, eventFields,
+                        ])
         
         # We then sort the data first by EID and then by Event Version
         # If the folder is Internal we add sorting bu "Build" (Since this information is not yet available for Third party providers)
@@ -178,3 +171,9 @@ if __name__=="__main__":
     # thrid_party_provider_dict => Contains the 3rd party providers
     createProvidersCSV(provider_dict, "Internal")
     createProvidersCSV(thrid_party_provider_dict, "ThirdParty")
+
+    if etwlib.ERRORS:
+        print(f"{len(etwlib.ERRORS)} manifest(s) could not be read:", file=sys.stderr)
+        for error in etwlib.ERRORS:
+            print("  " + error, file=sys.stderr)
+        sys.exit(1)

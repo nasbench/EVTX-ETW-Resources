@@ -1,6 +1,7 @@
 import pytest
 
-from etwlib import fixMessage, parse_etw_xml
+import etwlib
+from etwlib import EMPTY_PROVIDER, fixMessage, one_line, parse_etw_xml, safe_filename
 
 TEMPLATE = (
     '<template xmlns="http://schemas.microsoft.com/win/2004/08/events">'
@@ -46,7 +47,6 @@ def test_fix_message_without_template_is_unchanged():
     assert fixMessage("Process %1 started.", "") == "Process %1 started."
 
 
-@pytest.mark.xfail(strict=True, reason="%1 is replaced inside %10..%19 (fixed in a follow-up)")
 def test_fix_message_two_digit_arguments():
     names = "".join('<data name="F%d"/>' % i for i in range(1, 13))
     template = '<template xmlns="x">%s</template>' % names
@@ -75,4 +75,33 @@ def test_parse_etw_xml_skips_manifest_without_event_metadata(tmp_path):
         "<Providers><Provider><Name>Empty</Name><Metadata/></Provider></Providers>",
         encoding="utf-8",
     )
-    assert parse_etw_xml(str(path)) == "Empty Provider"
+    assert parse_etw_xml(str(path)) == EMPTY_PROVIDER
+
+
+def test_fix_message_leaves_unknown_arguments():
+    assert fixMessage("%1 %5", '<template xmlns="x"><data name="A"/></template>') == "{A} %5"
+
+
+def test_one_line_keeps_sentences_apart():
+    assert one_line("\nThe system time was changed.\n\nSubject:\n\tSecurity ID:\t%1\n") == "The system time was changed. Subject: Security ID:\t%1"
+
+
+def test_safe_filename():
+    assert safe_filename("TCP/IP") == "TCP_IP"
+    assert safe_filename("Microsoft-Windows-Kernel-Process") == "Microsoft-Windows-Kernel-Process"
+
+
+def test_parse_etw_xml_keeps_commas_and_quotes(tmp_path):
+    path = tmp_path / "P.xml"
+    path.write_text(MANIFEST.replace("Process %1 started", 'Process "%1", started'), encoding="utf-8")
+    (event,) = parse_etw_xml(str(path))["events"]
+    assert event["message"].startswith('Process "%1", started')
+
+
+def test_parse_etw_xml_reports_malformed_manifest(tmp_path):
+    path = tmp_path / "Broken.xml"
+    path.write_text("<Providers><Provider>", encoding="utf-8")
+    etwlib.ERRORS.clear()
+    assert parse_etw_xml(str(path)) == EMPTY_PROVIDER
+    assert len(etwlib.ERRORS) == 1
+    etwlib.ERRORS.clear()
