@@ -82,6 +82,11 @@ def test_fix_message_leaves_unknown_arguments():
     assert fixMessage("%1 %5", '<template xmlns="x"><data name="A"/></template>') == "{A} %5"
 
 
+def test_fix_message_keeps_printf_specifiers():
+    template = '<template xmlns="x"><data name="A"/></template>'
+    assert fixMessage("error 0x%1!%08x!", template) == "error 0x{A}!%08x!"
+
+
 def test_one_line_keeps_sentences_apart():
     assert one_line("\nThe system time was changed.\n\nSubject:\n\tSecurity ID:\t%1\n") == "The system time was changed. Subject: Security ID:\t%1"
 
