@@ -85,97 +85,97 @@
                     <Message></Message>
                     <Name>RegPerfOpHiveMountBaseFileMounted</Name>
                     <Value>10</Value>
-                    <Task>0</Task>
+                    <Task>1</Task>
                 </Opcode>
                 <Opcode>
                     <Message></Message>
                     <Name>RegPerfOpHiveFlushBecameActiveFlusher</Name>
                     <Value>10</Value>
-                    <Task>0</Task>
+                    <Task>3</Task>
                 </Opcode>
                 <Opcode>
                     <Message></Message>
                     <Name>RegPerfOpShutdownRundownComplete</Name>
                     <Value>10</Value>
-                    <Task>0</Task>
+                    <Task>4</Task>
                 </Opcode>
                 <Opcode>
                     <Message></Message>
                     <Name>RegPerfOpSaveFileCopied</Name>
                     <Value>10</Value>
-                    <Task>0</Task>
+                    <Task>7</Task>
                 </Opcode>
                 <Opcode>
                     <Message></Message>
                     <Name>RegPerfOpHiveMountLogEntryApplied</Name>
                     <Value>11</Value>
-                    <Task>0</Task>
+                    <Task>1</Task>
                 </Opcode>
                 <Opcode>
                     <Message></Message>
                     <Name>RegPerfOpHiveFlushGatheredLogData</Name>
                     <Value>11</Value>
-                    <Task>0</Task>
+                    <Task>3</Task>
                 </Opcode>
                 <Opcode>
                     <Message></Message>
                     <Name>RegPerfOpShutdownFlushStart</Name>
                     <Value>11</Value>
-                    <Task>0</Task>
+                    <Task>4</Task>
                 </Opcode>
                 <Opcode>
                     <Message></Message>
                     <Name>RegPerfOpSaveTreeCopied</Name>
                     <Value>11</Value>
-                    <Task>0</Task>
+                    <Task>7</Task>
                 </Opcode>
                 <Opcode>
                     <Message></Message>
                     <Name>RegPerfOpHiveFlushGatheredPrimaryData</Name>
                     <Value>12</Value>
-                    <Task>0</Task>
+                    <Task>3</Task>
                 </Opcode>
                 <Opcode>
                     <Message></Message>
                     <Name>RegPerfOpShutdownFlushStop</Name>
                     <Value>12</Value>
-                    <Task>0</Task>
+                    <Task>4</Task>
                 </Opcode>
                 <Opcode>
                     <Message></Message>
                     <Name>RegPerfOpSaveFileWritten</Name>
                     <Value>12</Value>
-                    <Task>0</Task>
+                    <Task>7</Task>
                 </Opcode>
                 <Opcode>
                     <Message></Message>
                     <Name>RegPerfOpHiveFlushWroteLogFile</Name>
                     <Value>13</Value>
-                    <Task>0</Task>
+                    <Task>3</Task>
                 </Opcode>
                 <Opcode>
                     <Message></Message>
                     <Name>RegPerfOpHiveFlushWrotePrimaryFile</Name>
                     <Value>14</Value>
-                    <Task>0</Task>
+                    <Task>3</Task>
                 </Opcode>
                 <Opcode>
                     <Message></Message>
                     <Name>RegPerfOpHiveFlushBoostedActiveFlusher</Name>
                     <Value>15</Value>
-                    <Task>0</Task>
+                    <Task>3</Task>
                 </Opcode>
                 <Opcode>
                     <Message></Message>
                     <Name>RegPerfOpHiveFlushStartWaitForActive</Name>
                     <Value>16</Value>
-                    <Task>0</Task>
+                    <Task>3</Task>
                 </Opcode>
                 <Opcode>
                     <Message></Message>
                     <Name>RegPerfOpHiveFlushFinishWaitForActive</Name>
                     <Value>17</Value>
-                    <Task>0</Task>
+                    <Task>3</Task>
                 </Opcode>
                 <Opcode>
                     <Message></Message>
@@ -712,7 +712,7 @@
                 <Channel>Microsoft-Windows-Kernel-Registry/Performance</Channel>
                 <Level>Information</Level>
                 <Task>This group of events tracks the performance of flushing hives.</Task>
-                <Opcode>RegPerfOpHiveMountBaseFileMounted</Opcode>
+                <Opcode>RegPerfOpHiveFlushBecameActiveFlusher</Opcode>
                 <Template><![CDATA[
 ]]></Template>
             </Event>
@@ -722,7 +722,7 @@
                 <Channel>Microsoft-Windows-Kernel-Registry/Performance</Channel>
                 <Level>Information</Level>
                 <Task>This group of events tracks the performance of flushing hives.</Task>
-                <Opcode>RegPerfOpHiveMountLogEntryApplied</Opcode>
+                <Opcode>RegPerfOpHiveFlushGatheredLogData</Opcode>
                 <Template><![CDATA[
 <template xmlns="http://schemas.microsoft.com/win/2004/08/events">
   <data name="BytesGathered" inType="win:UInt32" outType="xs:unsignedInt"/>
@@ -839,7 +839,7 @@
                 <Channel>Microsoft-Windows-Kernel-Registry/Performance</Channel>
                 <Level>Information</Level>
                 <Task>This group of events tracks the performance of registry shutdown.</Task>
-                <Opcode>RegPerfOpHiveMountLogEntryApplied</Opcode>
+                <Opcode>RegPerfOpShutdownFlushStart</Opcode>
                 <Template><![CDATA[
 ]]></Template>
             </Event>
@@ -849,7 +849,7 @@
                 <Channel>Microsoft-Windows-Kernel-Registry/Performance</Channel>
                 <Level>Information</Level>
                 <Task>This group of events tracks the performance of registry shutdown.</Task>
-                <Opcode>RegPerfOpHiveFlushGatheredPrimaryData</Opcode>
+                <Opcode>RegPerfOpShutdownFlushStop</Opcode>
                 <Template><![CDATA[
 ]]></Template>
             </Event>
@@ -936,7 +936,7 @@
                 <Channel>Microsoft-Windows-Kernel-Registry/Performance</Channel>
                 <Level>Information</Level>
                 <Task>This group of events tracks the performance of exporting hives.</Task>
-                <Opcode>RegPerfOpHiveMountBaseFileMounted</Opcode>
+                <Opcode>RegPerfOpSaveFileCopied</Opcode>
                 <Template><![CDATA[
 ]]></Template>
             </Event>
@@ -946,7 +946,7 @@
                 <Channel>Microsoft-Windows-Kernel-Registry/Performance</Channel>
                 <Level>Information</Level>
                 <Task>This group of events tracks the performance of exporting hives.</Task>
-                <Opcode>RegPerfOpHiveMountLogEntryApplied</Opcode>
+                <Opcode>RegPerfOpSaveTreeCopied</Opcode>
                 <Template><![CDATA[
 ]]></Template>
             </Event>
@@ -956,7 +956,7 @@
                 <Channel>Microsoft-Windows-Kernel-Registry/Performance</Channel>
                 <Level>Information</Level>
                 <Task>This group of events tracks the performance of exporting hives.</Task>
-                <Opcode>RegPerfOpHiveFlushGatheredPrimaryData</Opcode>
+                <Opcode>RegPerfOpSaveFileWritten</Opcode>
                 <Template><![CDATA[
 ]]></Template>
             </Event>
