@@ -9,7 +9,7 @@ EMPTY_PROVIDER = "Empty Provider"
 # Manifests that could not be read. The scripts report them and exit non-zero.
 ERRORS = []
 
-_ARGUMENT = re.compile(r"%(\d+)")
+_ARGUMENT = re.compile(r"%([1-9]\d*)")
 _UNSAFE_FILENAME_CHARS = re.compile(r'[\\/:*?"<>|]')
 _LINE_BREAKS = re.compile(r"\s*\n\s*")
 
