@@ -129,3 +129,23 @@ def test_build_sort_key_compares_numbers():
     assert sorted(builds, key=etwlib.build_sort_key, reverse=True) == ["26100.32230", "26100.1742", "26100.2", "19045"]
     # as floats 26100.2 would sort above 26100.1742
     assert float("26100.2") > float("26100.1742")
+
+
+def test_provider_csv_lists_the_newest_build_first(tmp_path, monkeypatch):
+    import stats
+
+    builds = ["W10_1507_Pro_20150729_10240", "W10_1507_Pro_20150805_10240.1", "W10_1507_Pro_20150901_10240.20", "W10_1507_Pro_20150902_10240.9"]
+    for build in builds:
+        folder = tmp_path / "ETWProvidersManifests" / "Windows10" / "1507" / build / "WEPExplorer"
+        folder.mkdir(parents=True)
+        (folder / "Test-Provider.xml").write_text(MANIFEST, encoding="utf-8")
+    monkeypatch.chdir(tmp_path)
+    providers = stats.getProvidersPaths([str(p.parent) for p in (tmp_path / "ETWProvidersManifests").glob("*/*/*/WEPExplorer/Test-Provider.xml")])
+    stats.createProvidersCSV(providers, "Internal")
+
+    import csv
+
+    with open(tmp_path / "ETWProvidersCSVs" / "Internal" / "Test-Provider.csv", newline="", encoding="utf-8") as f:
+        rows = list(csv.DictReader(f))
+    # "10240" has no update revision: it is the oldest, not the newest
+    assert [row["Build"] for row in rows] == ["10240.20", "10240.9", "10240.1", "10240"]
