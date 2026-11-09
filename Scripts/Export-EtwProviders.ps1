@@ -65,6 +65,8 @@ if ($cv.ProductName -match 'Server\s+(\d{4})') { $os = "WindowsServer$($Matches[
 elseif ([int]$cv.CurrentBuild -ge 22000) { $os = 'W11' }
 else { $os = 'W10' }
 $name = "${os}_${version}_${Edition}_${ReleaseDate}_${build}"
+# .NET file APIs resolve relative paths against the process working directory, which can differ from PowerShell's
+$OutDir = $ExecutionContext.SessionState.Path.GetUnresolvedProviderPathFromPSPath($OutDir)
 $dir = Join-Path $OutDir $name
 $xmlDir = Join-Path $dir 'WEPExplorer'
 if (Test-Path $xmlDir) { throw "$xmlDir already exists" }
@@ -109,6 +111,26 @@ public static class Wep {
     } finally { Marshal.FreeHGlobal(buf); EvtClose(h); }
     return res.ToArray();
   }
+  // Opcodes of a provider as "name<TAB>packed value": the opcode and the task it belongs to share one value
+  public static string[] Opcodes(string prov) {
+    var res = new List<string>();
+    IntPtr h = EvtOpenPublisherMetadata(IntPtr.Zero, prov, null, 0, 0);
+    if (h == IntPtr.Zero) return res.ToArray();
+    IntPtr buf = Marshal.AllocHGlobal(65536); int used;
+    try {
+      if (!EvtGetPublisherMetadataProperty(h, 21, 0, 65536, buf, out used)) return res.ToArray();
+      IntPtr arr = Marshal.ReadIntPtr(buf, 0); int n;
+      if (arr == IntPtr.Zero || !EvtGetObjectArraySize(arr, out n)) return res.ToArray();
+      for (int i = 0; i < n; i++) {
+        string name = ""; uint val = 0; object o;
+        if (EvtGetObjectArrayProperty(arr, 22, i, 0, 65536, buf, out used)) name = (Var(buf) as string) ?? "";
+        if (EvtGetObjectArrayProperty(arr, 23, i, 0, 65536, buf, out used)) { o = Var(buf); if (o is uint) val = (uint)o; }
+        res.Add(name + "\t" + val);
+      }
+      EvtClose(arr);
+    } finally { Marshal.FreeHGlobal(buf); EvtClose(h); }
+    return res.ToArray();
+  }
 }
 '@
 
@@ -146,7 +168,11 @@ function Build([string]$n) {
     [void]$sb.Append("$i12</Levels>$nl$i12<Tasks>$nl")
     try { foreach ($x in $pm.Tasks) { [void]$sb.Append("$i16<Task>$nl$i20<Message>$(X $x.DisplayName)</Message>$nl$i20<Name>$(X $x.Name)</Name>$nl$i20<Value>$($x.Value)</Value>$nl$i16</Task>$nl") } } catch { Log "TASKS $n $($_.Exception.Message)" }
     [void]$sb.Append("$i12</Tasks>$nl$i12<Opcodes>$nl")
-    try { foreach ($x in $pm.Opcodes) { $v = [int]$x.Value; [void]$sb.Append("$i16<Opcode>$nl$i20<Message>$(X $x.DisplayName)</Message>$nl$i20<Name>$(X $x.Name)</Name>$nl$i20<Value>$($v -band 0xFFFF)</Value>$nl$i20<Task>$(($v -shr 16) -band 0xFFFF)</Task>$nl$i16</Opcode>$nl") } } catch { Log "OPCODES $n $($_.Exception.Message)" }
+    # The opcode and the task it belongs to are packed in one value (opcode in the high word, task in the low word)
+    $ops = @(); $opMsg = @{}
+    try { foreach ($x in $pm.Opcodes) { $opMsg[$x.Name] = $x.DisplayName } } catch {}
+    foreach ($row in [Wep]::Opcodes($n)) { $f = $row.Split("`t"); $raw = [uint32]$f[1]; $ops += [pscustomobject]@{ Name = $f[0]; Opcode = [int]($raw -shr 16); Task = [int]($raw -band 0xFFFF) } }
+    foreach ($x in $ops) { [void]$sb.Append("$i16<Opcode>$nl$i20<Message>$(X $opMsg[$x.Name])</Message>$nl$i20<Name>$(X $x.Name)</Name>$nl$i20<Value>$($x.Opcode)</Value>$nl$i20<Task>$($x.Task)</Task>$nl$i16</Opcode>$nl") }
     [void]$sb.Append("$i12</Opcodes>$nl$i12<Keywords>$nl")
     try { foreach ($x in $pm.Keywords) { [void]$sb.Append("$i16<Keyword>$nl$i20<Message>$(X $x.DisplayName)</Message>$nl$i20<Name>$(X $x.Name)</Name>$nl$i20<Value>$(U64 $x.Value)</Value>$nl$i16</Keyword>$nl") } } catch { Log "KEYWORDS $n $($_.Exception.Message)" }
     [void]$sb.Append("$i12</Keywords>$nl$i8</Metadata>$nl$i8<EventMetadata>$nl")
@@ -157,12 +183,19 @@ function Build([string]$n) {
         $kw = ''; try { $kw = (@($e.Keywords | ForEach-Object { Msg $_ }) | Where-Object { $_ }) -join ' ' } catch {}
         $desc = ''; try { $desc = $e.Description } catch {}
         $tpl = ''; try { $tpl = $e.Template } catch {}
-        $opv = 0; try { if ($e.Opcode) { $opv = [int]$e.Opcode.Value -band 0xFFFF } } catch {}
-        $opm = ''; if ($opv -ne 0) { $opm = Msg $e.Opcode }
+        $opv = 0; try { if ($e.Opcode) { $opv = [int]$e.Opcode.Value } } catch {}
+        $tkv = 0; try { $tkv = [int]$e.Task.Value } catch {}
+        $opm = ''
+        if ($opv -ne 0) {
+            # .NET names the opcode by value only; several opcodes share a value and differ by task
+            $hit = $ops | Where-Object { $_.Opcode -eq $opv -and $_.Task -eq $tkv } | Select-Object -First 1
+            if (-not $hit) { $hit = $ops | Where-Object { $_.Opcode -eq $opv -and $_.Task -eq 0 } | Select-Object -First 1 }
+            if ($hit) { if ($opMsg[$hit.Name]) { $opm = [string]$opMsg[$hit.Name] } else { $opm = $hit.Name } } else { $opm = Msg $e.Opcode }
+        }
         $ev = "$i12<Event>$nl$i16<Id>$($e.Id)</Id>$nl$i16<Version>$($e.Version)</Version>$nl"
         if ($ch) { $ev += "$i16<Channel>$(X $ch)</Channel>$nl" }
         $lv = Msg $e.Level; if ($lv) { $ev += "$i16<Level>$(X $lv)</Level>$nl" }
-        $tkv = 0; try { $tkv = [int]$e.Task.Value } catch {}; $tk = ''; if ($tkv -ne 0) { $tk = Msg $e.Task }; if ($tk) { $ev += "$i16<Task>$(X $tk)</Task>$nl" }
+        $tk = ''; if ($tkv -ne 0) { $tk = Msg $e.Task }; if ($tk) { $ev += "$i16<Task>$(X $tk)</Task>$nl" }
         if ($opm) { $ev += "$i16<Opcode>$(X $opm)</Opcode>$nl" }
         if ($kw) { $ev += "$i16<Keyword>$(X $kw)</Keyword>$nl" }
         if ($desc) { $ev += "$i16<Message>$(Cdata $desc)</Message>$nl" }
