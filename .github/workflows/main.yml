@@ -8,7 +8,7 @@ on:
       - "ETWProvidersManifests/**.xml"
       - "Scripts/**"
       - ".github/workflows/main.yml"
-  # Dry run on pull requests: convert everything, never commit
+  # Dry run on pull requests: convert, never commit
   pull_request:
     paths:
       - "ETWProvidersManifests/**.xml"
@@ -21,9 +21,41 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  build:
+  # Pull requests run the scripts of the pull request, so this job gets a
+  # read-only token that is not stored in the checkout.
+  validate:
+    if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
-    # Pull requests from forks get a read-only token regardless of this setting
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout repo content
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: Scripts/requirements.txt
+      - name: Install dependencies
+        run: python -m pip install -r Scripts/requirements.txt -r Scripts/requirements-dev.txt
+      - name: Run the unit tests
+        run: python -m pytest Scripts/tests
+      - name: Delete previous CSV entries
+        run: rm -rf ETWEventsList/
+      - name: Run the etw-to-csv converter
+        run: python Scripts/etw-to-csv.py
+      - name: Delete previous CSV entries for Stats Providers
+        run: find ETWProvidersCSVs -type f -name '*.csv' -exec rm -f {} \;
+      - name: Run the stats generator
+        run: python Scripts/stats.py
+
+  # Pushes and manual runs convert and commit the generated data
+  publish:
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
@@ -48,7 +80,6 @@ jobs:
       - name: Run the stats generator
         run: python Scripts/stats.py
       - name: Commit generated data
-        if: github.event_name != 'pull_request'
         run: |
           git config user.name 'Github Actions'
           git config user.email 'robot@noreply.github.com'
