@@ -74,7 +74,7 @@
                     <Message></Message>
                     <Name>Supported</Name>
                     <Value>11</Value>
-                    <Task>0</Task>
+                    <Task>4</Task>
                 </Opcode>
                 <Opcode>
                     <Message></Message>
@@ -86,7 +86,7 @@
                     <Message></Message>
                     <Name>Initialized</Name>
                     <Value>12</Value>
-                    <Task>0</Task>
+                    <Task>4</Task>
                 </Opcode>
                 <Opcode>
                     <Message></Message>
@@ -98,13 +98,13 @@
                     <Message></Message>
                     <Name>PrepareFailure</Name>
                     <Value>13</Value>
-                    <Task>0</Task>
+                    <Task>4</Task>
                 </Opcode>
                 <Opcode>
                     <Message></Message>
                     <Name>InitializationFailure</Name>
                     <Value>14</Value>
-                    <Task>0</Task>
+                    <Task>4</Task>
                 </Opcode>
             </Opcodes>
             <Keywords>
@@ -181,7 +181,7 @@ Create dump file]]></Message>
                 <Channel>Microsoft-Windows-Crashdump/Operational</Channel>
                 <Level>Warning</Level>
                 <Task>Early Crash Dump</Task>
-                <Opcode>OpCodeCreateDumpFile</Opcode>
+                <Opcode>PrepareFailure</Opcode>
                 <Keyword>EarlyCrashDump</Keyword>
                 <Message><![CDATA[
 Soft restart prepare for early crash dump failed with status %1, failure point %2]]></Message>
@@ -214,7 +214,7 @@ Early crash dump support failed to initialize with status %1]]></Message>
                 <Channel>Microsoft-Windows-Crashdump/Analytic</Channel>
                 <Level>Information</Level>
                 <Task>Early Crash Dump</Task>
-                <Opcode>OpCodeTransferSizes</Opcode>
+                <Opcode>Initialized</Opcode>
                 <Keyword>EarlyCrashDump</Keyword>
                 <Message><![CDATA[
 Early crash dump support succesfully initialized]]></Message>
@@ -227,7 +227,7 @@ Early crash dump support succesfully initialized]]></Message>
                 <Channel>Microsoft-Windows-Crashdump/Analytic</Channel>
                 <Level>Information</Level>
                 <Task>Early Crash Dump</Task>
-                <Opcode>OpCodeResumeCapable</Opcode>
+                <Opcode>Supported</Opcode>
                 <Keyword>EarlyCrashDump</Keyword>
                 <Message><![CDATA[
 Early crash dump is supported by the operating system]]></Message>

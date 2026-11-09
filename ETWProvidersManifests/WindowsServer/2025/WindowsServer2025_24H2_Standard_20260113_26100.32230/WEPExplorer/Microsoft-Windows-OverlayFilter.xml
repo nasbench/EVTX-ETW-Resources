@@ -51,103 +51,103 @@
                     <Message></Message>
                     <Name>IntegrityFileOpen</Name>
                     <Value>100</Value>
-                    <Task>0</Task>
+                    <Task>1</Task>
                 </Opcode>
                 <Opcode>
                     <Message></Message>
                     <Name>EnumVolume</Name>
                     <Value>100</Value>
-                    <Task>0</Task>
+                    <Task>2</Task>
                 </Opcode>
                 <Opcode>
                     <Message></Message>
                     <Name>IntegrityBlockVerificationFailure</Name>
                     <Value>101</Value>
-                    <Task>0</Task>
+                    <Task>1</Task>
                 </Opcode>
                 <Opcode>
                     <Message></Message>
                     <Name>ReportHashGenerationToBitlockerError</Name>
                     <Value>101</Value>
-                    <Task>0</Task>
+                    <Task>2</Task>
                 </Opcode>
                 <Opcode>
                     <Message></Message>
                     <Name>IntegrityInvalidBlock</Name>
                     <Value>102</Value>
-                    <Task>0</Task>
+                    <Task>1</Task>
                 </Opcode>
                 <Opcode>
                     <Message></Message>
                     <Name>CreateHashFile</Name>
                     <Value>102</Value>
-                    <Task>0</Task>
+                    <Task>2</Task>
                 </Opcode>
                 <Opcode>
                     <Message></Message>
                     <Name>CompleteHashFile</Name>
                     <Value>103</Value>
-                    <Task>0</Task>
+                    <Task>2</Task>
                 </Opcode>
                 <Opcode>
                     <Message></Message>
                     <Name>DeleteHashFile</Name>
                     <Value>104</Value>
-                    <Task>0</Task>
+                    <Task>2</Task>
                 </Opcode>
                 <Opcode>
                     <Message></Message>
                     <Name>ResumeHashFile</Name>
                     <Value>105</Value>
-                    <Task>0</Task>
+                    <Task>2</Task>
                 </Opcode>
                 <Opcode>
                     <Message></Message>
                     <Name>PauseHashFile</Name>
                     <Value>106</Value>
-                    <Task>0</Task>
+                    <Task>2</Task>
                 </Opcode>
                 <Opcode>
                     <Message></Message>
                     <Name>GenerateHashFileError</Name>
                     <Value>107</Value>
-                    <Task>0</Task>
+                    <Task>2</Task>
                 </Opcode>
                 <Opcode>
                     <Message></Message>
                     <Name>DeleteHashFileError</Name>
                     <Value>108</Value>
-                    <Task>0</Task>
+                    <Task>2</Task>
                 </Opcode>
                 <Opcode>
                     <Message></Message>
                     <Name>FileReadError</Name>
                     <Value>109</Value>
-                    <Task>0</Task>
+                    <Task>2</Task>
                 </Opcode>
                 <Opcode>
                     <Message></Message>
                     <Name>FileWriteError</Name>
                     <Value>110</Value>
-                    <Task>0</Task>
+                    <Task>2</Task>
                 </Opcode>
                 <Opcode>
                     <Message></Message>
                     <Name>ActionError</Name>
                     <Value>111</Value>
-                    <Task>0</Task>
+                    <Task>2</Task>
                 </Opcode>
                 <Opcode>
                     <Message></Message>
                     <Name>ActionGenerateHashes</Name>
                     <Value>112</Value>
-                    <Task>0</Task>
+                    <Task>2</Task>
                 </Opcode>
                 <Opcode>
                     <Message></Message>
                     <Name>ActionDeleteHashes</Name>
                     <Value>113</Value>
-                    <Task>0</Task>
+                    <Task>2</Task>
                 </Opcode>
             </Opcodes>
             <Keywords>
@@ -214,7 +214,7 @@ The filter failed to validate a read from %2 at file offset %3 of length %4.]]><
                 <Channel>System</Channel>
                 <Level>Information</Level>
                 <Task>The Windows Overlay Task</Task>
-                <Opcode>IntegrityFileOpen</Opcode>
+                <Opcode>EnumVolume</Opcode>
                 <Message><![CDATA[
 The task is enumerating Volume %1]]></Message>
                 <Template><![CDATA[
@@ -229,7 +229,7 @@ The task is enumerating Volume %1]]></Message>
                 <Channel>System</Channel>
                 <Level>Error</Level>
                 <Task>The Windows Overlay Task</Task>
-                <Opcode>IntegrityBlockVerificationFailure</Opcode>
+                <Opcode>ReportHashGenerationToBitlockerError</Opcode>
                 <Message><![CDATA[
 The task has failed to report integrity file generation completion to BitLocker. HRESULT = %1]]></Message>
                 <Template><![CDATA[
@@ -244,7 +244,7 @@ The task has failed to report integrity file generation completion to BitLocker.
                 <Channel>System</Channel>
                 <Level>Information</Level>
                 <Task>The Windows Overlay Task</Task>
-                <Opcode>IntegrityInvalidBlock</Opcode>
+                <Opcode>CreateHashFile</Opcode>
                 <Message><![CDATA[
 The task has created integrity file %1 for file %2]]></Message>
                 <Template><![CDATA[
