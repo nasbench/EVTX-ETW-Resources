@@ -158,3 +158,23 @@ def test_changed_build_dirs_and_providers(tmp_path, monkeypatch):
     monkeypatch.chdir(tmp_path)
     assert etwlib.changed_build_dirs("HEAD~1") == {build}
     assert etwlib.changed_provider_names("HEAD~1") == {"New"}
+
+
+def test_provider_csv_lists_the_newest_build_first(tmp_path, monkeypatch):
+    import stats
+
+    builds = ["W10_1507_Pro_20150729_10240", "W10_1507_Pro_20150805_10240.1", "W10_1507_Pro_20150901_10240.20", "W10_1507_Pro_20150902_10240.9"]
+    for build in builds:
+        folder = tmp_path / "ETWProvidersManifests" / "Windows10" / "1507" / build / "WEPExplorer"
+        folder.mkdir(parents=True)
+        (folder / "Test-Provider.xml").write_text(MANIFEST, encoding="utf-8")
+    monkeypatch.chdir(tmp_path)
+    providers = stats.getProvidersPaths([str(p.parent) for p in (tmp_path / "ETWProvidersManifests").glob("*/*/*/WEPExplorer/Test-Provider.xml")])
+    stats.createProvidersCSV(providers, "Internal")
+
+    import csv
+
+    with open(tmp_path / "ETWProvidersCSVs" / "Internal" / "Test-Provider.csv", newline="", encoding="utf-8") as f:
+        rows = list(csv.DictReader(f))
+    # "10240" has no update revision: it is the oldest, not the newest
+    assert [row["Build"] for row in rows] == ["10240.20", "10240.9", "10240.1", "10240"]

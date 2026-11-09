@@ -61,13 +61,10 @@ def createProvidersCSV(provider_dict, csvFolderName):
 
         # Sort by event ID, then event version, then (internal providers only) newest build first.
         # Builds are compared as numbers: as text or as a float "26100.2" would sort above "26100.1742".
-        def sortKey(row):
-            key = (_number(row[0]), _number(row[1]))
-            if csvFolderName == "Internal":
-                key += (tuple(-part for part in build_sort_key(row[11])),)
-            return key
-
-        rows.sort(key=sortKey)
+        # The sorts are stable, so sorting by build first keeps the builds ordered within an event.
+        if csvFolderName == "Internal":
+            rows.sort(key=lambda row: build_sort_key(row[11]), reverse=True)
+        rows.sort(key=lambda row: (_number(row[0]), _number(row[1])))
         with open("ETWProvidersCSVs/" + csvFolderName + "/" + safe_filename(providerName) + ".csv", "w", newline="", encoding="utf-8") as f:
             writer = csv.writer(f, lineterminator="\n")
             writer.writerow(CSV_HEADER)
