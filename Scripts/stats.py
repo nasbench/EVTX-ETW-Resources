@@ -1,257 +1,121 @@
-import os
-import xml.etree.ElementTree as ET
+import argparse
 import csv
+import os
 import re
-import pandas as pd
+import sys
+from collections import defaultdict
 
-# This function replaces the variables inside the data with their corresponding values in the templates. For example:
-# If we look at an ETW manifest the message section of an event looks like this : "Process %1 started at time %2 by parent %3 running in session %4 with name %5"
-# This function replaces the "%" with their corresponding values
-def fixMessage(message, template):
+import etwlib
+from etwlib import EMPTY_PROVIDER, build_sort_key, fixMessage, parse_build_folder, parse_etw_xml, safe_filename
+
+CSV_HEADER = ["Event ID", "Event Version", "Level", "Channel", "Task", "Opcode", "Keyword", "Windows", "Version", "Edition", "Date", "Build", "Event Message", "Event Fields"]
+FIELD = re.compile(r"\{[A-Za-z0-9_]+\}")
+
+
+def getProvidersPaths(etwdir_list):
+    # {"Provider-Name": ["Path1", "Path2", "Path3".......]}
+    # This is used to determine when an event was added or modified
+    providers = defaultdict(list)
+    for dirName in sorted(etwdir_list):
+        for entry in sorted(os.listdir(dirName)):
+            name, extension = os.path.splitext(entry)
+            if entry != "All.xml" and extension == ".xml":
+                providers[name].append(os.path.join(dirName, entry))
+    return providers
+
+
+def _number(text):
     try:
-        parsedTemplate = ET.fromstring(template)
-    except:
-        parsedTemplate = []
-    listOfTemplateAttributes = [""]
-    for e in parsedTemplate:
-        listOfTemplateAttributes.append(e.attrib['name'])
-    
-    for i in range(len(listOfTemplateAttributes)-1):
-        message = message.replace("%"+str(i+1), "{" + listOfTemplateAttributes[i+1] + "}")
-    
-    return message
+        return int(text)
+    except ValueError:
+        return 0
 
-def parse_etw_xml(file_path):
-    
-    # This is used to skip "empty" ETW manifest
-    skip = False
-    root = ET.parse(file_path).getroot()
-    try:
-        if root[0][0].tag == "Name":
-            provider_name = root[0][0].text
-        else:
-            provider_name = ""
-    except IndexError:
-        print(f"Name - IndexError while reading the file : {file_path}")
-
-    try:
-        if root[0][2].tag == "EventMetadata":
-            eventMetaData = root[0][2]
-        else:
-            eventMetaData = ""
-    except IndexError:
-            print(f"EventMetaData - IndexError while reading the file : {file_path}")
-            skip = True
-
-    if not skip:
-        events_list = []
-        for event in eventMetaData:
-            event_dict = {}
-            event_dict['eid'] = event[0].text
-            event_dict['channel'] = ""
-            event_dict['message'] = ""
-            event_dict['version'] = ""
-            event_dict['level'] = ""
-            event_dict['task'] = ""
-            event_dict['opcode'] = ""
-            event_dict['keyword'] = ""
-            
-            for data in event:
-                if data.tag == "Channel":
-                    event_dict['channel'] = data.text
-                elif data.tag == "Message":
-                    #Replacing the "," with ";" and removing double quotes just so the CSV behave nicely
-                    event_dict['message'] = data.text.replace("\n","").replace(",", ";") .replace("\"", "'")
-                elif data.tag == "Template":
-                    event_dict['template'] = data.text.replace("\n", "").replace(",", ";")
-                elif data.tag == "Version":
-                    event_dict['version'] = data.text.replace("\n", "").replace(",", ";")
-                elif data.tag == "Level":
-                    event_dict['level'] = data.text.replace("\n", "").replace(",", ";")
-                elif data.tag == "Task":
-                    event_dict['task'] = data.text.replace("\n", "").replace(",", ";")
-                elif data.tag == "Opcode":
-                    event_dict['opcode'] = data.text.replace("\n", "").replace(",", ";")
-                elif data.tag == "Keyword":
-                    event_dict['keyword'] = data.text.replace("\n", "").replace(",", ";")
-
-
-            events_list.append(event_dict)
-
-        return events_list
-    else:
-        return "Empty Provider"
-
-def getAllProvidersNameAvailable(etwdir_list):
-    # We loop through each folder and collect the name and append it to the list
-    allFiles = []
-    for dirName in etwdir_list:
-        listOfFile = os.listdir(dirName)
-        for entry in listOfFile:
-            if entry != "All.xml":
-                if os.path.splitext(entry)[1] == ".xml":                    
-                    allFiles.append(entry)
-    # We use the "set" function to remove any duplicates
-    return list(set(allFiles))
-
-def searchProviderName(providerName, etwdir_list_fullpath):
-    fullPathList = []
-    for entry in etwdir_list_fullpath:
-        if os.name == "nt":
-            fileName = entry.split("\\")[-1]
-        else:
-            fileName = entry.split("/")[-1]
-        if fileName != "All.xml":
-            if os.path.splitext(fileName)[1] == ".xml":
-                if fileName == providerName:
-                    fullPathList.append(entry)
-    return fullPathList
 
 def createProvidersCSV(provider_dict, csvFolderName):
-    for providerName, providersPaths in provider_dict.items():
+    os.makedirs("ETWProvidersCSVs/" + csvFolderName, exist_ok=True)
+    for providerName, providersPaths in sorted(provider_dict.items()):
         print("Creating file for provider: " + str(providerName))
-        unsortedFileName = "ETWProvidersCSVs/"+ csvFolderName + "/" + providerName + "_unsorted.csv"
-        with open(unsortedFileName, "w") as f:
-            # CSV HEADER
-            f.write("Event ID,Event Version,Level,Channel,Task,Opcode,Keyword,Windows,Version,Edition,Date,Build,Event Message,Event Fields\n")
-            for provider in providersPaths:
-                parsedProvider = parse_etw_xml(provider)
-                if parsedProvider != "Empty Provider":
-                    # We will extract windows infom from the path for the "Internal" providers case
-                    if csvFolderName == "Internal":
-                        if os.name == 'nt':
-                            # We are splitting the provider name to get rid of the ".xml"
-                            # Example => ETWProvidersManifests\\Windows10\\1507\\W10_1507_Pro_20150729_10240\\WEPExplorer\\Microsoft-Windows-Kernel-Process.xml
-                            # We then split and extract the folder name
-                            # Example would be: "W10_1507_Pro_20150729_10240"
-                            folderName = os.path.splitext(provider)[0].split("\\")[:-2][-1].split("_")
-                        else:
-                            folderName = os.path.splitext(provider)[0].split("/")[:-2][-1].split("_")
-                        # Example: Windows 10
-                        if "WindowsServer" in folderName[0]:
-                            windowsMajorVersion = "Windows Server " + folderName[0].split("WindowsServer")[1]
-                        else:
-                            windowsMajorVersion = "Windows " + folderName[0].split("W")[1]
+        rows = []
+        for provider in providersPaths:
+            parsedProvider = parse_etw_xml(provider)
+            if parsedProvider == EMPTY_PROVIDER:
+                continue
+            if csvFolderName == "Internal":
+                # We extract the Windows information from the build folder name
+                # Example: ETWProvidersManifests/Windows10/1507/W10_1507_Pro_20150729_10240/WEPExplorer/Microsoft-Windows-Kernel-Process.xml
+                info = parse_build_folder(os.path.basename(os.path.dirname(os.path.dirname(provider))))
+            else:
+                info = {"windows": "N/A", "version": "N/A", "edition": "N/A", "date": "N/A", "build": "N/A"}
 
-                        # Example: 1903
-                        windowsMinorVersion = folderName[1]
+            for eventInfo in parsedProvider["events"]:
+                # Events without data fields have no template and no "%N" arguments
+                fixed_message = eventInfo["message"]
+                if eventInfo["template"] != "":
+                    fixed_message = fixMessage(eventInfo["message"], eventInfo["template"])
+                rows.append([
+                    eventInfo["eid"], eventInfo["version"], eventInfo["level"], eventInfo["channel"],
+                    eventInfo["task"], eventInfo["opcode"], eventInfo["keyword"],
+                    info["windows"], info["version"], info["edition"], info["date"], info["build"],
+                    fixed_message, " | ".join(FIELD.findall(fixed_message)),
+                ])
 
-                        # Example: Pro/Entreprise
-                        windowsEdition = folderName[2]
-
-                        # Example: 205/07/29
-                        windowsDate = folderName[3][0:4] + "/" + folderName[3][4:6] + "/" + folderName[3][6:8]
-
-                        # Example: 10240
-                        windowsBuild = folderName[4]
-
-                    elif csvFolderName == "ThirdParty":
-                        windowsMajorVersion = "N/A"
-                        windowsMinorVersion = "N/A"
-                        windowsEdition = "N/A"
-                        windowsDate = "N/A"
-                        windowsBuild = "N/A"
-
-
-                    for eventInfo in parsedProvider:
-                        fixed_message = ""
-                        if eventInfo['template'] != "":
-                            fixed_message = fixMessage(eventInfo['message'], eventInfo['template'])
-                        
-                        eventLevel      = eventInfo["level"]
-                        eventID         = eventInfo["eid"]
-                        eventVersion    = eventInfo["version"]
-                        eventChannel    = eventInfo["channel"]
-                        eventTask       = eventInfo["task"]
-                        eventOpcode     = eventInfo["opcode"]
-                        eventKeyword    = eventInfo["keyword"]
-                        eventMessage    = fixed_message
-                        eventFields     = " | ".join(re.findall("{[a-zA-z0-9]*}",fixed_message))
-
-                        f.write(
-                            eventID + "," + 
-                            eventVersion + "," + 
-                            eventLevel + "," + 
-                            eventChannel + "," +
-                            eventTask + "," +  
-                            eventOpcode + "," + 
-                            eventKeyword + "," + 
-                            windowsMajorVersion + "," + 
-                            windowsMinorVersion + "," + 
-                            windowsEdition + "," + 
-                            windowsDate + "," + 
-                            windowsBuild + "," + 
-                            eventMessage + "," + 
-                            eventFields + "\n"
-                        )
-        
-        # We then sort the data first by EID and then by Event Version
-        # If the folder is Internal we add sorting bu "Build" (Since this information is not yet available for Third party providers)
-        # We write everythin to a new file called ("sorted") 
-        csvdata = pd.read_csv(unsortedFileName)
+        # Sort by event ID, then event version, then (internal providers only) newest build first.
+        # Builds are compared as numbers: as text or as a float "26100.2" would sort above "26100.1742".
+        # The sorts are stable, so sorting by build first keeps the builds ordered within an event.
         if csvFolderName == "Internal":
-            csvdata.sort_values(["Event ID", "Event Version", "Build"], axis=0, ascending=[True, True, False], inplace=True)
-        elif csvFolderName == "ThirdParty":
-            csvdata.sort_values(["Event ID", "Event Version"], axis=0, ascending=[True, True], inplace=True)
-        csvdata.to_csv(unsortedFileName.replace("_unsorted.csv", ".csv"), encoding='utf-8', index=False)
-        os.remove(unsortedFileName)
+            rows.sort(key=lambda row: build_sort_key(row[11]), reverse=True)
+        rows.sort(key=lambda row: (_number(row[0]), _number(row[1])))
+        with open("ETWProvidersCSVs/" + csvFolderName + "/" + safe_filename(providerName) + ".csv", "w", newline="", encoding="utf-8") as f:
+            writer = csv.writer(f, lineterminator="\n")
+            writer.writerow(CSV_HEADER)
+            writer.writerows(rows)
 
-if __name__=="__main__":
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Generate the CSV of every ETW provider, over all Windows builds.")
+    parser.add_argument(
+        "--changed-since", metavar="REV",
+        help="only generate the CSVs of the providers whose manifests changed between the git revision REV "
+             "and HEAD (without it, every provider is generated)",
+    )
+    args = parser.parse_args()
+
     manifestsDir = "ETWProvidersManifests"
-    etwdir, etwdir_fullPaths, thirdParty_etwdir, thirdParty_etwdir_fullPaths = [], [], [], []
+    etwdir, thirdParty_etwdir = [], []
 
     # This is used to extract the name of the folders containing the XML manifests
     for subdir, dirs, files in os.walk(manifestsDir):
         if "WEPExplorer" in str(subdir):
             etwdir.append(subdir)
-            for singleFile in files:
-                if os.name == 'nt':
-                    etwdir_fullPaths.append(subdir + "\\" + singleFile)
-                else:
-                    etwdir_fullPaths.append(subdir + "/" + singleFile)
         elif "ThirdParty" in str(subdir):
             thirdParty_etwdir.append(subdir)
-            for singleFile in files:
-                if os.name == 'nt':
-                    thirdParty_etwdir_fullPaths.append(subdir + "\\" + singleFile)
-                else:
-                    thirdParty_etwdir_fullPaths.append(subdir + "/" + singleFile)
 
-    # We call "getAllProvidersNameAvailable" to collect all the available provider names for both Windows providers and thrid party ones
-    all_providers_names = getAllProvidersNameAvailable(etwdir)
-    thrid_party_providers_names = getAllProvidersNameAvailable(thirdParty_etwdir)
-
-    # We now loop on every name and search every XML folder and create a dict similar to the following structure
-    # {"ProvideName": ["Path1", "Path2", "Path3".......]}
-    # This will be used to determine when an event was added or modified
-
-    # We do this for internal providers
-    provider_dict = {}
-    for i in all_providers_names:
-        provider_dict[os.path.splitext(i)[0]] = searchProviderName(i, etwdir_fullPaths)
+    # Collect the available providers (Windows ones and third party ones) and every XML they have
+    provider_dict = getProvidersPaths(etwdir)
     print("Internal Providers Dict READY")
-
-    # We do the same for third party providers
-    thrid_party_provider_dict = {}
-    for i in thrid_party_providers_names:
-        thrid_party_provider_dict[os.path.splitext(i)[0]] = searchProviderName(i, thirdParty_etwdir_fullPaths)
+    thrid_party_provider_dict = getProvidersPaths(thirdParty_etwdir)
     print("Third Party Providers Dict READY")
+    if args.changed_since:
+        # A provider CSV covers every build, so a changed manifest means that provider is generated again
+        changed = etwlib.changed_provider_names(args.changed_since)
+        provider_dict = {name: paths for name, paths in provider_dict.items() if name in changed}
+        thrid_party_provider_dict = {name: paths for name, paths in thrid_party_provider_dict.items() if name in changed}
+        print(f"{len(provider_dict) + len(thrid_party_provider_dict)} provider(s) changed since {args.changed_since}")
 
-    # Now let's make a CSV like this
+    # Now let's make a CSV per provider like this
     #---> Provider
-    #Event ID | Version | Windows | Version | Build | Available | Updated | Original Message     | Added Fields
-    #1        | 0       | W10     | 1709    | XXXX  | Yes       | No      | Process Created...   | N/A
-    #1        | 1       | W10     | 1803    | XXXX  | Yes       | No      | N/A                  | New Field
+    #Event ID | Version | Windows | Version | Build | Event Message        | Event Fields
+    #1        | 0       | W10     | 1709    | XXXX  | Process Created...   | {ProcessID}
     #........
-
-    # 1- We can get Windows information form the folder name
-    # 2- We will create a CSV file with the name of the key. So for example => "Microsoft-Windows-Kernel-Process.csv"
-    # 3- We will parse every XML for every version and extract the necessary information and add it to the CSV
-    # 4- Order the CSV by "EVENT ID + EVENT VERSION"
-
-    # We create the CSVs by calling the "createProvidersCSV" function for both default providers and 3rd party ones
-    # Header: createProvidersCSV(provider_dict, foldername):
-    # provider_dict => Contains the default windows provider
-    # thrid_party_provider_dict => Contains the 3rd party providers
+    # 1- We get the Windows information from the folder name
+    # 2- We create a CSV file with the name of the provider, e.g. "Microsoft-Windows-Kernel-Process.csv"
+    # 3- We parse the XML of every Windows version and add the events to the CSV
+    # 4- We order the CSV by "Event ID + Event Version"
     createProvidersCSV(provider_dict, "Internal")
     createProvidersCSV(thrid_party_provider_dict, "ThirdParty")
+
+    if etwlib.ERRORS:
+        print(f"{len(etwlib.ERRORS)} manifest(s) could not be read:", file=sys.stderr)
+        for error in etwlib.ERRORS:
+            print("  " + error, file=sys.stderr)
+        sys.exit(1)

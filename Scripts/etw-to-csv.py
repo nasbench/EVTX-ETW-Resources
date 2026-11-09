@@ -1,110 +1,23 @@
-import xml.etree.ElementTree as ET
-from collections import Counter
-import os
-import csvtomd
+import argparse
 import csv
-import pandas as pd
+import os
+import shutil
+import sys
+from collections import Counter
 
-# This is a special version related to generating STATS
-def convertCsvToMDStats(folderName, windowsName, version, edition, date, build):
-    csvReadme = folderName + "/README.csv"
-    with open(csvReadme, "r") as f:
-        table = csvtomd.csv_to_table(f, ",")
-    
-    if table:
-        with open(folderName + "/README.md", "w") as f:
-            f.write("# " + windowsName + " " + edition + " " + version  + " (Date: " + date + " - " + "Build: " + build + ") - ETW Providers\n\n")
-            f.write(csvtomd.md_table(table, padding=2))
-        os.remove(csvReadme)
-    else:
-        print("Cannot Convert to Markdown")
+import etwlib
+from etwlib import EMPTY_PROVIDER, fixMessage, md_table, parse_build_folder, parse_etw_xml, safe_filename
 
-# This function replaces the variables inside the data with their corresponding values in the templates. For example:
-# If we look at an ETW manifest the message section of an event looks like this : "Process %1 started at time %2 by parent %3 running in session %4 with name %5"
-# This function replaces the "%" with their corresponding values
-def fixMessage(message, template):
-    try:
-        parsedTemplate = ET.fromstring(template)
-    except:
-        parsedTemplate = []
-    listOfTemplateAttributes = [""]
-    for e in parsedTemplate:
-        listOfTemplateAttributes.append(e.attrib['name'])
-    
-    for i in range(len(listOfTemplateAttributes)-1):
-        message = message.replace("%"+str(i+1), "{" + listOfTemplateAttributes[i+1] + "}")
-    
-    return message
+HEADER = ["Provider", "Level", "Event ID", "Version", "Channel", "Task", "Opcode", "Keyword", "Message"]
+STATS_HEADER = ["Windows", "Edition/SP", "Version", "Date", "Build", "Num Providers", "Num Providers With Events", "Num Events"]
+CSV_DIR = "ETWEventsList/CSV/"
+STATS_CSV = "ETWEventsList/etw-global-stats.csv"
 
-def parse_etw_xml(file_path):
-    
-    # This is used to skip "empty" ETW manifest
-    skip = False
-    root = ET.parse(file_path).getroot()
-    try:
-        if root[0][0].tag == "Name":
-            provider_name = root[0][0].text
-        else:
-            provider_name = ""
-    except IndexError:
-        print(f"Name - IndexError while reading the file : {file_path}")
-
-    try:
-        if root[0][2].tag == "EventMetadata":
-            eventMetaData = root[0][2]
-        else:
-            eventMetaData = ""
-    except IndexError:
-            print(f"EventMetaData - IndexError while reading the file : {file_path}")
-            skip = True
-
-    if not skip:
-        events_list = []
-        for event in eventMetaData:
-            event_dict = {}
-            event_dict['eid'] = event[0].text
-            event_dict['channel'] = ""
-            event_dict['message'] = ""
-            event_dict['version'] = ""
-            event_dict['level'] = ""
-            event_dict['task'] = ""
-            event_dict['opcode'] = ""
-            event_dict['keyword'] = ""
-            
-            for data in event:
-                if data.tag == "Channel":
-                    event_dict['channel'] = data.text
-                elif data.tag == "Message":
-                    #Replacing the "," with ";" and removing double quotes just so the CSV behave nicely
-                    event_dict['message'] = data.text.replace("\n","").replace(",", ";") .replace("\"", "'")
-                elif data.tag == "Template":
-                    event_dict['template'] = data.text.replace("\n", "").replace(",", ";")
-                elif data.tag == "Version":
-                    event_dict['version'] = data.text.replace("\n", "").replace(",", ";")
-                elif data.tag == "Level":
-                    event_dict['level'] = data.text.replace("\n", "").replace(",", ";")
-                elif data.tag == "Task":
-                    event_dict['task'] = data.text.replace("\n", "").replace(",", ";")
-                elif data.tag == "Opcode":
-                    event_dict['opcode'] = data.text.replace("\n", "").replace(",", ";")
-                elif data.tag == "Keyword":
-                    event_dict['keyword'] = data.text.replace("\n", "").replace(",", ";")
-
-
-            events_list.append(event_dict)
-        
-        etw_provider_dict = {}
-        etw_provider_dict["provider_name"] = provider_name
-        etw_provider_dict["events"] = events_list
-
-        return etw_provider_dict
-    else:
-        return "Empty Provider"
 
 def getListOfFiles(dirName):
-    # create a list of file and sub directories 
-    # names in the given directory 
-    listOfFile = os.listdir(dirName)
+    # create a list of file and sub directories
+    # names in the given directory
+    listOfFile = sorted(os.listdir(dirName))
     allFiles = list()
     # Iterate over all the entries
     for entry in listOfFile:
@@ -112,135 +25,147 @@ def getListOfFiles(dirName):
             if os.path.splitext(entry)[1] == ".xml":
                 # Create full path
                 fullPath = os.path.join(dirName, entry)
-                # If entry is a directory then get the list of files in this directory 
+                # If entry is a directory then get the list of files in this directory
                 if os.path.isdir(fullPath):
                     allFiles = allFiles + getListOfFiles(fullPath)
                 else:
                     allFiles.append(fullPath)
-                
+
     return allFiles
 
+
 def merge_csv(folderToCreate, csvDir):
-    header = "Provider,Level,Event ID,Version,Channel,Task,Opcode,Keyword,Message"
     path_to_csv_folder = csvDir + folderToCreate + "Providers"
-    listOfFile = os.listdir(path_to_csv_folder)
-    listOfCsvs = list()
-    for entry in listOfFile:
-        # Create full path
-        fullPath = os.path.join(path_to_csv_folder, entry)
-        # If entry is a directory then get the list of files in this directory 
-        if os.path.isdir(fullPath):
-            listOfCsvs = listOfCsvs + getListOfFiles(fullPath)
-        else:
-            listOfCsvs.append(fullPath) 
-    
+    listOfCsvs = [os.path.join(path_to_csv_folder, entry) for entry in sorted(os.listdir(path_to_csv_folder))]
+
     folderName = folderToCreate[:-1]
     folderName = folderName[folderName.rfind("/"):].replace("/", "")
-    with open(csvDir + folderToCreate + "!All_" + folderName + "_ETW_Events.csv", "w+") as mergeall:
-        mergeall.write(header)
-        mergeall.write("\n")
-        for csv in listOfCsvs:
-            with open(csv, "r") as f:
-                f.readline()
-                all_lines = f.readlines()
-                for i in all_lines:
-                    mergeall.write(i)
+    mergedCsv = csvDir + folderToCreate + "!All_" + folderName + "_ETW_Events.csv"
+    with open(mergedCsv, "w", newline="", encoding="utf-8") as mergeall:
+        writer = csv.writer(mergeall, lineterminator="\n")
+        writer.writerow(HEADER)
+        for providerCsv in listOfCsvs:
+            with open(providerCsv, "r", newline="", encoding="utf-8") as f:
+                reader = csv.reader(f)
+                next(reader, None)
+                writer.writerows(reader)
+    return mergedCsv
 
-def getNumberOfEventsPerVersion(listOfAllFiles):
-    final_restls = []
-    for i in listOfAllFiles:
 
-        fullName = os.path.basename(i).replace("!All_", "").replace("_ETW_Events.csv", "").split("_")
-        if "WindowsServer" in fullName[0]:
-            windowsName = "Windows Server " + fullName[0].split("WindowsServer")[1]
-        else:
-            windowsName = "Windows " + fullName[0].split("W")[1]
-        version = fullName[1]
-        edition = fullName[2]
-        try:
-            date = fullName[3][0:4] + "/" + fullName[3][4:6] + "/" + fullName[3][6:8]
-        except:
-            date = ""
-        try:
-            build = fullName[4]
-        except:
-            build = ""
+def build_stats(allEventsCsv):
+    """Write the README.md of a build folder and return its row of the global stats."""
+    folder = os.path.dirname(allEventsCsv)
+    info = parse_build_folder(os.path.basename(allEventsCsv).replace("!All_", "").replace("_ETW_Events.csv", ""))
 
-        numOfProviders = 0
-        with open(i, "r") as f:
-            f.readline()
-            allevents = f.readlines()
-            numOfEvents = len(allevents)
-            folderName = os.path.dirname(i)            
-                
-            with open(folderName + "/README.csv", "w") as ff:
-                ff.write("ETW Provider,Number Of Events\n")
-                for i in Counter([i.split(",")[0] for i in allevents]).most_common():
-                    ff.write(i[0] + "," + str(i[1]))
-                    numOfProviders += 1
-                    ff.write("\n")
+    eventsPerProvider = Counter()
+    with open(allEventsCsv, "r", newline="", encoding="utf-8") as f:
+        reader = csv.reader(f)
+        next(reader, None)
+        for row in reader:
+            eventsPerProvider[row[0]] += 1
+    numOfEvents = sum(eventsPerProvider.values())
+    # Every provider with event metadata has a CSV, including those without events
+    numOfProviders = len(os.listdir(folder + "/Providers"))
 
-            convertCsvToMDStats(folderName, windowsName, version, edition, date, build)
+    table = [["ETW Provider", "Number Of Events"]]
+    for provider, count in sorted(eventsPerProvider.items(), key=lambda item: (-item[1], item[0])):
+        table.append([provider, str(count)])
+    with open(folder + "/README.md", "w", encoding="utf-8") as f:
+        f.write("# " + info["windows"] + " " + info["edition"] + " " + info["version"] + " (Date: " + info["date"] + " - " + "Build: " + info["build"] + ") - ETW Providers\n\n")
+        f.write(md_table(table, padding=2))
 
-            #numOfProviders = len(Counter([i.split(",")[0] for i in allevents ]))
-        final_restls.append(windowsName + "," + edition + "," + version + "," + date + "," + build + "," + str(numOfProviders) + "," + str(numOfEvents))
+    return [info["windows"], info["edition"], info["version"], info["date"], info["build"], str(numOfProviders), str(len(eventsPerProvider)), str(numOfEvents)]
 
-    with open("ETWEventsList/etw-stats-unsorted.csv", "w") as f:
-            f.write("Windows,Edition/SP,Version,Date,Build,Num Providers,Num Events\n")
-            for i in final_restls:
-                f.write(i)
-                f.write("\n")
-    # Let's sort the created file by "Num Of Providers"
-    csvdata = pd.read_csv("ETWEventsList/etw-stats-unsorted.csv")
-    csvdata.sort_values(["Num Providers", "Num Events"], axis=0, ascending=[False, False], inplace=True)
-    csvdata.to_csv("ETWEventsList/etw-global-stats.csv", encoding='utf-8', index=False)
-    os.remove("ETWEventsList/etw-stats-unsorted.csv")
 
-    # Convert Results to MD
-    with open("ETWEventsList/etw-global-stats.csv", "r") as f:
-        table = csvtomd.csv_to_table(f, ",")
-    with open("ETWEventsList/README.md", "w") as f:
+def write_global_stats(rows):
+    # Most providers first, then most events
+    rows = sorted(rows, key=lambda row: (-int(row[5]), -int(row[7]), row[:5]))
+    with open(STATS_CSV, "w", newline="", encoding="utf-8") as f:
+        writer = csv.writer(f, lineterminator="\n")
+        writer.writerow(STATS_HEADER)
+        writer.writerows(rows)
+
+    with open("ETWEventsList/README.md", "w", encoding="utf-8") as f:
         f.write("# ETW Events List\n\n")
         f.write("The following folder contains a list of all ETW events extracted from the currently dumped ETW manifests (See [**ETW Providers Manifests**](https://github.com/nasbench/ETW-Resources/tree/main/ETWProvidersManifests) for the complete list).\n\n")
+        f.write("`Num Providers` counts the manifests that have event metadata, `Num Providers With Events` those that define at least one event.\n\n")
         f.write("## Global ETW Stats\n")
-        f.write(csvtomd.md_table(table, padding=2))
+        f.write(md_table([STATS_HEADER] + rows, padding=2))
+
+
+def load_global_stats():
+    """Rows of the existing global stats, or None if there are none in the current format."""
+    try:
+        with open(STATS_CSV, "r", newline="", encoding="utf-8") as f:
+            rows = list(csv.reader(f))
+    except OSError:
+        return None
+    if not rows or rows[0] != STATS_HEADER:
+        return None
+    return rows[1:]
+
+
+def updateStats(changedAllEventsCsvs):
+    """Refresh the stats of the builds that were converted and keep the others."""
+    rows = load_global_stats()
+    if rows is None:
+        return generateStats()
+    updated = [build_stats(path) for path in changedAllEventsCsvs]
+    replaced = {tuple(row[:5]) for row in updated}
+    write_global_stats([row for row in rows if tuple(row[:5]) not in replaced] + updated)
+
 
 def generateStats():
     listOfAllFiles = []
-    for (dirpath, dirnames, filenames) in os.walk("ETWEventsList/CSV/"):
+    for (dirpath, dirnames, filenames) in os.walk(CSV_DIR):
         for i in filenames:
             if i.startswith("!"):
                 listOfAllFiles.append(dirpath + "/" + i)
-    getNumberOfEventsPerVersion(listOfAllFiles)
+    write_global_stats([build_stats(i) for i in sorted(listOfAllFiles)])
 
-def converterStart(parsed_provider, folderToCreate, csvDir):
-    header = "Provider,Level,Event ID,Version,Channel,Task,Opcode,Keyword,Message"
-    with open(csvDir + folderToCreate + "/Providers/" + parsed_provider["provider_name"] + ".csv", "w+") as f:
-        f.seek(0)
-        f.write(header)
-        f.write("\n")
+
+def converterStart(parsed_provider, folderToCreate, csvDir, usedNames):
+    # "TCP/IP" cannot be a file name, and names that only differ by case must not collide
+    name = safe_filename(parsed_provider["provider_name"])
+    candidate, suffix = name, 1
+    while candidate.lower() in usedNames:
+        suffix += 1
+        candidate = f"{name}_{suffix}"
+    usedNames.add(candidate.lower())
+
+    with open(csvDir + folderToCreate + "Providers/" + candidate + ".csv", "w", newline="", encoding="utf-8") as f:
+        writer = csv.writer(f, lineterminator="\n")
+        writer.writerow(HEADER)
         for i in parsed_provider["events"]:
-            fixed_message = ""
-            if i['template'] != "":
-                fixed_message = fixMessage(i['message'], i['template'])
-            s = parsed_provider["provider_name"] + "," + i["level"] + "," + i["eid"] + "," + i["version"] + "," + i["channel"] + "," + i["task"] + "," + i["opcode"] + "," + i["keyword"] + "," + fixed_message
-            f.write(s)
-            f.write("\n")
-    #print(csvDir + folderToCreate + "/Providers/" + parsed_provider["provider_name"] + ".csv - Has been written")
+            fixed_message = fixMessage(i["message"], i["template"]) if i["template"] else i["message"]
+            writer.writerow([parsed_provider["provider_name"], i["level"], i["eid"], i["version"], i["channel"], i["task"], i["opcode"], i["keyword"], fixed_message])
 
-if __name__=="__main__":
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Convert the ETW provider manifests to CSV.")
+    parser.add_argument(
+        "--changed-since", metavar="REV",
+        help="only convert the builds whose manifests changed between the git revision REV and HEAD "
+             "(without it, every build is converted)",
+    )
+    args = parser.parse_args()
+
     manifestsDir = "ETWProvidersManifests"
-    csvDir = "ETWEventsList/CSV/"
     etwdir = []
 
     # This is used to extract the name of the folders
     for subdir, dirs, files in os.walk(manifestsDir):
-        if "WEPExplorer" in str(subdir): 
+        if "WEPExplorer" in str(subdir):
             etwdir.append(subdir)
-            
-    for i in etwdir:
+    if args.changed_since:
+        changed = etwlib.changed_build_dirs(args.changed_since)
+        etwdir = [i for i in etwdir if i.replace("\\", "/") in changed]
+        print(f"{len(etwdir)} build(s) changed since {args.changed_since}")
+
+    mergedCsvs = []
+    for i in sorted(etwdir):
         # This will get the name of the folder/subfolders to create in order to replicate the same structure as the XML's
-        folderToCreate = i[i.find("ETWProvidersManifests")+len("ETWProvidersManifests")+1:].replace("WEPExplorer", "").replace("\\", "/")
+        folderToCreate = i[i.find("ETWProvidersManifests") + len("ETWProvidersManifests") + 1:].replace("WEPExplorer", "").replace("\\", "/")
         # We call the "getListOfFiles" to generate a list of file paths
         listOfProviders = getListOfFiles(i)
         listOfParsedProviders = []
@@ -248,17 +173,30 @@ if __name__=="__main__":
         # We then parse and convert each file into a dict and append them to a list we call "list Of Parsed Providers"
         for provider in listOfProviders:
             parsed = parse_etw_xml(provider)
-            if parsed != "Empty Provider":
+            if parsed != EMPTY_PROVIDER:
                 listOfParsedProviders.append(parsed)
 
-        # Create directories
-        if not os.path.exists(csvDir + folderToCreate):
-            os.makedirs(csvDir + folderToCreate + "Providers")
-        else:
-            print(csvDir + folderToCreate + " - Already exists")
+        # Create directories. A build that is converted again starts from scratch, so that providers
+        # that are gone from the manifests do not linger
+        if os.path.exists(CSV_DIR + folderToCreate):
+            print(CSV_DIR + folderToCreate + " - Already exists")
+            if args.changed_since:
+                shutil.rmtree(CSV_DIR + folderToCreate)
+        os.makedirs(CSV_DIR + folderToCreate + "Providers", exist_ok=True)
 
         # We then start to generate the CSV files
+        usedNames = set()
         for p in listOfParsedProviders:
-            converterStart(p, folderToCreate, csvDir)
-        merge_csv(folderToCreate, csvDir)
+            converterStart(p, folderToCreate, CSV_DIR, usedNames)
+        mergedCsvs.append(merge_csv(folderToCreate, CSV_DIR))
+
+    if args.changed_since:
+        updateStats(mergedCsvs)
+    else:
         generateStats()
+
+    if etwlib.ERRORS:
+        print(f"{len(etwlib.ERRORS)} manifest(s) could not be read:", file=sys.stderr)
+        for error in etwlib.ERRORS:
+            print("  " + error, file=sys.stderr)
+        sys.exit(1)
